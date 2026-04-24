@@ -69,7 +69,6 @@ const stages = defineCollection({
     order: z.number().int().min(1).max(20),
     challenge: z.string(),
     top_use_case: z.string(),
-    suitability: suitabilityEnum,
     roles: z.array(roleEnum),
     use_cases: z.array(useCaseSchema),
   }),

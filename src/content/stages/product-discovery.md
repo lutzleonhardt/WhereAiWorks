@@ -4,7 +4,6 @@ type: "primary"
 order: 1
 challenge: "Kundenfeedback-Mengen wachsen, aber Muster zu erkennen bleibt manuelle Fleißarbeit."
 top_use_case: "Feedback-Clustering und Interview-Synthese"
-suitability: "good_fit"
 roles:
   - product-owner
 use_cases:

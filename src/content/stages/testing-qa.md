@@ -4,7 +4,6 @@ type: "primary"
 order: 4
 challenge: "Test-Erstellung und -Maintenance kostet enorm viel Zeit — AI kann hier massiv entlasten."
 top_use_case: "Testfall-Generierung aus User Stories oder bestehendem Code"
-suitability: "good_fit"
 roles:
   - qa-engineer
   - developer

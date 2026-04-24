@@ -4,7 +4,6 @@ type: "primary"
 order: 7
 challenge: "Erstlevel-Tickets binden Ressourcen, die für komplexe Fälle fehlen."
 top_use_case: "Antwortvorschläge und Self-Service-Deflection"
-suitability: "good_fit"
 roles:
   - support-agent
 use_cases:

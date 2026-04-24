@@ -4,7 +4,6 @@ type: "primary"
 order: 3
 challenge: "Produktivitätsgewinn ist real, aber kontextabhängig — kein universeller 10x-Effekt."
 top_use_case: "Code-Completion und Multi-File-Änderungen"
-suitability: "good_fit"
 roles:
   - developer
 use_cases:

@@ -1,17 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import SuitabilityBadge from './SuitabilityBadge.astro';
 
 interface Props {
   stage: CollectionEntry<'stages'>;
 }
 
 const { stage } = Astro.props;
-const { name, challenge, top_use_case, suitability, roles } = stage.data;
+const { name, challenge, top_use_case, roles } = stage.data;
 ---
 <a class="stage-card" href={`#stage-${stage.slug}`} data-roles={roles.join(',')}>
   <h3 class="stage-card-title">{name}</h3>
-  <SuitabilityBadge suitability={suitability} />
   <p class="stage-card-challenge">{challenge}</p>
   <p class="stage-card-top">
     <span class="stage-card-top-label">Top:</span> {top_use_case}
