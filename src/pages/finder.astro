@@ -1,0 +1,238 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { loadRoles, loadTools } from '../lib/data';
+
+const roles = loadRoles();
+const tools = loadTools();
+const toolsById = new Map(tools.map((t) => [t.id, t] as const));
+
+const suitabilityLabels: Record<string, string> = {
+  good_fit: 'gut geeignet',
+  conditional: 'bedingt geeignet',
+  partial: 'nur Teilaufgaben',
+  immature: 'noch unreif',
+};
+
+const maturityLabels: Record<string, string> = {
+  production: 'produktionsreif',
+  experimental: 'experimentell',
+};
+
+const sourceTypeLabels: Record<string, string> = {
+  study: 'Studie',
+  case_study: 'Case Study',
+  vendor: 'Vendor-Angabe',
+  community: 'Community',
+};
+
+const stages = await getCollection('stages');
+
+type FinderUseCase = {
+  id: string;
+  roles: string[];
+  goal_label: string;
+  stage_id: string;
+  stage_name: string;
+  suitability: string;
+  suitability_label: string;
+  rationale: string;
+  tools: {
+    id: string;
+    name: string;
+    url: string;
+    maturity: string;
+    maturity_label: string;
+  }[];
+  start_here: string;
+  caveats: string;
+  sources: { label: string; url?: string; type: string; type_label: string }[];
+};
+
+const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
+  stage.data.use_cases.map((uc) => ({
+    id: uc.id,
+    roles: uc.roles,
+    goal_label: uc.goal_label,
+    stage_id: stage.slug,
+    stage_name: stage.data.name,
+    suitability: uc.suitability,
+    suitability_label: suitabilityLabels[uc.suitability],
+    rationale: uc.rationale,
+    tools: uc.tools
+      .map((id) => {
+        const tool = toolsById.get(id);
+        if (!tool) return null;
+        return {
+          id: tool.id,
+          name: tool.name,
+          url: tool.url,
+          maturity: tool.maturity,
+          maturity_label: maturityLabels[tool.maturity],
+        };
+      })
+      .filter((t): t is NonNullable<typeof t> => t !== null),
+    start_here: uc.start_here,
+    caveats: uc.caveats,
+    sources: uc.sources.map((s) => ({
+      label: s.label,
+      url: s.url,
+      type: s.type,
+      type_label: sourceTypeLabels[s.type],
+    })),
+  }))
+);
+---
+<Base title="Where AI Works — Finder">
+  <h1>Kann AI mir helfen?</h1>
+  <p class="atlas-lead">
+    Wähle deine Rolle und dein Ziel — du bekommst die passende Stufe, eine
+    ehrliche Eignung, empfohlene Tools und einen konkreten Einstieg.
+  </p>
+
+  <form class="finder-form" autocomplete="off" onsubmit="return false;">
+    <div class="finder-row">
+      <label for="finder-role">Ich bin:</label>
+      <select id="finder-role">
+        <option value="">Rolle wählen…</option>
+        {roles.map((r) => (
+          <option value={r.id}>{r.name}</option>
+        ))}
+      </select>
+    </div>
+
+    <div class="finder-row">
+      <label for="finder-goal">Ich will:</label>
+      <select id="finder-goal" disabled>
+        <option value="">Erst Rolle wählen</option>
+      </select>
+    </div>
+  </form>
+
+  <section id="finder-result" class="finder-result" hidden aria-live="polite">
+    <h2>Ergebnis</h2>
+    <p class="result-row">
+      <span class="result-label">Stufe:</span>
+      <span class="result-stage"></span>
+      ·
+      <a class="result-atlas-link" href="/">Im Atlas anzeigen →</a>
+    </p>
+    <p class="result-row">
+      <span class="result-label">Eignung:</span>
+      <span class="result-suitability"></span>
+    </p>
+    <p class="result-row">
+      <span class="result-label">Warum:</span>
+      <span class="result-rationale"></span>
+    </p>
+    <p class="result-row">
+      <span class="result-label">Tools:</span>
+      <span class="result-tools"></span>
+    </p>
+    <p class="result-row">
+      <span class="result-label">Einstieg:</span>
+      <span class="result-start"></span>
+    </p>
+    <p class="result-row">
+      <span class="result-label">Vorsicht:</span>
+      <span class="result-caveats"></span>
+    </p>
+    <div class="result-row">
+      <span class="result-label">Quellen:</span>
+      <ul class="result-sources"></ul>
+    </div>
+  </section>
+
+  <script define:vars={{ useCaseData }}>
+    // @ts-nocheck
+    window.__FINDER_DATA__ = useCaseData;
+  </script>
+
+  <script>
+    type FinderTool = {
+      id: string;
+      name: string;
+      url: string;
+      maturity: string;
+      maturity_label: string;
+    };
+    type FinderSource = {
+      label: string;
+      url?: string;
+      type: string;
+      type_label: string;
+    };
+    type FinderUseCase = {
+      id: string;
+      roles: string[];
+      goal_label: string;
+      stage_id: string;
+      stage_name: string;
+      suitability: string;
+      suitability_label: string;
+      rationale: string;
+      tools: FinderTool[];
+      start_here: string;
+      caveats: string;
+      sources: FinderSource[];
+    };
+
+    const data = (window as unknown as { __FINDER_DATA__: FinderUseCase[] }).__FINDER_DATA__ || [];
+    const roleSel = document.getElementById('finder-role') as HTMLSelectElement;
+    const goalSel = document.getElementById('finder-goal') as HTMLSelectElement;
+    const result = document.getElementById('finder-result') as HTMLElement;
+
+    function escapeHtml(s: string): string {
+      return s.replace(/[&<>"']/g, (c) =>
+        ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string)
+      );
+    }
+
+    roleSel.addEventListener('change', () => {
+      const role = roleSel.value;
+      result.hidden = true;
+      goalSel.innerHTML = '';
+      if (!role) {
+        goalSel.disabled = true;
+        goalSel.appendChild(new Option('Erst Rolle wählen', ''));
+        return;
+      }
+      const goals = data.filter((uc) => uc.roles.includes(role));
+      goalSel.disabled = goals.length === 0;
+      goalSel.appendChild(new Option('Ziel wählen…', ''));
+      goals.forEach((uc) => goalSel.appendChild(new Option(uc.goal_label, uc.id)));
+    });
+
+    goalSel.addEventListener('change', () => {
+      const uc = data.find((d) => d.id === goalSel.value);
+      if (!uc) {
+        result.hidden = true;
+        return;
+      }
+      (result.querySelector('.result-stage') as HTMLElement).textContent = uc.stage_name;
+      (result.querySelector('.result-suitability') as HTMLElement).textContent = uc.suitability_label;
+      (result.querySelector('.result-rationale') as HTMLElement).textContent = uc.rationale;
+      (result.querySelector('.result-tools') as HTMLElement).innerHTML = uc.tools
+        .map(
+          (t) =>
+            `<a href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(
+              t.name
+            )}</a> <span class="tool-maturity">(${escapeHtml(t.maturity_label)})</span>`
+        )
+        .join(' · ');
+      (result.querySelector('.result-start') as HTMLElement).textContent = uc.start_here;
+      (result.querySelector('.result-caveats') as HTMLElement).textContent = uc.caveats;
+      (result.querySelector('.result-sources') as HTMLElement).innerHTML = uc.sources
+        .map((s) => {
+          const body = s.url
+            ? `<a href="${escapeHtml(s.url)}" rel="noreferrer" target="_blank">${escapeHtml(s.label)}</a>`
+            : escapeHtml(s.label);
+          return `<li>${body} <span class="source-type">(${escapeHtml(s.type_label)})</span></li>`;
+        })
+        .join('');
+      (result.querySelector('.result-atlas-link') as HTMLAnchorElement).href =
+        `/#stage-${uc.stage_id}`;
+      result.hidden = false;
+    });
+  </script>
+</Base>
