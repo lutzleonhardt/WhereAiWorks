@@ -1,0 +1,24 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import StageDetail from '../../components/StageDetail.astro';
+import { loadTools } from '../../lib/data';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const stages = await getCollection('stages');
+  return stages.map((stage) => ({
+    params: { id: stage.slug },
+    props: { stage },
+  }));
+};
+
+const { stage } = Astro.props;
+const tools = loadTools();
+---
+<Base title={`${stage.data.name} — Where AI Works`}>
+  <p class="stage-detail-backlink">
+    <a href="/">← Zurück zum Atlas</a>
+  </p>
+  <StageDetail stage={stage} tools={tools} standalone />
+</Base>
