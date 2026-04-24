@@ -1,11 +1,13 @@
 ---
 type Suitability = 'good_fit' | 'conditional' | 'partial' | 'immature';
+type Size = 'sm' | 'lg';
 
 interface Props {
   suitability: Suitability;
+  size?: Size;
 }
 
-const { suitability } = Astro.props;
+const { suitability, size = 'sm' } = Astro.props;
 
 const labels: Record<Suitability, string> = {
   good_fit: 'gut geeignet',
@@ -13,8 +15,17 @@ const labels: Record<Suitability, string> = {
   partial: 'nur Teilaufgaben',
   immature: 'noch unreif',
 };
+
+const colorClass: Record<Suitability, string> = {
+  good_fit: 'green',
+  conditional: 'amber',
+  partial: 'orange',
+  immature: 'red',
+};
+
+const sizeClass = size === 'lg' ? ' lg' : '';
 ---
-<span class={`suitability suitability-${suitability}`}>
-  <span class="suitability-dot" aria-hidden="true"></span>
+<span class={`pill ${colorClass[suitability]}${sizeClass}`} role="status">
+  <span class="dot" aria-hidden="true"></span>
   {labels[suitability]}
 </span>

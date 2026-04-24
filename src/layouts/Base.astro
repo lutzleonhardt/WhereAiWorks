@@ -24,12 +24,25 @@ function isCurrent(href: string) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content="Wo schafft AI in Softwareunternehmen realen Mehrwert — und wo (noch) nicht? Eine offene, kuratierte Orientierungshilfe." />
+    <meta
+      name="description"
+      content="Wo schafft AI in Softwareunternehmen realen Mehrwert — und wo (noch) nicht? Eine offene, kuratierte Orientierungshilfe."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="site-header">
-      <div class="site-header-inner">
-        <a class="site-title" href="/">Where AI Works</a>
+      <div class="wrap site-header-inner">
+        <a class="wordmark" href="/" aria-label="Where AI Works — Startseite">
+          <span class="dot" aria-hidden="true"></span>
+          Where AI Works
+          <span class="sub">Kuratierte Referenz</span>
+        </a>
         <nav class="site-nav" aria-label="Hauptnavigation">
           {navItems.map((item) => (
             <a
@@ -42,11 +55,18 @@ function isCurrent(href: string) {
         </nav>
       </div>
     </header>
-    <main class="container">
+
+    <main>
       <slot />
     </main>
+
     <footer class="site-footer">
-      <a href="https://github.com/" rel="noreferrer">GitHub</a> · Lizenz TBD
+      <div class="wrap">
+        <div>Where AI Works · Open Source · Lizenz TBD</div>
+        <div>
+          <a href="https://github.com/" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

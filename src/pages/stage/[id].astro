@@ -15,10 +15,20 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 const { stage } = Astro.props;
 const tools = loadTools();
+const idx = String(stage.data.order).padStart(2, '0');
 ---
 <Base title={`${stage.data.name} — Where AI Works`}>
-  <p class="stage-detail-backlink">
-    <a href="/">← Zurück zum Atlas</a>
-  </p>
-  <StageDetail stage={stage} tools={tools} standalone />
+  <section>
+    <div class="wrap">
+      <div class="lede">
+        <div class="eyebrow">Atlas · Stufe {idx}</div>
+        <h1>{stage.data.name}</h1>
+        <p class="kicker">{stage.data.challenge}</p>
+      </div>
+
+      <div class="stage-detail standalone">
+        <StageDetail stage={stage} tools={tools} standalone />
+      </div>
+    </div>
+  </section>
 </Base>

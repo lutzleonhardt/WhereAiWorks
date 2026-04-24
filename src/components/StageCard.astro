@@ -6,12 +6,23 @@ interface Props {
 }
 
 const { stage } = Astro.props;
-const { name, challenge, top_use_case, roles } = stage.data;
+const { name, challenge, top_use_case, roles, order } = stage.data;
+const idx = String(order).padStart(2, '0');
 ---
-<a class="stage-card" href={`#stage-${stage.slug}`} data-roles={roles.join(',')}>
-  <h3 class="stage-card-title">{name}</h3>
-  <p class="stage-card-challenge">{challenge}</p>
-  <p class="stage-card-top">
-    <span class="stage-card-top-label">Top:</span> {top_use_case}
-  </p>
+<a
+  class="stage"
+  href={`#stage-${stage.slug}`}
+  data-stage={stage.slug}
+  data-roles={roles.join(',')}
+  role="listitem"
+>
+  <span class="arrow">
+    <span class="idx">Stufe {idx}</span>
+    <span class="name">{name}</span>
+    <span class="challenge">{challenge}</span>
+    <span class="topuc">
+      Top Use Case
+      <b>{top_use_case}</b>
+    </span>
+  </span>
 </a>

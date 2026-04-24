@@ -21,90 +21,79 @@ const { Content } = await stage.render();
 
 const toolsById = new Map(tools.map((t) => [t.id, t] as const));
 
-const sourceTypeLabels: Record<string, string> = {
-  study: 'Studie',
-  case_study: 'Case Study',
-  vendor: 'Vendor-Angabe',
-  community: 'Community',
+const maturityLabels: Record<string, string> = {
+  production: 'stable',
+  experimental: 'growing',
 };
 
-const maturityLabels: Record<string, string> = {
-  production: 'produktionsreif',
-  experimental: 'experimentell',
-};
+const useCases = stage.data.use_cases;
 ---
 <article class="stage-detail-body">
+  <div class="stage-crumb">Atlas · Stage-Detail</div>
   <header class="stage-detail-header">
     <h2 class="stage-detail-title">{stage.data.name}</h2>
   </header>
-
-  <p class="stage-detail-challenge">{stage.data.challenge}</p>
+  <p class="stage-verdict">{stage.data.challenge}</p>
 
   <section class="stage-detail-section">
-    <h3>Use Cases</h3>
-    <ul class="use-case-list">
-      {stage.data.use_cases.map((uc) => (
-        <li class="use-case">
-          <h4 class="use-case-title">{uc.title}</h4>
-          <div class="use-case-meta">
+    <h3>
+      Use Cases
+      <span class="count">{useCases.length} Einträge</span>
+    </h3>
+    <ul class="ucs">
+      {useCases.map((uc) => (
+        <li class="uc">
+          <h4>{uc.title}</h4>
+          <div class="goal">„{uc.goal_label}"</div>
+          <div class="row">
             <SuitabilityBadge suitability={uc.suitability} />
-            <span class="use-case-goal">
-              <span class="use-case-label">Ziel:</span> {uc.goal_label}
-            </span>
           </div>
-          <p class="use-case-rationale">
-            <span class="use-case-label">Warum:</span> {uc.rationale}
-          </p>
-          <div class="use-case-tools">
-            <span class="use-case-label">Tools:</span>
-            <ul class="tool-list">
+          <p class="why">{uc.rationale}</p>
+
+          <div class="kv">
+            <b>Tools</b>
+            <div class="chips">
               {uc.tools.map((entry) => {
                 const tool = toolsById.get(entry.id);
                 if (!tool) return null;
                 return (
-                  <li class="tool-entry">
-                    <a href={tool.url} rel="noreferrer" target="_blank">{tool.name}</a>
-                    <span class="tool-maturity"> ({maturityLabels[tool.maturity]})</span>
-                    {entry.fit && <SuitabilityBadge suitability={entry.fit} />}
-                    {entry.note && <span class="tool-note"> — {entry.note}</span>}
-                    {entry.sources && entry.sources.length > 0 && (
-                      <small class="tool-sources">
-                        {' '}Quellen:{' '}
-                        {entry.sources.map((s, i) => (
-                          <>
-                            {i > 0 ? ', ' : ''}
-                            {s.url
-                              ? <a href={s.url} rel="noreferrer" target="_blank">{s.label}</a>
-                              : <span>{s.label}</span>}
-                            <span class="source-type"> ({sourceTypeLabels[s.type]})</span>
-                          </>
-                        ))}
-                      </small>
-                    )}
-                  </li>
+                  <a
+                    class="chip"
+                    href={tool.url}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {tool.name}
+                    <span class="mat">({maturityLabels[tool.maturity]})</span>
+                    {entry.note && <span class="chip-note"> — {entry.note}</span>}
+                  </a>
                 );
               })}
-            </ul>
+            </div>
           </div>
-          <p class="use-case-start">
-            <span class="use-case-label">Einstieg:</span> {uc.start_here}
-          </p>
-          <p class="use-case-caveats">
-            <span class="use-case-label">Vorsicht:</span> {uc.caveats}
-          </p>
+
+          <div class="kv"><b>Einstieg</b>{uc.start_here}</div>
+          <div class="kv"><b>Vorsicht</b>{uc.caveats}</div>
+
           {uc.sources.length > 0 && (
-            <p class="use-case-sources">
-              <span class="use-case-label">Quellen:</span>
-              {uc.sources.map((s, i) => (
-                <>
-                  {i > 0 ? ' · ' : ''}
-                  {s.url
-                    ? <a href={s.url} rel="noreferrer" target="_blank">{s.label}</a>
-                    : <span>{s.label}</span>}
-                  <span class="source-type"> ({sourceTypeLabels[s.type]})</span>
-                </>
-              ))}
-            </p>
+            <div class="kv">
+              <b>Quellen</b>
+              <div class="sources">
+                {uc.sources.map((s) => (
+                  s.url ? (
+                    <a class="src" href={s.url} rel="noreferrer" target="_blank">
+                      <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                      {s.label}
+                    </a>
+                  ) : (
+                    <span class="src">
+                      <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                      {s.label}
+                    </span>
+                  )
+                ))}
+              </div>
+            </div>
           )}
         </li>
       ))}
@@ -116,12 +105,14 @@ const maturityLabels: Record<string, string> = {
   </section>
 
   {standalone ? (
-    <p class="stage-detail-backlink">
-      <a href="/">← Zurück zum Atlas</a>
+    <p>
+      <a class="stage-detail-backlink" href="/">← Zurück zum Atlas</a>
     </p>
   ) : (
-    <p class="stage-detail-backlink">
-      <a href={`/stage/${stage.slug}`}>Eigene Seite öffnen →</a>
+    <p>
+      <a class="stage-detail-backlink" href={`/stage/${stage.slug}`}>
+        → Eigene Seite öffnen
+      </a>
     </p>
   )}
 </article>

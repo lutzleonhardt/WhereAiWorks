@@ -11,67 +11,105 @@ const tools = loadTools();
 const stages = (await getCollection('stages')).sort(
   (a, b) => a.data.order - b.data.order
 );
+
+const useCaseCount = stages.reduce(
+  (sum, s) => sum + s.data.use_cases.length,
+  0
+);
 ---
 <Base title="Where AI Works — Atlas">
-  <section class="atlas-intro">
-    <h1>Where AI Works</h1>
-    <p class="atlas-claim">
-      Wo schafft AI in <strong>Softwareunternehmen</strong> heute realen Mehrwert — und wo (noch) nicht?
-    </p>
-    <p class="atlas-lead">
-      Vier Stufen der Software-Wertschöpfungskette mit ehrlicher Einordnung statt Hype.
-      Klicke eine Stufe, um Use Cases, Tools, Einstieg und Grenzen zu sehen.
-    </p>
+  <section id="view-atlas">
+    <div class="wrap">
+      <div class="lede">
+        <div class="eyebrow">Atlas · Wertschöpfungskette</div>
+        <h1>
+          Wo schafft AI in Softwareunternehmen heute
+          <em>realen Mehrwert</em> — und wo nicht?
+        </h1>
+        <p class="kicker">
+          Eine kuratierte Orientierung für CTOs, Product Owners, Team Leads und
+          Engineers im Mittelstand. Vier Stufen entlang der Wertschöpfung.
+          Ehrliche Einordnung statt Hype — inklusive der Stellen, an denen AI
+          heute noch scheitert.
+        </p>
+        <div class="meta">
+          <span>{stages.length} Stufen · {useCaseCount} Use Cases</span>
+          <span>Open Source · Lizenz TBD</span>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <label for="role-filter">Rolle</label>
+        <select id="role-filter" aria-describedby="filter-hint">
+          <option value="all">Alle Rollen</option>
+          {roles.map((r) => (
+            <option value={r.id}>{r.name}</option>
+          ))}
+        </select>
+        <span class="filter-hint" id="filter-hint">
+          Nicht-passende Stufen werden abgedunkelt, bleiben aber sichtbar.
+        </span>
+      </div>
+
+      <div
+        class="chain"
+        id="chain"
+        role="list"
+        aria-label="Wertschöpfungskette mit Stufen"
+      >
+        {stages.map((stage) => (
+          <StageCard stage={stage} />
+        ))}
+      </div>
+
+      <div id="atlas" class="detail-anchor"></div>
+      <div class="detail-area">
+        <p class="detail-empty" id="detail-empty">
+          Wähle eine Stufe, um Details zu sehen.
+          <kbd>↵</kbd> oder <kbd>Klick</kbd> auf einen Pfeil.
+        </p>
+
+        {stages.map((stage) => (
+          <section id={`stage-${stage.slug}`} class="stage-detail">
+            <a href="#atlas" class="close-detail" aria-label="Detail schließen">
+              ✕ Schließen
+            </a>
+            <StageDetail stage={stage} tools={tools} />
+          </section>
+        ))}
+      </div>
+    </div>
   </section>
-
-  <section class="atlas-filter">
-    <label for="role-filter">Rolle filtern:</label>
-    <select id="role-filter" name="role">
-      <option value="all">Alle</option>
-      {roles.map((r) => (
-        <option value={r.id}>{r.name}</option>
-      ))}
-    </select>
-  </section>
-
-  <section class="stage-grid" aria-label="Wertschöpfungsstufen">
-    {stages.map((stage) => (
-      <StageCard stage={stage} />
-    ))}
-  </section>
-
-  <div id="atlas" class="detail-area">
-    <p class="detail-hint">Wähle eine Stufe, um Details zu sehen.</p>
-
-    {stages.map((stage) => (
-      <section id={`stage-${stage.slug}`} class="stage-detail">
-        <a href="#atlas" class="close-detail" aria-label="Detail schließen">✕ Schließen</a>
-        <StageDetail stage={stage} tools={tools} />
-      </section>
-    ))}
-  </div>
 
   <script>
-    // Atlas — Rollen-Filter. Dimmt Karten, deren data-roles die gewählte
-    // Rolle nicht enthält, und schließt einen offenen Detailbereich durch
-    // Reset des URL-Hashes auf den Atlas-Container.
-    const filter = document.getElementById('role-filter');
+    // Role filter — dims stages whose data-roles does not include the
+    // selected role.
+    const filter = document.getElementById('role-filter') as HTMLSelectElement | null;
+    const cards = document.querySelectorAll<HTMLElement>('.stage');
+
     if (filter) {
-      const cards = document.querySelectorAll('.stage-card');
       filter.addEventListener('change', (e) => {
         const role = (e.target as HTMLSelectElement).value;
         cards.forEach((card) => {
-          const roles = ((card as HTMLElement).dataset.roles || '')
+          const roles = (card.dataset.roles || '')
             .split(',')
-            .map((s) => s.trim());
-          if (role === 'all' || roles.includes(role)) {
-            card.classList.remove('dimmed');
-          } else {
-            card.classList.add('dimmed');
-          }
+            .map((s) => s.trim())
+            .filter(Boolean);
+          const match = role === 'all' || roles.includes(role);
+          card.classList.toggle('dimmed', !match);
         });
-        history.replaceState(null, '', '#atlas');
       });
     }
+
+    // Sync `.active` highlight on whichever stage is currently targeted.
+    function syncActive() {
+      const hash = location.hash.replace('#', '');
+      const activeSlug = hash.startsWith('stage-') ? hash.slice('stage-'.length) : '';
+      cards.forEach((card) => {
+        card.classList.toggle('active', card.dataset.stage === activeSlug);
+      });
+    }
+    syncActive();
+    window.addEventListener('hashchange', syncActive);
   </script>
 </Base>

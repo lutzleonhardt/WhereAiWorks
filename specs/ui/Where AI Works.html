@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where AI Works — Wo schafft AI in Softwareunternehmen realen Mehrwert?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7;
+    --bg-sunk:#F2F1EB;
+    --ink:#1F2328;
+    --ink-soft:#4A4F57;
+    --ink-mute:#7A7F87;
+    --rule:#E4E2DA;
+    --rule-strong:#CDCAC0;
+    --accent:#0F4C81;
+    --accent-soft:#E6EEF6;
+
+    --green:#2F855A;
+    --amber:#B7791F;
+    --orange:#C05621;
+    --red:#9B2C2C;
+
+    --serif:"Newsreader", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,76,129,0.25)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible, button:focus-visible, select:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-0.01em;line-height:1.2;color:var(--ink);margin:0}
+  h1{font-size:clamp(28px,3.2vw,40px)}
+  h2{font-size:clamp(24px,2.4vw,32px)}
+  h3{font-size:20px;font-weight:600}
+  p{margin:0}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  @media (max-width:640px){ .wrap{padding:0 20px} }
+
+  /* ------- Header ------- */
+  header.site{
+    border-bottom:1px solid var(--rule);
+    background:var(--bg);
+    position:sticky;top:0;z-index:20;
+    backdrop-filter:saturate(1.1);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:64px;gap:20px;
+  }
+  .wordmark{
+    font-family:var(--serif);
+    font-size:20px;font-weight:500;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    text-decoration:none;border:0;
+    display:inline-flex;align-items:center;gap:10px;
+  }
+  .wordmark .dot{
+    width:9px;height:9px;background:var(--accent);display:inline-block;border-radius:50%;
+    transform:translateY(-1px);
+  }
+  .wordmark .sub{
+    font-family:var(--mono);
+    font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.08em;
+    border-left:1px solid var(--rule-strong);
+    padding-left:10px;margin-left:4px;
+    font-weight:400;
+  }
+  @media (max-width:560px){ .wordmark .sub{display:none} }
+
+  nav.site{display:flex;gap:4px;align-items:center}
+  nav.site a{
+    font-family:var(--sans);
+    font-size:14px;font-weight:500;
+    color:var(--ink-soft);
+    padding:8px 14px;
+    border:1px solid transparent;
+    border-radius:2px;
+  }
+  nav.site a.active{
+    color:var(--ink);
+    border-color:var(--rule-strong);
+    background:var(--bg);
+  }
+  nav.site a:hover{color:var(--ink)}
+
+  /* ------- Hero / lede ------- */
+  .lede{
+    padding:64px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .lede .eyebrow{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;margin-bottom:18px;
+  }
+  .lede h1{
+    font-size:clamp(32px,4.2vw,54px);
+    max-width:22ch;
+    line-height:1.1;
+    margin-bottom:18px;
+  }
+  .lede h1 em{font-style:italic;color:var(--accent)}
+  .lede p.kicker{
+    font-family:var(--serif);
+    font-size:clamp(17px,1.6vw,20px);
+    color:var(--ink-soft);
+    max-width:58ch;
+    line-height:1.55;
+  }
+  .lede .meta{
+    margin-top:28px;
+    display:flex;gap:24px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:12px;color:var(--ink-mute);
+    letter-spacing:0.04em;
+  }
+  .lede .meta span::before{content:"— ";color:var(--rule-strong)}
+
+  /* ------- Section heads ------- */
+  .section-head{
+    display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;
+    padding:44px 0 20px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:36px;
+  }
+  .section-head .label{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+  }
+  .section-head h2{font-size:clamp(22px,2.4vw,28px)}
+  .section-head p.desc{
+    font-family:var(--serif);
+    color:var(--ink-soft);font-size:16px;max-width:48ch;flex:1 1 320px;
+  }
+
+  /* ------- Role filter ------- */
+  .filter-row{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    padding:18px 0 24px;
+  }
+  .filter-row label{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+  }
+  select{
+    appearance:none;-webkit-appearance:none;
+    font-family:var(--sans);font-size:14px;color:var(--ink);
+    background:var(--bg);
+    border:1px solid var(--rule-strong);
+    border-radius:2px;
+    padding:10px 36px 10px 14px;
+    min-height:44px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%231F2328' stroke-width='1.2' fill='none' stroke-linecap='round'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 14px center;
+    min-width:220px;
+    cursor:pointer;
+  }
+  select:hover{border-color:var(--ink)}
+  select:disabled{color:var(--ink-mute);cursor:not-allowed;background-color:var(--bg-sunk)}
+
+  .filter-hint{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);margin-left:auto;
+  }
+
+  /* ------- Porter arrows ------- */
+  .chain{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:6px;
+    margin-bottom:40px;
+  }
+  .stage{
+    --fill: #F2F1EB;
+    position:relative;
+    display:block;
+    font-family:inherit;
+    color:var(--ink);
+    background:transparent;border:0;padding:0;margin:0;
+    text-align:left;cursor:pointer;
+    transition:opacity .2s ease;
+  }
+  .stage .arrow{
+    background:var(--fill);
+    border:1px solid var(--rule-strong);
+    padding:22px 44px 22px 28px;
+    min-height:228px;
+    clip-path:polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
+    transition:background .15s ease, border-color .15s ease, transform .15s ease;
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .stage:first-child .arrow{
+    clip-path:polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  }
+  .stage:hover .arrow{background:#ECEAE1;border-color:var(--ink)}
+  .stage.active .arrow{
+    background:#fff;border-color:var(--ink);
+  }
+  .stage.dimmed{opacity:0.32;filter:saturate(0.6)}
+  .stage.dimmed:hover{opacity:0.55}
+
+  .stage .idx{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    letter-spacing:0.12em;text-transform:uppercase;
+  }
+  .stage .name{
+    font-family:var(--serif);font-size:22px;line-height:1.15;font-weight:500;
+    color:var(--ink);letter-spacing:-0.01em;
+    padding-right:8px;
+  }
+  .stage .pill-row{margin-top:auto}
+  .stage .challenge{
+    font-size:13px;color:var(--ink-soft);line-height:1.5;
+  }
+  .stage .topuc{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.08em;
+    border-top:1px solid var(--rule);padding-top:8px;
+  }
+  .stage .topuc b{color:var(--ink);font-weight:500;font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px;display:block;margin-top:3px}
+
+  /* Mobile: vertical stack, arrows point down */
+  @media (max-width:820px){
+    .chain{grid-template-columns:1fr;gap:4px}
+    .stage .arrow{
+      min-height:unset;
+      padding:22px 24px 40px;
+      clip-path:polygon(0 0, 100% 0, 100% calc(100% - 20px), 50% 100%, 0 calc(100% - 20px));
+    }
+    .stage:first-child .arrow{
+      clip-path:polygon(0 0, 100% 0, 100% calc(100% - 20px), 50% 100%, 0 calc(100% - 20px));
+    }
+  }
+
+  /* ------- Suitability pill ------- */
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;font-weight:500;
+    padding:5px 10px 5px 8px;
+    border:1px solid var(--rule-strong);
+    background:var(--bg);
+    border-radius:999px;
+    line-height:1;
+    white-space:nowrap;
+  }
+  .pill .dot{
+    width:8px;height:8px;border-radius:50%;display:inline-block;
+  }
+  .pill.lg{font-size:13px;padding:7px 14px 7px 11px}
+  .pill.lg .dot{width:10px;height:10px}
+  .pill.green .dot{background:var(--green)}
+  .pill.amber .dot{background:var(--amber)}
+  .pill.orange .dot{background:var(--orange)}
+  .pill.red .dot{background:var(--red)}
+  .pill.green{color:var(--green);border-color:rgba(47,133,90,0.35)}
+  .pill.amber{color:var(--amber);border-color:rgba(183,121,31,0.35)}
+  .pill.orange{color:var(--orange);border-color:rgba(192,86,33,0.35)}
+  .pill.red{color:var(--red);border-color:rgba(155,44,44,0.35)}
+
+  /* ------- Inline detail panel ------- */
+  .detail-anchor{scroll-margin-top:80px}
+  .detail-empty{
+    border:1px dashed var(--rule-strong);
+    background:var(--bg-sunk);
+    padding:28px 24px;
+    text-align:center;
+    font-family:var(--serif);font-style:italic;
+    color:var(--ink-mute);font-size:16px;
+  }
+  .detail-empty kbd{
+    font-family:var(--mono);font-size:11px;
+    background:var(--bg);border:1px solid var(--rule-strong);
+    padding:2px 6px;border-radius:2px;color:var(--ink-soft);margin:0 2px;
+  }
+
+  .detail{
+    border:1px solid var(--rule-strong);
+    background:var(--bg);
+    padding:36px 40px 44px;
+    position:relative;
+  }
+  @media (max-width:640px){ .detail{padding:28px 22px} }
+  .detail .close{
+    position:absolute;top:14px;right:14px;
+    background:transparent;border:1px solid var(--rule-strong);
+    color:var(--ink-soft);
+    font-family:var(--mono);font-size:12px;
+    padding:8px 12px;cursor:pointer;border-radius:2px;
+    min-height:36px;
+  }
+  .detail .close:hover{border-color:var(--ink);color:var(--ink)}
+
+  .detail .stage-head{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:10px;
+    padding-right:100px;
+  }
+  .detail .stage-head h2{font-size:clamp(26px,2.8vw,36px)}
+  .detail .stage-crumb{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px;
+  }
+  .detail .verdict{
+    font-family:var(--serif);font-size:18px;color:var(--ink-soft);
+    max-width:62ch;line-height:1.55;margin:18px 0 32px;
+    padding-left:16px;border-left:2px solid var(--accent);
+  }
+
+  .detail h3{
+    font-family:var(--serif);font-size:20px;font-weight:500;
+    color:var(--ink);margin:32px 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule);
+    display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  }
+  .detail h3 .count{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;font-weight:400;
+  }
+
+  /* Use-case cards */
+  .ucs{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  @media (max-width:720px){ .ucs{grid-template-columns:1fr} }
+  .uc{
+    background:var(--bg);
+    padding:22px 22px 24px;
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .uc h4{
+    font-family:var(--serif);font-size:18px;font-weight:500;color:var(--ink);
+    line-height:1.25;margin:0;
+  }
+  .uc .goal{
+    font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:14px;
+    margin-top:-4px;
+  }
+  .uc .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .uc p.why{font-size:14px;color:var(--ink-soft);line-height:1.55;margin:4px 0 2px}
+  .uc .kv{
+    font-size:13px;color:var(--ink-soft);line-height:1.55;
+  }
+  .uc .kv b{
+    font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.12em;
+    color:var(--ink-mute);font-weight:500;display:block;margin-bottom:2px;
+  }
+
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:var(--sans);font-size:12px;color:var(--ink);
+    background:var(--bg-sunk);
+    border:1px solid var(--rule);
+    padding:4px 9px;border-radius:2px;
+    text-decoration:none;border-bottom:1px solid var(--rule);
+  }
+  .chip:hover{border-color:var(--ink)}
+  .chip .mat{
+    font-family:var(--mono);font-size:10px;color:var(--ink-mute);
+    text-transform:lowercase;
+  }
+
+  .sources{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
+  .src{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;color:var(--ink-soft);
+    text-decoration:none;border:0;
+  }
+  .src .badge{
+    font-family:var(--mono);font-size:9px;
+    text-transform:uppercase;letter-spacing:0.1em;
+    padding:2px 6px;border:1px solid var(--rule-strong);
+    color:var(--ink-mute);border-radius:2px;
+    background:var(--bg);
+  }
+  .src .badge.study{color:var(--accent);border-color:rgba(15,76,129,0.4)}
+  .src .badge.case_study{color:var(--green);border-color:rgba(47,133,90,0.4)}
+  .src .badge.vendor{color:var(--amber);border-color:rgba(183,121,31,0.4)}
+  .src .badge.community{color:var(--ink-mute)}
+  .src:hover{color:var(--ink)}
+
+  .detail .bullets{
+    margin:0;padding:0 0 0 20px;
+    font-size:15px;color:var(--ink-soft);line-height:1.65;
+  }
+  .detail .bullets li{margin:6px 0}
+  .detail .start-tip{
+    font-family:var(--serif);font-size:17px;line-height:1.6;color:var(--ink);
+    max-width:64ch;
+  }
+  .detail .open-link{
+    display:inline-block;margin-top:28px;
+    font-family:var(--mono);font-size:12px;
+    text-transform:uppercase;letter-spacing:0.08em;
+    color:var(--accent);
+  }
+
+  /* ------- Finder ------- */
+  .finder-wrap{padding:20px 0 80px}
+  .finder-q{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:24px;
+    padding:28px 0 36px;
+    border-bottom:1px solid var(--rule);
+  }
+  @media (max-width:720px){ .finder-q{grid-template-columns:1fr} }
+  .finder-q .q{
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .finder-q label{
+    font-family:var(--serif);font-size:18px;color:var(--ink);
+    display:flex;align-items:baseline;gap:10px;
+  }
+  .finder-q label .n{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+  }
+  .finder-q select{width:100%;min-width:0;font-size:15px}
+
+  .finder-empty{
+    padding:48px 24px;
+    text-align:center;
+    font-family:var(--serif);font-style:italic;
+    color:var(--ink-mute);
+    border:1px dashed var(--rule-strong);
+    background:var(--bg-sunk);
+    margin-top:36px;
+  }
+
+  .result{
+    margin-top:36px;
+    border:1px solid var(--rule-strong);
+    background:var(--bg);
+    padding:36px 40px 40px;
+  }
+  @media (max-width:640px){ .result{padding:28px 22px} }
+  .result .crumb{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;
+  }
+  .result h2{
+    font-size:clamp(26px,2.6vw,32px);margin-bottom:14px;
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  }
+  .result .stage-link{
+    font-family:var(--mono);font-size:12px;letter-spacing:0.06em;
+    padding-bottom:1px;
+  }
+  .result .row-top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+  .result .why{
+    font-family:var(--serif);font-size:18px;color:var(--ink-soft);
+    max-width:62ch;line-height:1.55;
+    padding-left:16px;border-left:2px solid var(--accent);
+    margin-bottom:28px;
+  }
+  .result .grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:32px;
+    padding-top:24px;border-top:1px solid var(--rule);
+  }
+  @media (max-width:720px){ .result .grid{grid-template-columns:1fr;gap:20px} }
+  .result .grid h4{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;font-weight:500;
+    margin-bottom:10px;
+  }
+  .result .grid p, .result .grid li{
+    font-size:15px;color:var(--ink);line-height:1.6;
+  }
+  .result .grid ul{margin:0;padding-left:18px}
+
+  /* ------- Views ------- */
+  .view{display:none}
+  .view.active{display:block}
+
+  /* ------- Footer ------- */
+  footer.site{
+    border-top:1px solid var(--rule);
+    padding:40px 0 60px;
+    margin-top:60px;
+    font-family:var(--mono);font-size:12px;
+    color:var(--ink-mute);
+    letter-spacing:0.04em;
+  }
+  footer.site .wrap{
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  }
+  footer.site a{color:var(--ink-soft);border-bottom-color:var(--rule-strong)}
+  footer.site a:hover{color:var(--ink)}
+
+  /* small helpers */
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a href="#atlas" class="wordmark" aria-label="Where AI Works — Startseite">
+      <span class="dot" aria-hidden="true"></span>
+      Where AI Works
+      <span class="sub">Kuratierte Referenz</span>
+    </a>
+    <nav class="site" aria-label="Hauptnavigation">
+      <a href="#atlas" data-nav="atlas" class="active">Atlas</a>
+      <a href="#finder" data-nav="finder">Finder</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================= -->
+<!-- VIEW: ATLAS                                                    -->
+<!-- ============================================================= -->
+<section id="view-atlas" class="view active">
+
+  <div class="wrap">
+    <div class="lede">
+      <div class="eyebrow">Atlas · Wertschöpfungskette</div>
+      <h1>Wo schafft AI in Softwareunternehmen heute <em>realen Mehrwert</em> — und wo nicht?</h1>
+      <p class="kicker">Eine kuratierte Orientierung für CTOs, Product Owners, Team Leads und Engineers im Mittelstand. Vier Stufen entlang der Wertschöpfung. Ehrliche Einordnung statt Hype — inklusive der Stellen, an denen AI heute noch scheitert.</p>
+      <div class="meta">
+        <span>Zuletzt aktualisiert April 2026</span>
+        <span>4 Stufen · 13 Use Cases</span>
+        <span>Open Source · MIT / CC-BY-SA</span>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <label for="role-filter">Rolle</label>
+      <select id="role-filter" aria-describedby="filter-hint">
+        <option value="all">Alle Rollen</option>
+        <option value="product">Product Manager / PO</option>
+        <option value="developer">Developer</option>
+        <option value="qa">QA Engineer</option>
+        <option value="support">Support Lead</option>
+      </select>
+      <span class="filter-hint" id="filter-hint">Nicht-passende Stufen werden abgedunkelt, bleiben aber sichtbar.</span>
+    </div>
+
+    <!-- Porter chain -->
+    <div class="chain" id="chain" role="list" aria-label="Wertschöpfungskette mit 4 Stufen">
+      <!-- stages injected by JS -->
+    </div>
+
+    <!-- Detail anchor -->
+    <div id="detail-anchor" class="detail-anchor"></div>
+    <div id="detail-empty" class="detail-empty">
+      Wähle eine Stufe, um Details zu sehen. <kbd>↵</kbd> oder <kbd>Klick</kbd> auf einen Pfeil.
+    </div>
+    <div id="detail" class="detail" hidden aria-live="polite"></div>
+  </div>
+</section>
+
+
+<!-- ============================================================= -->
+<!-- VIEW: FINDER                                                   -->
+<!-- ============================================================= -->
+<section id="view-finder" class="view">
+  <div class="wrap">
+    <div class="lede">
+      <div class="eyebrow">Finder · Kann AI mir helfen?</div>
+      <h1>Zwei Fragen. Eine ehrliche <em>Einschätzung.</em></h1>
+      <p class="kicker">Wähle deine Rolle und das, was du erreichen willst. Du bekommst die passende Stufe im Atlas, eine Eignungs-Bewertung, einen konkreten Low-Risk-Einstieg und die Grenzen, die du kennen solltest.</p>
+    </div>
+
+    <div class="finder-wrap">
+      <div class="finder-q">
+        <div class="q">
+          <label for="finder-role"><span class="n">01</span> Ich bin:</label>
+          <select id="finder-role">
+            <option value="">Rolle wählen…</option>
+            <option value="product">Product Manager / PO</option>
+            <option value="developer">Developer</option>
+            <option value="qa">QA Engineer</option>
+            <option value="support">Support Lead</option>
+          </select>
+        </div>
+        <div class="q">
+          <label for="finder-goal"><span class="n">02</span> Ich will:</label>
+          <select id="finder-goal" disabled>
+            <option value="">Zuerst Rolle wählen</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="finder-empty" class="finder-empty">
+        Wähle Rolle und Ziel, um eine Einschätzung zu erhalten.
+      </div>
+      <div id="finder-result" class="result" hidden></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>Where AI Works · Open Source · MIT + CC-BY-SA</div>
+    <div><a href="#" rel="noopener">GitHub</a> · <a href="#" rel="noopener">Mitwirken</a> · <a href="#" rel="noopener">Methodik</a></div>
+  </div>
+</footer>
+
+<!-- ============================================================= -->
+<!-- DATA + BEHAVIOR                                                -->
+<!-- ============================================================= -->
+<script>
+/* ---------- Data ---------- */
+const SUIT = {
+  green:  { label:"gut geeignet",     cls:"green"  },
+  amber:  { label:"bedingt geeignet", cls:"amber"  },
+  orange: { label:"nur Teilaufgaben", cls:"orange" },
+  red:    { label:"noch unreif",      cls:"red"    },
+};
+
+const STAGES = [
+  {
+    id:"discovery",
+    name:"Product Discovery",
+    roles:["product"],
+    suit:"amber",
+    challenge:"Feedback-Mengen wachsen schneller als die Auswertungskapazität.",
+    topUC:"Feedback-Clustering aus Interviews & Support-Tickets.",
+    verdict:"Für Synthese und Mustererkennung in unstrukturiertem Input stark — für eigenständige Produktentscheidungen zu wenig Kontext. AI liefert Entwürfe, nicht Urteile.",
+    start:"Starte mit einer klar abgegrenzten Synthese-Aufgabe: ein CSV-Export aus dem Support-Tool, ein definiertes Cluster-Ziel, ein Review-Schritt durch einen Menschen. Discovery-AI wird dann nützlich, wenn sie die PO entlastet, nicht ersetzt.",
+    limits:[
+      "PII in Rohdaten vor dem Upload entfernen.",
+      "AI kennt euren strategischen Kontext nicht — Priorisierung bleibt menschlich.",
+      "Transkript-Qualität determiniert Synthese-Qualität. Schlechter Input = schlechter Output.",
+    ],
+    useCases:[
+      {
+        id:"feedback-clustering",
+        title:"Feedback-Clustering",
+        goal:"Kundenfeedback clustern",
+        role:"product",
+        suit:"green",
+        why:"Große Textmengen thematisch gruppieren gehört zu den robustesten LLM-Fähigkeiten. Mustererkennung, kein Urteil nötig.",
+        tools:[
+          {name:"Claude", mat:"stable", url:"https://claude.com"},
+          {name:"ChatGPT", mat:"stable", url:"https://chat.openai.com"},
+          {name:"Dovetail AI", mat:"growing", url:"https://dovetail.com"},
+        ],
+        start:"CSV-Export aus dem Support-Tool in Claude, Prompt: „cluster these tickets by theme, return 5–8 themes with counts“.",
+        warn:"Datenschutz: PII vor dem Upload entfernen. Clustering ist ein Entwurf, kein Reporting-Ergebnis.",
+        sources:[
+          {label:"Dovetail: Research Synthesis Report 2025", type:"vendor"},
+          {label:"Community Benchmark (r/ProductManagement)", type:"community"},
+        ],
+      },
+      {
+        id:"prd-drafts",
+        title:"PRD-Entwürfe",
+        goal:"PRDs schneller entwerfen",
+        role:"product",
+        suit:"amber",
+        why:"Struktur und Formulierung profitieren, inhaltliche Tiefe nicht. AI produziert glatte Entwürfe, die oft am eigentlichen Problem vorbeigehen.",
+        tools:[
+          {name:"Claude", mat:"stable", url:"https://claude.com"},
+          {name:"ChatGPT", mat:"stable", url:"https://chat.openai.com"},
+        ],
+        start:"Eigenes PRD-Template als Systemprompt, Kontext-Dokumente anhängen, Entwurf generieren, anschließend vollständig überarbeiten.",
+        warn:"AI kennt euren Kontext nicht — das Ergebnis ist ein Entwurf, kein Finalisat. Gefahr: oberflächliche PRDs, die plausibel klingen.",
+        sources:[
+          {label:"Lenny's Newsletter: AI in PM Workflows", type:"community"},
+        ],
+      },
+      {
+        id:"interview-synthesis",
+        title:"Interview-Synthese",
+        goal:"Kundeninterviews auswerten",
+        role:"product",
+        suit:"green",
+        why:"Transkription + Themen-Extraktion ist heute gelöst. Die Zeit zwischen Interview und nutzbarer Einsicht sinkt von Tagen auf Stunden.",
+        tools:[
+          {name:"Otter.ai", mat:"stable", url:"https://otter.ai"},
+          {name:"Grain", mat:"stable", url:"https://grain.com"},
+          {name:"Dovetail AI", mat:"growing", url:"https://dovetail.com"},
+        ],
+        start:"Otter für automatische Transkripte, dann Claude mit einem festen Synthese-Prompt pro Interview-Runde.",
+        warn:"Bei heiklen Interviews (Kunden-Compliance, Gesundheit) lokale Transkription bevorzugen.",
+        sources:[
+          {label:"Teresa Torres: Continuous Discovery Habits (AI Update 2025)", type:"case_study"},
+        ],
+      },
+    ],
+  },
+  {
+    id:"development",
+    name:"Development",
+    roles:["developer"],
+    suit:"green",
+    challenge:"Produktivitätsgewinn ist real, aber kontextabhängig — kein universeller 10x-Effekt.",
+    topUC:"Code-Completion und Multi-File-Änderungen.",
+    verdict:"Für Boilerplate, Verständnis und kleinere Änderungen inzwischen Standardwerkzeug. Bei architektonischen Entscheidungen und komplexer Logik bleibt der Mensch im Lead.",
+    start:"Nicht mit Agenten beginnen. Aktiviere zunächst nur Inline-Completion in der IDE, messe eure tatsächlichen Zyklen-Zeiten über 4 Wochen, dann entscheidet ihr über Chat- und Multi-File-Features.",
+    limits:[
+      "20–30 % Produktivitätsgewinn ist realistisch, 10x-Versprechen halten keinem Audit stand.",
+      "Review-Disziplin wichtiger denn je — Halluzinationen sind plausibel formuliert.",
+      "Senior-Engineers profitieren anders als Junior-Engineers. Messt rollenspezifisch.",
+    ],
+    useCases:[
+      {
+        id:"code-completion",
+        title:"Code-Completion",
+        goal:"Code schneller schreiben",
+        role:"developer",
+        suit:"green",
+        why:"Autocomplete für bekannte Patterns ist die konsistenteste Win-Zone. Niedriges Risiko, unmittelbarer Gewinn.",
+        tools:[
+          {name:"GitHub Copilot", mat:"stable", url:"https://github.com/features/copilot"},
+          {name:"Cursor", mat:"stable", url:"https://cursor.com"},
+        ],
+        start:"Copilot in der IDE aktivieren, zunächst nur Autocomplete, keine Agent-Features. Nach 2 Wochen Team-Feedback einholen.",
+        warn:"20–30 % Produktivitätsgewinn realistisch, nicht 10x. Review bleibt zwingend.",
+        sources:[
+          {label:"GitHub: Research on Copilot Productivity (2024)", type:"study"},
+          {label:"DORA Report 2025", type:"study"},
+        ],
+      },
+      {
+        id:"multi-file",
+        title:"Multi-File-Änderungen",
+        goal:"Größere Refactorings vornehmen",
+        role:"developer",
+        suit:"amber",
+        why:"Agentische Änderungen über mehrere Dateien funktionieren in isolierten Modulen gut — bei verwobener Logik steigt die Halluzinationsrate deutlich.",
+        tools:[
+          {name:"Cursor", mat:"stable", url:"https://cursor.com"},
+          {name:"Claude Code", mat:"growing", url:"https://claude.com/code"},
+        ],
+        start:"Kleine, klar abgegrenzte Refactorings in einem einzelnen Modul. Human Review zwingend, Tests müssen grün sein, bevor gemerged wird.",
+        warn:"Halluzinationen bei komplexer Business-Logik. Lieber mehrere kleine Agent-Runs als einen großen.",
+        sources:[
+          {label:"Anthropic: Claude Code Evaluations", type:"vendor"},
+          {label:"r/ExperiencedDevs: Agent Case Reports", type:"community"},
+        ],
+      },
+      {
+        id:"legacy-analysis",
+        title:"Legacy-Code-Analyse",
+        goal:"Legacy-Code verstehen",
+        role:"developer",
+        suit:"green",
+        why:"Große Kontextfenster sind ideal, um fremden Code zu erklären. „Was macht dieses Modul?“ ist heute eine Drei-Minuten-Frage.",
+        tools:[
+          {name:"Claude Code", mat:"growing", url:"https://claude.com/code"},
+          {name:"Cursor", mat:"stable", url:"https://cursor.com"},
+        ],
+        start:"„Erklär mir dieses Modul“ — ganzes Verzeichnis in den Kontext laden. Großer Kontext-Window nutzt die Stärken von Claude.",
+        warn:"Erklärungen klingen überzeugend, sind aber manchmal leicht falsch. Bei sicherheitskritischem Code immer gegenprüfen.",
+        sources:[
+          {label:"Anthropic: Context-Window Benchmarks", type:"vendor"},
+        ],
+      },
+      {
+        id:"unit-tests",
+        title:"Unit-Test-Generierung",
+        goal:"Unit-Tests generieren lassen",
+        role:"developer",
+        suit:"green",
+        why:"Happy-Path-Tests aus bestehendem Code sind eine der zuverlässigsten AI-Aufgaben. Coverage steigt ohne großen Zeitaufwand.",
+        tools:[
+          {name:"GitHub Copilot", mat:"stable", url:"https://github.com/features/copilot"},
+          {name:"Claude", mat:"stable", url:"https://claude.com"},
+        ],
+        start:"Copilot Chat in der IDE, „generate unit tests for this function“. Edge Cases danach manuell ergänzen.",
+        warn:"AI deckt gern den Happy Path ab und übersieht Edge Cases. Coverage-Metrik allein ist keine Qualität.",
+        sources:[
+          {label:"GitHub: Copilot for Testing (2025)", type:"vendor"},
+        ],
+      },
+    ],
+  },
+  {
+    id:"qa",
+    name:"Testing & QA",
+    roles:["qa"],
+    suit:"green",
+    challenge:"Test-Maintenance kostet enorm viel Zeit — AI kann hier massiv entlasten.",
+    topUC:"Testfall-Generierung aus User Stories oder bestehendem Code.",
+    verdict:"Maintenance, Selector-Heilung und Testfall-Generierung sind heute die klarsten AI-Win-Zonen. Aber: Happy Path dominiert, Edge Cases und Exploratory Testing bleiben menschlich.",
+    start:"Beginne mit Visual Regression in einem klar umrissenen Produktbereich, am besten dem Login- oder Checkout-Flow. Schnelle Rückmeldung, wenig Stakeholder, klarer ROI nach einem Sprint.",
+    limits:[
+      "Happy-Path-Dominanz: Edge Cases und negative Tests brauchen weiterhin Menschen.",
+      "Self-healing repariert Selector-Drift, nicht Logikänderungen. Grüne Tests können falsche Sicherheit sein.",
+      "Exploratory Testing, Usability Testing, Security Testing bleiben außerhalb des AI-Scopes.",
+    ],
+    useCases:[
+      {
+        id:"test-generation",
+        title:"Testfall-Generierung",
+        goal:"Tests schneller erstellen",
+        role:"qa",
+        suit:"green",
+        why:"Aus User Stories oder bestehendem Code BDD-Tests zu erzeugen ist das am besten belegte Testing-AI-Szenario. RedHat berichtet von 10x schnellerer Test-Erstellung.",
+        tools:[
+          {name:"BlinqIO", mat:"growing", url:"https://blinq.io"},
+          {name:"GitHub Copilot", mat:"stable", url:"https://github.com/features/copilot"},
+        ],
+        start:"BDD-Tests aus User Stories mit BlinqIO. Start in einem klar abgegrenzten Feature-Bereich.",
+        warn:"Happy Path dominiert. Edge Cases, Negative Tests und Datenvariationen brauchen menschliche Ergänzung.",
+        sources:[
+          {label:"RedHat Case Study: BlinqIO Adoption", type:"case_study"},
+          {label:"World Quality Report 2025", type:"study"},
+        ],
+      },
+      {
+        id:"visual-regression",
+        title:"Visual Regression",
+        goal:"UI-Fehler automatisch erkennen",
+        role:"qa",
+        suit:"green",
+        why:"Pixel-Diffing mit intelligentem Noise-Filter ist mittlerweile ein stabiles Handwerkszeug. Weniger False Positives als klassisches Screenshot-Testing.",
+        tools:[
+          {name:"Applitools", mat:"stable", url:"https://applitools.com"},
+          {name:"Percy", mat:"stable", url:"https://percy.io"},
+        ],
+        start:"Applitools Eyes in CI integrieren, zunächst nur auf kritischen Flows (Login, Checkout).",
+        warn:"Anfangs hoher Review-Aufwand durch Baselines. Erst nach 2–3 Release-Zyklen wird die Signal-Rate gut.",
+        sources:[
+          {label:"Applitools: State of Visual Testing 2025", type:"vendor"},
+        ],
+      },
+      {
+        id:"self-healing",
+        title:"Self-healing Tests",
+        goal:"Weniger Zeit mit kaputten Tests",
+        role:"qa",
+        suit:"green",
+        why:"Selector-Drift — die Hauptursache für brüchige E2E-Suites — lässt sich mit AI-Heuristik gut kompensieren. Maintenance-Zeit sinkt messbar.",
+        tools:[
+          {name:"Mabl", mat:"stable", url:"https://mabl.com"},
+          {name:"BlinqIO", mat:"growing", url:"https://blinq.io"},
+        ],
+        start:"Mabl für einen E2E-Flow als Pilot aufsetzen, gegen bestehende Suite laufen lassen, Flake-Rate vergleichen.",
+        warn:"Behebt Selector-Drift, nicht Logikänderungen. Ein „grüner\u201c Self-healed Test kann einen echten Bug übersehen.",
+        sources:[
+          {label:"Mabl: Customer Reports", type:"vendor"},
+          {label:"Ministry of Testing Community Threads", type:"community"},
+        ],
+      },
+    ],
+  },
+  {
+    id:"support",
+    name:"Customer Support",
+    roles:["support"],
+    suit:"green",
+    challenge:"Volumen steigt, Antwortzeiten stehen unter Druck, L1-Tickets sind repetitiv.",
+    topUC:"Ticket-Deflection via Self-Service + Antwortvorschläge.",
+    verdict:"Die reifste AI-Domäne im Softwareunternehmen. Messbare Deflection-Raten, klare ROI-Rechnung — vorausgesetzt, die Knowledge Base ist gepflegt.",
+    start:"Bevor ein Bot live geht: Knowledge Base auditieren. Drei Kategorien mit je 80 % gleicher Kundenanfrage identifizieren, dort mit Antwortvorschlägen für Agents starten — nicht direkt mit öffentlichem Bot.",
+    limits:[
+      "Qualität hängt 1:1 an der Knowledge Base. „Garbage in, garbage out\u201c gilt hier besonders.",
+      "Tonfall und Eskalationslogik sind markenprägend — nicht blind dem Tool überlassen.",
+      "Halluzinationen in Support-Antworten sind kundenwirksam. Retrieval-Grounding ist Pflicht, nicht optional.",
+    ],
+    useCases:[
+      {
+        id:"suggested-replies",
+        title:"Antwortvorschläge",
+        goal:"Schneller antworten können",
+        role:"support",
+        suit:"green",
+        why:"Agent-assistierte Antworten reduzieren Handling Time ohne die Kundenwahrnehmung zu verändern. Risiko bleibt niedrig, weil ein Mensch freigibt.",
+        tools:[
+          {name:"Intercom Fin", mat:"stable", url:"https://intercom.com/fin"},
+          {name:"Zendesk AI", mat:"stable", url:"https://zendesk.com/ai"},
+        ],
+        start:"Intercom Fin als L1-Antwortvorschlag-Assistent aufsetzen. Agent bestätigt oder editiert vor dem Senden.",
+        warn:"Ohne gepflegte Macros und KB bleibt der Vorschlag mittelmäßig. Agents abschalten dürfen — nicht gezwungen fühlen.",
+        sources:[
+          {label:"Intercom: Fin Benchmarks 2025", type:"vendor"},
+          {label:"Support Driven Community Survey", type:"community"},
+        ],
+      },
+      {
+        id:"ticket-routing",
+        title:"Ticket-Routing",
+        goal:"Tickets automatisch zuordnen",
+        role:"support",
+        suit:"green",
+        why:"Klassifikation auf wenige Hauptkategorien ist eine klassische NLP-Aufgabe mit stabilen Ergebnissen. Wartet auf keinen LLM-Hype.",
+        tools:[
+          {name:"Zendesk AI", mat:"stable", url:"https://zendesk.com/ai"},
+          {name:"eesel AI", mat:"growing", url:"https://eesel.ai"},
+        ],
+        start:"Klassifikation auf 3–5 Hauptkategorien trainieren. Mit historischen Tickets validieren, bevor Live-Routing aktiviert wird.",
+        warn:"Edge-Kategorien und neue Produkte müssen regelmäßig nachtrainiert werden, sonst landet alles im „Sonstiges\u201c-Topf.",
+        sources:[
+          {label:"Zendesk: AI Classification Benchmarks", type:"vendor"},
+        ],
+      },
+      {
+        id:"deflection",
+        title:"Self-Service / Deflection",
+        goal:"Tickets vermeiden",
+        role:"support",
+        suit:"green",
+        why:"Retrieval-gestützte Bots auf einer guten Knowledge Base lenken einen erheblichen Teil der L1-Anfragen ab — bevor sie Agents erreichen.",
+        tools:[
+          {name:"Intercom Fin", mat:"stable", url:"https://intercom.com/fin"},
+          {name:"Kapa.ai", mat:"growing", url:"https://kapa.ai"},
+        ],
+        start:"Knowledge Base auditieren, dann Fin auf Top-3-Themen begrenzt ausrollen. Deflection-Rate pro Thema messen.",
+        warn:"Nur so gut wie die Docs. Ohne KB-Pflege fällt die Deflection-Rate nach wenigen Monaten.",
+        sources:[
+          {label:"Intercom Reports: Deflection 40–80 % bei gepflegter KB", type:"case_study"},
+          {label:"Kapa.ai: Customer Outcomes", type:"vendor"},
+        ],
+      },
+    ],
+  },
+];
+
+/* ---------- Helpers ---------- */
+const $ = (s, r=document)=>r.querySelector(s);
+const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
+const escapeHTML = s => String(s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+
+function pillHTML(suitKey, size=""){
+  const s = SUIT[suitKey];
+  return `<span class="pill ${s.cls} ${size}" role="status"><span class="dot" aria-hidden="true"></span>${s.label}</span>`;
+}
+
+function chipsHTML(tools){
+  return `<div class="chips">${tools.map(t=>`
+    <a class="chip" href="${escapeHTML(t.url)}" target="_blank" rel="noopener">
+      ${escapeHTML(t.name)} <span class="mat">(${escapeHTML(t.mat)})</span>
+    </a>`).join("")}</div>`;
+}
+
+function sourcesHTML(srcs){
+  return `<div class="sources">${srcs.map(s=>`
+    <span class="src"><span class="badge ${s.type}">${s.type.replace("_"," ")}</span>${escapeHTML(s.label)}</span>
+  `).join("")}</div>`;
+}
+
+/* ---------- Atlas chain ---------- */
+function renderChain(){
+  const root = $("#chain");
+  root.innerHTML = STAGES.map((st, i)=>`
+    <button class="stage" role="listitem" data-stage="${st.id}" data-roles="${st.roles.join(',')}" aria-expanded="false">
+      <span class="arrow">
+        <span class="idx">Stufe ${String(i+1).padStart(2,"0")}</span>
+        <span class="name">${escapeHTML(st.name)}</span>
+        <span class="pill-row">${pillHTML(st.suit)}</span>
+        <span class="challenge">${escapeHTML(st.challenge)}</span>
+        <span class="topuc">Top Use Case<b>${escapeHTML(st.topUC)}</b></span>
+      </span>
+    </button>
+  `).join("");
+
+  $$(".stage", root).forEach(el=>{
+    el.addEventListener("click", ()=> openStage(el.dataset.stage));
+    el.addEventListener("keydown", e=>{
+      if(e.key==="Enter"||e.key===" "){e.preventDefault();openStage(el.dataset.stage)}
+    });
+  });
+}
+
+function openStage(id){
+  const st = STAGES.find(s=>s.id===id);
+  if(!st) return;
+
+  $$(".stage").forEach(el=> el.classList.toggle("active", el.dataset.stage===id));
+  $$(".stage").forEach(el=> el.setAttribute("aria-expanded", el.dataset.stage===id ? "true":"false"));
+
+  const d = $("#detail");
+  $("#detail-empty").hidden = true;
+  d.hidden = false;
+
+  d.innerHTML = `
+    <button class="close" id="detail-close" aria-label="Detailbereich schließen">✕ Schließen</button>
+    <div class="stage-crumb">Atlas · Stage-Detail</div>
+    <div class="stage-head">
+      <h2>${escapeHTML(st.name)}</h2>
+      ${pillHTML(st.suit,"lg")}
+    </div>
+    <p class="verdict">${escapeHTML(st.verdict)}</p>
+
+    <h3>Use Cases <span class="count">${st.useCases.length} Einträge</span></h3>
+    <div class="ucs">
+      ${st.useCases.map(uc=>`
+        <article class="uc">
+          <h4>${escapeHTML(uc.title)}</h4>
+          <div class="goal">„${escapeHTML(uc.goal)}"</div>
+          <div class="row">${pillHTML(uc.suit)}</div>
+          <p class="why">${escapeHTML(uc.why)}</p>
+          <div class="kv"><b>Tools</b>${chipsHTML(uc.tools)}</div>
+          <div class="kv"><b>Einstieg</b>${escapeHTML(uc.start)}</div>
+          <div class="kv"><b>Vorsicht</b>${escapeHTML(uc.warn)}</div>
+          <div class="kv"><b>Quellen</b>${sourcesHTML(uc.sources)}</div>
+        </article>
+      `).join("")}
+    </div>
+
+    <h3>Womit anfangen?</h3>
+    <p class="start-tip">${escapeHTML(st.start)}</p>
+
+    <h3>Grenzen</h3>
+    <ul class="bullets">
+      ${st.limits.map(l=>`<li>${escapeHTML(l)}</li>`).join("")}
+    </ul>
+
+    <a class="open-link" href="#">→ Eigene Seite öffnen</a>
+  `;
+
+  $("#detail-close").addEventListener("click", closeStage);
+
+  // Smooth scroll to the detail anchor
+  const anchor = $("#detail-anchor");
+  const y = anchor.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
+
+function closeStage(){
+  $$(".stage").forEach(el=>{
+    el.classList.remove("active");
+    el.setAttribute("aria-expanded","false");
+  });
+  $("#detail").hidden = true;
+  $("#detail").innerHTML = "";
+  $("#detail-empty").hidden = false;
+}
+
+/* ---------- Role filter ---------- */
+function applyRoleFilter(role){
+  $$(".stage").forEach(el=>{
+    const roles = (el.dataset.roles||"").split(",").filter(Boolean);
+    const match = role === "all" || roles.includes(role);
+    el.classList.toggle("dimmed", !match);
+  });
+}
+
+/* ---------- Finder ---------- */
+function buildGoals(role){
+  // Collect use cases for this role across stages
+  const goals = [];
+  STAGES.forEach(st=>{
+    st.useCases.forEach(uc=>{
+      if(uc.role === role){
+        goals.push({
+          id: uc.id,
+          label: uc.goal,
+          stageId: st.id,
+          uc,
+        });
+      }
+    });
+  });
+  return goals;
+}
+
+function renderFinderResult(role, goalId){
+  const goals = buildGoals(role);
+  const entry = goals.find(g=>g.id===goalId);
+  if(!entry){
+    $("#finder-result").hidden = true;
+    $("#finder-empty").hidden = false;
+    return;
+  }
+  const st = STAGES.find(s=>s.id===entry.stageId);
+  const uc = entry.uc;
+
+  $("#finder-empty").hidden = true;
+  const r = $("#finder-result");
+  r.hidden = false;
+  r.innerHTML = `
+    <div class="crumb">Ergebnis · Finder</div>
+    <h2>
+      ${escapeHTML(uc.title)}
+      <a class="stage-link" href="#atlas" data-go-stage="${st.id}">→ Im Atlas anzeigen</a>
+    </h2>
+    <div class="row-top">
+      ${pillHTML(uc.suit,"lg")}
+      <span class="pill" style="color:var(--ink-soft)"><span class="dot" style="background:var(--accent)" aria-hidden="true"></span>Stufe: ${escapeHTML(st.name)}</span>
+    </div>
+    <p class="why">${escapeHTML(uc.why)}</p>
+
+    <div class="grid">
+      <div>
+        <h4>Empfohlene Tools</h4>
+        ${chipsHTML(uc.tools)}
+
+        <h4 style="margin-top:24px">Womit anfangen?</h4>
+        <p>${escapeHTML(uc.start)}</p>
+      </div>
+      <div>
+        <h4>Vorsicht / Grenzen</h4>
+        <p>${escapeHTML(uc.warn)}</p>
+
+        <h4 style="margin-top:24px">Quellen</h4>
+        ${sourcesHTML(uc.sources)}
+      </div>
+    </div>
+  `;
+
+  const link = $("[data-go-stage]", r);
+  if(link){
+    link.addEventListener("click", e=>{
+      e.preventDefault();
+      navigate("atlas");
+      setTimeout(()=> openStage(st.id), 60);
+    });
+  }
+}
+
+function wireFinder(){
+  const roleSel = $("#finder-role");
+  const goalSel = $("#finder-goal");
+
+  roleSel.addEventListener("change", ()=>{
+    const role = roleSel.value;
+    $("#finder-result").hidden = true;
+    $("#finder-empty").hidden = false;
+
+    if(!role){
+      goalSel.disabled = true;
+      goalSel.innerHTML = `<option value="">Zuerst Rolle wählen</option>`;
+      return;
+    }
+    const goals = buildGoals(role);
+    goalSel.disabled = false;
+    goalSel.innerHTML =
+      `<option value="">Ziel wählen…</option>` +
+      goals.map(g=>`<option value="${escapeHTML(g.id)}">${escapeHTML(g.label)}</option>`).join("");
+  });
+
+  goalSel.addEventListener("change", ()=>{
+    if(!goalSel.value){
+      $("#finder-result").hidden = true;
+      $("#finder-empty").hidden = false;
+      return;
+    }
+    renderFinderResult(roleSel.value, goalSel.value);
+  });
+}
+
+/* ---------- View switch ---------- */
+function navigate(view){
+  const valid = view === "finder" ? "finder" : "atlas";
+  $$(".view").forEach(v=> v.classList.remove("active"));
+  $(`#view-${valid}`).classList.add("active");
+  $$("nav.site a").forEach(a=>{
+    a.classList.toggle("active", a.dataset.nav === valid);
+  });
+  if(location.hash.replace("#","") !== valid){
+    history.replaceState(null, "", `#${valid}`);
+  }
+  window.scrollTo({ top:0, behavior:"instant" in window ? "instant" : "auto" });
+}
+
+function wireNav(){
+  $$("nav.site a, .wordmark").forEach(a=>{
+    a.addEventListener("click", e=>{
+      const href = a.getAttribute("href") || "";
+      if(href.startsWith("#")){
+        e.preventDefault();
+        navigate(href.replace("#",""));
+      }
+    });
+  });
+  window.addEventListener("hashchange", ()=>{
+    navigate(location.hash.replace("#",""));
+  });
+}
+
+/* ---------- Init ---------- */
+function init(){
+  renderChain();
+  wireFinder();
+  wireNav();
+
+  $("#role-filter").addEventListener("change", e=> applyRoleFilter(e.target.value));
+
+  // respect initial hash
+  const initial = location.hash.replace("#","");
+  if(initial === "finder") navigate("finder");
+  else navigate("atlas");
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
