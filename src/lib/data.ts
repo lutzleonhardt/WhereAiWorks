@@ -17,6 +17,15 @@ export type ToolEntry = {
   pricing?: string;
 };
 
+export type SourceType = 'study' | 'case_study' | 'vendor' | 'community';
+
+export type SourceEntry = {
+  id: string;
+  label: string;
+  url?: string;
+  type: SourceType;
+};
+
 function readYaml<T>(relPath: string): T {
   const abs = resolve(process.cwd(), relPath);
   return yaml.load(readFileSync(abs, 'utf8')) as T;
@@ -28,4 +37,8 @@ export function loadRoles(): RoleEntry[] {
 
 export function loadTools(): ToolEntry[] {
   return readYaml<ToolEntry[]>('src/data/tools.yaml');
+}
+
+export function loadSources(): SourceEntry[] {
+  return readYaml<SourceEntry[]>('src/data/sources.yaml');
 }

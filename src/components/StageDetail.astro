@@ -10,22 +10,41 @@ type ToolEntry = {
   pricing?: string;
 };
 
+type SourceEntry = {
+  id: string;
+  label: string;
+  url?: string;
+  type: 'study' | 'case_study' | 'vendor' | 'community';
+};
+
+type ResolvedSource = { label: string; url?: string; type: string };
+
 interface Props {
   stage: CollectionEntry<'stages'>;
   useCases: CollectionEntry<'use_cases'>[];
   tools: ToolEntry[];
+  sources: SourceEntry[];
   standalone?: boolean;
 }
 
-const { stage, useCases: useCaseEntries, tools, standalone = false } = Astro.props;
+const { stage, useCases: useCaseEntries, tools, sources, standalone = false } = Astro.props;
 const { Content } = await stage.render();
 
 const toolsById = new Map(tools.map((t) => [t.id, t] as const));
+const sourcesById = new Map(sources.map((s) => [s.id, s] as const));
 
 const maturityLabels: Record<string, string> = {
   production: 'stable',
   experimental: 'growing',
 };
+
+const resolveSources = (
+  refs: readonly { id: string }[] | undefined
+): ResolvedSource[] =>
+  (refs ?? [])
+    .map((r) => sourcesById.get(r.id))
+    .filter((s): s is SourceEntry => Boolean(s))
+    .map(({ label, url, type }) => ({ label, url, type }));
 
 const useCases = useCaseEntries.map((entry) => entry.data);
 ---
@@ -42,7 +61,9 @@ const useCases = useCaseEntries.map((entry) => entry.data);
       <span class="count">{useCases.length} Einträge</span>
     </h3>
     <ul class="ucs">
-      {useCases.map((uc) => (
+      {useCases.map((uc) => {
+        const ucSources = resolveSources(uc.sources);
+        return (
         <li class="uc">
           <h4>{uc.title}</h4>
           <div class="goal">„{uc.goal_label}"</div>
@@ -53,34 +74,57 @@ const useCases = useCaseEntries.map((entry) => entry.data);
 
           <div class="kv">
             <b>Tools</b>
-            <div class="chips">
+            <ul class="tool-entries">
               {uc.tools.map((entry) => {
                 const tool = toolsById.get(entry.id);
                 if (!tool) return null;
+                const toolSources = resolveSources(entry.sources);
                 return (
-                  <a
-                    class="chip"
-                    href={tool.url}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    {tool.name}
-                    <span class="mat">({maturityLabels[tool.maturity]})</span>
-                    {entry.note && <span class="chip-note"> — {entry.note}</span>}
-                  </a>
+                  <li class="tool-entry">
+                    <div class="tool-head">
+                      <a
+                        class="chip"
+                        href={tool.url}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        {tool.name}
+                        <span class="mat">({maturityLabels[tool.maturity]})</span>
+                      </a>
+                      {entry.fit && <SuitabilityBadge suitability={entry.fit} />}
+                    </div>
+                    {entry.note && <p class="tool-note">{entry.note}</p>}
+                    {toolSources.length > 0 && (
+                      <div class="sources">
+                        {toolSources.map((s) => (
+                          s.url ? (
+                            <a class="src" href={s.url} rel="noreferrer" target="_blank">
+                              <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                              {s.label}
+                            </a>
+                          ) : (
+                            <span class="src">
+                              <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                              {s.label}
+                            </span>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </li>
                 );
               })}
-            </div>
+            </ul>
           </div>
 
           <div class="kv"><b>Einstieg</b>{uc.start_here}</div>
           <div class="kv"><b>Vorsicht</b>{uc.caveats}</div>
 
-          {uc.sources.length > 0 && (
+          {ucSources.length > 0 && (
             <div class="kv">
               <b>Quellen</b>
               <div class="sources">
-                {uc.sources.map((s) => (
+                {ucSources.map((s) => (
                   s.url ? (
                     <a class="src" href={s.url} rel="noreferrer" target="_blank">
                       <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
@@ -97,7 +141,8 @@ const useCases = useCaseEntries.map((entry) => entry.data);
             </div>
           )}
         </li>
-      ))}
+        );
+      })}
     </ul>
   </section>
 

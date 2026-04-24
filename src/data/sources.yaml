@@ -1,0 +1,34 @@
+- id: metr-rct-2025
+  label: "METR RCT 2025 — Produktivitätseffekte von AI-Coding-Tools"
+  url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+  type: study
+
+- id: anthropic-claude-code-best-practices
+  label: "Anthropic Engineering — Claude Code Best Practices"
+  url: "https://www.anthropic.com/engineering/claude-code-best-practices"
+  type: vendor
+
+- id: intercom-fin-product
+  label: "Intercom Fin — Product Page"
+  url: "https://www.intercom.com/fin"
+  type: vendor
+
+- id: dovetail-ai-analysis
+  label: "Dovetail — AI Analysis"
+  url: "https://dovetail.com/product/ai/"
+  type: vendor
+
+- id: mabl-platform-docs
+  label: "Mabl Platform Documentation"
+  url: "https://www.mabl.com/features"
+  type: vendor
+
+- id: redhat-blinqio-case-study
+  label: "RedHat Case Study: BlinqIO-Integration"
+  url: "https://www.blinq.io/case-studies/red-hat"
+  type: case_study
+
+- id: applitools-customer-reports
+  label: "Applitools Customer Reports"
+  url: "https://applitools.com/customers/"
+  type: vendor

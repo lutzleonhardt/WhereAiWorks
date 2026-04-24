@@ -11,6 +11,12 @@ type ToolEntry = {
   maturity: 'production' | 'experimental';
   pricing?: string;
 };
+type SourceEntry = {
+  id: string;
+  label: string;
+  url?: string;
+  type: 'study' | 'case_study' | 'vendor' | 'community';
+};
 
 const roles = yaml.load(
   readFileSync(new URL('../data/roles.yaml', import.meta.url), 'utf8')
@@ -20,19 +26,26 @@ const tools = yaml.load(
   readFileSync(new URL('../data/tools.yaml', import.meta.url), 'utf8')
 ) as ToolEntry[];
 
+const sources = yaml.load(
+  readFileSync(new URL('../data/sources.yaml', import.meta.url), 'utf8')
+) as SourceEntry[];
+
 const roleIds = roles.map((r) => r.id) as [string, ...string[]];
 const toolIds = tools.map((t) => t.id) as [string, ...string[]];
+const sourceIds = sources.map((s) => s.id) as [string, ...string[]];
 
 const roleEnum = z.enum(roleIds);
 const toolIdEnum = z.enum(toolIds);
+const sourceIdEnum = z.enum(sourceIds);
 
 const suitabilityEnum = z.enum(['good_fit', 'conditional', 'partial', 'immature']);
-const sourceTypeEnum = z.enum(['study', 'case_study', 'vendor', 'community']);
 
-const sourceSchema = z.object({
-  label: z.string(),
-  url: z.string().url().optional(),
-  type: sourceTypeEnum,
+// Source-Referenz im Use-Case-Frontmatter: nur `id` (Pflicht) + optionale
+// kontextuelle `note`. Label, URL und Typ kommen zentral aus
+// `src/data/sources.yaml` und werden im Rendering aufgelöst.
+const sourceRefSchema = z.object({
+  id: sourceIdEnum,
+  note: z.string().optional(),
 });
 
 // Tool-Eintrag im Kontext eines Use Cases.
@@ -45,7 +58,7 @@ const useCaseToolSchema = z.object({
   id: toolIdEnum,
   fit: suitabilityEnum.optional(),
   note: z.string().optional(),
-  sources: z.array(sourceSchema).optional(),
+  sources: z.array(sourceRefSchema).optional(),
 });
 
 const useCaseSchema = z.object({
@@ -59,7 +72,7 @@ const useCaseSchema = z.object({
   tools: z.array(useCaseToolSchema),
   start_here: z.string(),
   caveats: z.string(),
-  sources: z.array(sourceSchema),
+  sources: z.array(sourceRefSchema),
 });
 
 const stages = defineCollection({

@@ -14,10 +14,6 @@ tools:
 start_here: "BlinqIO: BDD-Tests aus User Stories generieren. Alternativ: Copilot für Unit-Tests aus bestehendem Code — niedrigere Einstiegshürde, keine neue Toolchain."
 caveats: "Human Review empfohlen. Generierte Tests decken primär Happy Path ab — Edge Cases und Sicherheits-Tests brauchen menschliche Expertise."
 sources:
-  - label: "RedHat Case Study: BlinqIO-Integration"
-    url: "https://www.blinq.io/case-studies/red-hat"
-    type: "case_study"
-  - label: "METR RCT 2025: Produktivitätseffekte von AI-Coding-Tools"
-    url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
-    type: "study"
+  - id: redhat-blinqio-case-study
+  - id: metr-rct-2025
 ---

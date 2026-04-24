@@ -12,16 +12,12 @@ tools:
     fit: "good_fit"
     note: "Navigiert die Codebase aktiv und schlägt zusammenhängende Patches vor; kann Tests ausführen und Ergebnis verifizieren."
     sources:
-      - label: "Anthropic Engineering — Claude Code Best Practices"
-        url: "https://www.anthropic.com/engineering/claude-code-best-practices"
-        type: "vendor"
+      - id: anthropic-claude-code-best-practices
   - id: cursor
     note: "Composer-Modus für Mehr-Datei-Änderungen in der IDE — weniger autonom als Claude Code, näher am klassischen Edit-Workflow."
   - id: copilot
 start_here: "Claude Code an einem klar umrissenen Refactoring testen (z.B. API-Umbenennung in einem Service). Ergebnis als PR reviewen — nicht blind übernehmen."
 caveats: "Qualität skaliert mit Test-Abdeckung. Ohne Tests wird aus AI-Refactoring schnell ein nicht-deterministischer Bug-Generator."
 sources:
-  - label: "METR RCT 2025"
-    url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
-    type: "study"
+  - id: metr-rct-2025
 ---

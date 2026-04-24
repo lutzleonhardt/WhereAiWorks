@@ -3,10 +3,11 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StageCard from '../components/StageCard.astro';
 import StageDetail from '../components/StageDetail.astro';
-import { loadRoles, loadTools } from '../lib/data';
+import { loadRoles, loadSources, loadTools } from '../lib/data';
 
 const roles = loadRoles();
 const tools = loadTools();
+const sources = loadSources();
 
 const stages = (await getCollection('stages')).sort(
   (a, b) => a.data.order - b.data.order
@@ -87,6 +88,7 @@ const useCaseCount = allUseCases.length;
               stage={stage}
               useCases={useCasesByStage.get(stage.slug) ?? []}
               tools={tools}
+              sources={sources}
             />
           </section>
         ))}

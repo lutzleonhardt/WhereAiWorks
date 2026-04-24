@@ -13,7 +13,5 @@ tools:
 start_here: "GitHub Copilot in der IDE aktivieren. Für einen ersten Monat bewusst einsetzen und eigenes Produktivitätsgefühl beobachten, bevor größere Workflows daran hängen."
 caveats: "Übermäßiges Vertrauen in Generiertes ohne Review ist das Hauptrisiko. Realistische Erwartung: 20–30% subjektiv, kein 10x."
 sources:
-  - label: "METR RCT 2025"
-    url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
-    type: "study"
+  - id: metr-rct-2025
 ---

@@ -13,7 +13,5 @@ tools:
 start_here: "Dovetail mit bestehenden Interview-Transkripten füttern. Automatische Tag-Vorschläge akzeptieren oder kuratieren — schneller als bei Null anzufangen."
 caveats: "Qualität hängt an der Transkript-Qualität. Kategorisierung muss vom Produktteam validiert werden; das Modell kennt die Produktrealität nicht."
 sources:
-  - label: "Dovetail — AI Analysis"
-    url: "https://dovetail.com/product/ai/"
-    type: "vendor"
+  - id: dovetail-ai-analysis
 ---

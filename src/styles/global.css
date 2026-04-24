@@ -558,6 +558,42 @@ a.chip,
   font-size: 11px;
 }
 
+.tool-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tool-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 2px 0 2px 12px;
+  border-left: 2px solid var(--rule);
+}
+.tool-entry:hover { border-left-color: var(--rule-strong); }
+.tool-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tool-note {
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+}
+.tool-entry .sources {
+  margin-top: 2px;
+  gap: 8px;
+}
+.tool-entry .src { font-size: 11px; }
+.tool-entry .src .badge { font-size: 8.5px; padding: 1px 5px; }
+
 .sources {
   display: flex;
   gap: 10px;

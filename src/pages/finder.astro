@@ -1,11 +1,13 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { loadRoles, loadTools } from '../lib/data';
+import { loadRoles, loadSources, loadTools } from '../lib/data';
 
 const roles = loadRoles();
 const tools = loadTools();
+const sources = loadSources();
 const toolsById = new Map(tools.map((t) => [t.id, t] as const));
+const sourcesById = new Map(sources.map((s) => [s.id, s] as const));
 
 const suitabilityColor: Record<string, string> = {
   good_fit: 'green',
@@ -64,12 +66,16 @@ type FinderUseCase = {
   sources: FinderSource[];
 };
 
-const mapSource = (s: { label: string; url?: string; type: string }): FinderSource => ({
-  label: s.label,
-  url: s.url,
-  type: s.type,
-  type_label: sourceTypeLabels[s.type],
-});
+const resolveSources = (refs: readonly { id: string }[]): FinderSource[] =>
+  refs
+    .map((r) => sourcesById.get(r.id))
+    .filter((s): s is NonNullable<typeof s> => Boolean(s))
+    .map((s) => ({
+      label: s.label,
+      url: s.url,
+      type: s.type,
+      type_label: sourceTypeLabels[s.type],
+    }));
 
 type Assembled = FinderUseCase & { _stageOrder: number; _ucOrder: number };
 
@@ -106,7 +112,7 @@ const assembled: Assembled[] = await Promise.all(
         .filter((t): t is FinderTool => t !== null),
       start_here: uc.start_here,
       caveats: uc.caveats,
-      sources: uc.sources.map(mapSource),
+      sources: resolveSources(uc.sources),
       _stageOrder: stage.data.order,
       _ucOrder: uc.order,
     };

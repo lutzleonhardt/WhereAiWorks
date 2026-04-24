@@ -3,7 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import StageDetail from '../../components/StageDetail.astro';
-import { loadTools } from '../../lib/data';
+import { loadSources, loadTools } from '../../lib/data';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const stages = await getCollection('stages');
@@ -15,6 +15,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 const { stage } = Astro.props;
 const tools = loadTools();
+const sources = loadSources();
 const idx = String(stage.data.order).padStart(2, '0');
 const useCases = (
   await getCollection('use_cases', (uc) => uc.data.stage.id === stage.slug)
@@ -30,7 +31,7 @@ const useCases = (
       </div>
 
       <div class="stage-detail standalone">
-        <StageDetail stage={stage} useCases={useCases} tools={tools} standalone />
+        <StageDetail stage={stage} useCases={useCases} tools={tools} sources={sources} standalone />
       </div>
     </div>
   </section>

@@ -13,7 +13,5 @@ tools:
 start_here: "Mabl für E2E-Tests einsetzen. Erkennt Selector-Änderungen automatisch und schlägt angepasste Tests vor — Review per Click."
 caveats: "Reduziert Maintenance, ersetzt aber nicht das Verständnis der Testlogik. Funktioniert bei Selector-Änderungen, nicht bei semantischen Logik-Änderungen."
 sources:
-  - label: "Mabl Platform Documentation"
-    url: "https://www.mabl.com/features"
-    type: "vendor"
+  - id: mabl-platform-docs
 ---

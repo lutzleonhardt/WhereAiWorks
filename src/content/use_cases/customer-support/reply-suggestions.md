@@ -13,7 +13,5 @@ tools:
 start_here: "Intercom Fin oder Zendesk AI auf den häufigsten 10 Ticket-Typen scharfschalten. Erst Assistenz-Modus (Vorschlag), später teilautonom (Auto-Resolve bei hoher Confidence)."
 caveats: "Tonalität und Corporate-Voice müssen geprüft werden. Bei sensiblen Vorgängen (Kündigung, Rückgabe) zwingend Human Review."
 sources:
-  - label: "Intercom Fin — Product Page"
-    url: "https://www.intercom.com/fin"
-    type: "vendor"
+  - id: intercom-fin-product
 ---
