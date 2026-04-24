@@ -1,0 +1,69 @@
+- id: copilot
+  name: "GitHub Copilot"
+  category: coding
+  url: "https://github.com/features/copilot"
+  maturity: production
+  pricing: "$10–19/User/Monat"
+
+- id: cursor
+  name: "Cursor"
+  category: coding
+  url: "https://cursor.com"
+  maturity: production
+  pricing: "$20/User/Monat"
+
+- id: claude-code
+  name: "Claude Code"
+  category: coding
+  url: "https://claude.com/product/claude-code"
+  maturity: production
+  pricing: "ab $20/User/Monat"
+
+- id: blinqio
+  name: "BlinqIO"
+  category: testing
+  url: "https://blinq.io"
+  maturity: production
+  pricing: "auf Anfrage"
+
+- id: applitools
+  name: "Applitools"
+  category: testing
+  url: "https://applitools.com"
+  maturity: production
+  pricing: "auf Anfrage"
+
+- id: mabl
+  name: "Mabl"
+  category: testing
+  url: "https://mabl.com"
+  maturity: production
+  pricing: "auf Anfrage"
+
+- id: productboard-ai
+  name: "Productboard AI"
+  category: discovery
+  url: "https://www.productboard.com/product/ai/"
+  maturity: production
+  pricing: "ab $20/User/Monat"
+
+- id: dovetail
+  name: "Dovetail"
+  category: discovery
+  url: "https://dovetail.com"
+  maturity: production
+  pricing: "ab $29/User/Monat"
+
+- id: intercom-fin
+  name: "Intercom Fin"
+  category: support
+  url: "https://www.intercom.com/fin"
+  maturity: production
+  pricing: "$0.99/Resolution"
+
+- id: zendesk-ai
+  name: "Zendesk AI"
+  category: support
+  url: "https://www.zendesk.com/service/ai/"
+  maturity: production
+  pricing: "ab $50/Agent/Monat"

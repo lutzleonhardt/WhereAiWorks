@@ -1,0 +1,15 @@
+- id: product-owner
+  name: "Product Manager / PO"
+  aliases: ["Product Owner", "PM"]
+
+- id: developer
+  name: "Senior Developer"
+  aliases: ["Full-Stack Dev", "Backend Engineer", "Frontend Engineer"]
+
+- id: qa-engineer
+  name: "QA Engineer"
+  aliases: ["SDET", "Test Engineer", "Test Manager"]
+
+- id: support-agent
+  name: "Support Lead / Support Agent"
+  aliases: ["Customer Support", "Help Desk"]
