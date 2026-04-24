@@ -35,6 +35,19 @@ const sourceSchema = z.object({
   type: sourceTypeEnum,
 });
 
+// Tool-Eintrag im Kontext eines Use Cases.
+// Zwei Ebenen bewusst getrennt: `useCaseSchema.suitability` = ist AI für
+// diese Aufgabe sinnvoll? `useCaseToolSchema.fit` (optional) = wie gut
+// passt DIESES Tool für diesen Use Case? Ohne `fit` gilt die Use-Case-
+// Suitability auch für das Tool. `sources` hier = tool-spezifisch;
+// globale Evidenz bleibt in `useCaseSchema.sources`.
+const useCaseToolSchema = z.object({
+  id: toolIdEnum,
+  fit: suitabilityEnum.optional(),
+  note: z.string().optional(),
+  sources: z.array(sourceSchema).optional(),
+});
+
 const useCaseSchema = z.object({
   id: z.string(),
   roles: z.array(roleEnum),
@@ -42,7 +55,7 @@ const useCaseSchema = z.object({
   goal_label: z.string(),
   suitability: suitabilityEnum,
   rationale: z.string(),
-  tools: z.array(toolIdEnum),
+  tools: z.array(useCaseToolSchema),
   start_here: z.string(),
   caveats: z.string(),
   sources: z.array(sourceSchema),

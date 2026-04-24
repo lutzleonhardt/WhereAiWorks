@@ -18,8 +18,8 @@ use_cases:
     suitability: "good_fit"
     rationale: "AI kann aus User Stories, Code und Specs automatisch Testfälle ableiten. Der Effekt ist bei BDD-Tests am stärksten, weil die natürlichsprachliche Vorlage gut als Prompt funktioniert."
     tools:
-      - blinqio
-      - copilot
+      - id: blinqio
+      - id: copilot
     start_here: "BlinqIO: BDD-Tests aus User Stories generieren. Alternativ: Copilot für Unit-Tests aus bestehendem Code — niedrigere Einstiegshürde, keine neue Toolchain."
     caveats: "Human Review empfohlen. Generierte Tests decken primär Happy Path ab — Edge Cases und Sicherheits-Tests brauchen menschliche Expertise."
     sources:
@@ -38,7 +38,7 @@ use_cases:
     suitability: "good_fit"
     rationale: "Pixel-basierter Vergleich von Screenshots ist eine ideale AI-Aufgabe — klar definiert, wiederholbar, mit wenig Interpretationsspielraum."
     tools:
-      - applitools
+      - id: applitools
     start_here: "Applitools Eyes in bestehende CI-Pipeline integrieren. Vergleicht Screenshots automatisch gegen Baseline und meldet nur echte Abweichungen, keine Anti-Aliasing-Artefakte."
     caveats: "Funktioniert am besten bei stabilen Layouts. Bei häufigen Design-Änderungen steigt die Baseline-Pflege stark."
     sources:
@@ -54,8 +54,8 @@ use_cases:
     suitability: "good_fit"
     rationale: "AI erkennt geänderte Selektoren und passt E2E-Tests automatisch an. Das eliminiert einen großen Teil der manuellen Test-Maintenance nach UI-Refactorings."
     tools:
-      - mabl
-      - blinqio
+      - id: mabl
+      - id: blinqio
     start_here: "Mabl für E2E-Tests einsetzen. Erkennt Selector-Änderungen automatisch und schlägt angepasste Tests vor — Review per Click."
     caveats: "Reduziert Maintenance, ersetzt aber nicht das Verständnis der Testlogik. Funktioniert bei Selector-Änderungen, nicht bei semantischen Logik-Änderungen."
     sources:

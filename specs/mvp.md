@@ -103,11 +103,12 @@ Nur diese, nicht mehr:
 
 - Use Case (Titel, interner Name)
 - goal_label (Nutzerformulierung für den Finder, z.B. "Tests schneller erstellen")
-- Eignung (gut / bedingt / teilaufgaben / unreif)
+- Eignung der Aufgabe (gut / bedingt / teilaufgaben / unreif) — Ist AI hier sinnvoll?
 - Kurzbegründung
-- Empfohlene Tools
-- Womit anfangen
-- Quelle
+- Empfohlene Tools: pro Tool ID (Pflicht), optional Fit-im-Kontext, 1-Satz-Note und tool-spezifische Quellen
+- Womit anfangen (eine kuratierte Einstiegsempfehlung)
+- Caveats (Grenzen der Aufgabe, aktivitätsbezogen)
+- Quellen (use-case-weite Evidenz; tool-spezifische Quellen hängen am Tool)
 
 ---
 
@@ -128,8 +129,8 @@ Immer gleiches Muster:
 - Vollständige Wertschöpfungskette (10 Stufen)
 - Persona-Detailseiten als eigene Ansicht
 - Tool-Browse / Tool-Datenbank
-- Tool-Eigenschaftsmatrix (Access Surfaces, Deployment Models, LLM Flexibility etc.) — Tools werden im MVP nur mit Name, Link und kurzem Satz referenziert, nicht als eigene Datenobjekte mit Metadaten modelliert
-- Tool-Bewertungslogik (kein Ranking, kein Score, kein fit/recommendation-Schema)
+- Tool-Eigenschaftsmatrix (Access Surfaces, Deployment Models, LLM Flexibility etc.) — Tools haben im MVP nur Stammdaten (Name, URL, Maturity, Pricing) in `tools.yaml`
+- Globale Tool-Rankings oder -Scores über Use Cases hinweg. **Fit wird ausschließlich in-context** pro Tool innerhalb eines Use Cases angegeben und ist optional. Es gibt kein übergreifendes "bestes Tool"-Schema
 - Knowledge-Work-Layer
 - Reifegrad-Matrix als eigene Seite
 - Community-Editing-Flows im UI (keine Kommentare, Likes, Upvotes, Abos)
@@ -145,13 +146,17 @@ Immer gleiches Muster:
 
 ### Stage-Datei
 
-Frontmatter: id, name, order, challenge, top_use_case, suitability
+Frontmatter: name, order, challenge, top_use_case, suitability, roles, use_cases (Slug aus Dateiname)
 
 Body: Kurzbeschreibung, 3–5 Use Cases, Womit anfangen, Grenzen, Quellen
 
 ### Use-Case-Eintrag
 
-Nur: role, title, goal_label, suitability, tools, start_here, caveats, source
+Kern: id, roles, title, goal_label, suitability (Eignung der Aufgabe), rationale, tools, start_here, caveats, sources.
+
+Tools sind keine flachen IDs mehr, sondern strukturierte Einträge: `{ id, fit?, note?, sources? }`. Damit lassen sich mehrere Tools im selben Use Case differenziert einordnen (z.B. BlinqIO = good_fit, Copilot = partial), ohne eine globale Tool-Rangliste zu führen. Die Stammdaten (Name, URL, Maturity, Pricing) liegen weiterhin in `tools.yaml`.
+
+Kanonische Referenz für das Schema: `specs/design.md`, Abschnitte 4.1.1–4.3.
 
 ---
 

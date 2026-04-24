@@ -54,9 +54,11 @@ Der entscheidende Mehrwert ist nicht "welche Tools gibt es", sondern:
 | # | Frage | Entspricht |
 |---|---|---|
 | 1 | **Wo bin ich?** — In welcher Stufe der Wertschöpfungskette arbeite ich? | Orientierung |
-| 2 | **Ist AI hier sinnvoll?** — Ehrliches Urteil: ja / ja mit Grenzen / nur Teilaufgaben / eher nein | Eignungsprüfung |
-| 3 | **Welche Tools sind relevant?** — Eingeordnet nach Reifegrad, Grenzen, DSGVO, Mittelstandstauglichkeit | Tool-Einordnung |
+| 2 | **Ist AI hier sinnvoll?** — Ehrliches Urteil: ja / ja mit Grenzen / nur Teilaufgaben / eher nein | Eignungsprüfung (Use-Case-Ebene) |
+| 3 | **Welche Tools sind relevant, und wie gut passt jedes?** — Eingeordnet nach Reifegrad, Grenzen, DSGVO, Mittelstandstauglichkeit **und Fit im konkreten Use Case** | Tool-Einordnung (im Kontext) |
 | 4 | **Womit anfange?** — Konkreter Low-Risk-Einstieg, Voraussetzungen, typische Stolpersteine | Handlungsorientierung |
+
+Frage 2 und 3 sind **bewusst getrennte Ebenen**: Die Use-Case-Eignung ist die grundsätzliche Aussage, ob AI für diese Art von Aufgabe überhaupt sinnvoll ist. Der Tool-Fit im Kontext verfeinert, wie gut ein konkretes Tool diese Aufgabe abdeckt. Beide Ebenen werden im Datenmodell separat modelliert (siehe `design.md` Abschnitt 4.1.1).
 
 ### Einstiegsperspektive des Nutzers
 
@@ -415,16 +417,16 @@ personas:
 ---
 ```
 
-**Body:** Strukturierte Tabelle mit Use Cases — jetzt mit Eignung und Risiko.
+**Body:** Strukturierte Tabelle mit Use Cases — mit Use-Case-Eignung, Tools (inkl. tool-spezifischem Fit) und Risiko.
 
 ```markdown
 ## Use Cases
 
-| Persona | Use Case | Tools | Reifegrad | Eignung | Risiko/Grenzen | Quelle |
-|---|---|---|---|---|---|---|
-| developer | Code-Completion, Boilerplate | copilot, cursor | production | gut geeignet | Review nötig; bei Legacy-Code höherer Aufwand | GitHub interne Studie |
-| developer | Autonome Feature-Entwicklung | claude-code | production | bedingt geeignet | Human Review zwingend; Halluzinations-Risiko bei komplexer Logik | METR RCT 2025 |
-| developer | Legacy-Modernisierung | copilot, claude-code | production | gut geeignet | Menschliche Oversight erforderlich; generierte Doku muss validiert werden | McKinsey 2025 |
+| Persona | Use Case | Eignung (Use Case) | Tools (mit Fit im Kontext) | Risiko/Grenzen | Quelle |
+|---|---|---|---|---|---|
+| developer | Code-Completion, Boilerplate | gut geeignet | copilot (gut), cursor (gut) | Review nötig; bei Legacy-Code höherer Aufwand | GitHub interne Studie |
+| developer | Autonome Feature-Entwicklung | bedingt geeignet | claude-code (teilweise) | Human Review zwingend; Halluzinations-Risiko bei komplexer Logik | METR RCT 2025 |
+| developer | Legacy-Modernisierung | gut geeignet | copilot (gut), claude-code (gut) | Menschliche Oversight erforderlich; generierte Doku muss validiert werden | McKinsey 2025 |
 
 ## Womit anfangen?
 

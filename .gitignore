@@ -1,6 +1,28 @@
+# Build output & caches
 node_modules/
 dist/
 .astro/
 .npm-cache/
+
+# OS / editor artifacts
 .DS_Store
 *.log
+.idea
+.idea/
+.vscode
+.vscode/
+
+# Local tooling / agent state
+.claude/
+.brokk/
+.mcp.json
+
+# Shell / env dotfiles that surface in this workspace root
+.bash_profile
+.bashrc
+.profile
+.zshrc
+.zprofile
+.gitconfig
+.ripgreprc
+.gitmodules

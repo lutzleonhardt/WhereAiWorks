@@ -257,30 +257,41 @@ Das ist die gesamte Interaktivität der Atlas-Seite: ~15 Zeilen für den Filter,
 </script>
 ```
 
-**Datentransformation:** Astro löst zur Build-Zeit die Rohdaten auf — Tool-IDs werden zu Tool-Namen, Suitability-Enums zu UI-Labels, und jeder Use Case bekommt die Stage-Infos seiner Eltern-Stage mitgegeben. Das resultierende JSON hat diese Form:
+**Datentransformation:** Astro löst zur Build-Zeit die Rohdaten auf — Tool-IDs werden mit den Tool-Stammdaten (Name, Maturity, URL) aus `tools.yaml` angereichert, Suitability- und Fit-Enums zu UI-Labels aufgelöst, und jeder Use Case bekommt die Stage-Infos seiner Eltern-Stage mitgegeben. Das resultierende JSON hat diese Form:
 
 ```typescript
 // Shape des transformierten Finder-JSON (generiert in finder.astro)
+
+interface FinderSource {
+  label: string;
+  url?: string;
+  type: string;              // "study" | "case_study" | "vendor" | "community"
+}
+
 interface FinderTool {
-  id: string;              // "blinqio"
-  name: string;            // "BlinqIO"
-  maturity: string;        // "production"
-  url: string;             // "https://blinq.io"
+  id: string;                // "blinqio"
+  name: string;              // "BlinqIO" (aus tools.yaml)
+  maturity: string;          // "production" (aus tools.yaml)
+  url: string;               // "https://blinq.io" (aus tools.yaml)
+  fit?: string;              // "good_fit" | "conditional" | ... (optional)
+  fit_label?: string;        // "gut geeignet" (UI-Label, nur wenn fit gesetzt)
+  note?: string;             // 1 Satz tool-spezifischer Kontext
+  sources?: FinderSource[];  // Tool-spezifische Evidenz (optional)
 }
 
 interface FinderUseCase {
-  id: string;              // "testing-qa:test-generation"
-  roles: string[];         // ["qa-engineer", "developer"]
-  goal_label: string;      // "Tests schneller erstellen"
-  stage_id: string;        // "testing-qa" (von Eltern-Stage)
-  stage_name: string;      // "Testing & QA" (von Eltern-Stage)
-  suitability: string;     // "good_fit" (Enum-Wert)
+  id: string;                // "testing-qa:test-generation"
+  roles: string[];           // ["qa-engineer", "developer"]
+  goal_label: string;        // "Tests schneller erstellen"
+  stage_id: string;          // "testing-qa" (von Eltern-Stage)
+  stage_name: string;        // "Testing & QA" (von Eltern-Stage)
+  suitability: string;       // "good_fit" (Use-Case-Eignung, Enum-Wert)
   suitability_label: string; // "gut geeignet" (aufgelöstes UI-Label)
   rationale: string;
-  tools: FinderTool[];     // Aufgelöst aus tools.yaml mit Name, Maturity, URL
+  tools: FinderTool[];       // Angereichert mit Stammdaten + fit/note/sources
   start_here: string;
   caveats: string;
-  sources: { label: string; url?: string; type: string }[];
+  sources: FinderSource[];   // Use-Case-weite Evidenz
 }
 ```
 
@@ -306,10 +317,17 @@ goalSelect.addEventListener('change', () => {
   if (!uc) return;
   resultBlock.querySelector('.result-stage').textContent = uc.stage_name;
   resultBlock.querySelector('.result-suitability').textContent = uc.suitability_label;
-  // Tools mit Name und Maturity rendern
-  resultBlock.querySelector('.result-tools').innerHTML = uc.tools
-    .map(t => `<a href="${t.url}" target="_blank">${t.name}</a> (${t.maturity})`)
-    .join(' · ');
+  // Tools als kompakte Liste: pro Tool eine Zeile mit Name, optional Fit-Label und Note.
+  // Tool-spezifische Quellen werden als dezenter Zusatz angehängt.
+  resultBlock.querySelector('.result-tools').innerHTML = uc.tools.map(t => {
+    const fit = t.fit_label ? ` <span class="fit ${t.fit}">${t.fit_label}</span>` : '';
+    const note = t.note ? ` — ${t.note}` : '';
+    const toolSources = (t.sources || []).map(s => s.url
+      ? `<a href="${s.url}" target="_blank">${s.label}</a>`
+      : s.label).join(', ');
+    const sources = toolSources ? ` <small>(${toolSources})</small>` : '';
+    return `<li><a href="${t.url}" target="_blank">${t.name}</a>${fit}${note}${sources}</li>`;
+  }).join('');
   resultBlock.querySelector('.result-rationale').textContent = uc.rationale;
   resultBlock.querySelector('.result-start').textContent = uc.start_here;
   resultBlock.querySelector('.result-caveats').textContent = uc.caveats;
@@ -352,6 +370,19 @@ Die eigenständige Detail-Seite ist komplett statisches HTML. Alle Inhalte werde
 Astro Content Collections erlauben es, ein Zod-Schema für jede Collection zu definieren. Beim Build wird jede Markdown-Datei gegen das Schema validiert. Wenn ein Pflichtfeld fehlt oder ein Wert ungültig ist, bricht der Build ab und zeigt eine klare Fehlermeldung.
 
 Das löst drei Probleme gleichzeitig: Datenqualität (keine kaputten Einträge auf der Website), Dokumentation (das Schema *ist* die Dokumentation des Datenmodells), und Agent-Kompatibilität (ein Research-Agent bekommt das Schema als Kontext und generiert valide Dateien).
+
+### 4.1.1 Zwei Ebenen von Eignung (Use Case vs. Tool)
+
+Das Schema trennt zwei **unterschiedliche Fragen** bewusst in zwei Felder:
+
+| Feld | Ebene | Frage | Beispiel |
+|---|---|---|---|
+| `suitability` | Use Case | **Ist AI für diese Art von Aufgabe sinnvoll?** | „Code-Completion" → `good_fit`. „Autonome Feature-Entwicklung" → `conditional`. |
+| `fit` | Tool-im-Use-Case | **Wie gut passt dieses konkrete Tool für diesen Use Case?** | Für „Testfall-Generierung": BlinqIO → `good_fit`, Copilot → `partial` (nur Unit-Tests). |
+
+Die Use-Case-Suitability ist das redaktionelle Kern-Urteil des Projekts (*„Wo schafft AI Mehrwert — und wo nicht?"*). Tool-level `fit` ist die nachgelagerte Ausführungs-Frage und **optional** — ohne Angabe gilt die Use-Case-Suitability auch für das Tool.
+
+Entsprechend werden auch Quellen auf beiden Ebenen modelliert: globale Evidenz (z.B. METR-Studie zu Produktivitätseffekten) gehört zum Use Case, tool-spezifische Evidenz (z.B. RedHat→BlinqIO-Case-Study) hängt am Tool.
 
 ### 4.2 Schema-Definition (`src/content/config.ts`)
 
@@ -399,19 +430,41 @@ const sourceSchema = z.object({
   type: sourceTypeEnum,             // Art der Evidenz
 });
 
+// --- Tool-Eintrag innerhalb eines Use Case ---
+// Nicht zu verwechseln mit dem Tool-Stammsatz in src/data/tools.yaml.
+// Dort wohnen Name, URL, Maturity, Pricing. Hier wird das Tool *im Kontext
+// dieses Use Cases* angereichert: Fit, Kurznote, tool-spezifische Quellen.
+
+const useCaseToolSchema = z.object({
+  id: toolIdEnum,                         // Referenz auf tools.yaml
+  fit: suitabilityEnum.optional(),        // Fit dieses Tools für DIESEN Use Case.
+                                          // Ohne Angabe: Use-Case-Suitability gilt auch
+                                          // für das Tool (kein Sonder-Urteil nötig).
+  note: z.string().optional(),            // 1 Satz tool-spezifischer Kontext
+                                          // ("BDD-Tests aus User Stories", nicht "Copilot
+                                          // ist ein AI-Tool für Entwickler").
+  sources: z.array(sourceSchema).optional(), // Tool-spezifische Evidenz. Globale
+                                             // Evidenz bleibt in useCaseSchema.sources.
+});
+
 // --- Use Case (eingebettet im Stage-Frontmatter) ---
 
 const useCaseSchema = z.object({
-  id: z.string(),                    // Global eindeutig: "testing-qa:test-generation"
-  roles: z.array(roleEnum),          // Welche Rollen betrifft das?
-  title: z.string(),                 // Interner Name ("Testfall-Generierung")
-  goal_label: z.string(),            // Nutzerformulierung ("Tests schneller erstellen")
-  suitability: suitabilityEnum,
-  rationale: z.string(),             // 1–2 Sätze: WARUM diese Eignung?
-  tools: z.array(toolIdEnum),         // Referenzen auf Tool-IDs — Build bricht bei unbekannter ID
-  start_here: z.string(),            // Konkreter Einstieg
-  caveats: z.string(),               // Grenzen / Vorsicht
-  sources: z.array(sourceSchema),    // Strukturierte Quellenangaben
+  id: z.string(),                        // Global eindeutig: "testing-qa:test-generation"
+  roles: z.array(roleEnum),              // Welche Rollen betrifft das?
+  title: z.string(),                     // Interner Name ("Testfall-Generierung")
+  goal_label: z.string(),                // Nutzerformulierung ("Tests schneller erstellen")
+  suitability: suitabilityEnum,          // AI-Eignung der Aufgabe (ist AI hier sinnvoll?)
+  rationale: z.string(),                 // 1–2 Sätze: WARUM diese Eignung?
+  tools: z.array(useCaseToolSchema),     // Tools im Use-Case-Kontext (mit optionalem Fit,
+                                         // Note und tool-spezifischen Quellen). Build
+                                         // bricht bei unbekannter Tool-ID.
+  start_here: z.string(),                // Eine kuratierte Einstiegsempfehlung
+                                         // (meist auf 1–2 der Tools zugeschnitten)
+  caveats: z.string(),                   // Grenzen der Aufgabe (aktivitätsbezogen;
+                                         // tool-spezifische Eigenheiten gehören in tool.note)
+  sources: z.array(sourceSchema),        // Use-Case-weite Evidenz (z.B. Studien zu
+                                         // Produktivitätseffekten allgemein)
 });
 
 // --- Stage (Wertschöpfungsstufe) ---
@@ -471,14 +524,19 @@ use_cases:
     suitability: "good_fit"
     rationale: "AI kann aus User Stories, Code und Specs automatisch Testfälle ableiten. Der Effekt ist bei BDD-Tests am stärksten, weil die natürlichsprachliche Vorlage gut als Prompt funktioniert."
     tools:
-      - blinqio
-      - copilot
-    start_here: "BlinqIO: BDD-Tests aus User Stories generieren. RedHat berichtet 10x schnellere Test-Erstellung. Alternativ: Copilot für Unit-Tests aus bestehendem Code — niedrigere Einstiegshürde."
+      - id: blinqio
+        fit: "good_fit"
+        note: "BDD-Tests aus User Stories; bei passendem Setup 10x schnellere Erstellung berichtet."
+        sources:
+          - label: "RedHat Case Study: BlinqIO-Integration"
+            url: "https://example.com/redhat-blinqio"
+            type: "case_study"
+      - id: copilot
+        fit: "partial"
+        note: "Unit-Tests aus bestehendem Code. Keine vollständige Testsuite-Generierung aus Stories."
+    start_here: "BlinqIO: BDD-Tests aus User Stories generieren. Alternativ: Copilot für Unit-Tests aus bestehendem Code — niedrigere Einstiegshürde."
     caveats: "Human Review empfohlen. Generierte Tests decken primär Happy Path ab — Edge Cases brauchen menschliche Expertise."
     sources:
-      - label: "RedHat Case Study: BlinqIO-Integration"
-        url: "https://example.com/redhat-blinqio"
-        type: "case_study"
       - label: "METR RCT 2025: Produktivitätseffekte von AI-Coding-Tools"
         url: "https://example.com/metr-2025"
         type: "study"
@@ -491,13 +549,16 @@ use_cases:
     suitability: "good_fit"
     rationale: "Pixel-basierter Vergleich von Screenshots ist eine ideale AI-Aufgabe — klar definiert, wiederholbar, mit wenig Interpretationsspielraum."
     tools:
-      - applitools
+      - id: applitools
+        # kein fit angegeben → Use-Case-Suitability (good_fit) gilt auch für das Tool
+        note: "CI-Integration über Eyes-SDK; Baseline-basierter Screenshot-Vergleich."
+        sources:
+          - label: "Applitools Customer Reports"
+            url: "https://applitools.com/customers"
+            type: "vendor"
     start_here: "Applitools Eyes in bestehende CI-Pipeline integrieren. Vergleicht Screenshots automatisch gegen Baseline."
     caveats: "Funktioniert am besten bei stabilen Layouts. Bei häufigen Design-Änderungen hohe Baseline-Pflege."
-    sources:
-      - label: "Applitools Customer Reports"
-        url: "https://applitools.com/customers"
-        type: "vendor"
+    sources: []
 
   - id: "testing-qa:self-healing"
     roles:
@@ -507,8 +568,12 @@ use_cases:
     suitability: "good_fit"
     rationale: "AI erkennt geänderte Selektoren und passt Tests automatisch an. Das eliminiert einen großen Teil der manuellen Test-Maintenance."
     tools:
-      - mabl
-      - blinqio
+      - id: mabl
+        fit: "good_fit"
+        note: "E2E-Tests mit automatischer Selector-Anpassung."
+      - id: blinqio
+        fit: "conditional"
+        note: "Self-healing ist Sekundärfunktion, weniger ausgeprägt als bei Mabl."
     start_here: "Mabl für E2E-Tests einsetzen. Erkennt Selector-Änderungen und passt Tests automatisch an."
     caveats: "Reduziert Maintenance, ersetzt aber nicht das Verständnis der Testlogik. Funktioniert bei Selector-Änderungen, nicht bei Logik-Änderungen."
     sources:
@@ -670,11 +735,17 @@ Jede Seite teilt sich: Header mit Projektname + Navigation (Atlas | Finder), Con
 │  ─── Use Cases ───                           │
 │                                              │
 │  Testfall-Generierung                        │
-│  Eignung: gut · Tools: BlinqIO, Copilot     │
+│  Eignung: gut                                │
 │  Warum: "AI kann aus User Stories autom.…"   │
+│                                              │
+│  Tools:                                      │
+│   · BlinqIO ● gut — BDD-Tests aus User      │
+│     Stories; 10x berichtet (RedHat Study)    │
+│   · Copilot ● teilweise — Unit-Tests aus    │
+│     bestehendem Code; keine Story-→-Suite    │
+│                                              │
 │  Einstieg: "BlinqIO: BDD-Tests aus …"       │
-│  Quellen: RedHat Case Study (case_study),    │
-│           METR 2025 (study)                  │
+│  Quellen: METR 2025 (study)                  │
 │                                              │
 │  ─── Womit anfangen? ───                     │
 │  ─── Grenzen ───                             │
@@ -729,7 +800,10 @@ Identischer Inhalt wie der Inline-Detailbereich, aber als eigene Seite mit volls
 │  Warum: "AI kann aus User Stories…"          │
 │                                              │
 │  Empfohlene Tools:                           │
-│  BlinqIO (production) · Copilot (production) │
+│   · BlinqIO ● gut — BDD aus User Stories    │
+│     (RedHat Case Study)                      │
+│   · Copilot ● teilweise — Unit-Tests aus    │
+│     bestehendem Code                         │
 │                                              │
 │  Womit anfangen?                             │
 │  "BlinqIO: BDD-Tests aus User Stories..."    │
@@ -738,7 +812,6 @@ Identischer Inhalt wie der Inline-Detailbereich, aber als eigene Seite mit volls
 │  "Human Review empfohlen..."                 │
 │                                              │
 │  Quellen:                                    │
-│  RedHat Case Study (case_study)              │
 │  METR 2025 (study)                           │
 │                                              │
 ├─────────────────────────────────────────────┤
@@ -770,8 +843,11 @@ Astro-Pages lesen Collections via getCollection('stages')
         │      (gleiche StageDetail.astro-Komponente)
         │
         └──→ finder.astro:
-               Transformiert Use Cases: löst Tool-IDs zu Namen,
-               Suitability-Enums zu Labels, ergänzt Stage-Infos.
+               Transformiert Use Cases:
+               - Tool-Einträge werden mit Stammdaten aus tools.yaml
+                 (Name, Maturity, URL) angereichert.
+               - Suitability- und Fit-Enums werden zu UI-Labels aufgelöst.
+               - Eltern-Stage-Infos werden mitgegeben.
                Serialisiert als inline JSON für finder.js.
 ```
 

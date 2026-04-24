@@ -56,20 +56,37 @@ const maturityLabels: Record<string, string> = {
           <p class="use-case-rationale">
             <span class="use-case-label">Warum:</span> {uc.rationale}
           </p>
-          <p class="use-case-tools">
+          <div class="use-case-tools">
             <span class="use-case-label">Tools:</span>
-            {uc.tools.map((toolId, i) => {
-              const tool = toolsById.get(toolId);
-              if (!tool) return null;
-              return (
-                <>
-                  {i > 0 ? ' · ' : ''}
-                  <a href={tool.url} rel="noreferrer" target="_blank">{tool.name}</a>
-                  <span class="tool-maturity"> ({maturityLabels[tool.maturity]})</span>
-                </>
-              );
-            })}
-          </p>
+            <ul class="tool-list">
+              {uc.tools.map((entry) => {
+                const tool = toolsById.get(entry.id);
+                if (!tool) return null;
+                return (
+                  <li class="tool-entry">
+                    <a href={tool.url} rel="noreferrer" target="_blank">{tool.name}</a>
+                    <span class="tool-maturity"> ({maturityLabels[tool.maturity]})</span>
+                    {entry.fit && <SuitabilityBadge suitability={entry.fit} />}
+                    {entry.note && <span class="tool-note"> — {entry.note}</span>}
+                    {entry.sources && entry.sources.length > 0 && (
+                      <small class="tool-sources">
+                        {' '}Quellen:{' '}
+                        {entry.sources.map((s, i) => (
+                          <>
+                            {i > 0 ? ', ' : ''}
+                            {s.url
+                              ? <a href={s.url} rel="noreferrer" target="_blank">{s.label}</a>
+                              : <span>{s.label}</span>}
+                            <span class="source-type"> ({sourceTypeLabels[s.type]})</span>
+                          </>
+                        ))}
+                      </small>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <p class="use-case-start">
             <span class="use-case-label">Einstieg:</span> {uc.start_here}
           </p>

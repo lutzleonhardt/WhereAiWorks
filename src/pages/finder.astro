@@ -28,6 +28,20 @@ const sourceTypeLabels: Record<string, string> = {
 
 const stages = await getCollection('stages');
 
+type FinderSource = { label: string; url?: string; type: string; type_label: string };
+
+type FinderTool = {
+  id: string;
+  name: string;
+  url: string;
+  maturity: string;
+  maturity_label: string;
+  fit?: string;
+  fit_label?: string;
+  note?: string;
+  sources?: FinderSource[];
+};
+
 type FinderUseCase = {
   id: string;
   roles: string[];
@@ -37,17 +51,18 @@ type FinderUseCase = {
   suitability: string;
   suitability_label: string;
   rationale: string;
-  tools: {
-    id: string;
-    name: string;
-    url: string;
-    maturity: string;
-    maturity_label: string;
-  }[];
+  tools: FinderTool[];
   start_here: string;
   caveats: string;
-  sources: { label: string; url?: string; type: string; type_label: string }[];
+  sources: FinderSource[];
 };
+
+const mapSource = (s: { label: string; url?: string; type: string }): FinderSource => ({
+  label: s.label,
+  url: s.url,
+  type: s.type,
+  type_label: sourceTypeLabels[s.type],
+});
 
 const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
   stage.data.use_cases.map((uc) => ({
@@ -60,26 +75,30 @@ const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
     suitability_label: suitabilityLabels[uc.suitability],
     rationale: uc.rationale,
     tools: uc.tools
-      .map((id) => {
-        const tool = toolsById.get(id);
+      .map((entry) => {
+        const tool = toolsById.get(entry.id);
         if (!tool) return null;
-        return {
+        const enriched: FinderTool = {
           id: tool.id,
           name: tool.name,
           url: tool.url,
           maturity: tool.maturity,
           maturity_label: maturityLabels[tool.maturity],
         };
+        if (entry.fit) {
+          enriched.fit = entry.fit;
+          enriched.fit_label = suitabilityLabels[entry.fit];
+        }
+        if (entry.note) enriched.note = entry.note;
+        if (entry.sources && entry.sources.length > 0) {
+          enriched.sources = entry.sources.map(mapSource);
+        }
+        return enriched;
       })
-      .filter((t): t is NonNullable<typeof t> => t !== null),
+      .filter((t): t is FinderTool => t !== null),
     start_here: uc.start_here,
     caveats: uc.caveats,
-    sources: uc.sources.map((s) => ({
-      label: s.label,
-      url: s.url,
-      type: s.type,
-      type_label: sourceTypeLabels[s.type],
-    })),
+    sources: uc.sources.map(mapSource),
   }))
 );
 ---
@@ -125,10 +144,10 @@ const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
       <span class="result-label">Warum:</span>
       <span class="result-rationale"></span>
     </p>
-    <p class="result-row">
+    <div class="result-row">
       <span class="result-label">Tools:</span>
-      <span class="result-tools"></span>
-    </p>
+      <ul class="result-tools"></ul>
+    </div>
     <p class="result-row">
       <span class="result-label">Einstieg:</span>
       <span class="result-start"></span>
@@ -149,18 +168,22 @@ const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
   </script>
 
   <script>
+    type FinderSource = {
+      label: string;
+      url?: string;
+      type: string;
+      type_label: string;
+    };
     type FinderTool = {
       id: string;
       name: string;
       url: string;
       maturity: string;
       maturity_label: string;
-    };
-    type FinderSource = {
-      label: string;
-      url?: string;
-      type: string;
-      type_label: string;
+      fit?: string;
+      fit_label?: string;
+      note?: string;
+      sources?: FinderSource[];
     };
     type FinderUseCase = {
       id: string;
@@ -213,13 +236,25 @@ const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
       (result.querySelector('.result-suitability') as HTMLElement).textContent = uc.suitability_label;
       (result.querySelector('.result-rationale') as HTMLElement).textContent = uc.rationale;
       (result.querySelector('.result-tools') as HTMLElement).innerHTML = uc.tools
-        .map(
-          (t) =>
-            `<a href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(
-              t.name
-            )}</a> <span class="tool-maturity">(${escapeHtml(t.maturity_label)})</span>`
-        )
-        .join(' · ');
+        .map((t) => {
+          const link = `<a href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(t.name)}</a>`;
+          const maturity = ` <span class="tool-maturity">(${escapeHtml(t.maturity_label)})</span>`;
+          const fit = t.fit && t.fit_label
+            ? ` <span class="suitability suitability-${escapeHtml(t.fit)}"><span class="suitability-dot" aria-hidden="true"></span>${escapeHtml(t.fit_label)}</span>`
+            : '';
+          const note = t.note ? ` — ${escapeHtml(t.note)}` : '';
+          const toolSources = (t.sources || [])
+            .map((s) => {
+              const body = s.url
+                ? `<a href="${escapeHtml(s.url)}" rel="noreferrer" target="_blank">${escapeHtml(s.label)}</a>`
+                : escapeHtml(s.label);
+              return `${body} <span class="source-type">(${escapeHtml(s.type_label)})</span>`;
+            })
+            .join(', ');
+          const sources = toolSources ? ` <small class="tool-sources">Quellen: ${toolSources}</small>` : '';
+          return `<li>${link}${maturity}${fit}${note}${sources}</li>`;
+        })
+        .join('');
       (result.querySelector('.result-start') as HTMLElement).textContent = uc.start_here;
       (result.querySelector('.result-caveats') as HTMLElement).textContent = uc.caveats;
       (result.querySelector('.result-sources') as HTMLElement).innerHTML = uc.sources
