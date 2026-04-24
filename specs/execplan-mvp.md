@@ -24,8 +24,8 @@ A successful `npm run build` produces a `dist/` directory with static HTML for a
 ## Progress
 
 - [x] (2026-04-24 12:00Z) Read specs (mvp.md, spec.md, design.md, PLANS.md) and author this ExecPlan.
-- [ ] Milestone 1 — Scaffold Astro project with content collections and Zod schemas.
-- [ ] Milestone 2 — Seed referential data (`tools.yaml`, `roles.yaml`) and four stage markdown files (Testing & QA fully populated, the other three with minimal placeholder use cases).
+- [x] (2026-04-24 13:40Z) Milestone 1 — Astro project scaffolded; `npm install --cache=./.npm-cache` and `npm run build` (with `ASTRO_TELEMETRY_DISABLED=1`) succeed.
+- [x] (2026-04-24 13:45Z) Milestone 2 — `roles.yaml`, `tools.yaml`, and four stage markdown files written; Zod rejects unknown tool IDs as verified by temporarily renaming `blinqio` → `blinqio-nope`.
 - [ ] Milestone 3 — Implement the Atlas page (`/`): header + nav layout, stage cards with suitability badge + top use case, role filter (Vanilla JS), inline detail panels via CSS `:target`.
 - [ ] Milestone 4 — Implement stage detail pages (`/stage/[id]`) using the same `StageDetail.astro` component the Atlas uses inline.
 - [ ] Milestone 5 — Implement the Finder (`/finder`): role-dependent goal dropdown, inline resolved JSON, Vanilla JS result rendering, `Im Atlas anzeigen` link deep-linking to the stage anchor.
@@ -35,7 +35,17 @@ Each milestone ends with a git commit. Commits are intentionally small and topic
 
 ## Surprises & Discoveries
 
-_None yet; this section is populated as implementation proceeds._
+- Observation: Astro telemetry tries to write to `~/.config/astro/` on every build. In this sandboxed environment that path is read-only, which crashes the build before any work happens.
+  Evidence: `ENOENT: no such file or directory, mkdir '/home/lutz/.config/astro'` in the initial `npm run build` output.
+  Workaround: All `npm run …` scripts in `package.json` set `ASTRO_TELEMETRY_DISABLED=1`. This is also the right default for an open-source CLI tool the end user will run locally.
+
+- Observation: `npm install` with the default cache (`~/.local/share/zed/node/cache`) failed with `EROFS` because the default cache path is on a read-only overlay in this environment.
+  Evidence: `rofs Invalid response body while trying to fetch …/registry.npmjs.org/@types%2fjs-yaml`
+  Workaround: Installing with `--cache=./.npm-cache` (ignored via `.gitignore`). For a normal dev machine the default cache works; this note is environment-specific.
+
+- Observation: `git add -A` from the repo root fails because several device nodes (`.bash_profile`, `.bashrc`, etc.) are present alongside real files. They are not git-addable but also not ignorable without a targeted `.gitignore`.
+  Evidence: `Fehler: .bash_profile: Kann nur reguläre Dateien, symbolische Links oder Git-Verzeichnisse hinzufügen.`
+  Workaround: Stage project files explicitly rather than relying on `-A`. A future cleanup could add these dotfile names to `.gitignore`, but since they do not show up as untracked in a normal environment this is not required.
 
 ## Decision Log
 

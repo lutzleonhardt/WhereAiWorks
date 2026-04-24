@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import SuitabilityBadge from './SuitabilityBadge.astro';
+
+type ToolEntry = {
+  id: string;
+  name: string;
+  url: string;
+  maturity: 'production' | 'experimental';
+  pricing?: string;
+};
+
+interface Props {
+  stage: CollectionEntry<'stages'>;
+  tools: ToolEntry[];
+  standalone?: boolean;
+}
+
+const { stage, tools, standalone = false } = Astro.props;
+const { Content } = await stage.render();
+
+const toolsById = new Map(tools.map((t) => [t.id, t] as const));
+
+const sourceTypeLabels: Record<string, string> = {
+  study: 'Studie',
+  case_study: 'Case Study',
+  vendor: 'Vendor-Angabe',
+  community: 'Community',
+};
+
+const maturityLabels: Record<string, string> = {
+  production: 'produktionsreif',
+  experimental: 'experimentell',
+};
+---
+<article class="stage-detail-body">
+  <header class="stage-detail-header">
+    <h2 class="stage-detail-title">{stage.data.name}</h2>
+    <SuitabilityBadge suitability={stage.data.suitability} />
+  </header>
+
+  <p class="stage-detail-challenge">{stage.data.challenge}</p>
+
+  <section class="stage-detail-section">
+    <h3>Use Cases</h3>
+    <ul class="use-case-list">
+      {stage.data.use_cases.map((uc) => (
+        <li class="use-case">
+          <h4 class="use-case-title">{uc.title}</h4>
+          <div class="use-case-meta">
+            <SuitabilityBadge suitability={uc.suitability} />
+            <span class="use-case-goal">
+              <span class="use-case-label">Ziel:</span> {uc.goal_label}
+            </span>
+          </div>
+          <p class="use-case-rationale">
+            <span class="use-case-label">Warum:</span> {uc.rationale}
+          </p>
+          <p class="use-case-tools">
+            <span class="use-case-label">Tools:</span>
+            {uc.tools.map((toolId, i) => {
+              const tool = toolsById.get(toolId);
+              if (!tool) return null;
+              return (
+                <>
+                  {i > 0 ? ' · ' : ''}
+                  <a href={tool.url} rel="noreferrer" target="_blank">{tool.name}</a>
+                  <span class="tool-maturity"> ({maturityLabels[tool.maturity]})</span>
+                </>
+              );
+            })}
+          </p>
+          <p class="use-case-start">
+            <span class="use-case-label">Einstieg:</span> {uc.start_here}
+          </p>
+          <p class="use-case-caveats">
+            <span class="use-case-label">Vorsicht:</span> {uc.caveats}
+          </p>
+          {uc.sources.length > 0 && (
+            <p class="use-case-sources">
+              <span class="use-case-label">Quellen:</span>
+              {uc.sources.map((s, i) => (
+                <>
+                  {i > 0 ? ' · ' : ''}
+                  {s.url
+                    ? <a href={s.url} rel="noreferrer" target="_blank">{s.label}</a>
+                    : <span>{s.label}</span>}
+                  <span class="source-type"> ({sourceTypeLabels[s.type]})</span>
+                </>
+              ))}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="stage-detail-section stage-detail-prose">
+    <Content />
+  </section>
+
+  {standalone ? (
+    <p class="stage-detail-backlink">
+      <a href="/">← Zurück zum Atlas</a>
+    </p>
+  ) : (
+    <p class="stage-detail-backlink">
+      <a href={`/stage/${stage.slug}`}>Eigene Seite öffnen →</a>
+    </p>
+  )}
+</article>

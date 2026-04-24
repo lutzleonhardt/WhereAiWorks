@@ -29,11 +29,17 @@ ul, ol {
   padding-left: 1.25em;
 }
 
+p {
+  margin: 0 0 0.75em;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 1.25rem 3rem;
 }
+
+/* ---------- Header / Nav / Footer ---------- */
 
 .site-header {
   border-bottom: 1px solid #ddd;
@@ -76,4 +82,309 @@ ul, ol {
   font-size: 0.9rem;
   color: #555;
   text-align: center;
+}
+
+/* ---------- Atlas intro ---------- */
+
+.atlas-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25em;
+}
+
+.atlas-claim {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+.atlas-lead {
+  color: #444;
+  max-width: 60ch;
+}
+
+.atlas-filter {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.atlas-filter select {
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+}
+
+/* ---------- Stage grid + card ---------- */
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.stage-card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: inherit;
+  background: #fafafa;
+  transition: opacity 0.15s ease;
+}
+
+.stage-card:hover,
+.stage-card:focus {
+  background: #f0f0f0;
+  outline: none;
+}
+
+.stage-card.dimmed {
+  opacity: 0.35;
+}
+
+.stage-card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.35em;
+}
+
+.stage-card-challenge {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.5em 0;
+}
+
+.stage-card-top {
+  font-size: 0.9rem;
+  margin: 0.35em 0 0;
+}
+
+.stage-card-top-label {
+  font-weight: 600;
+}
+
+/* ---------- Suitability badge ---------- */
+
+.suitability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.85rem;
+}
+
+.suitability-dot {
+  display: inline-block;
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  background: #888;
+}
+
+.suitability-good_fit .suitability-dot {
+  background: #2ea44f;
+}
+
+.suitability-conditional .suitability-dot {
+  background: #d4a017;
+}
+
+.suitability-partial .suitability-dot {
+  background: #d4a017;
+}
+
+.suitability-immature .suitability-dot {
+  background: #cb2431;
+}
+
+/* ---------- Inline detail area (CSS :target) ---------- */
+
+.detail-area {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  scroll-margin-top: 4rem;
+}
+
+.detail-hint {
+  color: #666;
+  font-style: italic;
+}
+
+.stage-detail {
+  display: none;
+  scroll-margin-top: 4rem;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  background: #fafafa;
+  position: relative;
+}
+
+.stage-detail:target {
+  display: block;
+}
+
+/* Hinweistext ausblenden, sobald irgendein Detail offen ist */
+.detail-area:has(.stage-detail:target) .detail-hint {
+  display: none;
+}
+
+.close-detail {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.close-detail:hover {
+  color: #111;
+}
+
+/* ---------- Stage detail content ---------- */
+
+.stage-detail-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.stage-detail-title {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.stage-detail-challenge {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.stage-detail-section {
+  margin-top: 1.25rem;
+}
+
+.stage-detail-section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25em;
+}
+
+.use-case-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.use-case {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.use-case:last-child {
+  border-bottom: none;
+}
+
+.use-case-title {
+  font-size: 1rem;
+  margin: 0 0 0.35em;
+}
+
+.use-case-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.use-case-label {
+  font-weight: 600;
+  margin-right: 0.25em;
+}
+
+.use-case p {
+  font-size: 0.95rem;
+  margin: 0.35em 0;
+}
+
+.tool-maturity,
+.source-type {
+  color: #666;
+  font-size: 0.85em;
+}
+
+.stage-detail-prose {
+  font-size: 0.95rem;
+}
+
+.stage-detail-prose h2 {
+  font-size: 1.05rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25em;
+  margin-top: 1rem;
+}
+
+.stage-detail-backlink {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Finder ---------- */
+
+.finder-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 40rem;
+  margin: 1rem 0 2rem;
+}
+
+.finder-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.finder-row label {
+  min-width: 6rem;
+  font-weight: 600;
+}
+
+.finder-row select {
+  flex: 1 1 15rem;
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+}
+
+.finder-row select:disabled {
+  background: #eee;
+  color: #888;
+}
+
+.finder-result {
+  border: 1px solid #bbb;
+  background: #fafafa;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.finder-result[hidden] {
+  display: none;
+}
+
+.finder-result h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5em;
+}
+
+.finder-result .result-row {
+  margin: 0.5em 0;
+  font-size: 0.95rem;
+}
+
+.finder-result .result-label {
+  font-weight: 600;
+  margin-right: 0.25em;
 }

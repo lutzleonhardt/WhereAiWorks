@@ -1,8 +1,77 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import StageCard from '../components/StageCard.astro';
+import StageDetail from '../components/StageDetail.astro';
+import { loadRoles, loadTools } from '../lib/data';
+
+const roles = loadRoles();
+const tools = loadTools();
+
+const stages = (await getCollection('stages')).sort(
+  (a, b) => a.data.order - b.data.order
+);
 ---
 <Base title="Where AI Works — Atlas">
-  <h1>Where AI Works</h1>
-  <p>Wo schafft AI in Softwareunternehmen heute realen Mehrwert — und wo (noch) nicht?</p>
-  <p><em>Scaffold steht. Inhalte folgen im nächsten Meilenstein.</em></p>
+  <section class="atlas-intro">
+    <h1>Where AI Works</h1>
+    <p class="atlas-claim">
+      Wo schafft AI in <strong>Softwareunternehmen</strong> heute realen Mehrwert — und wo (noch) nicht?
+    </p>
+    <p class="atlas-lead">
+      Vier Stufen der Software-Wertschöpfungskette mit ehrlicher Einordnung statt Hype.
+      Klicke eine Stufe, um Use Cases, Tools, Einstieg und Grenzen zu sehen.
+    </p>
+  </section>
+
+  <section class="atlas-filter">
+    <label for="role-filter">Rolle filtern:</label>
+    <select id="role-filter" name="role">
+      <option value="all">Alle</option>
+      {roles.map((r) => (
+        <option value={r.id}>{r.name}</option>
+      ))}
+    </select>
+  </section>
+
+  <section class="stage-grid" aria-label="Wertschöpfungsstufen">
+    {stages.map((stage) => (
+      <StageCard stage={stage} />
+    ))}
+  </section>
+
+  <div id="atlas" class="detail-area">
+    <p class="detail-hint">Wähle eine Stufe, um Details zu sehen.</p>
+
+    {stages.map((stage) => (
+      <section id={`stage-${stage.slug}`} class="stage-detail">
+        <a href="#atlas" class="close-detail" aria-label="Detail schließen">✕ Schließen</a>
+        <StageDetail stage={stage} tools={tools} />
+      </section>
+    ))}
+  </div>
+
+  <script>
+    // Atlas — Rollen-Filter. Dimmt Karten, deren data-roles die gewählte
+    // Rolle nicht enthält, und schließt einen offenen Detailbereich durch
+    // Reset des URL-Hashes auf den Atlas-Container.
+    const filter = document.getElementById('role-filter');
+    if (filter) {
+      const cards = document.querySelectorAll('.stage-card');
+      filter.addEventListener('change', (e) => {
+        const role = (e.target as HTMLSelectElement).value;
+        cards.forEach((card) => {
+          const roles = ((card as HTMLElement).dataset.roles || '')
+            .split(',')
+            .map((s) => s.trim());
+          if (role === 'all' || roles.includes(role)) {
+            card.classList.remove('dimmed');
+          } else {
+            card.classList.add('dimmed');
+          }
+        });
+        history.replaceState(null, '', '#atlas');
+      });
+    }
+  </script>
 </Base>

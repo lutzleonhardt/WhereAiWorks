@@ -1,0 +1,20 @@
+---
+type Suitability = 'good_fit' | 'conditional' | 'partial' | 'immature';
+
+interface Props {
+  suitability: Suitability;
+}
+
+const { suitability } = Astro.props;
+
+const labels: Record<Suitability, string> = {
+  good_fit: 'gut geeignet',
+  conditional: 'bedingt geeignet',
+  partial: 'nur Teilaufgaben',
+  immature: 'noch unreif',
+};
+---
+<span class={`suitability suitability-${suitability}`}>
+  <span class="suitability-dot" aria-hidden="true"></span>
+  {labels[suitability]}
+</span>
