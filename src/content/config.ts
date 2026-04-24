@@ -48,21 +48,9 @@ const useCaseToolSchema = z.object({
   sources: z.array(sourceSchema).optional(),
 });
 
-const stageUseCaseSchema = z.object({
-  id: z.string(),
-  roles: z.array(roleEnum),
-  title: z.string(),
-  goal_label: z.string(),
-  suitability: suitabilityEnum,
-  rationale: z.string(),
-  tools: z.array(useCaseToolSchema),
-  start_here: z.string(),
-  caveats: z.string(),
-  sources: z.array(sourceSchema),
-});
-
 const useCaseSchema = z.object({
   stage: reference('stages'),
+  order: z.number().int().min(1).max(99),
   roles: z.array(roleEnum),
   title: z.string(),
   goal_label: z.string(),
@@ -83,7 +71,6 @@ const stages = defineCollection({
     challenge: z.string(),
     top_use_case: z.string(),
     roles: z.array(roleEnum),
-    use_cases: z.array(stageUseCaseSchema).optional(),
   }),
 });
 

@@ -12,10 +12,19 @@ const stages = (await getCollection('stages')).sort(
   (a, b) => a.data.order - b.data.order
 );
 
-const useCaseCount = stages.reduce(
-  (sum, s) => sum + s.data.use_cases.length,
-  0
-);
+const allUseCases = await getCollection('use_cases');
+const useCasesByStage = new Map<string, typeof allUseCases>();
+for (const uc of allUseCases) {
+  const slug = uc.data.stage.id;
+  const list = useCasesByStage.get(slug);
+  if (list) list.push(uc);
+  else useCasesByStage.set(slug, [uc]);
+}
+for (const list of useCasesByStage.values()) {
+  list.sort((a, b) => a.data.order - b.data.order);
+}
+
+const useCaseCount = allUseCases.length;
 ---
 <Base title="Where AI Works — Atlas">
   <section id="view-atlas">
@@ -74,7 +83,11 @@ const useCaseCount = stages.reduce(
             <a href="#atlas" class="close-detail" aria-label="Detail schließen">
               ✕ Schließen
             </a>
-            <StageDetail stage={stage} tools={tools} />
+            <StageDetail
+              stage={stage}
+              useCases={useCasesByStage.get(stage.slug) ?? []}
+              tools={tools}
+            />
           </section>
         ))}
       </div>

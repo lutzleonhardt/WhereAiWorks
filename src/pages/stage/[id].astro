@@ -16,6 +16,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 const { stage } = Astro.props;
 const tools = loadTools();
 const idx = String(stage.data.order).padStart(2, '0');
+const useCases = (
+  await getCollection('use_cases', (uc) => uc.data.stage.id === stage.slug)
+).sort((a, b) => a.data.order - b.data.order);
 ---
 <Base title={`${stage.data.name} — Where AI Works`}>
   <section>
@@ -27,7 +30,7 @@ const idx = String(stage.data.order).padStart(2, '0');
       </div>
 
       <div class="stage-detail standalone">
-        <StageDetail stage={stage} tools={tools} standalone />
+        <StageDetail stage={stage} useCases={useCases} tools={tools} standalone />
       </div>
     </div>
   </section>

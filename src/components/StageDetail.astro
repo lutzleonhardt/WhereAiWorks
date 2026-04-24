@@ -12,11 +12,12 @@ type ToolEntry = {
 
 interface Props {
   stage: CollectionEntry<'stages'>;
+  useCases: CollectionEntry<'use_cases'>[];
   tools: ToolEntry[];
   standalone?: boolean;
 }
 
-const { stage, tools, standalone = false } = Astro.props;
+const { stage, useCases: useCaseEntries, tools, standalone = false } = Astro.props;
 const { Content } = await stage.render();
 
 const toolsById = new Map(tools.map((t) => [t.id, t] as const));
@@ -26,7 +27,7 @@ const maturityLabels: Record<string, string> = {
   experimental: 'growing',
 };
 
-const useCases = stage.data.use_cases;
+const useCases = useCaseEntries.map((entry) => entry.data);
 ---
 <article class="stage-detail-body">
   <div class="stage-crumb">Atlas · Stage-Detail</div>

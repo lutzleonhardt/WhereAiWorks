@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { loadRoles, loadTools } from '../lib/data';
 
@@ -33,7 +33,7 @@ const sourceTypeLabels: Record<string, string> = {
   community: 'community',
 };
 
-const stages = await getCollection('stages');
+const useCaseEntries = await getCollection('use_cases');
 
 type FinderSource = { label: string; url?: string; type: string; type_label: string };
 
@@ -53,6 +53,7 @@ type FinderUseCase = {
   goal_label: string;
   stage_id: string;
   stage_name: string;
+  stage_order: number;
   suitability: string;
   suitability_label: string;
   suitability_color: string;
@@ -70,37 +71,55 @@ const mapSource = (s: { label: string; url?: string; type: string }): FinderSour
   type_label: sourceTypeLabels[s.type],
 });
 
-const useCaseData: FinderUseCase[] = stages.flatMap((stage) =>
-  stage.data.use_cases.map((uc) => ({
-    id: uc.id,
-    title: uc.title,
-    roles: uc.roles,
-    goal_label: uc.goal_label,
-    stage_id: stage.slug,
-    stage_name: stage.data.name,
-    suitability: uc.suitability,
-    suitability_label: suitabilityLabels[uc.suitability],
-    suitability_color: suitabilityColor[uc.suitability],
-    rationale: uc.rationale,
-    tools: uc.tools
-      .map((entry) => {
-        const tool = toolsById.get(entry.id);
-        if (!tool) return null;
-        const enriched: FinderTool = {
-          id: tool.id,
-          name: tool.name,
-          url: tool.url,
-          maturity: tool.maturity,
-          maturity_label: maturityLabels[tool.maturity],
-        };
-        if (entry.note) enriched.note = entry.note;
-        return enriched;
-      })
-      .filter((t): t is FinderTool => t !== null),
-    start_here: uc.start_here,
-    caveats: uc.caveats,
-    sources: uc.sources.map(mapSource),
-  }))
+type Assembled = FinderUseCase & { _stageOrder: number; _ucOrder: number };
+
+const assembled: Assembled[] = await Promise.all(
+  useCaseEntries.map(async (entry) => {
+    const stage = await getEntry(entry.data.stage);
+    const slug = entry.slug.split('/').pop()!;
+    const uc = entry.data;
+    return {
+      id: `${stage.slug}:${slug}`,
+      title: uc.title,
+      roles: uc.roles,
+      goal_label: uc.goal_label,
+      stage_id: stage.slug,
+      stage_name: stage.data.name,
+      suitability: uc.suitability,
+      suitability_label: suitabilityLabels[uc.suitability],
+      suitability_color: suitabilityColor[uc.suitability],
+      rationale: uc.rationale,
+      tools: uc.tools
+        .map((entryTool) => {
+          const tool = toolsById.get(entryTool.id);
+          if (!tool) return null;
+          const enriched: FinderTool = {
+            id: tool.id,
+            name: tool.name,
+            url: tool.url,
+            maturity: tool.maturity,
+            maturity_label: maturityLabels[tool.maturity],
+          };
+          if (entryTool.note) enriched.note = entryTool.note;
+          return enriched;
+        })
+        .filter((t): t is FinderTool => t !== null),
+      start_here: uc.start_here,
+      caveats: uc.caveats,
+      sources: uc.sources.map(mapSource),
+      _stageOrder: stage.data.order,
+      _ucOrder: uc.order,
+    };
+  })
+);
+
+assembled.sort((a, b) => {
+  if (a._stageOrder !== b._stageOrder) return a._stageOrder - b._stageOrder;
+  return a._ucOrder - b._ucOrder;
+});
+
+const useCaseData: FinderUseCase[] = assembled.map(
+  ({ _stageOrder, _ucOrder, ...rest }) => rest
 );
 ---
 <Base title="Where AI Works — Finder">
