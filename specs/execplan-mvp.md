@@ -26,10 +26,10 @@ A successful `npm run build` produces a `dist/` directory with static HTML for a
 - [x] (2026-04-24 12:00Z) Read specs (mvp.md, spec.md, design.md, PLANS.md) and author this ExecPlan.
 - [x] (2026-04-24 13:40Z) Milestone 1 — Astro project scaffolded; `npm install --cache=./.npm-cache` and `npm run build` (with `ASTRO_TELEMETRY_DISABLED=1`) succeed.
 - [x] (2026-04-24 13:45Z) Milestone 2 — `roles.yaml`, `tools.yaml`, and four stage markdown files written; Zod rejects unknown tool IDs as verified by temporarily renaming `blinqio` → `blinqio-nope`.
-- [ ] Milestone 3 — Implement the Atlas page (`/`): header + nav layout, stage cards with suitability badge + top use case, role filter (Vanilla JS), inline detail panels via CSS `:target`.
-- [ ] Milestone 4 — Implement stage detail pages (`/stage/[id]`) using the same `StageDetail.astro` component the Atlas uses inline.
-- [ ] Milestone 5 — Implement the Finder (`/finder`): role-dependent goal dropdown, inline resolved JSON, Vanilla JS result rendering, `Im Atlas anzeigen` link deep-linking to the stage anchor.
-- [ ] Milestone 6 — README, minimal CSS reset and layout, final `npm run build` and acceptance walkthrough; produce commit history.
+- [x] (2026-04-24 13:50Z) Milestone 3 — Atlas page with cards, suitability badges, role filter, CSS `:target` inline details implemented; dev server serves `/` with HTTP 200.
+- [x] (2026-04-24 13:52Z) Milestone 4 — `/stage/[id]` pages generated for all four stages; `dist/stage/testing-qa/index.html` exists; standalone detail reuses `StageDetail.astro`.
+- [x] (2026-04-24 13:55Z) Milestone 5 — Finder page with inline resolved `FinderUseCase[]` JSON; role/goal dropdowns wired with ~45 lines of inline TypeScript; Atlas deep-link generated as `/#stage-<slug>`.
+- [x] (2026-04-24 13:58Z) Milestone 6 — README.md, clean `npm run build` producing 6 HTML files, acceptance probes against dev server.
 
 Each milestone ends with a git commit. Commits are intentionally small and topical.
 
@@ -69,9 +69,53 @@ Each milestone ends with a git commit. Commits are intentionally small and topic
   Rationale: They are listed as open questions in `mvp.md` and `design.md`. The README will note both as TODO so the product owner can decide before the public launch. Neither blocks a working local build.
   Date/Author: 2026-04-24 / Claude Code
 
+- Decision: Inline the atlas-filter Vanilla JS directly in `src/pages/index.astro` rather than loading `src/scripts/atlas.js` as an external asset.
+  Rationale: Astro only serves `public/` at the site root; files under `src/scripts/` are not copied. Making the 15-line handler an inline `<script>` block avoids adding a second asset pipeline and keeps the spec's "minimal dependencies" promise. The Finder script is inline for the same reason.
+  Date/Author: 2026-04-24 / Claude Code
+
+- Decision: Extract `loadRoles()` / `loadTools()` into `src/lib/data.ts` using `process.cwd()` path resolution, rather than `new URL('../data/roles.yaml', import.meta.url)` inside each page.
+  Rationale: The `import.meta.url`-relative path breaks in Astro's production build because page code is moved into `dist/chunks/`. Resolving from `process.cwd()` works identically in `astro dev` and `astro build`, and keeps `src/content/config.ts` and the pages in sync about where the YAML files live.
+  Date/Author: 2026-04-24 / Claude Code
+
 ## Outcomes & Retrospective
 
-_To be filled at the end of the final milestone._
+**Achieved.** A novice cloning the repo and running `npm install --cache=./.npm-cache && npm run build` ends up with `dist/` containing six static HTML files:
+
+    dist/index.html
+    dist/finder/index.html
+    dist/stage/customer-support/index.html
+    dist/stage/development/index.html
+    dist/stage/product-discovery/index.html
+    dist/stage/testing-qa/index.html
+
+Against `npm run dev`, all three routes (`/`, `/finder`, `/stage/testing-qa`) return HTTP 200. The server-rendered HTML carries:
+
+- Four stage cards on `/` (Product Discovery, Development, Testing & QA, Customer Support), each with a coloured suitability dot **and** a text label, a one-line challenge, and a "Top:"-highlighted top use case. Cards are anchor links (`href="#stage-<slug>"`).
+- Four matching `<section class="stage-detail" id="stage-<slug>">` blocks initially hidden (`display: none`); CSS `.stage-detail:target { display: block }` reveals exactly one per hash. A "detail-hint" paragraph uses `:has(.stage-detail:target)` to hide itself when any detail is open.
+- A role `<select>` with the four MVP roles; inline `<script>` (~15 lines) toggles `.dimmed` on non-matching cards and resets `location.hash` to `#atlas` to close any open detail.
+- On `/finder`: two `<select>` elements, a flattened `window.__FINDER_DATA__` array of five `FinderUseCase` entries (the full Testing & QA trio plus one per other stage) with *already-resolved* tool names/URLs/maturity labels and UI-facing suitability labels — the client script only reads and renders, it never does lookups.
+- `/stage/<slug>` pages render the same `StageDetail.astro` content in `standalone` mode, with a "Zurück zum Atlas" link instead of the inline close X.
+
+Zod-Referenzintegrität ist bestätigt: renaming `blinqio` to `blinqio-nope` in the Testing & QA frontmatter produced a descriptive build error listing the valid tool IDs; reverting restored a clean build.
+
+**What was left out of scope (intentional):**
+
+- No CI, no tests, no type-check gate beyond what `astro build` runs. The site is currently 6 static HTML files plus ~150 lines of TypeScript/Astro — a unit-test layer would be heavier than the code.
+- No visual design. Phase 1 CSS is deliberately minimal per `design.md` §1.3: one CSS file, no animations, no rounded corners, no shadows.
+- No hover tooltips on stage cards (the design doc lists them as optional; since each card already shows the top use case, a hover tip would be redundant).
+- License and hosting not chosen — documented as open in `README.md` and `mvp.md`.
+
+**Limitations that a human reviewer should verify before release:**
+
+- *Interactive behaviours were verified by inspecting server-rendered HTML and the inline script source, not by driving a real browser.* Specifically: the dropdown dependencies, the `:target` detail toggling under a keyboard/focus path, and the deep-link from Finder → Atlas require a hands-on browser check. The code is small and straightforward, but "inspected" is not "seen".
+- Link URLs for external tools were taken from the design doc; a maintainer should sanity-check each link once before the first public push.
+
+**Lessons learned / notes for the next contributor:**
+
+- YAML data loading can't reuse `new URL('../data/…', import.meta.url)` in pages because the built chunk moves away from source. The `src/lib/data.ts` helper using `process.cwd()` resolution works in both `astro dev` and `astro build`.
+- Astro's `define:vars` wraps the script in an IIFE and injects `const <name> = <JSON>`. That is enough; no manual serialization was needed.
+- `<script>` tags without `is:inline` are bundled by Vite and re-emitted as `type="module"` files in `_astro/`. That's fine for the page scripts but means inline TypeScript in `.astro` files is OK — Vite strips the annotations.
+- The MVP's smallest risk factor is not the code but the content curation (goal labels, honest suitability judgements, tool/source correctness). The next time work starts here, it should be content work, not refactoring.
 
 ## Context and Orientation
 
@@ -373,3 +417,4 @@ The bottom of this document reserves a "Revision notes" section that future edit
 ## Revision notes
 
 - 2026-04-24 / Claude Code — Initial version written. No prior revisions.
+- 2026-04-24 / Claude Code — All six milestones checked off. Progress, Surprises, and Outcomes sections filled. Two small deviations from the original plan recorded in the Decision Log: (a) `src/scripts/atlas.js` was replaced by an inline `<script>` in `index.astro` because Astro does not copy files from `src/scripts/` to `public/`; keeping the 15 lines inline is simpler than adding a build step. (b) Data loading was consolidated into `src/lib/data.ts` rather than repeating the `readFileSync` dance in each page.
