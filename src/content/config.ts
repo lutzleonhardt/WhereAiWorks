@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content';
 import { readFileSync } from 'node:fs';
 import yaml from 'js-yaml';
 
@@ -48,8 +48,21 @@ const useCaseToolSchema = z.object({
   sources: z.array(sourceSchema).optional(),
 });
 
-const useCaseSchema = z.object({
+const stageUseCaseSchema = z.object({
   id: z.string(),
+  roles: z.array(roleEnum),
+  title: z.string(),
+  goal_label: z.string(),
+  suitability: suitabilityEnum,
+  rationale: z.string(),
+  tools: z.array(useCaseToolSchema),
+  start_here: z.string(),
+  caveats: z.string(),
+  sources: z.array(sourceSchema),
+});
+
+const useCaseSchema = z.object({
+  stage: reference('stages'),
   roles: z.array(roleEnum),
   title: z.string(),
   goal_label: z.string(),
@@ -70,8 +83,13 @@ const stages = defineCollection({
     challenge: z.string(),
     top_use_case: z.string(),
     roles: z.array(roleEnum),
-    use_cases: z.array(useCaseSchema),
+    use_cases: z.array(stageUseCaseSchema).optional(),
   }),
 });
 
-export const collections = { stages };
+const use_cases = defineCollection({
+  type: 'content',
+  schema: useCaseSchema,
+});
+
+export const collections = { stages, use_cases };
