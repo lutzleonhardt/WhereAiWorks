@@ -2,6 +2,7 @@
 name: "Customer Support"
 type: "primary"
 order: 7
+phase: "begleiten"
 challenge: "Erstlevel-Tickets binden Ressourcen, die für komplexe Fälle fehlen."
 top_use_case: "Antwortvorschläge und Self-Service-Deflection"
 roles:

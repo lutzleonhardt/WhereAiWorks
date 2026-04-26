@@ -75,12 +75,15 @@ const useCaseSchema = z.object({
   sources: z.array(sourceRefSchema),
 });
 
+const phaseEnum = z.enum(['entwickeln', 'betreiben', 'begleiten', 'wachsen']);
+
 const stages = defineCollection({
   type: 'content',
   schema: z.object({
     name: z.string(),
     type: z.enum(['primary', 'support']),
     order: z.number().int().min(1).max(20),
+    phase: phaseEnum,
     challenge: z.string(),
     top_use_case: z.string(),
     roles: z.array(roleEnum),

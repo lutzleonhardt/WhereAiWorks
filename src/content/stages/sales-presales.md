@@ -2,6 +2,7 @@
 name: "Sales & Pre-Sales"
 type: "primary"
 order: 9
+phase: "wachsen"
 challenge: "Personalisierung skaliert mit AI, aber Halluzinationen vor Kunden sind teuer."
 top_use_case: "RFP-Antworten und Discovery-Notizen vorbereiten"
 roles:

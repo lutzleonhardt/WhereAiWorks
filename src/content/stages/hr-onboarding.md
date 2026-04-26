@@ -2,6 +2,7 @@
 name: "HR & Onboarding"
 type: "support"
 order: 10
+phase: "wachsen"
 challenge: "Recruiting- und Onboarding-Texte sind AI-affin, datenschutzrechtlich aber sensibel."
 top_use_case: "Onboarding-Materialien und Stellenprofile entwerfen"
 roles:

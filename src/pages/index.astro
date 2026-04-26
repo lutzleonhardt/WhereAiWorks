@@ -13,6 +13,39 @@ const stages = (await getCollection('stages')).sort(
   (a, b) => a.data.order - b.data.order
 );
 
+// Phasen über die Wertschöpfungskette. Reihenfolge bewusst: erst was wir
+// bauen, dann was wir betreiben, dann was wir um den Kunden herum tun,
+// dann wie wir das Geschäft skalieren.
+const phases = [
+  {
+    id: 'entwickeln',
+    label: 'Entwickeln',
+    hint: 'Vom Kundenproblem zum getesteten Inkrement.',
+  },
+  {
+    id: 'betreiben',
+    label: 'Betreiben',
+    hint: 'Was läuft, muss laufen — verlässlich und sichtbar.',
+  },
+  {
+    id: 'begleiten',
+    label: 'Begleiten',
+    hint: 'Kunden bekommen Antworten — schnell und konsistent.',
+  },
+  {
+    id: 'wachsen',
+    label: 'Wachsen',
+    hint: 'Neue Kunden, neue Köpfe — skalierbare Texte und Prozesse.',
+  },
+] as const;
+
+const stagesByPhase = phases.map((phase) => ({
+  ...phase,
+  items: stages.filter((s) => s.data.phase === phase.id),
+}));
+
+const pad = (n: number) => String(n).padStart(2, '0');
+
 const allUseCases = await getCollection('use_cases');
 const useCasesByStage = new Map<string, typeof allUseCases>();
 for (const uc of allUseCases) {
@@ -62,13 +95,28 @@ const useCaseCount = allUseCases.length;
       </div>
 
       <div
-        class="chain"
+        class="chain-wrap"
         id="chain"
         role="list"
         aria-label="Wertschöpfungskette mit Stufen"
       >
-        {stages.map((stage) => (
-          <StageCard stage={stage} />
+        {stagesByPhase.map((phase) => phase.items.length > 0 && (
+          <section class="phase-group" data-phase={phase.id} aria-labelledby={`phase-${phase.id}`}>
+            <header class="phase-header">
+              <span class="phase-num">{
+                phase.items.length > 1
+                  ? `Stufe ${pad(phase.items[0].data.order)} – ${pad(phase.items[phase.items.length - 1].data.order)}`
+                  : `Stufe ${pad(phase.items[0].data.order)}`
+              }</span>
+              <h2 class="phase-label" id={`phase-${phase.id}`}>{phase.label}</h2>
+              <p class="phase-hint">{phase.hint}</p>
+            </header>
+            <div class="chain phase-chain" data-count={phase.items.length}>
+              {phase.items.map((stage) => (
+                <StageCard stage={stage} />
+              ))}
+            </div>
+          </section>
         ))}
       </div>
 

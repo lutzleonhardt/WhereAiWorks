@@ -2,6 +2,7 @@
 name: "Documentation"
 type: "support"
 order: 8
+phase: "begleiten"
 challenge: "Doku ist klassischer AI-Sweet-Spot, aber inhaltliche Korrektheit ist nicht garantiert."
 top_use_case: "Erst-Drafts für API-, Code- und Onboarding-Doku"
 roles:
