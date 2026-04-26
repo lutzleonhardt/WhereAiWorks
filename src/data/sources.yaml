@@ -32,3 +32,107 @@
   label: "Applitools Customer Reports"
   url: "https://applitools.com/customers/"
   type: vendor
+
+# ---- Quellen aus Seed-Run development/code-completion (2026-04-26-1142) ----
+
+- id: copilot-marketplace
+  label: "GitHub Copilot — Marketplace-Beschreibung mit Inline-Completion und Next Edit Suggestions"
+  url: "https://marketplace.visualstudio.com/items?itemName=github.copilot"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: copilot-vs-jetbrains-devtoolsreview
+  label: "DevToolsReview 2026 — Copilot vs. JetBrains AI"
+  url: "https://devtoolsreview.com/comparisons/copilot-vs-jetbrains-ai-2026"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: copilot-cursor-reddit-2025
+  label: "Reddit r/GithubCopilot — Copilot vs. Cursor in 2025"
+  url: "https://www.reddit.com/r/GithubCopilot/comments/1jnboan/github_copilot_vs_cursor_in_2025_why_im_paying/"
+  type: community
+  captured_at: "2026-04-26"
+
+- id: cursor-enterprise
+  label: "Cursor Enterprise — SOC 2 Type II, Privacy Mode, Admin-Visibility"
+  url: "https://enterprise.cursor.com/"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: cursor-vs-copilot-devtoolsreview
+  label: "DevToolsReview 2026 — Cursor vs. Copilot Tab-Completion-Vorsprung"
+  url: "https://devtoolsreview.com/comparisons/cursor-vs-copilot-2026"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: claude-ai-coding-competitors-reddit
+  label: "Reddit r/ClaudeAI — Analyse 15 AI-Coding-Konkurrenten 2026"
+  url: "https://www.reddit.com/r/ClaudeAI/comments/1rp9a57/i_analyzed_15_competitors_in_the_ai_coding/"
+  type: community
+  captured_at: "2026-04-26"
+
+- id: jetbrains-ai-devtoolsreview
+  label: "DevToolsReview — JetBrains AI Review (Type-aware Completions)"
+  url: "https://devtoolsreview.com/reviews/jetbrains-ai-review"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: jetbrains-ai-vibecodedthis
+  label: "VibeCodedThis — JetBrains AI Review 2026 (Free unlimited lokale Completions)"
+  url: "https://vibecodedthis.com/reviews/jetbrains-ai-review-2026/"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: jetbrains-ai-installation-docs
+  label: "JetBrains AI — Installation Guide (AI Enterprise self-hosted LLM)"
+  url: "https://www.jetbrains.com/help/ai-assistant/installation-guide-ai-assistant.html"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: tabnine-enterprise
+  label: "Tabnine Enterprise — Air-gapped Deployment und Compliance-Zertifizierungen"
+  url: "https://www.tabnine.com/enterprise"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: tabnine-medium-acceptance-rate
+  label: "Medium — 5 AI Coding Assistants in Production (Tabnine Acceptance-Rate)"
+  url: "https://medium.com/@tarxemo/i-tested-5-ai-coding-assistants-in-production-heres-what-actually-worked-6ad698951152"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: tabnine-reddit-selfhosted
+  label: "Reddit r/webdev — Tabnine self-hosted in datensensitiven Teams"
+  url: "https://www.reddit.com/r/webdev/comments/1h20eq5/which_one_to_use_copilot_tabnine_codeium/"
+  type: community
+  captured_at: "2026-04-26"
+
+- id: continue-aicodingcompare
+  label: "AICodingCompare — Continue.dev als Open-Source-Connector"
+  url: "https://aicodingcompare.com/tool/continue"
+  type: review
+  captured_at: "2026-04-26"
+
+- id: continue-jackson-blog
+  label: "jackson.dev — Praktiker-Wechsel zu Continue.dev"
+  url: "https://jackson.dev/post/cody-hates-reset/"
+  type: blog
+  captured_at: "2026-04-26"
+
+- id: cody-sourcegraph-docs
+  label: "Sourcegraph Cody — Codebase-Kontextnutzung über Search API"
+  url: "https://sourcegraph.com/docs/cody"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: cody-faq-deprecation
+  label: "Sourcegraph Cody FAQ — Free/Pro abgekündigt, nur Enterprise bleibt"
+  url: "https://docs.sourcegraph.com/docs/cody/faq"
+  type: vendor_doc
+  captured_at: "2026-04-26"
+
+- id: cody-byok-config
+  label: "Sourcegraph Cody — BYOK Bedrock/Vertex Self-hosted"
+  url: "https://docs.sourcegraph.com/docs/cody/enterprise/model-configuration"
+  type: documentation
+  captured_at: "2026-04-26"

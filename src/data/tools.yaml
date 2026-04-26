@@ -1,5 +1,7 @@
 - id: copilot
   name: "GitHub Copilot"
+  vendor: "GitHub (Microsoft)"
+  description: "Inline-Completion und Next-Edit-Suggestions in VS Code, JetBrains, Neovim, Visual Studio."
   category: coding
   url: "https://github.com/features/copilot"
   maturity: production
@@ -7,17 +9,56 @@
 
 - id: cursor
   name: "Cursor"
+  vendor: "Anysphere"
+  description: "VS-Code-Fork mit eigenem Tab-Modell und Codebase-Indexing für längere, präzisere Suggestions."
   category: coding
   url: "https://cursor.com"
   maturity: production
-  pricing: "$20/User/Monat"
+  pricing: "$20/User/Monat (Credit-basiert seit 08/2025)"
 
 - id: claude-code
   name: "Claude Code"
+  vendor: "Anthropic"
+  description: "Agent-orientierter Coding-Assistant in Terminal/IDE mit großem Kontext."
   category: coding
   url: "https://claude.com/product/claude-code"
   maturity: production
   pricing: "ab $20/User/Monat"
+
+- id: jetbrains-ai-assistant
+  name: "JetBrains AI Assistant (mit Junie)"
+  vendor: "JetBrains"
+  description: "Native AI-Completion in IntelliJ, PyCharm, WebStorm — Mellum-Modell läuft lokal, AI Enterprise erlaubt eigenes LLM-Hosting."
+  category: coding
+  url: "https://www.jetbrains.com/ai/"
+  maturity: production
+  pricing: "ab $10/User/Monat"
+
+- id: tabnine
+  name: "Tabnine"
+  vendor: "Tabnine"
+  description: "Privacy-first Code-Completion mit on-prem/air-gapped Deployment, BYO-LLM, SOC 2/ISO 27001/GDPR."
+  category: coding
+  url: "https://www.tabnine.com"
+  maturity: production
+  pricing: "ab $39/User/Monat (Enterprise)"
+
+- id: continue-dev
+  name: "Continue.dev"
+  vendor: "Continue"
+  description: "Apache-2.0 IDE-Plugin mit BYOK — bindet beliebige LLMs (OpenAI, Anthropic, Gemini, lokale Ollama-Modelle) als Completion-Backend ein."
+  category: coding
+  url: "https://www.continue.dev/"
+  maturity: production
+
+- id: sourcegraph-cody
+  name: "Sourcegraph Cody"
+  vendor: "Sourcegraph"
+  description: "Code-Completion und Chat über Sourcegraph-Kontext-Engine — zieht Symbole und Usages aus dem ganzen Remote-Repo."
+  category: coding
+  url: "https://sourcegraph.com/cody"
+  maturity: production
+  pricing: "ab $59/User/Monat (nur Enterprise)"
 
 - id: blinqio
   name: "BlinqIO"

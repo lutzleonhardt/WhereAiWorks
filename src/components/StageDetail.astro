@@ -1,23 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import SuitabilityBadge from './SuitabilityBadge.astro';
+import type { ToolEntry, SourceEntry, SourceType } from '../lib/data';
 
-type ToolEntry = {
-  id: string;
-  name: string;
-  url: string;
-  maturity: 'production' | 'experimental';
-  pricing?: string;
-};
-
-type SourceEntry = {
-  id: string;
+type ResolvedSource = {
   label: string;
   url?: string;
-  type: 'study' | 'case_study' | 'vendor' | 'community';
+  type: SourceType;
+  type_label: string;
 };
-
-type ResolvedSource = { label: string; url?: string; type: string };
 
 interface Props {
   stage: CollectionEntry<'stages'>;
@@ -38,13 +29,70 @@ const maturityLabels: Record<string, string> = {
   experimental: 'growing',
 };
 
+const sourceTypeLabels: Record<SourceType, string> = {
+  study: 'study',
+  case_study: 'case study',
+  vendor: 'vendor',
+  vendor_doc: 'vendor doc',
+  community: 'community',
+  review: 'review',
+  blog: 'blog',
+  documentation: 'docs',
+  news: 'news',
+};
+
+const enterpriseReadinessLabels: Record<string, string> = {
+  enterprise_ready: 'enterprise-ready',
+  team_ready: 'team-ready',
+  evaluation_only: 'nur Evaluation',
+  irrelevant_for_enterprise: 'kein Enterprise-Fokus',
+  unknown: 'Reifegrad unklar',
+};
+
+const adoptionLabels: Record<string, string> = {
+  mainstream: 'Mainstream',
+  growing: 'wachsend',
+  emerging: 'aufkommend',
+};
+
+const relevanceLabels: Record<string, string> = {
+  high: 'hoch',
+  medium: 'mittel',
+  low: 'niedrig',
+};
+
+const evidenceStrengthLabels: Record<string, string> = {
+  strong: 'stark',
+  medium: 'mittel',
+  weak: 'schwach',
+};
+
+const tenorLabels: Record<string, string> = {
+  positive: 'positiv',
+  mixed: 'gemischt',
+  polarized: 'polarisiert',
+  negative: 'negativ',
+  unknown: 'unklar',
+};
+
+const volumeLabels: Record<string, string> = {
+  high: 'hoch',
+  medium: 'mittel',
+  low: 'niedrig',
+};
+
 const resolveSources = (
   refs: readonly { id: string }[] | undefined
 ): ResolvedSource[] =>
   (refs ?? [])
     .map((r) => sourcesById.get(r.id))
     .filter((s): s is SourceEntry => Boolean(s))
-    .map(({ label, url, type }) => ({ label, url, type }));
+    .map(({ label, url, type }) => ({
+      label,
+      url,
+      type,
+      type_label: sourceTypeLabels[type] ?? type,
+    }));
 
 const useCases = useCaseEntries.map((entry) => entry.data);
 ---
@@ -67,9 +115,22 @@ const useCases = useCaseEntries.map((entry) => entry.data);
         <li class="uc">
           <h4>{uc.title}</h4>
           <div class="goal">„{uc.goal_label}"</div>
-          <div class="row">
+          <div class="row pill-row">
             <SuitabilityBadge suitability={uc.suitability} />
           </div>
+          {(uc.adoption_maturity || uc.enterprise_relevance || uc.evidence_strength) && (
+            <div class="uc-meta">
+              {uc.adoption_maturity && (
+                <span>Adoption <b>{adoptionLabels[uc.adoption_maturity]}</b></span>
+              )}
+              {uc.enterprise_relevance && (
+                <span>Enterprise-Relevanz <b>{relevanceLabels[uc.enterprise_relevance]}</b></span>
+              )}
+              {uc.evidence_strength && (
+                <span>Evidenz <b>{evidenceStrengthLabels[uc.evidence_strength]}</b></span>
+              )}
+            </div>
+          )}
           <p class="why">{uc.rationale}</p>
 
           <div class="kv">
@@ -79,6 +140,7 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                 const tool = toolsById.get(entry.id);
                 if (!tool) return null;
                 const toolSources = resolveSources(entry.sources);
+                const ps = entry.practitioner_signal;
                 return (
                   <li class="tool-entry">
                     <div class="tool-head">
@@ -89,22 +151,66 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                         target="_blank"
                       >
                         {tool.name}
+                        {tool.vendor && <span class="vendor">· {tool.vendor}</span>}
                         <span class="mat">({maturityLabels[tool.maturity]})</span>
                       </a>
-                      {entry.fit && <SuitabilityBadge suitability={entry.fit} />}
+                      <SuitabilityBadge suitability={entry.fit} />
+                      {entry.enterprise_readiness && (
+                        <span class="pill neutral">
+                          <span class="dot" aria-hidden="true"></span>
+                          {enterpriseReadinessLabels[entry.enterprise_readiness]}
+                        </span>
+                      )}
+                      {entry.confidence && (
+                        <span class="tool-confidence">Confidence: {entry.confidence}</span>
+                      )}
                     </div>
-                    {entry.note && <p class="tool-note">{entry.note}</p>}
+                    <p class="tool-why">{entry.why_it_fits}</p>
+                    {entry.caveats && entry.caveats.length > 0 && (
+                      <ul class="tool-caveats">
+                        {entry.caveats.map((c) => (
+                          <li>{c}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {ps && (
+                      <div class="tool-signal">
+                        <div class="tool-signal-head">
+                          Praktiker-Signal · Volumen <b>{volumeLabels[ps.volume]}</b> · Tenor <b>{tenorLabels[ps.tenor]}</b>
+                        </div>
+                        {(ps.praise?.length || ps.complaints?.length) && (
+                          <div class="tool-signal-grid">
+                            {ps.praise && ps.praise.length > 0 && (
+                              <div>
+                                <h6>Lob</h6>
+                                <ul>
+                                  {ps.praise.map((p) => <li>{p}</li>)}
+                                </ul>
+                              </div>
+                            )}
+                            {ps.complaints && ps.complaints.length > 0 && (
+                              <div>
+                                <h6>Kritik</h6>
+                                <ul>
+                                  {ps.complaints.map((p) => <li>{p}</li>)}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )}
                     {toolSources.length > 0 && (
                       <div class="sources">
                         {toolSources.map((s) => (
                           s.url ? (
                             <a class="src" href={s.url} rel="noreferrer" target="_blank">
-                              <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                              <span class={`badge ${s.type}`}>{s.type_label}</span>
                               {s.label}
                             </a>
                           ) : (
                             <span class="src">
-                              <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                              <span class={`badge ${s.type}`}>{s.type_label}</span>
                               {s.label}
                             </span>
                           )
@@ -127,12 +233,12 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                 {ucSources.map((s) => (
                   s.url ? (
                     <a class="src" href={s.url} rel="noreferrer" target="_blank">
-                      <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                      <span class={`badge ${s.type}`}>{s.type_label}</span>
                       {s.label}
                     </a>
                   ) : (
                     <span class="src">
-                      <span class={`badge ${s.type}`}>{s.type.replace('_', ' ')}</span>
+                      <span class={`badge ${s.type}`}>{s.type_label}</span>
                       {s.label}
                     </span>
                   )

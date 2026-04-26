@@ -6,6 +6,8 @@ type RoleEntry = { id: string; name: string; aliases?: string[] };
 type ToolEntry = {
   id: string;
   name: string;
+  vendor?: string;
+  description?: string;
   category: string;
   url: string;
   maturity: 'production' | 'experimental';
@@ -15,7 +17,17 @@ type SourceEntry = {
   id: string;
   label: string;
   url?: string;
-  type: 'study' | 'case_study' | 'vendor' | 'community';
+  type:
+    | 'study'
+    | 'case_study'
+    | 'vendor'
+    | 'vendor_doc'
+    | 'community'
+    | 'review'
+    | 'blog'
+    | 'documentation'
+    | 'news';
+  captured_at?: string;
 };
 
 const roles = yaml.load(
@@ -39,6 +51,19 @@ const toolIdEnum = z.enum(toolIds);
 const sourceIdEnum = z.enum(sourceIds);
 
 const suitabilityEnum = z.enum(['good_fit', 'conditional', 'partial', 'immature']);
+const enterpriseReadinessEnum = z.enum([
+  'enterprise_ready',
+  'team_ready',
+  'evaluation_only',
+  'irrelevant_for_enterprise',
+  'unknown',
+]);
+const confidenceEnum = z.enum(['high', 'medium', 'low']);
+const adoptionMaturityEnum = z.enum(['mainstream', 'growing', 'emerging']);
+const enterpriseRelevanceEnum = z.enum(['high', 'medium', 'low']);
+const evidenceStrengthEnum = z.enum(['strong', 'medium', 'weak']);
+const practitionerVolumeEnum = z.enum(['high', 'medium', 'low']);
+const practitionerTenorEnum = z.enum(['positive', 'mixed', 'polarized', 'negative', 'unknown']);
 
 // Source-Referenz im Use-Case-Frontmatter: nur `id` (Pflicht) + optionale
 // kontextuelle `note`. Label, URL und Typ kommen zentral aus
@@ -48,16 +73,27 @@ const sourceRefSchema = z.object({
   note: z.string().optional(),
 });
 
+const practitionerSignalSchema = z.object({
+  volume: practitionerVolumeEnum,
+  tenor: practitionerTenorEnum,
+  praise: z.array(z.string()).optional(),
+  complaints: z.array(z.string()).optional(),
+});
+
 // Tool-Eintrag im Kontext eines Use Cases.
 // Zwei Ebenen bewusst getrennt: `useCaseSchema.suitability` = ist AI für
-// diese Aufgabe sinnvoll? `useCaseToolSchema.fit` (optional) = wie gut
-// passt DIESES Tool für diesen Use Case? Ohne `fit` gilt die Use-Case-
-// Suitability auch für das Tool. `sources` hier = tool-spezifisch;
-// globale Evidenz bleibt in `useCaseSchema.sources`.
+// diese Aufgabe sinnvoll? `useCaseToolSchema.fit` = wie gut passt DIESES
+// Tool für diesen Use Case? `why_it_fits` und `caveats[]` sind das
+// strukturierte Pendant zu dem früheren `note`-Blob. `sources` hier =
+// tool-spezifisch; globale Evidenz bleibt in `useCaseSchema.sources`.
 const useCaseToolSchema = z.object({
   id: toolIdEnum,
-  fit: suitabilityEnum.optional(),
-  note: z.string().optional(),
+  fit: suitabilityEnum,
+  enterprise_readiness: enterpriseReadinessEnum.optional(),
+  why_it_fits: z.string(),
+  caveats: z.array(z.string()).optional(),
+  practitioner_signal: practitionerSignalSchema.optional(),
+  confidence: confidenceEnum.optional(),
   sources: z.array(sourceRefSchema).optional(),
 });
 
@@ -68,6 +104,9 @@ const useCaseSchema = z.object({
   title: z.string(),
   goal_label: z.string(),
   suitability: suitabilityEnum,
+  adoption_maturity: adoptionMaturityEnum.optional(),
+  enterprise_relevance: enterpriseRelevanceEnum.optional(),
+  evidence_strength: evidenceStrengthEnum.optional(),
   rationale: z.string(),
   tools: z.array(useCaseToolSchema),
   start_here: z.string(),

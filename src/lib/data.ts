@@ -11,19 +11,31 @@ export type RoleEntry = {
 export type ToolEntry = {
   id: string;
   name: string;
+  vendor?: string;
+  description?: string;
   category: string;
   url: string;
   maturity: 'production' | 'experimental';
   pricing?: string;
 };
 
-export type SourceType = 'study' | 'case_study' | 'vendor' | 'community';
+export type SourceType =
+  | 'study'
+  | 'case_study'
+  | 'vendor'
+  | 'vendor_doc'
+  | 'community'
+  | 'review'
+  | 'blog'
+  | 'documentation'
+  | 'news';
 
 export type SourceEntry = {
   id: string;
   label: string;
   url?: string;
   type: SourceType;
+  captured_at?: string;
 };
 
 function readYaml<T>(relPath: string): T {

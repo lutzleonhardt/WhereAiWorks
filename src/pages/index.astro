@@ -2,12 +2,9 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StageCard from '../components/StageCard.astro';
-import StageDetail from '../components/StageDetail.astro';
-import { loadRoles, loadSources, loadTools } from '../lib/data';
+import { loadRoles } from '../lib/data';
 
 const roles = loadRoles();
-const tools = loadTools();
-const sources = loadSources();
 
 const stages = (await getCollection('stages')).sort(
   (a, b) => a.data.order - b.data.order
@@ -46,19 +43,7 @@ const stagesByPhase = phases.map((phase) => ({
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
-const allUseCases = await getCollection('use_cases');
-const useCasesByStage = new Map<string, typeof allUseCases>();
-for (const uc of allUseCases) {
-  const slug = uc.data.stage.id;
-  const list = useCasesByStage.get(slug);
-  if (list) list.push(uc);
-  else useCasesByStage.set(slug, [uc]);
-}
-for (const list of useCasesByStage.values()) {
-  list.sort((a, b) => a.data.order - b.data.order);
-}
-
-const useCaseCount = allUseCases.length;
+const useCaseCount = (await getCollection('use_cases')).length;
 ---
 <Base title="Where AI Works — Atlas">
   <section id="view-atlas">
@@ -119,38 +104,17 @@ const useCaseCount = allUseCases.length;
           </section>
         ))}
       </div>
-
-      <div id="atlas" class="detail-anchor"></div>
-      <div class="detail-area">
-        <p class="detail-empty" id="detail-empty">
-          Wähle eine Stufe, um Details zu sehen.
-          <kbd>↵</kbd> oder <kbd>Klick</kbd> auf einen Pfeil.
-        </p>
-
-        {stages.map((stage) => (
-          <section id={`stage-${stage.slug}`} class="stage-detail">
-            <a href="#atlas" class="close-detail" aria-label="Detail schließen">
-              ✕ Schließen
-            </a>
-            <StageDetail
-              stage={stage}
-              useCases={useCasesByStage.get(stage.slug) ?? []}
-              tools={tools}
-              sources={sources}
-            />
-          </section>
-        ))}
-      </div>
     </div>
   </section>
 
   <script>
     // Role filter — dims stages whose data-roles does not include the
-    // selected role.
-    const filter = document.getElementById('role-filter') as HTMLSelectElement | null;
-    const cards = document.querySelectorAll<HTMLElement>('.stage');
-
-    if (filter) {
+    // selected role. Re-bound after each View-Transition so the listener
+    // survives client-side navigation back to the Atlas.
+    function bindRoleFilter() {
+      const filter = document.getElementById('role-filter') as HTMLSelectElement | null;
+      if (!filter) return;
+      const cards = document.querySelectorAll<HTMLElement>('.stage');
       filter.addEventListener('change', (e) => {
         const role = (e.target as HTMLSelectElement).value;
         cards.forEach((card) => {
@@ -163,16 +127,7 @@ const useCaseCount = allUseCases.length;
         });
       });
     }
-
-    // Sync `.active` highlight on whichever stage is currently targeted.
-    function syncActive() {
-      const hash = location.hash.replace('#', '');
-      const activeSlug = hash.startsWith('stage-') ? hash.slice('stage-'.length) : '';
-      cards.forEach((card) => {
-        card.classList.toggle('active', card.dataset.stage === activeSlug);
-      });
-    }
-    syncActive();
-    window.addEventListener('hashchange', syncActive);
+    bindRoleFilter();
+    document.addEventListener('astro:page-load', bindRoleFilter);
   </script>
 </Base>

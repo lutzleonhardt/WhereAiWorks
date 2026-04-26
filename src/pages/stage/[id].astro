@@ -20,10 +20,36 @@ const idx = String(stage.data.order).padStart(2, '0');
 const useCases = (
   await getCollection('use_cases', (uc) => uc.data.stage.id === stage.slug)
 ).sort((a, b) => a.data.order - b.data.order);
+
+// Mini-Phasenleiste oben — gleiche vier Phasen wie auf der Atlas-Seite,
+// aktuelle Phase markiert. Bewusst kompakt, kein zweites Atlas.
+const phases = [
+  { id: 'entwickeln', label: 'Entwickeln' },
+  { id: 'betreiben', label: 'Betreiben' },
+  { id: 'begleiten', label: 'Begleiten' },
+  { id: 'wachsen', label: 'Wachsen' },
+] as const;
+const currentPhase = stage.data.phase;
 ---
 <Base title={`${stage.data.name} — Where AI Works`}>
   <section>
     <div class="wrap">
+      <nav class="phase-strip" aria-label="Phase">
+        <a class="phase-strip-back" href="/">← Atlas</a>
+        <ol class="phase-strip-list">
+          {phases.map((p) => (
+            <li
+              class:list={[
+                'phase-strip-item',
+                p.id === currentPhase && 'is-current',
+              ]}
+            >
+              <a href={`/#phase-${p.id}`}>{p.label}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
       <div class="lede">
         <div class="eyebrow">Atlas · Stufe {idx}</div>
         <h1>{stage.data.name}</h1>

@@ -32,7 +32,52 @@ const sourceTypeLabels: Record<string, string> = {
   study: 'study',
   case_study: 'case study',
   vendor: 'vendor',
+  vendor_doc: 'vendor doc',
   community: 'community',
+  review: 'review',
+  blog: 'blog',
+  documentation: 'docs',
+  news: 'news',
+};
+
+const enterpriseReadinessLabels: Record<string, string> = {
+  enterprise_ready: 'enterprise-ready',
+  team_ready: 'team-ready',
+  evaluation_only: 'nur Evaluation',
+  irrelevant_for_enterprise: 'kein Enterprise-Fokus',
+  unknown: 'Reifegrad unklar',
+};
+
+const adoptionLabels: Record<string, string> = {
+  mainstream: 'Mainstream',
+  growing: 'wachsend',
+  emerging: 'aufkommend',
+};
+
+const relevanceLabels: Record<string, string> = {
+  high: 'hoch',
+  medium: 'mittel',
+  low: 'niedrig',
+};
+
+const evidenceStrengthLabels: Record<string, string> = {
+  strong: 'stark',
+  medium: 'mittel',
+  weak: 'schwach',
+};
+
+const tenorLabels: Record<string, string> = {
+  positive: 'positiv',
+  mixed: 'gemischt',
+  polarized: 'polarisiert',
+  negative: 'negativ',
+  unknown: 'unklar',
+};
+
+const volumeLabels: Record<string, string> = {
+  high: 'hoch',
+  medium: 'mittel',
+  low: 'niedrig',
 };
 
 const useCaseEntries = await getCollection('use_cases');
@@ -42,10 +87,27 @@ type FinderSource = { label: string; url?: string; type: string; type_label: str
 type FinderTool = {
   id: string;
   name: string;
+  vendor?: string;
   url: string;
   maturity: string;
   maturity_label: string;
-  note?: string;
+  fit: string;
+  fit_label: string;
+  fit_color: string;
+  enterprise_readiness?: string;
+  enterprise_readiness_label?: string;
+  why_it_fits: string;
+  caveats: string[];
+  practitioner_signal?: {
+    volume: string;
+    volume_label: string;
+    tenor: string;
+    tenor_label: string;
+    praise: string[];
+    complaints: string[];
+  };
+  confidence?: string;
+  sources: FinderSource[];
 };
 
 type FinderUseCase = {
@@ -55,10 +117,15 @@ type FinderUseCase = {
   goal_label: string;
   stage_id: string;
   stage_name: string;
-  stage_order: number;
   suitability: string;
   suitability_label: string;
   suitability_color: string;
+  adoption_maturity?: string;
+  adoption_label?: string;
+  enterprise_relevance?: string;
+  enterprise_relevance_label?: string;
+  evidence_strength?: string;
+  evidence_strength_label?: string;
   rationale: string;
   tools: FinderTool[];
   start_here: string;
@@ -66,15 +133,15 @@ type FinderUseCase = {
   sources: FinderSource[];
 };
 
-const resolveSources = (refs: readonly { id: string }[]): FinderSource[] =>
-  refs
+const resolveSources = (refs: readonly { id: string }[] | undefined): FinderSource[] =>
+  (refs ?? [])
     .map((r) => sourcesById.get(r.id))
     .filter((s): s is NonNullable<typeof s> => Boolean(s))
     .map((s) => ({
       label: s.label,
       url: s.url,
       type: s.type,
-      type_label: sourceTypeLabels[s.type],
+      type_label: sourceTypeLabels[s.type] ?? s.type,
     }));
 
 type Assembled = FinderUseCase & { _stageOrder: number; _ucOrder: number };
@@ -94,6 +161,16 @@ const assembled: Assembled[] = await Promise.all(
       suitability: uc.suitability,
       suitability_label: suitabilityLabels[uc.suitability],
       suitability_color: suitabilityColor[uc.suitability],
+      adoption_maturity: uc.adoption_maturity,
+      adoption_label: uc.adoption_maturity ? adoptionLabels[uc.adoption_maturity] : undefined,
+      enterprise_relevance: uc.enterprise_relevance,
+      enterprise_relevance_label: uc.enterprise_relevance
+        ? relevanceLabels[uc.enterprise_relevance]
+        : undefined,
+      evidence_strength: uc.evidence_strength,
+      evidence_strength_label: uc.evidence_strength
+        ? evidenceStrengthLabels[uc.evidence_strength]
+        : undefined,
       rationale: uc.rationale,
       tools: uc.tools
         .map((entryTool) => {
@@ -102,11 +179,34 @@ const assembled: Assembled[] = await Promise.all(
           const enriched: FinderTool = {
             id: tool.id,
             name: tool.name,
+            vendor: tool.vendor,
             url: tool.url,
             maturity: tool.maturity,
             maturity_label: maturityLabels[tool.maturity],
+            fit: entryTool.fit,
+            fit_label: suitabilityLabels[entryTool.fit],
+            fit_color: suitabilityColor[entryTool.fit],
+            why_it_fits: entryTool.why_it_fits,
+            caveats: entryTool.caveats ?? [],
+            sources: resolveSources(entryTool.sources),
           };
-          if (entryTool.note) enriched.note = entryTool.note;
+          if (entryTool.enterprise_readiness) {
+            enriched.enterprise_readiness = entryTool.enterprise_readiness;
+            enriched.enterprise_readiness_label =
+              enterpriseReadinessLabels[entryTool.enterprise_readiness];
+          }
+          if (entryTool.practitioner_signal) {
+            const ps = entryTool.practitioner_signal;
+            enriched.practitioner_signal = {
+              volume: ps.volume,
+              volume_label: volumeLabels[ps.volume],
+              tenor: ps.tenor,
+              tenor_label: tenorLabels[ps.tenor],
+              praise: ps.praise ?? [],
+              complaints: ps.complaints ?? [],
+            };
+          }
+          if (entryTool.confidence) enriched.confidence = entryTool.confidence;
           return enriched;
         })
         .filter((t): t is FinderTool => t !== null),
@@ -192,10 +292,27 @@ const useCaseData: FinderUseCase[] = assembled.map(
     type FinderTool = {
       id: string;
       name: string;
+      vendor?: string;
       url: string;
       maturity: string;
       maturity_label: string;
-      note?: string;
+      fit: string;
+      fit_label: string;
+      fit_color: string;
+      enterprise_readiness?: string;
+      enterprise_readiness_label?: string;
+      why_it_fits: string;
+      caveats: string[];
+      practitioner_signal?: {
+        volume: string;
+        volume_label: string;
+        tenor: string;
+        tenor_label: string;
+        praise: string[];
+        complaints: string[];
+      };
+      confidence?: string;
+      sources: FinderSource[];
     };
     type FinderUseCase = {
       id: string;
@@ -207,6 +324,12 @@ const useCaseData: FinderUseCase[] = assembled.map(
       suitability: string;
       suitability_label: string;
       suitability_color: string;
+      adoption_maturity?: string;
+      adoption_label?: string;
+      enterprise_relevance?: string;
+      enterprise_relevance_label?: string;
+      evidence_strength?: string;
+      evidence_strength_label?: string;
       rationale: string;
       tools: FinderTool[];
       start_here: string;
@@ -231,18 +354,45 @@ const useCaseData: FinderUseCase[] = assembled.map(
       return `<span class="pill ${color} ${size}" role="status"><span class="dot" aria-hidden="true"></span>${escapeHtml(label)}</span>`;
     }
 
-    function chipsHtml(ts: FinderTool[]): string {
-      if (!ts.length) return '<p>—</p>';
-      return `<div class="chips">${ts
-        .map((t) => {
-          const note = t.note ? ` <span class="chip-note">— ${escapeHtml(t.note)}</span>` : '';
-          return `<a class="chip" href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(t.name)} <span class="mat">(${escapeHtml(t.maturity_label)})</span>${note}</a>`;
-        })
-        .join('')}</div>`;
+    function neutralPill(label: string): string {
+      return `<span class="pill neutral"><span class="dot" aria-hidden="true"></span>${escapeHtml(label)}</span>`;
     }
 
-    function sourcesHtml(ss: FinderSource[]): string {
-      if (!ss.length) return '<p>—</p>';
+    function metaRow(uc: FinderUseCase): string {
+      const parts: string[] = [];
+      if (uc.adoption_label) parts.push(`<span>Adoption <b>${escapeHtml(uc.adoption_label)}</b></span>`);
+      if (uc.enterprise_relevance_label)
+        parts.push(`<span>Enterprise-Relevanz <b>${escapeHtml(uc.enterprise_relevance_label)}</b></span>`);
+      if (uc.evidence_strength_label)
+        parts.push(`<span>Evidenz <b>${escapeHtml(uc.evidence_strength_label)}</b></span>`);
+      return parts.length ? `<div class="uc-meta">${parts.join('')}</div>` : '';
+    }
+
+    function caveatsHtml(items: string[]): string {
+      if (!items.length) return '';
+      return `<ul class="tool-caveats">${items
+        .map((c) => `<li>${escapeHtml(c)}</li>`)
+        .join('')}</ul>`;
+    }
+
+    function signalHtml(ps: NonNullable<FinderTool['practitioner_signal']>): string {
+      const praise = ps.praise.length
+        ? `<div><h6>Lob</h6><ul>${ps.praise.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul></div>`
+        : '';
+      const complaints = ps.complaints.length
+        ? `<div><h6>Kritik</h6><ul>${ps.complaints.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul></div>`
+        : '';
+      const grid = praise || complaints
+        ? `<div class="tool-signal-grid">${praise}${complaints}</div>`
+        : '';
+      return `<div class="tool-signal">
+        <div class="tool-signal-head">Praktiker-Signal · Volumen <b>${escapeHtml(ps.volume_label)}</b> · Tenor <b>${escapeHtml(ps.tenor_label)}</b></div>
+        ${grid}
+      </div>`;
+    }
+
+    function sourcesBlock(ss: FinderSource[]): string {
+      if (!ss.length) return '';
       return `<div class="sources">${ss
         .map((s) => {
           const body = `<span class="badge ${escapeHtml(s.type)}">${escapeHtml(s.type_label)}</span>${escapeHtml(s.label)}`;
@@ -251,6 +401,34 @@ const useCaseData: FinderUseCase[] = assembled.map(
             : `<span class="src">${body}</span>`;
         })
         .join('')}</div>`;
+    }
+
+    function toolEntryHtml(t: FinderTool): string {
+      const vendor = t.vendor ? ` <span class="vendor">· ${escapeHtml(t.vendor)}</span>` : '';
+      const enterprisePill = t.enterprise_readiness_label
+        ? neutralPill(t.enterprise_readiness_label)
+        : '';
+      const confidence = t.confidence
+        ? ` <span class="tool-confidence">Confidence: ${escapeHtml(t.confidence)}</span>`
+        : '';
+      const ps = t.practitioner_signal ? signalHtml(t.practitioner_signal) : '';
+      return `<li class="tool-entry">
+        <div class="tool-head">
+          <a class="chip" href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(t.name)}${vendor} <span class="mat">(${escapeHtml(t.maturity_label)})</span></a>
+          ${pillHtml(t.fit_color, t.fit_label)}
+          ${enterprisePill}
+          ${confidence}
+        </div>
+        <p class="tool-why">${escapeHtml(t.why_it_fits)}</p>
+        ${caveatsHtml(t.caveats)}
+        ${ps}
+        ${sourcesBlock(t.sources)}
+      </li>`;
+    }
+
+    function toolsHtml(ts: FinderTool[]): string {
+      if (!ts.length) return '<p>—</p>';
+      return `<ul class="tool-entries">${ts.map(toolEntryHtml).join('')}</ul>`;
     }
 
     function showResult(uc: FinderUseCase) {
@@ -266,12 +444,13 @@ const useCaseData: FinderUseCase[] = assembled.map(
           ${pillHtml(uc.suitability_color, uc.suitability_label, 'lg')}
           <span class="pill"><span class="dot" style="background:var(--accent)" aria-hidden="true"></span>Stufe: ${escapeHtml(uc.stage_name)}</span>
         </div>
+        ${metaRow(uc)}
         <p class="why">${escapeHtml(uc.rationale)}</p>
 
         <div class="grid">
           <div>
             <h4>Empfohlene Tools</h4>
-            ${chipsHtml(uc.tools)}
+            ${toolsHtml(uc.tools)}
 
             <h4>Womit anfangen?</h4>
             <p>${escapeHtml(uc.start_here)}</p>
@@ -281,7 +460,7 @@ const useCaseData: FinderUseCase[] = assembled.map(
             <p>${escapeHtml(uc.caveats)}</p>
 
             <h4>Quellen</h4>
-            ${sourcesHtml(uc.sources)}
+            ${sourcesBlock(uc.sources) || '<p>—</p>'}
           </div>
         </div>
       `;
