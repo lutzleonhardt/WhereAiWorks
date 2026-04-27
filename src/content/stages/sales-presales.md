@@ -7,6 +7,9 @@ challenge: "Personalisierung skaliert mit AI, aber Halluzinationen vor Kunden si
 top_use_case: "RFP-Antworten und Discovery-Notizen vorbereiten"
 roles:
   - product-manager
+  - customer-support
+  - sales-presales
+
 ---
 
 ## Womit anfangen?

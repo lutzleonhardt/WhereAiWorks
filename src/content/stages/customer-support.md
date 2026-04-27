@@ -6,7 +6,10 @@ phase: "begleiten"
 challenge: "Erstlevel-Tickets binden Ressourcen, die für komplexe Fälle fehlen."
 top_use_case: "Antwortvorschläge und Self-Service-Deflection"
 roles:
+  - product-manager
+  - software-engineer
   - customer-support
+
 ---
 
 ## Womit anfangen?

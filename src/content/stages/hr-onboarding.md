@@ -6,7 +6,8 @@ phase: "wachsen"
 challenge: "Recruiting- und Onboarding-Texte sind AI-affin, datenschutzrechtlich aber sensibel."
 top_use_case: "Onboarding-Materialien und Stellenprofile entwerfen"
 roles:
-  - product-manager
+  - hr-recruiting
+
 ---
 
 ## Womit anfangen?

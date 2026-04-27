@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 6
 roles:
-  - product-manager
+  - sales-presales
 title: "Pipeline- und Revenue-Forecasting"
 goal_label: "Forecast-Genauigkeit durch AI-Modelle auf Deal- und Pipeline-Ebene erhöhen"
 suitability: good_fit

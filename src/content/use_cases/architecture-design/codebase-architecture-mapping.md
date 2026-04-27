@@ -3,6 +3,7 @@ stage: architecture-design
 order: 3
 roles:
   - software-engineer
+  - software-architect
 title: "Codebase-Architektur kartieren"
 goal_label: "Bestehende Codebasis in Architektur-Übersicht überführen"
 suitability: good_fit

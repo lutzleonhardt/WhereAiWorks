@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 3
 roles:
-  - software-engineer
+  - platform-devops-engineer
 title: "Anomaly-Detection"
 goal_label: "Auffällige Metriken und Logs ohne handgesetzte Schwellen erkennen"
 suitability: good_fit

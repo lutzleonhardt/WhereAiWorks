@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 5
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Log-Analyse"
 goal_label: "Große Log-Mengen zusammenfassen und Anomalien erklären"
 suitability: good_fit

@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 11
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Kubernetes-Cluster-Troubleshooting"
 goal_label: "K8s-Probleme erklären und beheben"
 suitability: good_fit

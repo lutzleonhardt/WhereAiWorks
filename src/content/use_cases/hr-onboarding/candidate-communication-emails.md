@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 6
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Kandidaten-Kommunikation (Bestätigungen, Absagen)"
 goal_label: "Bestätigungen, Reminder und Absagen schneller versenden"
 suitability: good_fit

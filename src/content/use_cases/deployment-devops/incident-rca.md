@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 8
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Incident-RCA"
 goal_label: "Wahrscheinliche Ursache von Produktionsincidents korrelieren und vorschlagen"
 suitability: conditional

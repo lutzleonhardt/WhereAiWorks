@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 18
 roles:
-  - product-manager
+  - sales-presales
 title: "EU-AI-Act- und Sicherheits-Auskünfte für Procurement"
 goal_label: "Procurement-Anfragen zu AI-Act-Klassifizierung, Risk-Category und FRIA-Status beantworten"
 suitability: conditional

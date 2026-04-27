@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 13
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Candidate-Sourcing (passiv)"
 goal_label: "Passive Kandidaten über öffentliche Profile aufspüren"
 suitability: conditional

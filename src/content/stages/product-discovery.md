@@ -7,6 +7,8 @@ challenge: "Kundenfeedback-Mengen wachsen, aber Muster zu erkennen bleibt manuel
 top_use_case: "Feedback-Clustering und Interview-Synthese"
 roles:
   - product-manager
+  - sales-presales
+
 ---
 
 ## Womit anfangen?

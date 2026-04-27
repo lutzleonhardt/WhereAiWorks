@@ -7,6 +7,9 @@ challenge: "Pipeline- und IaC-Generierung ist verlockend, aber Fehler treffen di
 top_use_case: "Pipeline-Skripte und IaC-Snippets generieren"
 roles:
   - software-engineer
+  - security-engineer
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

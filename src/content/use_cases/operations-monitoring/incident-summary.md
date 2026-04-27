@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 1
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Incident-Zusammenfassungen"
 goal_label: "Schneller verstehen, was schiefläuft"
 suitability: "conditional"

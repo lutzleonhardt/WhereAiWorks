@@ -2,8 +2,8 @@
 stage: testing-qa
 order: 7
 roles:
-  - qa-engineer
   - software-engineer
+  - qa-engineer
 title: "Synthetische Testdaten-Generierung"
 goal_label: "Realistische Testdaten ohne Produktivdaten"
 suitability: good_fit

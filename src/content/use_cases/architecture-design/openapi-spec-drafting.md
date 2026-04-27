@@ -3,6 +3,7 @@ stage: architecture-design
 order: 9
 roles:
   - software-engineer
+  - software-architect
 title: "OpenAPI-Spec entwerfen"
 goal_label: "REST-/GraphQL-Spezifikationen aus Anforderungen generieren"
 suitability: good_fit

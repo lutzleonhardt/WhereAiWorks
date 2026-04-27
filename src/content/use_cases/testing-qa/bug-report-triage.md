@@ -2,8 +2,8 @@
 stage: testing-qa
 order: 5
 roles:
-  - qa-engineer
   - software-engineer
+  - qa-engineer
 title: "Bug-Report-Triage und Reproduktion"
 goal_label: "Bug-Reports automatisch klassifizieren und reproduzieren"
 suitability: conditional

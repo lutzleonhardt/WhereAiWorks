@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 2
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Alert-Triage und Noise Reduction"
 goal_label: "Alert-Flut clustern und priorisieren"
 suitability: good_fit

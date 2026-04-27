@@ -2,6 +2,7 @@
 stage: customer-support
 order: 18
 roles:
+  - product-manager
   - customer-support
 title: "EU-AI-Act-Transparenz-Disclosure und Mensch-Eskalations-Pfad"
 goal_label: "Pflicht-Disclosure und Mensch-Pfad als designter Use-Case behandeln"

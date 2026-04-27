@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 9
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Postmortem-Drafting"
 goal_label: "Strukturierte Postmortems aus Incident-Daten generieren"
 suitability: good_fit

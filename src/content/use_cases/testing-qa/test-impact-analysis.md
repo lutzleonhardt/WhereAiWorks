@@ -3,7 +3,7 @@ stage: testing-qa
 order: 8
 roles:
   - qa-engineer
-  - software-engineer
+  - platform-devops-engineer
 title: "Test-Impact-Analyse / Predictive Test Selection"
 goal_label: "Nur relevante Tests pro Change ausführen"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 5
 roles:
-  - software-engineer
+  - software-architect
 title: "Architektur-Optionen explorieren"
 goal_label: "Mehrere Architektur-Alternativen mit Trade-offs gegenüberstellen"
 suitability: good_fit

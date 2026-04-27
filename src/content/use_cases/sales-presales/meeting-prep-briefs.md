@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 10
 roles:
-  - product-manager
+  - sales-presales
 title: "Meeting-Prep-Briefings"
 goal_label: "Vor jedem Kundentermin ein kompaktes Account- und Kontext-Briefing generieren"
 suitability: good_fit

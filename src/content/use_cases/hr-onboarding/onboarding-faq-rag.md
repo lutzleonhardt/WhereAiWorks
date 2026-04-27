@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 18
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Onboarding-FAQ-Bot mit RAG"
 goal_label: "Fragen neuer Mitarbeiter in den ersten 90 Tagen automatisiert beantworten"
 suitability: good_fit

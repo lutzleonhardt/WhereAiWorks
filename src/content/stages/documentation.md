@@ -7,6 +7,9 @@ challenge: "Doku ist klassischer AI-Sweet-Spot, aber inhaltliche Korrektheit ist
 top_use_case: "Erst-Drafts für API-, Code- und Onboarding-Doku"
 roles:
   - software-engineer
+  - software-architect
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

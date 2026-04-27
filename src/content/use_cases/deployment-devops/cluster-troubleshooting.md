@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 13
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Cluster-Troubleshooting"
 goal_label: "Live-Kubernetes-Cluster mit Klartext analysieren"
 suitability: conditional

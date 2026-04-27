@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 13
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Dashboard- und Alert-Generierung"
 goal_label: "Dashboards und Alerts aus Klartext erzeugen"
 suitability: conditional

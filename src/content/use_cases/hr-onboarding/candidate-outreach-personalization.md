@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 15
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Personalisierte Kandidaten-Ansprache"
 goal_label: "Outreach-E-Mails und LinkedIn-InMails skalieren"
 suitability: conditional

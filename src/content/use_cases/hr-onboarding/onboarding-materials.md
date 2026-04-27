@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 1
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Onboarding-Materialien"
 goal_label: "Erst-Versionen von Onboarding-Doku schneller erstellen"
 suitability: "good_fit"

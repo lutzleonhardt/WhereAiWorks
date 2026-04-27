@@ -3,6 +3,7 @@ stage: architecture-design
 order: 6
 roles:
   - software-engineer
+  - software-architect
 title: "Architektur-Diagramme generieren"
 goal_label: "C4-, Sequenz- und Komponentendiagramme aus Klartext erzeugen"
 suitability: good_fit

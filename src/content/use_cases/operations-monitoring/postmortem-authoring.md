@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 10
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Postmortem-Drafting"
 goal_label: "Postmortem-Entwurf aus Timeline generieren"
 suitability: good_fit

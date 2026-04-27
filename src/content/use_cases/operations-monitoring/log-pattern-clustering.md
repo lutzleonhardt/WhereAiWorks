@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 3
 roles:
-  - software-engineer
+  - platform-devops-engineer
 title: "Log-Pattern-Clustering"
 goal_label: "Log-Volumen in Patterns zusammenfassen"
 suitability: good_fit

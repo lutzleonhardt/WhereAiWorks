@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 10
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Onboarding-Compliance-Tracking"
 goal_label: "Pflichtdokumente und Schulungen pro Hire automatisch nachverfolgen"
 suitability: good_fit

@@ -7,6 +7,9 @@ challenge: "Incident-Triage profitiert von AI, aber Fehlalarme und Halluzination
 top_use_case: "Incident-Zusammenfassungen aus Logs und Alerts"
 roles:
   - software-engineer
+  - security-engineer
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

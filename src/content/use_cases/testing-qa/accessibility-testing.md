@@ -2,8 +2,8 @@
 stage: testing-qa
 order: 4
 roles:
-  - qa-engineer
   - software-engineer
+  - qa-engineer
 title: "Accessibility-Testing mit AI"
 goal_label: "WCAG-Findings vorab automatisch finden"
 suitability: conditional

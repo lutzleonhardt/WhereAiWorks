@@ -3,6 +3,7 @@ stage: development
 order: 6
 roles:
   - software-engineer
+  - security-engineer
 title: Security-Autofix im IDE/PR
 goal_label: AI-vorgeschlagene Patches für SAST/SCA-Findings direkt im Workflow anwenden
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 20
 roles:
-  - product-manager
+  - hr-recruiting
 title: "AGG-konformer deutschsprachiger Anzeigen-Check"
 goal_label: "Stellenausschreibungen auf AGG-Diskriminierungsmerkmale prüfen"
 suitability: conditional

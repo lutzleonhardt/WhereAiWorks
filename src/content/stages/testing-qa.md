@@ -6,8 +6,10 @@ phase: "entwickeln"
 challenge: "Test-Erstellung und -Maintenance kostet enorm viel Zeit — AI kann hier massiv entlasten."
 top_use_case: "Testfall-Generierung aus User Stories oder bestehendem Code"
 roles:
-  - qa-engineer
   - software-engineer
+  - qa-engineer
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

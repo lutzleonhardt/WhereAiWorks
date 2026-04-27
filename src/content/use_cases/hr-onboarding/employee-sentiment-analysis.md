@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 14
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Employee-Sentiment & Pulse-Analyse"
 goal_label: "Open-Text-Antworten aus Pulse-Surveys schnell auswerten"
 suitability: conditional

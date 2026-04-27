@@ -2,6 +2,7 @@
 stage: testing-qa
 order: 2
 roles:
+  - software-engineer
   - qa-engineer
 title: "Visual Regression Testing"
 goal_label: "UI-Fehler automatisch erkennen"

@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 12
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Release-Notes"
 goal_label: "Changelogs aus PRs und Commits generieren"
 suitability: good_fit

@@ -7,6 +7,10 @@ challenge: "AI hilft bei Boilerplate-Architektur, ersetzt aber kein fundiertes T
 top_use_case: "ADR-Drafts und Architektur-Skizzen aus Anforderungen"
 roles:
   - software-engineer
+  - software-architect
+  - security-engineer
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

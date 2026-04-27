@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 5
 roles:
-  - product-manager
+  - sales-presales
 title: "Follow-up- und Recap-Mails"
 goal_label: "Nach Calls automatisch Recap-Mails mit Action Items erzeugen"
 suitability: good_fit

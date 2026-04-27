@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 2
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Interview-Scheduling"
 goal_label: "Kandidaten-Termine ohne manuelles Hin-und-Her abstimmen"
 suitability: conditional

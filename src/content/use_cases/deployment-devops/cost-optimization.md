@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 7
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Cloud-Cost-Optimization"
 goal_label: "Rightsizing- und Waste-Empfehlungen für Cloud-Workloads"
 suitability: conditional

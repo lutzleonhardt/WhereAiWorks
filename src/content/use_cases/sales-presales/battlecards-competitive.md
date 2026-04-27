@@ -3,6 +3,7 @@ stage: sales-presales
 order: 11
 roles:
   - product-manager
+  - sales-presales
 title: "Battlecards und Competitive Intelligence"
 goal_label: "Aktuelle Battlecards und Competitor-Briefs automatisch generieren"
 suitability: conditional

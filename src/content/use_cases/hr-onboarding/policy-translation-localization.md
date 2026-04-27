@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 7
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Policy-Übersetzung & Lokalisierung"
 goal_label: "HR-Policies und Onboarding-Inhalte mehrsprachig konsistent halten"
 suitability: good_fit

@@ -3,6 +3,7 @@ stage: deployment-devops
 order: 1
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Pipeline-Snippets"
 goal_label: "CI/CD-Schritte schneller schreiben"
 suitability: "conditional"

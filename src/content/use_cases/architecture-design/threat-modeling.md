@@ -2,7 +2,8 @@
 stage: architecture-design
 order: 4
 roles:
-  - software-engineer
+  - software-architect
+  - security-engineer
 title: "Threat-Modeling"
 goal_label: "STRIDE/MAESTRO-Threats aus Architekturbeschreibung ableiten"
 suitability: conditional

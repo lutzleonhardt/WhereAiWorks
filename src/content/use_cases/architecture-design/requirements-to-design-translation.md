@@ -3,6 +3,7 @@ stage: architecture-design
 order: 8
 roles:
   - software-engineer
+  - software-architect
 title: "Anforderungen in Design-Skizze überführen"
 goal_label: "Aus PRD/User Stories ein erstes High-Level-Design generieren"
 suitability: good_fit

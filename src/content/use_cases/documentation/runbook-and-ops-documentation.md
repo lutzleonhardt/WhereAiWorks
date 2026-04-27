@@ -2,7 +2,7 @@
 stage: documentation
 order: 6
 roles:
-  - software-engineer
+  - platform-devops-engineer
 title: "Runbook- und Operations-Doku-Drafts"
 goal_label: "Runbooks und Postmortem-Doku aus Incident-Daten erzeugen"
 suitability: conditional

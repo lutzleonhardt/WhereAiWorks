@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 8
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Internes HR-Self-Service-Q&A"
 goal_label: "Routine-HR-Fragen per Chat beantworten"
 suitability: conditional

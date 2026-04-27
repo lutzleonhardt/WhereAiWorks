@@ -2,7 +2,8 @@
 stage: architecture-design
 order: 12
 roles:
-  - software-engineer
+  - software-architect
+  - platform-devops-engineer
 title: "Audit-/Logging-Architektur für KI-Systeme entwerfen"
 goal_label: "Replay-fähige Logging-Topologie für KI-Entscheidungen designen"
 suitability: conditional

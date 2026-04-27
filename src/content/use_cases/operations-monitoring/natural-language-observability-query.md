@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 8
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "Natural-Language-Observability-Querying"
 goal_label: "Logs, Metriken und Traces in Klartext abfragen"
 suitability: good_fit

@@ -2,6 +2,7 @@
 stage: customer-support
 order: 11
 roles:
+  - product-manager
   - customer-support
 title: "Voice-of-Customer-Analytics aus Konversations-Korpora"
 goal_label: "Themen, Beschwerden und Trends aus allen Konversationen extrahieren"

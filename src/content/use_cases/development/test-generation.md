@@ -3,6 +3,7 @@ stage: development
 order: 7
 roles:
   - software-engineer
+  - qa-engineer
 title: Test-Generierung
 goal_label: Unit-Tests und Test-Scaffolding aus Funktionssignaturen ableiten lassen
 suitability: good_fit

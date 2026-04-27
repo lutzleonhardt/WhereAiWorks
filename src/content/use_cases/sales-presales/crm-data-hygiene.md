@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 8
 roles:
-  - product-manager
+  - sales-presales
 title: "CRM-Datenpflege und Activity-Capture"
 goal_label: "CRM-Felder automatisch aus Mails, Calls und Kalender füllen"
 suitability: good_fit

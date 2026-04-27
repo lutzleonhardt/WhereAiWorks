@@ -7,6 +7,10 @@ challenge: "Produktivitätsgewinn ist real, aber kontextabhängig — kein unive
 top_use_case: "Code-Completion und Multi-File-Änderungen"
 roles:
   - software-engineer
+  - qa-engineer
+  - security-engineer
+  - platform-devops-engineer
+
 ---
 
 ## Womit anfangen?

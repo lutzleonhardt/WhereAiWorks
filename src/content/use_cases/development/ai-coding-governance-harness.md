@@ -2,7 +2,8 @@
 stage: development
 order: 12
 roles:
-  - software-engineer
+  - security-engineer
+  - platform-devops-engineer
 title: Governance-Harness für AI-Coding-Agenten
 goal_label: Audit-Logging, Credential-Isolation und Sub-Processor-Listing rund um Coding-Agenten
 suitability: conditional

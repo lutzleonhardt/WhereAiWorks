@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 13
 roles:
-  - software-engineer
+  - software-architect
 title: "Compliance-Architektur-Mapping (EU AI Act / DORA / ISO 42001)"
 goal_label: "KI-System-Architektur auf regulatorische Pflichten abbilden"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 5
 roles:
-  - product-manager
+  - hr-recruiting
 title: "Interne HR-Kommunikation"
 goal_label: "Interne Ankündigungen und Newsletter drafted"
 suitability: good_fit

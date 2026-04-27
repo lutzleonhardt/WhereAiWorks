@@ -3,6 +3,7 @@ stage: operations-monitoring
 order: 9
 roles:
   - software-engineer
+  - platform-devops-engineer
 title: "On-Call-Copilot im ChatOps"
 goal_label: "On-Call mit Kontextfragen unterstützen"
 suitability: good_fit
