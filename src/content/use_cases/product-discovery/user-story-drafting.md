@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 5
 roles:
-  - product-owner
+  - product-manager
 title: "User-Story- und Acceptance-Criteria-Drafting"
 goal_label: "Backlog-Items mit AC und Splits generieren"
 suitability: good_fit

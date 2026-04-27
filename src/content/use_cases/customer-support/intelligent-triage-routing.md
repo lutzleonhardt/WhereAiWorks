@@ -2,7 +2,7 @@
 stage: customer-support
 order: 2
 roles:
-  - support-agent
+  - customer-support
 title: "AI-Triage und intelligentes Routing"
 goal_label: "Tickets korrekt klassifizieren und an die richtige Queue lenken"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: customer-support
 order: 3
 roles:
-  - support-agent
+  - customer-support
 title: "Self-Service-Deflection per AI-Chatbot"
 goal_label: "Routine-Anfragen lösen, bevor sie zum Ticket werden"
 suitability: good_fit

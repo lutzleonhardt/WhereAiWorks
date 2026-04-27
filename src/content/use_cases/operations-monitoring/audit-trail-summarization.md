@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 14
 roles:
-  - developer
+  - software-engineer
 title: "Audit-Trail- und Compliance-Log-Summarization"
 goal_label: "Audit-Logs für Compliance-Reviews verdichten"
 suitability: conditional

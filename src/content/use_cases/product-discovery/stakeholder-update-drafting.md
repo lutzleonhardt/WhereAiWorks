@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 4
 roles:
-  - product-owner
+  - product-manager
 title: "Stakeholder-Update- und Status-Drafting"
 goal_label: "Aus Jira-/Linear-Daten lesbare Status-Updates generieren"
 suitability: good_fit

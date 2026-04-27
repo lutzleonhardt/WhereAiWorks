@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 20
 roles:
-  - product-owner
+  - product-manager
 title: "Technisches Angebotswesen Maschinen-/Anlagenbau"
 goal_label: "Technische Angebote mit Konfigurator, Stückliste und Incoterms im Industrie-B2B erzeugen"
 suitability: conditional

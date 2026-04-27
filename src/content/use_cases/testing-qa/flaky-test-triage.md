@@ -3,7 +3,7 @@ stage: testing-qa
 order: 6
 roles:
   - qa-engineer
-  - developer
+  - software-engineer
 title: "Flaky-Test-Erkennung und -Triage"
 goal_label: "Flaky-Tests automatisch identifizieren und priorisieren"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 7
 roles:
-  - product-owner
+  - product-manager
 title: "Sekundärrecherche und Markt-Briefings"
 goal_label: "Aus Web/Reports schnelle Hintergrund-Briefings erstellen"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 7
 roles:
-  - product-owner
+  - product-manager
 title: "Angebots- und Proposal-Generierung"
 goal_label: "Kommerzielle Angebote und Proposals aus CRM-Daten erzeugen"
 suitability: conditional

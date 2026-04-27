@@ -2,9 +2,9 @@
 stage: development
 order: 12
 roles:
-  - developer
-title: "Governance-Harness für AI-Coding-Agenten"
-goal_label: "Audit-Logging, Credential-Isolation und Sub-Processor-Listing rund um Coding-Agenten"
+  - software-engineer
+title: Governance-Harness für AI-Coding-Agenten
+goal_label: Audit-Logging, Credential-Isolation und Sub-Processor-Listing rund um Coding-Agenten
 suitability: conditional
 rationale: "Vom Markt-Scan vermutlich übersehen, weil DACH-spezifisch und als Beratungsleistung (Tomeris, Pexon, Storm Reply) statt eigenständiges Tool vermarktet. DORA Art. 5–15 und BaFin-Orientierungshilfe (18.12.2025) machen den Wrapper aus Audit-Logging, Sub-Processor-Liste, DPA und Credential-Isolation zum Vor-Implementierungsschritt für jedes regulierte DACH-Coding-Agent-Setup."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

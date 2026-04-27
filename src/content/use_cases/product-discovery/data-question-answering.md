@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 9
 roles:
-  - product-owner
+  - product-manager
 title: "Self-Service-Produktdaten-Fragen"
 goal_label: "Ad-hoc-Fragen an Produktdaten ohne SQL stellen"
 suitability: conditional

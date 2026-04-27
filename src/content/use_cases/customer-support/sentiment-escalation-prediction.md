@@ -2,7 +2,7 @@
 stage: customer-support
 order: 16
 roles:
-  - support-agent
+  - customer-support
 title: "Sentiment- und Eskalationsfrüherkennung"
 goal_label: "Kritische Tickets vor der Eskalation erkennen"
 suitability: conditional

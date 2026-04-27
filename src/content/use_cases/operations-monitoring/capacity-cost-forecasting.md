@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 5
 roles:
-  - developer
+  - software-engineer
 title: "Capacity- und Cost-Forecasting"
 goal_label: "Ressourcenbedarf vorhersagen"
 suitability: conditional

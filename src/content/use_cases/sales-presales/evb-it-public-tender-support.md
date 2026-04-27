@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 19
 roles:
-  - product-owner
+  - product-manager
 title: "Öffentliche Ausschreibungen / EVB-IT / VgV-Vergaben"
 goal_label: "Bieterantworten für deutsche/europäische Public-Sector-Ausschreibungen vorbereiten"
 suitability: conditional

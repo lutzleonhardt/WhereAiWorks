@@ -2,7 +2,7 @@
 stage: customer-support
 order: 5
 roles:
-  - support-agent
+  - customer-support
 title: "Echtzeit-Übersetzung in Chat und Voice"
 goal_label: "Multilinguale Konversationen ohne Sprach-Skill-Group"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 1
 roles:
-  - product-owner
+  - product-manager
 title: "Feedback-Clustering"
 goal_label: "Kundenfeedback schneller auswerten"
 suitability: "good_fit"

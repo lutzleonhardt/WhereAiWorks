@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 7
 roles:
-  - developer
+  - software-engineer
 title: "Log-Untersuchung mit AI-Assistenten"
 goal_label: "Log-Berge nach Auffälligkeiten durchsuchen"
 suitability: good_fit

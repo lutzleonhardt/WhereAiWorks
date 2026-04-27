@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 11
 roles:
-  - product-owner
+  - product-manager
 title: "RAG über bestehende Discovery-Artefakte und Confluence"
 goal_label: "Frühere Research, PRDs und Lessons-Learned auffindbar machen"
 suitability: conditional

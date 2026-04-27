@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 18
 roles:
-  - developer
+  - software-engineer
 title: "Self-hosted AI-SRE-Plattform"
 goal_label: "Air-gap-fähiger Investigation-Agent für Incidents"
 suitability: conditional

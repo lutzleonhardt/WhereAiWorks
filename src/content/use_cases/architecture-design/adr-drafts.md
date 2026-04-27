@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 1
 roles:
-  - developer
+  - software-engineer
 title: "ADR-Drafts"
 goal_label: "Architektur-Entscheidungen schneller dokumentieren"
 suitability: "conditional"

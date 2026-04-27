@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 11
 roles:
-  - product-owner
+  - product-manager
 title: "Resume-Screening & Ranking"
 goal_label: "Eingehende Bewerbungen vorranken und shortlisten"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: customer-support
 order: 10
 roles:
-  - support-agent
+  - customer-support
 title: "Macro- und Antwort-Template-Generierung/-Pflege"
 goal_label: "Antwort-Bausteine systematisch erstellen und aktuell halten"
 suitability: good_fit

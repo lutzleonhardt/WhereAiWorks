@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 16
 roles:
-  - product-owner
+  - product-manager
 title: "AI-Sales-Coaching und Call-Scoring"
 goal_label: "Calls automatisch gegen Methodik (MEDDIC, BANT, SPIN) bewerten und coachen"
 suitability: conditional

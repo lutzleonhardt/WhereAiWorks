@@ -2,9 +2,9 @@
 stage: development
 order: 4
 roles:
-  - developer
-title: "Code-Dokumentation"
-goal_label: "Docstrings, READMEs und API-Dokumentation aus Code ableiten"
+  - software-engineer
+title: Code-Dokumentation
+goal_label: Docstrings, READMEs und API-Dokumentation aus Code ableiten
 suitability: good_fit
 rationale: "Stack Overflow 2024: 40% aktuelle Nutzung, 81% Wachstumserwartung — höchster Wert aller Slots. In DACH durch DORA/BaFin-Orientierungshilfe (18.12.2025) und ISO27001-Pflichten zusätzlich getrieben — Code-/Modell-Änderungen sind dokumentationspflichtig."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 10
 roles:
-  - developer
+  - software-engineer
 title: "Deployment-Verification"
 goal_label: "Canary- und Rolling-Deploys gegen Health-Signale absichern"
 suitability: conditional

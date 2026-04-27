@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 19
 roles:
-  - developer
+  - software-engineer
 title: "K8s-Auto-Remediation mit Approval-Gate"
 goal_label: "AI investigiert + schlägt Fix vor + Mensch genehmigt vor Apply"
 suitability: conditional

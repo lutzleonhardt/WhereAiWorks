@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 10
 roles:
-  - product-owner
+  - product-manager
 title: "AI-gestütztes Prototyping"
 goal_label: "Aus einer Idee einen Click-Dummy oder UI-Prototypen erzeugen"
 suitability: conditional

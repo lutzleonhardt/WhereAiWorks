@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 4
 roles:
-  - developer
+  - software-engineer
 title: "IaC-Security-Scanning"
 goal_label: "Misconfigurations in Terraform/K8s-YAML finden und Fix vorschlagen"
 suitability: good_fit

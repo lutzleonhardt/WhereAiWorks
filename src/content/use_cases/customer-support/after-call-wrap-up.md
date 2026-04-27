@@ -2,7 +2,7 @@
 stage: customer-support
 order: 7
 roles:
-  - support-agent
+  - customer-support
 title: "After-Call-Work und CRM-Auto-Update"
 goal_label: "Nachbearbeitung nach Anruf oder Chat automatisieren"
 suitability: good_fit

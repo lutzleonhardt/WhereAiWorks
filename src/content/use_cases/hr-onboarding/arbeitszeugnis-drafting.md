@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 17
 roles:
-  - product-owner
+  - product-manager
 title: "Arbeitszeugnis-Generierung (DACH)"
 goal_label: "Erst-Versionen von qualifizierten Arbeitszeugnissen erzeugen"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 12
 roles:
-  - developer
+  - software-engineer
 title: "Audit-/Logging-Architektur für KI-Systeme entwerfen"
 goal_label: "Replay-fähige Logging-Topologie für KI-Entscheidungen designen"
 suitability: conditional

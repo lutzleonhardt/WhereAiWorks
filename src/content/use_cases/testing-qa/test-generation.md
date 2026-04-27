@@ -3,7 +3,7 @@ stage: testing-qa
 order: 1
 roles:
   - qa-engineer
-  - developer
+  - software-engineer
 title: "Testfall-Generierung"
 goal_label: "Tests schneller erstellen"
 suitability: "good_fit"

@@ -1,15 +1,35 @@
-- id: product-owner
-  name: "Product Manager / PO"
-  aliases: ["Product Owner", "PM"]
+- id: product-manager
+  name: "Product Manager / Product Owner"
+  aliases: ["Product Owner", "PO", "PM"]
 
-- id: developer
-  name: "Senior Developer"
-  aliases: ["Full-Stack Dev", "Backend Engineer", "Frontend Engineer"]
+- id: software-engineer
+  name: "Software Engineer"
+  aliases: ["Developer", "Backend Engineer", "Frontend Engineer", "Full-Stack Developer"]
+
+- id: software-architect
+  name: "Software Architect"
+  aliases: ["Architect", "Lead Developer", "Solution Architect"]
 
 - id: qa-engineer
   name: "QA Engineer"
   aliases: ["SDET", "Test Engineer", "Test Manager"]
 
-- id: support-agent
-  name: "Support Lead / Support Agent"
-  aliases: ["Customer Support", "Help Desk"]
+- id: security-engineer
+  name: "Security Engineer / AppSec"
+  aliases: ["Application Security", "AppSec", "Security Engineer", "DevSecOps"]
+
+- id: platform-devops-engineer
+  name: "Platform / DevOps Engineer"
+  aliases: ["Platform Engineer", "DevOps Engineer", "SRE", "Site Reliability Engineer"]
+
+- id: customer-support
+  name: "Customer Support"
+  aliases: ["Support Agent", "Support Lead", "Help Desk", "Customer Success"]
+
+- id: sales-presales
+  name: "Sales / Pre-Sales"
+  aliases: ["Account Executive", "Sales Engineer", "Solutions Engineer", "Pre-Sales"]
+
+- id: hr-recruiting
+  name: "HR / Recruiting"
+  aliases: ["HR", "Recruiting", "Talent Acquisition", "People Operations"]

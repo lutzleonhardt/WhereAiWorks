@@ -7,7 +7,7 @@ challenge: "Test-Erstellung und -Maintenance kostet enorm viel Zeit — AI kann 
 top_use_case: "Testfall-Generierung aus User Stories oder bestehendem Code"
 roles:
   - qa-engineer
-  - developer
+  - software-engineer
 ---
 
 ## Womit anfangen?

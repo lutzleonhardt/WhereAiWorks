@@ -2,7 +2,7 @@
 stage: customer-support
 order: 8
 roles:
-  - support-agent
+  - customer-support
 title: "Strukturierte Eskalation mit AI-vorbereitetem Kontext"
 goal_label: "Übergabe von Bot zu Mensch oder Tier-1 zu Tier-2 ohne Kontextverlust"
 suitability: good_fit

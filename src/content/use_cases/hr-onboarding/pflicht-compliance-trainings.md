@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 19
 roles:
-  - product-owner
+  - product-manager
 title: "Pflicht- und Compliance-Schulungs-Content"
 goal_label: "Inhalte und Quizfragen für jährliche Pflichtschulungen erzeugen"
 suitability: good_fit

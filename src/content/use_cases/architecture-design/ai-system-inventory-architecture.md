@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 14
 roles:
-  - developer
+  - software-engineer
 title: "KI-System-Inventar als Architektur-Artefakt erzeugen"
 goal_label: "Schatten-KI und eingebettete KI-Komponenten architektonisch erfassen"
 suitability: conditional

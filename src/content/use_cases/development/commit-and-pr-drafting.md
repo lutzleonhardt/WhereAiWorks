@@ -2,9 +2,9 @@
 stage: development
 order: 8
 roles:
-  - developer
-title: "Commit- und PR-Drafting"
-goal_label: "Commit-Messages und PR-/MR-Beschreibungen aus dem Diff generieren"
+  - software-engineer
+title: Commit- und PR-Drafting
+goal_label: Commit-Messages und PR-/MR-Beschreibungen aus dem Diff generieren
 suitability: good_fit
 rationale: "Stack Overflow 2024: 13% mit deutlicher Wachstumserwartung; mehrere Vendor-Tools (GitHub Copilot, Gemini CLI, GitLab Duo MR Summary). In DACH-Self-Managed-GitLab-Stacks durch Duo Enterprise direkt verfügbar."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

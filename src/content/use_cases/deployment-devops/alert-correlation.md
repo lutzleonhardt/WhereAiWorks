@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 2
 roles:
-  - developer
+  - software-engineer
 title: "Alert-Korrelation"
 goal_label: "Alert-Lärm reduzieren und zu Incidents bündeln"
 suitability: good_fit

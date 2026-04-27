@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 4
 roles:
-  - product-owner
+  - product-manager
 title: "Interview-Fragen-Generierung"
 goal_label: "Strukturierte, rollenbezogene Interview-Leitfäden erzeugen"
 suitability: good_fit

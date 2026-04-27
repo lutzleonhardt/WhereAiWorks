@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 2
 roles:
-  - product-owner
+  - product-manager
 title: "AI-Lead-Scoring und Account-Prioritisierung"
 goal_label: "Leads und Accounts automatisch nach Conversion-Wahrscheinlichkeit ranken"
 suitability: good_fit

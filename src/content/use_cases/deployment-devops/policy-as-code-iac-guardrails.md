@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 16
 roles:
-  - developer
+  - software-engineer
 title: "Policy-as-Code-Guardrails für AI-IaC"
 goal_label: "OPA/Sentinel-Gates auf terraform plan und K8s-Admission"
 suitability: good_fit

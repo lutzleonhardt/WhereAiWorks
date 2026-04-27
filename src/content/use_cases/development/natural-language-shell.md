@@ -2,7 +2,7 @@
 stage: development
 order: 10
 roles:
-  - developer
+  - software-engineer
 title: "Natural-Language Shell und CLI-Operationen"
 goal_label: "Shell-Befehle, Git-Operationen und Build-Tasks per Prompt erledigen"
 suitability: good_fit

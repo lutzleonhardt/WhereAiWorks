@@ -2,9 +2,9 @@
 stage: development
 order: 5
 roles:
-  - developer
-title: "Codebase-Verständnis"
-goal_label: "Unbekannten Code und Legacy-Module schnell durchdringen"
+  - software-engineer
+title: Codebase-Verständnis
+goal_label: Unbekannten Code und Legacy-Module schnell durchdringen
 suitability: good_fit
 rationale: "Stack Overflow 2024: 30,9% nutzen AI fürs Lernen unbekannter Codebases — mit hoher Wachstumsabsicht. Sourcegraph Cody, Claude Code als Vendor-Anker; in DACH besonders wertvoll bei Legacy-Beständen."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

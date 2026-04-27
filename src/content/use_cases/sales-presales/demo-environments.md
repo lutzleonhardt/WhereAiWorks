@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 12
 roles:
-  - product-owner
+  - product-manager
 title: "Interaktive AI-Demo-Environments"
 goal_label: "Personalisierte Produkt-Demos ohne Live-Preview erzeugen"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 4
 roles:
-  - developer
+  - software-engineer
 title: "Metric- und Log-Anomaly-Detection"
 goal_label: "Ungewöhnliche Muster früh erkennen"
 suitability: good_fit

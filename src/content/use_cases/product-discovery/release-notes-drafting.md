@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 6
 roles:
-  - product-owner
+  - product-manager
 title: "Release-Notes und Feature-Announcement-Drafting"
 goal_label: "Aus Tickets/Commits kundenfähige Release-Notes erzeugen"
 suitability: good_fit

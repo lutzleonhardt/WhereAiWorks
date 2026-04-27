@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 15
 roles:
-  - product-owner
+  - product-manager
 title: "Account- und ICP-Research"
 goal_label: "Tiefenrecherche zu Zielaccounts, Buying Committee und Trigger-Events automatisieren"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 3
 roles:
-  - product-owner
+  - product-manager
 title: "Discovery-Call-Zusammenfassungen"
 goal_label: "Aus Kundengesprächen strukturierte Notizen, Action Items und CRM-Updates erzeugen"
 suitability: good_fit

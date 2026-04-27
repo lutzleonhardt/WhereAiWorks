@@ -2,7 +2,7 @@
 stage: development
 order: 11
 roles:
-  - developer
+  - software-engineer
 title: "Delegierte Coding-Agents"
 goal_label: "Tickets asynchron an einen Cloud-Agent geben und PR zurückbekommen"
 suitability: conditional

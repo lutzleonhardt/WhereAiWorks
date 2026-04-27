@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 6
 roles:
-  - developer
+  - software-engineer
 title: "LLM- und AI-App-Observability"
 goal_label: "Prompts, Tokens und Halluzinationen monitoren"
 suitability: good_fit

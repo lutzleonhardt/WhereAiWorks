@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 16
 roles:
-  - product-owner
+  - product-manager
 title: "Skill-Gap & Learning-Path-Generierung"
 goal_label: "Individuelle Lernpfade aus Skill-Gap-Analyse ableiten"
 suitability: conditional

@@ -3,7 +3,7 @@ stage: testing-qa
 order: 9
 roles:
   - qa-engineer
-  - developer
+  - software-engineer
 title: "Requirements-to-Test-Traceability für regulierte Software"
 goal_label: "Anforderungen ↔ Tests audit-tauglich verknüpfen"
 suitability: conditional

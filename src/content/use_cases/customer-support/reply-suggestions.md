@@ -2,7 +2,7 @@
 stage: customer-support
 order: 1
 roles:
-  - support-agent
+  - customer-support
 title: "Antwortvorschläge"
 goal_label: "Routine-Anfragen schneller beantworten"
 suitability: "good_fit"

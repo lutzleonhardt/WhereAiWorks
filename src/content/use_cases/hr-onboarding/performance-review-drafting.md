@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 12
 roles:
-  - product-owner
+  - product-manager
 title: "Performance-Review-Drafts"
 goal_label: "Erst-Versionen von Feedback und Reviews aus Stichworten"
 suitability: conditional

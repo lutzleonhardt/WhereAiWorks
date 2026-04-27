@@ -2,7 +2,7 @@
 stage: customer-support
 order: 13
 roles:
-  - support-agent
+  - customer-support
 title: "AI-Voicebot für Telefon-Self-Service"
 goal_label: "Anrufe ohne menschlichen Agent abschließen"
 suitability: conditional

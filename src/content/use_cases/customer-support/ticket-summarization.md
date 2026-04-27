@@ -2,7 +2,7 @@
 stage: customer-support
 order: 4
 roles:
-  - support-agent
+  - customer-support
 title: "Ticket- und Konversations-Zusammenfassungen"
 goal_label: "Lange Threads auf den Kern reduzieren"
 suitability: good_fit

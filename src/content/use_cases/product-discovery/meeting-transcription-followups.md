@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 2
 roles:
-  - product-owner
+  - product-manager
 title: "Meeting-Transcription und Follow-up-Extraktion"
 goal_label: "Discovery-Calls protokollieren und Action-Items extrahieren"
 suitability: good_fit

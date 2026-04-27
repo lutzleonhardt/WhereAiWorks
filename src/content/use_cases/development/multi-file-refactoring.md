@@ -2,11 +2,11 @@
 stage: development
 order: 2
 roles:
-  - developer
-title: "Mehr-Datei-Refactoring"
-goal_label: "Größere Code-Änderungen durch AI vorbereiten lassen"
-suitability: "conditional"
-rationale: "Agent-basierte Tools können Refactorings über mehrere Dateien hinweg konsistent durchziehen — Umbenennungen, Typ-Einzüge, Pattern-Migrationen. Funktioniert zuverlässig in einer getesteten Codebase mit klar abgegrenztem Scope; ohne Tests ist die Folgefehler-Gefahr hoch."
+  - software-engineer
+title: Mehr-Datei-Refactoring
+goal_label: Größere Code-Änderungen durch AI vorbereiten lassen
+suitability: conditional
+rationale: Agent-basierte Tools können Refactorings über mehrere Dateien hinweg konsistent durchziehen — Umbenennungen, Typ-Einzüge, Pattern-Migrationen. Funktioniert zuverlässig in einer getesteten Codebase mit klar abgegrenztem Scope; ohne Tests ist die Folgefehler-Gefahr hoch.
 tools:
   - id: claude-code
     fit: good_fit

@@ -2,7 +2,7 @@
 stage: customer-support
 order: 6
 roles:
-  - support-agent
+  - customer-support
 title: "Knowledge-Base-Artikel aus Tickets generieren"
 goal_label: "Help-Center-Inhalte aus realen Tickets erzeugen"
 suitability: good_fit

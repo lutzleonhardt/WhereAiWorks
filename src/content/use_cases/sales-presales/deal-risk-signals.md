@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 9
 roles:
-  - product-owner
+  - product-manager
 title: "Deal-Risk- und Health-Signale"
 goal_label: "Risiken in laufenden Deals automatisch erkennen und Reps warnen"
 suitability: conditional

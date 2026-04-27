@@ -2,7 +2,7 @@
 stage: customer-support
 order: 17
 roles:
-  - support-agent
+  - customer-support
 title: "Posteingangs- und Dokument-Klassifikation für Service-Anfragen"
 goal_label: "Eingehende Briefe, PDFs und Formulare automatisch zuordnen"
 suitability: good_fit

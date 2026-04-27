@@ -6,7 +6,7 @@ phase: "entwickeln"
 challenge: "AI hilft bei Boilerplate-Architektur, ersetzt aber kein fundiertes Trade-off-Denken."
 top_use_case: "ADR-Drafts und Architektur-Skizzen aus Anforderungen"
 roles:
-  - developer
+  - software-engineer
 ---
 
 ## Womit anfangen?

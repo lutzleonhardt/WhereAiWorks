@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 17
 roles:
-  - product-owner
+  - product-manager
 title: "Live-Call-Assist und Echtzeit-Cues"
 goal_label: "Während des Calls Echtzeit-Hinweise auf Einwände, Pricing und Battlecards einblenden"
 suitability: conditional

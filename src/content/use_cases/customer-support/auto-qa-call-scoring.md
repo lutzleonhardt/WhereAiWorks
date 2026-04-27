@@ -2,7 +2,7 @@
 stage: customer-support
 order: 14
 roles:
-  - support-agent
+  - customer-support
 title: "Automatische Quality Assurance / Call-Scoring"
 goal_label: "100 % der Konversationen gegen QA-Rubrik bewerten"
 suitability: conditional

@@ -6,7 +6,7 @@ phase: "entwickeln"
 challenge: "Kundenfeedback-Mengen wachsen, aber Muster zu erkennen bleibt manuelle Fleißarbeit."
 top_use_case: "Feedback-Clustering und Interview-Synthese"
 roles:
-  - product-owner
+  - product-manager
 ---
 
 ## Womit anfangen?

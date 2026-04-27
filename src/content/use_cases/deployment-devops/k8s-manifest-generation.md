@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 11
 roles:
-  - developer
+  - software-engineer
 title: "Kubernetes-Manifest-Generierung"
 goal_label: "Deployment, Service, Ingress, HPA als YAML aus Anforderungen erzeugen"
 suitability: conditional

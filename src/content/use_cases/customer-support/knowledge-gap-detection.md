@@ -2,7 +2,7 @@
 stage: customer-support
 order: 9
 roles:
-  - support-agent
+  - customer-support
 title: "Knowledge-Gap-Detection aus Konversationsdaten"
 goal_label: "Fehlende oder veraltete Wissens-Inhalte sichtbar machen"
 suitability: good_fit

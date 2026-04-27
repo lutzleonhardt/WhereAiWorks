@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 14
 roles:
-  - product-owner
+  - product-manager
 title: "Outbound-E-Mail-Personalisierung"
 goal_label: "Cold-Outbound-Sequenzen pro Empfänger personalisieren"
 suitability: conditional

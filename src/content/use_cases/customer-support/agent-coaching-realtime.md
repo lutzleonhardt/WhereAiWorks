@@ -2,7 +2,7 @@
 stage: customer-support
 order: 15
 roles:
-  - support-agent
+  - customer-support
 title: "Echtzeit-Agent-Coaching im Live-Gespräch"
 goal_label: "Agents im Moment führen statt nachträglich coachen"
 suitability: conditional

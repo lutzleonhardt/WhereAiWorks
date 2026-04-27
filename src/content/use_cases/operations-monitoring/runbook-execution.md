@@ -2,7 +2,7 @@
 stage: operations-monitoring
 order: 12
 roles:
-  - developer
+  - software-engineer
 title: "AI-gestützte Runbook-Ausführung"
 goal_label: "Runbook-Schritte vorschlagen, nicht autonom ausführen"
 suitability: conditional

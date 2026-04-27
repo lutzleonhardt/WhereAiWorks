@@ -6,7 +6,7 @@ phase: "betreiben"
 challenge: "Pipeline- und IaC-Generierung ist verlockend, aber Fehler treffen die Produktion."
 top_use_case: "Pipeline-Skripte und IaC-Snippets generieren"
 roles:
-  - developer
+  - software-engineer
 ---
 
 ## Womit anfangen?

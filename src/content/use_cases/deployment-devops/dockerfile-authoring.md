@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 14
 roles:
-  - developer
+  - software-engineer
 title: "Dockerfile-Authoring"
 goal_label: "Multi-Stage-Dockerfiles und .dockerignore generieren und optimieren"
 suitability: good_fit

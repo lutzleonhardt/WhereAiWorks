@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 9
 roles:
-  - product-owner
+  - product-manager
 title: "Interview-Notes & Summarization"
 goal_label: "Interviews transkribieren und in strukturierte Scorecards verwandeln"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: documentation
 order: 4
 roles:
-  - developer
+  - software-engineer
 title: "Q&A auf interner Wissensbasis"
 goal_label: "Engineer-Fragen über Confluence/Notion/Slack mit AI beantworten"
 suitability: conditional

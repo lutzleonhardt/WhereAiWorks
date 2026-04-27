@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 17
 roles:
-  - developer
+  - software-engineer
 title: "EU-AI-Act-Compliance-Checks in CI/CD"
 goal_label: "Annex-IV-Doku, Risk-Klassifikation und Audit-Schemas im PR validieren"
 suitability: conditional

@@ -2,7 +2,7 @@
 stage: customer-support
 order: 12
 roles:
-  - support-agent
+  - customer-support
 title: "Agentic AI mit System-Aktionen (Refund, Order-Update, etc.)"
 goal_label: "End-to-End-Resolution statt nur Antwort"
 suitability: conditional

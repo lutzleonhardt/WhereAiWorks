@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 1
 roles:
-  - product-owner
+  - product-manager
 title: "RFP-Drafts"
 goal_label: "Antworten auf Ausschreibungen vorstrukturieren"
 suitability: "conditional"

@@ -2,9 +2,9 @@
 stage: development
 order: 3
 roles:
-  - developer
-title: "AI-gestütztes Debugging"
-goal_label: "Stack-Traces erklären und Root-Cause finden lassen"
+  - software-engineer
+title: AI-gestütztes Debugging
+goal_label: Stack-Traces erklären und Root-Cause finden lassen
 suitability: good_fit
 rationale: "Zweit-stärkster AI-Slot in mehreren Surveys (Stack Overflow 56,7%, ACTI 45,4%), in jedem Mainstream-Tool verbaut. Liefert messbar schnellere Time-to-Fix bei Stack-Traces und Log-Analysen."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

@@ -2,7 +2,7 @@
 stage: documentation
 order: 1
 roles:
-  - developer
+  - software-engineer
 title: "Doku-Drafts"
 goal_label: "Erste Doku-Fassung schneller erzeugen"
 suitability: "good_fit"

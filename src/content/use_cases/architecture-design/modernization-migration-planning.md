@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 10
 roles:
-  - developer
+  - software-engineer
 title: "Modernisierungs-/Migrationsplanung"
 goal_label: "Migrationspfad und Transition-Architektur ableiten"
 suitability: conditional

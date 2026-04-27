@@ -2,7 +2,7 @@
 stage: documentation
 order: 3
 roles:
-  - developer
+  - software-engineer
 title: "Doku-Übersetzung"
 goal_label: "Technische Doku in mehrere Sprachen übersetzen"
 suitability: good_fit

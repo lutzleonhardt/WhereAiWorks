@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 12
 roles:
-  - product-owner
+  - product-manager
 title: "Regulatorischer Feasibility-Pre-Check für Feature-Ideen"
 goal_label: "Feature-Ideen früh gegen DSGVO/EU-AI-Act/MaRisk-Constraints prüfen"
 suitability: conditional

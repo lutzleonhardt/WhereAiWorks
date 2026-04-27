@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 6
 roles:
-  - developer
+  - software-engineer
 title: "CI-Pipeline-Debug"
 goal_label: "Fehlgeschlagene Builds und Deploy-Jobs aus Logs erklären"
 suitability: good_fit

@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 8
 roles:
-  - product-owner
+  - product-manager
 title: "Wettbewerbs-Monitoring und Battlecards"
 goal_label: "Marktbewegungen und Konkurrenz-Releases zusammenfassen"
 suitability: conditional

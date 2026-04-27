@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 11
 roles:
-  - developer
+  - software-engineer
 title: "Datenresidenz-/Souveränitäts-Architektur entwerfen"
 goal_label: "EU-/On-Prem-Topologie für KI-Workloads skizzieren"
 suitability: good_fit

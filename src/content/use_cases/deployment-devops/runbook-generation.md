@@ -2,7 +2,7 @@
 stage: deployment-devops
 order: 15
 roles:
-  - developer
+  - software-engineer
 title: "Runbook-Generierung"
 goal_label: "Schritt-für-Schritt-Runbooks aus Incidents und Code ableiten"
 suitability: conditional

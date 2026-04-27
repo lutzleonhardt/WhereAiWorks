@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 4
 roles:
-  - product-owner
+  - product-manager
 title: "Enablement-Content-Search und Recommendations"
 goal_label: "Reps zur richtigen Sales-Content-Asset im Moment des Bedarfs führen"
 suitability: good_fit

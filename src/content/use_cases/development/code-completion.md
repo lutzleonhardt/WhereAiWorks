@@ -2,9 +2,9 @@
 stage: development
 order: 1
 roles:
-  - developer
-title: "Code-Completion"
-goal_label: "Weniger Boilerplate tippen"
+  - software-engineer
+title: Code-Completion
+goal_label: Weniger Boilerplate tippen
 suitability: good_fit
 adoption_maturity: mainstream
 enterprise_relevance: high

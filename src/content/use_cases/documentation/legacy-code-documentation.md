@@ -2,7 +2,7 @@
 stage: documentation
 order: 5
 roles:
-  - developer
+  - software-engineer
 title: "Legacy-Code-Dokumentation (COBOL, ABAP, Mainframe)"
 goal_label: "Unterdokumentierte Altcodebases (COBOL, ABAP, PL/I) erschließen lassen"
 suitability: conditional

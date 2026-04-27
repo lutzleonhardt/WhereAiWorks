@@ -6,7 +6,7 @@ phase: "betreiben"
 challenge: "Incident-Triage profitiert von AI, aber Fehlalarme und Halluzinationen kosten Vertrauen."
 top_use_case: "Incident-Zusammenfassungen aus Logs und Alerts"
 roles:
-  - developer
+  - software-engineer
 ---
 
 ## Womit anfangen?

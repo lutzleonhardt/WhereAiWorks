@@ -2,9 +2,9 @@
 stage: development
 order: 7
 roles:
-  - developer
-title: "Test-Generierung"
-goal_label: "Unit-Tests und Test-Scaffolding aus Funktionssignaturen ableiten lassen"
+  - software-engineer
+title: Test-Generierung
+goal_label: Unit-Tests und Test-Scaffolding aus Funktionssignaturen ableiten lassen
 suitability: good_fit
 rationale: "Schnell amortisierende AI-Anwendung mit klarem Vendor-Tooling (Copilot Testing, Cody, Claude Code TDD-Hooks). Praktiker-Berichte (Stripe Systems) bestätigen 14 von 22 Tests pro Service brauchbar."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

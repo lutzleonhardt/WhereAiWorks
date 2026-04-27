@@ -2,9 +2,9 @@
 stage: development
 order: 6
 roles:
-  - developer
-title: "Security-Autofix im IDE/PR"
-goal_label: "AI-vorgeschlagene Patches für SAST/SCA-Findings direkt im Workflow anwenden"
+  - software-engineer
+title: Security-Autofix im IDE/PR
+goal_label: AI-vorgeschlagene Patches für SAST/SCA-Findings direkt im Workflow anwenden
 suitability: conditional
 rationale: "Briefing erlaubt schmalen Pfad explizit. Copilot Autofix (CodeQL) und Snyk Agent Fix / DeepCode AI Fix als zwei dominante Vendor-Implementierungen. In DACH zusätzlich durch NIS-2 und Cyber Resilience Act getrieben."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

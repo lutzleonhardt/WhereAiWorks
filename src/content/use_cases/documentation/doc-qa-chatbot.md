@@ -2,7 +2,7 @@
 stage: documentation
 order: 2
 roles:
-  - developer
+  - software-engineer
 title: "Doku-Q&A-Chatbot"
 goal_label: "Endbenutzern Fragen zur Produkt-Doku per Chat beantworten"
 suitability: good_fit

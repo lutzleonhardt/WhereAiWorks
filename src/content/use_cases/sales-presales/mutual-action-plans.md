@@ -2,7 +2,7 @@
 stage: sales-presales
 order: 13
 roles:
-  - product-owner
+  - product-manager
 title: "Mutual Action Plans / Deal Rooms"
 goal_label: "Buyer-seitige Deal-Rooms mit AI-gestützten nächsten Schritten erzeugen"
 suitability: conditional

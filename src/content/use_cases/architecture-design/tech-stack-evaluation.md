@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 2
 roles:
-  - developer
+  - software-engineer
 title: "Tech-Stack-Evaluation"
 goal_label: "Frameworks und Bibliotheken systematisch vergleichen"
 suitability: conditional

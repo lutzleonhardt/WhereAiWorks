@@ -2,7 +2,7 @@
 stage: hr-onboarding
 order: 3
 roles:
-  - product-owner
+  - product-manager
 title: "Job-Description-Drafting"
 goal_label: "Stellenausschreibungen schneller und AGG-konform formulieren"
 suitability: good_fit

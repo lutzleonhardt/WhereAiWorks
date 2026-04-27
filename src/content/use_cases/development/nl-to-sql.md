@@ -2,9 +2,9 @@
 stage: development
 order: 9
 roles:
-  - developer
-title: "Natural-Language → SQL"
-goal_label: "Datenbank-Queries aus deutscher/englischer Beschreibung generieren"
+  - software-engineer
+title: Natural-Language → SQL
+goal_label: Datenbank-Queries aus deutscher/englischer Beschreibung generieren
 suitability: conditional
 rationale: "Eigener Slot, von allen großen Cloud-DBs adressiert. Google QueryData, AlloyDB AI, Snowflake Cortex, JetBrains DataGrip AI. Für Devs primär als Schema-Exploration relevant."
 tools: []  # TODO: nach research-use-case-Lauf befüllen

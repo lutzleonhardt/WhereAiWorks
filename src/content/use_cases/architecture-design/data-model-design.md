@@ -2,7 +2,7 @@
 stage: architecture-design
 order: 7
 roles:
-  - developer
+  - software-engineer
 title: "Datenmodell entwerfen"
 goal_label: "ERD und Schema aus Domänenbeschreibung ableiten"
 suitability: good_fit

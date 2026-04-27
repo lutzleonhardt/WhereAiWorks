@@ -2,7 +2,7 @@
 stage: product-discovery
 order: 3
 roles:
-  - product-owner
+  - product-manager
 title: "PRD- und Spec-Drafting"
 goal_label: "Aus Stichpunkten und Kontext einen ersten PRD-Entwurf erzeugen"
 suitability: good_fit
