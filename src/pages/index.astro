@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { execSync } from 'node:child_process';
 import Base from '../layouts/Base.astro';
 import StageCard from '../components/StageCard.astro';
 import { loadRoles } from '../lib/data';
@@ -44,6 +45,36 @@ const stagesByPhase = phases.map((phase) => ({
 const pad = (n: number) => String(n).padStart(2, '0');
 
 const useCaseCount = (await getCollection('use_cases')).length;
+const repoUrl = 'https://github.com/lutzleonhardt/WhereAiWorks';
+
+function formatGermanDate(date: string): string {
+  return new Intl.DateTimeFormat('de-DE', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${date}T00:00:00Z`));
+}
+
+function getCatalogUpdatedAt(): string | null {
+  try {
+    const latest = execSync(
+      'git log -1 --format=%cs -- src/content src/data/tools.yaml src/data/sources.yaml',
+      {
+        cwd: process.cwd(),
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }
+    )
+      .toString()
+      .trim();
+
+    return latest ? formatGermanDate(latest) : null;
+  } catch {
+    return null;
+  }
+}
+
+const catalogUpdatedAt = getCatalogUpdatedAt();
 ---
 <Base title="Where AI Works — Atlas">
   <section id="view-atlas">
@@ -56,14 +87,51 @@ const useCaseCount = (await getCollection('use_cases')).length;
         </h1>
         <p class="kicker">
           Eine kuratierte Orientierung für CTOs, Product Owners, Team Leads und
-          Engineers im Mittelstand. Vier Stufen entlang der Wertschöpfung.
-          Ehrliche Einordnung statt Hype — inklusive der Stellen, an denen AI
-          heute noch scheitert.
+          Engineers im DACH-Mittelstand. Zehn Stufen entlang der
+          Software-Wertschöpfung in vier Phasen. Mit DACH- und EU-Realität im
+          Blick: Datenschutz, Compliance und produktiver Einsatz zählen mehr
+          als Hype.
         </p>
         <div class="meta">
           <span>{stages.length} Stufen · {useCaseCount} Use Cases</span>
-          <span>Open Source · Lizenz TBD</span>
+          <span>Kuratierter Katalog · Open Source</span>
+          {catalogUpdatedAt && <span>Katalogstand {catalogUpdatedAt}</span>}
+          <span>Lizenz TBD</span>
         </div>
+      </div>
+
+      <div class="atlas-intro-grid" aria-label="Hinweise zur Einordnung und Mitarbeit">
+        <article class="atlas-intro-card">
+          <div class="atlas-intro-label">DACH-Fokus</div>
+          <p>
+            Relevant fuer Teams in Deutschland, Oesterreich und der Schweiz:
+            mit Blick auf DSGVO, Betriebsrat, BaFin, EU AI Act und
+            Enterprise-Realitaet statt US-Default-Annahmen.
+          </p>
+        </article>
+        <article class="atlas-intro-card">
+          <div class="atlas-intro-label">Mitmachen</div>
+          <p>
+            Fehlt ein Tool, ein Use Case oder eine wichtige Einschraenkung?
+            Vorschlaege gern per Pull Request. Der Atlas bleibt bewusst
+            kuratiert, nicht offen fuer beliebige Eintraege.
+          </p>
+          <div class="atlas-intro-links">
+            <a href={repoUrl} rel="noreferrer">Zum GitHub-Repo</a>
+            <a href="/mitmachen">Beitragsprozess folgt</a>
+          </div>
+        </article>
+        <article class="atlas-intro-card">
+          <div class="atlas-intro-label">Methodik</div>
+          <p>
+            Die initiale Befuellung entstand in einem mehrstufigen
+            Research-Prozess mit Discovery, Markt-Scan, Gegenpruefung und
+            manueller Kuratierung in einem separaten Seed-Repository.
+          </p>
+          <div class="atlas-intro-links">
+            <a href="/methodik">Methodik folgt</a>
+          </div>
+        </article>
       </div>
 
       <div class="filter-row">

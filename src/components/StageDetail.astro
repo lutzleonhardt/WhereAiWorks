@@ -258,7 +258,7 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                     return (
                       <details class="stage-tool">
                         <summary class="stage-tool-head">
-                          <span class="stage-tool-name">{tool.name}</span>
+                          <span class="stage-tool-name" title={tool.name}>{tool.name}</span>
                           <span class="stage-tool-meta">
                             <SuitabilityBadge suitability={entry.fit} context="tool" />
                             {entry.enterprise_readiness && (
@@ -271,7 +271,6 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                               </span>
                             )}
                             <span class="stage-tool-caret" aria-hidden="true">
-                              Details
                               <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
                                 <path
                                   d="M1 1l4 4 4-4"
