@@ -16,6 +16,11 @@ Produktions-Build:
     npm run build
     npm run preview
 
+Synchronisations-Audit für top-level Use-Case-Meta:
+
+    npm run audit:use-case-meta
+    npm run audit:use-case-meta -- --stage development
+
 ## Was drin ist
 
 | Route | Inhalt |
@@ -43,6 +48,16 @@ Füge einen Eintrag in `use_cases:` einer bestehenden Stage-Datei hinzu oder leg
     tools, start_here, caveats, sources
 
 `suitability` ∈ {`good_fit`, `conditional`, `partial`, `immature`}. Wenn ein verwendetes Tool noch nicht in `tools.yaml` steht, erst dort anlegen — sonst bricht der Build mit einer klaren Zod-Fehlermeldung.
+
+## Synchronisations-Audit
+
+`npm run audit:use-case-meta` prüft die Use-Case-Dateien auf fehlende top-level Metafelder, die bei Seed-Importen oder späteren Synchronisationen leicht verloren gehen:
+
+- `adoption_maturity`
+- `enterprise_relevance`
+- `evidence_strength`
+
+Der Check ist absichtlich read-only. Er dient als Guardrail nach Syncs oder Content-Migrationen und listet fehlende Felder pro Datei auf. Mit `-- --stage <slug>` lässt er sich auf eine konkrete Stage einschränken.
 
 ### Neues Tool
 
