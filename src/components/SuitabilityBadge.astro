@@ -1,13 +1,16 @@
 ---
 type Suitability = 'good_fit' | 'conditional' | 'partial' | 'immature';
 type Size = 'sm' | 'lg';
+type Context = 'ai' | 'tool';
 
 interface Props {
   suitability: Suitability;
   size?: Size;
+  context?: Context;
+  tooltip?: string;
 }
 
-const { suitability, size = 'sm' } = Astro.props;
+const { suitability, size = 'sm', context = 'ai', tooltip } = Astro.props;
 
 const labels: Record<Suitability, string> = {
   good_fit: 'gut geeignet',
@@ -23,9 +26,34 @@ const colorClass: Record<Suitability, string> = {
   immature: 'red',
 };
 
+const contextTooltips: Record<Context, Record<Suitability, string>> = {
+  ai: {
+    good_fit: 'AI-Eignung: AI bringt hier in der Regel klaren praktischen Mehrwert.',
+    conditional:
+      'AI-Eignung: Funktioniert, aber nur unter klaren Voraussetzungen oder mit enger menschlicher Kontrolle.',
+    partial:
+      'AI-Eignung: AI hilft bei einzelnen Schritten, aber nicht beim ganzen Use Case.',
+    immature:
+      'AI-Eignung: Qualitaet, Evidenz oder Markt sind fuer verlaesslichen Einsatz noch zu schwach.',
+  },
+  tool: {
+    good_fit: 'Tool-Eignung: Dieses Tool passt gut fuer den aktuellen Use Case.',
+    conditional: 'Tool-Eignung: Dieses Tool passt, aber mit klaren Einschraenkungen.',
+    partial: 'Tool-Eignung: Dieses Tool hilft nur bei Teilen des Use Case.',
+    immature:
+      'Tool-Eignung: Dieses Tool ist fuer diesen Use Case noch nicht belastbar genug.',
+  },
+};
+
+const resolvedTooltip = tooltip ?? contextTooltips[context][suitability];
 const sizeClass = size === 'lg' ? ' lg' : '';
 ---
-<span class={`pill ${colorClass[suitability]}${sizeClass}`} role="status">
+<span
+  class={`pill ${colorClass[suitability]}${sizeClass}`}
+  role="status"
+  title={resolvedTooltip}
+  aria-label={`${labels[suitability]}. ${resolvedTooltip}`}
+>
   <span class="dot" aria-hidden="true"></span>
   {labels[suitability]}
 </span>
