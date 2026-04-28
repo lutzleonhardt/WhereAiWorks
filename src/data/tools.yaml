@@ -1013,3 +1013,678 @@
   category: other
   url: https://github.com/theAstiv/paranoid
   maturity: beta
+- id: zendesk-com-service-ai
+  name: Zendesk AI
+  category: support
+  url: https://www.zendesk.com/service/ai/
+  maturity: production
+- id: intercom-com-fin
+  name: Intercom Fin
+  category: support
+  url: https://www.intercom.com/fin
+  maturity: production
+- id: sprinklr-com-products-customer-service-agent-assist
+  name: Sprinklr AI+ Agent Assist
+  category: support
+  url: https://www.sprinklr.com/products/customer-service/agent-assist/
+  maturity: production
+- id: verint-com-our-offerings-cx-automation-ai-powered-bots
+  name: Verint Open CCaaS Auto Summary
+  category: support
+  url: https://www.verint.com/our-offerings/cx-automation/ai-powered-bots/
+  maturity: production
+- id: enghouseinteractive-com
+  name: Enghouse Interactive (EICC mit AI-Summary)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.enghouseinteractive.com/
+  maturity: production
+- id: sap-com-products-crm-service-cloud-html
+  name: SAP Service Cloud mit Joule
+  category: <coding|testing|discovery|support|...>
+  url: https://www.sap.com/products/crm/service-cloud.html
+  maturity: production
+- id: vier-ai
+  name: VIER Interaction Analytics / Agent Assist
+  category: <coding|testing|discovery|support|...>
+  url: https://www.vier.ai/
+  maturity: production
+- id: aws-amazon-com-connect-contact-lens
+  name: Amazon Q in Connect (Contact Lens Post-Call Summary)
+  category: support
+  url: https://aws.amazon.com/connect/contact-lens/
+  maturity: production
+- id: cresta-com-products-agent-assist
+  name: Cresta Agent Assist
+  category: support
+  url: https://cresta.com/products/agent-assist/
+  maturity: production
+- id: five9-com-products-capabilities-ai-summary
+  name: Five9 AI Summary
+  category: support
+  url: https://www.five9.com/products/capabilities/ai-summary
+  maturity: production
+- id: genesys-com-capabilities-agent-copilot
+  name: Genesys Cloud Auto-Summary
+  category: support
+  url: https://www.genesys.com/capabilities/agent-copilot
+  maturity: production
+- id: nice-com-products-cxone-mpower-enlighten-ai-enlighten-autosummary
+  name: NICE Enlighten Autosummary
+  category: support
+  url: https://www.nice.com/products/cxone-mpower/enlighten-ai/enlighten-autosummary
+  maturity: production
+- id: salesforce-com-service-ai-work-summaries
+  name: Salesforce Service Cloud Einstein (Work Summaries)
+  category: support
+  url: https://www.salesforce.com/service/ai/work-summaries/
+  maturity: production
+- id: i2x-ai
+  name: i2x
+  category: <coding|testing|discovery|support|...>
+  url: https://www.i2x.ai/
+  maturity: production
+- id: balto-ai
+  name: Balto
+  category: support
+  url: https://www.balto.ai/
+  maturity: production
+- id: observe-ai-products-real-time-ai
+  name: Observe.AI Real-Time AI
+  category: support
+  url: https://www.observe.ai/products/real-time-ai
+  maturity: production
+- id: verint-com-our-offerings-solutions-customer-engagement-real-time-agent-assist
+  name: Verint Real-Time Agent Assist
+  category: support
+  url: https://www.verint.com/our-offerings/solutions/customer-engagement/real-time-agent-assist/
+  maturity: production
+- id: cognigy-com
+  name: Cognigy.AI
+  category: support
+  url: https://www.cognigy.com/
+  maturity: production
+- id: parloa-com
+  name: Parloa
+  category: support
+  url: https://www.parloa.com/
+  maturity: production
+- id: aleph-alpha-com-pharia-ai
+  name: Aleph Alpha PhariaAI / Pharia Assistant
+  category: <coding|testing|discovery|support|...>
+  url: https://aleph-alpha.com/pharia-ai/
+  maturity: production
+- id: kore-ai
+  name: Kore.ai Agent Platform
+  category: <coding|testing|discovery|support|...>
+  url: https://kore.ai/
+  maturity: production
+- id: pega-com-products-customer-service
+  name: Pegasystems Pega Customer Service (mit Pega GenAI)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.pega.com/products/customer-service
+  maturity: production
+- id: salesforce-com-agentforce
+  name: Salesforce Agentforce
+  category: support
+  url: https://www.salesforce.com/agentforce/
+  maturity: production
+- id: servicenow-com-products-now-assist-for-customer-service-management-html
+  name: ServiceNow Now Assist for CSM
+  category: support
+  url: https://www.servicenow.com/products/now-assist-for-customer-service-management.html
+  maturity: production
+- id: sierra-ai
+  name: Sierra
+  category: support
+  url: https://sierra.ai
+  maturity: production
+- id: genesys-com-genesys-cloud
+  name: Genesys Cloud CX
+  category: support
+  url: https://www.genesys.com/genesys-cloud
+  maturity: production
+- id: nice-com-products-cxone-mpower
+  name: NICE CXone Mpower
+  category: support
+  url: https://www.nice.com/products/cxone-mpower
+  maturity: production
+- id: moin-ai
+  name: moin.ai
+  category: <coding|testing|discovery|support|...>
+  url: https://www.moin.ai/
+  maturity: production
+- id: boost-ai
+  name: boost.ai
+  category: support
+  url: https://boost.ai/
+  maturity: production
+- id: callminer-com-products-eureka
+  name: CallMiner Eureka
+  category: support
+  url: https://callminer.com/products/eureka
+  maturity: production
+- id: evaluagent-com-platform
+  name: evaluagent
+  category: support
+  url: https://www.evaluagent.com/platform
+  maturity: production
+- id: maestroqa-com
+  name: MaestroQA
+  category: support
+  url: https://www.maestroqa.com/
+  maturity: production
+- id: nice-com-products-quality-management
+  name: NICE CXone Mpower Quality Management (AutoScore)
+  category: support
+  url: https://www.nice.com/products/quality-management
+  maturity: production
+- id: verint-com-quality-management
+  name: Verint AI-Powered Automated Quality Management (Quality Bot)
+  category: support
+  url: https://www.verint.com/quality-management/
+  maturity: production
+- id: zendesk-com-service-quality-assurance
+  name: Zendesk QA (formerly Klaus)
+  category: support
+  url: https://www.zendesk.com/service/quality-assurance/
+  maturity: production
+- id: calabrio-com-products-quality-management
+  name: Calabrio ONE (AI Auto QA)
+  category: support
+  url: https://www.calabrio.com/products/quality-management/
+  maturity: production
+- id: de-diabolocom-com-kunstliche-intelligenz-qualitatssicherung
+  name: Diabolocom Quality Monitoring
+  category: support
+  url: https://de.diabolocom.com/kunstliche-intelligenz/qualitatssicherung/
+  maturity: production
+- id: scorebuddyqa-com
+  name: Scorebuddy
+  category: support
+  url: https://www.scorebuddyqa.com/
+  maturity: production
+- id: spitch-ai-de-quality-management
+  name: Spitch Quality Management
+  category: support
+  url: https://spitch.ai/de/quality_management/
+  maturity: production
+- id: vier-ai-en-communication-vier-scorecards
+  name: VIER Scorecards / VIER Interaction Analytics
+  category: other
+  url: https://www.vier.ai/en/communication/vier-scorecards/
+  maturity: production
+- id: bsi-software-com-de
+  name: BSI Customer Suite (BSI AI)
+  category: support
+  url: https://www.bsi-software.com/de
+  maturity: production
+- id: cloud-google-com-document-ai
+  name: Google Document AI
+  category: other
+  url: https://cloud.google.com/document-ai
+  maturity: production
+- id: konfuzio-com-de
+  name: Konfuzio
+  category: other
+  url: https://konfuzio.com/de/
+  maturity: production
+- id: azure-microsoft-com-en-us-products-ai-services-ai-document-intelligence
+  name: Microsoft Azure AI Document Intelligence (Form Recognizer)
+  category: other
+  url: https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
+  maturity: production
+- id: opentext-com-products-intelligent-capture
+  name: OpenText Intelligent Capture (Captiva)
+  category: other
+  url: https://www.opentext.com/products/intelligent-capture
+  maturity: production
+- id: parashift-io
+  name: Parashift
+  category: other
+  url: https://parashift.io/
+  maturity: production
+- id: rossum-ai
+  name: Rossum
+  category: other
+  url: https://rossum.ai/
+  maturity: production
+- id: uipath-com-product-document-understanding
+  name: UiPath Document Understanding
+  category: other
+  url: https://www.uipath.com/product/document-understanding
+  maturity: production
+- id: ibm-com-products-datacap
+  name: IBM Datacap / watsonx Document Understanding
+  category: <coding|testing|discovery|support|...>
+  url: https://www.ibm.com/products/datacap
+  maturity: production
+- id: natif-ai
+  name: Natif.ai
+  category: <coding|testing|discovery|support|...>
+  url: https://natif.ai/
+  maturity: production
+- id: abbyy-com-vantage
+  name: ABBYY Vantage
+  category: other
+  url: https://www.abbyy.com/vantage/
+  maturity: production
+- id: hyperscience-com
+  name: Hyperscience
+  category: other
+  url: https://www.hyperscience.com/
+  maturity: production
+- id: insiders-technologies-de
+  name: Insiders Technologies smart FLOW / smart INBOX
+  category: support
+  url: https://www.insiders-technologies.de/
+  maturity: production
+- id: ityx-de
+  name: ITyX Mediatrix / Inbound Suite
+  category: support
+  url: https://www.ityx.de/
+  maturity: production
+- id: tungstenautomation-com-products-totalagility
+  name: Kofax / Tungsten Automation TotalAgility
+  category: other
+  url: https://www.tungstenautomation.com/products/totalagility
+  maturity: production
+- id: dixa-com
+  name: Dixa (mit Solvemate)
+  category: support
+  url: https://www.dixa.com
+  maturity: production
+- id: usu-com
+  name: USU Knowledge / USU AI Agent
+  category: support
+  url: https://www.usu.com
+  maturity: production
+- id: ada-cx
+  name: Ada
+  category: support
+  url: https://www.ada.cx
+  maturity: production
+- id: sprinklr-com-products-customer-service-conversational-ai
+  name: Tymeshift / Sprinklr Service AI Routing
+  category: support
+  url: https://www.sprinklr.com/products/customer-service/conversational-ai/
+  maturity: production
+- id: genesys-com-capabilities-predictive-routing
+  name: Genesys Cloud CX Predictive Routing
+  category: support
+  url: https://www.genesys.com/capabilities/predictive-routing
+  maturity: production
+- id: omq-de
+  name: OMQ
+  category: support
+  url: https://www.omq.de/
+  maturity: production
+- id: forethought-ai-triage
+  name: Forethought Triage (Solve / SupportGPT Suite)
+  category: support
+  url: https://forethought.ai/triage/
+  maturity: production
+- id: freshworks-com-freddy-ai
+  name: Freshdesk Freddy AI (Auto-Triage)
+  category: support
+  url: https://www.freshworks.com/freddy-ai/
+  maturity: production
+- id: help-salesforce-com-s-articleview-id-service-case-classification-setup-htm
+  name: Salesforce Einstein Case Classification & Routing
+  category: support
+  url: https://help.salesforce.com/s/articleView?id=service.case_classification_setup.htm
+  maturity: production
+- id: zendesk-com-service-ai-intelligent-triage
+  name: Zendesk Intelligent Triage
+  category: support
+  url: https://www.zendesk.com/service/ai/intelligent-triage/
+  maturity: production
+- id: learn-microsoft-com-en-us-dynamics365-customer-service-use-unified-routing
+  name: Microsoft Dynamics 365 Customer Service Unified Routing
+  category: support
+  url: https://learn.microsoft.com/en-us/dynamics365/customer-service/use-unified-routing
+  maturity: production
+- id: cognigy-com-products-knowledge-ai
+  name: Cognigy.AI Knowledge AI
+  category: support
+  url: https://www.cognigy.com/products/knowledge-ai
+  maturity: production
+- id: starmind-ai
+  name: Starmind
+  category: support
+  url: https://www.starmind.ai/
+  maturity: production
+- id: egain-com-products-knowledge-hub
+  name: eGain Knowledge Hub (AssistGPT)
+  category: support
+  url: https://www.egain.com/products/knowledge-hub/
+  maturity: production
+- id: salesforce-com-products-einstein-ai-solutions
+  name: Salesforce Einstein (Service Cloud — Knowledge Article Generation)
+  category: support
+  url: https://www.salesforce.com/products/einstein-ai-solutions/
+  maturity: production
+- id: servicenow-com-products-now-platform-ai-experience-html
+  name: ServiceNow Now Assist for Customer Service Management
+  category: support
+  url: https://www.servicenow.com/products/now-platform-ai-experience.html
+  maturity: production
+- id: usu-com-de-de-produkte-knowledge-management
+  name: USU Knowledge Center (unymira)
+  category: support
+  url: https://www.usu.com/de-de/produkte/knowledge-management/
+  maturity: production
+- id: stonly-com-product-ai-knowledge-agents
+  name: Stonly Knowledge Agents
+  category: support
+  url: https://stonly.com/product/ai-knowledge-agents
+  maturity: production
+- id: eesel-ai
+  name: eesel AI
+  category: support
+  url: https://www.eesel.ai/
+  maturity: production
+- id: egain-com-knowledge-management-customer-service-support
+  name: eGain AI Knowledge Hub
+  category: support
+  url: https://www.egain.com/knowledge-management-customer-service-support/
+  maturity: production
+- id: docs-inkeep-com-analytics-content-gaps
+  name: Inkeep (Content Gaps + AI Content Writer)
+  category: support
+  url: https://docs.inkeep.com/analytics/content-gaps
+  maturity: production
+- id: docs-kapa-ai-analytics-coverage-gaps
+  name: Kapa.ai (Coverage Gaps)
+  category: support
+  url: https://docs.kapa.ai/analytics/coverage-gaps
+  maturity: production
+- id: qualtrics-com-support-xm-discover-text-analytics-ai-assisted-text-analytics-in-xm-discover
+  name: Qualtrics XM Discover (ehem. Clarabridge)
+  category: support
+  url: https://www.qualtrics.com/support/xm-discover/text-analytics/ai-assisted-text-analytics-in-xm-discover/
+  maturity: production
+- id: verint-com-our-platform-speech-and-text-analytics
+  name: Verint Speech & Text Analytics
+  category: support
+  url: https://www.verint.com/our-platform/speech-and-text-analytics/
+  maturity: production
+- id: usefini-com
+  name: Fini
+  category: other
+  url: https://www.usefini.com/
+  maturity: production
+- id: ontiv-com
+  name: ONTIV AI
+  category: other
+  url: https://ontiv.com/
+  maturity: production
+- id: forethought-ai-platform-discover
+  name: Forethought Discover
+  category: support
+  url: https://forethought.ai/platform/discover
+  maturity: production
+- id: moin-ai-en-chatbot-wiki-knowledge-gaps
+  name: moinAI (Dreaming + Insights)
+  category: support
+  url: https://www.moin.ai/en/chatbot-wiki/knowledge-gaps
+  maturity: production
+- id: nice-com-blog-nexidia-building-smarter-self-service-how-nices-enlighten-xo-powers-businesses-to-deliver-engaging-cx-across-digital-channels
+  name: NICE Enlighten XO
+  category: support
+  url: https://www.nice.com/blog/nexidia-building-smarter-self-service-how-nices-enlighten-xo-powers-businesses-to-deliver-engaging-cx-across-digital-channels
+  maturity: production
+- id: usu-com-en-knowledge-management-knowledge-analytics
+  name: USU Knowledge Management (Knowledge Analytics)
+  category: support
+  url: https://www.usu.com/en/knowledge-management/knowledge-analytics
+  maturity: production
+- id: shelf-io-knowledge-management
+  name: Shelf MerlinAI (Knowledge Health Score)
+  category: other
+  url: https://shelf.io/knowledge-management/
+  maturity: production
+- id: salesforce-com-service-ai
+  name: Salesforce Service Cloud Einstein - Quick Text Suggestions
+  category: support
+  url: https://www.salesforce.com/service/ai/
+  maturity: production
+- id: aws-amazon-com-translate
+  name: AWS – Amazon Translate + Connect Real-Time Translation
+  category: support
+  url: https://aws.amazon.com/translate/
+  maturity: production
+- id: cresta-com
+  name: Cresta Translation
+  category: support
+  url: https://cresta.com/
+  maturity: production
+- id: cloud-google-com-translate
+  name: Google Cloud Translation + Contact Center AI
+  category: support
+  url: https://cloud.google.com/translate
+  maturity: production
+- id: inten-to
+  name: Intento
+  category: support
+  url: https://www.inten.to/
+  maturity: production
+- id: microsoft-com-en-us-translator-business
+  name: Microsoft Translator (incl. Speech & Teams Live Captions)
+  category: support
+  url: https://www.microsoft.com/en-us/translator/business/
+  maturity: production
+- id: genesys-com-capabilities-real-time-translation
+  name: Genesys Cloud CX – Real-Time Translation
+  category: <coding|testing|discovery|support|...>
+  url: https://www.genesys.com/capabilities/real-time-translation
+  maturity: production
+- id: lengoo-com
+  name: Lengoo
+  category: <coding|testing|discovery|support|...>
+  url: https://www.lengoo.com/
+  maturity: production
+- id: nice-com-products-cxone
+  name: NICE CXone (Enlighten Translation)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.nice.com/products/cxone
+  maturity: production
+- id: deepl-com-en-pro-api
+  name: DeepL (API + DeepL Voice)
+  category: support
+  url: https://www.deepl.com/en/pro-api
+  maturity: production
+- id: languageio-com
+  name: Language I/O
+  category: support
+  url: https://languageio.com/
+  maturity: production
+- id: lokalise-com-messages
+  name: Lokalise Messages
+  category: support
+  url: https://lokalise.com/messages/
+  maturity: production
+- id: unbabel-com
+  name: Unbabel
+  category: support
+  url: https://unbabel.com/
+  maturity: production
+- id: gorgias-com
+  name: Gorgias AI Agent
+  category: support
+  url: https://www.gorgias.com/
+  maturity: production
+- id: aissist-io
+  name: Aissist.io
+  category: support
+  url: https://aissist.io/
+  maturity: production
+- id: decagon-ai
+  name: Decagon
+  category: support
+  url: https://decagon.ai/
+  maturity: production
+- id: omq-ai-products-assist
+  name: OMQ Assist
+  category: support
+  url: https://omq.ai/products/assist/
+  maturity: production
+- id: cloud-google-com-agent-assist
+  name: Google Cloud Agent Assist
+  category: support
+  url: https://cloud.google.com/agent-assist
+  maturity: production
+- id: hubspot-com-products-artificial-intelligence-use-cases-resolve-support-tickets
+  name: HubSpot Breeze (Reply Recommendations)
+  category: support
+  url: https://www.hubspot.com/products/artificial-intelligence/use-cases/resolve-support-tickets
+  maturity: production
+- id: salesforce-com-eu-service-ai
+  name: Salesforce Einstein Service Replies (Agentforce for Service)
+  category: support
+  url: https://www.salesforce.com/eu/service/ai/
+  maturity: production
+- id: aristech-ai-en-aristech-aisuite
+  name: Aristech AI Suite
+  category: support
+  url: https://aristech.ai/en/aristech-aisuite/
+  maturity: production
+- id: mercury-ai
+  name: Mercury.ai
+  category: support
+  url: https://mercury.ai/
+  maturity: production
+- id: onlim-com
+  name: Onlim
+  category: support
+  url: https://onlim.com/
+  maturity: production
+- id: botfriends-de-en
+  name: BOTfriends X
+  category: other
+  url: https://botfriends.de/en/
+  maturity: production
+- id: lime-ai
+  name: Lime Connect (Userlike)
+  category: other
+  url: https://www.lime.ai/
+  maturity: production
+- id: splitbot-de
+  name: Splitbot
+  category: other
+  url: https://splitbot.de/
+  maturity: production
+- id: tenios-de-chatbot
+  name: TENIOS Enterprise Chatbot
+  category: other
+  url: https://www.tenios.de/chatbot
+  maturity: production
+- id: kore-ai-ai-for-service
+  name: Kore.ai AI for Service
+  category: support
+  url: https://kore.ai/ai-for-service
+  maturity: production
+- id: genesys-com-capabilities-ai-experience
+  name: Genesys Cloud AI Experience
+  category: support
+  url: https://www.genesys.com/capabilities/ai-experience
+  maturity: production
+- id: sprinklr-com-products-customer-service
+  name: Sprinklr Service / Conversational AI
+  category: support
+  url: https://www.sprinklr.com/products/customer-service/
+  maturity: production
+- id: sap-com-products-crm-service-html
+  name: SAP Service Cloud (Joule / Embedded AI)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.sap.com/products/crm/service.html
+  maturity: production
+- id: usu-com-de-de-produkte-customer-service
+  name: USU Service Intelligence
+  category: <coding|testing|discovery|support|...>
+  url: https://www.usu.com/de-de/produkte/customer-service/
+  maturity: production
+- id: usu-com-de-de-produkte-usu-knowledge-management
+  name: USU Knowledge Center / Smart Link Summaries
+  category: support
+  url: https://www.usu.com/de-de/produkte/usu-knowledge-management/
+  maturity: production
+- id: front-com-ai
+  name: Front AI Summarize
+  category: support
+  url: https://front.com/ai
+  maturity: production
+- id: hubspot-com-products-service
+  name: HubSpot Service Hub Breeze AI (Conversation Summaries)
+  category: support
+  url: https://www.hubspot.com/products/service
+  maturity: production
+- id: almato-com
+  name: almato
+  category: support
+  url: https://www.almato.com/
+  maturity: production
+- id: salesforce-com-sales-conversation-insights
+  name: Salesforce Einstein Conversation Insights
+  category: support
+  url: https://www.salesforce.com/sales/conversation-insights/
+  maturity: production
+- id: chattermill-com
+  name: Chattermill
+  category: support
+  url: https://chattermill.com/
+  maturity: production
+- id: medallia-com-platform-speech-analytics
+  name: Medallia Speech & Text Analytics
+  category: discovery
+  url: https://www.medallia.com/platform/speech-analytics/
+  maturity: production
+- id: nice-com-products-customer-engagement-enlighten-ai
+  name: NICE Enlighten AI / CXone Mpower
+  category: support
+  url: https://www.nice.com/products/customer-engagement/enlighten-ai
+  maturity: production
+- id: getthematic-com
+  name: Thematic
+  category: discovery
+  url: https://getthematic.com/
+  maturity: production
+- id: aws-amazon-com-lex
+  name: Amazon Lex + Amazon Connect
+  category: support
+  url: https://aws.amazon.com/lex/
+  maturity: production
+- id: genesys-com-capabilities-virtual-agent
+  name: Genesys Cloud Virtual Agent
+  category: support
+  url: https://www.genesys.com/capabilities/virtual-agent
+  maturity: production
+- id: cloud-google-com-dialogflow-cx-docs
+  name: Google Dialogflow CX / Vertex AI Conversation
+  category: support
+  url: https://cloud.google.com/dialogflow/cx/docs
+  maturity: production
+- id: telegra-de
+  name: telegra Voicebot
+  category: support
+  url: https://www.telegra.de/
+  maturity: production
+- id: sikom-de
+  name: Sikom AgentOne (Voice)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.sikom.de/
+  maturity: production
+- id: cognigy-com-products-cognigy-voice
+  name: Cognigy Voice
+  category: support
+  url: https://www.cognigy.com/products/cognigy-voice
+  maturity: production
+- id: poly-ai
+  name: PolyAI
+  category: support
+  url: https://poly.ai/
+  maturity: production
+- id: spitch-ai
+  name: Spitch
+  category: support
+  url: https://www.spitch.ai/
+  maturity: production

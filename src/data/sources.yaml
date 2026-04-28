@@ -2338,3 +2338,1451 @@
   label: PyPI-Listung paranoid-cli v1.3.0; Apache-2.0, Python 3.12+, Status Production/Stable, Keywords STRIDE/MAESTRO/DREAD.
   url: https://pypi.org/project/paranoid-cli/
   type: vendor_doc
+- id: sprinklr-com-products-customer-service-agent-assist
+  label: Sprinklr Agent Assist umfasst Auto-Summary und Wrap-up
+  url: https://www.sprinklr.com/products/customer-service/agent-assist/
+  type: vendor
+- id: verint-com-our-offerings-cx-automation-ai-powered-bots
+  label: Verint AI-Powered Bots inkl. Auto-Summary für ACW
+  url: https://www.verint.com/our-offerings/cx-automation/ai-powered-bots/
+  type: vendor
+- id: enghouseinteractive-com
+  label: Enghouse Interactive ist ein Contact-Center-Anbieter mit DACH-Footprint und AI-erweiterten Modulen
+  url: https://www.enghouseinteractive.com/
+  type: vendor
+- id: sap-com-products-crm-service-cloud-html
+  label: SAP Service Cloud bietet Joule-basierte Service-Automatisierung inkl. Case-Summary
+  url: https://www.sap.com/products/crm/service-cloud.html
+  type: vendor
+- id: vier-ai
+  label: VIER positioniert sich als deutscher AI-Contact-Center-Anbieter mit Compliance-Fokus
+  url: https://www.vier.ai/
+  type: vendor
+- id: aws-amazon-com-connect-contact-lens
+  label: Contact Lens liefert generative Post-Call-Summaries als ACW-Baustein
+  url: https://aws.amazon.com/connect/contact-lens/
+  type: vendor
+- id: cognigy-com-products-agent-copilot
+  label: Cognigy Agent Copilot deckt After-Call-Wrap-up ab
+  url: https://www.cognigy.com/products/agent-copilot
+  type: vendor
+- id: cresta-com-products-agent-assist
+  label: Cresta Agent Assist umfasst automatisches Wrap-up und Disposition-Vorschläge
+  url: https://cresta.com/products/agent-assist/
+  type: vendor
+- id: five9-com-products-capabilities-ai-summary
+  label: Five9 AI Summary deckt After-Call-Work und CRM-Befüllung ab
+  url: https://www.five9.com/products/capabilities/ai-summary
+  type: vendor
+- id: genesys-com-capabilities-agent-copilot
+  label: Genesys Agent Copilot bietet Auto-Summary und Wrap-up-Unterstützung
+  url: https://www.genesys.com/capabilities/agent-copilot
+  type: vendor
+- id: microsoft-com-en-us-dynamics-365-products-customer-service
+  label: D365 Customer Service Copilot deckt Auto-Summary und Case-Update ab
+  url: https://www.microsoft.com/en-us/dynamics-365/products/customer-service
+  type: vendor
+- id: nice-com-products-cxone-mpower-enlighten-ai-enlighten-autosummary
+  label: NICE Autosummary fokussiert explizit auf strukturiertes After-Call-Work
+  url: https://www.nice.com/products/cxone-mpower/enlighten-ai/enlighten-autosummary
+  type: vendor
+- id: salesforce-com-service-ai-work-summaries
+  label: Einstein Work Summaries adressieren ACW und Case-Feldbefüllung
+  url: https://www.salesforce.com/service/ai/work-summaries/
+  type: vendor
+- id: talkdesk-com-platform-talkdesk-copilot
+  label: Talkdesk Copilot adressiert After-Call-Summary und Disposition
+  url: https://www.talkdesk.com/platform/talkdesk-copilot/
+  type: vendor
+- id: zendesk-com-service-ai
+  label: Zendesk AI deckt Auto-Summary und Ticket-Felder nach Interaktion ab
+  url: https://www.zendesk.com/service/ai/
+  type: vendor
+- id: cxtoday-com-contact-center-gartner-magic-quadrant-for-contact-center-as-a-service-ccaas-2025-the-rundown
+  label: "CXToday-Analyse zum Gartner Magic Quadrant CCaaS 2025: AWS, Five9, Genesys, NICE und Talkdesk als Leader"
+  url: https://www.cxtoday.com/contact-center/gartner-magic-quadrant-for-contact-center-as-a-service-ccaas-2025-the-rundown/
+  type: analyst
+- id: techedgeai-com-nice-cognigy-named-a-leader-in-conversational-ai-by-independent-research-firm
+  label: TechEdge AI berichtet über Cognigy als Leader im Forrester Wave Conversational AI Platforms for Customer Service Q2 2026
+  url: https://techedgeai.com/nice-cognigy-named-a-leader-in-conversational-ai-by-independent-research-firm/
+  type: analyst
+- id: cresta-com-blog-cresta-named-a-leader-and-a-force-to-be-reckoned-with-in-the-forrester-wave-conversation-intelligence-solutions-for-contact-centers-q2-2025
+  label: Cresta als Leader im Forrester Wave Conversation Intelligence Solutions for Contact Centers Q2 2025 mit höchsten Werten in Real-Time Guidance, GenAI Safety und Insights-to-Action
+  url: https://cresta.com/blog/cresta-named-a-leader-and-a-force-to-be-reckoned-with-in-the-forrester-wave-conversation-intelligence-solutions-for-contact-centers-q2-2025
+  type: analyst
+- id: probecx-com-insights-automotive-financier-cuts-after-call-work-by-30-percent-with-genesys
+  label: "Probe-CX-Praxisbericht: ~30 % ACW-Reduktion durch Genesys Agent Copilot bei australischem Auto-Finanzierer"
+  url: https://www.probecx.com/insights/automotive-financier-cuts-after-call-work-by-30-percent-with-genesys
+  type: case_study
+- id: accutech-com-microsoft-hr-speeds-case-throughput-20-with-copilot-in-dynamics-365-customer-service-2
+  label: "AccuTech-Bericht zu Microsoft HR: 20 % höherer Case-Throughput mit Copilot in Dynamics 365 Customer Service"
+  url: https://accutech.com/microsoft-hr-speeds-case-throughput-20-with-copilot-in-dynamics-365-customer-service-2/
+  type: case_study
+- id: eesel-ai-blog-salesforce-einstein-work-summaries
+  label: Praxisleitfaden zu Salesforce Einstein Work Summaries inkl. Limits (nur sinnvoll, wenn Wissensbasis komplett in Salesforce liegt)
+  url: https://www.eesel.ai/blog/salesforce-einstein-work-summaries
+  type: review
+- id: ai-scanner-com-platforms-talkdesk-ai
+  label: "AI-Scanner-Review 2026: Talkdesk Copilot — Auto-Summaries und Real-Time Agent Assist mit Kritikpunkten zu Vendor-Lock-in und Integrationsaufwand"
+  url: https://ai-scanner.com/platforms/talkdesk-ai
+  type: review
+- id: eesel-ai-blog-zendesk-intelligent-triage-resources
+  label: Unabhängiger Leitfaden zu Zendesk Intelligent Triage und Auto Assist (Intent, Sentiment, Auto-Routing)
+  url: https://www.eesel.ai/blog/zendesk-intelligent-triage-resources
+  type: review
+- id: i2x-ai
+  label: i2x bewirbt eine Real-Time Speech-Coaching-Plattform fuer Contact-Center-Agenten mit deutschsprachigem Fokus
+  url: https://www.i2x.ai/
+  type: vendor
+- id: balto-ai
+  label: Balto bewirbt sich als Real-Time-Guidance-Plattform fuer Contact-Center-Agenten
+  url: https://www.balto.ai/
+  type: vendor
+- id: trustradius-com-products-balto-reviews
+  label: TrustRadius listet Balto als Conversation-Intelligence-Tool fuer Contact-Center mit unabhaengigen Nutzerbewertungen zu Real-Time-Guidance
+  url: https://www.trustradius.com/products/balto/reviews
+  type: review
+- id: softwarereviews-com-products-balto
+  label: SoftwareReviews (Info-Tech) aggregiert unabhaengige Endkundenbewertungen fuer Balto Conversation Intelligence (Net Emotional Footprint +94, Plan to Renew 95%)
+  url: https://www.softwarereviews.com/products/balto
+  type: review
+- id: cresta-com-product-agent-assist
+  label: Cresta positioniert Agent Assist explizit als Echtzeit-Guidance waehrend Live-Gespraechen mit Behavior- und Knowledge-Hinweisen
+  url: https://cresta.com/product/agent-assist/
+  type: vendor
+- id: www2-prnewswire-com-news-releases-cresta-named-a-leader-and-a-force-to-be-reckoned-with-in-conversation-intelligence-for-the-contact-center-302474352-html
+  label: Forrester Wave Conversation Intelligence Solutions for Contact Centers Q2 2025 nennt Cresta Leader mit Hoechstwertung in 'Real-Time Guidance' (Pressemitteilung via PRNewswire)
+  url: https://www2.prnewswire.com/news-releases/cresta-named-a-leader-and-a-force-to-be-reckoned-with-in-conversation-intelligence-for-the-contact-center-302474352.html
+  type: analyst
+- id: cxtoday-com-vendor-cresta
+  label: CX Today fuehrt Cresta als unabhaengiges Vendor-Profil im Contact-Center-AI-Bereich mit redaktioneller Kategorie 'real-time guidance'
+  url: https://www.cxtoday.com/vendor/cresta/
+  type: media
+- id: gartner-com-reviews-product-genesys-cloud-cx
+  label: Gartner Peer Insights aggregiert unabhaengige Endkundenbewertungen fuer Genesys Cloud CX inklusive Agent-Copilot-Funktionen
+  url: https://www.gartner.com/reviews/product/genesys-cloud-cx
+  type: review
+- id: nice-com-products-ai-for-customer-experience-enlighten-copilot-for-cx-employees
+  label: NICE bewirbt Enlighten Copilot als Echtzeit-Begleiter mit Coaching- und Guidance-Funktionen fuer Agenten
+  url: https://www.nice.com/products/ai-for-customer-experience/enlighten-copilot-for-cx-employees
+  type: vendor
+- id: cxtoday-com-contact-center-nice-enlighten-ai-review-generative-ai-in-ccaas
+  label: CX Today (Rebekah Carter) reviewt Enlighten Copilot als generative AI-Loesung mit Real-Time-Guidance und Coaching-Features unabhaengig vom Vendor
+  url: https://www.cxtoday.com/contact-center/nice-enlighten-ai-review-generative-ai-in-ccaas/
+  type: media
+- id: observe-ai-products-real-time-ai
+  label: Observe.AI bietet eine eigene Real-Time-AI-Produktlinie fuer Live-Coaching und Agent-Assist
+  url: https://www.observe.ai/products/real-time-ai
+  type: vendor
+- id: gartner-com-reviews-product-observe-ai-1542223741
+  label: Gartner Peer Insights fuehrt Observe.AI mit unabhaengigen Endkundenreviews zu Real-Time-Coaching/Quality-Management
+  url: https://www.gartner.com/reviews/product/observe-ai-1542223741
+  type: review
+- id: globenewswire-com-news-release-2025-11-18-3190014-0-en-observe-ai-named-a-cool-vendor-in-2025-gartner-cool-vendors-in-customer-service-and-support-technology-report-html
+  label: Gartner nennt Observe.AI 2025 als 'Cool Vendor in Customer Service and Support Technology' (Pressemitteilung via GlobeNewswire, 2025-11-18)
+  url: https://www.globenewswire.com/news-release/2025/11/18/3190014/0/en/Observe-AI-named-a-Cool-Vendor-in-2025-Gartner-Cool-Vendors-in-Customer-Service-and-Support-Technology-report.html
+  type: analyst
+- id: verint-com-our-offerings-solutions-customer-engagement-real-time-agent-assist
+  label: Verint vermarktet eine dedizierte Real-Time-Agent-Assist-Loesung mit Coaching-Bot
+  url: https://www.verint.com/our-offerings/solutions/customer-engagement/real-time-agent-assist/
+  type: vendor
+- id: trustradius-com-products-verint-real-time-agent-assist-reviews
+  label: TrustRadius listet Verint Real-Time Agent Assist (Real-Time Coaching and Wrap-Up Call Summaries) mit unabhaengigen Bewertungen zur Live-Guidance-Funktion
+  url: https://www.trustradius.com/products/verint-real-time-agent-assist/reviews
+  type: review
+- id: gcom-pdo-aws-gartner-com-reviews-market-contact-center-workforce-engagement-management-vendor-verint
+  label: Gartner Peer Insights fuehrt Verint im Markt 'Contact Center Workforce Engagement Management' mit unabhaengigen Endkundenreviews
+  url: https://gcom.pdo.aws.gartner.com/reviews/market/contact-center-workforce-engagement-management/vendor/verint
+  type: review
+- id: businesswire-com-news-home-20260415755072-en-nice-cognigy-named-a-leader-in-conversational-ai-by-independent-research-firm
+  label: Forrester Wave Conversational AI Platforms for Customer Service nennt NiCE Cognigy Leader mit Hoechstwertung in 10 Kriterien (Pressemitteilung via BusinessWire, 2026-04-16)
+  url: https://www.businesswire.com/news/home/20260415755072/en/NiCE-Cognigy-Named-a-Leader-in-Conversational-AI-by-Independent-Research-Firm
+  type: analyst
+- id: gartner-com-reviews-market-enterprise-conversational-ai-platforms-vendor-cognigy-product-cognigy-ai-platform
+  label: Gartner Peer Insights aggregiert unabhaengige Endkundenbewertungen der Cognigy.AI-Plattform inklusive Real-Time-Agent-Assist-Funktion
+  url: https://www.gartner.com/reviews/market/enterprise-conversational-ai-platforms/vendor/cognigy/product/cognigy-ai-platform
+  type: review
+- id: cognigy-com
+  label: Cognigy positioniert seine Plattform als Agentic-AI-Loesung fuer Customer Service
+  url: https://www.cognigy.com/
+  type: vendor
+- id: microsoft-com-en-us-microsoft-copilot-microsoft-copilot-studio
+  label: Copilot Studio erlaubt Custom-Agents mit Tool-Use ueber Power Platform Connectors
+  url: https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio
+  type: vendor
+- id: parloa-com
+  label: Parloa vermarktet eine agentische CCaaS-Plattform mit Backend-Integration
+  url: https://www.parloa.com/
+  type: vendor
+- id: kore-ai
+  label: Kore.ai positioniert sich als Enterprise Agent Platform fuer regulierte Industrien
+  url: https://kore.ai/
+  type: vendor
+- id: pega-com-products-customer-service
+  label: Pega Customer Service kombiniert Workflow-Engine mit GenAI fuer Service-Aktionen
+  url: https://www.pega.com/products/customer-service
+  type: vendor
+- id: intercom-com-fin
+  label: Fin wird als AI Agent mit Tasks/Data-Connectors fuer end-to-end-Resolution positioniert
+  url: https://www.intercom.com/fin
+  type: vendor
+- id: wyse-tools-reviews-intercom-fin-review
+  label: "Wyse Independent Review: Fin als Resolution-/Action-Layer mit Procedures, Connectors und multikanaliger Reife"
+  url: https://wyse.tools/reviews/intercom-fin-review/
+  type: independent
+- id: salesforce-com-agentforce
+  label: Agentforce kombiniert LLM mit Service-Cloud-Actions fuer end-to-end-Resolution
+  url: https://www.salesforce.com/agentforce/
+  type: vendor
+- id: forrester-com-blogs-salesforce-launches-agentforce-what-technology-leaders-need-to-know
+  label: "Forrester (Ted Schadler): Agentforce als 'repaved cow path'-Plattform - solide fuer Salesforce-Estates, kein autonomer Worker-Ersatz"
+  url: https://www.forrester.com/blogs/salesforce-launches-agentforce-what-technology-leaders-need-to-know/
+  type: analyst
+- id: gartner-com-reviews-product-agentforce-service
+  label: "Gartner Peer Insights: Agentforce Service mit 4.4/5 aus validierten Enterprise-Reviews"
+  url: https://www.gartner.com/reviews/product/agentforce-service
+  type: analyst
+- id: servicenow-com-products-now-assist-for-customer-service-management-html
+  label: ServiceNow positioniert Now Assist als agentic AI mit Workflow-Aktionen im CSM
+  url: https://www.servicenow.com/products/now-assist-for-customer-service-management.html
+  type: vendor
+- id: stackscout-co-blog-servicenow-ai-review-2026
+  label: "StackScout Practitioner-Review 2026: Now Assist liefert real value, agentic-Funktionen aber stark abhaengig von CMDB-Hygiene"
+  url: https://stackscout.co/blog/servicenow-ai-review-2026/
+  type: independent
+- id: efs-now-com-case-studies-ai-assisted-csm
+  label: "EFS Now Case Study: Financial-Services-Kunde mit ServiceNow CSM + Now Assist - 55% schnellere Resolution, 35% Tier-1-Automation"
+  url: https://www.efs-now.com/case-studies/ai-assisted-csm/
+  type: case_study
+- id: sierra-ai
+  label: Sierra positioniert sich als agentische Customer-Experience-Plattform mit Tool-Use
+  url: https://sierra.ai
+  type: vendor
+- id: aiagentsquare-com-agents-sierra-ai-html
+  label: "AI Agent Square 2026 Independent Review: Sierra als Enterprise-Customer-Service-Agent mit Salesforce/Zendesk/Freshdesk-Integration und Voice-Reife"
+  url: https://aiagentsquare.com/agents/sierra-ai.html
+  type: independent
+- id: callbotics-ai-blog-sierra-review
+  label: "CallBotics 2026: Sierra als Multi-Agent-Orchestrierungsplattform fuer strukturierte End-to-End-Execution gegen CRM/Payment/APIs"
+  url: https://callbotics.ai/blog/sierra-review
+  type: independent
+- id: zendesk-com-service-ai-agents
+  label: Zendesk vermarktet AI Agents fuer end-to-end Ticket-Resolution mit API-Aktionen
+  url: https://www.zendesk.com/service/ai/agents/
+  type: vendor
+- id: robylon-ai-blog-zendesk-ai-agents-review-2026
+  label: "Robylon Independent Review 2026: Zendesk AI Agents stark bei KB-Antworten, schwach bei echten Aktionen ohne Advanced-Add-on und Custom-API-Integration"
+  url: https://www.robylon.ai/blog/zendesk-ai-agents-review-2026
+  type: independent
+- id: staging4-kustomer-com-resources-blog-zendesk-ai-agents-features
+  label: "Kustomer Feature-Teardown 2026: Action-Faehigkeiten (Refund, Order, Inventory) liegen hinter Advanced-Paywall und benoetigen Custom-Flow + Human-in-the-Loop"
+  url: https://staging4.kustomer.com/resources/blog/zendesk-ai-agents-features/
+  type: independent
+- id: genesys-com-genesys-cloud
+  label: Genesys Cloud CX kombiniert AI-Bots mit Predictive-Routing zu Human-Agents.
+  url: https://www.genesys.com/genesys-cloud
+  type: vendor
+- id: nice-com-products-cxone-mpower
+  label: NICE CXone Mpower bündelt AI-Self-Service mit Voice/Digital-Eskalation an Live-Agents.
+  url: https://www.nice.com/products/cxone-mpower
+  type: vendor
+- id: microsoft-com-microsoft-copilot-microsoft-copilot-studio
+  label: Microsoft positioniert Copilot Studio als Plattform für eigene Copilots mit Channel-übergreifender Bereitstellung und H…
+  url: https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio
+  type: vendor
+- id: moin-ai
+  label: moin.ai bewirbt sich als deutscher Chatbot-Anbieter mit DSGVO-konformem Hosting und Live-Chat-Übergabe.
+  url: https://www.moin.ai/
+  type: vendor
+- id: boost-ai
+  label: boost.ai positioniert Enterprise-Conversational-AI mit Eskalation zu Human-Agents in regulierten Branchen.
+  url: https://boost.ai/
+  type: vendor
+- id: contactcentertechnologyinsights-com-news-boostai-named-leader-in-2025-gartner-magic-quadrant
+  label: "Contact Center Technology Insights: boost.ai als Leader im Gartner Magic Quadrant for Conversational AI Platforms 2025 (drittes Jahr in Folge gelistet)."
+  url: https://contactcentertechnologyinsights.com/news/boostai-named-leader-in-2025-gartner-magic-quadrant
+  type: industry-press
+- id: gartner-com-reviews-product-cognigy-ai-platform
+  label: "Gartner Peer Insights: Cognigy.AI Platform mit Enterprise-Reviews zu Voice/Chat-Bots, Omnichannel-Deflection und Compliance (DSGVO/HIPAA)."
+  url: https://www.gartner.com/reviews/product/cognigy-ai-platform
+  type: analyst
+- id: gartner-com-reviews-product-parloa-platform
+  label: "Gartner Peer Insights: Parloa Platform mit 44 Reviews und 4.5/5-Rating; Enterprise-Reviewer beschreiben Persona-Erstellung, Voice-Bot-Skalierung und Deployment-Komplexität."
+  url: https://www.gartner.com/reviews/product/parloa-platform
+  type: analyst
+- id: techfundingnews-com-ai-powered-customer-service-automation-giant-parloa-eyes-200m-at-over-2b-valuation
+  label: "TechFundingNews: Parloa verhandelt $200M-Runde bei $2-3B-Bewertung; Kunden inkl. Swiss Life und Decathlon, Wettbewerb mit Salesforce/Sierra."
+  url: https://techfundingnews.com/ai-powered-customer-service-automation-giant-parloa-eyes-200m-at-over-2b-valuation/
+  type: industry-press
+- id: technologyevaluation-com-solutions-61274-callminer-eureka
+  label: CallMiner Eureka als Marktfuehrer fuer Speech Analytics, Auto-Scoring und Compliance
+  url: https://technologyevaluation.com/solutions/61274/callminer-eureka
+  type: review
+- id: cresta-com-guides-best-automated-quality-management-tools-for-contact-centers
+  label: Cresta-Guide ordnet CallMiner als Conversation-Analytics-Plattform mit AI-driven Customer Insights ein
+  url: http://cresta.com/guides/best-automated-quality-management-tools-for-contact-centers
+  type: review
+- id: callminer-com-products-eureka
+  label: CallMiner Eureka als On-Prem-/Cloud-Speech-Analytics mit automatisiertem Scoring
+  url: https://callminer.com/products/eureka
+  type: vendor_doc
+- id: convin-ai-en-us-callminer-alternatives-competitors
+  label: Convin (Konkurrent) zitiert G2-Daten zu Setup-Komplexitaet
+  url: https://convin.ai/en-us/callminer-alternatives-competitors
+  type: community
+- id: evaluagent-com-platform
+  label: "evaluagent vermarktet sich als #1 AutoQA-Plattform mit explainable AI und Human-in-the-Loop ueber alle Kanaele"
+  url: https://www.evaluagent.com/platform
+  type: vendor_doc
+- id: effectiveaitools-com-posts-best-ai-quality-assurance-software-2026
+  label: evaluagent wird als richtige Wahl fuer regulierte Umgebungen mit Human Oversight positioniert
+  url: https://effectiveaitools.com/posts/best-ai-quality-assurance-software-2026/
+  type: review
+- id: gitnux-org-best-call-center-qa-software
+  label: Genesys Cloud listet integrierte QM-Funktionen mit AI-Scoring
+  url: https://gitnux.org/best/call-center-qa-software/
+  type: review
+- id: genesys-com-capabilities-quality-management
+  label: Genesys Cloud QM mit integriertem AI-Scoring und Speech-Analytics
+  url: https://www.genesys.com/capabilities/quality-management
+  type: vendor_doc
+- id: maestroqa-com-maestroqa-vs-observe-ai
+  label: MaestroQA positioniert sich als omnichannel-orientiert vs. voice-zentriertes Observe.AI
+  url: https://www.maestroqa.com/maestroqa-vs-observe-ai
+  type: vendor_doc
+- id: enthu-ai-blog-auto-qa-software-guide
+  label: "Preisindiz: $12-30k/Jahr fuer 10-30 Agent-Teams laut Vendr"
+  url: https://enthu.ai/blog/auto-qa-software-guide/
+  type: review
+- id: nice-com-products-quality-management
+  label: NICE Quality Management mit AutoScore fuer 100%-Coverage und Evaluation Summary
+  url: https://www.nice.com/products/quality-management
+  type: vendor_doc
+- id: help-nice-incontact-com-content-genaiprompteditor-configureqmautoscoreprompt-htm
+  label: Offizielle Doku zum konfigurierbaren GenAI-Prompt-Editor fuer AutoScore
+  url: https://help.nice-incontact.com/content/genaiprompteditor/configureqmautoscoreprompt.htm
+  type: documentation
+- id: gitnux-org-best-call-center-quality-management-software
+  label: NICE CXone als Marktfuehrer in QM-Listicle, mit AutoScore-Hervorhebung
+  url: https://gitnux.org/best/call-center-quality-management-software/
+  type: review
+- id: verint-com-blog-ai-in-contact-center-quality-the-promises-and-pitfalls
+  label: Verint zitiert konkrete Quality-Bot-Outcomes und Auto-Scoring bis 100%
+  url: https://www.verint.com/blog/ai-in-contact-center-quality-the-promises-and-pitfalls/
+  type: vendor_doc
+- id: zendesk-com-in-newsroom-articles-klaus-close24
+  label: Akquisition von Klaus durch Zendesk abgeschlossen, AutoQA als WEM-Bestandteil
+  url: https://www.zendesk.com/in/newsroom/articles/klaus-close24/
+  type: news
+- id: klausapp-com-service-quality-assurance
+  label: AutoQA-Faehigkeiten, Spotlights, Coaching-Workflows ohne Code-Setup
+  url: https://www.klausapp.com/service/quality-assurance/
+  type: vendor_doc
+- id: getapp-com-customer-service-support-software-a-klaus
+  label: Aggregierte GetApp-Reviews zu Zendesk QA
+  url: https://www.getapp.com/customer-service-support-software/a/klaus/
+  type: review
+- id: calabrio-com-blog-playvox-alternatives
+  label: Calabrio ONE positioniert sich als Mid-Market-WEM-Suite mit nativer AutoQA und schneller Deployment
+  url: https://www.calabrio.com/blog/playvox-alternatives/
+  type: vendor_doc
+- id: calabrio-com-products-calabrio-analytics
+  label: Calabrio Auto QM scort 100% der Interaktionen mit konfigurierbaren Scorecards
+  url: https://www.calabrio.com/products/calabrio-analytics
+  type: vendor_doc
+- id: de-diabolocom-com-kunstliche-intelligenz-qualitatssicherung
+  label: Diabolocom vermarktet KI-Quality-Monitoring in deutscher Sprache mit Bias-Eliminierung und CCaaS-Integration
+  url: https://de.diabolocom.com/kunstliche-intelligenz/qualitatssicherung/
+  type: vendor_doc
+- id: cxmoments-com-auto-qa
+  label: Scorebuddy bewirbt 100%-Coverage, Auto-Scoring, Dispute-Funktion und LMS-Bindung
+  url: https://cxmoments.com/auto-qa
+  type: vendor_doc
+- id: scorebuddyqa-com-de-blog-speech-analytics-call-center
+  label: Deutscher Content; integrierter Speech-Analytics-Loop in QA-Workflow
+  url: https://www.scorebuddyqa.com/de/blog/speech-analytics-call-center
+  type: vendor_doc
+- id: scorebuddyqa-com-de
+  label: Scorebuddy DE-Lokalisierung mit GenAI-Auto-Scoring und Hybrid-Workflow
+  url: https://www.scorebuddyqa.com/de/
+  type: vendor_doc
+- id: solidroad-com-resources-contact-center-qa-software-ecommerce
+  label: "Unabhaengiger 2026er Listicle: Scorebuddy als 'best for flexible scorecards with AI auto-scoring at an accessible price point' mit GenAI Auto Scoring"
+  url: https://www.solidroad.com/resources/contact-center-qa-software-ecommerce
+  type: review
+- id: outsourceaccelerator-com-articles-call-center-quality-assurance-software
+  label: Outsource Accelerator listet Scorebuddy als Top-1 Call-Center-QA-Software 2026 mit Real-Time-Scoring, LMS und AI-Analytics
+  url: https://www.outsourceaccelerator.com/articles/call-center-quality-assurance-software/
+  type: review
+- id: gitnux-org-best-customer-service-quality-assurance-software
+  label: "Gitnux 2026 Listicle nennt Scorebuddy als #2 mit gamifiziertem QA-Scoring, Calibration und Performance-Analytics"
+  url: https://gitnux.org/best/customer-service-quality-assurance-software/
+  type: review
+- id: spitch-ai-de-quality-management
+  label: Spitch QM bewirbt 100%-Coverage mit Sprachanalyse und LLM-Technologien, deutsche Sprache
+  url: https://spitch.ai/de/quality_management/
+  type: vendor_doc
+- id: gartner-com-reviews-market-enterprise-conversational-ai-platforms-vendor-spitch-product-spitch-ocplatform
+  label: Gartner Peer Insights bewertet Spitch Collaborative Agentic AI Platform (inkl. Quality Management) mit 4.6/5 ueber 10 verifizierte Reviews
+  url: https://www.gartner.com/reviews/market/enterprise-conversational-ai-platforms/vendor/spitch/product/spitch-ocplatform
+  type: review
+- id: ai-business-case-studies-bank-cuts-call-handling-time-by-20-with-ai-voice-biometrics
+  label: Unabhaengige Case-Study (ai.business) zu Migros Bank mit Spitch fuer Schweizerdeutsch-/Multilingual-Voice und 20% AHT-Reduktion
+  url: https://ai.business/case-studies/bank-cuts-call-handling-time-by-20-with-ai-voice-biometrics/
+  type: review
+- id: vier-ai-en-communication-vier-scorecards
+  label: VIER Scorecards verspricht 100% DSGVO-konforme Verarbeitung in zertifizierten DE/CH-Rechenzentren
+  url: https://www.vier.ai/en/communication/vier-scorecards/
+  type: vendor_doc
+- id: gartner-com-reviews-product-vier-conversational-ai
+  label: "Gartner Peer Insights: 5/5 verifizierter DACH-Kundenreview hebt 'Made in Germany / Hosted in Germany' und DSGVO-Konformitaet hervor; nennt aber Setup-Aufwand und Dialekt-Erkennungsschwaechen"
+  url: https://www.gartner.com/reviews/product/vier-conversational-ai
+  type: review
+- id: vier-ai-en-company-case-studies-case-study-mobile-de
+  label: "Case Study mobile.de: VIER Interaction Analytics hebt Pruefquote von 3% auf 95% bei gleichem Personal (Vendor-published Customer Story)"
+  url: https://www.vier.ai/en/company/case-studies/case-study-mobile.de/
+  type: vendor_doc
+- id: bsi-software-com-de
+  label: BSI integriert KI-basierte Anliegen-/Dokumentenklassifikation in Customer-Suite-Workflows.
+  url: https://www.bsi-software.com/de
+  type: vendor
+- id: cloud-google-com-document-ai
+  label: Document AI bietet branchenspezifische Prozessoren und Custom-Klassifikation für Posteingangs-Workflows.
+  url: https://cloud.google.com/document-ai
+  type: vendor
+- id: konfuzio-com-de
+  label: Konfuzio bietet eine deutschsprachige IDP-Plattform mit On-Prem-Option für Versicherer.
+  url: https://konfuzio.com/de/
+  type: vendor
+- id: azure-microsoft-com-en-us-products-ai-services-ai-document-intelligence
+  label: Azure AI Document Intelligence bietet Custom-Classification- und Extraction-Modelle für Posteingangs-Szenarien.
+  url: https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
+  type: vendor
+- id: opentext-com-products-intelligent-capture
+  label: OpenText Intelligent Capture klassifiziert und extrahiert Posteingangs-Dokumente.
+  url: https://www.opentext.com/products/intelligent-capture
+  type: vendor
+- id: parashift-io
+  label: Parashift bietet API-basierte Dokumentklassifikation und -extraktion mit DACH-Hosting.
+  url: https://parashift.io/
+  type: vendor
+- id: rossum-ai
+  label: Rossum ist eine cloud-basierte IDP-Plattform mit Klassifikations- und Extraktionsfunktionen.
+  url: https://rossum.ai/
+  type: vendor
+- id: uipath-com-product-document-understanding
+  label: UiPath Document Understanding klassifiziert und extrahiert Inhalte aus eingehenden Dokumenten.
+  url: https://www.uipath.com/product/document-understanding
+  type: vendor
+- id: ibm-com-products-datacap
+  label: IBM Datacap automatisiert Capture, Klassifikation und Datenextraktion für Posteingang.
+  url: https://www.ibm.com/products/datacap
+  type: vendor
+- id: natif-ai
+  label: Natif.ai bietet eine deutschsprachige IDP-API für Klassifikation und Extraktion.
+  url: https://natif.ai/
+  type: vendor
+- id: abbyy-com-vantage
+  label: ABBYY Vantage ist eine IDP-Plattform mit Skills für Klassifikation und Extraktion von Dokumenten in Versicherung/Banking.
+  url: https://www.abbyy.com/vantage/
+  type: vendor
+- id: gartner-com-reviews-product-abbyy-vantage
+  label: "Gartner Peer Insights: ABBYY Vantage mit 4,4/5 (10 verifizierte Enterprise-Bewertungen); Stärken bei Service/Support und Produkt-Capabilities."
+  url: https://www.gartner.com/reviews/product/abbyy-vantage
+  type: analyst
+- id: morningstar-com-news-business-wire-20250908640151-abbyy-named-a-leader-in-2025-gartner-magic-quadrant-for-intelligent-document-processing-solutions
+  label: "Gartner Magic Quadrant for Intelligent Document Processing 2025: ABBYY Vantage als Leader eingestuft (Pressemeldung via Morningstar/BusinessWire)."
+  url: https://www.morningstar.com/news/business-wire/20250908640151/abbyy-named-a-leader-in-2025-gartner-magic-quadrant-for-intelligent-document-processing-solutions
+  type: analyst
+- id: hyperscience-com
+  label: Hyperscience positioniert sich als Plattform für automatisierte Posteingangs-Klassifikation und -Extraktion.
+  url: https://www.hyperscience.com/
+  type: vendor
+- id: peerspot-com-products-hyperscience-reviews
+  label: "PeerSpot: Hyperscience mit 7,6/10 aus 7 Enterprise-Reviews; Stärken bei Handschrift-OCR und User-Training-Modul, Schwächen bei mehrfach-Tabellen-Extraktion und Sprachabdeckung."
+  url: https://www.peerspot.com/products/hyperscience-reviews
+  type: community
+- id: hyperscience-ai-newsroom-hyperscience-named-a-leader-in-the-first-ever-gartner-magic-quadrant-for-intelligent-document-processing-solutions
+  label: "Gartner Magic Quadrant for Intelligent Document Processing 2025: Hyperscience als Leader eingestuft, am weitesten in Completeness of Vision positioniert."
+  url: https://www.hyperscience.ai/newsroom/hyperscience-named-a-leader-in-the-first-ever-gartner-magic-quadrant-for-intelligent-document-processing-solutions/
+  type: analyst
+- id: insiders-technologies-de
+  label: Insiders Technologies bietet KI-Posteingangs-Lösungen für DACH-Versicherer und Banken.
+  url: https://www.insiders-technologies.de/
+  type: vendor
+- id: presseschleuder-com-2015-11-smart-fix-bei-der-mobiliar
+  label: Schweizer Versicherung Mobiliar verarbeitet >40.000 Seiten/Tag aus allen Eingangskanälen mit smart FIX (unabhängige Pressemeldung).
+  url: https://www.presseschleuder.com/2015/11/smart-fix-bei-der-mobiliar/
+  type: press
+- id: inacta-ch-loesungen-smart-fix
+  label: Schweizer Implementierungspartner Inacta beschreibt smart FIX als führende Lösung für Klassifikation/Extraktion bei Krankenversicherern (Drittanbieter-Sicht).
+  url: https://inacta.ch/loesungen/smart-fix/
+  type: partner
+- id: ityx-de
+  label: ITyX positioniert sich explizit auf KI-gestützte Posteingangs- und Dokumentenverarbeitung im DACH-Markt mit Fokus auf Versicherer.
+  url: https://www.ityx.de/
+  type: vendor
+- id: marketing-boerse-de-news-details-1250-digitaler-posteingang-haufe-lexware-entscheidet-sich-fuer-ityx-39773
+  label: marketing-boerse.de berichtet, dass Haufe-Lexware sich für ITyX zur Automatisierung des digitalen Posteingangs entschieden hat.
+  url: https://www.marketing-boerse.de/news/details/1250-digitaler-posteingang-haufe-lexware-entscheidet-sich-fuer-ityx/39773
+  type: press
+- id: openpr-de-news-429419-ityx-laedt-zum-ecm-tag-fuer-versicherungen-trends-und-technologien-rund-um-input-und-information-management-html
+  label: "ECM-Tag Versicherungen 2010: BMW Group Financial Services präsentiert digitale Posteingangs-/Dokumentverarbeitung mit ITyX als Best Practice (unabhängige Konferenzmeldung)."
+  url: http://openpr.de/news/429419/ITyX-laedt-zum-ECM-Tag-fuer-Versicherungen-Trends-und-Technologien-rund-um-Input-und-Information-Management.html
+  type: press
+- id: tungstenautomation-com-products-totalagility
+  label: TotalAgility ist Plattform für Capture, Klassifikation und Workflow im Posteingang.
+  url: https://www.tungstenautomation.com/products/totalagility
+  type: vendor
+- id: gcom-pdo-aws-gartner-com-reviews-product-tungsten-total-agility-marketseoname-productivity-and-collaboration
+  label: "Gartner Peer Insights: Tungsten TotalAgility mit 4,6/5 aus 18 Enterprise-Reviews im Productivity-and-Collaboration-Markt; Hauptkundenbasis Großunternehmen."
+  url: https://gcom.pdo.aws.gartner.com/reviews/product/tungsten-total-agility?marketSeoName=productivity-and-collaboration
+  type: analyst
+- id: peerspot-com-product-reviews-tungsten-totalagility-review-2652829-by-kabilan-karuna
+  label: "PeerSpot: Mehrere Enterprise-Reviews (Finanzdienstleister, TCS) bewerten Kofax/Tungsten TotalAgility 7-9/10 für Capture, Klassifikation und Workflow; bemängeln Lernkurve und Lizenzkosten."
+  url: https://www.peerspot.com/product_reviews/tungsten-totalagility-review-2652829-by-kabilan-karuna
+  type: community
+- id: dixa-com
+  label: Dixa kombiniert Bot (Solvemate) und Human-Agent-Inbox mit Handoff-Kontext.
+  url: https://www.dixa.com
+  type: vendor
+- id: usu-com
+  label: USU bietet Knowledge-Management mit AI-Service-Bots für Customer Support inkl. Eskalations-Workflow.
+  url: https://www.usu.com
+  type: vendor
+- id: ada-cx
+  label: Ada bietet AI-Bot mit Handoff an menschliche Agents inkl. Transcript und Intent.
+  url: https://www.ada.cx
+  type: vendor
+- id: docs-ada-cx-docs-handoffs
+  label: "Ada-Dokumentation: Handoff-Modul übergibt Konversation an Human Agent inkl. Transcript-Summary und Variablen."
+  url: https://docs.ada.cx/docs/handoffs
+  type: vendor
+- id: usefini-com-guides-ai-support-platforms-human-agent-handoff
+  label: "Unabhängiger Vergleich (usefini.com): Ada übergibt Conversation Context, Intent und Customer Attributes an Receiving Agent; SOC2/ISO27001/GDPR."
+  url: https://www.usefini.com/guides/ai-support-platforms-human-agent-handoff
+  type: third-party
+- id: docs-cognigy-com-ai-escalate-handovers
+  label: "Cognigy-Dokumentation: Handover Providers und Handover-to-Human-Agent-Node mit Connectoren zu Genesys, Salesforce, 8x8 etc."
+  url: https://docs.cognigy.com/ai/escalate/handovers
+  type: vendor
+- id: freshworks-com-freddy-ai
+  label: Freddy AI bündelt Bot + Copilot mit Summaries und Agent-Handoff im Freshworks-Stack.
+  url: https://www.freshworks.com/freddy-ai/
+  type: vendor
+- id: aiagentsquare-com-blog-freshdesk-freddy-review-html
+  label: "Unabhängiger Review (aiagentsquare.com): Freddy Self Service eskaliert mit Kontext, Copilot summiert lange Threads für Handoffs."
+  url: https://aiagentsquare.com/blog/freshdesk-freddy-review.html
+  type: third-party
+- id: eesel-ai-blog-freshdesk-freddy-ai-copilot-to-summarize-conversations
+  label: "eesel.ai Guide: Freddy AI summiert Bot-Konversationen >10 Messages automatisch in Private Note vor Handoff an Human Agent."
+  url: https://www.eesel.ai/blog/freshdesk-freddy-ai-copilot-to-summarize-conversations
+  type: third-party
+- id: aiagentsquare-com-blog-intercom-fin-review-2026-html
+  label: "Unabhängiger Review (aiagentsquare.com): Fin eskaliert bei Limit mit voller Conversation Context an Human Agent; 67% Resolution Rate."
+  url: https://aiagentsquare.com/blog/intercom-fin-review-2026.html
+  type: third-party
+- id: vantagepoint-io-blog-sf-how-to-use-agentforce-einstein-ai-salesforce-2026-guide
+  label: "Unabhängiger Praxis-Guide (vantagepoint.io): Agentforce-Service-Agent eskaliert mit CRM-Kontext, Einstein Service Replies und Case-Summaries."
+  url: https://vantagepoint.io/blog/sf/how-to-use-agentforce-einstein-ai-salesforce-2026-guide
+  type: third-party
+- id: eesel-ai-blog-salesforce-ai-escalation
+  label: "eesel.ai Guide zu Salesforce AI Escalation: Agentforce → Omni-Channel-Flow mit Case-Routing und Fallback-Queue."
+  url: https://www.eesel.ai/blog/salesforce-ai-escalation
+  type: third-party
+- id: aiagentsquare-com-blog-zendesk-ai-review-2026-html
+  label: "Unabhängiger Review (aiagentsquare.com): Zendesk AI mit Intelligent Triage, AI Agents und Copilot-Summary für Handoffs."
+  url: https://aiagentsquare.com/blog/zendesk-ai-review-2026.html
+  type: third-party
+- id: genesys-com-capabilities-genesys-cloud-ai
+  label: Genesys Cloud AI bündelt Bot-Flows, Agent Copilot und Conversation Summaries.
+  url: https://www.genesys.com/capabilities/genesys-cloud-ai
+  type: vendor
+- id: help-genesys-cloud-376384
+  label: "Genesys Cloud Resource Center: Agent Copilot generiert Transfer-Summaries für Bot-zu-Mensch- und Agent-zu-Agent-Übergaben."
+  url: https://help.genesys.cloud/376384
+  type: vendor
+- id: github-com-microsoft-agents-commit-9f122c566b03433c98b7e8b880175af93846c4b8
+  label: "Microsoft Agents (GitHub): Referenz-Implementierung GenesysHandoff publiziert Conversation-Summary über Genesys Open Messaging an Live Agent."
+  url: https://github.com/microsoft/Agents/commit/9f122c566b03433c98b7e8b880175af93846c4b8
+  type: third-party
+- id: nice-com-products-cxone-mpower-copilot-for-agents
+  label: Enlighten Copilot liefert Echtzeit-Summaries und Handoff-Kontext für eskalierte Interaktionen.
+  url: https://www.nice.com/products/cxone-mpower-copilot-for-agents
+  type: vendor
+- id: help-nicecxone-com-content-agent-cxoneagent-enlightencopilotforagentscxa-htm
+  label: "NICE CXone Help: Copilot for Agents zeigt Transfer Summaries (Pre-Transfer und AutoSummary) im Agent Workspace."
+  url: https://help.nicecxone.com/content/agent/cxoneagent/enlightencopilotforagentscxa.htm
+  type: vendor
+- id: medium-com-markorsborn-a-quick-win-with-servicenow-ai-for-customer-service-management-csm-1753998cf88b
+  label: "Unabhängiger Praxisbericht (Mark Orsborn / Medium): Now Assist Case Summarization als Quick Win für Eskalationen und Handoffs in CSM."
+  url: https://medium.com/@markorsborn/a-quick-win-with-servicenow-ai-for-customer-service-management-csm-1753998cf88b
+  type: third-party
+- id: servicenow-com-community-csm-articles-now-assist-for-csm-case-summarization-ta-p-3346546
+  label: "ServiceNow Community: Case Summarization-Skill in Now Assist for CSM ist explizit für Escalations und Handoffs vorgesehen."
+  url: https://www.servicenow.com/community/csm-articles/now-assist-for-csm-case-summarization/ta-p/3346546
+  type: vendor
+- id: sprinklr-com-products-customer-service-conversational-ai
+  label: Sprinklr Service vermarktet Conversational AI inkl. Intent-Routing ueber Channels.
+  url: https://www.sprinklr.com/products/customer-service/conversational-ai/
+  type: vendor
+- id: genesys-com-capabilities-predictive-routing
+  label: Genesys positioniert Predictive Routing als ML-basierten Skill-/Outcome-Matcher fuer Contact-Center-Kontakte.
+  url: https://www.genesys.com/capabilities/predictive-routing
+  type: vendor
+- id: omq-de
+  label: OMQ vermarktet KI-gestuetzte E-Mail-Klassifikation und Helpdesk-Integrationen mit DE-Hosting.
+  url: https://www.omq.de/
+  type: vendor
+- id: forethought-ai-triage
+  label: Forethought betreibt ein eigenstaendiges Triage-Produkt fuer Ticket-Klassifikation und Routing in bestehende Helpdesks.
+  url: https://forethought.ai/triage/
+  type: vendor
+- id: g2-com-products-forethought-forethought-reviews
+  label: G2 fuehrt Forethought mit 4,3/5 (validierte Kundenreviews) und beschreibt das Triage-Produkt im Customer-Support-AI-Kontext.
+  url: https://www.g2.com/products/forethought-forethought/reviews
+  type: review-platform
+- id: eesel-ai-blog-freshdesk-ai-auto-triage
+  label: Unabhaengiger Practitioner-Guide (eesel.ai, 2026) erklaert Funktionsweise von Freddy Auto Triage inkl. Datenanforderungen und Field-Suggestions.
+  url: https://www.eesel.ai/blog/freshdesk-ai-auto-triage
+  type: blog
+- id: pressebox-de-pressemitteilung-ityx-solutions-ag-bosch-communication-center-setzt-fuer-e-mail-und-wissensmanagement-auf-mediatrix-von-ityx-boxid-149250
+  label: Pressebox-Mitteilung dokumentiert Bosch Communication Center als Mediatrix-Anwender fuer E-Mail-/Wissensmanagement (95%+ Trefferwahrscheinlichkeit).
+  url: https://www.pressebox.de/pressemitteilung/ityx-solutions-ag/Bosch-Communication-Center-setzt-fuer-E-Mail-und-Wissensmanagement-auf-Mediatrix-von-ITyX/boxid/149250
+  type: press
+- id: omr-com-de-reviews-product-ityx
+  label: OMR Reviews fuehrt ITyX mit Preis- und Feature-Profil; DACH-B2B-Bewertungsplattform mit unabhaengigem Listing.
+  url: https://omr.com/de/reviews/product/ityx
+  type: review-platform
+- id: help-salesforce-com-s-articleview-id-service-case-classification-setup-htm
+  label: Salesforce dokumentiert Case Classification als Einstein-Feature, das Case-Felder vorbefuellt und Routing/Omni-Channel ergaenzt.
+  url: https://help.salesforce.com/s/articleView?id=service.case_classification_setup.htm
+  type: vendor
+- id: xyzeo-com-product-salesforce-service-cloud-einstein
+  label: Unabhaengiger Produkt-Review (XYZEO, 2026) zu Service Cloud Einstein inkl. Case Classification und zitierten Gartner-CSAT-Benchmarks.
+  url: https://xyzeo.com/product/salesforce-service-cloud-einstein
+  type: analyst
+- id: dench-com-blog-salesforce-einstein-review
+  label: Unabhaengiger Practitioner-Review (Dench, 2026) zu Einstein-Lizenzkosten und Voraussetzungen (Datenmenge, Admin-Aufwand).
+  url: https://www.dench.com/blog/salesforce-einstein-review
+  type: blog
+- id: gartner-com-reviews-product-servicenow-now-assist
+  label: Gartner Peer Insights — Now Assist mit 4,3/5 aus 147 validierten Enterprise-Reviews zu Case Management, Knowledge Discovery und Routing.
+  url: https://www.gartner.com/reviews/product/servicenow-now-assist
+  type: review-platform
+- id: zendesk-com-service-ai-intelligent-triage
+  label: Zendesk vertreibt 'Intelligent Triage' als dediziertes Feature fuer Intent/Language/Sentiment-Erkennung auf Tickets.
+  url: https://www.zendesk.com/service/ai/intelligent-triage/
+  type: vendor
+- id: learn-g2-com-zendesk-review
+  label: "G2-Aggregation aus 6.000+ Zendesk-Reviews (Soundarya Jayaraman, 2026): 4,3/5, 86% Support-Quality, Intelligent Triage als Bestandteil des AI-Pakets."
+  url: https://learn.g2.com/zendesk-review
+  type: review-platform
+- id: learn-microsoft-com-en-us-dynamics365-customer-service-use-unified-routing
+  label: Microsoft Learn dokumentiert Unified Routing in D365 Customer Service als ML-basiertes Klassifikations- und Assignment-Layer.
+  url: https://learn.microsoft.com/en-us/dynamics365/customer-service/use-unified-routing
+  type: vendor
+- id: gartner-com-reviews-market-crm-customer-engagement-center-vendor-microsoft-product-microsoft-dynamics-365-customer-service
+  label: Gartner Peer Insights — D365 Customer Service mit 4,3/5 aus 134 CRM-CEC-Reviews (Routing-/Case-Management-Funktionen).
+  url: https://www.gartner.com/reviews/market/crm-customer-engagement-center/vendor/microsoft/product/microsoft-dynamics-365-customer-service
+  type: review-platform
+- id: tei-forrester-com-go-microsoft-customer-service
+  label: Forrester Total Economic Impact Study zu D365 Customer Service inkl. Unified Routing/Copilot-Komponenten (Forrester Consulting).
+  url: https://tei.forrester.com/go/microsoft/customer-service/
+  type: analyst
+- id: support-zendesk-com-hc-en-us-articles-5413640786074-about-content-cues
+  label: Content Cues clustern wiederkehrende Ticket-Themen und schlagen Artikel-Themen vor
+  url: https://support.zendesk.com/hc/en-us/articles/5413640786074-About-content-cues
+  type: vendor
+- id: cognigy-com-products-knowledge-ai
+  label: Cognigy Knowledge AI nutzt LLMs auf Service-Daten für Antwort- und Artikel-Vorschläge
+  url: https://www.cognigy.com/products/knowledge-ai
+  type: vendor
+- id: starmind-ai
+  label: Starmind betreibt einen Knowledge-Graph aus Mitarbeiter-Interaktionen mit Schweizer Hosting
+  url: https://www.starmind.ai/
+  type: vendor
+- id: egain-com-products-knowledge-hub
+  label: eGain Knowledge Hub mit KI-Authoring (AssistGPT)
+  url: https://www.egain.com/products/knowledge-hub/
+  type: vendor
+- id: gartner-com-reviews-market-conversational-ai-platforms-vendor-egain-product-egain-ai-knowledge-hub
+  label: Gartner Peer Insights – eGain AI Knowledge Hub Reviews & Ratings (4.1, 121 Reviews aggregiert)
+  url: https://www.gartner.com/reviews/market/conversational-ai-platforms/vendor/egain/product/egain-ai-knowledge-hub
+  type: analyst
+- id: globenewswire-com-news-release-2023-11-08-2775996-0-en-egain-named-a-visionary-in-the-2023-gartner-magic-quadrant-for-the-crm-customer-engagement-center-html
+  label: "Gartner MQ for CRM Customer Engagement Center 2023: eGain als Visionary mit AssistGPT-Launch ausgezeichnet (Pressemeldung mit Gartner-Zitat)"
+  url: https://www.globenewswire.com/news-release/2023/11/08/2775996/0/en/eGain-Named-a-Visionary-in-the-2023-Gartner-Magic-Quadrant-for-the-CRM-Customer-Engagement-Center.html
+  type: analyst
+- id: kmworld-com-articles-editorial-features-egain-assistgpt-egains-generative-ai-assistant-for-knowledge-automation-165534-aspx
+  label: "KMWorld Feature 2024: eGain AssistGPT als Generative-AI-Assistent für Knowledge Automation"
+  url: https://www.kmworld.com/Articles/Editorial/Features/eGain-AssistGPT-eGains-Generative-AI-Assistant-for-Knowledge-Automation-165534.aspx
+  type: third-party
+- id: freshworks-com-press-releases-freshworks-named-a-visionary-for-the-second-consecutive-year-in-the-gartner-magic-quadrant-for-crm-customer-engagement-center
+  label: "Gartner Magic Quadrant for CRM Customer Engagement Center: Freshworks als Visionary (Freshdesk mit Freddy AI / KB)"
+  url: https://www.freshworks.com/press-releases/freshworks-named-a-visionary-for-the-second-consecutive-year-in-the-gartner-magic-quadrant-for-crm-customer-engagement-center/
+  type: analyst
+- id: gartner-com-reviews-market-crm-customer-engagement-center-vendor-freshworks
+  label: Gartner Peer Insights – Freshworks Freshdesk Omni Reviews (4.3 / 661 Bewertungen, mit Freddy-AI-Notes)
+  url: https://www.gartner.com/reviews/market/crm-customer-engagement-center/vendor/freshworks
+  type: analyst
+- id: salesforce-com-service-ai
+  label: Salesforce Einstein für Service Cloud bewirbt KI-gestützte Knowledge-Artikel-Erstellung und Work Summaries
+  url: https://www.salesforce.com/service/ai/
+  type: vendor
+- id: cirra-ai-articles-salesforce-einstein-gpt-technical-analysis
+  label: "Cirra: Technische Analyse von Einstein GPT inkl. Trust-Layer (Zero Retention, PII-Masking) und Service-GPT KB-Generation"
+  url: https://cirra.ai/articles/salesforce-einstein-gpt-technical-analysis
+  type: third-party
+- id: eesel-ai-blog-salesforce-ai-knowledge-creation
+  label: "Unabhängiger Praxis-Leitfaden zu Salesforce AI Knowledge Creation: Lizenz-Voraussetzungen (Unlimited Edition + Lightning Knowledge) und Limitierungen"
+  url: https://www.eesel.ai/blog/salesforce-ai-knowledge-creation
+  type: third-party
+- id: servicenow-com-products-now-assist-html
+  label: Now Assist generiert KB-Artikel aus Cases und Resolutions
+  url: https://www.servicenow.com/products/now-assist.html
+  type: vendor
+- id: servicenow-com-blogs-2024-6-ways-deliver-great-customer-service
+  label: "Forrester Wave Customer Service Solutions Q1 2024: ServiceNow als Leader (CSM mit Now Assist)"
+  url: https://www.servicenow.com/blogs/2024/6-ways-deliver-great-customer-service
+  type: analyst
+- id: usu-com-de-de-produkte-knowledge-management
+  label: USU Knowledge Center mit KI-Funktionen für Service-Wissen
+  url: https://www.usu.com/de-de/produkte/knowledge-management/
+  type: vendor
+- id: usu-com-en-news-usu-listed-in-the-gartnerr-market-guide-for-customer-service-knowledge-management-systems
+  label: "Gartner Market Guide for Customer Service Knowledge Management Systems 2024: USU als Representative Vendor"
+  url: https://www.usu.com/en/news/usu-listed-in-the-gartnerr-market-guide-for-customer-service-knowledge-management-systems
+  type: analyst
+- id: usu-com-en-us-knowledge-management
+  label: "Forrester Wave Customer Service Knowledge Management Q4/2024: USU als Strong Performer"
+  url: https://www.usu.com/en-us/knowledge-management/
+  type: analyst
+- id: cioreview-com-company-ovp-usu-unymira-knowledge-driven-service-automation-cid-16707-html
+  label: CIOReview-Profil zu USU Unymira Knowledge Center mit Kundenfällen (Active Document, KB-Konsolidierung von 15.000 auf 1.500 Dokumente)
+  url: https://www.cioreview.com/company-ovp/usu-unymira-knowledge-driven-service-automation-cid-16707.html
+  type: third-party
+- id: microsoft-com-en-us-dynamics-365-blog-business-leader-2026-03-23-microsoft-named-a-leader-in-the-forrester-wave-customer-service-solutions-q1-2026
+  label: "Forrester Wave Customer Service Solutions Q1 2026: Microsoft Dynamics 365 Customer Service als Leader"
+  url: https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/23/microsoft-named-a-leader-in-the-forrester-wave-customer-service-solutions-q1-2026/
+  type: analyst
+- id: forrester-com-blogs-the-copilot-reality-check-what-enterprise-adoption-data-reveals-about-the-ai-boom
+  label: "Forrester Blog 02/2026: Copilot Reality Check – Dynamics 365 Customer Service Copilot reduziert AHT bei Retailer; EMEA-Bank skalierte erst nach messbaren KPI-Verbesserungen"
+  url: https://www.forrester.com/blogs/the-copilot-reality-check-what-enterprise-adoption-data-reveals-about-the-ai-boom/
+  type: analyst
+- id: fin-ai-help-en-articles-13975989-use-ai-powered-content-recommendations-to-improve-fin
+  label: Belegt Mechanik der Content-Gap-Empfehlungen anhand fehlgeschlagener Fin-Antworten vs. Human-Replies
+  url: https://fin.ai/help/en/articles/13975989-use-ai-powered-content-recommendations-to-improve-fin
+  type: vendor_doc
+- id: fin-ai-help-en-articles-13975984-use-the-topics-explorer-to-see-what-s-driving-volume
+  label: Topics Explorer als Konversations-Mining für Knowledge-Gap-Identifikation
+  url: https://fin.ai/help/en/articles/13975984-use-the-topics-explorer-to-see-what-s-driving-volume
+  type: vendor_doc
+- id: qualimero-com-en-blog-intercom-knowledge-base-product-consultation-guide
+  label: Bestätigt EU-Regional-Hosting Dublin und DACH-Compliance-Konfiguration
+  url: https://qualimero.com/en/blog/intercom-knowledge-base-product-consultation-guide
+  type: blog
+- id: community-intercom-com-fin-tips-from-the-intercom-team-85
+  label: "Praktiker-Tip von Intercom-Community: Suggestions als wöchentliches Ritual, ~70% approved"
+  url: https://community.intercom.com/fin-tips-from-the-intercom-team-85
+  type: community
+- id: reddit-com-r-saas-comments-1rdjpsl-experience-with-intercom-fin
+  label: "Reddit-Thread: Fin liefert solide bei guter KB, Pricing kritisch"
+  url: https://www.reddit.com/r/SaaS/comments/1rdjpsl/experience_with_intercom_fin/
+  type: community
+- id: prnewswire-com-news-releases-stonly-launches-knowledge-agents-to-keep-customer-service-knowledge-current-accurate-and-ai-ready-302744807-html
+  label: Offizielle Launch-Meldung mit klarer Beschreibung der Gap-Detection-Mechanik
+  url: https://www.prnewswire.com/news-releases/stonly-launches-knowledge-agents-to-keep-customer-service-knowledge-current-accurate-and-ai-ready-302744807.html
+  type: news
+- id: completeaitraining-com-news-stonly-launches-ai-agents-to-monitor-and-update-customer
+  label: Sekundärquelle bestätigt Health-Score und Edit-Drafts statt Rewrites
+  url: https://completeaitraining.com/news/stonly-launches-ai-agents-to-monitor-and-update-customer/
+  type: news
+- id: trust-stonly-com
+  label: Belegt Trust-Center mit SOC2 Type 2, HIPAA, GDPR und DPA
+  url: https://trust.stonly.com/
+  type: vendor_doc
+- id: callminer-com-conversation-analytics-conversation-analytics
+  label: Eureka-Plattform mit Topic-Discovery und expliziter Knowledge-Gap-Identifikation
+  url: https://callminer.com/conversation-analytics/conversation-analytics
+  type: vendor_doc
+- id: insight7-io-best-ai-speech-analytics-platforms-compared-nice-vs-verint-vs-callminer
+  label: Vergleichsartikel verweist auf Komplexität und TCO der Big-Three Speech-Analytics
+  url: https://insight7.io/best-ai-speech-analytics-platforms-compared-nice-vs-verint-vs-callminer/
+  type: review
+- id: eesel-ai-blog-zendesk-knowledge-gap-identify-missing-articles
+  label: Vendor-Beitrag beschreibt Auto-Gap-Detection-Loop und Zendesk-Integration
+  url: https://www.eesel.ai/blog/zendesk-knowledge-gap-identify-missing-articles
+  type: vendor_doc
+- id: egain-com-blog-the-knowledge-imperative-transforming-contact-center-agents-into-ai-knowledge-curators
+  label: eGain Whitepaper-Auszug zur AI-gestützten Identifikation von Wissens-Lücken
+  url: https://www.egain.com/blog/the-knowledge-imperative-transforming-contact-center-agents-into-ai-knowledge-curators/
+  type: blog
+- id: globenewswire-com-news-release-2026-04-07-3269425-0-en-egain-announces-enterprise-ai-platform-connectors-for-copilot-claude-gemini-and-cursor-html
+  label: Belegt aktuelle Enterprise-Konnektoren und governed-knowledge-Positionierung
+  url: https://www.globenewswire.com/news-release/2026/04/07/3269425/0/en/eGain-Announces-Enterprise-AI-Platform-Connectors-for-Copilot-Claude-Gemini-and-Cursor.html
+  type: news
+- id: docs-inkeep-com-analytics-content-gaps
+  label: Inkeep dokumentiert Content-Gap-Reports inkl. AI-Zusammenfassungen pro Topic
+  url: https://docs.inkeep.com/analytics/content-gaps
+  type: vendor_doc
+- id: docs-kapa-ai-analytics-coverage-gaps
+  label: Detaillierte Vendor-Doku zur Mechanik der Coverage-Gaps-Cluster und Empfehlungen
+  url: https://docs.kapa.ai/analytics/coverage-gaps
+  type: vendor_doc
+- id: omq-ai-lexicon-moinai-alternative
+  label: OMQ-eigener Vergleich mit moinAI inkl. Mehr-Kanal-Knowledge-Base
+  url: https://omq.ai/lexicon/moinai-alternative/
+  type: vendor_doc
+- id: qualtrics-com-support-xm-discover-artificial-intelligence-ai-overview-discover
+  label: Übersicht der AI-Features inkl. Topics Recommendation für hidden themes
+  url: https://www.qualtrics.com/support/xm-discover/artificial-intelligence-ai-overview-discover/
+  type: vendor_doc
+- id: insight7-io-top-ai-speech-analytics-for-measuring-agent-product-knowledge-gaps
+  label: Drittanbieter-Vergleich nennt Verint im Kontext Knowledge-Gap-Identifikation
+  url: https://insight7.io/top-ai-speech-analytics-for-measuring-agent-product-knowledge-gaps/
+  type: review
+- id: support-zendesk-com-hc-en-us-community-posts-9516762546714-content-cues-removed-but-still-advertised-in-articles
+  label: Belegt Abkündigung Content Cues und Verweis auf Knowledge Builder als Nachfolger
+  url: https://support.zendesk.com/hc/en-us/community/posts/9516762546714-Content-Cues-Removed-but-still-advertised-in-articles
+  type: community
+- id: zendesk-com-service-help-center-ai-knowledge-base
+  label: "Zendesk-eigene Beschreibung: KI identifiziert Wissenslücken, veraltete Inhalte und schlägt Themen vor"
+  url: https://www.zendesk.com/service/help-center/ai-knowledge-base/
+  type: vendor_doc
+- id: lorikeetcx-ai-articles-zendesk-ai-hacks-workarounds-upgrade
+  label: Drittanbieter-Analyse zu Zendesk AI Limitierungen und Latenz
+  url: https://www.lorikeetcx.ai/articles/zendesk-ai-hacks-workarounds-upgrade
+  type: blog
+- id: usefini-com-guides-how-ai-knowledge-bases-solve-ticket-intelligence-gap
+  label: Belegt Compliance-Set und PII-Shield als Differenzierung
+  url: https://www.usefini.com/guides/how-ai-knowledge-bases-solve-ticket-intelligence-gap
+  type: vendor_doc
+- id: ontiv-com-use-case-technischer-support-loest-faelle-schneller-ontiv-ai
+  label: Belegt deutschsprachigen Support-Use-Case mit Konversations-/Dokumenten-Mining
+  url: https://ontiv.com/use-case-technischer-support-loest-faelle-schneller-ontiv-ai/
+  type: vendor_doc
+- id: forethought-ai-platform-discover
+  label: Belegt dedizierte Knowledge-Gap-Detection plus Auto-Draft im Discover-Produkt
+  url: https://forethought.ai/platform/discover
+  type: vendor_doc
+- id: forethought-ai-blog-product-led-growth-needs-ai-support-that-scales-with-users
+  label: ActiveCampaign-Case-Study zur konkreten Nutzung von Discover für Gap-Identifikation
+  url: https://forethought.ai/blog/product-led-growth-needs-ai-support-that-scales-with-users
+  type: vendor_doc
+- id: tooliverse-ai-tools-forethought
+  label: "Drittanbieter-Review fasst G2-Praktikersignal zusammen: ~80% Deflection für Tier-1, KB-Hygiene als Voraussetzung"
+  url: https://tooliverse.ai/tools/forethought
+  type: review
+- id: moin-ai-chatbot-lexikon-wissensluecken
+  label: Deutschsprachige Beschreibung des Dreaming-Features und der Missing-Knowledge-Backend-Sektion
+  url: https://www.moin.ai/chatbot-lexikon/wissensluecken
+  type: vendor_doc
+- id: omr-com-de-reviews-product-moin-ai
+  label: OMR Reviews mit 146 verifizierten Bewertungen (Ø 4,5/5), DACH-Praktikersicht inkl. limitierter Anpassung und Trainingsaufwand
+  url: https://omr.com/de/reviews/product/moin-ai
+  type: review
+- id: nice-com-blog-nexidia-building-smarter-self-service-how-nices-enlighten-xo-powers-businesses-to-deliver-engaging-cx-across-digital-channels
+  label: "NICE-Blog beschreibt Mechanik: Self-Service-Gap-Discovery aus Live-Agent-Konversationen"
+  url: https://www.nice.com/blog/nexidia-building-smarter-self-service-how-nices-enlighten-xo-powers-businesses-to-deliver-engaging-cx-across-digital-channels
+  type: vendor_doc
+- id: cxtoday-com-contact-centre-nice-enlighten-xo-review-digital-customer-experience
+  label: CX Today Review beschreibt unabhängig Funktionsumfang, Self-Learning und Use-Cases von Enlighten XO
+  url: https://www.cxtoday.com/contact-centre/nice-enlighten-xo-review-digital-customer-experience/
+  type: review
+- id: cxtoday-com-contact-centre-nice-launches-enlighten-xo
+  label: "CX Today Launch-Coverage: 100% Interaktions-Analyse zur Identifikation der besten Automation-Opportunities"
+  url: https://www.cxtoday.com/contact-centre/nice-launches-enlighten-xo/
+  type: news
+- id: usu-com-en-knowledge-management-knowledge-analytics
+  label: USU dokumentiert Identifikation von Wissens-Lücken via Such-/Nutzungsdaten
+  url: https://www.usu.com/en/knowledge-management/knowledge-analytics
+  type: vendor_doc
+- id: omr-com-de-reviews-product-usu-knowledge-management
+  label: OMR Reviews listet USU Knowledge Management mit verifizierten DACH-Praktikerbewertungen, Wissensmanagement-Kategorie
+  url: https://omr.com/de/reviews/product/usu-knowledge-management
+  type: review
+- id: shelf-io-knowledge-management
+  label: Belegt always-on ROT-Detection und Health-Score-Mechanik
+  url: https://shelf.io/knowledge-management/
+  type: vendor_doc
+- id: toolradar-com-tools-shelf
+  label: Toolradar-Aggregator mit 4,7/5 plattformübergreifend und Hinweis auf FCR-Lift bei Global-Coffee-Brand-Referenz
+  url: https://toolradar.com/tools/shelf
+  type: review
+- id: omr-com-en-reviews-product-shelf
+  label: OMR Reviews Profil von Shelf bestätigt MerlinAI als Suche/Chat/IVR/Form-Knowledge-Antwortlayer (DACH-Sicht)
+  url: https://omr.com/en/reviews/product/shelf
+  type: review
+- id: intercom-com-help-en-articles-8231004-suggest-saved-replies-with-ai
+  label: Intercom dokumentiert AI-gestuetzte Suggested Saved Replies, die aus Conversations gelernt werden und von Admins kurati…
+  url: https://www.intercom.com/help/en/articles/8231004-suggest-saved-replies-with-ai
+  type: vendor
+- id: support-zendesk-com-hc-en-us-articles-4408886823194-about-macro-suggestions-for-admins
+  label: Zendesk dokumentiert Macro Suggestions als Admin-Feature, das aus Agent-Antworten haeufige Muster ableitet und neue Mac…
+  url: https://support.zendesk.com/hc/en-us/articles/4408886823194-About-macro-suggestions-for-admins
+  type: vendor
+- id: usu-com-de-de-loesungen-knowledge-management
+  label: USU bewirbt Knowledge-Management-Plattform mit AI-gestuetzter Pflege wiederverwendbarer Antwortbausteine, Hosting in De…
+  url: https://www.usu.com/de-de/loesungen/knowledge-management/
+  type: vendor
+- id: trailhead-salesforce-com-content-learn-modules-einstein-reply-recommendations-for-service-see-how-reply-recommendations-work
+  label: Salesforce Trailhead beschreibt, wie Einstein Reply Recommendations vorhandene Antworten in kuratierbare Quick-Text-Templates umwandelt und Admins die Pflege uebernehmen.
+  url: https://trailhead.salesforce.com/content/learn/modules/einstein-reply-recommendations-for-service/see-how-reply-recommendations-work
+  type: vendor
+- id: salesforceben-com-how-to-use-salesforce-quick-text-to-standardize-customer-communication
+  label: Salesforce Ben (unabhaengige Community-Publikation) beschreibt Quick Text als zentrales Macro-Feature der Service Cloud und ordnet Einstein-gestuetzte Pflege ein.
+  url: https://www.salesforceben.com/how-to-use-salesforce-quick-text-to-standardize-customer-communication/
+  type: third_party
+- id: microsoft-com-en-us-dynamics-365-products-customer-service-enterprise
+  label: Dynamics 365 Customer Service mit Copilot fuer Reply-Generierung und Wissensbausteine.
+  url: https://www.microsoft.com/en-us/dynamics-365/products/customer-service-enterprise
+  type: vendor
+- id: learn-microsoft-com-en-us-dynamics365-contact-center-use-use-copilot-email
+  label: Microsoft Learn dokumentiert Copilot-Predefined-Prompts und Email-Draft-Funktion fuer Dynamics 365 Customer Service inkl. Knowledge-Grounding und Tonalitaets-/Laengen-Steuerung.
+  url: https://learn.microsoft.com/en-us/dynamics365/contact-center/use/use-copilot-email
+  type: vendor
+- id: inogic-com-blog-2026-01-how-to-use-copilot-recommended-email-templates-in-dynamics-365-customer-service
+  label: Inogic (unabhaengiger Microsoft-Partner-Blog) beschreibt Copilot Recommended Email Templates und embedded Copilot-Prompts in Email-Templates fuer Dynamics 365 Customer Service.
+  url: https://www.inogic.com/blog/2026/01/how-to-use-copilot-recommended-email-templates-in-dynamics-365-customer-service/
+  type: third_party
+- id: aws-amazon-com-translate
+  label: Amazon Translate ist die NMT-API von AWS; in Amazon Connect für Live-Chat-Translation positioniert.
+  url: https://aws.amazon.com/translate/
+  type: vendor
+- id: cresta-com
+  label: Cresta vermarktet Translation als Bestandteil seiner Real-Time-Conversation-Intelligence-Suite.
+  url: https://cresta.com/
+  type: vendor
+- id: cloud-google-com-translate
+  label: Google Cloud Translation bietet NMT- und LLM-basierte Übersetzungs-API mit AdaptiveMT für Domänen-Tuning.
+  url: https://cloud.google.com/translate
+  type: vendor
+- id: inten-to
+  label: Intento ist eine Enterprise-MT-Aggregator-Plattform mit Routing, QE und Connectoren für Helpdesk/CRM.
+  url: https://www.inten.to/
+  type: vendor
+- id: microsoft-com-en-us-translator-business
+  label: Microsoft Translator bietet Text- und Speech-Translation-APIs für Enterprise-Customer-Service-Szenarien.
+  url: https://www.microsoft.com/en-us/translator/business/
+  type: vendor
+- id: genesys-com-capabilities-real-time-translation
+  label: Genesys vermarktet Real-Time-Translation als native CCaaS-Capability für mehrsprachigen Customer Service.
+  url: https://www.genesys.com/capabilities/real-time-translation
+  type: vendor
+- id: lengoo-com
+  label: Lengoo positioniert sich als deutscher Translation-Vendor mit Custom-AI-Engines für Enterprise-Use-Cases.
+  url: https://www.lengoo.com/
+  type: vendor
+- id: nice-com-products-cxone
+  label: NICE CXone Enlighten umfasst Real-Time-Übersetzung für digitale Channels und Voice-Interaktionen.
+  url: https://www.nice.com/products/cxone
+  type: vendor
+- id: deepl-com-en-pro-api
+  label: DeepL bietet eine produktive Translation-API mit Glossary-Support, EU-Hosting und Enterprise-Tier; Grundlage für Chat-Echtzeit-Übersetzung.
+  url: https://www.deepl.com/en/pro-api
+  type: vendor
+- id: deepl-com-en-products-voice
+  label: DeepL Voice positioniert sich für Live-Translation in gesprochenen Kontexten (Meetings, Calls).
+  url: https://www.deepl.com/en/products/voice
+  type: vendor
+- id: slator-com-story-deepl
+  label: Slator führte eine unabhängige Drittparteien-Evaluation von DeepL Voice gegen Microsoft Teams, Google Meet und Zoom durch (Übersetzungsqualität, Caption-Stabilität).
+  url: https://slator.com/story/deepl/
+  type: analyst
+- id: languageio-com
+  label: Language I/O liefert Echtzeit-Übersetzung in Salesforce, Zendesk, Oracle und MS Dynamics für Support-Konversationen.
+  url: https://languageio.com/
+  type: vendor
+- id: g2-com-products-language-i-o-reviews
+  label: G2-Profil mit 69 verifizierten Reviews (4.5/5) für Language I/O als Multilingual-Customer-Support- und Speech-Analytics-Tool.
+  url: https://www.g2.com/products/language-i-o/reviews
+  type: review
+- id: lokalise-com-messages
+  label: Lokalise Messages ist explizit für Echtzeit-Support-Chat-Übersetzung in Helpdesk-Tools positioniert.
+  url: https://lokalise.com/messages/
+  type: vendor
+- id: docs-lokalise-com-en-articles-3306368-lokalise-messages-for-zendesk-support-zendesk-ticket-translation
+  label: "Lokalise-Doku zur Zendesk-Marketplace-App: Auto-Detection und sofortige Übersetzung eingehender/ausgehender Tickets via DeepL/Google Translate, mit Free-/Lite-/Start-/Pro-Tarifen."
+  url: https://docs.lokalise.com/en/articles/3306368-lokalise-messages-for-zendesk-support-zendesk-ticket-translation
+  type: vendor
+- id: unbabel-com
+  label: Unbabel positioniert sich als AI-Translation-Plattform speziell für Customer-Service-Channels (Chat, E-Mail, Tickets).
+  url: https://unbabel.com/
+  type: vendor
+- id: gartner-com-reviews-market-ai-enabled-translation-services
+  label: Gartner Peer Insights listet Unbabel im Markt 'AI-Enabled Translation Services' mit Kundenreviews und Wettbewerbsvergleich.
+  url: https://www.gartner.com/reviews/market/ai-enabled-translation-services
+  type: analyst
+- id: unbabel-com-unbabel-recognized-as-a-sample-vendor-in-2022-gartner-hype-cycle-for-natural-language-technologies
+  label: Unbabel als Sample Vendor in 'Gartner Hype Cycle for Natural Language Technologies 2022' (LangOps-Kategorie).
+  url: https://unbabel.com/unbabel-recognized-as-a-sample-vendor-in-2022-gartner-hype-cycle-for-natural-language-technologies
+  type: analyst
+- id: freshworks-com-freddy-ai-for-cx-agent-assist
+  label: Freddy Copilot bietet Writing Assistant für on-brand Drafts und Summarization
+  url: https://www.freshworks.com/freddy-ai-for-cx/agent-assist/
+  type: vendor
+- id: support-freshservice-com-support-solutions-articles-50000009429-freddy-ai-copilot-overview
+  label: Reply Suggester und Multilingual Reply Suggester sind dedizierte Copilot-Features
+  url: https://support.freshservice.com/support/solutions/articles/50000009429-freddy-ai-copilot-overview
+  type: vendor
+- id: reddit-com-r-customersuccess-comments-1qh1ehd-5-best-ai-help-desk-software-solutions-for-2025
+  label: Reddit-Empfehlung als budget-freundliche, smb-taugliche Alternative zu Zendesk
+  url: https://www.reddit.com/r/CustomerSuccess/comments/1qh1ehd/5_best_ai_help_desk_software_solutions_for_2025/
+  type: community
+- id: updates-gorgias-com-publications-ai-agent-now-suggests-replies-automatically-one-tap-no-typing
+  label: Gorgias AI Agent generiert Reply-Vorschläge automatisch in Chat
+  url: https://updates.gorgias.com/publications/ai-agent-now-suggests-replies-automatically-one-tap-no-typing
+  type: vendor
+- id: apps-shopify-com-helpdesk
+  label: Shopify-App-Store-Review bestätigt Effektivität bei Routine-Tickets wie WISMO
+  url: https://apps.shopify.com/helpdesk/
+  type: review
+- id: ada-cx-platform
+  label: Coaching auf vergangene Conversations beeinflusst zukünftige Reply-Generation
+  url: https://www.ada.cx/platform/
+  type: vendor
+- id: community-intercom-com-fin-ai-agent-59-seeking-feedback-on-ai-automation-solutions-for-intercom-8882
+  label: "Praxisbericht in Intercom-Community: Aissist als einziger Anbieter mit kontextspezifischen Smart Tags"
+  url: https://community.intercom.com/fin-ai-agent-59/seeking-feedback-on-ai-automation-solutions-for-intercom-8882
+  type: community
+- id: decagon-ai-comparisons-decagon-vs-sierra
+  label: AOPs in Natural Language definieren Agent-Behavior, einheitlich über Voice/Chat/Email
+  url: https://decagon.ai/comparisons/decagon-vs-sierra
+  type: vendor
+- id: twig-so-blog-enterprise-only-vs-everyone-ai-support-market-split
+  label: Marktanalyse zu Pricing/Positionierung Enterprise-only
+  url: https://www.twig.so/blog/enterprise-only-vs-everyone-ai-support-market-split
+  type: review
+- id: kore-ai-blog-top-ai-agents-for-customer-service-tested-reviewed
+  label: Kore.ai Agent Assist liefert Next-Best-Action, Knowledge-Surfacing, Call Summaries für Contact-Center-Agenten
+  url: https://www.kore.ai/blog/top-ai-agents-for-customer-service-tested-reviewed
+  type: vendor
+- id: quiq-com-blog-sierra-ai-vs-decagon
+  label: Sierra positioniert sich für Enterprise mit Compliance/Brand-Consistency
+  url: https://quiq.com/blog/sierra-ai-vs-decagon/
+  type: review
+- id: cio-de-article-3696043-moinai-nutzt-europaeische-cloud-fuer-chatbot-training-html
+  label: moinAI hostet KI-Infrastruktur bei OVHcloud in Deutschland, 100+ Unternehmenskunden inkl. Geberit, Cyberport, Teag
+  url: https://www.cio.de/article/3696043/moinai-nutzt-europaeische-cloud-fuer-chatbot-training.html
+  type: news
+- id: moin-ai-en-features
+  label: Hub bietet AI-Assistant, der Reply-Vorschläge automatisch generiert; DSGVO-Settings konfigurierbar
+  url: https://www.moin.ai/en/features
+  type: vendor
+- id: omq-ai-products-assist
+  label: OMQ Assist liefert Antwortvorschläge in Zendesk/Freshdesk/Salesforce/OTRS/Zammad und ist DSGVO-konform
+  url: https://omq.ai/products/assist/
+  type: vendor
+- id: zendesk-de-marketplace-apps-support-122282-omq-assist
+  label: Zendesk-Marketplace-Listing bestätigt Reply-Suggestion-Integration mit OMQ-KB
+  url: https://www.zendesk.de/marketplace/apps/support/122282/omq-assist/
+  type: vendor
+- id: cloud-google-com-agent-assist
+  label: Agent Assist liefert Smart Reply und Step-by-Step-Guidance, gegroundet in zentraler KB
+  url: https://cloud.google.com/agent-assist
+  type: vendor
+- id: medium-com-evangseabrook-exploring-google-clouds-agent-assist-fa57ea3c8af0
+  label: "Praktiker-Bericht: Smart Reply funktioniert, aber Dokumentation und Setup für Dialogflow/CCAI sind unvollständig und fehlerbehaftet"
+  url: https://medium.com/@evangseabrook/exploring-google-clouds-agent-assist-fa57ea3c8af0
+  type: blog
+- id: us-fitgap-com-products-003615-google-cloud-agent-assist
+  label: "Unabhängiger Vergleich: Agent Assist erfordert CCAI-/Dialogflow-Know-how und mehrwöchige Modell-/KB-Vorbereitung; Vendor-Lock-in-Risiko gegen einfachere Plattformen"
+  url: https://us.fitgap.com/products/003615/google-cloud-agent-assist
+  type: review
+- id: hubspot-com-products-artificial-intelligence-use-cases-resolve-support-tickets
+  label: Reply Recommendations entwirft Antworten aus Ticket-Context + KB für 65% schnellere Replies
+  url: https://www.hubspot.com/products/artificial-intelligence/use-cases/resolve-support-tickets
+  type: vendor
+- id: eesel-ai-en-blog-is-hubspot-service-hub-ai-worth-it
+  label: "Unabhängige Review: Reply Recommendations brauchbar für Konsistenz/Speed, aber AI-Features tier-locked (Professional+); Capterra 4.4/5, TrustPilot 1.9/5 mit Pricing-Kritik"
+  url: https://www.eesel.ai/en/blog/is-hubspot-service-hub-ai-worth-it
+  type: review
+- id: resolve247-ai-blog-hubspot-customer-agent
+  label: "Honest Review: Customer Agent erreicht hohe Resolution-Raten nur bei sauberer Doku, fehlende Custom-Instructions limitieren Edge-Cases"
+  url: https://resolve247.ai/blog/hubspot-customer-agent
+  type: review
+- id: salesforce-com-eu-service-ai
+  label: Service Replies analysiert Conversations live und schlägt Antworten aus Knowledge oder Conversation-Daten vor
+  url: https://www.salesforce.com/eu/service/ai/
+  type: vendor
+- id: ai11-io-en-blog-salesforce-agentforce-erklaert
+  label: "DACH-Analyst-Review (Ai11 Consulting): Agentforce über Trust Layer mit Datenisolation; bei hochsensiblen Daten zusätzliche Security-Assessments empfohlen; Custom-Agents teils überlegen"
+  url: https://ai11.io/en/blog/salesforce-agentforce-erklaert
+  type: review
+- id: toolscopeai-com-agentforce-review-salesforce-autonomous-ai-agents-enterprise
+  label: "Unabhängige Review: Agentforce stark bei Salesforce-zentrischen Enterprises (Brand-Konsistenz, Governance), schwacher Value-Case ohne Salesforce-System-of-Record"
+  url: https://toolscopeai.com/agentforce-review-salesforce-autonomous-ai-agents-enterprise/
+  type: review
+- id: spadoom-com-en-blog-sap-service-cloud-v2-partner-switzerland-dach
+  label: Joule AI in Service Cloud V2 bietet Sentiment, Case Summarisation, Suggested Responses, KB-Empfehlungen für DACH-Enterprises
+  url: https://www.spadoom.com/en/blog/sap-service-cloud-v2-partner-switzerland-dach/
+  type: blog
+- id: spadoom-com-en-blog-sap-service-cloud-v2-digital-service-agent
+  label: "Praktiker-Bericht: SAP Service Cloud V2 liefert fünf produktionsreife AI-Features inkl. context-aware Response Suggestions; Suggestions brauchen Feedback-Loop und saubere Daten"
+  url: https://www.spadoom.com/en/blog/sap-service-cloud-v2-digital-service-agent/
+  type: blog
+- id: spadoom-com-en-blog-discover-the-power-of-sap-service-cloud
+  label: "Spadoom-Implementation-Erfahrung: Response Suggestions sparen 30–40% Antwortzeit; Case-Klassifikation 70–90% Genauigkeit"
+  url: https://www.spadoom.com/en/blog/discover-the-power-of-sap-service-cloud/
+  type: blog
+- id: tested-media-ai-customer-service-software
+  label: Containment-Zahlen und Pricing für Intercom Fin im 2026-Vergleich
+  url: https://tested.media/ai-customer-service-software/
+  type: review
+- id: usefini-com-guides-ai-platforms-ticket-deflection-vendors-compared
+  label: Fin als Pfad des geringsten Widerstands für Intercom-Kunden
+  url: https://www.usefini.com/guides/ai-platforms-ticket-deflection-vendors-compared
+  type: review
+- id: qualimero-com-en-blog-intercom-help-center-guide-ai-driven-support-2026
+  label: EU-Hosting in Dublin und Bedeutung fuer DACH-B2B
+  url: https://qualimero.com/en/blog/intercom-help-center-guide-ai-driven-support-2026
+  type: blog
+- id: reddit-com-r-customersuccess-comments-1r94d8b-has-anyone-actually-solved-customer-support-with
+  label: Praktiker bezeichnet Fin als preislich unverhältnismäßig
+  url: https://www.reddit.com/r/CustomerSuccess/comments/1r94d8b/has_anyone_actually_solved_customer_support_with/
+  type: community
+- id: salesforce-com-blog-proactive-service
+  label: 70 % Resolution-Rate intern und Self-Service-Deflection-Positionierung
+  url: https://www.salesforce.com/blog/proactive-service/
+  type: vendor_doc
+- id: sebastientang-com-blog-agentforce-vs-einstein-copilot-salesforce
+  label: Architekturwechsel und Data-Cloud-Pflicht
+  url: https://sebastientang.com/blog/agentforce-vs-einstein-copilot-salesforce/
+  type: blog
+- id: awesomeagents-ai-tools-best-ai-customer-support-tools-2026
+  label: Zendesk AI Pricing und Positionierung 2026
+  url: https://awesomeagents.ai/tools/best-ai-customer-support-tools-2026/
+  type: review
+- id: aristech-ai-en-aristech-aisuite
+  label: Plattform-Beschreibung, Deployment-Optionen, Zielkunden
+  url: https://aristech.ai/en/aristech-aisuite/
+  type: vendor_doc
+- id: chitika-com-best-ai-customer-support-automation-tools-in-2026
+  label: Freshdesk + Freddy AI als 'best budget' im 2026-Vergleich
+  url: https://www.chitika.com/best-ai-customer-support-automation-tools-in-2026/
+  type: review
+- id: mercury-ai-platform
+  label: Hybrid-Architektur, DE-Hosting, DSGVO-Positionierung
+  url: https://mercury.ai/platform
+  type: vendor_doc
+- id: mercury-ai
+  label: Self-Service-Deflection-Quote als Marketingkennzahl
+  url: https://mercury.ai/
+  type: vendor_doc
+- id: moin-ai-chatbots-dsgvo
+  label: DE-Hosting und DSGVO-Bekenntnis
+  url: https://www.moin.ai/chatbots-dsgvo
+  type: vendor_doc
+- id: moin-ai-chatbot-lexikon-chatbot-anbieter-ueberblick
+  label: Vergleich der Top-8-deutschen Chatbot-Anbieter inkl. moinAI-Pricing
+  url: https://www.moin.ai/chatbot-lexikon/chatbot-anbieter-ueberblick
+  type: review
+- id: aleph-alpha-com
+  label: Sovereign-AI-Positionierung mit DE-Hosting
+  url: https://aleph-alpha.com/
+  type: vendor_doc
+- id: botfriends-de-en-blog-chatbot-oder-voicebot-dsgvo-konform
+  label: AVV nach Art. 28 GDPR, DE-Hosting, EU-AI-Act-Compliance
+  url: https://botfriends.de/en/blog/chatbot-oder-voicebot-dsgvo-konform
+  type: vendor_doc
+- id: qualimero-com-en-blog-intercom-alternatives-2026-best-ai-support-tools-german-market
+  label: Userlike/Lime Connect als High-Compliance-Wahl in DACH
+  url: https://qualimero.com/en/blog/intercom-alternatives-2026-best-ai-support-tools-german-market
+  type: blog
+- id: splitbot-de-en
+  label: On-Premise- und sovereign-Cloud-Positionierung
+  url: https://splitbot.de/en/
+  type: vendor_doc
+- id: tenios-de-chatbot
+  label: ISO 27001, DE-Hosting, Suite-Positionierung
+  url: https://www.tenios.de/chatbot
+  type: vendor_doc
+- id: docs-cognigy-com-ai-overview-key-features
+  label: Hybrid-AI-Architektur und Enterprise-Featureset
+  url: https://docs.cognigy.com/ai/overview/key-features
+  type: vendor_doc
+- id: cognigy-com-blog-customer-service-ai
+  label: DACH-Referenzen E.ON und WhatsApp-Self-Service
+  url: https://www.cognigy.com/blog/customer-service-ai
+  type: vendor_doc
+- id: cognigy-com-blog-why-bsi-c5-certification-matters-for-banking-and-insurance
+  label: Aktive BSI C5-Attestierung und Bedeutung fuer DACH-Finanzsektor
+  url: https://www.cognigy.com/blog/why-bsi-c5-certification-matters-for-banking-and-insurance
+  type: vendor_doc
+- id: cognigy-com-solutions-banking-finance
+  label: Compliance-Stack fuer Banking/Finance
+  url: https://cognigy.com/solutions/banking-finance
+  type: vendor_doc
+- id: cdn2-softwarereviews-com-research-cognigy-2026-agentic-ai-for-outstanding-customer-care-and-proactive-resolution-takes-center-stage
+  label: "Info-Tech SoftwareReviews-Analyse zu Cognigy Nexus 2026: Pivot zu agentischer AI als operationale Disziplin und NiCE-Integration"
+  url: https://cdn2.softwarereviews.com/research/cognigy-2026-agentic-ai-for-outstanding-customer-care-and-proactive-resolution-takes-center-stage
+  type: analyst_report
+- id: botphonic-ai-cognigy-ai-review
+  label: "Unabhaengiges 2026-Review: Cognigy als Konzern-Infrastruktur mit ~300k$/Jahr-Einstiegsband und hohen Add-on-Kosten"
+  url: https://botphonic.ai/cognigy-ai-review/
+  type: review
+- id: kore-ai-ai-for-service-ai-agents
+  label: Everest Group Leader-Status und Governance-Featureset
+  url: https://kore.ai/ai-for-service/ai-agents
+  type: vendor_doc
+- id: docs-kore-ai-ai-for-service
+  label: Hybrid Deterministic + Agentic Architektur für regulierte Operationen
+  url: https://docs.kore.ai/ai-for-service
+  type: vendor_doc
+- id: kore-ai-ai-research-reports-kore-ai-named-a-leader-in-the-forrester-wave-conversational-ai-platforms-for-customer-service-q2-2026
+  label: "Forrester Wave Q2 2026 Leader: Kore.ai mit hoechstem Current-Offering-Score 4,14, 5/5 in Agentic Framework, Voice-Telephony, Guardrails, Knowledge Management"
+  url: https://www.kore.ai/ai-research-reports/kore-ai-named-a-leader-in-the-forrester-wave-conversational-ai-platforms-for-customer-service-q2-2026
+  type: analyst_report
+- id: businesswire-com-news-home-20250826630629-en-kore-ai-named-a-leader-in-gartner-magic-quadrant-for-conversational-ai-platforms
+  label: "Gartner Magic Quadrant for Conversational AI Platforms 2025: Leader mit hoechstem Ability-to-Execute-Score, drittes Jahr in Folge"
+  url: https://www.businesswire.com/news/home/20250826630629/en/Kore.ai-Named-a-Leader-in-Gartner-Magic-Quadrant-for-Conversational-AI-Platforms
+  type: analyst_report
+- id: gartner-com-reviews-product-kore-ai-agent-platform
+  label: "Gartner Peer Insights 2026: 4.6-Schnitt; Praktiker bestaetigen Plattform-Komplexitaet und nennen Setup-Probleme im Contact-Center-Modul, gleichzeitig starken Vendor-Support"
+  url: https://www.gartner.com/reviews/product/kore-ai-agent-platform
+  type: review
+- id: tipranks-com-news-private-companies-parloa-warns-global-enterprises-are-blocking-customer-access-in-landmark-cx-study
+  label: Parloa-Benchmark zur Schlechtleistung gängiger Chatbots
+  url: https://www.tipranks.com/news/private-companies/parloa-warns-global-enterprises-are-blocking-customer-access-in-landmark-cx-study
+  type: news
+- id: europeanstack-com-software-parloa
+  label: "EuropeanStack-Review 2026: Voice-native Architektur, $3 Mrd Bewertung, ~300k USD/Jahr Einstieg, 35+ Sprachen, ISO 27001/SOC 2/PCI/DORA"
+  url: https://europeanstack.com/software/parloa
+  type: review
+- id: eesel-ai-blog-parloa-review
+  label: "Unabhaengiges 2026-Review: Parloa als Voice-First-Plattform fuer Konzerne mit grossen Budgets und IT-Teams; Latenz 700-900ms als Schwachpunkt"
+  url: https://www.eesel.ai/blog/parloa-review
+  type: review
+- id: genesys-com-capabilities-ai-experience
+  label: Genesys vermarktet AI Experience mit Sentiment-Erkennung und Predictive Engagement
+  url: https://www.genesys.com/capabilities/ai-experience
+  type: vendor
+- id: sprinklr-com-products-customer-service
+  label: Sprinklr Service vermarktet Smart Alerts und Sentiment-Analyse für Supervisoren
+  url: https://www.sprinklr.com/products/customer-service/
+  type: vendor
+- id: omq-de-produkte-omq-assist
+  label: OMQ Assist bietet deutsche NLP-Klassifikation für Tickets mit DSGVO-Hosting
+  url: https://www.omq.de/produkte/omq-assist/
+  type: vendor
+- id: sap-com-products-crm-service-html
+  label: SAP Service Cloud integriert Embedded AI / Joule für Case-Insights
+  url: https://www.sap.com/products/crm/service.html
+  type: vendor
+- id: usu-com-de-de-produkte-customer-service
+  label: USU positioniert AI-gestützte Service-Intelligence mit deutschem Hosting
+  url: https://www.usu.com/de-de/produkte/customer-service/
+  type: vendor
+- id: cmswire-com-contact-center-salesforce-agentforce-contact-center-review-strengths-gaps-and-how-it-compares-to-rivals
+  label: CMSWire-Review (Scott Clark) beschreibt Einstein/Agentforce Contact Center mit Echtzeit-Intent-Erkennung, Routing und KI-getriggerter Eskalation
+  url: https://www.cmswire.com/contact-center/salesforce-agentforce-contact-center-review-strengths-gaps-and-how-it-compares-to-rivals/
+  type: analyst
+- id: eajournals-org-wp-content-uploads-sites-21-2025-06-einstein-for-service-pdf
+  label: Akademische Analyse (European Journal of CS & IT, 2025) dokumentiert Einsteins Predictive Case Prioritization, Sentiment-Engine und 37–42% Reduktion kritischer Eskalationen
+  url: https://eajournals.org/wp-content/uploads/sites/21/2025/06/Einstein-for-Service.pdf
+  type: research
+- id: usu-com-de-de-produkte-usu-knowledge-management
+  label: USU Knowledge Center umfasst AI-gestützte Summary-Funktionen für Service-Desks
+  url: https://www.usu.com/de-de/produkte/usu-knowledge-management/
+  type: vendor
+- id: eesel-ai-blog-cognigy-ai
+  label: "eesel AI: Independent Review zu Cognigy AI für Enterprise Customer Service inkl. Agent Copilot Summary"
+  url: https://www.eesel.ai/blog/cognigy-ai
+  type: practitioner
+- id: freshworks-com-freshdesk-freddy-ai
+  label: Freddy AI Copilot bietet Ticket-Summary in Freshdesk nativ
+  url: https://www.freshworks.com/freshdesk/freddy-ai/
+  type: vendor
+- id: eesel-ai-blog-freshservice-copilot
+  label: "eesel AI: Independent Guide zu Freshservice Freddy AI Copilot — Ticket-Summary, Resolution Notes, Reply-Suggestions"
+  url: https://www.eesel.ai/blog/freshservice-copilot
+  type: practitioner
+- id: front-com-ai
+  label: Front AI bietet One-Click-Summarize für Shared-Inbox-Threads
+  url: https://front.com/ai
+  type: vendor
+- id: eesel-ai-blog-front-ai-summarize
+  label: "eesel AI: Independent Deep-Dive zu Front AI Summarize — Features, Limitationen und Alternativen"
+  url: https://www.eesel.ai/blog/front-ai-summarize
+  type: practitioner
+- id: hubspot-com-products-service
+  label: HubSpot Service Hub bündelt Breeze-AI-Summaries für Tickets und Conversations
+  url: https://www.hubspot.com/products/service
+  type: vendor
+- id: cotera-co-articles-hubspot-ai-crm-automation
+  label: "Cotera: Independent Practitioner-Review zu HubSpot Breeze AI — Conversation-Summary als 'genuine win', Limitationen bei Analytik"
+  url: https://cotera.co/articles/hubspot-ai-crm-automation
+  type: practitioner
+- id: bestaimarketing-tools-com-hubspot-ai-review-2026
+  label: "BestAIMarketing-Tools: 10-wöchiger Independent-Test von HubSpot Breeze AI inkl. Service-Summaries"
+  url: https://bestaimarketing-tools.com/hubspot-ai-review-2026/
+  type: practitioner
+- id: constellationr-com-insights-news-salesforce-rolls-out-einstein-ai-service-cloud
+  label: "Constellation Research: Independent Analyst-Note zu Salesforce Einstein für Service Cloud inkl. Case-Wrap-up-Summary"
+  url: https://www.constellationr.com/insights/news/salesforce-rolls-out-einstein-ai-service-cloud
+  type: analyst
+- id: futurumresearch-com-research-notes-salesforce-introduces-einstein-gpt-revolutionizing-salesforce-service-cloud
+  label: "Futurum Research: Independent Analyst-Note zu Einstein GPT für Service Cloud — auto-generierte Case-Wrap-up-Summaries"
+  url: https://futurumresearch.com/research-notes/salesforce-introduces-einstein-gpt-revolutionizing-salesforce-service-cloud/
+  type: analyst
+- id: servicenow-com-products-now-assist-for-csm-html
+  label: Now Assist for CSM bietet Case-Summary und Chat-Summary nativ
+  url: https://www.servicenow.com/products/now-assist-for-csm.html
+  type: vendor
+- id: eesel-ai-blog-zendesk-copilot-ticket-summary
+  label: "eesel AI: Independent Guide zu Zendesk Copilot Ticket Summary — Funktionsweise, Limitationen, Konfiguration"
+  url: https://www.eesel.ai/blog/zendesk-copilot-ticket-summary
+  type: practitioner
+- id: research-aimultiple-com-sap-ai-agents
+  label: "AIMultiple: Independent Industry-Analyse zu SAP Joule Studio und Service Cloud AI Agents 2026 inkl. Case-Studies"
+  url: https://research.aimultiple.com/sap-ai-agents/
+  type: analyst
+- id: almato-com-loesungen-sprachanalyse
+  label: almato bietet KI-Sprachanalyse mit Themen- und Trendreports fuer DACH-Contact-Center
+  url: https://www.almato.com/loesungen/sprachanalyse/
+  type: vendor
+- id: salesforce-com-sales-conversation-insights
+  label: Salesforce Einstein Conversation Insights extrahiert Themen und Trends aus Konversationen
+  url: https://www.salesforce.com/sales/conversation-insights/
+  type: vendor
+- id: chattermill-com
+  label: Chattermill positioniert sich als Unified-Customer-Intelligence-/VoC-Plattform
+  url: https://chattermill.com/
+  type: vendor
+- id: zendesk-com-service-quality-assurance
+  label: Zendesk QA bietet AutoQA und Spotlight fuer Themen- und Trendinsights
+  url: https://www.zendesk.com/service/quality-assurance/
+  type: vendor
+- id: gartner-com-reviews-product-amazon-connect
+  label: Amazon Connect bei Gartner Peer Insights mit 4,5/5 Bewertung als CCaaS-Plattform
+  url: https://www.gartner.com/reviews/product/amazon-connect
+  type: analyst
+- id: cresta-com-product-insights
+  label: Cresta Insights extrahiert Themen, Trends und Treiber aus Konversationskorpora
+  url: https://cresta.com/product/insights/
+  type: vendor
+- id: martech360-com-news-cresta-introduces-ai-analyst-to-revolutionize-business-insights-from-customer-conversations
+  label: Forrester Wave Conversation Intelligence Solutions for Contact Centers Q2 2025 nennt Cresta als Leader
+  url: https://martech360.com/news/cresta-introduces-ai-analyst-to-revolutionize-business-insights-from-customer-conversations/
+  type: press
+- id: genesys-com-capabilities-speech-and-text-analytics
+  label: Genesys Cloud bietet Speech & Text Analytics mit Topic-Erkennung
+  url: https://www.genesys.com/capabilities/speech-and-text-analytics
+  type: vendor
+- id: g2-com-products-genesys-cloud-cx-reviews
+  label: Genesys Cloud CX bei G2 mit 4,3/5 in Speech-Analytics-Kategorie und mehreren hundert Enterprise-Reviews
+  url: https://www.g2.com/products/genesys-cloud-cx/reviews
+  type: community
+- id: medallia-com-platform-speech-analytics
+  label: Medallia bewirbt Speech & Text Analytics fuer VoC-Trendanalyse
+  url: https://www.medallia.com/platform/speech-analytics/
+  type: vendor
+- id: forrester-com-report-the-forrester-wave-tm-text-mining-and-analytics-platforms-q2-2024-res181000
+  label: Forrester Wave Text Mining and Analytics Platforms Q2 2024 nennt Medallia als Leader mit Bestwerten in 15 Kriterien
+  url: https://www.forrester.com/report/the-forrester-wave-tm-text-mining-and-analytics-platforms-q2-2024/RES181000
+  type: analyst
+- id: nice-com-products-customer-engagement-enlighten-ai
+  label: NICE Enlighten AI ist als CX-Analytics-Suite fuer Themen-, Sentiment- und Trendanalyse positioniert
+  url: https://www.nice.com/products/customer-engagement/enlighten-ai
+  type: vendor
+- id: cmswire-com-the-wire-nice-named-a-leader-in-the-2024-gartner-magic-quadrant-for-contact-center-as-a-service-for-10th-year
+  label: CMSWire berichtet ueber NICE als Leader im Gartner Magic Quadrant for CCaaS 2024 zum 10. Mal in Folge
+  url: https://cmswire.com/the-wire/nice-named-a-leader-in-the-2024-gartner-magic-quadrant-for-contact-center-as-a-service-for-10th-year
+  type: press
+- id: gartner-com-reviews-market-contact-center-workforce-engagement-management-compare-nice-vs-verint
+  label: Gartner Peer Insights Vergleich NICE vs Verint im Workforce-Engagement- und Speech-Analytics-Markt
+  url: https://www.gartner.com/reviews/market/contact-center-workforce-engagement-management/compare/nice-vs-verint
+  type: analyst
+- id: qualtrics-com-platform-xm-discover
+  label: XM Discover analysiert strukturierte und unstrukturierte Customer-Feedback-Korpora
+  url: https://www.qualtrics.com/platform/xm-discover/
+  type: vendor
+- id: cxtoday-com-customer-analytics-intelligence-gartner-magic-quadrant-voc-platforms-2026
+  label: CX Today berichtet ueber Qualtrics als Leader im Gartner Magic Quadrant for VoC Platforms 2026
+  url: https://www.cxtoday.com/customer-analytics-intelligence/gartner-magic-quadrant-voc-platforms-2026/
+  type: press
+- id: getthematic-com
+  label: Thematic positioniert sich als VoC- und Theme-Discovery-Plattform
+  url: https://getthematic.com/
+  type: vendor
+- id: g2-com-compare-sentisum-vs-thematic
+  label: Thematic bei G2 als High Performer in Feedback-Analytics, Text-Analysis und Enterprise-Feedback-Management
+  url: https://www.g2.com/compare/sentisum-vs-thematic
+  type: community
+- id: verint-com-our-offerings-speech-analytics
+  label: Verint bewirbt Speech & Text Analytics fuer Themen- und Trendentdeckung in Konversationskorpora
+  url: https://www.verint.com/our-offerings/speech-analytics/
+  type: vendor
+- id: forrester-com-report-the-forrester-wave-tm-people-oriented-text-analytics-platforms-q2-2022-res176358
+  label: Forrester Wave People-Oriented Text Analytics Platforms Q2 2022 wertet Verint unter den 13 wichtigsten Anbietern
+  url: https://www.forrester.com/report/the-forrester-wave-tm-people-oriented-text-analytics-platforms-q2-2022/RES176358
+  type: analyst
+- id: gartner-com-reviews-market-speech-analytics-platforms
+  label: Gartner Peer Insights fuehrt Verint Speech Analytics als Speech-Analytics-Plattform mit Topic- und Sentiment-Funktionen
+  url: https://www.gartner.com/reviews/market/speech-analytics-platforms
+  type: analyst
+- id: aws-amazon-com-lex
+  label: Amazon Lex ist AWS' Voicebot-Service, Integration mit Amazon Connect für Telefonie.
+  url: https://aws.amazon.com/lex/
+  type: vendor
+- id: genesys-com-capabilities-virtual-agent
+  label: Genesys Cloud bietet einen integrierten Virtual Agent für Voice-Self-Service.
+  url: https://www.genesys.com/capabilities/virtual-agent
+  type: vendor
+- id: cloud-google-com-dialogflow-cx-docs
+  label: Dialogflow CX / Vertex AI Conversation ist Googles Voicebot-Plattform mit Telefonie-Integration.
+  url: https://cloud.google.com/dialogflow/cx/docs
+  type: vendor
+- id: telegra-de
+  label: telegra liefert deutschsprachiges Cloud-Contact-Center inkl. Voicebot und IVR mit DE-Hosting.
+  url: https://www.telegra.de/
+  type: vendor
+- id: sikom-de
+  label: Sikom ist Heidelberger CCaaS mit Voicebot-Modulen und Hosting in Deutschland.
+  url: https://www.sikom.de/
+  type: vendor
+- id: cognigy-com-products-cognigy-voice
+  label: Cognigy Voice ist ein Voice-AI-Produkt mit Anbindung an gängige CCaaS-Plattformen.
+  url: https://www.cognigy.com/products/cognigy-voice
+  type: vendor
+- id: callcentrehelper-com-nice-named-leader-in-forrester-wave-2026-273599-htm
+  label: "Forrester Wave Conversational AI Platforms for Customer Service Q2 2026: Cognigy als Leader mit 4,5/5 in Strategy und Top-Scores in 10 Kriterien (Call Centre Helper / Forrester)."
+  url: https://www.callcentrehelper.com/nice-named-leader-in-forrester-wave-2026-273599.htm
+  type: analyst
+- id: polling-reuters-com-business-german-ai-startup-parloa-triples-valuation-3-billion-latest-fundraise-2026-01-15
+  label: "Reuters (15.01.2026): Berliner KI-Customer-Service-Startup Parloa verdreifacht Bewertung auf 3 Mrd. USD; Plattform automatisiert Kundenservice für Großunternehmen."
+  url: http://polling.reuters.com/business/german-ai-startup-parloa-triples-valuation-3-billion-latest-fundraise-2026-01-15/
+  type: press
+- id: trendingtopics-eu-parloa-berliner-ki-agenten-startup-holt-350-mio-dollar-bewertung-steigt-auf-3-mrd-dollar
+  label: "Trending Topics: Gartner führt Parloa als Cool Vendor im CRM-Bereich, CB Insights als Leader bei AI Agents & Copilots für Customer Service; Berlin-Brandenburg-Voice-Agent 'Berry' und Booking.com-Referenz."
+  url: https://www.trendingtopics.eu/parloa-berliner-ki-agenten-startup-holt-350-mio-dollar-bewertung-steigt-auf-3-mrd-dollar/
+  type: press
+- id: poly-ai
+  label: PolyAI ist ein Enterprise-Voicebot-Anbieter mit Fokus Banken/Hotellerie/Telco.
+  url: https://poly.ai/
+  type: vendor
+- id: cmswire-com-customer-experience-polyai-launches-agent-development-kit-to-put-enterprise-cx-development-back-in-developers-hands
+  label: "CMSwire (April 2026): PolyAI launcht Agent Development Kit für Enterprise-CX-Teams; produktive Voice-AI-Plattform bei Fortune-500-Unternehmen im Einsatz."
+  url: https://www.cmswire.com/customer-experience/polyai-launches-agent-development-kit-to-put-enterprise-cx-development-back-in-developers-hands/
+  type: press
+- id: poly-ai-case-studies-unicredit-zagrebacka-banka
+  label: "PolyAI-Case-Study UniCredit / Zagrebačka banka: Voice-Assistant 'Mia' automatisiert 27 % aller Calls, +14 NPS-Punkte, Empfehlung in andere UniCredit-Länder — relevanter Banking-Referenzpunkt für DACH-RFPs."
+  url: https://poly.ai/case-studies/unicredit-zagrebacka-banka/
+  type: vendor
+- id: gartner-com-reviews-product-polyai-1915845842
+  label: "Gartner Peer Insights: PolyAI Agent Studio — Enterprise-Voice-AI in 45 Sprachen für Banken, Hospitality, Healthcare, Utilities, Retail."
+  url: https://www.gartner.com/reviews/product/polyai-1915845842
+  type: analyst
+- id: spitch-ai
+  label: Spitch positioniert sich als Schweizer Voice-AI-Spezialist mit eigener ASR/TTS für DACH-Sprachen.
+  url: https://www.spitch.ai/
+  type: vendor
+- id: spitch-ai-de-blog-ueber-20-volksbanken-vertrauen-auf-spitch
+  label: "Spitch-Blog (April 2026, mit konkreten Zahlen): über 20 Volksbanken im Produktivbetrieb, >15.000 Anrufe/Tag, 5 Mio. Anrufe seit Start, Erkennungsrate >90 % seit November 2021."
+  url: https://spitch.ai/de/blog/ueber-20-volksbanken-vertrauen-auf-spitch/
+  type: vendor
+- id: braunschweiger-zeitung-de-wirtschaft-presseportal-article410185937-spitch-mit-neuem-sprachmodul-fuer-volksbanken-zustimmung-zu-agb-aenderungen-telefonisch-einholen-html
+  label: "Braunschweiger Zeitung / ots (Oktober 2025): Spitch stellt Sprachmodul für AGB-Zustimmung bei Volksbanken vor — Conversational-AI-Plattform produktiv u.a. bei Volksbank Mittelhessen, Hannoversche Volksbank, VR Bank Rhein-Neckar Mannheim."
+  url: https://www.braunschweiger-zeitung.de/wirtschaft/Presseportal/article410185937/spitch-mit-neuem-sprachmodul-fuer-volksbanken-zustimmung-zu-agb-aenderungen-telefonisch-einholen.html
+  type: press
