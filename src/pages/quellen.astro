@@ -1,0 +1,371 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { loadSources, loadTools, type SourceEntry } from '../lib/data';
+
+type SourceUsage = {
+  id: string;
+  label: string;
+  url?: string;
+  type: string;
+  capturedAt?: string;
+  host: string;
+  useCaseCount: number;
+  toolCount: number;
+  stageCount: number;
+  stageLinks: { slug: string; name: string }[];
+  useCaseSamples: string[];
+  toolSamples: string[];
+  usageKind: 'both' | 'use_case' | 'tool' | 'unused';
+  totalReferences: number;
+};
+
+const sources = loadSources();
+const tools = loadTools();
+const useCases = await getCollection('use_cases');
+
+const sourceTypeLabels: Record<string, string> = {
+  study: 'Study',
+  case_study: 'Case Study',
+  vendor: 'Vendor',
+  vendor_doc: 'Vendor Doc',
+  community: 'Community',
+  review: 'Review',
+  blog: 'Blog',
+  documentation: 'Docs',
+  news: 'News',
+};
+
+const toolNameById = new Map(tools.map((tool) => [tool.id, tool.name] as const));
+const stageNameBySlug = new Map<string, string>();
+
+function sourceHost(url?: string): string {
+  if (!url) return 'ohne URL';
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url.replace(/^https?:\/\//, '').split('/')[0] ?? url;
+  }
+}
+
+function formatCapturedAt(value?: string): string {
+  if (!value) return '—';
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return value;
+  return new Intl.DateTimeFormat('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date);
+}
+
+function formatSourceType(type: string): string {
+  const label = sourceTypeLabels[type];
+  if (label) return label;
+  return type
+    .replace(/[_-]+/g, ' ')
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+const sourceUsageById = new Map<
+  string,
+  {
+    useCases: Set<string>;
+    tools: Set<string>;
+    stages: Map<string, string>;
+    useCaseSamples: string[];
+    toolSamples: string[];
+  }
+>();
+
+function ensureUsage(sourceId: string) {
+  let usage = sourceUsageById.get(sourceId);
+  if (!usage) {
+    usage = {
+      useCases: new Set<string>(),
+      tools: new Set<string>(),
+      stages: new Map<string, string>(),
+      useCaseSamples: [],
+      toolSamples: [],
+    };
+    sourceUsageById.set(sourceId, usage);
+  }
+  return usage;
+}
+
+for (const uc of useCases) {
+  const stage = await getEntry(uc.data.stage);
+  const stageSlug = stage.slug;
+  const stageName = stage.data.name;
+  stageNameBySlug.set(stageSlug, stageName);
+
+  for (const sourceRef of uc.data.sources) {
+    const usage = ensureUsage(sourceRef.id);
+    usage.useCases.add(uc.id);
+    usage.stages.set(stageSlug, stageName);
+    if (!usage.useCaseSamples.includes(uc.data.title)) {
+      usage.useCaseSamples.push(uc.data.title);
+    }
+  }
+
+  for (const toolRef of uc.data.tools) {
+    const toolName = toolNameById.get(toolRef.id) ?? toolRef.id;
+    for (const sourceRef of toolRef.sources ?? []) {
+      const usage = ensureUsage(sourceRef.id);
+      usage.tools.add(`${uc.id}::${toolRef.id}`);
+      usage.stages.set(stageSlug, stageName);
+      if (!usage.toolSamples.includes(toolName)) {
+        usage.toolSamples.push(toolName);
+      }
+    }
+  }
+}
+
+const stageOptions = [...stageNameBySlug.entries()]
+  .map(([slug, name]) => ({ slug, name }))
+  .sort((a, b) => a.name.localeCompare(b.name, 'de'));
+
+const rows: SourceUsage[] = sources
+  .map((source: SourceEntry) => {
+    const usage = sourceUsageById.get(source.id);
+    const useCaseCount = usage?.useCases.size ?? 0;
+    const toolCount = usage?.tools.size ?? 0;
+    const totalReferences = useCaseCount + toolCount;
+    const usageKind =
+      useCaseCount > 0 && toolCount > 0
+        ? 'both'
+        : useCaseCount > 0
+          ? 'use_case'
+          : toolCount > 0
+            ? 'tool'
+            : 'unused';
+
+    return {
+      id: source.id,
+      label: source.label,
+      url: source.url,
+      type: source.type,
+      capturedAt: source.captured_at,
+      host: sourceHost(source.url),
+      useCaseCount,
+      toolCount,
+      stageCount: usage?.stages.size ?? 0,
+      stageLinks: [...(usage?.stages.entries() ?? [])]
+        .map(([slug, name]) => ({ slug, name }))
+        .sort((a, b) => a.name.localeCompare(b.name, 'de')),
+      useCaseSamples: usage?.useCaseSamples.slice(0, 2) ?? [],
+      toolSamples: usage?.toolSamples.slice(0, 2) ?? [],
+      usageKind,
+      totalReferences,
+    };
+  })
+  .sort((a, b) => {
+    if (b.totalReferences !== a.totalReferences) return b.totalReferences - a.totalReferences;
+    if (b.stageCount !== a.stageCount) return b.stageCount - a.stageCount;
+    return a.label.localeCompare(b.label, 'de');
+  });
+
+const referencedSources = rows.filter((row) => row.totalReferences > 0).length;
+const sourceTypes = [...new Set(rows.map((row) => row.type))].sort((a, b) =>
+  formatSourceType(a).localeCompare(formatSourceType(b), 'de')
+);
+---
+<Base title="Where AI Works — Quellen">
+  <section class="lede-wrap">
+    <div class="wrap">
+      <div class="lede">
+        <div class="eyebrow">Evidenz · Quellenverzeichnis</div>
+        <h1>Welche Quellen tragen den <em>Katalog</em>?</h1>
+        <p class="kicker">
+          Zentrales Verzeichnis der Studien, Vendor-Dokumente, Reviews und Community-Quellen,
+          auf die sich der Atlas stuetzt. Nicht alle Quellentypen haben dasselbe Gewicht,
+          aber jede Referenz bleibt nachvollziehbar.
+        </p>
+        <div class="meta">
+          <span>{rows.length} Quellen gesamt</span>
+          <span>{referencedSources} aktuell im Einsatz</span>
+          <span>{stageOptions.length} Stages mit Quellenbezug</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-bar">
+    <div class="wrap">
+      <div class="filter-grid filter-grid-sources">
+        <div class="filter-field">
+          <label for="sources-type">Typ</label>
+          <select id="sources-type">
+            <option value="">Alle Typen</option>
+            {sourceTypes.map((type) => (
+              <option value={type}>{formatSourceType(type)}</option>
+            ))}
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="sources-stage">Stage</label>
+          <select id="sources-stage">
+            <option value="">Alle Stages</option>
+            {stageOptions.map((stage) => (
+              <option value={stage.slug}>{stage.name}</option>
+            ))}
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="sources-usage">Verwendet in</label>
+          <select id="sources-usage">
+            <option value="">Alles</option>
+            <option value="use_case">Use Cases</option>
+            <option value="tool">Tool-Bewertungen</option>
+            <option value="both">Beidem</option>
+            <option value="unused">Noch ungenutzt</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-foot">
+        <span class="count"><b id="sources-count">{rows.length}</b> von {rows.length}</span>
+        <a href="#" class="reset" id="sources-reset">Filter zurücksetzen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <div class="wrap">
+      <table class="tools-table sources-table" aria-label="Quellenverzeichnis">
+        <colgroup>
+          <col class="c-source" />
+          <col class="c-type" />
+          <col class="c-usage" />
+          <col class="c-stages" />
+          <col class="c-date" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col"><span class="th-inner">Quelle</span></th>
+            <th scope="col"><span class="th-inner">Typ</span></th>
+            <th scope="col"><span class="th-inner">Verwendet in</span></th>
+            <th scope="col"><span class="th-inner">Stages</span></th>
+            <th scope="col"><span class="th-inner">Erfasst</span></th>
+          </tr>
+        </thead>
+        <tbody id="sources-tbody">
+          {rows.map((row) => (
+            <tr
+              data-type={row.type}
+              data-stages={row.stageLinks.map((stage) => stage.slug).join(',')}
+              data-usage={row.usageKind}
+            >
+              <td class="tool-cell">
+                {row.url ? (
+                  <a href={row.url} class="tn" rel="noreferrer" target="_blank">
+                    {row.label}
+                  </a>
+                ) : (
+                  <span class="tn tn-static">{row.label}</span>
+                )}
+                <div class="vendor">{row.host}</div>
+                <div class="cat">{row.id}</div>
+              </td>
+              <td>
+                <span class="source-type">{formatSourceType(row.type)}</span>
+              </td>
+              <td>
+                <div class="source-usage">
+                  {row.useCaseCount > 0 && (
+                    <span class="pill green">
+                      <span class="dot"></span>
+                      <span class="n">{row.useCaseCount}</span> Use Cases
+                    </span>
+                  )}
+                  {row.toolCount > 0 && (
+                    <span class="pill amber">
+                      <span class="dot"></span>
+                      <span class="n">{row.toolCount}</span> Tool-Bewertungen
+                    </span>
+                  )}
+                  {row.totalReferences === 0 && <span class="mat">noch ungenutzt</span>}
+                </div>
+                {(row.useCaseSamples.length > 0 || row.toolSamples.length > 0) && (
+                  <div class="source-samples">
+                    {row.useCaseSamples.length > 0 && <div>Use Cases: {row.useCaseSamples.join(' · ')}</div>}
+                    {row.toolSamples.length > 0 && <div>Tools: {row.toolSamples.join(' · ')}</div>}
+                  </div>
+                )}
+              </td>
+              <td class="stages">
+                <div class="stage-row">
+                  {row.stageLinks.length > 0 ? row.stageLinks.map((stage) => (
+                    <a href={`/stage/${stage.slug}`} class="stage-b">{stage.name}</a>
+                  )) : <span class="mat">—</span>}
+                </div>
+              </td>
+              <td class="num">{formatCapturedAt(row.capturedAt)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <div id="sources-empty" class="tools-empty" hidden>
+        Keine Quellen entsprechen den aktuellen Filterkriterien.
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function bindSourceFilters() {
+      const typeSelect = document.getElementById('sources-type');
+      const stageSelect = document.getElementById('sources-stage');
+      const usageSelect = document.getElementById('sources-usage');
+      const rows = [...document.querySelectorAll('#sources-tbody tr')];
+      const count = document.getElementById('sources-count');
+      const empty = document.getElementById('sources-empty');
+      const reset = document.getElementById('sources-reset');
+
+      if (!(typeSelect instanceof HTMLSelectElement)) return;
+      if (!(stageSelect instanceof HTMLSelectElement)) return;
+      if (!(usageSelect instanceof HTMLSelectElement)) return;
+      if (!(count instanceof HTMLElement)) return;
+      if (!(empty instanceof HTMLElement)) return;
+      if (!(reset instanceof HTMLAnchorElement)) return;
+
+      const applyFilters = () => {
+        const type = typeSelect.value;
+        const stage = stageSelect.value;
+        const usage = usageSelect.value;
+        let visible = 0;
+
+        rows.forEach((row) => {
+          if (!(row instanceof HTMLTableRowElement)) return;
+          const matchesType = !type || row.dataset.type === type;
+          const stages = (row.dataset.stages || '').split(',').filter(Boolean);
+          const matchesStage = !stage || stages.includes(stage);
+          const matchesUsage = !usage || row.dataset.usage === usage;
+          const show = matchesType && matchesStage && matchesUsage;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+
+        count.textContent = String(visible);
+        empty.hidden = visible !== 0;
+      };
+
+      typeSelect.addEventListener('change', applyFilters);
+      stageSelect.addEventListener('change', applyFilters);
+      usageSelect.addEventListener('change', applyFilters);
+      reset.addEventListener('click', (event) => {
+        event.preventDefault();
+        typeSelect.value = '';
+        stageSelect.value = '';
+        usageSelect.value = '';
+        applyFilters();
+      });
+
+      applyFilters();
+    }
+
+    bindSourceFilters();
+    document.addEventListener('astro:page-load', bindSourceFilters);
+  </script>
+</Base>
