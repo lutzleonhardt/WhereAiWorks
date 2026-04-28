@@ -1,0 +1,215 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { loadTools, loadSources } from '../../lib/data';
+import { aggregateTools, type StageSlugByUcId } from '../../lib/tools-aggregate';
+
+const tools = loadTools();
+const sources = loadSources();
+const useCases = await getCollection('use_cases');
+
+// Stage-Slug pro UC einsammeln (getEntry ist async).
+const stageSlugByUcId: StageSlugByUcId = new Map();
+const stageSet = new Set<string>();
+for (const uc of useCases) {
+  const stage = await getEntry(uc.data.stage);
+  stageSlugByUcId.set(uc.id, stage.slug);
+  stageSet.add(stage.slug);
+}
+
+// Stage-Liste für Filter (nur die heute migrierten Stages, nach Atlas-Order).
+const allStages = await getCollection('stages');
+const visibleStages = allStages
+  .filter((s) => stageSet.has(s.slug))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const aggregated = aggregateTools(tools, useCases, stageSlugByUcId);
+
+// Kategorien aus den vorhandenen Tools, sortiert nach Häufigkeit.
+const categoryCounts = new Map<string, number>();
+for (const t of aggregated) {
+  categoryCounts.set(t.category, (categoryCounts.get(t.category) ?? 0) + 1);
+}
+const categories = [...categoryCounts.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([id]) => id);
+
+const categoryLabels: Record<string, string> = {
+  coding: 'Coding',
+  other: 'Other',
+  security: 'Security',
+  infra: 'Infra',
+};
+
+const totalTools = aggregated.length;
+const totalSources = sources.length;
+---
+<Base title="Where AI Works — Tools">
+  <section class="lede-wrap">
+    <div class="wrap">
+      <div class="lede">
+        <div class="eyebrow">Katalog · {totalTools} Tools</div>
+        <h1>Welches Tool taugt — und <em>wo</em>?</h1>
+        <p class="kicker">
+          Reverse-Lookup für AI-Tools im Software-Lifecycle. Kein Best-Of, sondern eine
+          ehrliche Sicht: in welcher Stage und mit welcher Eignung ein Tool empfohlen wird.
+        </p>
+        <div class="meta">
+          <span>{totalTools} Tools</span>
+          <span>{totalSources} Quellen</span>
+          <span>{visibleStages.length} von 11 Stages migriert</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-bar">
+    <div class="wrap">
+      <div class="filter-grid">
+        <div class="filter-field">
+          <label for="f-cat">Kategorie</label>
+          <select id="f-cat" data-filter="category">
+            <option value="">Alle Kategorien</option>
+            {categories.map((c) => (
+              <option value={c}>{categoryLabels[c] ?? c}</option>
+            ))}
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="f-stage">Stage</label>
+          <select id="f-stage" data-filter="stage">
+            <option value="">Alle Stages</option>
+            {visibleStages.map((s) => (
+              <option value={s.slug}>{s.data.name}</option>
+            ))}
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="f-suit">Eignung mind.</label>
+          <select id="f-suit" data-filter="suitability">
+            <option value="">Alle</option>
+            <option value="good_fit">good_fit</option>
+            <option value="conditional">good_fit + conditional</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="f-mat">Maturity</label>
+          <select id="f-mat" data-filter="maturity">
+            <option value="">Alle</option>
+            <option value="production">production</option>
+            <option value="experimental">preview</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-foot">
+        <span class="count"><b id="tools-count">{totalTools}</b> von {totalTools}</span>
+        <a href="#" class="reset" id="tools-reset">Filter zurücksetzen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <div class="wrap">
+      <table class="tools-table" aria-label="AI-Tools-Katalog">
+        <colgroup>
+          <col class="c-tool" />
+          <col class="c-stages" />
+          <col class="c-uc" />
+          <col class="c-fit" />
+          <col class="c-cav" />
+          <col class="c-mat" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" data-sort="name">
+              <span class="th-inner">Tool</span>
+            </th>
+            <th scope="col" data-sort="stages_count">
+              <span class="th-inner">Empfohlen in</span>
+            </th>
+            <th scope="col" data-sort="uc_count">
+              <span class="th-inner">Use Cases</span>
+            </th>
+            <th scope="col" data-sort="good_fit" class="sorted">
+              <span class="th-inner">Eignung <span class="sortb">1↓</span></span>
+            </th>
+            <th scope="col" data-sort="caveats">
+              <span class="th-inner">Caveats</span>
+            </th>
+            <th scope="col" data-sort="maturity">
+              <span class="th-inner">Maturity</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tools-tbody">
+          {aggregated.map((t) => {
+            const stagesAttr = t.stages.join(',');
+            const fitAttr = `${t.fit.good_fit},${t.fit.conditional},${t.fit.partial},${t.fit.immature}`;
+            return (
+              <tr
+                data-tool-id={t.id}
+                data-category={t.category}
+                data-stages={stagesAttr}
+                data-maturity={t.maturity}
+                data-fit={fitAttr}
+                data-uc-count={t.ucCount}
+                data-stages-count={t.stages.length}
+                data-good-fit={t.fit.good_fit}
+                data-conditional={t.fit.conditional}
+                data-caveats-level={t.caveatsLevel}
+                data-name={t.name}
+              >
+                <td class="tool-cell">
+                  <a href={t.url} class="tn" rel="noreferrer" target="_blank">{t.name}</a>
+                  <div class="vendor">{t.vendorHost}</div>
+                  <div class="cat">{t.categoryLabel}</div>
+                </td>
+                <td class="stages">
+                  <div class="stage-row">
+                    {t.stageBadges.map((b) => (
+                      <span class="stage-b">{b}</span>
+                    ))}
+                  </div>
+                </td>
+                <td class="num">{t.ucCount}</td>
+                <td class="fit">
+                  <div class="fit-stack">
+                    {(['good_fit', 'conditional', 'partial', 'immature'] as const).map((k) => {
+                      const n = t.fit[k];
+                      if (!n) return null;
+                      const color = { good_fit: 'green', conditional: 'amber', partial: 'orange', immature: 'red' }[k];
+                      return (
+                        <span class={`pill ${color}`}>
+                          <span class="dot"></span>
+                          <span class="n">{n}×</span> {k}
+                        </span>
+                      );
+                    })}
+                  </div>
+                </td>
+                <td>
+                  <span class={`cav lvl-${t.caveatsLevel}`} aria-label={`Caveats-Dichte: ${t.caveatsLevel} von 4`}>
+                    {[1, 2, 3, 4].map((i) => (
+                      <i class={i <= t.caveatsLevel ? 'on' : ''}></i>
+                    ))}
+                  </span>
+                </td>
+                <td><span class={`mat ${t.maturity === 'experimental' ? 'preview' : ''}`}>{t.maturityLabel}</span></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
+      <div id="tools-empty" class="tools-empty" hidden>
+        Keine Tools entsprechen den aktuellen Filterkriterien.
+      </div>
+
+      <div class="table-hint">
+        Klick = primär sortieren <span class="sep">·</span>
+        <kbd>Shift</kbd>+Klick = zusätzlicher Sort-Key
+      </div>
+    </div>
+  </section>
+</Base>

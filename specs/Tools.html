@@ -1,0 +1,886 @@
+<!-- Mockup v2: /tools für Where AI Works · später per Astro + vanilla JS dynamisch -->
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools — Where AI Works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7;
+    --bg-sunk:#F2F1EB;
+    --ink:#1F2328;
+    --ink-soft:#4A4F57;
+    --ink-mute:#7A7F87;
+    --rule:#E4E2DA;
+    --rule-strong:#CDCAC0;
+    --accent:#0F4C81;
+    --accent-soft:#E6EEF6;
+
+    --green:#2F855A;
+    --amber:#B7791F;
+    --orange:#C05621;
+    --red:#9B2C2C;
+
+    --serif:"Newsreader", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    font-size:16px;line-height:1.6;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,76,129,0.25)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible, button:focus-visible, select:focus-visible{
+    outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;
+  }
+
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-0.01em;line-height:1.2;color:var(--ink);margin:0}
+  h1{font-size:clamp(28px,3.2vw,40px)}
+  p{margin:0}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  @media (max-width:640px){ .wrap{padding:0 20px} }
+
+  /* ------- Header ------- */
+  header.site{
+    border-bottom:1px solid var(--rule);
+    background:var(--bg);
+    position:sticky;top:0;z-index:30;
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:64px;gap:20px;
+  }
+  .wordmark{
+    font-family:var(--serif);
+    font-size:20px;font-weight:500;
+    letter-spacing:-0.01em;color:var(--ink);
+    text-decoration:none;border:0;
+    display:inline-flex;align-items:center;gap:10px;
+  }
+  .wordmark .dot{
+    width:9px;height:9px;background:var(--accent);display:inline-block;border-radius:50%;
+    transform:translateY(-1px);
+  }
+  .wordmark .sub{
+    font-family:var(--mono);
+    font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.08em;
+    border-left:1px solid var(--rule-strong);
+    padding-left:10px;margin-left:4px;font-weight:400;
+  }
+  @media (max-width:560px){ .wordmark .sub{display:none} }
+
+  nav.site{display:flex;gap:4px;align-items:center}
+  nav.site a{
+    font-family:var(--sans);font-size:14px;font-weight:500;
+    color:var(--ink-soft);
+    padding:8px 14px;border:1px solid transparent;border-radius:2px;
+  }
+  nav.site a.active{
+    color:var(--ink);
+    border-color:var(--rule-strong);
+    background:var(--bg);
+  }
+  nav.site a:hover{color:var(--ink)}
+
+  /* ------- Lede ------- */
+  .lede{
+    padding:64px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .lede .eyebrow{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;margin-bottom:18px;
+  }
+  .lede h1{
+    font-size:clamp(32px,4.2vw,54px);
+    max-width:22ch;line-height:1.1;margin-bottom:18px;
+  }
+  .lede h1 em{font-style:italic;color:var(--accent)}
+  .lede p.kicker{
+    font-family:var(--serif);
+    font-size:clamp(17px,1.6vw,20px);
+    color:var(--ink-soft);
+    max-width:58ch;line-height:1.55;
+  }
+  .lede .meta{
+    margin-top:28px;
+    display:flex;gap:24px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:12px;color:var(--ink-mute);
+    letter-spacing:0.04em;
+  }
+  .lede .meta span::before{content:"— ";color:var(--rule-strong)}
+
+  /* ------- Filter bar ------- */
+  .filter-bar{
+    padding:24px 0 20px;
+    border-bottom:1px solid var(--rule);
+  }
+  .filter-grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr));
+    gap:18px 20px;
+  }
+  @media (max-width:900px){ .filter-grid{grid-template-columns:repeat(2, minmax(0,1fr))} }
+  @media (max-width:480px){ .filter-grid{grid-template-columns:1fr} }
+
+  .filter-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .filter-field label{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+  }
+  select{
+    appearance:none;-webkit-appearance:none;
+    font-family:var(--sans);font-size:14px;color:var(--ink);
+    background:var(--bg);
+    border:1px solid var(--rule-strong);
+    border-radius:2px;
+    padding:10px 32px 10px 12px;
+    min-height:42px;width:100%;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%231F2328' stroke-width='1.2' fill='none' stroke-linecap='round'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 12px center;
+    cursor:pointer;
+  }
+  select:hover{border-color:var(--ink)}
+
+  .filter-foot{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;flex-wrap:wrap;
+    margin-top:18px;
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+  }
+  .filter-foot .count b{color:var(--ink);font-weight:500}
+  .filter-foot a.reset{
+    color:var(--ink-soft);
+    border-bottom:1px solid var(--rule-strong);
+    font-family:var(--mono);font-size:11px;
+    text-transform:uppercase;letter-spacing:0.12em;
+    padding-bottom:1px;
+  }
+  .filter-foot a.reset:hover{color:var(--ink);border-bottom-color:var(--ink)}
+
+  /* ------- Suitability pill ------- */
+  .pill{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:11px;font-weight:500;
+    padding:3px 8px 3px 7px;
+    border:1px solid var(--rule-strong);
+    background:var(--bg);
+    border-radius:999px;
+    line-height:1;white-space:nowrap;
+  }
+  .pill .dot{width:7px;height:7px;border-radius:50%;display:inline-block;flex:0 0 auto}
+  .pill.green .dot{background:var(--green)}
+  .pill.amber .dot{background:var(--amber)}
+  .pill.orange .dot{background:var(--orange)}
+  .pill.red .dot{background:var(--red)}
+  .pill.green{color:var(--green);border-color:rgba(47,133,90,0.35)}
+  .pill.amber{color:var(--amber);border-color:rgba(183,121,31,0.35)}
+  .pill.orange{color:var(--orange);border-color:rgba(192,86,33,0.35)}
+  .pill.red{color:var(--red);border-color:rgba(155,44,44,0.35)}
+  .pill .n{font-family:var(--mono);font-size:11px;font-weight:500}
+
+  /* Stage badge */
+  .stage-b{
+    display:inline-flex;align-items:center;
+    font-family:var(--mono);font-size:10px;font-weight:500;
+    text-transform:uppercase;letter-spacing:0.1em;
+    color:var(--ink);
+    padding:3px 6px;
+    border:1px solid var(--rule-strong);
+    border-radius:2px;
+    background:var(--bg);
+    line-height:1;white-space:nowrap;
+  }
+
+  /* Maturity badge */
+  .mat{
+    display:inline-flex;align-items:center;
+    font-family:var(--mono);font-size:10px;
+    text-transform:uppercase;letter-spacing:0.1em;
+    color:var(--ink-soft);
+    padding:3px 7px;
+    border:1px solid var(--rule-strong);
+    border-radius:999px;
+    background:var(--bg);
+    line-height:1;white-space:nowrap;
+  }
+  .mat.preview{color:var(--amber);border-color:rgba(183,121,31,0.4)}
+
+  /* ------- Caveats bar indicator ------- */
+  /* 4 sticks, 4×8px, 2px gap. Filled count = caveats level. */
+  .cav{
+    display:inline-flex;align-items:center;gap:2px;
+    line-height:1;
+  }
+  .cav i{
+    display:block;
+    width:4px;height:8px;
+    background:var(--rule-strong);
+    border-radius:1px;
+  }
+  .cav i.on{background:var(--ink)}
+  .cav.lvl-3 i.on, .cav.lvl-4 i.on{background:var(--orange)}
+  .cav.lvl-4 i.on{background:var(--red)}
+  .cav-num{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    margin-left:6px;letter-spacing:0.04em;
+  }
+
+  /* ------- Table ------- */
+  .table-section{padding:28px 0 6px}
+  table.tools{
+    width:100%;
+    table-layout:fixed;
+    border-collapse:collapse;
+    font-family:var(--sans);
+    font-size:14px;
+  }
+  /* Column widths */
+  table.tools col.c-tool   { width:26% }
+  table.tools col.c-stages { width:14% }
+  table.tools col.c-uc     { width:8% }
+  table.tools col.c-fit    { width:22% }
+  table.tools col.c-roles  { width:8% }
+  table.tools col.c-cav    { width:10% }
+  table.tools col.c-mat    { width:12% }
+
+  table.tools thead th{
+    position:sticky;top:64px;z-index:10;
+    background:var(--bg);
+    text-align:left;
+    font-family:var(--mono);font-size:11px;font-weight:500;
+    color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+    padding:14px 12px;
+    border-bottom:1px solid var(--rule-strong);
+    cursor:pointer;
+    user-select:none;
+    vertical-align:bottom;
+  }
+  table.tools thead th:hover{color:var(--ink)}
+  table.tools thead th.sorted{color:var(--ink)}
+  table.tools thead th .th-inner{
+    display:inline-flex;align-items:center;gap:8px;
+    flex-wrap:wrap;line-height:1.3;
+  }
+
+  /* Sort badge */
+  .sortb{
+    display:inline-flex;align-items:center;gap:3px;
+    font-family:var(--mono);font-size:9px;font-weight:500;
+    color:var(--ink);
+    padding:1px 4px;
+    border:1px solid var(--ink);
+    border-radius:2px;
+    line-height:1.4;
+    background:var(--bg);
+    letter-spacing:0.05em;
+  }
+
+  table.tools tbody tr{
+    border-bottom:1px solid var(--rule);
+    transition:background .12s ease;
+  }
+  table.tools tbody tr:hover{background:var(--bg-sunk)}
+  table.tools tbody td{
+    padding:14px 12px;
+    vertical-align:top;
+    color:var(--ink);
+  }
+
+  /* Tool cell — name (Serif) · vendor (Mono mute) · category (Mono mute uppercase) */
+  td.tool-cell{min-width:0}
+  td.tool-cell .tn{
+    font-family:var(--serif);font-size:16px;font-weight:500;
+    color:var(--ink);
+    text-decoration:none;border:0;
+    line-height:1.25;
+    display:block;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  td.tool-cell .tn:hover{color:var(--accent)}
+  td.tool-cell .vendor{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    margin-top:3px;letter-spacing:0.04em;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  td.tool-cell .cat{
+    font-family:var(--mono);font-size:10px;color:var(--ink-mute);
+    margin-top:6px;letter-spacing:0.12em;
+    text-transform:uppercase;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+
+  /* Stage cell — wrap if needed */
+  td.stages{}
+  td.stages .stage-row{
+    display:flex;flex-wrap:wrap;gap:4px;
+  }
+
+  /* UC + roles — mono number */
+  td.num{
+    font-family:var(--mono);font-size:14px;
+    color:var(--ink);
+    letter-spacing:0.02em;
+  }
+
+  /* Fit cell — stacked pills */
+  td.fit .fit-stack{
+    display:flex;flex-direction:column;gap:4px;align-items:flex-start;
+  }
+
+  /* Hint below table */
+  .table-hint{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.1em;
+    padding:14px 0 8px;
+    border-top:1px dashed var(--rule);
+    margin-top:6px;
+  }
+  .table-hint kbd{
+    font-family:var(--mono);font-size:10px;
+    background:var(--bg);border:1px solid var(--rule-strong);
+    padding:1px 5px;border-radius:2px;color:var(--ink-soft);
+    text-transform:none;letter-spacing:0;
+  }
+  .table-hint .sep{margin:0 10px;color:var(--rule-strong)}
+
+  /* ------- Mobile card list ------- */
+  .cards{display:none;padding:24px 0 16px}
+  .cards .card{
+    border:1px solid var(--rule-strong);
+    background:var(--bg);
+    padding:18px 18px 16px;
+    margin-bottom:12px;
+  }
+  .cards .card:hover{border-color:var(--ink-soft)}
+  .cards .card .top{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+    margin-bottom:12px;
+  }
+  .cards .card .tn{
+    font-family:var(--serif);font-size:18px;font-weight:500;
+    color:var(--ink);text-decoration:none;border:0;line-height:1.25;
+  }
+  .cards .card .vendor{
+    font-family:var(--mono);font-size:11px;color:var(--ink-mute);
+    margin-top:3px;letter-spacing:0.04em;
+  }
+  .cards .card .cat{
+    font-family:var(--mono);font-size:10px;color:var(--ink-mute);
+    margin-top:5px;letter-spacing:0.12em;text-transform:uppercase;
+  }
+  .cards .card dl{
+    margin:0;padding:0;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:6px 14px;
+  }
+  .cards .card dt{
+    font-family:var(--mono);font-size:10px;color:var(--ink-mute);
+    text-transform:uppercase;letter-spacing:0.12em;
+    align-self:center;
+  }
+  .cards .card dd{
+    margin:0;font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+    display:flex;flex-wrap:wrap;gap:5px;align-items:center;
+  }
+
+  @media (max-width:720px){
+    .table-section{display:none}
+    .cards{display:block}
+  }
+
+  /* ------- Footer ------- */
+  footer.site{
+    border-top:1px solid var(--rule);
+    padding:40px 0 60px;
+    margin-top:60px;
+    font-family:var(--mono);font-size:12px;
+    color:var(--ink-mute);letter-spacing:0.04em;
+  }
+  footer.site .wrap{
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  }
+  footer.site a{color:var(--ink-soft);border-bottom-color:var(--rule-strong)}
+  footer.site a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a href="Where AI Works.html" class="wordmark" aria-label="Where AI Works — Startseite">
+      <span class="dot" aria-hidden="true"></span>
+      Where AI Works
+      <span class="sub">Kuratierte Referenz</span>
+    </a>
+    <nav class="site" aria-label="Hauptnavigation">
+      <a href="Where AI Works.html#atlas">Atlas</a>
+      <a href="Where AI Works.html#finder">Finder</a>
+      <a href="Tools v2.html" class="active" aria-current="page">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lede-wrap">
+  <div class="wrap">
+    <div class="lede">
+      <div class="eyebrow">Katalog · 340 Tools</div>
+      <h1>Welches Tool taugt — und <em>wo</em>?</h1>
+      <p class="kicker">Reverse-Lookup für AI-Tools im Software-Lifecycle. Kein Best-Of, sondern eine ehrliche Sicht: in welcher Stage und mit welcher Eignung ein Tool empfohlen wird.</p>
+      <div class="meta">
+        <span>340 Tools</span>
+        <span>947 Quellen</span>
+        <span>Stand: April 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="filter-bar">
+  <div class="wrap">
+    <div class="filter-grid">
+      <div class="filter-field">
+        <label for="f-cat">Kategorie</label>
+        <select id="f-cat">
+          <option>Alle Kategorien</option>
+          <option>Coding</option>
+          <option>Other</option>
+          <option>Security</option>
+          <option>Infra</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="f-stage">Stage</label>
+        <select id="f-stage">
+          <option>Alle Stages</option>
+          <option>Discovery</option>
+          <option>Development</option>
+          <option>Testing</option>
+          <option>Ops</option>
+          <option>Doku</option>
+          <option>Customer Support</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="f-suit">Suitability mind.</label>
+        <select id="f-suit">
+          <option>Alle</option>
+          <option>good_fit</option>
+          <option>conditional</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="f-mat">Maturity</label>
+        <select id="f-mat">
+          <option>Alle</option>
+          <option>production</option>
+          <option>preview</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filter-foot">
+      <span class="count"><b>12</b> von 340</span>
+      <a href="#" class="reset">Filter zurücksetzen</a>
+    </div>
+  </div>
+</section>
+
+<section class="table-section">
+  <div class="wrap">
+    <table class="tools" aria-label="AI-Tools-Katalog">
+      <colgroup>
+        <col class="c-tool">
+        <col class="c-stages">
+        <col class="c-uc">
+        <col class="c-fit">
+        <col class="c-roles">
+        <col class="c-cav">
+        <col class="c-mat">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col"><span class="th-inner">Tool</span></th>
+          <th scope="col" class="sorted"><span class="th-inner">Empfohlen in <span class="sortb">1 ↓</span></span></th>
+          <th scope="col"><span class="th-inner">Use Cases</span></th>
+          <th scope="col" class="sorted"><span class="th-inner">Eignung <span class="sortb">2 ↓</span></span></th>
+          <th scope="col"><span class="th-inner">Rollen</span></th>
+          <th scope="col"><span class="th-inner">Caveats</span></th>
+          <th scope="col"><span class="th-inner">Maturity</span></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Claude Code</a>
+            <div class="vendor">claude.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span><span class="stage-b">TEST</span><span class="stage-b">OPS</span></div></td>
+          <td class="num">8</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">6×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">2×</span> conditional</span>
+          </div></td>
+          <td class="num">4</td>
+          <td>
+            <span class="cav lvl-2" aria-label="Caveats: 2 von 4">
+              <i class="on"></i><i class="on"></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">GitHub Copilot</a>
+            <div class="vendor">github.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span><span class="stage-b">TEST</span></div></td>
+          <td class="num">7</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">4×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">3×</span> conditional</span>
+          </div></td>
+          <td class="num">4</td>
+          <td>
+            <span class="cav lvl-2" aria-label="Caveats: 2 von 4">
+              <i class="on"></i><i class="on"></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Cursor</a>
+            <div class="vendor">cursor.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span></div></td>
+          <td class="num">4</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">3×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-1" aria-label="Caveats: 1 von 4">
+              <i class="on"></i><i></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Aider</a>
+            <div class="vendor">aider.chat</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span></div></td>
+          <td class="num">2</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">2×</span> good_fit</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-1" aria-label="Caveats: 1 von 4">
+              <i class="on"></i><i></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">JetBrains AI</a>
+            <div class="vendor">jetbrains.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span><span class="stage-b">TEST</span></div></td>
+          <td class="num">5</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">3×</span> good_fit</span>
+            <span class="pill orange"><span class="dot"></span><span class="n">2×</span> partial</span>
+          </div></td>
+          <td class="num">3</td>
+          <td>
+            <span class="cav lvl-2" aria-label="Caveats: 2 von 4">
+              <i class="on"></i><i class="on"></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Continue.dev</a>
+            <div class="vendor">continue.dev</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span></div></td>
+          <td class="num">3</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">2×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-1" aria-label="Caveats: 1 von 4">
+              <i class="on"></i><i></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Sourcegraph Cody</a>
+            <div class="vendor">sourcegraph.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span></div></td>
+          <td class="num">3</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">1×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">2×</span> conditional</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-2" aria-label="Caveats: 2 von 4">
+              <i class="on"></i><i class="on"></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Tabnine</a>
+            <div class="vendor">tabnine.com</div>
+            <div class="cat">Coding</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span></div></td>
+          <td class="num">3</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span>
+            <span class="pill orange"><span class="dot"></span><span class="n">2×</span> partial</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-3" aria-label="Caveats: 3 von 4">
+              <i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Atlassian Rovo</a>
+            <div class="vendor">atlassian.com</div>
+            <div class="cat">Other</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DOC</span><span class="stage-b">OPS</span></div></td>
+          <td class="num">3</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">1×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">2×</span> conditional</span>
+          </div></td>
+          <td class="num">3</td>
+          <td>
+            <span class="cav lvl-2" aria-label="Caveats: 2 von 4">
+              <i class="on"></i><i class="on"></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Snyk AI Trust</a>
+            <div class="vendor">snyk.io</div>
+            <div class="cat">Security</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">DEV</span><span class="stage-b">OPS</span></div></td>
+          <td class="num">2</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill amber"><span class="dot"></span><span class="n">2×</span> conditional</span>
+          </div></td>
+          <td class="num">2</td>
+          <td>
+            <span class="cav lvl-3" aria-label="Caveats: 3 von 4">
+              <i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat preview">preview</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">LiteLLM</a>
+            <div class="vendor">github.com/BerriAI</div>
+            <div class="cat">Infra</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">OPS</span></div></td>
+          <td class="num">2</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill green"><span class="dot"></span><span class="n">1×</span> good_fit</span>
+            <span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span>
+          </div></td>
+          <td class="num">1</td>
+          <td>
+            <span class="cav lvl-1" aria-label="Caveats: 1 von 4">
+              <i class="on"></i><i></i><i></i><i></i>
+            </span>
+          </td>
+          <td><span class="mat">production</span></td>
+        </tr>
+
+        <tr>
+          <td class="tool-cell">
+            <a href="#" class="tn">Lakera</a>
+            <div class="vendor">lakera.ai</div>
+            <div class="cat">Security</div>
+          </td>
+          <td class="stages"><div class="stage-row"><span class="stage-b">OPS</span></div></td>
+          <td class="num">2</td>
+          <td class="fit"><div class="fit-stack">
+            <span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span>
+            <span class="pill red"><span class="dot"></span><span class="n">1×</span> immature</span>
+          </div></td>
+          <td class="num">1</td>
+          <td>
+            <span class="cav lvl-4" aria-label="Caveats: 4 von 4">
+              <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+            </span>
+          </td>
+          <td><span class="mat preview">preview</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="table-hint">
+      Klick = primär sortieren <span class="sep">·</span> <kbd>Shift</kbd>+Klick = zusätzlicher Sort-Key
+    </div>
+  </div>
+</section>
+
+<!-- Mobile cards (under 720px) -->
+<section class="cards-wrap">
+  <div class="wrap">
+    <div class="cards" aria-hidden="true">
+      <article class="card">
+        <div class="top">
+          <div>
+            <a href="#" class="tn">Claude Code</a>
+            <div class="vendor">claude.com</div>
+            <div class="cat">Coding</div>
+          </div>
+          <span class="mat">production</span>
+        </div>
+        <dl>
+          <dt>Stages</dt><dd><span class="stage-b">DEV</span><span class="stage-b">TEST</span><span class="stage-b">OPS</span></dd>
+          <dt>Use Cases</dt><dd>8</dd>
+          <dt>Eignung</dt><dd><span class="pill green"><span class="dot"></span><span class="n">6×</span> good_fit</span><span class="pill amber"><span class="dot"></span><span class="n">2×</span> conditional</span></dd>
+          <dt>Rollen</dt><dd>4</dd>
+          <dt>Caveats</dt><dd><span class="cav lvl-2"><i class="on"></i><i class="on"></i><i></i><i></i></span></dd>
+        </dl>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <div>
+            <a href="#" class="tn">GitHub Copilot</a>
+            <div class="vendor">github.com</div>
+            <div class="cat">Coding</div>
+          </div>
+          <span class="mat">production</span>
+        </div>
+        <dl>
+          <dt>Stages</dt><dd><span class="stage-b">DEV</span><span class="stage-b">TEST</span></dd>
+          <dt>Use Cases</dt><dd>7</dd>
+          <dt>Eignung</dt><dd><span class="pill green"><span class="dot"></span><span class="n">4×</span> good_fit</span><span class="pill amber"><span class="dot"></span><span class="n">3×</span> conditional</span></dd>
+          <dt>Rollen</dt><dd>4</dd>
+          <dt>Caveats</dt><dd><span class="cav lvl-2"><i class="on"></i><i class="on"></i><i></i><i></i></span></dd>
+        </dl>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <div>
+            <a href="#" class="tn">Tabnine</a>
+            <div class="vendor">tabnine.com</div>
+            <div class="cat">Coding</div>
+          </div>
+          <span class="mat">production</span>
+        </div>
+        <dl>
+          <dt>Stages</dt><dd><span class="stage-b">DEV</span></dd>
+          <dt>Use Cases</dt><dd>3</dd>
+          <dt>Eignung</dt><dd><span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span><span class="pill orange"><span class="dot"></span><span class="n">2×</span> partial</span></dd>
+          <dt>Rollen</dt><dd>2</dd>
+          <dt>Caveats</dt><dd><span class="cav lvl-3"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd>
+        </dl>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <div>
+            <a href="#" class="tn">Lakera</a>
+            <div class="vendor">lakera.ai</div>
+            <div class="cat">Security</div>
+          </div>
+          <span class="mat preview">preview</span>
+        </div>
+        <dl>
+          <dt>Stages</dt><dd><span class="stage-b">OPS</span></dd>
+          <dt>Use Cases</dt><dd>2</dd>
+          <dt>Eignung</dt><dd><span class="pill amber"><span class="dot"></span><span class="n">1×</span> conditional</span><span class="pill red"><span class="dot"></span><span class="n">1×</span> immature</span></dd>
+          <dt>Rollen</dt><dd>1</dd>
+          <dt>Caveats</dt><dd><span class="cav lvl-4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>© Where AI Works · CC-BY-SA Content</div>
+    <div><a href="#" rel="noopener">GitHub</a> · <a href="#" rel="noopener">Methodik</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
