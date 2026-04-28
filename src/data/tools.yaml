@@ -1688,3 +1688,688 @@
   category: support
   url: https://www.spitch.ai/
   maturity: production
+- id: bigpanda-io
+  name: BigPanda
+  category: other
+  url: https://www.bigpanda.io/
+  maturity: production
+- id: pagerduty-com-platform-aiops
+  name: PagerDuty AIOps
+  category: other
+  url: https://www.pagerduty.com/platform/aiops/
+  maturity: production
+- id: servicenow-com-products-it-operations-management-html
+  name: ServiceNow ITOM (Now Assist for ITOM / Event Management)
+  category: other
+  url: https://www.servicenow.com/products/it-operations-management.html
+  maturity: production
+- id: grafana-com-products-cloud-irm
+  name: Grafana Cloud IRM (ehem. Grafana OnCall + Incident)
+  category: other
+  url: https://grafana.com/products/cloud/irm/
+  maturity: production
+- id: incident-io
+  name: incident.io
+  category: other
+  url: https://incident.io/
+  maturity: production
+- id: techcommunity-microsoft-com-blog-microsoftthreatprotectionblog-cybersecurity-incident-correlation-in-the-unified-security-operations-platform-4214394
+  name: Microsoft Defender XDR + Sentinel (Unified SecOps)
+  category: other
+  url: https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/cybersecurity-incident-correlation-in-the-unified-security-operations-platform/4214394
+  maturity: production
+- id: dynatrace-com-platform-davis-ai
+  name: Dynatrace Davis AI
+  category: other
+  url: https://www.dynatrace.com/platform/davis-ai/
+  maturity: production
+- id: splunk-com-en-us-products-it-service-intelligence-html
+  name: Splunk IT Service Intelligence (ITSI)
+  category: other
+  url: https://www.splunk.com/en_us/products/it-service-intelligence.html
+  maturity: production
+- id: bmcsoftware-de-it-solutions-bmc-helix-operations-management-html
+  name: BMC Helix Operations Management
+  category: other
+  url: https://www.bmcsoftware.de/it-solutions/bmc-helix-operations-management.html
+  maturity: production
+- id: ibm-com-de-de-products-cloud-pak-for-aiops
+  name: IBM Cloud Pak for AIOps
+  category: other
+  url: https://www.ibm.com/de-de/products/cloud-pak-for-aiops
+  maturity: production
+- id: ilert-com
+  name: ilert
+  category: other
+  url: https://www.ilert.com/
+  maturity: production
+- id: coralogix-com-docs-user-guides-alerting-create-an-alert-metrics-anomaly-detection-alerts
+  name: Coralogix (Anomaly Detection + Flow Anomaly)
+  category: other
+  url: https://coralogix.com/docs/user-guides/alerting/create-an-alert/metrics/anomaly-detection-alerts/
+  maturity: production
+- id: github-com-yzhao062-pyod
+  name: PyOD (Python Outlier Detection)
+  category: other
+  url: https://github.com/yzhao062/pyod
+  maturity: production
+- id: avantra-com-de-product-avantra-enterprise-edition
+  name: Avantra Enterprise Edition
+  category: other
+  url: https://www.avantra.com/de/product/avantra-enterprise-edition
+  maturity: production
+- id: logmind-ch
+  name: Logmind
+  category: other
+  url: https://logmind.ch/
+  maturity: production
+- id: opensearch-org-platform-observability-stack
+  name: OpenSearch (Observability Stack mit ML Anomaly Detection)
+  category: other
+  url: https://opensearch.org/platform/observability-stack/
+  maturity: production
+- id: opentext-com-de-de-produkte-operations-bridge
+  name: OpenText AI Operations Management (Operations Bridge)
+  category: other
+  url: https://www.opentext.com/de-de/produkte/operations-bridge
+  maturity: production
+- id: rhinometric-com
+  name: Rhinometric
+  category: other
+  url: https://rhinometric.com/
+  maturity: production
+- id: elastic-co-observability-aiops
+  name: Elastic Machine Learning / AIOps (Observability)
+  category: other
+  url: https://www.elastic.co/observability/aiops
+  maturity: production
+- id: grafana-com-docs-grafana-cloud-machine-learning
+  name: Grafana Cloud Machine Learning (Sift, Forecasting, Outlier Detection)
+  category: other
+  url: https://grafana.com/docs/grafana-cloud/machine-learning/
+  maturity: production
+- id: ibm-com-products-instana
+  name: IBM Instana (Smart Alerts + AI-based Anomaly Detection)
+  category: other
+  url: https://www.ibm.com/products/instana
+  maturity: production
+- id: docs-splunk-com-documentation-itsi-4-21-0-si-ad
+  name: Splunk IT Service Intelligence (ITSI) + AI Toolkit
+  category: other
+  url: https://docs.splunk.com/Documentation/ITSI/4.21.0/SI/AD
+  maturity: production
+- id: netdata-cloud-features-aiml-aiops
+  name: Netdata
+  category: other
+  url: https://www.netdata.cloud/features/aiml/aiops/
+  maturity: production
+- id: trunk-io-flaky-tests
+  name: Trunk Flaky Tests
+  category: testing
+  url: https://trunk.io/flaky-tests
+  maturity: production
+- id: developer-harness-io-docs-platform-harness-ai-ci-agent
+  name: Harness AI (CI Agent / AutoFix Agent)
+  category: other
+  url: https://developer.harness.io/docs/platform/harness-ai/ci-agent
+  maturity: production
+- id: plugins-jenkins-io-explain-error
+  name: Jenkins Explain Error Plugin
+  category: coding
+  url: https://plugins.jenkins.io/explain-error/
+  maturity: experimental
+- id: holmesgpt-dev
+  name: HolmesGPT
+  category: other
+  url: https://holmesgpt.dev
+  maturity: production
+- id: k8sgpt-ai
+  name: K8sGPT
+  category: other
+  url: https://k8sgpt.ai
+  maturity: production
+- id: robusta-dev
+  name: Robusta
+  category: other
+  url: https://robusta.dev
+  maturity: production
+- id: headlamp-dev-blog-2026-03-27-holmesgpt-headlamp
+  name: Headlamp + HolmesGPT Integration
+  category: other
+  url: https://headlamp.dev/blog/2026/03/27/holmesgpt-headlamp/
+  maturity: production
+- id: github-com-alexei-led-k8s-mcp-server
+  name: k8s-mcp-server (alexei-led)
+  category: other
+  url: https://github.com/alexei-led/k8s-mcp-server
+  maturity: production
+- id: docs-botkube-io-plugins-ai-assistant
+  name: Botkube AI Assistant
+  category: other
+  url: https://docs.botkube.io/plugins/ai-assistant/
+  maturity: production
+- id: kubermatic-com-products-kubermatic-kubernetes-platform-features
+  name: Kubermatic Kubernetes Platform (KKP) mit K8sGPT-Integration
+  category: other
+  url: https://kubermatic.com/products/kubermatic-kubernetes-platform/features/
+  maturity: production
+- id: plural-sh-ai-for-platform-teams
+  name: Plural
+  category: other
+  url: https://www.plural.sh/ai-for-platform-teams
+  maturity: production
+- id: suse-com-c-kubecon-eu-2026-suse-observability-ai-agent
+  name: SUSE Observability AI Agent (Rancher Prime)
+  category: other
+  url: https://www.suse.com/c/kubecon-eu-2026-suse-observability-ai-agent
+  maturity: production
+- id: github-com-marketplace-actions-aibom-scanner
+  name: AIBOM Scanner
+  category: other
+  url: https://github.com/marketplace/actions/aibom-scanner
+  maturity: production
+- id: github-com-ark-forge-mcp-eu-ai-act
+  name: ark-forge mcp-eu-ai-act Scanner
+  category: other
+  url: https://github.com/ark-forge/mcp-eu-ai-act
+  maturity: production
+- id: github-com-trusera-ai-bom
+  name: Trusera ai-bom
+  category: other
+  url: https://github.com/Trusera/ai-bom
+  maturity: production
+- id: gosign-de-en-governance
+  name: Gosign
+  category: other
+  url: https://www.gosign.de/en/governance/
+  maturity: production
+- id: matproof-com-frameworks-eu-ai-act
+  name: Matproof
+  category: other
+  url: https://matproof.com/frameworks/eu-ai-act
+  maturity: production
+- id: trail-ml-com
+  name: trail (trail-ml)
+  category: other
+  url: https://www.trail-ml.com/
+  maturity: production
+- id: verifywise-ai-de-platform-ai-registry
+  name: VerifyWise
+  category: other
+  url: https://verifywise.ai/de/platform/ai-registry
+  maturity: production
+- id: github-com-systima-ai-aiact-docs
+  name: "@systima/aiact-docs"
+  category: other
+  url: https://github.com/systima-ai/aiact-docs
+  maturity: production
+- id: github-com-systima-ai-comply
+  name: Systima Comply
+  category: other
+  url: https://github.com/systima-ai/comply
+  maturity: production
+- id: aws-amazon-com-aws-cost-management-cost-optimization-hub
+  name: AWS Compute Optimizer + Cost Optimization Hub
+  category: other
+  url: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/
+  maturity: production
+- id: cast-ai-workload-optimization
+  name: Cast AI
+  category: other
+  url: https://cast.ai/workload-optimization/
+  maturity: production
+- id: perfectscale-io
+  name: PerfectScale
+  category: other
+  url: https://www.perfectscale.io/
+  maturity: production
+- id: prosperops-com
+  name: ProsperOps
+  category: other
+  url: https://www.prosperops.com/
+  maturity: production
+- id: apptio-com-products-cloudability
+  name: Apptio Cloudability
+  category: other
+  url: https://www.apptio.com/products/cloudability/
+  maturity: production
+- id: scaleopscloud-com
+  name: ScaleOps
+  category: other
+  url: https://scaleopscloud.com/
+  maturity: production
+- id: flexera-com-products-flexera-one-finops
+  name: Flexera One FinOps
+  category: other
+  url: https://www.flexera.com/products/flexera-one-finops
+  maturity: production
+- id: meshcloud-io
+  name: meshStack (meshcloud)
+  category: other
+  url: https://www.meshcloud.io/
+  maturity: production
+- id: usu-com-de-de-cloud-management
+  name: USU FinOps (Cloud Cost Management)
+  category: other
+  url: https://www.usu.com/de-de/cloud-management/
+  maturity: production
+- id: cloud-google-com-recommender-docs-whatis-activeassist
+  name: Google Cloud Active Assist (Recommender)
+  category: other
+  url: https://cloud.google.com/recommender/docs/whatis-activeassist
+  maturity: production
+- id: harness-io-continuous-efficiency
+  name: Harness Cloud Cost Management
+  category: other
+  url: https://harness.io/continuous-efficiency/
+  maturity: production
+- id: ibm-com-products-turbonomic
+  name: IBM Turbonomic
+  category: other
+  url: https://www.ibm.com/products/turbonomic
+  maturity: production
+- id: argo-rollouts-readthedocs-io-en-stable-features-analysis
+  name: Argo Rollouts (AnalysisTemplate / AnalysisRun)
+  category: deployment-devops
+  url: https://argo-rollouts.readthedocs.io/en/stable/features/analysis/
+  maturity: production
+- id: harness-io-products-continuous-delivery-ai-assisted-deployment-verification
+  name: Harness Continuous Verification (CV) + AI Verification & Rollback
+  category: deployment-devops
+  url: https://www.harness.io/products/continuous-delivery/ai-assisted-deployment-verification
+  maturity: production
+- id: docs-flagger-app
+  name: Flagger
+  category: deployment-devops
+  url: https://docs.flagger.app/
+  maturity: production
+- id: codefresh-io-product-gitops
+  name: Codefresh GitOps (Octopus Deploy)
+  category: other
+  url: https://codefresh.io/product/gitops/
+  maturity: production
+- id: cloud-google-com-deploy-docs-deployment-strategies-canary
+  name: Google Cloud Deploy (Deployment Verification)
+  category: other
+  url: https://cloud.google.com/deploy/docs/deployment-strategies/canary
+  maturity: production
+- id: keptn-sh
+  name: Keptn (Lifecycle Toolkit)
+  category: other
+  url: https://keptn.sh/
+  maturity: production
+- id: github-com-argoproj-labs-rollouts-plugin-metric-ai
+  name: rollouts-plugin-metric-ai (argoproj-labs)
+  category: other
+  url: https://github.com/argoproj-labs/rollouts-plugin-metric-ai
+  maturity: production
+- id: docs-aws-amazon-com-codedeploy-latest-userguide-deployments-rollback-and-redeploy-html
+  name: AWS CodeDeploy + CloudWatch Alarms (Auto-Rollback)
+  category: deployment-devops
+  url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-rollback-and-redeploy.html
+  maturity: production
+- id: docs-docker-com-ai-gordon
+  name: Docker Gordon (docker ai)
+  category: coding
+  url: https://docs.docker.com/ai/gordon/
+  maturity: production
+- id: help-aikido-dev-autofix-and-remediation-scope-ai-autofix-for-containers
+  name: Aikido AI AutoFix for Containers
+  category: security
+  url: https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-containers
+  maturity: production
+- id: checkov-io
+  name: Checkov
+  category: coding
+  url: https://www.checkov.io/
+  maturity: production
+- id: kics-io
+  name: KICS
+  category: coding
+  url: https://kics.io/
+  maturity: production
+- id: mondoo-com
+  name: Mondoo (cnspec)
+  category: other
+  url: https://mondoo.com/
+  maturity: production
+- id: wiz-io
+  name: Wiz Code
+  category: other
+  url: https://www.wiz.io/
+  maturity: production
+- id: cleric-io
+  name: Cleric
+  category: other
+  url: https://cleric.io/
+  maturity: production
+- id: pagerduty-com-platform-ai-agents-sre
+  name: PagerDuty SRE Agent
+  category: other
+  url: https://www.pagerduty.com/platform/ai-agents/sre/
+  maturity: production
+- id: incidentfox-ai
+  name: IncidentFox
+  category: other
+  url: https://www.incidentfox.ai/
+  maturity: production
+- id: bmcsoftware-de-it-solutions-observability-aiops-ai-event-correlation-root-cause-analysis-html
+  name: BMC Helix AIOps
+  category: other
+  url: https://www.bmcsoftware.de/it-solutions/observability-aiops/ai-event-correlation-root-cause-analysis.html
+  maturity: production
+- id: marketplace-microsoft-com-en-us-product-saas-hyground-hyground-saas2
+  name: Hyground
+  category: other
+  url: https://marketplace.microsoft.com/en-us/product/saas/hyground.hyground_saas2
+  maturity: production
+- id: logicmonitor-com-de-edwin-ai
+  name: LogicMonitor Edwin AI
+  category: other
+  url: https://logicmonitor.com/de/edwin-ai
+  maturity: production
+- id: causely-ai
+  name: Causely
+  category: other
+  url: https://www.causely.ai/
+  maturity: production
+- id: harness-io-products-ai-sre
+  name: Harness AI SRE (RCA Change Agent + Scribe Agent)
+  category: other
+  url: https://www.harness.io/products/ai-sre
+  maturity: production
+- id: newrelic-com-platform-sre-agent
+  name: New Relic SRE Agent
+  category: other
+  url: https://newrelic.com/platform/sre-agent
+  maturity: production
+- id: pulumi-io-neo
+  name: Pulumi Neo
+  category: other
+  url: https://pulumi.io/neo
+  maturity: production
+- id: docs-kubermatic-com-developer-platform-setup-ai-agent
+  name: Kubermatic Developer Platform AI Agent
+  category: other
+  url: https://docs.kubermatic.com/developer-platform/setup/ai-agent/
+  maturity: production
+- id: mogenius-com
+  name: mogenius
+  category: other
+  url: https://mogenius.com/
+  maturity: production
+- id: github-com-amarkdotdev-patchpulse
+  name: PatchPulse
+  category: other
+  url: https://github.com/amarkdotdev/patchpulse
+  maturity: production
+- id: github-com-jordigilh-kubernaut
+  name: Kubernaut
+  category: other
+  url: https://github.com/jordigilh/kubernaut
+  maturity: production
+- id: pagerduty-com-platform-automation-actions
+  name: PagerDuty Automation Actions / AIOps
+  category: other
+  url: https://www.pagerduty.com/platform/automation/actions/
+  maturity: production
+- id: docs-edgedelta-com-aiops
+  name: Edge Delta AI Team (PagerDuty Incident Response)
+  category: other
+  url: https://docs.edgedelta.com/aiops/
+  maturity: production
+- id: purko-io
+  name: Purko
+  category: other
+  url: https://purko.io/
+  maturity: production
+- id: rootly-com
+  name: Rootly AI
+  category: other
+  url: https://rootly.com/
+  maturity: production
+- id: akmatori-com
+  name: Akmatori
+  category: other
+  url: https://akmatori.com/
+  maturity: production
+- id: klarsicht-dev
+  name: Klarsicht
+  category: other
+  url: https://klarsicht.dev/
+  maturity: production
+- id: duplocloud-com-blog-ai-devops-engineers
+  name: DuploCloud Kubernetes Agent
+  category: other
+  url: https://duplocloud.com/blog/ai-devops-engineers/
+  maturity: production
+- id: github-com-brngg-herald
+  name: HERALD
+  category: other
+  url: https://github.com/brngg/herald
+  maturity: production
+- id: opsmx-com-ai-kubernetes-remediation-agent
+  name: OpsMx Kubernetes Remediation Agent
+  category: other
+  url: https://opsmx.com/ai-kubernetes-remediation-agent
+  maturity: production
+- id: skyflo-ai
+  name: Skyflo
+  category: other
+  url: https://skyflo.ai/
+  maturity: production
+- id: elastic-co-docs-solutions-observability-ai-observability-ai-assistant
+  name: Elastic AI Assistant for Observability
+  category: observability
+  url: https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant
+  maturity: production
+- id: grafana-com-docs-grafana-cloud-machine-learning-assistant-get-started
+  name: Grafana Assistant + AI Observability
+  category: observability
+  url: https://grafana.com/docs/grafana-cloud/machine-learning/assistant/get-started
+  maturity: production
+- id: basebox-ai
+  name: basebox
+  category: other
+  url: https://basebox.ai/
+  maturity: production
+- id: hoop-dev
+  name: hoop.dev
+  category: other
+  url: https://hoop.dev/
+  maturity: production
+- id: coralogix-com-docs-user-guides-olly
+  name: Coralogix Olly
+  category: observability
+  url: https://coralogix.com/docs/user-guides/olly/
+  maturity: production
+- id: dynatrace-com-news-press-release-dynatrace-introduces-new-ai-powered-log-analytics-capabilities
+  name: Dynatrace Davis AI / Dynatrace Assist
+  category: observability
+  url: https://www.dynatrace.com/news/press-release/dynatrace-introduces-new-ai-powered-log-analytics-capabilities/
+  maturity: production
+- id: logz-io-platform
+  name: Logz.io AI Agent (Observability IQ)
+  category: observability
+  url: https://logz.io/platform
+  maturity: production
+- id: plugins-jenkins-io-ai-agent
+  name: Jenkins AI Agent Plugin
+  category: coding
+  url: https://plugins.jenkins.io/ai-agent/
+  maturity: production
+- id: github-com-rhysd-actionlint
+  name: actionlint + zizmor (Pipeline-Validator-Gate)
+  category: other
+  url: https://github.com/rhysd/actionlint
+  maturity: production
+- id: circleci-com-ai-llm
+  name: CircleCI Chunk + AI Pipeline Editor
+  category: other
+  url: https://circleci.com/ai-llm/
+  maturity: beta
+- id: runatlantis-io
+  name: Atlantis
+  category: other
+  url: https://www.runatlantis.io/
+  maturity: production
+- id: conftest-dev
+  name: Conftest
+  category: other
+  url: https://www.conftest.dev/
+  maturity: production
+- id: developer-hashicorp-com-sentinel
+  name: HashiCorp Sentinel
+  category: other
+  url: https://developer.hashicorp.com/sentinel
+  maturity: production
+- id: kyverno-io
+  name: Kyverno
+  category: other
+  url: https://kyverno.io/
+  maturity: production
+- id: open-policy-agent-github-io-gatekeeper
+  name: OPA Gatekeeper
+  category: other
+  url: https://open-policy-agent.github.io/gatekeeper/
+  maturity: production
+- id: openpolicyagent-org
+  name: Open Policy Agent (OPA)
+  category: other
+  url: https://www.openpolicyagent.org/
+  maturity: production
+- id: spacelift-io
+  name: Spacelift
+  category: other
+  url: https://spacelift.io/
+  maturity: production
+- id: trivy-dev
+  name: Trivy (inkl. tfsec-Engine)
+  category: other
+  url: https://trivy.dev/
+  maturity: production
+- id: cloudgeni-ai
+  name: Cloudgeni
+  category: other
+  url: https://cloudgeni.ai/
+  maturity: production
+- id: kubescape-io
+  name: Kubescape
+  category: other
+  url: https://kubescape.io/
+  maturity: production
+- id: scalr-com
+  name: Scalr
+  category: other
+  url: https://scalr.com/
+  maturity: production
+- id: snyk-io-product-infrastructure-as-code-security
+  name: Snyk IaC
+  category: other
+  url: https://snyk.io/product/infrastructure-as-code-security/
+  maturity: production
+- id: tryterracotta-com
+  name: Terracotta AI
+  category: other
+  url: https://tryterracotta.com/
+  maturity: production
+- id: kubestack-com-catalog-opa-gatekeeper
+  name: Kubestack (OPA Gatekeeper Terraform Module)
+  category: other
+  url: https://kubestack.com/catalog/opa-gatekeeper
+  maturity: production
+- id: developer-harness-io-docs-platform-governance-policy-as-code-harness-governance-overview
+  name: Harness Policy as Code
+  category: other
+  url: https://developer.harness.io/docs/platform/governance/policy-as-code/harness-governance-overview
+  maturity: production
+- id: styra-com-styra-das
+  name: Styra DAS
+  category: other
+  url: https://www.styra.com/styra-das/
+  maturity: production
+- id: incident-io-post-mortems
+  name: incident.io AI Post-mortems
+  category: other
+  url: https://incident.io/post-mortems
+  maturity: production
+- id: docs-resolve-ai-incident-channels
+  name: Resolve AI — Postmortem Draft from Incident Channel
+  category: other
+  url: https://docs.resolve.ai/incident-channels
+  maturity: production
+- id: servicenow-com-ai-use-cases-generate-post-incident-reviews-html
+  name: ServiceNow Now Assist — Generate Post-Incident Reviews
+  category: other
+  url: https://www.servicenow.com/ai/use-cases/generate-post-incident-reviews.html
+  maturity: production
+- id: ilert-com-product-ilert-ai
+  name: ilert AI (Postmortem Generation)
+  category: other
+  url: https://ilert.com/product/ilert-ai
+  maturity: production
+- id: engammo-com
+  name: Engammo
+  category: productivity
+  url: https://engammo.com/
+  maturity: production
+- id: gitrank-dev-features-ai-changelog-generator
+  name: GitRank AI Changelog Generator
+  category: productivity
+  url: https://gitrank.dev/features/ai-changelog-generator
+  maturity: production
+- id: launchnotes-com
+  name: LaunchNotes (Draft with AI)
+  category: productivity
+  url: https://launchnotes.com/
+  maturity: production
+- id: github-com-googleapis-release-please
+  name: release-please
+  category: coding
+  url: https://github.com/googleapis/release-please
+  maturity: production
+- id: releaseray-com
+  name: ReleaseRay
+  category: other
+  url: https://www.releaseray.com/
+  maturity: production
+- id: git-cliff-org
+  name: git-cliff
+  category: coding
+  url: https://git-cliff.org/
+  maturity: production
+- id: pagerduty-com-platform-generative-ai
+  name: PagerDuty Advance / SRE Agent (AI-Generated Runbooks)
+  category: other
+  url: https://www.pagerduty.com/platform/generative-ai/
+  maturity: production
+- id: rootly-com-sre-rootlys-ai-runbooks-faster-incident-response-for-sres
+  name: Rootly AI Runbooks
+  category: other
+  url: https://rootly.com/sre/rootlys-ai-runbooks-faster-incident-response-for-sres
+  maturity: production
+- id: docs-aws-amazon-com-systems-manager-latest-userguide-systems-manager-automation-html
+  name: AWS Systems Manager Automation + Bedrock (Runbooks)
+  category: other
+  url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html
+  maturity: production
+- id: cutover-com-ai-enabled-runbooks
+  name: Cutover
+  category: other
+  url: https://www.cutover.com/ai-enabled-runbooks
+  maturity: production
+- id: ilert-com-de-produkt-ilert-ai
+  name: ilert AI SRE
+  category: other
+  url: https://www.ilert.com/de/produkt/ilert-ai
+  maturity: production
+- id: github-com-arvo-ai-aurora
+  name: Aurora (Arvo AI)
+  category: other
+  url: https://github.com/Arvo-AI/aurora
+  maturity: production
+- id: github-com-swapnildahiphale-opensre
+  name: OpenSRE (swapnildahiphale)
+  category: other
+  url: https://github.com/swapnildahiphale/OpenSRE
+  maturity: production

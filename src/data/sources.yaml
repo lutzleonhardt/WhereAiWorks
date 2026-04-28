@@ -3786,3 +3786,1903 @@
   label: "Braunschweiger Zeitung / ots (Oktober 2025): Spitch stellt Sprachmodul für AGB-Zustimmung bei Volksbanken vor — Conversational-AI-Plattform produktiv u.a. bei Volksbank Mittelhessen, Hannoversche Volksbank, VR Bank Rhein-Neckar Mannheim."
   url: https://www.braunschweiger-zeitung.de/wirtschaft/Presseportal/article410185937/spitch-mit-neuem-sprachmodul-fuer-volksbanken-zustimmung-zu-agb-aenderungen-telefonisch-einholen.html
   type: press
+- id: docs-bigpanda-io-en-correlation-best-practices-html
+  label: BigPanda korreliert in <100ms und reduziert Monitoring-Lärm um 90-99%
+  url: https://docs.bigpanda.io/en/correlation-best-practices.html
+  type: vendor_doc
+- id: bigpanda-io-press-release-bigpanda-report-finds-many-monitoring-and-observability-tools-flood-enterprises-with-noise-not-insight
+  label: Empirie aus 130 Enterprise-Kunden zur tatsächlichen Noise Reduction
+  url: https://bigpanda.io/press-release/bigpanda-report-finds-many-monitoring-and-observability-tools-flood-enterprises-with-noise-not-insight
+  type: vendor_doc
+- id: trustradius-com-reviews-bigpanda-2021-10-14-12-58-49
+  label: "Praxis-Review: BigPanda als zentrale Konsole für Alert-Correlation in Multi-Tool-Umgebungen"
+  url: https://www.trustradius.com/reviews/bigpanda-2021-10-14-12-58-49
+  type: review
+- id: docs-bigpanda-io-docs-bigpanda-in-the-eu
+  label: Dediziertes EU-Hosting in Frankfurt mit getrennten Daten- und API-Pfaden
+  url: https://docs.bigpanda.io/docs/bigpanda-in-the-eu
+  type: vendor_doc
+- id: reddit-com-r-sre-comments-1pk7go7-pagerduty-for-sre-how-real-people-work-with-it
+  label: "r/sre-Konsens: Vorfilter-Logik gehört in die Observability-Schicht, also Datadog/Splunk"
+  url: https://www.reddit.com/r/sre/comments/1pk7go7/pagerduty_for_sre_how_real_people_work_with_it/
+  type: community
+- id: newrelic-com-blog-observability-alert-correlation
+  label: New Relic beschreibt Alert-Correlation als Produktfeature für Noise Reduction und MTTR
+  url: https://newrelic.com/blog/observability/alert-correlation
+  type: blog
+- id: newrelic-com-blog-ai-best-aiops-tools
+  label: New Relic AI mit Applied Intelligence für Alert-Correlation und Noise Reduction
+  url: https://newrelic.com/blog/ai/best-aiops-tools
+  type: blog
+- id: pagerduty-com-resources-aiops-learn-aiops-use-cases-incident-resolution
+  label: PagerDuty AIOps reduziert Alert-Lärm um bis zu 91% durch intelligente Gruppierung
+  url: https://www.pagerduty.com/resources/aiops/learn/aiops-use-cases-incident-resolution/
+  type: vendor_doc
+- id: pagerduty-com-ops-guides-using-pd-dataops-team
+  label: Dokumentierte Case Study mit 37% Incident-Reduktion durch Intelligent Grouping
+  url: https://www.pagerduty.com/ops-guides/using-pd/dataops-team/
+  type: vendor_doc
+- id: docs-pagerduty-com-docs-intelligent-alert-grouping
+  label: Intelligent Alert Grouping nutzt ML, lernt aus Antwortmustern
+  url: https://docs.pagerduty.com/docs/intelligent-alert-grouping
+  type: documentation
+- id: snowgeeksolutions-com-post-agentic-ai-servicenow-itom-the-fastest-way-to-automate-incident-response-and-cut-mttr-by-60-202
+  label: Now Assist for ITOM mit Predictive Intelligence und Event-Correlation, integriert Dynatrace/Splunk/LogicMonitor
+  url: https://www.snowgeeksolutions.com/post/agentic-ai-servicenow-itom-the-fastest-way-to-automate-incident-response-and-cut-mttr-by-60-202
+  type: blog
+- id: servicenow-com-community-itom-blog-making-servicenow-srm-work-with-a-single-event-integration-a-ba-p-3288253
+  label: ServiceNow Community-Blog zur Praxis Dynatrace→ITOM-Eventmanagement-Integration
+  url: https://www.servicenow.com/community/itom-blog/making-servicenow-srm-work-with-a-single-event-integration-a/ba-p/3288253
+  type: community
+- id: servicenow-com-community-itom-articles-quick-start-guide-for-itom-aiops-event-management-ta-p-3406132
+  label: ITOM Event Management mit Alert-Korrelation und Now Assist-GenAI-Schicht dokumentiert
+  url: https://www.servicenow.com/community/itom-articles/quick-start-guide-for-itom-aiops-event-management/ta-p/3406132
+  type: vendor_doc
+- id: servicenow-com-community-developer-forum-integration-scenario-help-td-p-3357549
+  label: "Community-Forum: Konkretes Architektur-Pattern für Dynatrace+ITOM-Korrelation und Jira-Sync"
+  url: https://www.servicenow.com/community/developer-forum/integration-scenario-help/td-p/3357549
+  type: community
+- id: grafana-com-docs-oncall-latest-integrations
+  label: Grafana OnCall Grouping über Templates, OSS jetzt im Cloud-IRM aufgegangen
+  url: https://grafana.com/docs/oncall/latest/integrations/
+  type: documentation
+- id: grafana-com-docs-oncall-latest
+  label: OSS Grafana OnCall archiviert, Migration zu Cloud IRM
+  url: https://grafana.com/docs/oncall/latest/
+  type: vendor_doc
+- id: incident-io-blog-ai-root-cause-analysis-accuracy-testing-guide
+  label: AI SRE zieht Alerts, Telemetrie, Code-Changes, Past Incidents heran und korreliert mit Deploy-Historie
+  url: https://incident.io/blog/ai-root-cause-analysis-accuracy-testing-guide
+  type: vendor_doc
+- id: incident-io-blog-incident-io-vs-firehydrant-slack-native-incident-management-2025
+  label: Slack-native Architektur mit Auto-Channel-Erstellung bei Datadog/New Relic Alerts
+  url: https://incident.io/blog/incident-io-vs-firehydrant-slack-native-incident-management-2025
+  type: vendor_doc
+- id: news-ycombinator-com-item-id-39605713
+  label: HN-Diskussion zu incident.io On-Call mit Pricing-Kritik
+  url: https://news.ycombinator.com/item?id=39605713
+  type: community
+- id: techcommunity-microsoft-com-blog-microsoftthreatprotectionblog-cybersecurity-incident-correlation-in-the-unified-security-operations-platform-4214394
+  label: Geo-distributed graphbasierte Korrelations-Engine in Defender XDR + Sentinel
+  url: https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/cybersecurity-incident-correlation-in-the-unified-security-operations-platform/4214394
+  type: vendor_doc
+- id: dynatrace-com-docs-semantic-dictionary-model-davis
+  label: Davis korreliert Events mit identischer Root-Cause zu einem Problem, verhindert Alert-Spam
+  url: https://www.dynatrace.com/docs/semantic-dictionary/model/davis
+  type: vendor_doc
+- id: dynatrace-com-docs-analyze-explore-automate-alerting-and-notifications
+  label: Davis gruppiert Davis-Events in Problem Notifications mit Dependency-Kontext
+  url: https://www.dynatrace.com/docs/analyze-explore-automate/alerting-and-notifications
+  type: vendor_doc
+- id: gartner-com-reviews-market-observability-platforms-vendor-dynatrace
+  label: "Gartner Peer Insights: 1626 verifizierte Reviews, 4.6/5; Davis als Stärke für RCA und MTTR-Reduktion genannt; auch Kritik an Over-Alerting durch Davis"
+  url: https://www.gartner.com/reviews/market/observability-platforms/vendor/dynatrace
+  type: review
+- id: completeera-com-dynatrace-review-2026-the-ultimate-ai-powered-observability-platform
+  label: "Unabhaengiger Praxis-Bericht: Davis korreliert alle Events mit derselben Root Cause zu einem Problem, reduziert On-Call-Pager-Storm signifikant"
+  url: https://completeera.com/dynatrace-review-2026-the-ultimate-ai-powered-observability-platform/
+  type: review
+- id: splunk-com-en-us-solutions-alert-noise-reduction-html
+  label: Splunk ITSI reduziert Alert-Lärm um >90% durch Korrelation und Gruppierung
+  url: https://www.splunk.com/en_us/solutions/alert-noise-reduction.html
+  type: vendor_doc
+- id: help-splunk-com-en-splunk-it-service-intelligence-splunk-it-service-intelligence-detect-and-act-on-notable-events-4-20-event-aggregation-group-related-alerts-with-itsi
+  label: ITSI Aggregation Policies als fundamentale Einheit für Event-Grouping
+  url: https://help.splunk.com/en/splunk-it-service-intelligence/splunk-it-service-intelligence/detect-and-act-on-notable-events/4.20/event-aggregation/group-related-alerts-with-itsi
+  type: documentation
+- id: lantern-splunk-com-observability-uce-guided-insights-reduce-noise-managing-the-lifecycle-of-an-alert-3a-from-detection-to-remediation-configuring-itsi-correlation-searches-for-monitoring-episodes
+  label: Splunk Lantern Anleitung zeigt Komplexität der NEAP-Konfiguration
+  url: https://lantern.splunk.com/Observability/UCE/Guided_Insights/Reduce_Noise/Managing_the_lifecycle_of_an_alert%3A_from_detection_to_remediation/Configuring_ITSI_correlation_searches_for_monitoring_episodes
+  type: documentation
+- id: gartner-com-reviews-market-aiops-platforms-vendor-cisco-systems-splunk-product-splunk-it-service-intelligence
+  label: "Gartner Peer Insights: ITSI 4.5/5 mit positiven Reviews zu Service-zentrischen Views, KPI-Tracking und Anomalie-Erkennung; Initial-Setup als Hauptkritikpunkt"
+  url: https://www.gartner.com/reviews/market/aiops-platforms/vendor/cisco-systems-splunk/product/splunk-it-service-intelligence
+  type: review
+- id: trustradius-com-reviews-splunk-it-service-intelligence-itsi-2023-05-02-09-08-55
+  label: "TrustRadius-Praxis-Review: ITSI reduzierte Alarm-Volumen ans NOC um Faktor 100, Anomalie-Detection vermeidet manuelles Threshold-Tuning"
+  url: https://www.trustradius.com/reviews/splunk-it-service-intelligence-itsi-2023-05-02-09-08-55
+  type: review
+- id: community-splunk-com-t5-splunk-itsi-itsi-notable-event-aggregation-policy-not-working-as-intended-td-p-753787
+  label: "Splunk Community: Praxis-Diskussion zu NEAP-Konfigurations-Fallstricken (Status-Felder, Episode-Severity)"
+  url: https://community.splunk.com/t5/Splunk-ITSI/ITSI-Notable-event-Aggregation-policy-not-working-as-intended/td-p/753787
+  type: community
+- id: bmcsoftware-de-it-solutions-bmc-helix-operations-management-html
+  label: BMC Helix korreliert Alerts cross-tool zu actionable Incidents
+  url: https://www.bmcsoftware.de/it-solutions/bmc-helix-operations-management.html
+  type: vendor_doc
+- id: peerspot-com-products-bmc-helix-operations-management-with-aiops-reviews
+  label: "PeerSpot 9.0/10 Average; #2 in Event Monitoring, #6/8 in AIOps, 55-59% Large-Enterprise-Anteil; Praxis-Reviews zu Event-Korrelation und MTTR-Reduktion"
+  url: https://www.peerspot.com/products/bmc-helix-operations-management-with-aiops-reviews
+  type: review
+- id: gcom-pdo-aws-gartner-com-reviews-product-bmc-helix-observability-and-aiops
+  label: "Gartner Peer Insights: 4.5/5 mit 96 Ratings; Staerken bei Service Mapping/AI-Capabilities, Schwaechen bei Integration und RBAC"
+  url: https://gcom.pdo.aws.gartner.com/reviews/product/bmc-helix-observability-and-aiops
+  type: review
+- id: peerspot-com-products-bmc-helix-operations-management-with-aiops-pros-and-cons
+  label: "PeerSpot Pros/Cons-Synthese: Predictive Analytics als Highlight, Lizenz-/Pricing-Kritik (insb. APAC), ITSM-Reife als Voraussetzung"
+  url: https://www.peerspot.com/products/bmc-helix-operations-management-with-aiops-pros-and-cons
+  type: review
+- id: ibm-com-docs-en-ssjgdob-4-10-0-pdf-ibm-cloud-pak-aiops-4-8-0-pt1-pdf
+  label: GDPR-Readiness und Security-/Privacy-by-Design in Produktdokumentation
+  url: https://www.ibm.com/docs/en/SSJGDOB_4.10.0/pdf/IBM_Cloud_Pak_AIOps_4.8.0_pt1.pdf
+  type: documentation
+- id: trustradius-com-products-ibm-cloud-pak-for-aiops-reviews
+  label: "TrustRadius: 8.0/10 ueber 14 Reviews; Staerken bei Multi-Source-Datenintegration, Schwaechen bei Lernkurve und Implementierungs-Aufwand"
+  url: https://www.trustradius.com/products/ibm-cloud-pak-for-aiops/reviews
+  type: review
+- id: aws-amazon-com-marketplace-reviews-reviews-list-prodview-76hbdfotvuxwo
+  label: "AWS Marketplace mit 62 G2-Reviews: Praxisstimmen zu Watson-AIOps-Heritage; wiederkehrende Kritik an Pricing und Implementierungs-Komplexitaet"
+  url: https://aws.amazon.com/marketplace/reviews/reviews-list/prodview-76hbdfotvuxwo
+  type: review
+- id: us-fitgap-com-products-010399-ibm-cloud-pak-for-aiops
+  label: "Unabhaengige Analyse: OpenShift-Voraussetzung, signifikante TCO und Skill-Anforderungen vs. SaaS-AIOps; Investment nur fuer Grossunternehmen mit komplexen Anforderungen sinnvoll"
+  url: https://us.fitgap.com/products/010399/ibm-cloud-pak-for-aiops
+  type: review
+- id: ilert-com-legal-faq
+  label: ilert HQ Koeln, ISO-27001-AWS-Frankfurt/Dublin, DSGVO-konform
+  url: https://ilert.com/legal/faq
+  type: vendor_doc
+- id: ilert-com-blog-cut-alert-noise-with-ai-powered-grouping-for-msps
+  label: ilert AI nutzt Vector-Embeddings fuer semantisches Alert-Grouping
+  url: https://www.ilert.com/blog/cut-alert-noise-with-ai-powered-grouping-for-msps
+  type: vendor_doc
+- id: peerspot-com-products-ilert-ai-reviews
+  label: "PeerSpot: ilert AI in IT Alerting #26 mit nur 1.0% Mindshare; bislang keine verifizierten Praxis-Reviews gesammelt - schwache unabhaengige Evidenzbasis"
+  url: https://www.peerspot.com/products/ilert-ai-reviews
+  type: review
+- id: omr-com-de-reviews-product-ilert
+  label: "OMR Reviews DACH-Listing fuer ilert: 0 Bewertungen, keine ausgefuellten Datenschutz-/Setup-Felder - Hinweis auf geringe Marktsichtbarkeit im DACH-Reviewing"
+  url: https://omr.com/de/reviews/product/ilert
+  type: review
+- id: docs-datadoghq-com-watchdog
+  label: Watchdog berechnet automatisch Baseline und erkennt Anomalien ohne manuelle Konfiguration über Anomaly-, Forecast- und…
+  url: https://docs.datadoghq.com/watchdog/
+  type: vendor_doc
+- id: datadoghq-com-blog-early-anomaly-detection-datadog-aiops
+  label: Datadog dokumentiert explizit Cold-Start-Problematik und Mindestanforderung von 5 Datenpunkten im Alert-Window.
+  url: https://www.datadoghq.com/blog/early-anomaly-detection-datadog-aiops/
+  type: blog
+- id: github-com-datadog-documentation-pull-14698
+  label: Datadog selbst dokumentiert per PR, dass Watchdog 2 Wochen Baseline-Daten braucht — bestätigt das Cold-Start-Caveat aus…
+  url: https://github.com/DataDog/documentation/pull/14698
+  type: documentation
+- id: reddit-com-r-devops-comments-1r6nkzy-anyone-actually-audit-their-datadog-bill-or-do
+  label: Reddit-Faden zeigt Datadog-Kostenproblematik und Praxis-Tuning (40 % verwaiste Custom-Metrics, Log-Filter senken Bill u…
+  url: https://www.reddit.com/r/devops/comments/1r6nkzy/anyone_actually_audit_their_datadog_bill_or_do/
+  type: community
+- id: medium-com-40garakh-ai-enhanced-monitoring-and-observability-mastering-datadog-watchdog-ai-dynatrace-davis-ai-new-b55700b1263b
+  label: "Praktiker-Bericht über Watchdog: 60 % weniger Pager-Floods nach Threshold-Tuning, aber initial 'wie ein tollpatschiger…"
+  url: https://medium.com/%40garakh/ai-enhanced-monitoring-and-observability-mastering-datadog-watchdog-ai-dynatrace-davis-ai-new-b55700b1263b
+  type: blog
+- id: docs-dynatrace-com-docs-platform-davis-ai-anomaly-detection-automated-multidimensional-baselining
+  label: Dynatrace berechnet automatisch multi-dimensionale Baselines (Geo/Browser/User-Action) und evaluiert in 5- und 15-Minut…
+  url: https://docs.dynatrace.com/docs/platform/davis-ai/anomaly-detection/automated-multidimensional-baselining
+  type: vendor_doc
+- id: dynatrace-com-hub-detail-davis-anomaly-detection
+  label: Davis Anomaly Detection unterstützt statische, auto-adaptive und seasonal Baselines auf beliebigen DQL-Time-Series — ad…
+  url: https://www.dynatrace.com/hub/detail/davis-anomaly-detection/
+  type: vendor_doc
+- id: reddit-com-r-devops-comments-n1w8db-which-aiops-tool-is-the-best-fit-for-each-context
+  label: r/devops-User heben Dynatrace explizit als einzige Plattform mit kausaler AI hervor — qualitativ über reine Correlation…
+  url: https://www.reddit.com/r/devops/comments/n1w8db/which_aiops_tool_is_the_best_fit_for_each_context/
+  type: community
+- id: coralogix-com-docs-user-guides-alerting-create-an-alert-metrics-anomaly-detection-alerts
+  label: Metric-Anomaly-Detection mit ML-Baseline aus 7 Tagen Historie, daily 24-h-Forecast — keine statischen Schwellen nötig.
+  url: https://coralogix.com/docs/user-guides/alerting/create-an-alert/metrics/anomaly-detection-alerts/
+  type: vendor_doc
+- id: coralogix-com-docs-user-guides-monitoring-and-insights-anomaly-detection-flow-anomaly
+  label: Flow Anomaly lernt typische Log-Sequenz-Verhältnisse und erkennt fehlende/verschobene Logs in Production-Bugs.
+  url: https://coralogix.com/docs/user-guides/monitoring-and-insights/anomaly-detection/flow-anomaly/
+  type: vendor_doc
+- id: github-com-yzhao062-pyod
+  label: PyOD ist umfassende Open-Source-Library für Anomaly-Detection mit 60+ Detektoren, benchmark-backed, multi-modal.
+  url: https://github.com/yzhao062/pyod
+  type: documentation
+- id: avantra-com-platform-avantra-enterprise-edition
+  label: Avantra Enterprise Edition liefert AIOps inkl. Anomaly-Detection für SAP-Operations 24/7.
+  url: https://www.avantra.com/platform/avantra-enterprise-edition/
+  type: vendor_doc
+- id: logmind-ch
+  label: Logmind ist Schweizer AIOps-Plattform für proaktive Anomaly-Detection auf Logs und Events, im Gartner-Guide gelistet.
+  url: https://logmind.ch/
+  type: vendor_doc
+- id: opensearch-org-platform-observability-stack
+  label: OpenSearch bietet ML-basierte Anomaly-Detection und k-means direkt in PPL-Queries.
+  url: https://opensearch.org/platform/observability-stack/
+  type: vendor_doc
+- id: opentext-com-de-de-produkte-operations-bridge
+  label: OpenText Operations Bridge bietet AI-gestützte Anomaly- und Event-Korrelation auf Multi-Cloud-/On-Prem-Daten.
+  url: https://www.opentext.com/de-de/produkte/operations-bridge
+  type: vendor_doc
+- id: rhinometric-com
+  label: Rhinometric bietet on-prem Single-Tenant Anomaly-Detection mit EU-Datenresidenz und mTLS/RBAC.
+  url: https://rhinometric.com/
+  type: vendor_doc
+- id: elastic-co-observability-aiops
+  label: Elastic bewirbt 100+ preconfigured Anomaly-Jobs out-of-the-box, automatische ML auf alle Logs/Metrics, Forecasting und…
+  url: https://www.elastic.co/observability/aiops
+  type: vendor_doc
+- id: elastic-co-docs-explore-analyze-machine-learning-anomaly-detection-ml-anomaly-detection-job-types-md
+  label: "Dokumentiert die Job-Typen: single/multi-metric, population, categorization, rare, geo — breites Methoden-Spektrum."
+  url: https://www.elastic.co/docs/explore-analyze/machine-learning/anomaly-detection/ml-anomaly-detection-job-types.md
+  type: vendor_doc
+- id: elastic-co-guide-en-observability-current-inspect-log-anomalies-html
+  label: Log-Anomaly-Erkennung (Logs Anomalies-Page) mit ML-Job für ungewöhnliche Log-Raten — direkt für 'Logs ohne handgesetzte Schwellen'.
+  url: https://www.elastic.co/guide/en/observability/current/inspect-log-anomalies.html
+  type: vendor_doc
+- id: medium-com-codenx-elastic-with-machine-learning-anomaly-detection-ce268b98e965
+  label: "Unabhängiger Praktiker-Walkthrough zu Elastic ML Anomaly Detection: Setup, Job-Konfiguration, Tuning-Erfahrungen aus realen Log-Stacks."
+  url: https://medium.com/codenx/elastic-with-machine-learning-anomaly-detection-ce268b98e965
+  type: blog
+- id: grafana-com-blog-identify-anomalies-outlier-detection-forecasting-how-grafana-cloud-uses-ai-ml-to-make-observability-easier
+  label: Grafana Cloud bietet Sift (Auto-Checks Metrics/Logs/Traces), Forecasting für dynamische Alerts und Outlier-Detection für Service-Gruppen.
+  url: https://grafana.com/blog/identify-anomalies-outlier-detection-forecasting-how-grafana-cloud-uses-ai-ml-to-make-observability-easier/
+  type: blog
+- id: grafana-com-whats-new-2025-01-20-tune-ml-forecasts-with-instant-feedback
+  label: ML-Forecasts sind GA, ein-Klick-Konvertierung in adaptive Alerts ohne Forecasting-Expertise.
+  url: https://grafana.com/whats-new/2025-01-20-tune-ml-forecasts-with-instant-feedback
+  type: vendor_doc
+- id: grafana-com-docs-plugins-grafana-ml-app-latest-intro
+  label: Grafana AI bietet Anomaly-Detection und Forecasting auf historischen Daten für adaptive Alerts.
+  url: https://grafana.com/docs/plugins/grafana-ml-app/latest/intro
+  type: vendor_doc
+- id: ibm-com-blog-announcement-genal-llm-observability
+  label: Instana erlaubt Anomaly-Detection auf LLM/GenAI-Stacks via OpenTelemetry/Traceloop und nutzt 'AI-based smart alerts' zur Threshold-Detection.
+  url: https://www.ibm.com/blog/announcement/genal-llm-observability/
+  type: vendor_doc
+- id: ibm-com-products-instana
+  label: Instana bietet automatische Discovery und AI-basierte Smart Alerts inklusive Anomaly-Detection.
+  url: https://www.ibm.com/products/instana
+  type: vendor_doc
+- id: gartner-com-reviews-market-observability-platforms-vendor-ibm-product-ibm-instana-observability
+  label: "Gartner Peer Insights — Praxis-Reviews zu Instana: gute Real-Time-Erkennung, aber manuelles Instrumentieren tausender URLs nicht skalierbar; on-prem hinkt SaaS hinterher."
+  url: https://www.gartner.com/reviews/market/observability-platforms/vendor/ibm/product/ibm-instana-observability
+  type: community
+- id: peerspot-com-products-ibm-instana-observability-pros-and-cons
+  label: "PeerSpot Pros/Cons: 1-Sekunden-Auflösung und früherkennung gelobt; UI bei vielen Traces langsam, Setup für Hybrid komplex, Support kritisch."
+  url: https://www.peerspot.com/products/ibm-instana-observability-pros-and-cons
+  type: community
+- id: docs-splunk-com-documentation-itsi-4-21-0-si-ad
+  label: ITSI bietet zwei ML-Algorithmen (Trending + Entity Cohesion) für KPI-Anomalie-Erkennung, kontinuierlich lernend.
+  url: https://docs.splunk.com/Documentation/ITSI/4.21.0/SI/AD
+  type: vendor_doc
+- id: help-splunk-com-en-splunk-cloud-platform-apply-machine-learning-use-ai-toolkit-5-6-3-algorithms-and-scoring-metrics-in-mltk-algorithms-in-the-splunk-machine-learning-toolkit
+  label: Splunk MLTK/AI Toolkit dokumentiert Anomalie-Algorithmen DensityFunction, LocalOutlierFactor, MultivariateOutlierDetect…
+  url: https://help.splunk.com/en/splunk-cloud-platform/apply-machine-learning/use-ai-toolkit/5.6.3/algorithms-and-scoring-metrics-in-mltk/algorithms-in-the-splunk-machine-learning-toolkit
+  type: vendor_doc
+- id: lantern-splunk-com-observability-product-tips-it-service-intelligence-adopting-itsi-capabilities-strategically
+  label: "Splunk Lantern warnt: ITSI Anomaly-Detection-Feature wurde mit ITSI 4.20.0 deprecated und wird in zukünftiger Version entfernt — kritischer Roadmap-Risikohinweis."
+  url: https://lantern.splunk.com/Observability/Product_Tips/IT_Service_Intelligence/Adopting_ITSI_capabilities_strategically
+  type: vendor_doc
+- id: community-splunk-com-t5-splunk-itsi-splunk-ai-in-itsi-cannot-find-correct-thresholds-or-weekday-m-p-708891
+  label: "Splunk Community: Praktiker-Bericht zeigt Splunk AI-Thresholding versagt bei klaren Wochentag-Mustern selbst nach 30 Tagen Backfill — generiert 4-Stunden-Buckets statt Weekday-Policies."
+  url: https://community.splunk.com/t5/Splunk-ITSI/Splunk-AI-in-ITSI-cannot-find-correct-thresholds-or-weekday/m-p/708891
+  type: community
+- id: ibm-com-de-de-products-cloud-pak-for-aiops
+  label: Cloud Pak for AIOps bietet Anomaly-Detection mit on-prem-/Cloud-/Hybrid-Deployment.
+  url: https://www.ibm.com/de-de/products/cloud-pak-for-aiops
+  type: vendor_doc
+- id: peerspot-com-products-comparisons-ibm-cloud-pak-for-aiops-vs-sedai
+  label: "PeerSpot AIOps-Vergleich: Cloud Pak for AIOps Mindshare 0,7-0,9 % vs. Dynatrace 13,6 % — niedrige unabhängige Marktdurchdringung; positive Notes zu Automation und Integration."
+  url: https://www.peerspot.com/products/comparisons/ibm-cloud-pak-for-aiops_vs_sedai
+  type: community
+- id: netdata-cloud-features-aiml-aiops
+  label: Netdata bietet Real-Time-ML-Anomaly-Detection mit Daten-Souveränität und SOC 2 Type 2.
+  url: https://www.netdata.cloud/features/aiml/aiops/
+  type: vendor_doc
+- id: github-com-netdata-netdata-pull-11548
+  label: "GitHub PR #11548 dokumentiert die Anomaly-Detection-MVP-Implementierung im Netdata-Agent (k-means, Feature-Extraction, ML-Flag)."
+  url: https://github.com/netdata/netdata/pull/11548
+  type: documentation
+- id: news-ycombinator-com-item-id-31509685
+  label: Hacker News-Eintrag zu Netdatas unsupervised Anomaly-Detection — geringe Diskussionstiefe (2 Punkte), aber öffentliche Sichtbarkeit unabhängig vom Vendor.
+  url: https://news.ycombinator.com/item?id=31509685
+  type: community
+- id: docs-github-com-en-actions-how-tos-monitoring-and-troubleshooting-workflows-troubleshooting-workflows-using-copilot-to-troubleshoot-workflows
+  label: Copilot 'Explain error' nativ in GitHub Actions
+  url: https://docs.github.com/en/actions/how-tos/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/using-copilot-to-troubleshoot-workflows
+  type: documentation
+- id: quintelier-dev-posts-2025-08-ai-triage-github-actions-with-copilot
+  label: "Praktiker-Workflow: Logs einsammeln, GitHub Models zur RCA, Issue + Coding-Agent"
+  url: https://quintelier.dev/posts/2025/08/ai-triage-github-actions-with-copilot/
+  type: blog
+- id: github-com-github-gh-aw-issues-20404
+  label: Selbst die offizielle gh-aw Auto-Triage-Workflow scheitert regelmäßig - Reife-Indikator
+  url: https://github.com/github/gh-aw/issues/20404
+  type: community
+- id: reddit-com-r-githubcopilot-comments-1rpdq6c-spawn-time-of-subagents-json
+  label: Performance-Probleme bei Multi-Agent-Workflows in Copilot
+  url: https://www.reddit.com/r/GithubCopilot/comments/1rpdq6c/spawn_time_of_subagents.json
+  type: community
+- id: datadoghq-com-blog-bits-ai-test-optimization
+  label: Bits AI Dev Agent generiert verifizierte PR-Fixes für Flaky Tests
+  url: https://www.datadoghq.com/blog/bits-ai-test-optimization/
+  type: vendor_doc
+- id: trunk-io-flaky-tests
+  label: AI-basierte Failure-Gruppierung & Quarantäne
+  url: https://trunk.io/flaky-tests
+  type: vendor_doc
+- id: trunk-io-blog-what-we-learned-from-analyzing-20-2-million-cijobs-in-trunk-flaky-tests-part-1
+  label: Skalenbasis und Validität des Ansatzes
+  url: https://trunk.io/blog/what-we-learned-from-analyzing-20-2-million-cijobs-in-trunk-flaky-tests-part-1
+  type: blog
+- id: reddit-com-r-devops-comments-1p8ca8j-aipowered-github-action-that-autosuggests-fixes
+  label: DevOps-Community diskutiert breite Bandbreite an AI-CI-Tools, Flake-Detection separat von Build-RCA gewertet
+  url: https://www.reddit.com/r/devops/comments/1p8ca8j/aipowered_github_action_that_autosuggests_fixes/
+  type: community
+- id: developer-harness-io-docs-chaos-engineering-on-premise-vs-saas
+  label: Harness AI ist laut Vendor-Vergleichstabelle NICHT in Self-Managed verfügbar
+  url: https://developer.harness.io/docs/chaos-engineering/on-premise-vs-saas
+  type: vendor_doc
+- id: developer-harness-io-docs-platform-harness-ai-ci-agent
+  label: Funktionale Stärke des CI Agent
+  url: https://developer.harness.io/docs/platform/harness-ai/ci-agent
+  type: vendor_doc
+- id: jetbrains-com-help-teamcity-ai-assistant-html
+  label: TeamCity AI Assistant für Build-Troubleshooting
+  url: https://www.jetbrains.com/help/teamcity/ai-assistant.html
+  type: vendor_doc
+- id: github-com-jenkinsci-explain-error-plugin
+  label: "Plugin-Features: explainError-Step, Pipeline-ready, Ollama-Support für On-Prem"
+  url: https://github.com/jenkinsci/explain-error-plugin
+  type: vendor_doc
+- id: github-com-jenkinsci-explain-error-plugin-pull-118
+  label: "Aktive Wartung: PR vom März 2026 mit Konsolen-Diagnostics"
+  url: https://github.com/jenkinsci/explain-error-plugin/pull/118
+  type: vendor_doc
+- id: docs-gitlab-com-administration-gitlab-duo-gateway
+  label: Standard-AI-Gateway ist explizit KEINE Datenresidenzlösung
+  url: https://docs.gitlab.com/administration/gitlab_duo/gateway/
+  type: vendor_doc
+- id: about-gitlab-com-blog-gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy
+  label: Self-Hosted-Variante mit air-gapped vLLM existiert für regulierte Industrien
+  url: https://about.gitlab.com/blog/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/
+  type: vendor_doc
+- id: augmentcode-com-tools-gitlab-duo-ai-code-review
+  label: Unabhängiger 3-Monats-Praxistest von Duo Root Cause Analysis über mehrere Failure-Szenarien (Bundler, Docker-Cache, npm-Peer-Deps) - kein quantitatives Accuracy-Datenmaterial seitens GitLab
+  url: https://www.augmentcode.com/tools/gitlab-duo-ai-code-review
+  type: blog
+- id: medium-com-kapilkumar080-using-gitlab-duo-in-real-engineering-teams-044b2af8e003
+  label: "Praktiker-Erfahrungsbericht aus realem Engineering-Team: Token-Kosten, Auto-MR-Endlosloops, chat_rules.md als Sicherheitsnetz - klare Empfehlung Pair-Programming-Modus statt autonomem Agent"
+  url: https://medium.com/@kapilkumar080/using-gitlab-duo-in-real-engineering-teams-044b2af8e003
+  type: blog
+- id: cncf-io-blog-2026-01-07-holmesgpt-agentic-troubleshooting-built-for-the-cloud-native-era
+  label: CNCF-Sandbox-Aufnahme Okt 2025, agentic ReAct-Loop, MCP-Integration.
+  url: https://www.cncf.io/blog/2026/01/07/holmesgpt-agentic-troubleshooting-built-for-the-cloud-native-era/
+  type: blog
+- id: kuncoro-io-blog-holmesgpt-wiki
+  label: Direkter Vergleich K8sGPT vs HolmesGPT, Sicherheits-/RBAC-Eigenschaften.
+  url: https://kuncoro.io/blog/holmesgpt-wiki
+  type: blog
+- id: cncf-io-blog-2026-04-21-auto-diagnosing-kubernetes-alerts-with-holmesgpt-and-cncf-tools
+  label: Praxis-Bericht mit konkreten Metriken aus Produktivbetrieb.
+  url: https://www.cncf.io/blog/2026/04/21/auto-diagnosing-kubernetes-alerts-with-holmesgpt-and-cncf-tools/
+  type: blog
+- id: cncf-io-projects-k8sgpt
+  label: CNCF-Sandbox-Status mit aktuellen Health-Metriken.
+  url: https://www.cncf.io/projects/k8sgpt/
+  type: vendor_doc
+- id: pkg-go-dev-github-com-k8sgpt-ai-k8sgpt
+  label: MCP-Server seit v0.4.14, 12 Tools für Claude/ChatGPT-Clients.
+  url: https://pkg.go.dev/github.com/k8sgpt-ai/k8sgpt
+  type: documentation
+- id: kubermatic-com-blog-troubleshooting-with-ai-how-k8sgpt-makes-debugging-kubernetes-clusters-easier
+  label: DACH-Vendor-Bestätigung mit explizitem Local-LLM-Hinweis für DE-Markt.
+  url: https://www.kubermatic.com/blog/troubleshooting-with-ai-how-k8sgpt-makes-debugging-kubernetes-clusters-easier/
+  type: blog
+- id: libhunt-com-compare-holmesgpt-vs-k8sgpt
+  label: User-Diskussion und Erwähnungen aus mehreren Threads.
+  url: https://www.libhunt.com/compare-holmesgpt-vs-k8sgpt
+  type: community
+- id: softwareplaza-com-it-magazine-robusta-holmesgpt-for-ai-driven-incident-investigation-in-the-cloud
+  label: Vendor-Interview zu Robusta + HolmesGPT, Integrations-Coverage.
+  url: https://www.softwareplaza.com/it-magazine/robusta:-holmesgpt-for-ai-driven-incident-investigation-in-the-cloud
+  type: review
+- id: docs-robusta-dev-master-configuration-holmesgpt-getting-started-html
+  label: Konkrete Helm-Konfiguration für HolmesGPT-Integration.
+  url: https://docs.robusta.dev/master/configuration/holmesgpt/getting-started.html
+  type: documentation
+- id: headlamp-dev-blog-2026-03-27-holmesgpt-headlamp
+  label: Offizielle Ankündigung der HolmesGPT-in-Headlamp-Integration.
+  url: https://headlamp.dev/blog/2026/03/27/holmesgpt-headlamp/
+  type: blog
+- id: github-com-alexei-led-k8s-mcp-server
+  label: MCP-Server für kubectl/Helm/istioctl/ArgoCD, aktive Releases.
+  url: https://github.com/alexei-led/k8s-mcp-server
+  type: vendor_doc
+- id: reddit-com-user-alexei-led-submitted-feedviewtype-cardview-sort-top-t-year
+  label: Maintainer-Posts in r/kubernetes mit Release-Hinweisen, mäßiges Engagement.
+  url: https://www.reddit.com/user/alexei_led/submitted/?feedViewType=cardView&sort=top&t=year
+  type: community
+- id: github-com-googlecloudplatform-kubectl-ai-blob-main-docs-mcp-server-md
+  label: MCP-Server-Modus mit external-tools Aggregation und streamable-http Transport.
+  url: https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/docs/mcp-server.md
+  type: documentation
+- id: github-com-googlecloudplatform-kubectl-ai-issues-285
+  label: Praxis-Issue zum MCP-Server-Mode, mehrere Maintainer und User involviert.
+  url: https://github.com/GoogleCloudPlatform/kubectl-ai/issues/285
+  type: community
+- id: docs-botkube-io-plugins-ai-assistant
+  label: AI Assistant mit Cluster-Scan via Kubescape und kubectl.
+  url: https://docs.botkube.io/plugins/ai-assistant/
+  type: documentation
+- id: kubermatic-com-products-kubermatic-kubernetes-platform-features
+  label: K8sGPT als Default-Application und im Web-Terminal in KKP 2.29.
+  url: https://kubermatic.com/products/kubermatic-kubernetes-platform/features/
+  type: vendor_doc
+- id: kubermatic-com-blog-kubermatic-is-officially-kubernetes-ai-conformant
+  label: Kubernetes-AI-Conformant-Zertifizierung; explizite Sovereignty-Positionierung für EU.
+  url: https://www.kubermatic.com/blog/kubermatic-is-officially-kubernetes-ai-conformant/
+  type: vendor_doc
+- id: plural-sh-ai-for-platform-teams
+  label: BYO-LLM, egress-only Agent-Deployment, Cluster-Daten verbleiben im Kunden-Environment.
+  url: https://www.plural.sh/ai-for-platform-teams
+  type: vendor_doc
+- id: suse-com-c-kubecon-eu-2026-suse-observability-ai-agent
+  label: AI-Agent in Rancher Prime v2.14, on-prem verfügbar, MCP-Anbindung.
+  url: https://www.suse.com/c/kubecon-eu-2026-suse-observability-ai-agent
+  type: vendor_doc
+- id: github-com-marketplace-actions-aibom-scanner
+  label: Framework-Coverage und CI/CD-Workflow
+  url: https://github.com/marketplace/actions/aibom-scanner
+  type: vendor_doc
+- id: github-com-ark-forge-mcp-eu-ai-act
+  label: MCP-Tooling, Limits und Trust-Layer-Ankopplung
+  url: https://github.com/ark-forge/mcp-eu-ai-act
+  type: vendor_doc
+- id: airblackbox-ai-blog-eu-ai-act-compliance-tools-compared
+  label: Einschätzung der MCP-Limitierung gegenüber CI/CD-nativen Tools
+  url: https://airblackbox.ai/blog/eu-ai-act-compliance-tools-compared
+  type: review
+- id: github-com-ark-forge-mcp-eu-ai-act-discussions-4
+  label: Diskussions-Thread mit GDPR-vs-AI-Act-Mapping und Tool-Demo
+  url: https://github.com/ark-forge/mcp-eu-ai-act/discussions/4
+  type: community
+- id: agentsindex-ai-compare-credo-ai-vs-holistic-ai
+  label: Python-SDK für CI/CD-Einbindung existiert
+  url: https://agentsindex.ai/compare/credo-ai-vs-holistic-ai
+  type: review
+- id: protectron-ai-compare
+  label: Branchen-Vergleich zu Preis und Time-to-Compliance
+  url: https://protectron.ai/compare
+  type: review
+- id: github-com-trusera-ai-bom
+  label: AI-Komponenten-Coverage und Policy-Gate via Cedar
+  url: https://github.com/Trusera/ai-bom
+  type: vendor_doc
+- id: gosign-de-en-governance
+  label: Art-9-14-Architektur-Mapping inklusive Audit-Trail mit Zeitstempeln
+  url: https://www.gosign.de/en/governance/
+  type: vendor_doc
+- id: matproof-com-frameworks-eu-ai-act
+  label: 98 AI-Act-Requirements als Controls, Annex-IV-Auto-Generation, Germany-Hosting
+  url: https://matproof.com/frameworks/eu-ai-act
+  type: vendor_doc
+- id: matproof-com-solutions-enterprise
+  label: Frankfurt-Hosting, BaFin-Format und EU-AI-Act-Coverage als Teil des Enterprise-Bundles
+  url: https://matproof.com/solutions/enterprise
+  type: vendor_doc
+- id: trail-ml-com-governance
+  label: ISO 27001/42001-Zertifizierung, GCP-EU-Hosting, AI-Act-Templates
+  url: https://trail-ml.com/governance
+  type: vendor_doc
+- id: trail-ml-com-de-iso-42001
+  label: ISO-42001-Lead-Auditor im Team und erster Finanzsektor-Audit in EU
+  url: https://www.trail-ml.com/de/iso-42001
+  type: vendor_doc
+- id: verifywise-ai-de-platform-ai-registry
+  label: EU-AI-Act-Risikostufen, 6 Hochrisiko-Rollentypen und Multi-Framework-Mapping
+  url: https://verifywise.ai/de/platform/ai-registry
+  type: vendor_doc
+- id: github-com-systima-ai-aiact-docs-blob-main-compliance-md
+  label: Tool generiert Annex-IV-Skelett, ersetzt aber keinen juristischen Review
+  url: https://github.com/systima-ai/aiact-docs/blob/main/COMPLIANCE.md
+  type: vendor_doc
+- id: github-com-systima-ai-aiact-docs
+  label: 9-Sektionen-Output gemäß Annex IV mit Field-Source-Tracking
+  url: https://github.com/systima-ai/aiact-docs
+  type: vendor_doc
+- id: github-com-systima-ai-comply
+  label: Funktionsumfang, Article-Coverage und CI/CD-Integration
+  url: https://github.com/systima-ai/comply
+  type: vendor_doc
+- id: systima-ai-blog-systima-comply-eu-ai-act-compliance-scanning
+  label: PR-Comment-Workflow, SARIF-Output und Integration mit aiact-docs/aiact-audit-log
+  url: https://systima.ai/blog/systima-comply-eu-ai-act-compliance-scanning
+  type: vendor_doc
+- id: github-com-sdras-awesome-actions-pull-713
+  label: Externe Listung als GitHub Action im awesome-actions Repo
+  url: https://github.com/sdras/awesome-actions/pull/713
+  type: community
+- id: aws-amazon-com-aws-cost-management-cost-optimization-hub-faqs
+  label: Cost Optimization Hub konsolidiert 18 Recommendation-Typen inkl. EC2-Rightsizing, Graviton-Migration, Idle, Reservations
+  url: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/faqs/
+  type: vendor_doc
+- id: docs-aws-amazon-com-compute-optimizer-latest-ug-automation-rec-html
+  label: Recommended Actions ermöglichen automatisierte wiederkehrende Anwendung mit Filter-Regeln
+  url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-rec.html
+  type: vendor_doc
+- id: reddit-com-r-finops-comments-1r0ly03-do-you-have-any-advice-on-cloud-cost-optimization
+  label: FinOps-Community empfiehlt AWS Compute Optimizer als Free-Tier-Startpunkt
+  url: https://www.reddit.com/r/FinOps/comments/1r0ly03/do_you_have_any_advice_on_cloud_cost_optimization/
+  type: community
+- id: cast-ai-workload-optimization
+  label: Automatisches Rightsizing mit In-Place Pod Resizing und Live Migration über alle großen Clouds
+  url: https://cast.ai/workload-optimization/
+  type: vendor_doc
+- id: cast-ai-blog-in-place-pod-resizing-with-cast-ai
+  label: Cast AI nutzt K8s 1.33 in-place resize und entscheidet automatisch über Restart vs in-place
+  url: https://cast.ai/blog/in-place-pod-resizing-with-cast-ai
+  type: vendor_doc
+- id: reddit-com-r-kubernetes-comments-1ht05vd-castai-vs-scaleops-vs-perfectscale
+  label: Praktiker bewerten Cast AI stark im Cluster-Autoscaling, kritisch im reliability-bewussten Pod-Rightsizing
+  url: https://www.reddit.com/r/kubernetes/comments/1ht05vd/castai_vs_scaleops_vs_perfectscale/
+  type: community
+- id: aws-amazon-com-marketplace-reviews-reviews-list-prodview-vtvxyzbzs3huy-review-8c7fb9f0-357b-360b-ac5b-047ca895b3bb
+  label: Produktiver Anwender bestätigt 30% Kosteneinsparung im POC, kritisiert RBAC-Granularität
+  url: https://aws.amazon.com/marketplace/reviews/reviews-list/prodview-vtvxyzbzs3huy/review/8c7fb9f0-357b-360b-ac5b-047ca895b3bb
+  type: review
+- id: learn-microsoft-com-en-us-azure-copilot-analyze-cost-management
+  label: Azure Copilot analysiert Kosten in natürlicher Sprache inkl. Modell-Cost-Simulationen
+  url: https://learn.microsoft.com/en-us/azure/copilot/analyze-cost-management
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-azure-advisor-advisor-how-to-calculate-total-cost-savings
+  label: Azure Advisor liefert Rightsizing/Shutdown- + Reservation- + SP-Empfehlungen mit forecasted Savings
+  url: https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-calculate-total-cost-savings
+  type: vendor_doc
+- id: reddit-com-r-finops-comments-1r9p62f-cloud-cost-optimization-tools-that-actually-work
+  label: "Praktiker raten: erst Azure Cost Management + Advisor verstehen, bevor 3rd-Party-Tool gekauft wird"
+  url: https://www.reddit.com/r/FinOps/comments/1r9p62f/cloud_cost_optimization_tools_that_actually_work/
+  type: community
+- id: perfectscale-io-comparison-kubecost
+  label: PerfectScale liefert Recommendations für Requests + Limits mit Throttling/OOM-Schutz
+  url: https://www.perfectscale.io/comparison/kubecost
+  type: vendor_doc
+- id: spot-io-lp-eco-savings-box
+  label: ProsperOps adaptive Laddering und Cyclical Optimization für RI/SP/CUD-Portfolio
+  url: https://spot.io/lp/eco-savings-box/
+  type: vendor_doc
+- id: reddit-com-r-finops-comments-1njp8v4-multicloud-cost-optimization-at-scale-tools-that
+  label: Cloudability handhabt Enterprise-Multi-Cloud-Skala besser als CloudHealth/Flexera, mit Rightsizing-Schwächen auf GCP
+  url: https://www.reddit.com/r/FinOps/comments/1njp8v4/multicloud_cost_optimization_at_scale_tools_that/
+  type: community
+- id: scaleopscloud-com
+  label: ScaleOps fokussiert real-time, kontextbewusstes Rightsizing inkl. GPU-Sharing
+  url: https://scaleopscloud.com/
+  type: vendor_doc
+- id: flexera-com-products-compare-flexera-vs-cloudability-apptio
+  label: Flexera One FinOps deckt FinOps-Foundation-Scopes inkl. AI/SaaS/Hybrid ab und integriert ProsperOps
+  url: https://www.flexera.com/products/compare/flexera-vs-cloudability-apptio
+  type: vendor_doc
+- id: meshcloud-io-en-integrations-stackit
+  label: meshStack integriert STACKIT als Service-Broker mit automatisierter Abrechnung und Cost-Management
+  url: https://www.meshcloud.io/en/integrations/stackit/
+  type: vendor_doc
+- id: usu-com-de-de-cloud-management
+  label: USU FinOps mit Multi-Cloud-Reporting, Rightsizing- und Reservation-Empfehlungen
+  url: https://www.usu.com/de-de/cloud-management/
+  type: vendor_doc
+- id: usu-com-en-news-usu-offers-managed-service-for-cloud-cost-optimization
+  label: USU bietet Managed Service für Cloud-Cost-Management mit dokumentierten Savings
+  url: https://www.usu.com/en/news/usu-offers-managed-service-for-cloud-cost-optimization
+  type: vendor_doc
+- id: cloud-google-com-recommender-docs-understand-cost-recs
+  label: Active Assist liefert Cost-Recommendations mit kundenspezifischem Pricing
+  url: https://cloud.google.com/recommender/docs/understand-cost-recs
+  type: vendor_doc
+- id: cloud-google-com-blog-products-management-tools-exciting-updates-on-active-assist-from-google-cloud-next22
+  label: Active Assist nutzt ML für Cost/Performance/Security inkl. Predictive Autoscaler
+  url: https://cloud.google.com/blog/products/management-tools/exciting-updates-on-active-assist-from-google-cloud-next22
+  type: vendor_doc
+- id: nops-io-blog-gcp-cost-optimization-tools-best-practices
+  label: "Unabhängiger Praktiker-Review (nOps): Active Assist gut für Quick Wins, schließt aber den Loop nicht — kein Policy-Enforcement, kein End-to-End Auto-Remediation"
+  url: https://www.nops.io/blog/gcp-cost-optimization-tools-best-practices/
+  type: review
+- id: cloudandclear-uk-gcp-active-assist-automated-cloud-optimization
+  label: "Independent Practitioner-Guide: Active Assist kostenlos und granular auf Resource-Ebene, ML-basiert, BigQuery-Export für Org-weites Dashboarding empfohlen"
+  url: https://cloudandclear.uk/gcp-active-assist-automated-cloud-optimization/
+  type: review
+- id: harness-io-continuous-efficiency
+  label: Harness CCM mit FinOps-as-Code, AutoStopping (70% Non-Prod-Savings) und AI-Empfehlungen
+  url: https://harness.io/continuous-efficiency/
+  type: vendor_doc
+- id: gartner-com-reviews-product-harness-cloud-cost-management
+  label: "Gartner Peer Insights mit gemischten Reviews: positiv bei Engineering-led Visibility, kritisch bei AutoStopping (Traffic-Detection unzuverlässig, Recommendations-Genauigkeit schwach); ein Kunde hat den Vertrag als Sunk Cost abgeschrieben"
+  url: https://www.gartner.com/reviews/product/harness-cloud-cost-management
+  type: review
+- id: ibm-com-products-turbonomic-automation
+  label: Turbonomic generiert vertikale + horizontale Scaling-Aktionen und unterstützt Auto-Apply mit Trust-Stufen
+  url: https://www.ibm.com/products/turbonomic/automation
+  type: vendor_doc
+- id: aws-amazon-com-blogs-ibm-redhat-optimize-gpu-powered-ai-workloads-on-amazon-ec2-with-ibm-turbonomic
+  label: Turbonomic optimiert GPU-EC2-Instanzen via CloudWatch-Telemetrie und API-getriebene Actions
+  url: https://aws.amazon.com/blogs/ibm-redhat/optimize-gpu-powered-ai-workloads-on-amazon-ec2-with-ibm-turbonomic/
+  type: vendor_doc
+- id: gartner-com-reviews-market-cloud-management-tooling-vendor-ibm-product-ibm-turbonomic
+  label: "Gartner Peer Insights (Jan 2026): 'Hybrid Resource Optimization Effective Despite Steep Learning Curve' — Automation funktioniert nach sauberer Konfiguration, aber initiale Setup-Komplexität und Workload-Tuning aufwändig"
+  url: https://www.gartner.com/reviews/market/cloud-management-tooling/vendor/ibm/product/ibm-turbonomic
+  type: review
+- id: trustradius-com-products-turbonomic-reviews
+  label: TrustRadius-Anwender berichtet 6-8K USD/Monat Einsparungen allein durch Park-My-Cloud-Scheduling für Dev-Umgebungen
+  url: https://www.trustradius.com/products/turbonomic/reviews
+  type: review
+- id: komodor-com-learn-kubernetes-rightsizing-at-scale-without-breaking-reliability
+  label: Komodor positioniert AI-SRE-Layer für reliability-aware Rightsizing inkl. Regressions-Detection
+  url: https://komodor.com/learn/kubernetes-rightsizing-at-scale-without-breaking-reliability/
+  type: vendor_doc
+- id: komodor-com-blog-komodor-redefines-kubernetes-cost-optimization-with-holistic-automation-based-on-performance-risk-and-right-sizing
+  label: Komodor liefert intelligentes Rightsizing + Bin-Packing mit 40-60% Zusatzersparnis ggü. Native Autoscaling
+  url: https://komodor.com/blog/komodor-redefines-kubernetes-cost-optimization-with-holistic-automation-based-on-performance-risk-and-right-sizing/
+  type: vendor_doc
+- id: reddit-com-r-kubernetes-comments-1ewsa82-komodor-just-pulled-the-ultimate-baitandswitch
+  label: "r/kubernetes Praktiker-Thread (2024): abrupte Pricing-Änderung von Freemium zu ~15K USD/Jahr, Vertrauensverlust bei kleinen Teams; größere Konzern-Kunden weniger betroffen, aber Pricing-Reife für DACH-Procurement-Bewertung relevant"
+  url: https://www.reddit.com/r/kubernetes/comments/1ewsa82/komodor_just_pulled_the_ultimate_baitandswitch/
+  type: community
+- id: toolradar-com-tools-komodor
+  label: "Independent Toolradar-Review: starkes MTTR-Reduktion und Klaudia-RCA-Genauigkeit, Cisco/Dell-Adoption als Enterprise-Validierung; SaaS-Only und Node-basiertes Pricing als Einschränkungen"
+  url: https://www.toolradar.com/tools/komodor
+  type: review
+- id: argoproj-github-io-argo-rollouts-features-analysis
+  label: AnalysisTemplate definiert Metriken, Frequenz und Erfolgs-/Failure-Kriterien fuer Canary-Verifizierung
+  url: https://argoproj.github.io/argo-rollouts/features/analysis/
+  type: documentation
+- id: medium-com-40weinshenkerdaniel-canary-deployments-with-argo-6b98f45fa914
+  label: Praxisbeispiel automatisches Rollback bei Latenz-Schwelle in Sekunden
+  url: https://medium.com/%40weinshenkerdaniel/canary-deployments-with-argo-6b98f45fa914
+  type: blog
+- id: github-com-argoproj-labs-rollouts-plugin-metric-ai
+  label: Offizielles Argo-Labs-Plugin, das einen A2A-AI-Agent als Metric-Provider in AnalysisTemplate einklinkt
+  url: https://github.com/argoproj-labs/rollouts-plugin-metric-ai
+  type: documentation
+- id: reddit-com-r-kubernetes-comments-squla7-i-made-a-video-on-what-canary-deployment-is-and
+  label: "r/kubernetes-Diskussion zu Argo Rollouts: Beobachtbarkeit ist Voraussetzung, Canaries sind nicht ueberall sinnvoll"
+  url: https://www.reddit.com/r/kubernetes/comments/squla7/i_made_a_video_on_what_canary_deployment_is_and/
+  type: community
+- id: reddit-com-r-kubernetes-comments-1p83i8a-different-env-vars-for-stable-vs-canary-pods
+  label: Praktischer Workaround-Thread zu Argo-Rollouts-Edge-Case mit Cron-Jobs in Canary-Pods
+  url: https://www.reddit.com/r/kubernetes/comments/1p83i8a/different_env_vars_for_stable_vs_canary_pods/
+  type: community
+- id: docs-datadoghq-com-watchdog-faulty-deployment-detection
+  label: Watchdog Faulty Deployment Detection vergleicht Versionen automatisch und triggert Events
+  url: https://docs.datadoghq.com/watchdog/faulty_deployment_detection
+  type: documentation
+- id: docs-datadoghq-com-monitors-types-ci-tab-deployments
+  label: CD-Deployments-Monitor erlaubt Alarme z.B. auf deployment_status:error
+  url: https://docs.datadoghq.com/monitors/types/ci/?tab=deployments
+  type: documentation
+- id: docs-datadoghq-com-bits-ai-bits-ai-sre
+  label: Bits AI SRE explizit nicht fuer ddog-gov-Sites - Hinweis auf eingeschraenktes Compliance-Set
+  url: https://docs.datadoghq.com/bits_ai/bits_ai_sre/
+  type: documentation
+- id: harness-io-products-continuous-delivery-ai-assisted-deployment-verification
+  label: AI-gestuetzte Deployment-Verifikation mit Auto-Rollback und Anbindung an gaengige APM/Log-Quellen
+  url: https://www.harness.io/products/continuous-delivery/ai-assisted-deployment-verification
+  type: vendor_doc
+- id: developer-harness-io-docs-continuous-delivery-verify-cv-concepts-machine-learning
+  label: ML-Modell mit konfigurierbarer Sensitivity fuer Metriken und Logs auf Knotenebene
+  url: https://developer.harness.io/docs/continuous-delivery/verify/cv-concepts/machine-learning/
+  type: documentation
+- id: harness-io-blog-making-deploys-safe-shouldnt-be-hard
+  label: Neuer AI Verification & Rollback Layer (2026) mit MCP-basierter Signalauswahl
+  url: https://www.harness.io/blog/making-deploys-safe-shouldnt-be-hard
+  type: blog
+- id: topify-ai-blog-harness-engineering-ai-visibility
+  label: AI-Synthesen auf Basis von Reddit/HN positionieren Harness als CD-Spezialisten mit CV als Hauptmerkmal
+  url: https://topify.ai/blog/harness-engineering-ai-visibility
+  type: review
+- id: devopsboys-com-blog-how-to-implement-canary-deployments-flagger-2026
+  label: Flagger automatisiert Traffic-Shifting und Rollback ohne menschliches Eingreifen, basierend auf Prometheus-Metriken
+  url: https://devopsboys.com/blog/how-to-implement-canary-deployments-flagger-2026
+  type: blog
+- id: devopsboys-com-blog-argo-rollouts-vs-flagger-canary-comparison-2026
+  label: Vergleich Flagger vs Argo Rollouts mit Metric-Provider-Unterstuetzung
+  url: https://devopsboys.com/blog/argo-rollouts-vs-flagger-canary-comparison-2026
+  type: review
+- id: fluxcd-io-flagger
+  label: Flagger automatisiert Canary, A/B und Blue/Green mit Metric-Provider-Anbindung an Prometheus, Datadog, New Relic, Cloud…
+  url: https://fluxcd.io/flagger/
+  type: vendor_doc
+- id: cloudcops-de-en-services-flagger-consulting
+  label: DACH-Systemintegrator mit explizitem Flagger-Beratungsangebot - Marktreife in der Region
+  url: https://cloudcops.de/en/services/flagger-consulting
+  type: vendor_doc
+- id: reddit-com-r-kubernetes-comments-1hexrx5-flux-vs-argocd
+  label: r/kubernetes-Erfahrungsbericht zu Flux + Flagger fuer Canary-Rollouts
+  url: https://www.reddit.com/r/kubernetes/comments/1hexrx5/flux_vs_argocd/
+  type: community
+- id: codefresh-io-docs-docs-promotions-promotion-workflow
+  label: Promotion Workflows orchestrieren Pre-Action-Validation, Post-Action-Performance-Tests und Rollback-Workflows
+  url: https://codefresh.io/docs/docs/promotions/promotion-workflow/
+  type: documentation
+- id: cloud-google-com-deploy-docs-deployment-strategies-canary-hl-de
+  label: Cloud Deploy unterstuetzt Canary mit Deployment Analysis und advanceRolloutRule-Automation
+  url: https://cloud.google.com/deploy/docs/deployment-strategies/canary?hl=de
+  type: documentation
+- id: github-com-keptn-lifecycle-toolkit
+  label: Keptn Lifecycle Toolkit liefert Pre/Post-Deployment-Evaluations und Health-Checks deklarativ auf Kubernetes
+  url: https://github.com/keptn/lifecycle-toolkit
+  type: documentation
+- id: thenewstack-io-leveraging-keptn-for-automated-slo-analysis
+  label: "Praxisbeispiel: Keptn evaluiert SLOs gegen Prometheus und Dynatrace via AnalysisDefinition/AnalysisValueTemplate"
+  url: https://thenewstack.io/leveraging-keptn-for-automated-slo-analysis/
+  type: blog
+- id: docs-aws-amazon-com-codedeploy-latest-userguide-monitoring-create-alarms-html
+  label: Bis zu 10 CloudWatch-Alarms triggern Stop und Auto-Rollback einer Deployment Group
+  url: https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-create-alarms.html
+  type: documentation
+- id: aws-amazon-com-blogs-containers-automate-rollbacks-for-amazon-ecs-rolling-deployments-with-cloudwatch-alarms
+  label: ECS Rolling-Updates haben native Alarm-getriebene Rollbacks ohne CodeDeploy
+  url: https://aws.amazon.com/blogs/containers/automate-rollbacks-for-amazon-ecs-rolling-deployments-with-cloudwatch-alarms/
+  type: vendor_doc
+- id: cloudwebschool-com-docs-aws-devops-and-cicd-rollbacks-in-codedeploy
+  label: Unabhaengiger Praktiker-Guide zu CodeDeploy-Rollback-Mechanik (EC2/ECS/Lambda) inkl. typischer Fallstricke und Test-Empfehlungen
+  url: https://cloudwebschool.com/docs/aws/devops-and-cicd/rollbacks-in-codedeploy/
+  type: blog
+- id: medium-com-antstack-automate-rollback-of-serverless-app-with-aws-codedeploy-and-serverless-framework-92354fcac476
+  label: "Praxisbericht: CodeDeploy + CloudWatch-Alarm fuer Lambda-Blue/Green mit automatischem Rollback bei Fehlerausschlaegen"
+  url: https://medium.com/@antstack/automate-rollback-of-serverless-app-with-aws-codedeploy-and-serverless-framework-92354fcac476
+  type: blog
+- id: humansreadcode-com-post-2020-12-30-lambda-deploy-canary
+  label: "Praxis-Walkthrough: Lambda-Canary mit SAM, CloudWatch-Alarms und Pre-Traffic-Smoke-Test - Hinweis auf Alias-vs-Version-False-Positives"
+  url: https://humansreadcode.com/post/2020-12-30-lambda-deploy-canary/
+  type: blog
+- id: stackoverflow-com-questions-63357341-codedeploy-rollback-not-picking-the-previous-successful-build-version
+  label: "Stack-Overflow-Diskussion: 'unexpected results' beim CodeDeploy-Rollback nach mehrfachen Failures - dokumentiertes Edge-Case-Verhalten"
+  url: https://stackoverflow.com/questions/63357341/codedeploy-rollback-not-picking-the-previous-successful-build-version
+  type: community
+- id: dynatrace-com-news-blog-auto-adaptive-thresholds-for-ai-driven-quality-gating
+  label: Davis AI passt Quality-Gating-Thresholds adaptiv an, statt statischer Werte
+  url: https://www.dynatrace.com/news/blog/auto-adaptive-thresholds-for-ai-driven-quality-gating/
+  type: vendor_doc
+- id: developer-harness-io-docs-continuous-delivery-verify-configure-cv-health-sources-dynatrace-dynatrace-srg
+  label: SRG laesst sich parallel zu Harness CV als doppeltes Release-Gate in eine Canary-Pipeline einbauen
+  url: https://developer.harness.io/docs/continuous-delivery/verify/configure-cv/health-sources/dynatrace/dynatrace-srg
+  type: documentation
+- id: linkedin-com-pulse-enhancing-reliability-dynatrace-site-guardian-deep-dive-durga-saran-wde4c
+  label: Deep-Dive durch Dynatrace-ACE-Consultant zu SRG-Konzepten, Workflow-Integration und Backstage-Anbindung (vendor-nah)
+  url: https://www.linkedin.com/pulse/enhancing-reliability-dynatrace-site-guardian-deep-dive-durga-saran-wde4c
+  type: blog
+- id: dev-to-myougatheaxo-docker-multi-stage-builds-with-claude-code-security-caching-and-minimal-images-36i
+  label: Praxisartikel zeigt CLAUDE.md-Pattern für Multi-Stage, Non-Root, Healthcheck.
+  url: https://dev.to/myougatheaxo/docker-multi-stage-builds-with-claude-code-security-caching-and-minimal-images-36i
+  type: blog
+- id: developertoolkit-ai-en-claude-code-lessons-containerization
+  label: Bestätigt sprach-/framework-spezifische Generierung (Node, Python, Go scratch).
+  url: https://developertoolkit.ai/en/claude-code/lessons/containerization/
+  type: blog
+- id: reddit-com-r-claudecode-comments-1r9jcmb-my-claude-code-journey-from-cursor-to-20x-max
+  label: Praktiker beschreibt langlaufende Nutzung in großem Repo, betont Wert guter CLAUDE.md-Doku.
+  url: https://www.reddit.com/r/ClaudeCode/comments/1r9jcmb/my_claude_code_journey_from_cursor_to_20x_max/
+  type: community
+- id: docs-docker-com-copilot
+  label: "Bestätigt: Auto-Generierung von Dockerfiles, Compose und .dockerignore plus Pull-Request-Erstellung."
+  url: https://docs.docker.com/copilot/
+  type: vendor_doc
+- id: docker-com-blog-preview-docker-extension-for-github-copilot
+  label: Vendor-Blog beschreibt End-to-End-Workflow von Containerisierung bis PR.
+  url: https://docker.com/blog/preview-docker-extension-for-github-copilot
+  type: blog
+- id: github-com-docker-copilot-issues
+  label: Öffentlicher Issue-Tracker zeigt aktive Nutzung und Feedbackschleifen.
+  url: https://github.com/docker/copilot-issues
+  type: community
+- id: visualstudiomagazine-com-articles-2025-01-08-top-10-github-copilot-extensions-led-by-docker-and-perplexityai-aspx
+  label: "Visual Studio Magazine: Docker-Extension ist mit ~10.000 Installationen die populärste Copilot-Erweiterung — unabhängiger Adoption-Beleg."
+  url: https://visualstudiomagazine.com/articles/2025/01/08/top-10-github-copilot-extensions-led-by-docker-and-perplexityai.aspx
+  type: review
+- id: explainx-ai-skills-github-awesome-copilot-multi-stage-dockerfile
+  label: GitHub-eigenes Awesome-Copilot Skill für Multi-Stage Dockerfiles mit konkreten Patterns.
+  url: https://explainx.ai/skills/github/awesome-copilot/multi-stage-dockerfile
+  type: documentation
+- id: reddit-com-r-devops-comments-1lhdw7d-devops-folks-are-you-using-ai-for-infra-tasks-yet
+  label: Praktiker berichten von nicht funktionierenden AI-Dockerfiles.
+  url: https://www.reddit.com/r/devops/comments/1lhdw7d/devops_folks_are_you_using_ai_for_infra_tasks_yet/
+  type: community
+- id: bestremotetools-com-best-ai-tools-for-writing-dockerfile-optimization-2026
+  label: Sekundär-Review hebt Repository-aware Multi-Stage hervor.
+  url: https://bestremotetools.com/best-ai-tools-for-writing-dockerfile-optimization-2026/
+  type: review
+- id: sourcegraph-com-cody-enterprise
+  label: Enterprise-Tier mit BYOLLM und Self-Hosted-Option.
+  url: https://sourcegraph.com/cody/enterprise
+  type: vendor_doc
+- id: docs-docker-com-ai-gordon
+  label: "Bestätigt: Gordon schreibt und modifiziert Dockerfiles und nutzt Scout für Sicherheitsanalyse."
+  url: https://docs.docker.com/ai/gordon/
+  type: vendor_doc
+- id: docker-com-blog-gordon-dockers-ai-agent-just-got-an-update
+  label: Bestätigt Multi-Stage-Generierung und Compose-Erzeugung als Kernfunktion.
+  url: https://www.docker.com/blog/gordon-dockers-ai-agent-just-got-an-update/
+  type: blog
+- id: docs-docker-com-ai-gordon-concepts-data-privacy
+  label: "Data-Privacy-Profil: Paid Tiers ohne Persistenz, 30-Tage-Thread-Retention, Org-Toggle für Business."
+  url: https://docs.docker.com/ai/gordon/concepts/data-privacy/
+  type: vendor_doc
+- id: reddit-com-r-docker-comments-1rdbf9d-dockers-gordon-ai-destroyed-mysql-after-a-question
+  label: "Praxis-Vorfall: destruktive Aktion ohne klares Bestätigungs-Gating."
+  url: https://www.reddit.com/r/docker/comments/1rdbf9d/dockers_gordon_ai_destroyed_mysql_after_a_question/
+  type: community
+- id: github-com-jetbrains-junie-issues-32
+  label: Bestätigt offenes Funktionsdefizit beim Remote-Docker-Context.
+  url: https://github.com/jetbrains/junie/issues/32
+  type: community
+- id: help-aikido-dev-autofix-and-remediation-scope-ai-autofix-for-containers
+  label: "Bestätigt: 3–5 Dockerfile-Varianten und PR-Erzeugung mit Base-Image-Updates."
+  url: https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-containers
+  type: vendor_doc
+- id: klicktrust-com-aikido-review
+  label: "Unabhängiger Praxis-Review zur Aikido-Plattform inkl. AI AutoFix: 70–80% Treffer, klare Empfehlung Senior-Review."
+  url: https://klicktrust.com/aikido-review/
+  type: review
+- id: aws-amazon-com-blogs-devops-enhancing-code-generation-with-real-time-execution-in-amazon-q-developer
+  label: Devfile + custom Docker-Image als Sandbox für Q Developer Agent — bestätigt Container-fokussierten Workflow.
+  url: https://aws.amazon.com/blogs/devops/enhancing-code-generation-with-real-time-execution-in-amazon-q-developer/
+  type: vendor_doc
+- id: dev-to-mohamed-abomosallam-52626-dev-productivity-unleashed-build-faster-with-this-amazon-q-cli-workflow-4h1m
+  label: Praktiker baut DevOps-Config-Generator (Dockerfile, K8s, Terraform) auf Amazon Q CLI inkl. Multi-Stage-Approval-Modus.
+  url: https://dev.to/mohamed_abomosallam_52626/dev-productivity-unleashed-build-faster-with-this-amazon-q-cli-workflow-4h1m
+  type: blog
+- id: github-com-google-gemini-gemini-cli-pull-15860
+  label: Realer PR mit Gemini-Code-Assist-Review zeigt Multi-Stage-Refactor eines Dockerfiles.
+  url: https://github.com/google-gemini/gemini-cli/pull/15860
+  type: documentation
+- id: medium-com-willn2-building-an-app-with-gemini-code-assist-2f99801c498a
+  label: "Unabhängiger Praxisbericht: Gemini Code Assist generiert Docker-/Deployment-Code, Qualität braucht Debugging und Steering."
+  url: https://medium.com/@willn2/building-an-app-with-gemini-code-assist-2f99801c498a
+  type: blog
+- id: aikido-dev-code-autofix
+  label: Aikido AI AutoFix erzeugt PRs für SAST-, IaC-, SCA- und Container-Issues
+  url: https://www.aikido.dev/code/autofix
+  type: vendor_doc
+- id: help-aikido-dev-aikido-autofix
+  label: IaC-AutoFixes adressieren öffentliche Ressourcen, schwache TLS, fehlende Encryption über AWS/GCP/Azure/K8s
+  url: https://help.aikido.dev/aikido-autofix
+  type: documentation
+- id: reddit-com-r-cybersecurity-comments-1owgaiu-snyk-or-checkmarx
+  label: Mehrere Praktiker empfehlen Aikido als All-in-One-Alternative zu Snyk/Checkmarx
+  url: https://www.reddit.com/r/cybersecurity/comments/1owgaiu/snyk_or_checkmarx/
+  type: community
+- id: amplify-security-blog-ai-appsec-vendors-auto-fix-code
+  label: Checkmarx wird in 2026er-Vergleichen als AI-AppSec-Auto-Fix-Vendor gelistet
+  url: https://amplify.security/blog/ai-appsec-vendors-auto-fix-code
+  type: review
+- id: appsecsanta-com-kics
+  label: KICS gehört zu Checkmarx und integriert in Checkmarx One für Enterprise-Workflows
+  url: https://appsecsanta.com/kics/
+  type: review
+- id: checkov-io
+  label: Checkov scant TF/CFN/K8s/Helm/ARM/Serverless für Misconfigs vor Deployment
+  url: https://www.checkov.io/
+  type: vendor_doc
+- id: dev-to-svasylenko-a-deep-dive-into-terraform-static-code-analysis-tools-features-and-comparisons-1kbf
+  label: Checkov hat OpenAI-Integration für Remediation-Vorschläge
+  url: https://dev.to/svasylenko/a-deep-dive-into-terraform-static-code-analysis-tools-features-and-comparisons-1kbf
+  type: blog
+- id: reddit-com-r-terraform-comments-1rpclr9-we-scanned-92-open-source-iac-repos
+  label: Praktiker nutzen Checkov-Lineage-Tools (Misconfig Index) als Baseline-Scanner
+  url: https://www.reddit.com/r/Terraform/comments/1rpclr9/we_scanned_92_open_source_iac_repos/
+  type: community
+- id: snyk-io-product-snyk-cloud
+  label: Snyk IaC scant Terraform/CFN/K8s/Helm/ARM in IDE/CLI/SCM/CI mit Inline-Fix-Suggestions
+  url: https://snyk.io/product/snyk-cloud
+  type: vendor_doc
+- id: appsecsanta-com-iac-security-tools-iac-security-for-terraform
+  label: Snyk IaC ist Developer-first mit IDE-Feedback und PR-Kommentaren
+  url: https://appsecsanta.com/iac-security-tools/iac-security-for-terraform
+  type: review
+- id: docs-snyk-io-snyk-data-and-governance-regional-hosting-and-data-residency
+  label: Snyk bietet EU-Frankfurt-Region inkl. Snyk IaC, nur in Enterprise-Plänen verfügbar
+  url: https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency
+  type: vendor_doc
+- id: snyk-io-de-policies-dpa
+  label: Snyk-DPA referenziert GDPR/UK GDPR/FADP und EU-SCCs Module Two für Restricted Transfers
+  url: https://snyk.io/de/policies/dpa/
+  type: vendor_doc
+- id: reddit-com-r-cybersecurity-comments-1r87jxi-snyk-ceo-is-out-where-is-snyk-headed
+  label: Praktiker beklagen Produktqualität und Strategie-Unsicherheit nach CEO-Abgang
+  url: https://www.reddit.com/r/cybersecurity/comments/1r87jxi/snyk_ceo_is_out_where_is_snyk_headed/
+  type: community
+- id: reddit-com-r-devops-comments-1ha2mgb-what-security-tools-do-you-like-to-use-in-your
+  label: "Mixed Tenor: Snyk wird als 'least shitty' bezeichnet, Aikido als angenehmere Alternative"
+  url: https://www.reddit.com/r/devops/comments/1ha2mgb/what_security_tools_do_you_like_to_use_in_your/
+  type: community
+- id: docs-gitlab-com-17-2-ee-user-application-security-iac-scanning-index-html
+  label: GitLab IaC Scanning nutzt KICS für TF/CFN/K8s/Ansible/Dockerfile
+  url: https://docs.gitlab.com/17.2/ee/user/application_security/iac_scanning/index.html
+  type: vendor_doc
+- id: docs-gitlab-com-user-application-security-remediate-duo
+  label: Duo Vulnerability Resolution liefert AI-Fixes bisher für SAST-Findings
+  url: https://docs.gitlab.com/user/application_security/remediate/duo/
+  type: vendor_doc
+- id: gitlab-com-gitlab-org-gitlab-issues-357004
+  label: Lücke bei Custom-Modul-Erkennung wird in GitLab-Issue diskutiert
+  url: https://gitlab.com/gitlab-org/gitlab/-/issues/357004
+  type: community
+- id: docs-kics-io-latest-kics-auto-remediation
+  label: KICS bietet Auto-Remediation für Terraform-Queries
+  url: https://docs.kics.io/latest/kics_auto_remediation/
+  type: documentation
+- id: semgrep-dev-docs-deployment-managed-scanning-gitlab
+  label: Semgrep Managed Scans liefern diff-aware PR-Comments
+  url: https://semgrep.dev/docs/deployment/managed-scanning/gitlab
+  type: vendor_doc
+- id: reddit-com-r-cybersecurity-comments-18y0qy3-do-people-use-static-code-analysis-sast-tools-tl-zh-hans
+  label: Praktiker empfehlen Semgrep als leichteren Ersatz für Checkmarx
+  url: https://www.reddit.com/r/cybersecurity/comments/18y0qy3/do_people_use_static_code_analysis_sast_tools/?tl=zh-hans
+  type: community
+- id: mondoo-com-docs-cnspec-supplychain-terraform
+  label: Mondoo cnspec scant Terraform-HCL statisch via Policy-as-Code (MQL) im Workstation-/CI-Workflow und post-apply
+  url: https://mondoo.com/docs/cnspec/supplychain/terraform
+  type: vendor_doc
+- id: mondoo-com-de-cnspec
+  label: Mondoo bietet eigene deutsche Lokalisierung und positioniert cnspec als CLI für Cloud/K8s/Terraform/GitHub
+  url: https://mondoo.com/de/cnspec
+  type: vendor_doc
+- id: wiz-io-integrations-hashicorp
+  label: Wiz integriert mit HashiCorp Terraform Cloud/Enterprise als Run Task für Pre-Apply-Scan
+  url: https://www.wiz.io/integrations/hashicorp
+  type: vendor_doc
+- id: appsecsanta-com-iac-security-tools-wiz-vs-prisma-cloud
+  label: "AppSec-Santa-Vergleich: Wiz Code bietet native IaC/Secrets-Scans im selben Security-Graph wie Wiz Cloud, während Prisma Cloud auf Checkov basiert"
+  url: https://appsecsanta.com/iac-security-tools/wiz-vs-prisma-cloud
+  type: review
+- id: peerspot-com-products-comparisons-prisma-cloud-by-palo-alto-networks-vs-wiz-code
+  label: "PeerSpot-Nutzervergleich: Wiz Code liefert Severity-Levels, Remediation-Hinweise und Visual Dashboard; Pricing höher als Prisma"
+  url: https://www.peerspot.com/products/comparisons/prisma-cloud-by-palo-alto-networks_vs_wiz-code
+  type: review
+- id: cyberalternatives-com-wiz-alternatives-vs-prisma-cloud
+  label: "CyberAlternatives 2026: Wiz fully agentless, schnellere Time-to-Value als Prisma; IaC-Scanning integriert, aber Prisma laut Bewertung 'best-in-class' via Checkov"
+  url: https://www.cyberalternatives.com/wiz-alternatives/vs-prisma-cloud
+  type: review
+- id: cleric-io
+  label: Read-only-by-default, SOC 2 Type II, lernende Memory
+  url: https://cleric.io/
+  type: vendor_doc
+- id: cleric-ai-blog-the-self-improving-ai-sre
+  label: Integrationen Slack/PagerDuty/Linear, Datadog/Prometheus/K8s/GitHub; Memory pro Org
+  url: https://cleric.ai/blog/the-self-improving-ai-sre
+  type: blog
+- id: news-ycombinator-com-item-id-45939408
+  label: HN-Thread reflektiert Markt-Skepsis und nennt Cleric/Resolve/Bits als die zu testenden Tools
+  url: https://news.ycombinator.com/item?id=45939408
+  type: community
+- id: datadoghq-com-blog-bits-ai-sre-deeper-reasoning
+  label: Investigations-Harness, MCP-Tool-Integration, ca. 3–4 Min. Investigation
+  url: https://www.datadoghq.com/blog/bits-ai-sre-deeper-reasoning/
+  type: vendor_doc
+- id: docs-datadoghq-com-bits-ai-bits-ai-sre-investigate-alerts
+  label: Auto-Trigger via Monitor, Hypothesen-Loop, Agent-Trace zur Auditierung
+  url: https://docs.datadoghq.com/bits_ai/bits_ai_sre/investigate_alerts
+  type: documentation
+- id: helpnetsecurity-com-2025-12-03-datadog-bits-ai-sre-agent
+  label: GA-Launch, Kundenstimmen Uber Freight / LiveChat zu MTTR
+  url: https://www.helpnetsecurity.com/2025/12/03/datadog-bits-ai-sre-agent/
+  type: news
+- id: pagerduty-com-blog-ai-we-built-an-sre-agent-with-memory-and-its-transforming-incident-response
+  label: Memory-Architektur, Triage/Diagnose/Remediation-Loop, vendor-agnostisch
+  url: https://www.pagerduty.com/blog/ai/we-built-an-sre-agent-with-memory-and-its-transforming-incident-response/
+  type: vendor_doc
+- id: pagerduty-com-eng-context-over-cleverness-building-pagerdutys-sre-agent
+  label: "Engineering-Architektur: deterministische Triage-Inputs, präzise Quellenangaben"
+  url: https://www.pagerduty.com/eng/context-over-cleverness-building-pagerdutys-sre-agent/
+  type: blog
+- id: support-pagerduty-com-main-docs-sre-agent
+  label: "Knowledge-Base-Doku: Likely Root Causes, Diagnostik, Past-Incident-Korrelation"
+  url: https://support.pagerduty.com/main/docs/sre-agent
+  type: documentation
+- id: docs-robusta-dev-improve-holmes-docs-configuration-holmesgpt-index-html
+  label: Slack-Trigger 'Ask Holmes', Robusta-UI 'Root Cause'-Tab, Tool-Sets für K8s/AWS/Grafana/etc.
+  url: https://docs.robusta.dev/improve_holmes_docs/configuration/holmesgpt/index.html
+  type: documentation
+- id: ibm-com-blog-probable-root-cause-accelerating-incident-remediation-with-causal-ai
+  label: Causal-AI-Feature für Probable Root Cause auf Topologie + Call-Statistiken
+  url: https://www.ibm.com/blog/probable-root-cause-accelerating-incident-remediation-with-causal-ai/
+  type: vendor_doc
+- id: github-com-incidentfox-incidentfox
+  label: OSS-AI-SRE, Slack/Teams-First, Multi-Agent, Auto-Investigation
+  url: https://github.com/incidentfox/incidentfox
+  type: documentation
+- id: news-ycombinator-com-item-id-46689078
+  label: HN-Show-Thread bestätigt OSS-Charakter und Diskurs zu Trust/Adoption
+  url: https://news.ycombinator.com/item?id=46689078
+  type: community
+- id: docs-incidentfox-ai
+  label: Enterprise-Compliance-Features inkl. Air-Gap und Audit-Logs
+  url: https://docs.incidentfox.ai/
+  type: documentation
+- id: bmcsoftware-de-it-solutions-observability-aiops-ai-event-correlation-root-cause-analysis-html
+  label: ML-Event-Korrelation und Probable-Root-Cause-Identifikation
+  url: https://www.bmcsoftware.de/it-solutions/observability-aiops/ai-event-correlation-root-cause-analysis.html
+  type: vendor_doc
+- id: marketplace-microsoft-com-en-us-product-saas-hyground-hyground-saas2
+  label: Vollständig on-prem, kein SaaS-Control-Plane, OAuth2/OIDC, lokale Verarbeitung
+  url: https://marketplace.microsoft.com/en-us/product/saas/hyground.hyground_saas2
+  type: vendor_doc
+- id: logicmonitor-com-de-edwin-ai
+  label: Agentenbasierte RCA mit Korrelation und Lösungsvorschlägen, deutsche Marktansprache
+  url: https://logicmonitor.com/de/edwin-ai
+  type: vendor_doc
+- id: opentext-com-products-ai-operations-management
+  label: GenAI-RCA und Post-Incident-Reports, SaaS/on-prem/hybrid
+  url: https://www.opentext.com/products/ai-operations-management
+  type: vendor_doc
+- id: causely-ai-blog-how-causal-ai-is-transforming-sre-reliability-in-k8s
+  label: Deterministisches Causality-Modell statt rein-generativer Korrelationen
+  url: https://www.causely.ai/blog/how-causal-ai-is-transforming-sre-reliability-in-k8s
+  type: blog
+- id: docs-causely-ai-telemetry-sources-kubernetes
+  label: Auto-Discovery K8s-Topologie + RCA für Memory/CPU/Disk/Service-Probleme
+  url: https://docs.causely.ai/telemetry-sources/kubernetes/
+  type: documentation
+- id: tfir-io-ai-sre-causal-reasoning
+  label: "Unabhängige TFiR-Analyse: Causely's Causal-Reasoning-Ansatz vs. reine LLM-Korrelation in K8s-SRE-Workflows (KubeCon 2025)"
+  url: https://tfir.io/ai-sre-causal-reasoning/
+  type: review
+- id: docs-dynatrace-com-docs-discover-dynatrace-platform-davis-ai
+  label: Deterministische Causal-AI über Topologie + Grail; korreliert Changes/Deploys mit Problemen
+  url: https://docs.dynatrace.com/docs/discover-dynatrace/platform/davis-ai
+  type: documentation
+- id: developer-harness-io-docs-ai-sre-ai-agent-rca-change-agent
+  label: "RCA Change Agent: Theorien mit Confidence-Scores, fortlaufende Re-Analyse"
+  url: https://developer.harness.io/docs/ai-sre/ai-agent/rca-change-agent
+  type: documentation
+- id: harness-io-products-ai-sre
+  label: Korrelation mit CI/CD, Feature-Flags, Infra-Changes; Blast-Radius-Surfacing
+  url: https://www.harness.io/products/ai-sre
+  type: vendor_doc
+- id: newrelic-com-platform-sre-agent
+  label: SRE-Agent mit Telemetry-Korrelation, Memory, Runbook-Execution mit HITL
+  url: https://newrelic.com/platform/sre-agent
+  type: vendor_doc
+- id: newrelic-com-solutions-aiops
+  label: Causal Reasoning unterscheidet echte Root Cause von Symptomen; Closed-Loop mit Workflows
+  url: https://www.newrelic.com/solutions/aiops
+  type: vendor_doc
+- id: docs-newrelic-com-docs-agentic-ai-sre-agent-use-sre-agent
+  label: Offizielle New-Relic-Doku weist SRE Agent explizit als Preview-Feature aus, Read-only-Default und HITL-Limitierung
+  url: https://docs.newrelic.com/docs/agentic-ai/sre-agent/use-sre-agent/
+  type: documentation
+- id: eu-docs-bigpanda-io-en-bigpanda-aiops-html
+  label: Eigene EU-Doku/Region; Change-Korrelation und GenAI-RCA
+  url: https://eu-docs.bigpanda.io/en/bigpanda-aiops.html
+  type: documentation
+- id: gartner-com-reviews-product-bigpanda-1658620356
+  label: "Gartner Peer Insights: 31 verifizierte Enterprise-Reviews, 4.4/5 — Event-Korrelation, RCA und Level-0-Automation in Fortune-1000-Setups"
+  url: https://www.gartner.com/reviews/product/bigpanda-1658620356
+  type: review
+- id: ilert-com-security
+  label: ISO 27001, EU-Hosting Frankfurt, externer DPO, DORA Compliance Package, jährliche Pentests
+  url: https://www.ilert.com/security
+  type: vendor_doc
+- id: ilert-com
+  label: AI-SRE-Agent mit Read-only/Supervised/Autonomous-Stufen und Audit-Trails
+  url: https://www.ilert.com/
+  type: vendor_doc
+- id: claudecodeguides-com-claude-code-kubernetes-yaml-generation-workflow-guide
+  label: Claude Code generiert Deployment, Service, Ingress, HPA, NetworkPolicies und kann Helm-Charts mit _helpers.tpl scaffold…
+  url: https://claudecodeguides.com/claude-code-kubernetes-yaml-generation-workflow-guide/
+  type: blog
+- id: bestremotetools-com-best-ai-tools-for-generating-kubernetes-helm-charts-2026
+  label: "Vergleichstest: Claude Sonnet 9/10, Opus 10/10 bei Helm-Genauigkeit; ChatGPT lässt HPA und _helpers.tpl aus."
+  url: https://bestremotetools.com/best-ai-tools-for-generating-kubernetes-helm-charts-2026/
+  type: review
+- id: reddit-com-r-claudecode-comments-1r5dj84-in-response-to-the-recent-security-warnings
+  label: Reddit-Thread sammelt Security-Warnings rund um Claude Code und unsicheres Scaffolding.
+  url: https://www.reddit.com/r/ClaudeCode/comments/1r5dj84/in_response_to_the_recent_security_warnings/
+  type: community
+- id: reddit-com-r-kubernetes-comments-1ka6qt3-kubectlai-an-ai-powered-kubernetes-assistant
+  label: "Reddit r/kubernetes-Thread mit Praxisbericht: nützlich für Skripte/Pipelines, Approval-Flow für Cluster-Mutationen."
+  url: https://www.reddit.com/r/kubernetes/comments/1ka6qt3/kubectlai_an_ai_powered_kubernetes_assistant/
+  type: community
+- id: learn-microsoft-com-en-us-azure-copilot-generate-kubernetes-yaml
+  label: Microsoft-Doku beschreibt YAML-Generierung für AKS via Azure Copilot mit Best-Practice-Anspruch.
+  url: https://learn.microsoft.com/en-us/azure/copilot/generate-kubernetes-yaml
+  type: vendor_doc
+- id: augmentcode-com-guides-gemini-code-assist-vs-amazon-q-cloud-native-fit-and-toolchains
+  label: Vergleichsartikel positioniert Gemini Code Assist und Amazon Q als cloud-native Code-Assistenten mit K8s-/IaC-Schwerpun…
+  url: https://augmentcode.com/guides/gemini-code-assist-vs-amazon-q-cloud-native-fit-and-toolchains
+  type: review
+- id: azure-github-io-vscode-aks-tools-features-aks-plugins-github-copilot-html
+  label: AKS-Plugins für GitHub Copilot ermöglichen Manifest-Deployment und kubectl-Generierung im Chat.
+  url: https://azure.github.io/vscode-aks-tools/features/aks-plugins-github-copilot.html
+  type: vendor_doc
+- id: reddit-com-r-youshouldknow-comments-1rsz6ov-yskresearchers-extracted-2702-hardcoded
+  label: GitGuardian-Studie zu hardgecodeten Secrets in Copilot-Output.
+  url: https://www.reddit.com/r/YouShouldKnow/comments/1rsz6ov/yskresearchers_extracted_2702_hardcoded/
+  type: community
+- id: developer-harness-io-docs-platform-harness-ai-effective-prompting-ai
+  label: Harness AI generiert K8s-Services per Prompt mit Helm-Chart-Pfad und Deployment-Strategien.
+  url: https://developer.harness.io/docs/platform/harness-ai/effective-prompting-ai
+  type: vendor_doc
+- id: pulumi-io-neo
+  label: Pulumi Neo schlägt Änderungen via PR vor und unterstützt mehrstufige Infrastruktur-Operationen.
+  url: https://pulumi.io/neo
+  type: vendor_doc
+- id: pulumi-com-blog-ai-ml-on-kubernetes-google-cloud-llm-rag
+  label: Pulumi-K8s-Provider deckt Deployment, Service, ConfigMap, HPA für GKE-Workloads ab.
+  url: https://www.pulumi.com/blog/ai-ml-on-kubernetes-google-cloud-llm-rag/
+  type: blog
+- id: kubermatic-com-blog-what-is-kdp
+  label: KDP GA Januar 2026, optionaler AI-Agent generiert Kubernetes-Resource-YAML aus natürlicher Sprache, OpenAI-API-Key erfo…
+  url: https://www.kubermatic.com/blog/what-is-kdp/
+  type: vendor_doc
+- id: docs-kubermatic-com-developer-platform-setup-ai-agent
+  label: AI-Agent wird per Helm in den Kunden-Cluster deployed, OIDC-Integration, eigener Ingress.
+  url: https://docs.kubermatic.com/developer-platform/setup/ai-agent/
+  type: vendor_doc
+- id: mogenius-com-solutions-customer-cloud-on-prem-html
+  label: Deutscher Vendor mit BSI-IT-Grundschutz-/DSGVO-Mapping, Operator open-source, Daten verlassen Cluster nicht.
+  url: https://mogenius.com/solutions/customer-cloud-on-prem.html
+  type: vendor_doc
+- id: plusserver-com-en-product-mogenius-kubernetes-manager
+  label: plusserver-Partnerschaft mit BSI-C5-Hosting, Network Policies und RBAC als Defaults.
+  url: https://www.plusserver.com/en/product/mogenius-kubernetes-manager/
+  type: vendor_doc
+- id: github-com-amarkdotdev-patchpulse
+  label: Self-hosted, BYO-LLM, 11+ Guardrails, Admission-Webhooks, AI-basierte Risikoanalyse.
+  url: https://github.com/amarkdotdev/patchpulse
+  type: vendor_doc
+- id: awslabs-github-io-mcp-servers-eks-mcp-server
+  label: EKS MCP Server liefert generate_app_manifest und apply_yaml für AI-Coding-Assistenten.
+  url: https://awslabs.github.io/mcp/servers/eks-mcp-server/
+  type: vendor_doc
+- id: repost-aws-de-articles-arn0tjjcjhq9qqiz7tqqoaxq-transform-kubernetes-manifests-using-amazon-q-developer
+  label: "AWS-Praxisartikel: Q Developer konvertiert Pod-Manifeste in Deployment/StatefulSet inkl. Best-Practice-Anpassungen."
+  url: https://repost.aws/de/articles/ARn0tJjcJHQ9qQIz7TqQOaxQ/transform-kubernetes-manifests-using-amazon-q-developer
+  type: vendor_doc
+- id: towardsaws-com-amazon-q-for-kubernetes-teams-can-genai-replace-devops-scripts-8083085d1647
+  label: "Praktiker-Bericht (APN Ambassador) zu Amazon Q für Kubernetes-Teams: kubectl-Befehle, YAML-Manifeste, Helm-Overrides — inkl. Limitierungen."
+  url: https://towardsaws.com/amazon-q-for-kubernetes-teams-can-genai-replace-devops-scripts-8083085d1647
+  type: blog
+- id: github-com-jordigilh-kubernaut
+  label: Beschreibt Approval-Gates, Confidence-Schwellen und SOC2-Audit-Trail explizit als Kernfeatures
+  url: https://github.com/jordigilh/kubernaut
+  type: vendor_doc
+- id: github-com-jordigilh-kubernaut-issues-601
+  label: Belegt RemediationApprovalRequest CRD plus Rego-Policy fuer Production-Workloads
+  url: https://github.com/jordigilh/kubernaut/issues/601
+  type: documentation
+- id: news-ycombinator-com-item-id-47578618
+  label: HN-Submission als Sichtbarkeits-Signal
+  url: https://news.ycombinator.com/item?id=47578618
+  type: community
+- id: pagerduty-com-platform-automation-actions
+  label: Slack-/App-getriggerte Action-Ausfuehrung mit Action Runner im Kunden-VPC
+  url: https://www.pagerduty.com/platform/automation/actions/
+  type: vendor_doc
+- id: devpost-com-software-chronos-ipxuq5
+  label: PagerDuty positioniert sich oeffentlich gegen volle Autonomie
+  url: https://devpost.com/software/chronos-ipxuq5
+  type: blog
+- id: docs-robusta-dev-improve-holmes-docs-playbook-reference-actions-remediation-html
+  label: Konkrete Remediation-Actions mit YAML-Konfiguration
+  url: https://docs.robusta.dev/improve_holmes_docs/playbook-reference/actions/remediation.html
+  type: vendor_doc
+- id: docs-edgedelta-com-ai-team-pagerduty-incident-response
+  label: Ask-Permission-Pattern fuer Write-Operations explizit dokumentiert
+  url: https://docs.edgedelta.com/ai-team-pagerduty-incident-response/
+  type: vendor_doc
+- id: purko-io
+  label: Stufenmodell mit explizitem Approval-Default fuer Stufe 1
+  url: https://purko.io/
+  type: vendor_doc
+- id: rootly-com-sre-rootly-automated-remediation-with-iac-kubernetes
+  label: Konkretes K8s-Rollback-Szenario via Rootly Workflow
+  url: https://rootly.com/sre/rootly-automated-remediation-with-iac-kubernetes
+  type: vendor_doc
+- id: akmatori-com
+  label: Self-hosted, no telemetry, lokale LLMs fuer air-gapped
+  url: https://akmatori.com/
+  type: vendor_doc
+- id: klarsicht-dev
+  label: On-Prem mit lokalen LLMs, FINMA/BaFin/GDPR explizit als Zielsegment
+  url: https://klarsicht.dev/
+  type: vendor_doc
+- id: duplocloud-com-blog-ai-devops-engineers
+  label: Approval-Workflow detailliert beschrieben mit konkreten Kennzahlen
+  url: https://duplocloud.com/blog/ai-devops-engineers/
+  type: vendor_doc
+- id: aws-amazon-com-marketplace-pp-prodview-uowrcsctalexi
+  label: AWS Marketplace mit 40 G2-importierten externen Reviews zu DuploCloud Plattform-Erfahrungen
+  url: https://aws.amazon.com/marketplace/pp/prodview-uowrcsctalexi
+  type: community
+- id: itcentralstation-com-products-duplocloud-reviews
+  label: Unabhaengiger PeerSpot-Eintrag mit kritischer 2.0/5-Bewertung und Vendor-Lock-in-Hinweis
+  url: http://www.itcentralstation.com/products/duplocloud-reviews
+  type: community
+- id: github-com-brngg-herald
+  label: Doppeltes Approval-Gate als architektonisches Kernprinzip
+  url: https://github.com/brngg/herald
+  type: vendor_doc
+- id: opsmx-com-ai-kubernetes-remediation-agent
+  label: Policy-Driven Approval-Workflow als Kernfeature
+  url: https://opsmx.com/ai-kubernetes-remediation-agent
+  type: vendor_doc
+- id: us-fitgap-com-products-opsmx-enterprise-for-spinnaker
+  label: Unabhaengige FitGap-Analyse zu OpsMx Enterprise for Spinnaker (Plattform-Kontext) - markiert Vendor-Roadmap-Risiko und Tooling-Integrationsaufwand
+  url: https://us.fitgap.com/products/opsmx-enterprise-for-spinnaker
+  type: community
+- id: mogenius-info
+  label: DACH-Datensouveraenitaet, Open-Source-Operator (MIT), HITL-Gates fuer Hochrisiko-Operationen
+  url: https://mogenius.info/
+  type: vendor_doc
+- id: cbinsights-com-company-mogenius-customers
+  label: Unabhaengiges CB-Insights-Profil listet REWE Digital, Schwaebisch Media und TEAM23 als verifizierbare DACH-Kunden
+  url: https://www.cbinsights.com/company/mogenius/customers
+  type: community
+- id: skyflo-ai
+  label: Approval-Gate auf Engine-Ebene erzwungen, nicht abschaltbar
+  url: https://skyflo.ai/
+  type: vendor_doc
+- id: github-com-skyflo-ai-skyflo
+  label: Self-hosted, kein Telemetry, LLM-agnostisch - 105 Stars, 20 Contributors als Community-Signal
+  url: https://github.com/skyflo-ai/skyflo
+  type: vendor_doc
+- id: datadoghq-com-blog-introducing-bits-assistant
+  label: Bits Assistant durchsucht Logs/Traces/Metrics über NL und fasst Timelines zusammen
+  url: https://www.datadoghq.com/blog/introducing-bits-assistant
+  type: vendor_doc
+- id: datadoghq-com-blog-ai-powered-log-parsing
+  label: AI-gestütztes Log-Parsing erzeugt Grok-Regeln direkt im Log Explorer
+  url: https://www.datadoghq.com/blog/ai-powered-log-parsing/
+  type: vendor_doc
+- id: reddit-com-r-sre-comments-1qitz0k-anyone-using-datadogs-bits-ai
+  label: r/sre Thread zu Praxiserfahrung mit Bits AI - Kostenproblematik dominiert
+  url: https://www.reddit.com/r/sre/comments/1qitz0k/anyone_using_datadogs_bits_ai/
+  type: community
+- id: elastic-co-docs-solutions-observability-ai-observability-ai-assistant
+  label: Elastic AI Assistant erklärt Log-Messages und generiert Suchmuster
+  url: https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant
+  type: documentation
+- id: elastic-co-observability-labs-blog-ai-driven-incident-response-with-logs
+  label: Kombination aus unsupervised ML auf Log-Streams plus RAG-Assistent zur Erklärung
+  url: https://www.elastic.co/observability-labs/blog/ai-driven-incident-response-with-logs
+  type: blog
+- id: reddit-com-r-splunk-comments-1me21o8-splunk-or-elastic
+  label: Healthcare-Org wägt Splunk vs Elastic ab; reale Kosten/Komplexität-Diskussion
+  url: https://www.reddit.com/r/Splunk/comments/1me21o8/splunk_or_elastic/
+  type: community
+- id: grafana-com-blog-2025-10-08-grafana-assistant-ga-assistant-investigations-preview
+  label: Grafana Assistant ist GA mit LogQL-Generierung und Logs-Erklärung
+  url: https://grafana.com/blog/2025/10/08/grafana-assistant-ga-assistant-investigations-preview/
+  type: blog
+- id: grafana-com-blog-debug-query-and-build-faster-with-grafana-assistant
+  label: Konkretes 'Explain this log line' Feature in der UI
+  url: https://www.grafana.com/blog/debug-query-and-build-faster-with-grafana-assistant/
+  type: blog
+- id: reddit-com-r-grafana-comments-1mqjd08-how-grafana-labs-thinks-about-ai-in-observability
+  label: Grafana-Subreddit-Diskussion zu Public-Preview-Launch
+  url: https://www.reddit.com/r/grafana/comments/1mqjd08/how_grafana_labs_thinks_about_ai_in_observability/
+  type: community
+- id: energent-ai-energent-compare-en-log-analysis-with-ai
+  label: New Relic als 'AI-assisted debugging workflows' Standard im Log-Analytics-Vergleich
+  url: https://www.energent.ai/energent/compare/en/log-analysis-with-ai
+  type: review
+- id: stridec-com-blog-best-ai-log-file-analysis-tools-devops-teams
+  label: Listet New Relic AI Monitoring als Top-3 für DevOps-Log-Analyse
+  url: https://www.stridec.com/blog/best-ai-log-file-analysis-tools-devops-teams/
+  type: review
+- id: honeycomb-io-blog-introducing-query-assistant
+  label: Query Assistant übersetzt Klartext zu Honeycomb-Queries, im GA für alle Tiers
+  url: https://www.honeycomb.io/blog/introducing-query-assistant
+  type: vendor_doc
+- id: docs-incidentfox-ai-tools-log-analysis
+  label: Sieben dedizierte Log-Analyse-Tools über beliebige Log-Backends
+  url: https://docs.incidentfox.ai/tools/log-analysis
+  type: documentation
+- id: basebox-ai
+  label: GDPR-Hosting in DE/EU, kein Server-Side-Prompt-Logging, On-Prem/Private-Cloud, geeignet für VS-NfD
+  url: https://basebox.ai/
+  type: vendor_doc
+- id: hoop-dev-blog-how-to-keep-ai-enhanced-observability-soc-2-for-ai-systems-secure-and-compliant-with-data-masking
+  label: Dynamisches Pre-LLM-Masking für AI-Observability/SOC 2/GDPR
+  url: https://hoop.dev/blog/how-to-keep-ai-enhanced-observability-soc-2-for-ai-systems-secure-and-compliant-with-data-masking
+  type: vendor_doc
+- id: coralogix-com-docs-user-guides-olly-explain-log
+  label: Olly 'Explain log' liefert NL-Erklärung für einzelne Log-Einträge
+  url: https://coralogix.com/docs/user-guides/olly/explain-log/
+  type: documentation
+- id: coralogix-com-authorized-sub-processors
+  label: Sub-Processor-Region folgt AWS-Region des Kunden; Coralogix Germany GmbH gelistet
+  url: https://coralogix.com/authorized-sub-processors/
+  type: vendor_doc
+- id: betterstack-com-community-comparisons-coralogix-olly-alternatives
+  label: "BetterStack-Vergleichsanalyse: Olly ist Investigation-Assistent ohne Remediation/Incident-Mgmt - klare Limit-Beschreibung jenseits Vendor-Marketing"
+  url: https://betterstack.com/community/comparisons/coralogix-olly-alternatives/
+  type: review
+- id: dynatrace-com-news-press-release-dynatrace-introduces-new-ai-powered-log-analytics-capabilities
+  label: Davis AI gibt instant explanations of log content; NL-Interface löst Query-Sprache ab
+  url: https://www.dynatrace.com/news/press-release/dynatrace-introduces-new-ai-powered-log-analytics-capabilities/
+  type: vendor_doc
+- id: dynatrace-com-hub-detail-ask-davis-copilot
+  label: Dynatrace Assist hat explizites 'Explain logs' Feature
+  url: https://www.dynatrace.com/hub/detail/ask-davis-copilot/
+  type: vendor_doc
+- id: dynatrace-com-news-blog-how-dynatrace-supports-the-evolving-sovereignty-needs-of-eu-organizations
+  label: EU-Hosting + Dynatrace Managed on-prem; SCC; ISO 27001/SOC 2/CSA STAR
+  url: https://www.dynatrace.com/news/blog/how-dynatrace-supports-the-evolving-sovereignty-needs-of-eu-organizations/
+  type: vendor_doc
+- id: techtarget-com-searchitoperations-news-366618876-dynatrace-ups-aiops-ante-with-log-analytics-refresh
+  label: "TechTarget-Analyse von Torsten Volk mit Andy-Thurai-Zitat (Constellation Research): Dynatrace bei automatisierter RCA und NL-Remediation noch unter wenigen Anbietern führend"
+  url: https://www.techtarget.com/searchitoperations/news/366618876/Dynatrace-ups-AIOps-ante-with-log-analytics-refresh
+  type: review
+- id: logz-io-blog-ai-log-analysis
+  label: Logz.io AI Agent für chat-basierte Log-Analyse mit RCA
+  url: https://logz.io/blog/ai-log-analysis/
+  type: vendor_doc
+- id: logz-io-news-posts-logz-io-accelerates-autonomous-observability-with-ai-agent-launch
+  label: "Launch-Press-Release Okt 2024: AI Agent Beta, 70% MTTR-Reduktion (Vendor-Eigenangabe)"
+  url: https://logz.io/news-posts/logz-io-accelerates-autonomous-observability-with-ai-agent-launch
+  type: vendor_doc
+- id: trustradius-com-products-logz-io-reviews
+  label: TrustRadius Aggregat-Reviews zur Logz.io-Plattform (8.9/10, 21 Reviews) - generelle Plattform-Solidität, AI-Agent-spezifische Praxisstimmen jedoch nicht abgedeckt
+  url: https://www.trustradius.com/products/logz-io/reviews
+  type: review
+- id: developertoolkit-ai-en-claude-code-lessons-ci-cd
+  label: Claude Code generiert GitHub-Actions-Workflows mit reusable templates inkl. workflow_call, Caching und actionlint-Valid…
+  url: https://developertoolkit.ai/en/claude-code/lessons/ci-cd
+  type: blog
+- id: solid-web-com-claude-code-vs-cursor-vs-copilot
+  label: Claude Code übernimmt End-to-End CI/CD-Setup inklusive YAML, Env-Vars-Doku und Deployment-Skript
+  url: http://www.solid-web.com/claude-code-vs-cursor-vs-copilot/
+  type: review
+- id: aitooldiscovery-com-guides-claude-code-reddit
+  label: r/ChatGPTCoding/r/devops berichten Claude Code als Daily Driver für CI/CD-Tasks
+  url: https://www.aitooldiscovery.com/guides/claude-code-reddit
+  type: community
+- id: bestremotetools-com-ai-tools-for-generating-github-actions-workflows-from-plain-english-descriptions
+  label: Copilot generiert Workflow-YAML aus natürlicher Sprache und Inline-Autocomplete in .github/workflows/
+  url: https://bestremotetools.com/ai-tools-for-generating-github-actions-workflows-from-plain-english-descriptions/
+  type: review
+- id: markaicode-com-ai-cicd-pipeline-optimization-guide
+  label: Copilot reduziert Jenkins-Pipeline-Erstellung von 3,5h auf 30min und schlägt parallele Stages und Caching vor
+  url: https://www.markaicode.com/ai-cicd-pipeline-optimization-guide/
+  type: blog
+- id: augmentcode-com-guides-ai-coding-tools-soc2-compliance-enterprise-security-guide
+  label: Copilot Enterprise hat SOC2-Type-II-Dokumentation und ISO 27001 via GitHub/Microsoft-Compliance-Stack
+  url: https://www.augmentcode.com/guides/ai-coding-tools-soc2-compliance-enterprise-security-guide
+  type: review
+- id: zeonedge-com-blog-github-actions-security-hardening-supply-chain-attacks
+  label: AI-erzeugte Workflows brauchen actionlint/zizmor und SHA-Pinning, sonst Supply-Chain-Risiko
+  url: https://zeonedge.com/blog/github-actions-security-hardening-supply-chain-attacks
+  type: blog
+- id: reddit-com-r-githubcopilot-comments-1rlmpsf-copilot-vs-claude-code-vs-cursor-for-real
+  label: Copilot ist gut für kleine Änderungen, driftet aber bei Multi-File-Tasks ohne Spec
+  url: https://www.reddit.com/r/GithubCopilot/comments/1rlmpsf/copilot_vs_claude_code_vs_cursor_for_real/
+  type: community
+- id: aws-amazon-com-about-aws-whats-new-2024-06-amazon-codecatalyst-amazon-q-blueprint
+  label: Q wählt CodeCatalyst-Blueprints inklusive CI/CD-Workflows aus und assignt offene Issues
+  url: https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-codecatalyst-amazon-q-blueprint/
+  type: vendor_doc
+- id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-gitlab-customize-runner-html
+  label: Q-Code-Transformation erfordert spezifischen .gitlab-ci.yml-Job, dokumentiert die YAML-Struktur
+  url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/gitlab-customize-runner.html
+  type: vendor_doc
+- id: github-com-jenkinsci-ai-agent-plugin
+  label: Plugin bietet aiAgent-Step für Claude Code, Codex, Cursor, OpenCode, Gemini in Jenkins-Pipelines
+  url: https://github.com/jenkinsci/ai-agent-plugin
+  type: vendor_doc
+- id: tabnine-com
+  label: Tabnine bietet self-hosted und air-gapped Coding-Assistenz mit Enterprise-Fokus
+  url: https://www.tabnine.com
+  type: vendor_doc
+- id: tabnine-com-pricing
+  label: "Tabnine Enterprise: SaaS/VPC/on-prem/air-gapped, GDPR, SOC2, ISO 27001"
+  url: https://tabnine.com/pricing
+  type: vendor_doc
+- id: docs-tabnine-com-main-welcome-readme-privacy
+  label: Self-hosted (nicht air-gapped) sendet Operational-Metrics an Tabnine — relevant fuer Bank/Versicherung
+  url: https://docs.tabnine.com/main/welcome/readme/privacy
+  type: vendor_doc
+- id: github-com-rhysd-actionlint-pull-436
+  label: actionlint kann SHA-Pinning erzwingen und ergaenzt damit AI-erzeugte Workflows um Supply-Chain-Hardening
+  url: https://github.com/rhysd/actionlint/pull/436
+  type: documentation
+- id: jetbrains-com-help-ide-services-aie-on-premises-html
+  label: JetBrains AI Enterprise unterstuetzt OpenAI-kompatible On-Prem-Server und Mellum on-premises fuer air-gapped Betrieb
+  url: https://www.jetbrains.com/help/ide-services/aie-on-premises.html
+  type: vendor_doc
+- id: circleci-com-blog-optimize-your-ci-cd-pipeline-with-circleci-chunk-ai-agent
+  label: Chunk analysiert config.yml + History und generiert konkrete Optimierungs-Patches
+  url: https://circleci.com/blog/optimize-your-ci-cd-pipeline-with-circleci-chunk-ai-agent/
+  type: vendor_doc
+- id: circleci-com-mcp
+  label: CircleCI MCP-Server bietet config_helper-Tool für AI-Assistenten zur Pipeline-Validierung
+  url: https://circleci.com/mcp
+  type: vendor_doc
+- id: docs-gitlab-com-user-duo-agent-platform-agents-foundational-agents-pipeline-builder
+  label: Pipeline Builder generiert .gitlab-ci.yml from scratch, schlägt CI/CD-Components vor und debuggt Jobs
+  url: https://docs.gitlab.com/user/duo_agent_platform/agents/foundational_agents/pipeline_builder/
+  type: vendor_doc
+- id: docs-gitlab-com-user-duo-agent-platform-flows-foundational-flows-convert-to-gitlab-ci
+  label: Convert-to-GitLab-CI-Flow konvertiert Jenkinsfile automatisch und erstellt MR mit der konvertierten Pipeline
+  url: http://docs.gitlab.com/user/duo_agent_platform/flows/foundational_flows/convert_to_gitlab_ci/
+  type: vendor_doc
+- id: dev-to-shivaylamba-how-i-used-gitlab-duo-agent-platorm-to-build-a-conference-demo-in-under-an-hour-1c88
+  label: "Praxisbericht (DEV.to): Duo Agent Platform generiert komplette .gitlab-ci.yml mit OTel-Spans, otel-cli und Argo-Workflow-Submission in unter 1h für KubeCon-Demo"
+  url: https://dev.to/shivaylamba/how-i-used-gitlab-duo-agent-platorm-to-build-a-conference-demo-in-under-an-hour-1c88
+  type: community
+- id: reddit-com-r-githubcopilot-comments-1r93cb1-gemini-31-pro-released
+  label: Gemini 3.1 senkt Halluzinationsrate gegenüber 3.0, aber Praktiker bleiben skeptisch zu Konsistenz
+  url: https://www.reddit.com/r/GithubCopilot/comments/1r93cb1/gemini_31_pro_released/
+  type: community
+- id: medium-com-google-cloud-integrating-our-application-ci-cd-pipelines-and-terraform-gitops-with-cloud-build-35e8d38b8468
+  label: "Praktiker (Google Cloud Community / Medium): Gemini Code Assist erweitert cloudbuild.yaml um getrennte Trigger-Logik für src/ und deploy/-Pfade — konkretes Pipeline-Snippet-Refactor"
+  url: https://medium.com/google-cloud/integrating-our-application-ci-cd-pipelines-and-terraform-gitops-with-cloud-build-35e8d38b8468
+  type: blog
+- id: oneuptime-com-blog-post-2026-02-17-how-to-implement-code-generation-and-review-automation-with-gemini-on-vertex-ai-view
+  label: "Independent Blog (oneuptime): cloudbuild-review.yaml-Pipeline-Step mit Gemini auf Vertex AI als PR-Reviewer und Boilerplate-Generator"
+  url: https://oneuptime.com/blog/post/2026-02-17-how-to-implement-code-generation-and-review-automation-with-gemini-on-vertex-ai/view
+  type: blog
+- id: runatlantis-io-docs-policy-checking-html
+  label: Offizielle Atlantis-Doku zu Policy-Checking via Conftest
+  url: https://www.runatlantis.io/docs/policy-checking.html
+  type: vendor_doc
+- id: danielfm-me-posts-opa-policies-without-breaking-the-bank
+  label: "Praxisbericht: Atlantis + Conftest als günstigste PaC-Lösung"
+  url: https://danielfm.me/posts/opa-policies-without-breaking-the-bank/
+  type: blog
+- id: appsecsanta-com-iac-security-tools
+  label: "Vergleichstabelle 2026: Checkov mit der breitesten OSS-Coverage"
+  url: https://appsecsanta.com/iac-security-tools
+  type: review
+- id: reddit-com-r-aws-comments-1ai45y2-dealing-with-terraform-as-security-engineer
+  label: Security Engineers bevorzugen Checkov gegenüber OPA wegen DX
+  url: https://www.reddit.com/r/aws/comments/1ai45y2/dealing_with_terraform_as_security_engineer/
+  type: community
+- id: bitslovers-com-opa-terraform-policy-as-code
+  label: Conftest als Standard-CLI für OPA-gegen-Plan-JSON
+  url: https://www.bitslovers.com/opa-terraform-policy-as-code/
+  type: blog
+- id: developer-hashicorp-com-terraform-enterprise-policy-enforcement-define-policies
+  label: "Offizielle Doku: Sentinel und OPA als Frameworks; advisory/soft/hard enforcement"
+  url: https://developer.hashicorp.com/terraform/enterprise/policy-enforcement/define-policies
+  type: vendor_doc
+- id: github-com-nfroze-ai-ml-governance-with-policy-as-code
+  label: "Konkretes Referenzprojekt: Sentinel + Gatekeeper für AI/ML-IaC-Governance inkl. EU-AI-Act-Bezug"
+  url: https://github.com/nfroze/AI-ML-Governance-with-Policy-as-Code
+  type: community
+- id: kyverno-io
+  label: "Offizielle Kyverno-Site: validate/mutate/generate/verifyImages und Terraform-Plan-Validierung"
+  url: https://kyverno.io/
+  type: vendor_doc
+- id: pawanpatra-com-integrating-ai-driven-policy-as-code-for-kubernetes-a-look-at-nirmata-and-kyverno
+  label: Nirmata bietet AI-Agent, der NL-Intent in Kyverno-YAML übersetzt – AI-IaC-Guardrail-Pattern
+  url: https://pawanpatra.com/integrating-ai-driven-policy-as-code-for-kubernetes-a-look-at-nirmata-and-kyverno/
+  type: blog
+- id: reddit-com-r-kubernetes-comments-1gpvk95-so-are-validating-admission-policies-a
+  label: "K8s-Community: Kyverno bleibt für Mutation/Generation auch neben VAP unverzichtbar"
+  url: https://www.reddit.com/r/kubernetes/comments/1gpvk95/so_are_validating_admission_policies_a/
+  type: community
+- id: open-policy-agent-github-io-gatekeeper-website-docs
+  label: Offizielle Gatekeeper-Dokumentation als K8s-Admission-Controller mit OPA
+  url: https://open-policy-agent.github.io/gatekeeper/website/docs/
+  type: vendor_doc
+- id: red-team-sh-posts-policy-as-code-opa-kyverno-eks-security
+  label: "Praxisbeschreibung: Gatekeeper als validating webhook + Audit-Controller gegen vorhandene Resources"
+  url: https://red-team.sh/posts/policy-as-code-opa-kyverno-eks-security/
+  type: blog
+- id: openpolicyagent-org-docs-latest-terraform
+  label: Offizielle OPA-Dokumentation zur Terraform-Plan-Auswertung
+  url: https://www.openpolicyagent.org/docs/latest/terraform
+  type: vendor_doc
+- id: docs-spacelift-io-concepts-policy-terraform-plan-policy
+  label: "Spacelift Plan-Policy: Rego gegen Plan-JSON + Spacelift-Metadaten"
+  url: https://docs.spacelift.io/concepts/policy/terraform-plan-policy
+  type: vendor_doc
+- id: spacelift-io-blog-terraform-policy-as-code
+  label: autoattach-Label-Pattern für org-weite Policy-Skalierung
+  url: https://spacelift.io/blog/terraform-policy-as-code
+  type: blog
+- id: reddit-com-r-terraform-comments-1rwev92-i-built-planshield-a-cli-that-turns-terraform-json
+  label: r/Terraform-Diskussionen zu Plan-Gating-Tools nennen Spacelift regelmäßig als Referenz
+  url: https://www.reddit.com/r/Terraform/comments/1rwev92/i_built_planshield_a_cli_that_turns_terraform/.json
+  type: community
+- id: aquasecurity-github-io-tfsec-latest
+  label: Offizielle Migrationsansage tfsec → Trivy
+  url: https://aquasecurity.github.io/tfsec/latest/
+  type: vendor_doc
+- id: trivy-dev-docs-latest-tutorials-misconfiguration-terraform
+  label: Trivy Terraform-Scanning via trivy config
+  url: https://trivy.dev/docs/latest/tutorials/misconfiguration/terraform/
+  type: vendor_doc
+- id: reddit-com-r-devops-comments-1r34xn4-is-it-just-me-or-is-genai-making-devops-more
+  label: DevOps-Thread thematisiert AI-IaC-Auditing und Tool-Stack inkl. Trivy/Checkov
+  url: https://www.reddit.com/r/devops/comments/1r34xn4/is_it_just_me_or_is_genai_making_devops_more/
+  type: community
+- id: blog-cloudgeni-ai-terraform-ai-that-actually-ships-from-intent-pr-guardrails
+  label: Cloudgeni Plan-First-AI-IaC-Workflow mit Policy-Gate
+  url: https://blog.cloudgeni.ai/terraform-ai-that-actually-ships-from-intent-pr-guardrails/
+  type: blog
+- id: scalr-com-blog-everything-you-need-to-know-about-open-policy-agent-opa-and-terraform
+  label: "Scalr-Doku: Pre/Post-Plan-OPA-Enforcement und GitOps-Modell"
+  url: https://scalr.com/blog/everything-you-need-to-know-about-open-policy-agent-opa-and-terraform
+  type: vendor_doc
+- id: rafter-so-blog-iac-security-scanning-tools
+  label: Snyk-IaC-Vergleich mit Checkov/tfsec/KICS
+  url: https://rafter.so/blog/iac-security-scanning-tools
+  type: review
+- id: blog-tryterracotta-com-introducing-terracotta-guardrails-ai-opa
+  label: Terracotta-Guardrails als AI-PR-Review-Layer mit OPA-Bezug
+  url: https://blog.tryterracotta.com/introducing-terracotta-guardrails-ai-opa/
+  type: blog
+- id: blog-tryterracotta-com-real-time-natural-language-guardrails
+  label: Natural-Language-Policy-Definition + PR-Enforcement
+  url: https://blog.tryterracotta.com/real-time-natural-language-guardrails/
+  type: blog
+- id: kubestack-com-catalog-opa-gatekeeper
+  label: Terraform-Modul für OPA-Gatekeeper-Rollout in regulierten K8s-Plattformen
+  url: https://kubestack.com/catalog/opa-gatekeeper
+  type: vendor_doc
+- id: developer-harness-io-docs-platform-governance-policy-as-code-policy-as-code-for-terraform
+  label: Harness Terraform-Plan-, Plan-Cost- und State-Policies via OPA
+  url: https://developer.harness.io/docs/platform/governance/policy-as-code/policy-as-code-for-terraform
+  type: vendor_doc
+- id: developer-harness-io-docs-platform-governance-policy-as-code-run-policies-in-your-environment
+  label: Customer-managed Policy-Evaluation für Secrets/Datenresidenz
+  url: https://developer.harness.io/docs/platform/governance/policy-as-code/run-policies-in-your-environment
+  type: vendor_doc
+- id: appsecsanta-com-checkov-vs-kics
+  label: "AppSec Santa: Checkov vs. KICS Head-to-Head – KICS deckt 22+ IaC-Plattformen mit 2.400+ Rego-Queries ab"
+  url: https://www.appsecsanta.com/checkov-vs-kics
+  type: review
+- id: cloudtoolstack-com-blog-infrastructure-testing-terratest-checkov
+  label: "Praktiker-Empfehlung: Checkov + KICS parallel in der Pipeline – KICS stärker bei Vulnerability-Patterns"
+  url: https://cloudtoolstack.com/blog/infrastructure-testing-terratest-checkov
+  type: blog
+- id: developer-hashicorp-com-terraform-tutorials-cloud-validation-enforcement
+  label: "HashiCorp-Tutorial: Styra HCP Terraform Run Task für OPA-Enforcement zwischen plan und apply"
+  url: https://developer.hashicorp.com/terraform/tutorials/cloud/validation-enforcement
+  type: vendor_doc
+- id: heise-de-en-news-apple-acquires-developer-of-the-open-policy-agent-10574287-html
+  label: "Heise (DACH-Fachpresse): Apple übernimmt Styra-/OPA-Kernteam, kommerzielle Styra-Produkte werden Open Source – BaFin-/DORA-Kunden müssen Roadmap neu bewerten"
+  url: https://www.heise.de/en/news/Apple-acquires-developer-of-the-Open-Policy-Agent-10574287.html
+  type: review
+- id: cloudnativenow-com-features-apple-buys-styra-brains-opa-remains-open
+  label: "Cloud Native Now: 'Apple Buys Styra Brains' – Styra-DAS-Commercial-Roadmap unsicher, OCP als Nachfolger"
+  url: https://cloudnativenow.com/features/apple-buys-styra-brains-opa-remains-open/
+  type: review
+- id: paclabs-substack-com-p-opa-announcement-and-consequences
+  label: "PACLabs (Practitioner-Beratung): 'Styra DAS is going away' – existierende Kunden sollten 12-Monate-Exit planen"
+  url: https://paclabs.substack.com/p/opa-announcement-and-consequences
+  type: blog
+- id: paclabs-substack-com-p-thoughts-on-the-opa-control-plane
+  label: PACLabs-Review der OPA Control Plane (OCP) als Open-Source-Nachfolger einzelner Styra-DAS-Funktionen
+  url: https://paclabs.substack.com/p/thoughts-on-the-opa-control-plane
+  type: blog
+- id: docs-styra-com-ocp
+  label: "Styra-Doku: DAS → OPA Control Plane Migrationspfad und Feature-Gap-Tabelle (kein UI, kein zentralisiertes Decision-Log-Storage in OCP)"
+  url: https://docs.styra.com/ocp
+  type: vendor_doc
+- id: docs-datadoghq-com-service-management-incident-management-incident-ai
+  label: Belegt Postmortem-Templates mit konkreten AI-Variablen für Summary, Timeline, Customer Impact, Action Items, Lessons Le…
+  url: https://docs.datadoghq.com/service_management/incident_management/incident_ai
+  type: vendor_doc
+- id: datadoghq-com-blog-create-postmortems-with-datadog
+  label: Belegt Auto-Draft-Postmortems aus Monitor-Events, Severity-Changes, Responder-Kommunikation.
+  url: https://www.datadoghq.com/blog/create-postmortems-with-datadog/
+  type: vendor_doc
+- id: reddit-com-r-observability-comments-1rsga5d-the-dirty-and-very-open-secret-of-ai-sre-tools
+  label: Diskussion über Reproduzierbarkeit / Auditierbarkeit von AI-Postmortems mit Datadog/Sentry-Stack.
+  url: https://www.reddit.com/r/Observability/comments/1rsga5d/the_dirty_and_very_open_secret_of_ai_sre_tools/
+  type: community
+- id: docs-incident-io-post-incident-postmortem-ai
+  label: Belegt AI-Generierung pro Sektion aus Timeline, Slack/Teams, Investigations, Custom Fields plus Inline-Review.
+  url: https://docs.incident.io/post-incident/postmortem-ai
+  type: vendor_doc
+- id: incident-io-changelog-post-mortems-upgrade
+  label: März-2026 GA-Release mit Full-Draft, Section-Rewrite, Review-against-data und Scribe-Meeting-Notes.
+  url: https://incident.io/changelog/post-mortems-upgrade
+  type: vendor_doc
+- id: incident-io-blog-what-does-using-ai-for-post-mortems-actually-mean
+  label: "Vendor-Positionierung: AI für 'Compression' (Timeline, Erstentwurf, Review), Synthese bleibt menschlich — passt zur Bri…"
+  url: https://incident.io/blog/what-does-using-ai-for-post-mortems-actually-mean
+  type: blog
+- id: incident-io-blog-best-postmortem-software-for-compliance-audit-teams-2026
+  label: Belegt SOC 2 Typ II Compliance-Positionierung sowie Tamper-Evidence-Anspruch für Audit-relevante Postmortems.
+  url: https://incident.io/blog/best-postmortem-software-for-compliance-audit-teams-2026
+  type: vendor_doc
+- id: reddit-com-r-sre-comments-1ntxc8j-spent-4-hours-yesterday-writing-an-incident
+  label: r/sre-Thread empfiehlt incident.io explizit gegen die 'vier-Stunden-Postmortem-Plage'.
+  url: https://www.reddit.com/r/sre/comments/1ntxc8j/spent_4_hours_yesterday_writing_an_incident/
+  type: community
+- id: reddit-com-r-sre-comments-1k8x5mc-anyone-here-using-ai-rca-tools-like-incidentio-or
+  label: "r/sre-Thread mit gemischter Praxis: AI fürs Pre-Fill brauchbar, Refinement bleibt nötig."
+  url: https://www.reddit.com/r/sre/comments/1k8x5mc/anyone_here_using_ai_rca_tools_like_incidentio_or/
+  type: community
+- id: docs-rootly-com-ai-incident-summarization
+  label: Belegt AI-Summarization über Metadaten, Alerts, Timeline und Slack-Kommunikation.
+  url: https://docs.rootly.com/ai/incident-summarization
+  type: vendor_doc
+- id: rootly-com-sre-rootly-postmortems-automate-reports-end-manual-docs
+  label: One-Click-Generierung mit Timeline, MTTR, Slack-Konversationen, Jira-Tickets, anpassbares Template.
+  url: https://rootly.com/sre/rootly-postmortems-automate-reports-end-manual-docs
+  type: vendor_doc
+- id: api-rootly-io-security
+  label: Belegt RBAC, Private Incidents, Audit-Trail und SCIM/SSO als Enterprise-Security-Basis.
+  url: https://api.rootly.io/security
+  type: vendor_doc
+- id: reddit-com-r-devops-comments-1oeyqqd-our-postmortem-from-last-week-just-identified-the
+  label: Praktiker beschreibt Repeat-Incident-Tracking durch Rootly als wirksam gegen 'unfertige Postmortem-Action-Items'.
+  url: https://www.reddit.com/r/devops/comments/1oeyqqd/our_postmortem_from_last_week_just_identified_the/
+  type: community
+- id: docs-resolve-ai-incident-channels
+  label: Belegt Postmortem-Draft on-demand aus Incident-Channel-Aktivität und Investigation, mit konkretem Slash-Prompt-Beispiel.
+  url: https://docs.resolve.ai/incident-channels
+  type: vendor_doc
+- id: resolve-ai-glossary-comparing-different-ai-approaches-for-sre-workflows
+  label: Vendor positioniert Postmortem-Erzeugung als Teil seines Investigation-First-Ansatzes.
+  url: https://resolve.ai/glossary/Comparing-different-AI-approaches-for-SRE-workflows
+  type: vendor_doc
+- id: servicenow-com-ai-use-cases-generate-post-incident-reviews-html
+  label: AI Agents generieren Post-Incident Executive Summaries mit Impact, technischen Details und Prevention-Steps.
+  url: https://www.servicenow.com/ai/use-cases/generate-post-incident-reviews.html
+  type: vendor_doc
+- id: servicenow-com-community-secops-articles-revolutionizing-security-incident-management-introducing-ta-p-3098002
+  label: GenAI Post-Incident Analysis in SIR mit RCA, Impact Assessment, Actionable Learnings beim Close-Status.
+  url: https://www.servicenow.com/community/secops-articles/revolutionizing-security-incident-management-introducing/ta-p/3098002
+  type: vendor_doc
+- id: support-atlassian-com-jira-service-management-cloud-docs-create-a-post-incident-review-using-atlassian-intelligence
+  label: Belegt 'Suggest description' für PIR mit Slack-Channel-Daten, falls erlaubt.
+  url: https://support.atlassian.com/jira-service-management-cloud/docs/create-a-post-incident-review-using-atlassian-intelligence/
+  type: vendor_doc
+- id: atlassian-com-blog-announcements-jira-service-management-agentic-ai
+  label: Rovo Agents verfassen einen ersten PIR-Draft, /create-pir Slash-Command.
+  url: https://www.atlassian.com/blog/announcements/jira-service-management-agentic-ai
+  type: blog
+- id: eesel-ai-blog-atlassian-intelligence-create-post-incident-reviews
+  label: Unabhängiger Drittanbieter-Review (eesel AI) zu Stärken/Grenzen der Atlassian-Intelligence-PIR-Generierung; bestätigt Slack-Pull, Premium/Enterprise-Lock und generischen Output.
+  url: https://www.eesel.ai/blog/atlassian-intelligence-create-post-incident-reviews
+  type: blog
+- id: community-atlassian-com-forums-rovo-articles-real-time-use-cases-of-atlassian-rovo-ba-p-3219227
+  label: Praktiker-Thread (Atlassian Community User Post) zu Rovo Real-Time Use Cases inkl. Incident Handling und PIR-Synthese.
+  url: https://community.atlassian.com/forums/Rovo-articles/Real-Time-Use-Cases-of-Atlassian-Rovo/ba-p/3219227
+  type: community
+- id: ilert-com-compare-firehydrant
+  label: Belegt ilert Hosting in Deutschland, ISO 27001 und Europe-First-Compliance-Positionierung gegenüber FireHydrant.
+  url: https://www.ilert.com/compare/firehydrant
+  type: vendor_doc
+- id: ilert-com-product-ilert-ai
+  label: "Belegt: keine personenbezogenen Daten an externe LLMs, GDPR-First, Audit-Trail für Postmortem-Compliance."
+  url: https://ilert.com/product/ilert-ai
+  type: vendor_doc
+- id: docs-ilert-com-ilert-ai-generating-incident-updates-through-ai
+  label: Belegt Postmortem-Generierungs-Feature aus War-Room-Channels und Alert-Timeline.
+  url: https://docs.ilert.com/ilert-ai/generating-incident-updates-through-ai
+  type: vendor_doc
+- id: rtfm-co-ua-en-ilert-an-alternative-to-opsgenie-first-impressions-alertmanager-slack
+  label: "Unabhängiger SRE-Praktiker-Blog (rtfm.co.ua, Feb 2026): erste Eindrücke nach Opsgenie-Migration zu ilert, hebt UX/Doku gegenüber incident.io positiv hervor und bestätigt AI-SRE-/Postmortem-Funktionen."
+  url: https://rtfm.co.ua/en/ilert-an-alternative-to-opsgenie-first-impressions-alertmanager-slack/
+  type: blog
+- id: peerspot-com-products-comparisons-ilert-ai-vs-pagertree
+  label: PeerSpot-Aggregator (Jan 2026) mit unabhängigen User-Reviews zu ilert AI im IT-Alerting-/Incident-Management-Vergleich; Mindshare-Wachstum und User-Feedback dokumentiert.
+  url: https://www.peerspot.com/products/comparisons/ilert-ai_vs_pagertree
+  type: community
+- id: engammo-com
+  label: GitHub-App, Risk-aware Labels, Public Changelog, Auto-Kategorisierung — Fokus auf Release-Storytelling.
+  url: https://engammo.com/
+  type: vendor_doc
+- id: gitrank-dev-features-ai-changelog-generator
+  label: Manuelle PR-Selektion plus Draft-Workflow adressiert Internal-PR-Leak-Risiko.
+  url: https://gitrank.dev/features/ai-changelog-generator
+  type: vendor_doc
+- id: updates-launchnotes-com-announcements-draft-announcements-directly-from-jira
+  label: Draft-with-AI-from-Jira GA seit April 2026 — generiert Announcement-Drafts aus Jira-Filtern/Issues.
+  url: https://updates.launchnotes.com/announcements/draft-announcements-directly-from-jira
+  type: vendor_doc
+- id: updates-launchnotes-com
+  label: MCP-Connector seit Jan 2026 in Beta — AI-Agent-Integration für Release-Communication.
+  url: https://updates.launchnotes.com/
+  type: vendor_doc
+- id: hamzak-xyz-blog-posts-release-please-vs-semantic-release
+  label: release-please automatisiert Changelog-Generierung, Version-Bumps und Release-Branches, manuell triggerbar.
+  url: https://www.hamzak.xyz/blog-posts/release-please-vs-semantic-release
+  type: blog
+- id: releaseray-com
+  label: BYOK (AWS Bedrock), in-memory Verarbeitung, AES-256-GCM, SOC-2-Controls — mit drei Personas (Engineer/Internal/Customer).
+  url: https://www.releaseray.com/
+  type: vendor_doc
+- id: dev-to-aftabkh4n-i-added-ai-generated-release-notes-to-my-cicd-pipeline-using-claude-and-github-actions-3940
+  label: "Praktischer Erfahrungsbericht: Claude liest PR-Titel, Description, Diff und committet strukturierte CHANGELOG-Einträge in CI/CD."
+  url: https://dev.to/aftabkh4n/i-added-ai-generated-release-notes-to-my-cicd-pipeline-using-claude-and-github-actions-3940
+  type: blog
+- id: claudelab-net-en-articles-claude-code-claude-code-changelog-automation-git-release-guide
+  label: "Independent Practitioner-Recipe (Apr 2026): Claude Code als Slash-Command erzeugt Keep-a-Changelog-Sektion aus git log; mit Caveat zu Commit-Qualität."
+  url: https://claudelab.net/en/articles/claude-code/claude-code-changelog-automation-git-release-guide
+  type: blog
+- id: github-com-orhun-git-cliff
+  label: Hochanpassbarer Changelog-Generator, der Conventional Commits und custom regex parser unterstützt.
+  url: https://github.com/orhun/git-cliff
+  type: vendor_doc
+- id: github-com-openrijal-llmusage-commit-dcc8dac532a879a4d2f3ca4413912aa88bd43d16
+  label: "Reales Engineering-Rationale: git-cliff über release-please gewählt, weil History keine Conventional-Commits-Disziplin hat."
+  url: https://github.com/openrijal/llmusage/commit/dcc8dac532a879a4d2f3ca4413912aa88bd43d16
+  type: community
+- id: slhck-info-software-2025-10-13-git-cliff-for-changelogs-html
+  label: "Independent Migration-Story (Okt 2025) von gitchangelog zu git-cliff: 100x schneller, TOML-Konfiguration zeigt Mixed-History-Pattern für legacy-Repos."
+  url: https://slhck.info/software/2025/10/13/git-cliff-for-changelogs.html
+  type: blog
+- id: github-com-github-copilot-release-notes
+  label: "Offizielle GitHub-Action: zero-config, anpassbarer Style-Guide, Markdown+JSON-Output, Security-Hardening gegen Prompt Injection."
+  url: https://github.com/github/copilot-release-notes
+  type: vendor_doc
+- id: github-com-desktop-desktop-pull-21887
+  label: GitHub Desktop nutzt die Action selbst für Beta-Release-Notes — produktiver Dogfood-Beleg.
+  url: https://github.com/desktop/desktop/pull/21887
+  type: documentation
+- id: github-com-marketplace-actions-copilot-release-notes
+  label: Marketplace-Listing dokumentiert Inputs (base-ref, head-ref, instructions, model-Override).
+  url: https://github.com/marketplace/actions/copilot-release-notes
+  type: vendor_doc
+- id: github-blog-changelog-2026-04-13-copilot-data-residency-in-us-eu-and-fedramp-compliance-now-available
+  label: Copilot EU-Data-Residency seit April 2026 verfügbar — Voraussetzung für DACH-Bank-Einsatz.
+  url: https://github.blog/changelog/2026-04-13-copilot-data-residency-in-us-eu-and-fedramp-compliance-now-available/
+  type: vendor_doc
+- id: docs-gitlab-com-ee-api-repositories-html
+  label: GitLab Repository-API generiert Changelog-Daten aus Commit-Trailers — Basis für Duo-AI-Aufsätze.
+  url: https://docs.gitlab.com/ee/api/repositories.html#generate-changelog-data
+  type: vendor_doc
+- id: docs-gitlab-com-development-changelog
+  label: "GitLab Engineering-Konvention für Changelog-Trailer (Changelog: feature/fixed/...) im internen Workflow — bestätigt Trailer-Disziplin als Voraussetzung."
+  url: https://docs.gitlab.com/development/changelog/
+  type: vendor_doc
+- id: docs-qodo-ai-v1-tools-tools-list-update-changelog
+  label: Natives `/update_changelog`-Kommando aktualisiert CHANGELOG.md mit PR-Änderungen; Push oder Kommentar konfigurierbar.
+  url: https://docs.qodo.ai/v1/tools/tools-list/update-changelog
+  type: vendor_doc
+- id: thamizhelango-medium-com-how-qodo-pr-agent-smartly-compresses-and-reviews-large-code-changes-72db8898f622
+  label: Independent Deep-Dive (Mar 2026) zu PR-Agent-Token-Kompression bei großen PRs — Indiz für reale Adoption, Changelog ist Sub-Capability.
+  url: https://thamizhelango.medium.com/how-qodo-pr-agent-smartly-compresses-and-reviews-large-code-changes-72db8898f622
+  type: blog
+- id: gouthamve-dev-i-built-an-ai-sre-in-60mins-you-should-too
+  label: Grafana-Engineer beschreibt selbstgebauten SRE-Agenten auf Claude-Basis, der Runbooks aktualisiert und Wissensbasis pfl…
+  url: https://www.gouthamve.dev/i-built-an-ai-sre-in-60mins-you-should-too/
+  type: blog
+- id: tipsforclaude-com-tips-incident-response-runbooks
+  label: Praxis-Tipp zeigt konkretes Prompt-Pattern für Runbook-Generierung aus terraform/ + src/.
+  url: https://tipsforclaude.com/tips/incident-response-runbooks
+  type: blog
+- id: reddit-com-r-claudeai-comments-1r6uaf9-a-thread-for-use-cases-of-claude-code
+  label: r/ClaudeAI-Thread sammelt Use Cases — Runbook-Generierung aus Codebase explizit gelobt.
+  url: https://www.reddit.com/r/ClaudeAI/comments/1r6uaf9/a_thread_for_use_cases_of_claude_code/
+  type: community
+- id: holmesgpt-dev-latest-reference-runbooks
+  label: Doku beschreibt Runbook-Format und automatischen Match-/Fetch-Mechanismus.
+  url: https://holmesgpt.dev/latest/reference/runbooks/
+  type: documentation
+- id: pagerduty-com-blog-democratize-automation-ai-generated-runbooks
+  label: Plain-English-Prompts erzeugen Runbook-Templates inkl. README und Secret-Handling.
+  url: https://www.pagerduty.com/blog/democratize-automation-ai-generated-runbooks/
+  type: vendor_doc
+- id: pagerduty-com-blog-aiops-we-built-an-sre-agent-with-memory-and-its-transforming-incident-response
+  label: SRE Agent generiert/aktualisiert Runbooks nach Incidents ('living, up-to-date procedures').
+  url: https://www.pagerduty.com/blog/aiops/we-built-an-sre-agent-with-memory-and-its-transforming-incident-response/
+  type: vendor_doc
+- id: support-pagerduty-com-pd-support-docs-pagerduty-advance
+  label: Offizielle Doku listet 'AI Generated Runbooks (Early Access)' und SRE Agent als separate Funktionen mit AI-Actions-Verb…
+  url: https://support.pagerduty.com/pd-support/docs/pagerduty-advance
+  type: documentation
+- id: pagerduty-com-newsroom-pagerduty-announces-general-availability-for-european-service-region
+  label: EU-Service-Region in Frankfurt seit 2021 GA — Datenresidenz-Argument für DACH.
+  url: https://pagerduty.com/newsroom/pagerduty-announces-general-availability-for-european-service-region
+  type: vendor_doc
+- id: rootly-com-sre-rootlys-ai-runbooks-faster-incident-response-for-sres
+  label: Rootly beschreibt AI Runbooks als orchestrierte Workflows mit Diagnose, Suggestion und One-Click-Approval.
+  url: https://rootly.com/sre/rootlys-ai-runbooks-faster-incident-response-for-sres
+  type: vendor_doc
+- id: support-atlassian-com-rovo-docs-using-ops-guide
+  label: Rovo-Doku beschreibt Runbook/PIR-Suche und PIR-Generierung in Confluence.
+  url: https://support.atlassian.com/rovo/docs/using-ops-guide
+  type: documentation
+- id: exponentialtech-ai-blog-automated-incident-response-building-ai-runbooks-for-common-server-issues
+  label: Praktiker-Blog beschreibt SSM/Lambda + LLM (GPT-4o, Claude 3.5) als Standard-Pattern für AI-Runbooks.
+  url: https://exponentialtech.ai/blog/automated-incident-response-building-ai-runbooks-for-common-server-issues
+  type: blog
+- id: github-com-robusta-dev-robusta
+  label: GitHub-README beschreibt Self-Healing-Playbooks plus AI-Investigation und Change-Tracking.
+  url: https://github.com/robusta-dev/robusta
+  type: documentation
+- id: docs-robusta-dev-master-configuration-holmesgpt-holmes-chat-api-html
+  label: Holmes-Chat-API liefert strukturiertes Markdown inkl. Root Cause + Fix-Befehlen — direkt als Runbook-Snippet nutzbar.
+  url: https://docs.robusta.dev/master/configuration/holmesgpt/holmes-chat-api.html
+  type: documentation
+- id: docs-dynatrace-com-docs-dynatrace-intelligence-davis-problems-app-resolve-problems-with-troubleshooting-guides
+  label: Doku zeigt Troubleshooting-Guide-Template inkl. Remediation Steps, Verification und Rollback.
+  url: https://docs.dynatrace.com/docs/dynatrace-intelligence/davis-problems-app/resolve-problems-with-troubleshooting-guides
+  type: documentation
+- id: dynatrace-com-support-help-platform-davis-ai
+  label: Dynatrace Intelligence beschreibt agentische Workflows, die 'vetted runbooks' unter Policy-Guardrails ausführen.
+  url: https://www.dynatrace.com/support/help/platform/davis-ai
+  type: vendor_doc
+- id: diginomica-com-telus-cuts-incident-response-15-minutes-dynatrace-and-ai-driven-observability
+  label: "Diginomica-Bericht: TELUS reduziert Incident-Response mit Dynatrace Davis AI CoPilot auf 15 Minuten — unabhängige Journalistenpublikation mit namentlichem Kunden."
+  url: https://diginomica.com/telus-cuts-incident-response-15-minutes-dynatrace-and-ai-driven-observability
+  type: blog
+- id: cutover-com-ai-enabled-runbooks
+  label: AI Assistant generiert Runbooks aus statischen Quellen mit Boundary Conditions.
+  url: https://www.cutover.com/ai-enabled-runbooks
+  type: vendor_doc
+- id: gartner-com-reviews-product-cutover-collaborative-automation-platform
+  label: "Gartner Peer Insights: 3 verifizierte Enterprise-Reviews aus Bankensektor (5/5), Head of IT Resilience beschreibt 400 Personen / 3700 Tasks in größter DR-Übung."
+  url: https://www.gartner.com/reviews/product/cutover-collaborative-automation-platform
+  type: community
+- id: ilert-com-de-produkt-ilert-ai
+  label: EU-only-AI-Inferenz und Enterprise-Audit-Trail explizit beworben.
+  url: https://www.ilert.com/de/produkt/ilert-ai
+  type: vendor_doc
+- id: github-com-holmesgpt-holmesgpt
+  label: Apache-2.0, BYO-LLM, K8s-Helm-Install, CNCF-Sandbox-Status
+  url: https://github.com/HolmesGPT/holmesgpt
+  type: vendor_doc
+- id: github-com-robusta-dev-holmesgpt-blob-master-docs-reference-helm-configuration-md
+  label: Telemetrie-Default und Custom-CA fuer Outbound-LLM-Proxy
+  url: https://github.com/robusta-dev/holmesgpt/blob/master/docs/reference/helm-configuration.md
+  type: vendor_doc
+- id: reddit-com-r-kubernetes-comments-1do6x48-im-the-ceo-of-robustadev-and-we-recently-released
+  label: AMA-Diskussion auf r/kubernetes mit Detailfragen zu Function-Calling, Mistral, GovCloud
+  url: https://www.reddit.com/r/kubernetes/comments/1do6x48/im_the_ceo_of_robustadev_and_we_recently_released/
+  type: community
+- id: github-com-k8sgpt-ai-k8sgpt
+  label: Apache-2.0, lokale LLMs, Anonymisierung, MCP-Server
+  url: https://github.com/k8sgpt-ai/k8sgpt
+  type: vendor_doc
+- id: k8sgpt-ai
+  label: AI-Free-Mode und lokale Modelle für Daten-Souveränität
+  url: https://k8sgpt.ai/
+  type: vendor_doc
+- id: reddit-com-r-kubernetes-comments-1qm2f07-using-llms-to-help-diagnose-kubernetes-issues-json
+  label: Praktiker fragen nach LLM-Diagnose-Erfahrung (CrashLoopBackOff, OOMKilled) mit Ollama-lokal-Setup
+  url: https://www.reddit.com/r/kubernetes/comments/1qm2f07/using_llms_to_help_diagnose_kubernetes_issues.json
+  type: community
+- id: github-com-arvo-ai-aurora
+  label: Apache-2.0, Multi-Cloud inkl. OVH/Scaleway, Ollama für Air-Gap
+  url: https://github.com/arvo-ai/aurora
+  type: vendor_doc
+- id: arvoai-ca
+  label: Self-hosted Docker Compose / Helm, kein per-seat-Pricing
+  url: https://www.arvoai.ca/
+  type: vendor_doc
+- id: opensre-in-llms-full-txt
+  label: Air-Gap-Setup vollständig containerisiert; episodisches Gedächtnis + Neo4j
+  url: https://opensre.in/llms-full.txt
+  type: vendor_doc
+- id: github-com-swapnildahiphale-opensre
+  label: 46 Skills, LangGraph-Architektur, Apache-2.0
+  url: https://github.com/swapnildahiphale/OpenSRE
+  type: vendor_doc
+- id: ibm-com-docs-en-cloud-paks-cloud-pak-aiops-4-11-1-topic-o-bastion-host
+  label: Voll dokumentiertes Air-Gap-Deployment via Bastion-Host und OpenShift
+  url: https://www.ibm.com/docs/en/cloud-paks/cloud-pak-aiops/4.11.1?topic=o-bastion-host
+  type: vendor_doc
+- id: ibm-com-docs-en-cloud-paks-cloud-pak-aiops-4-11-0-topic-linux-planning
+  label: Storage- und Hardware-Anforderungen für Offline-Deployment
+  url: https://www.ibm.com/docs/en/cloud-paks/cloud-pak-aiops/4.11.0?topic=linux-planning
+  type: vendor_doc
+- id: community-ibm-com-community-user-blogs-adriana-lista-negrin-2026-04-08-introducing-ibm-cloud-pak-for-aiops-413-greater-ac
+  label: GenAI Ops Agent for Diagnostics als Tech Preview in v4.13
+  url: https://community.ibm.com/community/user/blogs/adriana-lista-negrin/2026/04/08/introducing-ibm-cloud-pak-for-aiops-413-greater-ac
+  type: vendor_doc
+- id: softwarereviews-com-products-ibm-cloud-pak-for-aiops
+  label: 26 unabhängige Enterprise-Bewertungen (Ø 8.0/10) auf SoftwareReviews — bestätigt produktiven Einsatz in ITOps/SRE-Incident-Management
+  url: https://www.softwarereviews.com/products/ibm-cloud-pak-for-aiops
+  type: community
