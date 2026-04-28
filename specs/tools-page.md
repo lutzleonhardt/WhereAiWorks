@@ -1,8 +1,14 @@
-# Tools-Seite — Spec (Phase 2+)
+# Tools-Seite — Spec
 
-> **Status:** Vorgemerkt, nicht für die nächste Iteration. Diese Spec friert die Entscheidungen aus dem Brainstorming ein.
+> **Status:** Phase 1 in Umsetzung — statische Tabelle aus den heute vorhandenen Daten. Phase 2b (zusätzliche Tool-Felder wie Hosting/Lizenz/Pricing) bleibt vorgemerkt.
 
 > **Leitfrage:** „Welches Tool taugt für meinen Kontext?" — als zweite Lesart neben Atlas (Stages) und Finder (Rolle × Ziel).
+
+---
+
+## 0. Migrationsstand-Hinweis
+
+Aktuell sind 4 von 11 Stages in `src/content/use_cases/` überführt (architecture-design, customer-support, deployment-devops, development); der Rest liegt im Project Seed. Die Tools-Liste zeigt deshalb einen Zwischenstand. Die UI muss das transparent kommunizieren (Lede-Counter, Stage-Filter zeigt nur die 4 vorhandenen Stages). Schwellwerte (Caveats-Bucketgrenzen, Long-Tail-Default-Filter) sind beim Vollbestand gegebenenfalls zu re-justieren.
 
 ---
 
@@ -34,17 +40,31 @@ Eine eigene Top-Level-Route `/tools`, die **die andere Leserfrage** bedient: Atl
 
 ## 3. Filter- und Sortier-Achsen
 
-### 3.1 Aus den vorhandenen Daten ableitbar (Phase 2a, kein neues Feld)
+### 3.1 Aus den vorhandenen Daten ableitbar (Phase 1, kein neues Feld)
 
 | Achse | Quelle | Zweck |
 |---|---|---|
 | Kategorie | `tools.yaml.category` | Coding / Other / … |
-| Maturity | `tools.yaml.maturity` | `production` / `preview` |
-| Stage-Breite | abgeleitet aus Use-Case-Referenzen | Allrounder vs. Spezialist |
+| Maturity | `tools.yaml.maturity` | `production` / `experimental` (UI-Label: `production` / `preview`) |
+| Stages | abgeleitet aus Use-Case-Referenzen | in welchen Stages das Tool empfohlen wird |
 | Use-Case-Tiefe | abgeleitet | Anzahl Empfehlungen gesamt |
-| Suitability-Mix | abgeleitet | „X von Y Empfehlungen sind `good_fit`" |
-| Rollen-Reichweite | abgeleitet | für wie viele Rollen relevant |
-| Caveats-Dichte | abgeleitet aus Use-Case-`caveats` | „ehrliche Einordnung" als Filter |
+| Suitability-Mix | abgeleitet aus `tools[].fit` der referenzierenden Use Cases | „X von Y Empfehlungen sind `good_fit`" |
+| Caveats-Dichte | abgeleitet, **per UC normalisiert** | siehe 3.1.1 |
+
+**Bewusst nicht in der Tabelle:** Rollen-Reichweite. Verteilungs-Analyse über die heute vorhandenen Daten zeigt, dass 95 % der Tools 1–2 Rollen ansprechen — die Spalte hat fast immer denselben Wert und taugt weder als Sortier- noch als Differenzierungs-Achse. Bei Vollbestand erneut prüfen.
+
+#### 3.1.1 Caveats-Level — Berechnung
+
+Per UC normalisiert, **nicht** als Total: `caveats_level = bucket(sum(caveats) / uc_count)`. Sonst dominieren Allrounder (Copilot, Claude Code) automatisch das obere Ende, weil Caveats linear mit der UC-Anzahl mitwachsen — das misst Häufigkeit, nicht Tool-Qualität.
+
+Bucketgrenzen (Stand 4 von 11 Stages, kann beim Vollbestand justiert werden):
+
+- Level 1: < 2 Caveats / UC
+- Level 2: 2 – < 4
+- Level 3: 4 – < 7
+- Level 4: ≥ 7
+
+Verteilung über aktuell 475 referenzierte Tools: 138 / 87 / 124 / 126 — gesund über alle vier Levels.
 
 ### 3.2 Neue Felder am Tool (Phase 2b, schrittweise pflegbar)
 
@@ -72,11 +92,22 @@ Geordnet nach erwartetem Mehrwert für Enterprise-Auswahl:
 
 ## 4. Sortierung
 
-- **Default:** Anzahl `good_fit`-Empfehlungen, absteigend (signalisiert kuratierte Empfehlung statt Vollständigkeit)
-- Stage-Breite (Allrounder zuerst)
-- Use-Case-Tiefe
-- Alphabetisch (für Reverse-Lookup)
-- **Mehrspaltige Subsortierung:** UI-Pattern Shift+Klick auf Spaltenkopf → Sekundär-/Tertiärschlüssel; visualisiert über kleine Badges (1, 2, 3) am Spaltenkopf
+- **Default (Build-Zeit):** Anzahl `good_fit`-Empfehlungen DESC, mit Use-Case-Anzahl DESC als Tiebreaker, alphabetisch als zweiter Tiebreaker. Begründung: Die Power-Law-Verteilung der Use-Case-Anzahl (79 % der Tools mit 1 UC) macht UC-Count als Default-Sort uninteressant — Highlights kommen so nach oben.
+- **Klickbare Sort-Achsen** in den Spaltenköpfen: Empfohlen in (Stages-Anzahl), Use Cases, Eignung (good_fit-Count), Caveats, Maturity, Tool-Name (alphabetisch).
+- **Mehrspaltige Subsortierung:** UI-Pattern Shift+Klick auf Spaltenkopf → Sekundär-/Tertiärschlüssel; visualisiert über kleine Mono-Badges (`1↓`, `2↑`, `3↓`) am Spaltenkopf.
+
+## 4a. Tabellen-Spalten (Phase 1)
+
+Sechs Spalten, gemeinsame Breiten-Summe = 100 %:
+
+| # | Spalte | Breite | Inhalt |
+|---|---|---|---|
+| 1 | Tool | 30 % | Name (Serif) · Vendor-Host abgeleitet aus `url` (Mono mute) · Kategorie (Mono mute uppercase) |
+| 2 | Empfohlen in | 16 % | Stage-Badges (Kürzel: ARCH, DEV, TEST, OPS, …) |
+| 3 | Use Cases | 10 % | Mono-Zahl |
+| 4 | Eignung | 26 % | gestapelte Suitability-Pills mit Mono-Zähler („`6×` good_fit") |
+| 5 | Caveats | 10 % | 4-Striche-Bar-Indikator (Level 1–4 nach 3.1.1) |
+| 6 | Maturity | 8 % | Mono-Tag, `production` neutral, `preview` (= experimental) in amber |
 
 ---
 

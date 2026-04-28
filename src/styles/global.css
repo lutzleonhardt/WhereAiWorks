@@ -1502,3 +1502,323 @@ a.src:hover { color: var(--ink); }
   border: 1px solid var(--rule);
   border-radius: 2px;
 }
+
+/* ------- Tools-Seite ------- */
+
+.lede-wrap > .wrap > .lede {
+  /* Tools-Page nutzt .lede in einer eigenen Wrap-Schicht; oberer Abstand
+     bleibt wie auf den anderen Top-Level-Seiten. */
+  padding-top: 64px;
+}
+
+.filter-bar {
+  padding: 24px 0 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px 20px;
+}
+@media (max-width: 900px) {
+  .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .filter-grid { grid-template-columns: 1fr; }
+}
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.filter-field label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.filter-field select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 32px 10px 12px;
+  min-height: 42px;
+  font-size: 14px;
+}
+
+.filter-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.filter-foot .count b {
+  color: var(--ink);
+  font-weight: 500;
+}
+.filter-foot a.reset {
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--rule-strong);
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-bottom: 1px;
+}
+.filter-foot a.reset:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* Stage-Badge in der Tabelle */
+.stage-b {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  padding: 3px 6px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: var(--bg);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Maturity-Tag */
+.mat {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  padding: 3px 7px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: var(--bg);
+  line-height: 1;
+  white-space: nowrap;
+}
+.mat.preview {
+  color: var(--amber);
+  border-color: rgba(183, 121, 31, 0.4);
+}
+
+/* Caveats-Bar (4 Striche) */
+.cav {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 1;
+}
+.cav i {
+  display: block;
+  width: 4px;
+  height: 8px;
+  background: var(--rule-strong);
+  border-radius: 1px;
+}
+.cav i.on { background: var(--ink); }
+.cav.lvl-3 i.on { background: var(--orange); }
+.cav.lvl-4 i.on { background: var(--red); }
+
+/* Mono-Zähler innerhalb von Pills */
+.pill .n {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Tabelle */
+.table-section {
+  padding: 28px 0 6px;
+}
+table.tools-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 14px;
+}
+table.tools-table col.c-tool   { width: 30%; }
+table.tools-table col.c-stages { width: 16%; }
+table.tools-table col.c-uc     { width: 10%; }
+table.tools-table col.c-fit    { width: 26%; }
+table.tools-table col.c-cav    { width: 10%; }
+table.tools-table col.c-mat    { width: 8%;  }
+
+table.tools-table thead th {
+  position: sticky;
+  top: 64px;
+  z-index: 10;
+  background: var(--bg);
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--rule-strong);
+  cursor: pointer;
+  user-select: none;
+  vertical-align: bottom;
+}
+table.tools-table thead th:hover { color: var(--ink); }
+table.tools-table thead th.sorted { color: var(--ink); }
+table.tools-table thead th .th-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  line-height: 1.3;
+}
+
+.sortb {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 1px 4px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  line-height: 1.4;
+  background: var(--bg);
+  letter-spacing: 0.05em;
+}
+
+table.tools-table tbody tr {
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.12s ease;
+}
+table.tools-table tbody tr:hover { background: var(--bg-sunk); }
+table.tools-table tbody td {
+  padding: 14px 12px;
+  vertical-align: top;
+  color: var(--ink);
+}
+
+td.tool-cell { min-width: 0; }
+td.tool-cell .tn {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border: 0;
+  line-height: 1.25;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+td.tool-cell .tn:hover { color: var(--accent); }
+td.tool-cell .vendor {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin-top: 3px;
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+td.tool-cell .cat {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  margin-top: 6px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td.stages .stage-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+td.num {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+td.fit .fit-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.tools-empty {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-mute);
+  border: 1px dashed var(--rule-strong);
+  background: var(--bg-sunk);
+  margin-top: 16px;
+}
+
+.table-hint {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 14px 0 8px;
+  border-top: 1px dashed var(--rule);
+  margin-top: 6px;
+}
+.table-hint kbd {
+  font-family: var(--mono);
+  font-size: 10px;
+  background: var(--bg);
+  border: 1px solid var(--rule-strong);
+  padding: 1px 5px;
+  border-radius: 2px;
+  color: var(--ink-soft);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.table-hint .sep {
+  margin: 0 10px;
+  color: var(--rule-strong);
+}
+
+/* Mobile-Karten statt Tabelle (≤720px) — Phase 1: Tabelle bleibt scrollbar.
+   Der Card-Modus folgt in einem späteren Schritt; bis dahin lassen wir die
+   Tabelle horizontal scrollen, ohne die volle Seite zu dehnen. */
+@media (max-width: 720px) {
+  .table-section .wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  table.tools-table {
+    min-width: 760px;
+  }
+  table.tools-table thead th {
+    position: static;
+  }
+}
