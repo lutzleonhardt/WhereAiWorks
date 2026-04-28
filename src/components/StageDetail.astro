@@ -191,11 +191,16 @@ const useCases = useCaseEntries.map((entry) => entry.data);
               <span class="stage-uc-pill-slot">
                 <SuitabilityBadge suitability={uc.suitability} context="ai" />
                 <span
-                  class={`stage-uc-coverage-mini stage-uc-coverage-mini-${coverage}`}
+                  class={`pill coverage coverage-${coverage}${coverage === 'strong' ? ' is-default' : ''}`}
                   role="img"
-                  title={`${coverageLabels[coverage]} — ${coverageTooltip}`}
+                  title={coverageTooltip}
                   aria-label={`${coverageLabels[coverage]}. ${coverageTooltip}`}
-                ></span>
+                  aria-hidden={coverage === 'strong' ? 'true' : 'false'}
+                >
+                  <span class="bars" aria-hidden="true"
+                    ><span></span><span></span><span></span><span></span></span>
+                  {coverageLabels[coverage]}
+                </span>
               </span>
               <span class="stage-uc-tools-line">
                 <span class="label">Tools ({uc.tools.length})</span>
@@ -219,16 +224,6 @@ const useCases = useCaseEntries.map((entry) => entry.data);
 
             <div class="stage-uc-body">
               <div class="stage-uc-section">
-                <div class="stage-uc-judgement">
-                  <span
-                    class={`stage-coverage stage-coverage-${coverage}`}
-                    role="status"
-                    title={coverageTooltip}
-                    aria-label={`${coverageLabels[coverage]}. ${coverageTooltip}`}
-                  >
-                    {coverageLabels[coverage]}
-                  </span>
-                </div>
                 <p class="stage-uc-why">{uc.rationale}</p>
                 {(uc.adoption_maturity || uc.enterprise_relevance || uc.evidence_strength) && (
                   <div class="stage-uc-meta">

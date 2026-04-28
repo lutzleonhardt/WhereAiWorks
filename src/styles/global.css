@@ -862,25 +862,27 @@ a.src:hover { color: var(--ink); }
   gap: 8px;
 }
 
-.stage-uc-coverage-mini {
-  display: inline-block;
-  width: 28px;
-  height: 6px;
-  border-radius: 1px;
-  background:
-    linear-gradient(
-      to right,
-      var(--ink) 0%,
-      var(--ink) var(--fill, 25%),
-      var(--rule) var(--fill, 25%),
-      var(--rule) 100%
-    );
-  cursor: help;
+.pill.coverage {
+  color: var(--ink-soft);
+  padding: 5px 10px 5px 8px;
 }
-.stage-uc-coverage-mini-strong { --fill: 100%; }
-.stage-uc-coverage-mini-ok { --fill: 66%; }
-.stage-uc-coverage-mini-thin { --fill: 33%; }
-.stage-uc-coverage-mini-open { --fill: 0%; }
+.pill.coverage .bars {
+  display: inline-flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.pill.coverage .bars > span {
+  width: 4px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--rule-strong);
+}
+.pill.coverage-strong { color: var(--ink); }
+.pill.coverage-strong .bars > span:nth-child(-n+4) { background: var(--ink); }
+.pill.coverage-ok .bars > span:nth-child(-n+3) { background: var(--ink); }
+.pill.coverage-thin .bars > span:nth-child(-n+1) { background: var(--ink); }
+.pill.coverage-open { color: var(--ink-mute); }
+.pill.coverage.is-default { visibility: hidden; }
 
 .stage-uc-tools-line {
   grid-column: 1 / -1;
@@ -945,55 +947,6 @@ a.src:hover { color: var(--ink); }
   font-size: 14px;
   color: var(--ink-soft);
   line-height: 1.6;
-}
-
-.stage-uc-judgement {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 14px;
-}
-
-.stage-coverage {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 10px;
-  border: 1px solid var(--rule-strong);
-  border-radius: 999px;
-  background: var(--bg);
-  color: var(--ink-soft);
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.stage-coverage::before {
-  content: "";
-  width: 20px;
-  height: 6px;
-  border-radius: 1px;
-  background:
-    linear-gradient(
-      to right,
-      var(--ink) 0%,
-      var(--ink) var(--fill, 25%),
-      var(--rule) var(--fill, 25%),
-      var(--rule) 100%
-    );
-}
-.stage-coverage-strong {
-  --fill: 100%;
-  color: var(--ink);
-}
-.stage-coverage-ok { --fill: 66%; }
-.stage-coverage-thin { --fill: 33%; }
-.stage-coverage-open {
-  --fill: 0%;
-  color: var(--ink-mute);
 }
 
 .stage-uc-why {
