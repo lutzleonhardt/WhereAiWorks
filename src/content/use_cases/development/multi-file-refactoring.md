@@ -8,7 +8,7 @@ goal_label: Größere Code-Änderungen durch AI vorbereiten lassen
 suitability: conditional
 rationale: "Augment Code, Sourcegraph Cody und JetBrains Junie belegen, dass konsistente Multi-File-Refactorings — Umbenennungen, Pattern-Migrationen, Typ-Anpassungen — mit heutigen Agent-Tools handhabbar sind. Für DACH-Enterprises bietet der Markt erstmals mehrere compliance-taugliche Optionen mit SOC 2, GDPR und Self-Host-Option. Die Einsatzbedingung bleibt stabil: ohne Testabdeckung multipliziert AI den Fehlerradius, statt ihn zu begrenzen."
 tools:
-  - id: aider
+  - id: aider-chat
     fit: good_fit
     enterprise_readiness: evaluation_only
     confidence: high
@@ -22,9 +22,9 @@ tools:
       - Kein integriertes Test-Loop-Self-Healing wie bei Claude Code.
       - Enterprise-Governance/SSO/Compliance fehlen — eher individuell oder Team-DIY.
     sources:
-      - id: aider-vibecodemeta
-      - id: aider-agentwiki
-  - id: augment-code
+      - id: vibecodemeta-com-blog-aider-vs-cline-vs-continue
+      - id: agentwiki-org-aider
+  - id: augmentcode-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -38,9 +38,9 @@ tools:
       - Credit-basiertes Pricing kann bei intensiver Refactor-Nutzung teuer werden.
       - Berichte über Reliability-Probleme bei sehr großem Scope; Governance-Modell als 'limited' bewertet.
     sources:
-      - id: augment-code-augmentcode-augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
-      - id: augment-code-byteable
-  - id: openai-codex
+      - id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
+      - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+  - id: openai-com-codex
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -53,9 +53,9 @@ tools:
       - Tiefere Multi-File-Refactorings werden in Praxis-Berichten oft an Claude Code abgegeben.
       - Multi-Surface-Setup (Cloud, ChatGPT, CLI) kann Komplexität erhöhen.
     sources:
-      - id: openai-codex-openai
-      - id: openai-codex-plainenglish
-  - id: sourcegraph-cody-batch-changes
+      - id: openai-com-codex
+      - id: ai-plainenglish-io-i-tested-claude-code-codex-gemini-cli-and-aider-back-to-back-heres-what-i-actually-bill-with-2aec70e75846
+  - id: sourcegraph-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -69,9 +69,9 @@ tools:
       - Agentic Migrations noch als 'Experimental' gekennzeichnet.
       - CI/CD-Integration laut Drittvergleich nur mittelstark (2/5 in Byteable-Scorecard).
     sources:
-      - id: sourcegraph-cody-batch-changes-sourcegraph
-      - id: sourcegraph-cody-batch-changes-devapps-uk
-  - id: aws-amazon-q-developer-debug-diagnose
+      - id: sourcegraph-com
+      - id: devapps-uk-tools-sourcegraph-cody-in-2026-the-enterprise-navigator-for-your-code-jungle
+  - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -83,8 +83,8 @@ tools:
       - Außerhalb AWS-Stack weniger relevant; 'Software upgrades' enger gefasst als allgemeines Refactoring.
       - SWE-bench unter 50% – schwächer als Claude Code (~80%).
     sources:
-      - id: amazon-q-developer-mightybot
-  - id: cline
+      - id: mightybot-ai-blog-coding-ai-agents-for-accelerating-engineering-workflows
+  - id: github-com-cline-cline
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -98,9 +98,9 @@ tools:
       - Berichtete Probleme beim Schreiben großer Dateien (Platzhalter statt vollständiger Edits).
       - Approve-everything-Modell kostet bei vielen Dateien Klick-Friktion.
     sources:
-      - id: cline-morphllm
-      - id: cline-reddit
-  - id: qodo
+      - id: morphllm-com-comparisons-aider-vs-cline
+      - id: reddit-com-r-claudeai-comments-1izmyps-claude-cursor-aider-cline-or-github-copilotwhich
+  - id: qodo-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -113,9 +113,9 @@ tools:
       - Stärke liegt eher bei Review/PR-Workflows als bei autonomem in-IDE-Multi-File-Refactoring.
       - Credit-basiertes Pricing; Limited CI/CD-native Refactoring.
     sources:
-      - id: qodo-qodo
-      - id: augment-code-byteable
-  - id: zencoder
+      - id: qodo-ai-question-code-refactoring
+      - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+  - id: zencoder-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -127,9 +127,9 @@ tools:
       - Im Vergleich zu Augment/Cursor weniger empirische Praktiker-Reviews verfügbar.
       - Governance-Posture laut Drittvergleich mittel; Enterprise-Footprint kleiner als Cursor/Sourcegraph.
     sources:
-      - id: zencoder-zencoder
-      - id: augment-code-byteable
-  - id: lurus-code
+      - id: zencoder-ai-product
+      - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+  - id: code-lurus-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -139,9 +139,9 @@ tools:
       - Refactor-Tiefe gegenüber Augment/Claude Code unbewiesen.
       - Skalengrenzen für Großrefactorings nicht öffentlich dokumentiert.
     sources:
-      - id: lurus-code-lurus
-      - id: lurus-code-lurus-2
-  - id: vault
+      - id: code-lurus-ai-en
+      - id: code-lurus-ai-en-docs-cli-commands
+  - id: getvault-dev
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -151,8 +151,8 @@ tools:
       - Junger Anbieter; Vendor-Risiko bei mehrjährigen Refactor-Programmen.
       - EU-Präsenz/DACH-Referenzen nicht öffentlich belegt.
     sources:
-      - id: vault-getvault
-  - id: vostracode
+      - id: getvault-dev
+  - id: vostracode-com
     fit: partial
     enterprise_readiness: team_ready
     confidence: low
@@ -162,8 +162,8 @@ tools:
       - Sehr wenige unabhängige Reviews – Evaluations-Pilot Pflicht.
       - Markt-Sichtbarkeit gering; Vendor-Risiko erhöht.
     sources:
-      - id: vostracode-vostracode
-  - id: jetbrains-junie
+      - id: vostracode-com
+  - id: jetbrains-com-junie
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -177,8 +177,8 @@ tools:
       - Nur für JetBrains-IDEs (IntelliJ, PyCharm, WebStorm etc.) – kein VS-Code-Support.
       - Lokale Modelle (Ollama) noch nicht unterstützt; BYOK im Junie-CLI-Beta verfügbar, aber Junie IDE-Extension bleibt Cloud-gebunden.
     sources:
-      - id: junie-vibecoder
-      - id: junie-lengrand
+      - id: blog-vibecoder-me-jetbrains-ai-intellij-pycharm-webstorm
+      - id: lengrand-fr-my-experience-using-junie-for-the-past-few-months
 start_here: JetBrains-Nutzer beginnen mit Junie an einem eng umrissenen Rename-Refactoring über 5–10 Dateien — die IDE-native PSI-Propagierung ist semantisch korrekter als reines Text-Replace. Für Multi-Repo- oder Monorepo-Scale bietet sich ein Sourcegraph-Pilot mit Batch Changes an; der Indexierungs-Aufwand ist dabei einzuplanen. Ergebnis stets als PR reviewen, nicht blind übernehmen.
 caveats: "Qualität skaliert direkt mit Testabdeckung — ohne Regressionstests fehlt die Rückkopplungsschleife, die AI-Fehler sichtbar macht. Scope-Creep ist bei allen Tools dokumentiert: Junie macht unaufgeforderte Formatierungs- und Build-Änderungen, Augment zeigt Reliability-Probleme bei sehr großem Scope. DACH-Compliance erfordert explizite Klärung: EU-Hosting und DPA sind nicht bei allen Tools standardmäßig aktiv."
 sources: []

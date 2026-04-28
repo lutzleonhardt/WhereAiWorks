@@ -9,7 +9,7 @@ goal_label: Frameworks und Bibliotheken systematisch vergleichen
 suitability: conditional
 rationale: ChatGPT Deep Research und Claude liefern strukturierte Trade-off-Reports über mehrere Kandidaten, die manuelle Recherchearbeit für Architekten spürbar verkürzen. FOSSA adressiert den systematischen Blindspot beider Tools bei Lizenz- und Provenance-Prüfung — und ist damit für regulierte DACH-Umgebungen kein optionaler Zusatz.
 tools:
-  - id: chatgpt-deep-research
+  - id: openai-com-index-introducing-deep-research
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -37,10 +37,10 @@ tools:
         - Reports oft zu lang fuer schnelle Architektur-Entscheidungen
         - Limitierte Runs auf Plus-Tier
     sources:
-      - id: chatgpt-deep-research-g2
-      - id: chatgpt-deep-research-freeacademy
-      - id: chatgpt-deep-research-ycombinator
-  - id: claude-code
+      - id: learn-g2-com-perplexity-vs-chatgpt
+      - id: freeacademy-ai-blog-google-deep-research-vs-perplexity-vs-chatgpt-comparison-2026
+      - id: news-ycombinator-com-item-id-43236184
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -68,10 +68,10 @@ tools:
         - Manchmal zu vorsichtig in Empfehlungen
         - Kein Free-Tier fuer Research-Modus
     sources:
-      - id: claude-pro-research-emergent-sh
-      - id: claude-pro-research-gerloff
-      - id: claude-pro-research-reddit
-  - id: fossa-mit-fossabot
+      - id: emergent-sh-learn-perplexity-vs-claude
+      - id: gerloff-dev-writing-claude-aws-azure-google-gdpr
+      - id: reddit-com-user-enoumen-comments-1rn72uv-the-convergence-of-latent-reasoning-and-agentic-json
+  - id: fossa-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -96,10 +96,10 @@ tools:
         - Teurer Enterprise-Vertrag noetig
         - Vulnerability-Tiefe geringer als Snyk
     sources:
-      - id: fossa-mit-fossabot-appsecsanta
-      - id: fossa-mit-fossabot-softwareseni
-      - id: fossa-mit-fossabot-stackinsight-net
-  - id: scanoss
+      - id: appsecsanta-com-fossa
+      - id: softwareseni-com-adding-ai-licence-compliance-to-your-existing-engineering-workflow
+      - id: stackinsight-net-snyk-vs-fossa-comparison
+  - id: scanoss-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -115,8 +115,8 @@ tools:
       - Erfordert eigenes Setup oder Partner-SaaS
       - Trade-off-Analyse muss separat erfolgen
     sources:
-      - id: scanoss-scanoss
-  - id: aleph-alpha-pharia-ai
+      - id: scanoss-com-license-dataset
+  - id: aleph-alpha-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -127,8 +127,8 @@ tools:
       - PhariaAI ist eher Plattform/Layer als out-of-the-box Architekten-Tool — Implementierungsaufwand
       - Pricing/Lizenzmodell weniger transparent als bei Mainstream-Anbietern
     sources:
-      - id: aleph-alpha-phariaai-post-cohere-merger-businesswire
-  - id: mistral-le-chat-enterprise
+      - id: businesswire-com-news-home-20260424174908-en-sovereign-ai-for-the-world-cohere-and-aleph-alpha-to-form-global-ai-powerhouse-as-nations-and-enterprises-demand-control-over-their-technology
+  - id: mistral-ai-news-le-chat-enterprise
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -139,9 +139,9 @@ tools:
       - Quellenabdeckung tendenziell schwaecher fuer englischsprachige Long-Tail-Frameworks
       - Praktiker-Reviews fuer Architekten-Workflow noch duenn
     sources:
-      - id: mistral-le-chat-enterprise-deep-research-mistral
-      - id: mistral-hyperion-enterprise-guide
-  - id: black-duck-software-composition-analysis
+      - id: mistral-ai-news-le-chat-dives-deep
+      - id: hyperion-consulting-io-en-insights-mistral-ai-complete-guide-2026
+  - id: blackduck-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -153,11 +153,11 @@ tools:
       - Eher Compliance-Pflicht als Architekten-Komfort-Tool
       - Developer-Workflow weniger smooth als Snyk; Black Duck ist Security-/Legal-Team-getrieben
     sources:
-      - id: black-duck-software-composition-analysis-blackduck
-      - id: black-duck-software-composition-analysis-gartner
-      - id: black-duck-software-composition-analysis-appsecsanta
-      - id: black-duck-software-composition-analysis-itcentralstation
-  - id: copilot
+      - id: blackduck-com
+      - id: gartner-com-reviews-product-black-duck-software-composition-analysis
+      - id: appsecsanta-com-sca-tools-black-duck-vs-snyk
+      - id: itcentralstation-com-products-black-duck-sca-reviews
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -181,11 +181,11 @@ tools:
         - Output-Qualitaet abhaengig von Graph-/SharePoint-Daten
         - Tiefer als Chat, aber unter Frontier-Direkttools
     sources:
-      - id: microsoft-365-copilot-researcher-researcher-agent-microsoft
-      - id: microsoft-365-copilot-researcher-excellence-it
-      - id: microsoft-365-copilot-researcher-buckleyplanet
-      - id: microsoft-365-copilot-researcher-shimonifrah
-  - id: perplexity-enterprise
+      - id: microsoft-com-en-us-microsoft-365-copilot-researcher
+      - id: excellence-it-co-uk-insights-microsoft-copilot-researcher-agent
+      - id: buckleyplanet-com-2025-12-copilot-agents-getting-real-work-done-with-the-researcher-agent
+      - id: shimonifrah-com-2026-04-14-microsoft-critique-runs-two-ai-models-against-each-other-for-better-research-my-first-look
+  - id: perplexity-ai-enterprise
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -197,11 +197,11 @@ tools:
       - Sonar-Antworten nicht deterministisch reproduzierbar — Audit-Trail-Schwaeche
       - Sonar Deep Research ist Pay-per-Token ($2/$8 pro M Token) — Kosten skalieren mit Pipeline-Volume
     sources:
-      - id: perplexity-enterprise-perplexity
-      - id: perplexity-enterprise-inkl-deep-research-sonar-api-lmmarketcap
-      - id: perplexity-enterprise-inkl-deep-research-sonar-api-colinmcnamara
-      - id: perplexity-enterprise-inkl-deep-research-sonar-api-multi-ai
-  - id: snyk-advisor-license-compliance-enterprise
+      - id: perplexity-ai-enterprise
+      - id: lmmarketcap-com-model-sonar-deep-research
+      - id: colinmcnamara-com-blog-perplexity-sonar-api-enterprise
+      - id: multi-ai-ai-en-blog-perplexity-sonar-en
+  - id: snyk-io
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -213,10 +213,10 @@ tools:
       - Health-Daten fuer .NET/Java weniger umfangreich als npm/PyPI
       - Lizenz-Policy-Engine nur Allow/Flag/Block — Edge-Cases (Dual-License, versions-spezifische Wechsel) schwaecher als Black Duck/FOSSA
     sources:
-      - id: snyk-advisor-license-compliance-enterprise-snyk
-      - id: snyk-advisor-license-compliance-enterprise-aicodereview
-      - id: snyk-advisor-license-compliance-enterprise-appsecsanta-licensing
-  - id: sonatype-lifecycle-mit-mcp-server
+      - id: docs-snyk-io-scan-with-snyk-snyk-open-source-scan-open-source-libraries-and-licenses-snyk-license-compliance-management
+      - id: aicodereview-cc-blog-snyk-vs-black-duck
+      - id: appsecsanta-com-sca-tools-open-source-license-compliance
+  - id: sonatype-com-products-sonatype-lifecycle
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -228,9 +228,9 @@ tools:
       - Komponenten-/Paket-Ebene, kein generischer Architektur-Trade-off
       - MCP-Server jung — Toolset (getComponentVersion, getRecommendedComponentVersions) noch begrenzt
     sources:
-      - id: sonatype-lifecycle-mit-mcp-server-sonatype
-      - id: sonatype-lifecycle-mit-mcp-server-infoq
-      - id: sonatype-lifecycle-mit-mcp-server-github
+      - id: guide-sonatype-com-mcp
+      - id: infoq-com-news-2026-03-sonatype-guide-safety-mcp-server
+      - id: github-com-sonatype-dependency-management-mcp-server
 start_here: "Pilot mit ChatGPT Deep Research (Azure-OpenAI-EU-Region) starten: Kandidatenliste auf 3–5 Frameworks eingrenzen und eine eigene Bewertungsmatrix mit Performance-, Lizenz- und EU-Residenz-Spalten vorgeben statt offen nach einer Empfehlung zu fragen. FOSSA für die Shortlist einsetzen, um AGPL/SSPL-Konflikte und AI-generierte Snippet-Risiken vor der finalen Entscheidung systematisch zu klären."
 caveats: LLMs prüfen Lizenz- und Provenance-Risiken (AGPL, SSPL) nur auf explizite Aufforderung — ohne ein dediziertes SCA-Tool bleibt dieser Blindspot in der Entscheidungsdokumentation bestehen. Framework-Versionswissen der LLMs kann ohne aktiven Web-Search-Modus veraltet sein; genannte Versionen und Kompatibilitäten sollten gegen offizielle Release-Notes validiert werden.
 sources: []

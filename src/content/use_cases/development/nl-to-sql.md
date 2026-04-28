@@ -8,7 +8,7 @@ goal_label: Datenbank-Queries aus deutscher/englischer Beschreibung generieren
 suitability: conditional
 rationale: Alle großen Cloud-Warehouses bieten heute native NL→SQL-Schichten mit EU-Regionen und DACH-Compliance-Zertifizierung — Databricks Genie, Snowflake Cortex Analyst, Microsoft Fabric Copilot und Amazon Q for Redshift sind stack-nativ ohne Zusatzkauf einsetzbar. Für Teams mit harten Datenresidenzanforderungen liefert Vanna.AI als einzige Lösung im Set vollständig On-Prem ohne externen LLM-Call. Der größte kurzfristige Nutzen liegt in Schema-Exploration und Ad-hoc-Queries, nicht in automatisierten Produktionspipelines.
 tools:
-  - id: copilot
+  - id: github-com-features-copilot
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -24,8 +24,8 @@ tools:
       - Bei großen Schemas Halluzinationsrisiko ohne kuratierte Beispiele
       - Datenresidenz via Copilot Business/Enterprise Settings prüfen
     sources:
-      - id: github-copilot-chat-with-database-mcp-github
-  - id: exasol-espresso-ai-lab
+      - id: docs-github-com-en-copilot
+  - id: exasol-com-de
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -35,8 +35,8 @@ tools:
       - Engine-spezifisch (Exasol)
       - Marktanteil außerhalb DACH klein
     sources:
-      - id: exasol-espresso-ai-lab-exasol
-  - id: oracle-select-ai
+      - id: exasol-com-de
+  - id: oracle-com-autonomous-database-select-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -46,8 +46,8 @@ tools:
       - LLM-Auswahl (OCI Generative AI, Cohere, OpenAI) hat Datenresidenz-Implikationen
       - Tooling-Integration in Dev-IDEs schwächer als bei Snowflake/BigQuery
     sources:
-      - id: oracle-select-ai-oracle
-  - id: sap-joule-for-developers
+      - id: docs-oracle-com-en-cloud-paas-autonomous-database-serverless-adbsb-sql-generation-ai-autonomous-html
+  - id: sap-com-products-artificial-intelligence-ai-assistant-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -57,8 +57,8 @@ tools:
       - Modell-Hosting via SAP AI Core / Generative AI Hub — Region und Modell explizit wählen
       - Reife der NL→SQL-Komponente unter Cortex/Genie
     sources:
-      - id: sap-joule-for-developers-sap
-  - id: thoughtspot-sage
+      - id: sap-com-products-artificial-intelligence-ai-assistant-html
+  - id: thoughtspot-com-product-sage-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -68,8 +68,8 @@ tools:
       - EU-Hosting-Setup explizit wählen
       - Eher BI-Endnutzer-Werkzeug als Dev-IDE-Integration
     sources:
-      - id: thoughtspot-sage-thoughtspot
-  - id: amazon-q-for-quicksight-and-redshift
+      - id: thoughtspot-com-product-sage-ai
+  - id: aws-amazon-com-q
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -86,9 +86,9 @@ tools:
       - Generated SQL muss vor Produktion reviewed werden
       - Unabhängige Rezensionen (2026) decken Q Developer allgemein ab — spezifische Practitioner-Reviews zur Redshift-NL→SQL-Funktion sind spärlich
     sources:
-      - id: amazon-q-for-quicksight-and-redshift-amazon
-      - id: amazon-q-developer-awesomeagents
-  - id: databricks-genie
+      - id: docs-aws-amazon-com-redshift-latest-mgmt-query-editor-v2-generative-sql-html
+      - id: awesomeagents-ai-reviews-review-amazon-q-developer
+  - id: databricks-com-product-ai-bi-genie
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -104,9 +104,9 @@ tools:
       - Genie-Spaces müssen kuratiert werden
       - Kosten auf DBU-Basis
     sources:
-      - id: databricks-genie-databricks
-      - id: databricks-genie-toolchase
-  - id: google-bigquery-data-canvas-gemini-in-bigquery
+      - id: docs-databricks-com-en-genie-index-html
+      - id: toolchase-com-tool-databricks-genie
+  - id: cloud-google-com-bigquery-docs-data-canvas
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -123,9 +123,9 @@ tools:
       - Qualität fällt bei sehr großen, schlecht dokumentierten Schemas
       - Akkuratheit stark von Prompt-Engineering abhängig — kein Zero-Config-Pfad; NL2SQL bei Nested Fields, DATETIME und komplexen Funktionen eingeschränkt (per Vendor-Doku)
     sources:
-      - id: google-bigquery-data-canvas-gemini-in-bigquery-google
-      - id: google-bigquery-text-to-sql-techniques-google
-  - id: copilot
+      - id: cloud-google-com-bigquery-docs-data-canvas
+      - id: cloud-google-com-blog-products-databases-techniques-for-improving-text-to-sql
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -142,9 +142,9 @@ tools:
       - T-SQL-Dialekt-fokussiert
       - "Unabhängige Evaluation (Brent Ozar, Mai 2025): SSMS-Copilot-Prompting lieferte schlechte Ratschläge — Fabric-Data-Warehouse-Copilot-Pfad für NL→SQL bevorzugen; GitHub-Copilot-in-SSMS-Integration separat validieren"
     sources:
-      - id: microsoft-fabric-copilot-copilot-in-sql-server-management-studio-microsoft
-      - id: microsoft-fabric-copilot-brentozar
-  - id: snowflake-cortex-analyst
+      - id: learn-microsoft-com-en-us-fabric-data-warehouse-copilot
+      - id: brentozar-com-archive-2025-05-review-ssms-copilot-vs-other-ai-tools
+  - id: docs-snowflake-com-en-user-guide-snowflake-cortex-cortex-analyst
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -161,8 +161,8 @@ tools:
       - Primär für Analytics, nicht für transaktionale Schemas
       - "Unabhängige Evaluation (Theodo, Jan 2026): Query-Tracing und direkte LLM-Customization fehlten — Black-Box-Charakter; Reife seither gestiegen, aber vor Prod-Einsatz validieren"
     sources:
-      - id: snowflake-cortex-analyst-snowflake
-      - id: snowflake-cortex-analyst-theodo
+      - id: docs-snowflake-com-en-user-guide-snowflake-cortex-cortex-analyst
+      - id: theodo-com-blog-is-cortex-analyst-the-ultimate-text-to-sql-tool-for-snowflake-users
   - id: vanna-ai
     fit: good_fit
     enterprise_readiness: team_ready
@@ -179,8 +179,8 @@ tools:
       - Qualität hängt stark vom Training-Set (Beispiel-Queries) ab
       - Kein vollständig managed-Enterprise-Support out of the box
     sources:
-      - id: vanna-ai-github
-      - id: vanna-ai-aicoolies
+      - id: github-com-vanna-ai-vanna
+      - id: aicoolies-com-reviews-vanna-ai-review
 start_here: "Mit dem Tool beginnen, das den bestehenden Stack nativ abdeckt: Databricks Genie für Lakehouse-Kunden, Snowflake Cortex Analyst für Snowflake, Microsoft Fabric Copilot für Azure SQL, Amazon Q für Redshift. Den Pilot ausschließlich gegen Nicht-Personendaten und lesende Analytics-Queries führen — Schema-Dokumentation oder Semantic-Model-Pflege muss vor dem Rollout stehen. Generierten SQL immer manuell prüfen, bevor er in Produktionsdatenbanken oder automatisierte Pipelines läuft."
 caveats: Ohne kuratierte Schema-Kommentare oder Semantic-Models halluzinieren alle Tools Spalten- und Tabellennamen — Schema-Pflege ist Voraussetzung, keine Option. Schemas mit Personenbezug (Kunden, Versicherte, Patienten) unterliegen DSGVO; On-Prem-LLM (Vanna.AI) oder strikte EU-Region-Konfiguration des Warehouse-eigenen Tools sind Pflicht. In AI-Act-High-Risk-Domänen müssen generierte SQL-Statements vor der Ausführung dokumentiert und im Audit-Trail gehalten werden.
 sources: []

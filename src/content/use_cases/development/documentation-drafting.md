@@ -26,7 +26,7 @@ tools:
       complaints:
         - Wenig AI-Komponente
     sources:
-      - id: bump-sh-bump-sh
+      - id: bump-sh
   - id: continue-dev
     fit: conditional
     enterprise_readiness: team_ready
@@ -47,8 +47,8 @@ tools:
         - Konfig-Aufwand
         - Nicht so poliert wie Cursor
     sources:
-      - id: continue-dev-commit-pr-via-custom-slash-commands-continue
-  - id: readme
+      - id: docs-continue-dev-customize-slash-commands
+  - id: readme-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -67,8 +67,8 @@ tools:
         - Preis
         - AI-Features eher Add-on
     sources:
-      - id: readme-readme
-  - id: stainless
+      - id: readme-com
+  - id: stainless-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -87,8 +87,8 @@ tools:
         - Voraussetzung sauberes OpenAPI
         - Preis Enterprise-orientiert
     sources:
-      - id: stainless-stainless
-  - id: tabnine
+      - id: stainless-com
+  - id: tabnine-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -107,8 +107,8 @@ tools:
         - Modellqualitaet
         - Hinter Frontier-Anbietern
     sources:
-      - id: tabnine-tabnine
-  - id: atlassian-rovo
+      - id: docs-tabnine-com-main-software-development-with-tabnine-tabnine-chat
+  - id: atlassian-com-software-rovo
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -118,8 +118,8 @@ tools:
       - AI-Output muss redaktionell auf API-Vertragstreue geprueft werden
       - Rovo ist neuer als Confluence selbst - Reife pro Connector unterschiedlich
     sources:
-      - id: atlassian-rovo-dev-agents-atlassian
-  - id: document360
+      - id: atlassian-com-software-rovo
+  - id: document360-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -129,7 +129,7 @@ tools:
       - AI-Writer schwaecher als Frontier-Coding-Assistants
       - Kein direkter Repo-Code-Index
     sources:
-      - id: document360-document360
+      - id: document360-com-security
   - id: refact-ai
     fit: conditional
     enterprise_readiness: team_ready
@@ -140,8 +140,8 @@ tools:
       - Kleinerer Vendor - Beschaffungs-/Roadmap-Risiko
       - Kein managed Enterprise-Support standard
     sources:
-      - id: refact-ai-refact
-  - id: stoplight
+      - id: refact-ai
+  - id: stoplight-io
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -151,8 +151,8 @@ tools:
       - Lizenzkosten Enterprise-orientiert
       - Roadmap-Bewegungen seit SmartBear-Akquisition zu beobachten
     sources:
-      - id: stoplight-stoplight
-  - id: claude-code
+      - id: stoplight-io
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -172,10 +172,10 @@ tools:
         - Tokenkosten
         - Output muss kuratiert werden
     sources:
-      - id: claude-code-claude-docs-claude-com-en-docs-claude-code-hooks
-      - id: claude-code-devreviewer
-      - id: claude-code-dev-to
-  - id: cursor
+      - id: docs-claude-com-en-docs-claude-code-hooks
+      - id: devreviewer-com-claude-code-review-2
+      - id: dev-to-subprime2010-how-i-use-claude-code-to-write-documentation-a-complete-workflow-2jk4
+  - id: cursor-com
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -195,10 +195,10 @@ tools:
         - Privacy/Compliance-Fragen in DACH
         - Kosten bei Power-Use
     sources:
-      - id: cursor-cursor-cursor-com-features
-      - id: cursor-medium-jsdoc
-      - id: cursor-markaicode
-  - id: copilot
+      - id: cursor-com-features
+      - id: medium-com-vibecodingdirectory-cursor-rules-for-code-documentation-auto-generate-jsdoc-and-readmes-without-the-hassle-92dc6ae5bf0e
+      - id: markaicode-com-cursor-background-agents-documentation
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -218,10 +218,10 @@ tools:
         - Beschreibt das Was statt das Warum
         - Erfindet teils Parameter-Bedeutung
     sources:
-      - id: github-copilot-chat-debug-mode-github
-      - id: copilot-medium-architect
-      - id: copilot-clickup
-  - id: jetbrains-ai-assistant
+      - id: docs-github-com-en-copilot-using-github-copilot-asking-github-copilot-questions-in-your-ide
+      - id: medium-com-harpreetset-generating-documentation-on-large-projects-using-github-co-pilot-2788b729fc09
+      - id: clickup-com-blog-how-to-use-github-copilot-for-code-documentation
+  - id: jetbrains-com-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -241,8 +241,8 @@ tools:
         - Qualitaet hinter Copilot/Claude
         - Lizenzkosten zusaetzlich zur IDE
     sources:
-      - id: jetbrains-ai-assistant-junie-jetbrains
-  - id: mintlify
+      - id: jetbrains-com-help-idea-ai-assistant-html
+  - id: mintlify-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -263,9 +263,9 @@ tools:
         - Lock-in in Mintlify-Format
         - Preisspruenge bei groesseren Teams
     sources:
-      - id: mintlify-mintlify
-      - id: mintlify-ferndesk
-  - id: sourcegraph-cody
+      - id: mintlify-com-docs
+      - id: ferndesk-com-blog-mintlify-review
+  - id: sourcegraph-com-cody
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -285,8 +285,8 @@ tools:
         - Setup-Aufwand
         - Latenz bei sehr grossen Repos
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
-  - id: swimm
+      - id: sourcegraph-com-docs-cody-capabilities-commands
+  - id: swimm-io
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -306,9 +306,9 @@ tools:
         - Markup-Lock-in
         - Adoption im Team haengt
     sources:
-      - id: swimm-swimm
-      - id: swimm-tooliverse
-      - id: swimm-overcast
+      - id: swimm-io-why-swimm
+      - id: tooliverse-ai-tools-swimm
+      - id: overcast-blog-ai-driven-documentation-in-2026-f993f0c6d0d6
 start_here: Einstieg mit GitHub Copilot für Inline-Docstrings und README-Skelette in der bestehenden IDE — ein Mensch prüft die semantische Aussage, nicht nur die Syntax. Für umfangreichere Repo-Doku und höhere Prosa-Qualität ergänzt Claude Code via Bedrock oder Vertex. Sobald API-Verträge betroffen sind, Swimm als CI-Gate einziehen, damit Code und Doku nicht auseinanderlaufen; im DACH-Finanzkontext Doku-Artefakte versionieren und als Audit-Nachweis ablegen.
 caveats: KI-generierte Doku ist syntaktisch sauber, inhaltlich jedoch oft tautologisch — sie beschreibt das Was statt das Warum und muss redaktionell nachgearbeitet werden. Bei API-Verträgen ohne CI-Quellverlinkung entsteht Drift zwischen Code und Doku; ein Gate wie Swimm ist Pflicht, kein Optional. Für regulierte DACH-Kontexte Datenresidenz und DPA je nach gewähltem Tool-Tier vorab klären — die Garantien unterscheiden sich zwischen Cloud-Tiers erheblich.
 sources: []

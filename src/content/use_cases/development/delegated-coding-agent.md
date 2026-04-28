@@ -8,7 +8,7 @@ goal_label: Tickets asynchron an einen Cloud-Agent geben und PR zurückbekommen
 suitability: conditional
 rationale: GitHub Copilot Cloud Agent, Cursor Background Agents und Claude Code als GitHub Action sind alle GA und enterprise-ready – der Delegation-Workflow ist damit vom Konzept in produktiven Einsatz gewechselt. Für DACH-FS-Umgebungen existieren mit Self-Hosted-Runner und EU-Modell-Routing (Bedrock/Vertex) dokumentierte DORA-kompatible Pfade.
 tools:
-  - id: claude-code
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -34,11 +34,11 @@ tools:
         - Race Conditions bei vielen parallelen Background-Agents
         - Endless-Loops bei extern gemergten PRs gemeldet
     sources:
-      - id: claude-code-github-action-anthropic-github
-      - id: claude-code-github-action-anthropic-github-2
-      - id: claude-code-github-action-anthropic-github-3
-      - id: claude-code-github-action-anthropic-dev-to
-  - id: factory-droids
+      - id: github-com-anthropics-claude-code-action
+      - id: github-com-rdar-lab-self-hosted-claude-github-agent
+      - id: github-com-anthropics-claude-code-issues-15957
+      - id: dev-to-whoffagents-github-actions-claude-code-i-automated-my-entire-dev-workflow-26b
+  - id: factory-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -58,10 +58,10 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: factory-droids-factory
-      - id: factory-droids-factory-2
-      - id: factory-droids-cxodigitalpulse
-  - id: copilot
+      - id: docs-factory-ai-enterprise
+      - id: factory-ai-news-factory-is-ga
+      - id: cxodigitalpulse-com-factory-hits-1-5-billion-valuation-to-build-ai-coding-platform-for-enterprises
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -90,12 +90,12 @@ tools:
         - "Review-Last explodiert: 9 PRs / 5-9h Reviewzeit"
         - Kein nativer DORA/EU-Region-Default
     sources:
-      - id: github-copilot-cloud-agent-formerly-coding-agent-github
-      - id: github-copilot-cloud-agent-formerly-coding-agent-github-blog
-      - id: github-copilot-cloud-agent-formerly-coding-agent-microsoftnegotiations
-      - id: github-copilot-cloud-agent-formerly-coding-agent-reddit
-      - id: github-copilot-cloud-agent-formerly-coding-agent-ycombinator
-  - id: google-jules
+      - id: docs-github-com-en-copilot-concepts-coding-agent-coding-agent
+      - id: github-blog-2026-02-whats-new-with-github-copilot-coding-agent
+      - id: microsoftnegotiations-com-blog-github-enterprise-licensing-guide-html
+      - id: reddit-com-r-dotnet-comments-1s31tq4-ten-months-with-copilot-coding-agent-in
+      - id: news-ycombinator-com-item-id-44031432
+  - id: jules-google
     fit: good_fit
     enterprise_readiness: evaluation_only
     confidence: high
@@ -122,11 +122,11 @@ tools:
         - Overkill-Ausgaben mit unnoetigem Boilerplate
         - Halluziniert Loesungen wenn Env-Variablen fehlen
     sources:
-      - id: google-jules-jules-google
-      - id: google-jules-blog-google
-      - id: google-jules-reddit
-      - id: google-jules-reddit-2
-  - id: openhands-formerly-opendevin
+      - id: jules-google
+      - id: blog-google-innovation-and-ai-models-and-research-google-labs-jules-now-available
+      - id: reddit-com-r-programminghorror-comments-1ktlje0-tried-out-jules-ai-agent
+      - id: reddit-com-r-singularity-comments-1kqkfvw-jules-googles-coding-agent
+  - id: all-hands-dev
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -152,10 +152,10 @@ tools:
         - Nicht fuer Multi-Tenant-Use ausgelegt
         - Hoher Setup-Aufwand
     sources:
-      - id: openhands-formerly-opendevin-all-hands
-      - id: openhands-formerly-opendevin-github
-      - id: openhands-formerly-opendevin-github-2
-  - id: aider
+      - id: all-hands-dev
+      - id: github-com-all-hands-ai-openhands-tree-main
+      - id: github-com-zhao6300-openhands
+  - id: aider-chat
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -174,9 +174,9 @@ tools:
       volume: low
       tenor: positive
     sources:
-      - id: aider-in-ci-github-action-github
-      - id: aider-in-ci-github-action-github-2
-  - id: aws-amazon-q-developer-debug-diagnose
+      - id: github-com-mirrajabi-aider-github-action
+      - id: github-com-mirrajabi-aider-github-workflows-blob-main-docs-issue-to-pr-md
+  - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -195,8 +195,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: aws-amazon-q-developer-debug-diagnose-amazon
-  - id: atlassian-rovo
+      - id: aws-amazon-com-q-developer
+  - id: atlassian-com-software-rovo
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -215,8 +215,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: atlassian-rovo-dev-agents-atlassian
-  - id: devin
+      - id: atlassian-com-software-rovo
+  - id: devin-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -245,12 +245,12 @@ tools:
         - ACU-Verbrauch unkalkulierbar bei vagen Specs
         - Hallu-zinierte deprecated APIs in Legacy-Code
     sources:
-      - id: devin-devin
-      - id: devin-devin-2
-      - id: devin-devin-3
-      - id: devin-imseankim
-      - id: devin-carlrippon
-  - id: jetbrains-junie
+      - id: docs-devin-ai-enterprise-vpc-overview
+      - id: docs-devin-ai-admin-security
+      - id: devin-ai
+      - id: blog-imseankim-com-devin-2-ai-software-engineer-review-cognition-pricing-benchmark
+      - id: carlrippon-com-autonomous-coding-agents
+  - id: jetbrains-com-junie
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -269,8 +269,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: jetbrains-junie-cli-ci-cd-mode-jetbrains
-  - id: sourcegraph-cody-batch-changes
+      - id: jetbrains-com-help-junie-code-mode-html
+  - id: sourcegraph-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -292,9 +292,9 @@ tools:
         - Frontier-Modell-Bundle out-of-the-box
         - Pay-as-you-go ohne Markup
     sources:
-      - id: sourcegraph-amp-github
-      - id: sourcegraph-amp-github-2
-  - id: coder-com-ai-governance-layer
+      - id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-cli-readme-md
+      - id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-context-management-context-20engineering-20-20amp-md
+  - id: coder-com-solutions-ai-governance
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -305,9 +305,9 @@ tools:
       - Lizenzkosten nicht oeffentlich; Enterprise-typisch
       - DACH-Sales/-Support-Footprint kleiner als bei Hyperscalern
     sources:
-      - id: coder-com-ai-governance-layer-coder
-      - id: coder-com-ai-governance-layer-coder-2
-  - id: lurus-code
+      - id: coder-com-solutions-ai-governance
+      - id: coder-com-docs-ai-coder-agents
+  - id: code-lurus-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -318,8 +318,8 @@ tools:
       - Praktiker-Signal noch duenn (Marktneueinsteiger 2025/2026)
       - Funktionsumfang gegenueber Cursor/Copilot/Devin kleiner — eher CLI-Augment
     sources:
-      - id: lurus-code-lurus
-  - id: cursor
+      - id: code-lurus-ai-en
+  - id: cursor-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -344,10 +344,10 @@ tools:
         - Output-Qualitaet inkonsistent — Review zwingend erforderlich
         - Background Agents nur mit GitHub-Repos
     sources:
-      - id: cursor-cloud-agents-with-self-hosted-pool-cursor
-      - id: cursor-cloud-agents-with-self-hosted-pool-cursor-2
-      - id: cursor-lgallardo-practitioner
-      - id: cursor-effloow-review
+      - id: cursor-com-blog-self-hosted-cloud-agents
+      - id: cursor-com-docs-enterprise-privacy-and-data-governance
+      - id: lgallardo-com-2025-06-11-cursor-background-agents-experience
+      - id: effloow-com-articles-cursor-3-review-background-agents-2026
 start_here: Einstieg mit klar abgegrenzten Backlog-Tickets (Tests hinzufügen, Dependency-Bumps, kleine Bugfixes) bei GitHub Copilot Cloud Agent oder Cursor Background Agents – ein sauberes Build-Setup im Sandbox und ein Kontext-Primer (copilot-instructions.md / CLAUDE.md) sind Voraussetzung. In regulierten DACH-Umgebungen von Anfang an Self-Hosted-Runner, expliziten DPA und EU-Modell-Routing einplanen.
 caveats: "Das Pattern funktioniert nur bei klar abgegrenzten Tickets mit ausreichender Test-Suite; die Review-Last skaliert mit dem Agent-Output und wird zum eigentlichen Throughput-Limiter. In DACH-Banken und Versicherern greift DORA Art. 28: Cloud-Agent-Execution gilt als IKT-Drittparteienrisiko, Default-Runner verlassen die EU-Region – Self-Hosted-Runner und vollständiges Drittparteienregister sind Pflicht."
 sources: []

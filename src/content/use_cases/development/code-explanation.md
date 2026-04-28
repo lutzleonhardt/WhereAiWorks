@@ -8,7 +8,7 @@ goal_label: Unbekannten Code und Legacy-Module schnell durchdringen
 suitability: good_fit
 rationale: GitHub Copilot Enterprise und Amazon Q Developer bieten dedizierte Code-Explain-Features mit EU-Datenresidenz und lassen sich in DACH über bestehende Microsoft- bzw. AWS-Unternehmensverträge ohne Compliance-Sonderprozess beschaffen. Das macht KI-gestütztes Codebase-Verständnis zum realistischen Einstiegspunkt für Legacy-Onboarding im Konzernumfeld.
 tools:
-  - id: sourcegraph-cody
+  - id: sourcegraph-com-cody
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -25,9 +25,9 @@ tools:
       volume: medium
       tenor: mixed
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
-      - id: sourcegraph-cody-sourcegraph-2-sourcegraph-com-docs-cody-enterprise
-  - id: aider
+      - id: sourcegraph-com-docs-cody-capabilities-commands
+      - id: sourcegraph-com-docs-cody-enterprise
+  - id: aider-chat
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -42,8 +42,8 @@ tools:
       volume: medium
       tenor: positive
     sources:
-      - id: aider-aider-chat-aider-chat-docs-usage-commands-html
-  - id: sap-joule-for-developers
+      - id: aider-chat-docs-usage-commands-html
+  - id: sap-com-products-artificial-intelligence-ai-assistant-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -53,8 +53,8 @@ tools:
       - An SAP-BTP-Stack gebunden
       - Reife der Developer-Funktionen 2026 noch im Aufbau
     sources:
-      - id: sap-joule-for-developers-sap
-  - id: aws-amazon-q-developer-debug-diagnose
+      - id: sap-com-products-artificial-intelligence-ai-assistant-html
+  - id: aws-amazon-com-q-developer
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -68,9 +68,9 @@ tools:
       volume: medium
       tenor: mixed
     sources:
-      - id: amazon-q-developer-amazon-docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
-      - id: amazon-q-developer-devtoolsreview
-  - id: augment-code
+      - id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
+      - id: devtoolsreview-com-reviews-amazon-q-review
+  - id: augmentcode-com
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -84,8 +84,8 @@ tools:
       volume: low
       tenor: mixed
     sources:
-      - id: augment-code-augmentcode-augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
-      - id: augment-code-vibecodedthis
+      - id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
+      - id: vibecodedthis-com-reviews-augment-code-review-2026
   - id: continue-dev
     fit: good_fit
     enterprise_readiness: team_ready
@@ -102,9 +102,9 @@ tools:
       volume: medium
       tenor: positive
     sources:
-      - id: continue-dev-commit-pr-via-custom-slash-commands-continue
-      - id: continue-dev-github
-  - id: cursor
+      - id: docs-continue-dev-customize-slash-commands
+      - id: github-com-continuedev-continue
+  - id: cursor-com
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -118,9 +118,9 @@ tools:
       volume: high
       tenor: positive
     sources:
-      - id: cursor-cursor-cursor-com-features
-      - id: cursor-aitoolbriefing
-  - id: copilot
+      - id: cursor-com-features
+      - id: aitoolbriefing-com-blog-cursor-ai-review-2026
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -133,9 +133,9 @@ tools:
       volume: high
       tenor: mixed
     sources:
-      - id: github-copilot-chat-debug-mode-github
-      - id: copilot-devtoolsreview
-  - id: google-gemini-code-assist
+      - id: docs-github-com-en-copilot-using-github-copilot-asking-github-copilot-questions-in-your-ide
+      - id: devtoolsreview-com-comparisons-cursor-vs-copilot-2026
+  - id: cloud-google-com-products-gemini-code-assist
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -149,9 +149,9 @@ tools:
       volume: low
       tenor: mixed
     sources:
-      - id: google-gemini-code-assist-google-cloud-google-com-gemini-docs-codeassist-code-customization
-      - id: google-gemini-code-assist-devclass
-  - id: jetbrains-ai-assistant
+      - id: cloud-google-com-gemini-docs-codeassist-code-customization
+      - id: devclass-com-development-2024-10-11-googles-code-assist-enterprise-can-be-trained-on-internal-source-code-is-focused-on-google-services-1625091
+  - id: jetbrains-com-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -165,9 +165,9 @@ tools:
       volume: medium
       tenor: mixed
     sources:
-      - id: jetbrains-ai-assistant-junie-jetbrains
-      - id: jetbrains-ai-assistant-explain-docs
-  - id: windsurf-codeium
+      - id: jetbrains-com-help-idea-ai-assistant-html
+      - id: jetbrains-com-help-ai-assistant-explain-code-with-ai-html
+  - id: windsurf-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -181,9 +181,9 @@ tools:
       volume: medium
       tenor: mixed
     sources:
-      - id: windsurf-codeium-windsurf
-      - id: windsurf-codeium-openaitoolshub
-  - id: ibm-watsonx-code-assistant-for-z
+      - id: windsurf-com-editor
+      - id: openaitoolshub-org-en-blog-windsurf-editor-review
+  - id: ibm-com-products-watsonx-code-assistant-z
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -193,8 +193,8 @@ tools:
       - IBM-Lizenz- und Beratungsmodell teuer
       - Generelle Codebase-Q&A jenseits Z/OS nicht abgedeckt
     sources:
-      - id: ibm-watsonx-code-assistant-for-z-ibm
-      - id: ibm-watsonx-code-assistant-for-z-croz
+      - id: ibm-com-products-watsonx-code-assistant-z
+      - id: croz-net-honest-take-on-watsonx-code-assistant-for-z
 start_here: Mit GitHub Copilot Enterprise beginnen, sofern M365- oder GitHub-Verträge vorhanden sind — /explain und Workspace-Indexing an Onboarding-Fragen zu einem Legacy-Modul erproben und Antworten gegen den Quellcode querprüfen. AWS-Shops starten analog mit Amazon Q Developer, das speziell Java-Legacy-Erklärung abdeckt.
 caveats: KI-Erklärungen klingen bei spärlich kommentiertem Code plausibel, können aber wichtige Invarianten übersehen — Ausgaben immer gegen den Quellcode validieren. Alle drei Tools senden Kontext an Cloud-Endpoints; für besonders sensible Bestände On-Prem-Alternativen wie Continue.dev prüfen.
 sources: []

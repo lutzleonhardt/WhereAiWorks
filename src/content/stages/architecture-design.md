@@ -18,8 +18,12 @@ Am niedrigschwelligsten einsteigen lässt sich über ADR-Drafts oder OpenAPI-Spe
 
 
 
+
+
 ## Grenzen
 
 Strukturierte Architektur-Artefakte – Specs, Diagramme, Schemata – gelingen zuverlässig; Trade-off-Urteile, Compliance-Verantwortung und finale Entscheidungen verbleiben beim Architekten. Cloud-LLMs routen Architekturinformationen standardmäßig an US-Infrastruktur – EU-Datenresidenz muss aktiv konfiguriert werden und ist für BAIT-, DORA- und KI-Act-pflichtige Systeme keine Option, sondern Voraussetzung.
+
+
 
 

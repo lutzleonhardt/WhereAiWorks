@@ -9,7 +9,7 @@ goal_label: Schatten-KI und eingebettete KI-Komponenten architektonisch erfassen
 suitability: conditional
 rationale: Wiz AI-SPM kartiert KI-Modelle, Identitäten und Netzwerkpfade über alle Cloud-Konten und liefert damit ein AI-BOM mit echter Architekturkopplung; Codacy AI Inventory ergänzt den Code-Layer durch SDK- und Copilot-Konfigurationserkennung direkt im Repository ohne LLM-Inferenz. Beide Tools decken gemeinsam den Kern der Discovery-Aufgabe — Codebasis-Scan plus Datenfluss-Analyse — ab, die bislang nur manuell oder über GRC-Prozesse adressiert wurde.
 tools:
-  - id: codacy-ai-inventory
+  - id: codacy-com-ai-inventory
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -27,9 +27,9 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: codacy-ai-inventory-codacy
-      - id: codacy-ai-inventory-prweb
-  - id: microsoft-defender-for-cloud-apps-purview-dspm-for-ai
+      - id: codacy-com-ai-inventory
+      - id: prweb-com-releases-codacy-launches-ai-inventory-giving-engineering-organizations-source-code-level-visibility-into-ai-tool-usage-across-repositories-302736655-html
+  - id: learn-microsoft-com-en-us-security-security-for-ai-discover
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -48,8 +48,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: microsoft-defender-for-cloud-apps-purview-dspm-for-ai-microsoft
-  - id: reco
+      - id: learn-microsoft-com-en-us-security-security-for-ai-discover
+  - id: reco-ai-use-cases-ai-usage-control
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -70,10 +70,10 @@ tools:
         - Schnelle SaaS-Integrationen auf Kundenwunsch
         - Sichtbarkeit in tatsächliches Schatten-AI
     sources:
-      - id: reco-reco
-      - id: reco-reco-2
-      - id: reco-reco-3
-  - id: annexora
+      - id: reco-ai-use-cases-ai-usage-control
+      - id: reco-ai-solutions-generative-ai-discovery
+      - id: reco-ai-use-cases-shadow-ai-discovery
+  - id: annexora-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -83,8 +83,8 @@ tools:
       - Junger Vendor; öffentliche Kundenliste klein.
       - Inventar ist Eingabe, nicht Output eines Auto-Discovery-Mechanismus.
     sources:
-      - id: annexora-annexora
-  - id: collibra-ai-governance
+      - id: annexora-com
+  - id: collibra-com-products-ai-governance
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -94,8 +94,8 @@ tools:
       - ROI nur sinnvoll, wenn Collibra-Data-Catalog bereits installiert ist.
       - EU-Datenresidenz vertraglich zu fixieren.
     sources:
-      - id: collibra-ai-governance-collibra-collibra-com-us-en-products-ai-governance
-  - id: ibm-watsonx-governance
+      - id: collibra-com-us-en-products-ai-governance
+  - id: ibm-com-products-watsonx-governance
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -105,8 +105,8 @@ tools:
       - Lizenz im sechsstelligen Bereich; nur sinnvoll mit watsonx-Footprint.
       - Kein automatischer Codebasis-Scan.
     sources:
-      - id: ibm-watsonx-governance-nudgesecurity
-  - id: jfrog-ai-catalog-aibom
+      - id: nudgesecurity-com-post-best-ai-security-tools
+  - id: jfrog-com-learn-ai-security-aibom
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -116,8 +116,8 @@ tools:
       - Discovery-Tiefe in Code geringer als bei dedizierten Scannern.
       - Lizenz-Bündel mit Xray erforderlich.
     sources:
-      - id: jfrog-ai-catalog-aibom-jfrog
-  - id: kertos
+      - id: jfrog-com-learn-ai-security-aibom
+  - id: kertos-io-plattform-ai-inventory
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -127,8 +127,8 @@ tools:
       - Kleinerer Vendor — Bus-Faktor und Roadmap-Risiko.
       - Output-Format (CycloneDX?) nicht dokumentiert.
     sources:
-      - id: kertos-kertos
-  - id: nudge-security-ai-agent-discovery
+      - id: kertos-io-plattform-ai-inventory
+  - id: nudgesecurity-com-post-best-ai-security-tools
     fit: partial
     enterprise_readiness: team_ready
     confidence: medium
@@ -141,8 +141,8 @@ tools:
       - Kein CycloneDX-/Architektur-Artefakt-Output.
       - US-Vendor; DPA, EU-Subprozessoren prüfen.
     sources:
-      - id: ibm-watsonx-governance-nudgesecurity
-  - id: onetrust-ai-governance
+      - id: nudgesecurity-com-post-best-ai-security-tools
+  - id: onetrust-com-de-products-data-access-governance
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -152,8 +152,8 @@ tools:
       - Lizenz fünf- bis sechsstellig; ROI nur bei Bündel-Nutzung über Privacy/GRC hinweg.
       - Kein CycloneDX-Output dokumentiert.
     sources:
-      - id: onetrust-ai-governance-onetrust-onetrust-com-products-ai-governance
-  - id: xenetra-cross-identity
+      - id: onetrust-com-products-ai-governance
+  - id: crossidentity-com-xenetra-html
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -163,8 +163,8 @@ tools:
       - EU-Hosting/DPA muss verhandelt werden.
       - Kein Codebasis-Scan, kein CycloneDX.
     sources:
-      - id: xenetra-cross-identity-crossidentity
-  - id: cisco-ai-defense-ai-bom
+      - id: crossidentity-com-xenetra-html
+  - id: github-com-cisco-ai-defense-aibom
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -177,9 +177,9 @@ tools:
       - Open-Source-Reife noch begrenzt (kleine Community, schnelle Refactors).
       - Drittanbieter-Vergleich (Trusera) listet nur 1 Scanner und 2 Output-Formate — schmaler als Snyk/Wiz.
     sources:
-      - id: cisco-ai-defense-ai-bom-github
-      - id: cisco-ai-defense-ai-bom-trusera
-  - id: snyk-ai-bom
+      - id: github-com-cisco-ai-defense-aibom
+      - id: github-com-trusera-ai-bom-blob-main-docs-comparison-md
+  - id: docs-snyk-io-developer-tools-snyk-cli-commands-aibom
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -195,10 +195,10 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: snyk-ai-bom-snyk
-      - id: snyk-ai-bom-snyk-2
-      - id: cisco-ai-defense-ai-bom-trusera
-  - id: wiz-ai-spm-ai-bom
+      - id: docs-snyk-io-developer-tools-snyk-cli-commands-aibom
+      - id: labs-snyk-io-resources-aibom-cli-snyk
+      - id: github-com-trusera-ai-bom-blob-main-docs-comparison-md
+  - id: wiz-io-solutions-ai-security-posture-management
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -220,11 +220,11 @@ tools:
         - Gartner Peer Insights 4.7/5 (300 Reviews) — agentenloses Deployment, schnelle Sichtbarkeit
         - "Toolworthy.ai 2026 CISO Buyer's Guide ranked Wiz AI-SPM #1 für Multi-Cloud"
     sources:
-      - id: wiz-ai-spm-ai-bom-wiz
-      - id: wiz-ai-spm-ai-bom-wiz-2
-      - id: wiz-ai-spm-ai-bom-forrester
-      - id: wiz-ai-spm-ai-bom-toolworthy
-      - id: wiz-ai-spm-ai-bom-gartner-peer
+      - id: wiz-io-solutions-ai-security-posture-management
+      - id: wiz-io-academy-ai-security-ai-inventory
+      - id: wiz-io-blog-forrester-wave-cnapp-2026
+      - id: toolworthy-ai-blog-best-ai-spm-tools
+      - id: gartner-com-reviews-market-cloud-security-posture-management-tools-vendor-wiz-product-wiz
 start_here: Teams mit Multi-Cloud-Footprint starten am risikoärmsten mit Wiz AI-SPM — EU-Tenant beim Onboarding konfigurieren, Cloud-Konnektoren aktivieren, AI-BOM-Dashboard auswerten. Wer noch kein CNAPP-Budget hat, beginnt mit Codacy AI Inventory auf einem Pilot-Repo; DACH-Enterprises mit vorhandenem M365-E5-Stack können Microsoft Defender for Cloud Apps parallel für SaaS-AI-Discovery aktivieren, ohne einen neuen Vendor einzuführen.
 caveats: Inventar-Drift ist das unmittelbarste Risiko — ohne CI/CD-Anbindung und Procurement-Kopplung veraltet der Scan-Befund binnen Wochen und taugt nicht als dauerhafter Compliance-Nachweis. SaaS-eingebettete KI (Workday, Salesforce Einstein) bleibt für reine Code- und Cloud-Scanner unsichtbar; dieser Bereich erfordert einen ergänzenden SSPM-Layer.
 sources: []

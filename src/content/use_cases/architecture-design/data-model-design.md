@@ -21,8 +21,8 @@ tools:
       - Keine EU-Hosting-Option dokumentiert
       - AI-Features Premium-Tier; Free-Tier nicht ausreichend fuer Enterprise-Eval
     sources:
-      - id: dbdiagram-io-dbdiagram
-  - id: mermaid-chart-ai
+      - id: dbdiagram-io
+  - id: mermaidchart-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -35,8 +35,8 @@ tools:
       - ER-Diagramm-Detailtiefe begrenzter als spezialisierte ERDs
       - Kein direkter SQL-DDL-Output - braucht zweiten Schritt
     sources:
-      - id: mermaid-chart-ai-mermaidchart
-  - id: idera-er-studio
+      - id: mermaidchart-com
+  - id: idera-com-er-studio-enterprise-data-modeling-and-architecture-tools
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -46,8 +46,8 @@ tools:
       - Lizenzkosten und Setup-Komplexitaet hoch
       - Roadmap-Tempo deutlich unter Cloud-Wettbewerb
     sources:
-      - id: idera-er-studio-idera
-  - id: sap-powerdesigner
+      - id: idera-com-er-studio-enterprise-data-modeling-and-architecture-tools
+  - id: sap-com-products-technology-platform-powerdesigner-data-modeling-tools-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -57,8 +57,8 @@ tools:
       - SAP-Roadmap fuer PowerDesigner unklar - Maintenance-only-Modus moeglich
       - Schwere Lizenz- und Setup-Kosten
     sources:
-      - id: sap-powerdesigner-sap
-  - id: chartdb
+      - id: sap-com-products-technology-platform-powerdesigner-data-modeling-tools-html
+  - id: chartdb-io
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -70,10 +70,10 @@ tools:
       - Keine bekannte SOC2/ISO27001-Zertifizierung der Cloud-Variante
       - Schema-Diff-Features (live DB vs Diagramm) noch in Entwicklung - Praktiker-Feedback aus HN bestaetigt Lueckenstand
     sources:
-      - id: chartdb-chartdb
-      - id: chartdb-hackernews
-      - id: chartdb-github
-  - id: claude-code
+      - id: chartdb-io
+      - id: news-ycombinator-com-item-id-44972238
+      - id: github-com-chartdb-chartdb
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -85,11 +85,11 @@ tools:
       - Token-Kosten bei grossen Schema-Repos signifikant
       - Modell-Calls gehen an Anthropic-API
     sources:
-      - id: claude-code-claude-claude-com-product-claude-code
-      - id: claude-code-db-design-claudecodelab
-      - id: claude-code-prisma-claudecodeguides
-      - id: claude-code-postgres-usagebar
-  - id: cursor
+      - id: claude-com-product-claude-code
+      - id: claudecode-lab-com-en-blog-claude-code-database-design
+      - id: claudecodeguides-com-claude-code-prisma-schema-migrations-advanced-workflow-guide
+      - id: usagebar-com-blog-how-to-do-postgresql-migrations-on-claude-code
+  - id: cursor-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -100,11 +100,11 @@ tools:
       - US-Vendor; EU-DPA verhandelbar aber nicht Standard
       - Schema-Vorschlaege in komplexen Domaenen brauchen Senior-Review
     sources:
-      - id: cursor-cursor-cursor-com
-      - id: cursor-db-design-developertoolkit
-      - id: cursor-prisma-stork
-      - id: cursor-composer-markaicode
-  - id: erwin-data-modeler-quest
+      - id: cursor-com
+      - id: developertoolkit-ai-en-cursor-ide-lessons-database-design
+      - id: stork-ai-blog-this-ai-ide-replaced-my-team
+      - id: markaicode-com-cursor-composer-mode-guide
+  - id: erwin-com-products-erwin-data-modeler
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -115,10 +115,10 @@ tools:
       - Lizenzkosten am oberen Ende
       - Steile Lernkurve bei sehr grossen Modellen (TrustRadius/PeerSpot bestaetigen)
     sources:
-      - id: erwin-data-modeler-quest-erwin
-      - id: erwin-peerspot
-      - id: erwin-trustradius
-  - id: copilot
+      - id: erwin-com-products-erwin-data-modeler
+      - id: peerspot-com-products-erwin-data-modeler-reviews
+      - id: trustradius-com-products-erwin-data-modeler-reviews
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -129,10 +129,10 @@ tools:
       - Repo-Indexing-Datenresidenz in Copilot Enterprise pruefen
       - Workspace-Mode-Output muss vor Migration-Ausfuehrung reviewed werden
     sources:
-      - id: github-copilot-github
-      - id: copilot-prisma-docs
-      - id: copilot-techcommunity-msft
-  - id: jetbrains-ai-assistant
+      - id: github-com-features-copilot
+      - id: prisma-io-docs-ai-tools-github-copilot
+      - id: techcommunity-microsoft-com-blog-azuredevcommunityblog-create-a-database-schema-and-rest-apis-with-a-single-prompt-using-github-copilot-4422778
+  - id: jetbrains-com-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -143,8 +143,8 @@ tools:
       - AI-Backend nutzt OpenAI/Google - Datenfluss-Kette dokumentieren
       - Unabhaengige Praktiker-Evidenz fuer dedizierten Modell-Design-Workflow noch limitiert - Eval vor Adoption empfohlen
     sources:
-      - id: jetbrains-ai-assistant-junie-jetbrains-jetbrains-com-ai
-      - id: jetbrains-datagrip-ai-docs
+      - id: jetbrains-com-ai
+      - id: jetbrains-com-help-ai-assistant-use-ai-assistant-html
   - id: ellie-ai
     fit: conditional
     enterprise_readiness: team_ready
@@ -156,9 +156,9 @@ tools:
       - DACH-Sichtbarkeit primaer ueber Direkt-Vertrieb
       - Unabhaengige Praktiker-Evidenz limitiert; primaer Vendor- und Partner-Sources
     sources:
-      - id: ellie-ai-ellie
-      - id: ellie-cdata-case-study
-  - id: hackolade-studio
+      - id: ellie-ai
+      - id: cdata-com-case-study-ellie-ai
+  - id: hackolade-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -169,10 +169,10 @@ tools:
       - Belgischer Vendor; DACH-Sales via Partner
       - Polyglot-Konzept braucht Schulung; nicht 1:1 wie klassische ERD-Tools nutzbar
     sources:
-      - id: hackolade-studio-hackolade
-      - id: hackolade-mongodb-blog
-      - id: hackolade-featuredcustomers
-  - id: sqldbm
+      - id: hackolade-com
+      - id: mongodb-com-company-blog-technical-optimize-data-modeling-and-schema-design-with-hackolade-and-mongodb
+      - id: featuredcustomers-com-vendor-hackolade
+  - id: sqldbm-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -183,9 +183,9 @@ tools:
       - Enterprise-Tier fuer SSO/Audit noetig
       - AI-Copilot nutzt managed Anthropic-Claude-Sonnet via API - Datenfluss-Kette dokumentieren
     sources:
-      - id: sqldbm-sqldbm
-      - id: sqldbm-snowflake-quickstart
-      - id: sqldbm-medium-snowflake
+      - id: sqldbm-com
+      - id: snowflake-com-en-developers-guides-database-modeling-with-sqldbm
+      - id: medium-com-snowflake-how-i-did-cloud-native-data-modeling-for-snowflake-a63cc456fe03
 start_here: "Mit Claude Code an einem einzelnen Bounded Context einsteigen: Domänenbeschreibung als Prompt, Schema-Output als Mermaid/DBML reviewen, Migration per Diff freigeben. Cursor ist die IDE-native Alternative für Teams mit bestehendem VS-Code- oder JetBrains-Workflow — Privacy-Mode vorab aktivieren."
 caveats: Claude Code und Cursor leiten Modell-Calls an externe APIs weiter — Bedrock-EU-Routing vor dem Einsatz mit vertraulichen Schemata konfigurieren. Normalisierungskonsistenz (3NF) und DSGVO-Datenklassifizierung (Art. 9 besondere Kategorien) erfordern Senior-Review; erwin deckt diesen Governance-Bedarf für regulierte Domänen.
 sources: []

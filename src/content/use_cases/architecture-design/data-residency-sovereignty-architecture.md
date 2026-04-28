@@ -9,7 +9,7 @@ goal_label: EU-/On-Prem-Topologie für KI-Workloads skizzieren
 suitability: good_fit
 rationale: Für KI-Workloads ohne CLOUD-Act-Exposition stehen mit Mistral La Plateforme und Aleph Alpha Pharia AI erstmals EU-native Modelle mit enterprise-tauglichem VPC- und On-Prem-Deployment bereit. Open Telekom Cloud ergänzt als BSI-C5-zertifizierter Sovereign-Hyperscaler für Public Sector und regulierte DACH-Branchen, die keinen US-Hyperscaler einsetzen können.
 tools:
-  - id: aws-bedrock-eu-regions-nitro-enclaves
+  - id: aws-amazon-com-bedrock
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -22,8 +22,8 @@ tools:
       - Modell-Verfuegbarkeit pro EU-Region uneinheitlich
       - CLOUD-Act-Restrisiko trotz EU-Region; juristische Bewertung erforderlich
     sources:
-      - id: aws-bedrock-eu-regions-nitro-enclaves-amazon
-  - id: delos-cloud-microsoft-cloud-for-sovereignty-de
+      - id: aws-amazon-com-de-blogs-security-aws-european-sovereign-cloud
+  - id: delos-cloud
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -35,8 +35,8 @@ tools:
       - Ausschliesslich Public-Sector-Use-Cases; private Wirtschaft praktisch nicht erreichbar
       - Azure-Abhaengigkeit politisch umstritten — echte Souveraenitaet juristisch zu pruefen
     sources:
-      - id: delos-cloud-microsoft-cloud-for-sovereignty-de-delos-cloud
-  - id: google-cloud-vertex-ai-eu-confidential-space-sovereign-controls
+      - id: delos-cloud
+  - id: cloud-google-com-vertex-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -47,8 +47,8 @@ tools:
       - Marktanteil in DACH-Banken/Versicherern niedrig — Skill-Gap einplanen
       - CLOUD-Act-Restrisiko trotz EU-Region
     sources:
-      - id: google-cloud-vertex-ai-eu-confidential-space-sovereign-controls-google
-  - id: microsoft-azure-openai-eu-data-boundary-confidential-vms
+      - id: cloud-google-com-sovereign-cloud
+  - id: learn-microsoft-com-azure-ai-services-openai-concepts-data-residency
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -60,8 +60,8 @@ tools:
       - Microsoft 365 Copilot faellt NICHT unter dieselbe Boundary — Verwechslungsgefahr
       - BaFin-Orientierungshilfe verlangt Drittparteien-Risikobewertung
     sources:
-      - id: microsoft-azure-openai-eu-data-boundary-confidential-vms-microsoft
-  - id: nvidia-nim-nvidia-inference-microservices
+      - id: learn-microsoft-com-azure-ai-services-openai-concepts-data-residency
+  - id: nvidia-com-en-us-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -72,8 +72,8 @@ tools:
       - NIM-Modellkatalog enthaelt Aleph-Alpha-/Mistral-Modelle nur teils — Architektur muss Hybrid-Pfad einplanen
       - Confidential Computing nur auf neueren GPU-Generationen (Hopper/Blackwell)
     sources:
-      - id: nvidia-nim-nvidia-inference-microservices-nvidia
-  - id: plusserver-pluscloud-open-sovereign-ai
+      - id: docs-nvidia-com-nim
+  - id: plusserver-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -84,8 +84,8 @@ tools:
       - Eigentuemerstruktur (Private Equity) hat sich mehrfach geaendert — Risk-Audit pruefen
       - Markenbekanntheit in Vergaben geringer als STACKIT/IONOS
     sources:
-      - id: plusserver-pluscloud-open-sovereign-ai-plusserver
-  - id: sap-ai-core-joule-eu-region
+      - id: plusserver-com-de-loesungen-sovereign-cloud
+  - id: sap-com-products-artificial-intelligence-ai-core-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -95,8 +95,8 @@ tools:
       - Joule-Roadmap und Modell-Routing-Defaults aendern sich oft — Architektur-Annahmen versionieren
       - BTP-Lizenz-/Subscription-Komplexitaet hoch; TCO-Vergleich gegen Standalone-Sovereign-Cloud erforderlich
     sources:
-      - id: sap-ai-core-joule-eu-region-sap
-  - id: aleph-alpha-pharia-ai
+      - id: sap-com-products-artificial-intelligence-ai-core-html
+  - id: aleph-alpha-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -118,10 +118,10 @@ tools:
         - Modell-Capability hinter GPT-4/Claude
         - Roadmap-Unsicherheit nach Strategiewechsel
     sources:
-      - id: aleph-alpha-pharia-ai-aleph-alpha
-      - id: aleph-alpha-pharia-ai-heise
-      - id: aleph-alpha-pharia-ai-european-cloud
-  - id: claude-code
+      - id: aleph-alpha-com-pharia-ai
+      - id: heise-de-en-news-european-solution-aleph-alpha-offers-pharia-ai-via-schwarz-digits-10399088-html
+      - id: european-cloud-2026-02-schwarz-group-aleph-alpha
+  - id: claude-com-product-claude-code
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -134,10 +134,10 @@ tools:
       - Cowork/claude.ai Enterprise haben Anfang 2026 noch keine EU-Residency — separate Architektur-Entscheidung
       - Empfehlungen basieren auf Trainingsdaten — Confidential-Computing-Verfuegbarkeit pro Region nicht live geprueft
     sources:
-      - id: claude-code-mit-cloud-architect-subagents-anthropic
-      - id: claude-code-compound-law-eu-hosting
-      - id: claude-code-github-eu-residency-issue
-  - id: ionos-ai-model-hub
+      - id: anthropic-com-news-european-data-region
+      - id: compound-law-en-de-tools-claude-eu-hosting
+      - id: github-com-anthropics-claude-code-issues-40530
+  - id: ionos-de-cloud-ai-model-hub
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -149,10 +149,10 @@ tools:
       - "United-Internet-Konzern: Hosting-Track-Record gut, aber AI-Roadmap juenger als bei STACKIT/Aleph Alpha"
       - Token-Preise nicht oeffentlich — nur nach Registrierung sichtbar
     sources:
-      - id: ionos-ai-model-hub-ionos-de-cloud-ionos-de-managed-services-ai-model-hub
-      - id: ionos-ai-model-hub-puhlmann-vergleich
-      - id: ionos-ai-model-hub-european-cloud-benchmark
-  - id: mistral-le-chat-enterprise-la-plateforme
+      - id: cloud-ionos-de-managed-services-ai-model-hub
+      - id: nico-puhlmann-de-blog-deutsche-cloud-anbieter-im-vergleich-ionos-vs-stackit
+      - id: european-cloud-2025-05-ovhcloud-ai-endpoints-are-now-in-general-availability
+  - id: mistral-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -173,10 +173,10 @@ tools:
         - Modell-Hosting bei Bedrock weiterhin US-Hyperscaler
         - Plugin-/Ecosystem-Reife geringer als OpenAI
     sources:
-      - id: mistral-le-chat-enterprise-mistral
-      - id: mistral-europeanstack-review
-      - id: mistral-hyperion-enterprise-guide
-  - id: open-telekom-cloud-sovereign-ai
+      - id: mistral-ai-news-le-chat-enterprise
+      - id: europeanstack-com-software-mistral-ai
+      - id: hyperion-consulting-io-en-insights-mistral-ai-complete-guide-2026
+  - id: open-telekom-cloud-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -188,10 +188,10 @@ tools:
       - Eigene Modell-Hosting-Topologie (vLLM/NIM) oft notwendig
       - BSI-IT-Grundschutz-Zertifizierung erst Q2/2026 erwartet
     sources:
-      - id: open-telekom-cloud-sovereign-ai-open-telekom-cloud
-      - id: open-telekom-cloud-europeanstack-review
-      - id: open-telekom-cloud-bsi-souveraenitaet-heise
-  - id: ovhcloud-ai-endpoints-ai-deploy
+      - id: open-telekom-cloud-com-de-produkte-sovereign-ai
+      - id: europeanstack-com-software-open-telekom-cloud
+      - id: heise-de-news-bsi-definiert-wann-eine-cloud-wirklich-souveraen-ist-11272737-html
+  - id: ovhcloud-com-de-public-cloud-ai-endpoints
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -203,10 +203,10 @@ tools:
       - BSI-C5 nicht durchgaengig — DACH-Vergaben praeferieren oft DE-Anbieter
       - Kein vollwertiger Confidential-Computing-Stack auf allen Tiers
     sources:
-      - id: ovhcloud-ai-endpoints-ai-deploy-ovhcloud
-      - id: ovhcloud-eu-commission-selection
-      - id: ionos-ai-model-hub-european-cloud-benchmark
-  - id: red-hat-openshift-ai
+      - id: ovhcloud-com-de-public-cloud-ai-endpoints
+      - id: boursorama-com-bourse-actualites-ovhcloud-deep-et-clever-cloud-retenus-pour-cloud-souverain-ue-marche-plafond-180-millions-eur-2d0a7baf5a40a4f83ff16f7e712ce728
+      - id: european-cloud-2025-05-ovhcloud-ai-endpoints-are-now-in-general-availability
+  - id: redhat-com-en-technologies-cloud-computing-openshift-openshift-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -217,9 +217,9 @@ tools:
       - GPU-Operator-Konfiguration und Air-Gapped/Disconnected-Operator-Pflege operativ aufwendig
       - Modell-Hosting weiterhin in eigener Infrastruktur — Kapazitaetsplanung kritisch
     sources:
-      - id: red-hat-openshift-ai-redhat
-      - id: red-hat-openshift-ai-architecture-medium
-  - id: stackit-ai-model-serving
+      - id: redhat-com-en-technologies-cloud-computing-openshift-openshift-ai
+      - id: rdalal3-medium-com-architecture-of-red-hat-openshift-ai-7e4c4c4f6c08
+  - id: stackit-de
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -230,10 +230,10 @@ tools:
       - Eigentuemer Schwarz-Gruppe ist Wettbewerber zu Handels-/Konsum-Kunden — pruefen
       - Tooling-Oekosystem (LangChain-Integrationen, Observability) noch im Aufbau
     sources:
-      - id: stackit-ai-model-serving-stackit-de
-      - id: stackit-akkodis-partnership-news
-      - id: ionos-ai-model-hub-puhlmann-vergleich
-  - id: vllm
+      - id: stackit-de-de-produkt-services-aiml
+      - id: uk-advfn-com-stock-market-share-news-akkodis-and-stackit-enter-strategic-partnership-fo-98272791
+      - id: nico-puhlmann-de-blog-deutsche-cloud-anbieter-im-vergleich-ionos-vs-stackit
+  - id: docs-vllm-ai
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -256,9 +256,9 @@ tools:
         - Hoher Betriebsaufwand
         - Multi-Node-Setup nicht trivial
     sources:
-      - id: vllm-vllm
-      - id: vllm-introl-production-deployment
-      - id: vllm-youngju-benchmark
+      - id: docs-vllm-ai
+      - id: introl-com-blog-vllm-production-deployment-inference-serving-architecture
+      - id: youngju-dev-blog-llm-2026-03-07-llm-vllm-serving-optimization-production-en
 start_here: Pilot mit Mistral La Plateforme (direkt, EU-Datenresidenz, kein US-Hyperscaler-Routing) für eine interne RAG-Workload — dort lassen sich die drei Topologie-Optionen (Managed EU, VPC, On-Prem mit vLLM) ohne Produktionsdaten evaluieren. Pharia AI ist die zweite Option, wenn Vergabe oder Compliance einen deutschen Modell-Vendor vorschreiben oder On-Prem-Deployment auf eigener Infrastruktur erforderlich ist.
 caveats: EU-Residency-Zusicherungen aller Anbieter basieren auf Selbstauskunft — CLOUD-Act-Restrisiko und tatsächliche Souveränität müssen juristisch geprüft werden, bevor Architekturen finalisiert werden. Confidential-Computing-GPU-SKUs sind in EU-Regionen noch lückenhaft, und EU-native Modelle liegen capability-seitig unter US-Frontier-Modellen — dieser Trade-off muss in der Architektur explizit dokumentiert werden.
 sources: []

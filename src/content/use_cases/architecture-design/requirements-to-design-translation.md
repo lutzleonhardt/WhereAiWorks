@@ -9,7 +9,7 @@ goal_label: Aus PRD/User Stories ein erstes High-Level-Design generieren
 suitability: good_fit
 rationale: Claude Code (Plan-Mode + Skills) und Kiro erzwingen den PRD→Design-Schritt strukturiert und liefern zuverlässige Mermaid-Diagramme und Design-Docs als Artefakte. Beide Tools sind in DACH-regulierten Umgebungen über Bedrock EU oder Anthropic Enterprise mit DPA beschaffbar.
 tools:
-  - id: aws-amazon-q-developer-debug-diagnose
+  - id: aws-amazon-com-q-developer
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -32,11 +32,11 @@ tools:
         - Halluzinierte Komponenten ohne strikte Restriktionen
         - Layout/Labels oft unschoen
     sources:
-      - id: amazon-q-developer-amazon-docs-aws-amazon-com-prescriptive-guidance-latest-best-practices-code-generation-developer-workflows-html
-      - id: amazon-q-developer-amazon-2
-      - id: amazon-q-developer-awsfundamentals
-      - id: amazon-q-developer-reddit
-  - id: claude-code
+      - id: docs-aws-amazon-com-prescriptive-guidance-latest-best-practices-code-generation-developer-workflows-html
+      - id: aws-amazon-com-blogs-devops-amazon-q-developer-cli-supports-image-inputs-in-your-terminal
+      - id: awsfundamentals-com-blog-amazon-q-architecture-diagrams
+      - id: reddit-com-r-aws-comments-1qfmw2j-kiro-cant-get-a-good-web-ui
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -58,10 +58,10 @@ tools:
         - Drift zwischen Sessions ohne ADR/Architecture-Files
         - Token-Kosten bei tiefen Spec-Workflows
     sources:
-      - id: claude-code-medium
-      - id: claude-code-reddit
-      - id: claude-code-reddit-2
-  - id: github-spec-kit
+      - id: medium-com-haberlah-how-to-write-prds-for-ai-coding-agents-d60d72efb797
+      - id: reddit-com-r-vibecoding-comments-1od2tyv-claude-code-crevo-achieving-efficient-highquality
+      - id: reddit-com-r-claudecode-comments-1r5gk1d-40-days-of-vibe-coding-taught-me-the-most
+  - id: github-com-github-spec-kit
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -85,11 +85,11 @@ tools:
         - Edge Cases muessen oft manuell in Spec/Plan zurueckgefuehrt werden
         - Spec-Drift bleibt operatives Problem
     sources:
-      - id: github-spec-kit-github
-      - id: github-spec-kit-martinfowler
-      - id: github-spec-kit-epam
-      - id: github-spec-kit-ycombinator
-  - id: kiro
+      - id: github-github-io-spec-kit
+      - id: martinfowler-com-articles-exploring-gen-ai-sdd-3-tools-html
+      - id: epam-com-insights-ai-blogs-inside-spec-driven-development-what-githubspec-kit-makes-possible-for-ai-engineering
+      - id: news-ycombinator-com-item-id-47728487
+  - id: kiro-dev
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -114,12 +114,12 @@ tools:
         - Schwaechere Web-UI-Generierung
         - Vertrauensschaden nach Prod-Loeschvorfall
     sources:
-      - id: kiro-github
-      - id: kiro-amazon
-      - id: kiro-ohaiknow
-      - id: kiro-reddit
-      - id: kiro-reddit-2
-  - id: copilot
+      - id: github-com-aws-samples-sample-kiro-cli-prompts-for-product-teams-blob-main-kiro-steering-prd-guide-md
+      - id: docs-aws-amazon-com-transform-latest-userguide-transform-forward-engineering-tutorial-specs-html
+      - id: ohaiknow-com-reviews-kiro
+      - id: reddit-com-r-betteroffline-comments-1r9nazc-amazons-ai-tools-caused-a-13hour-long-disruption
+      - id: reddit-com-r-claudeai-comments-1lzsvot-amazons-new-claudepowered-specdriven-ide-kiro
+  - id: github-com-features-copilot
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -140,9 +140,9 @@ tools:
       complaints:
         - Ohne Spec-Kit oft zu codenah, zu wenig Architektur-Klaerung
     sources:
-      - id: github-copilot-spaces-workspace-microsoft
-      - id: github-copilot-spaces-workspace-ycombinator
-  - id: tessl-framework-spec-registry
+      - id: developer-microsoft-com-blog-spec-driven-development-spec-kit
+      - id: news-ycombinator-com-item-id-47775653
+  - id: tessl-io
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -158,10 +158,10 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: tessl-framework-spec-registry-tessl
-      - id: tessl-framework-spec-registry-tessl-2
-      - id: tessl-framework-spec-registry-tessl-3
-  - id: icepanel
+      - id: docs-tessl-io-use-spec-driven-development-with-tessl
+      - id: docs-tessl-io-best-practices-clarify-product-requirements-and-design-system-architecture
+      - id: tessl-io-blog-tessl-launches-spec-driven-framework-and-registry
+  - id: icepanel-io
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -171,8 +171,8 @@ tools:
       - Cloud-SaaS, kein on-prem-Pfad
       - Wert entsteht erst, wenn Team C4-Methodik adoptiert
     sources:
-      - id: icepanel-icepanel
-  - id: miro-ai
+      - id: icepanel-io
+  - id: miro-com-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -182,8 +182,8 @@ tools:
       - AI-Features im Enterprise-Tier datentechnisch separat konfigurieren
       - Kein erzwungener Klaerungsfragen-/Spec-Workflow
     sources:
-      - id: miro-ai-technical-design-miro
-  - id: leanix-sap
+      - id: miro-com-products-technical-design
+  - id: leanix-net
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -193,8 +193,8 @@ tools:
       - Voller Wert nur in SAP-/S4-Ecosystem-Kontexten
       - AI Assistant ist Add-on - Lizenzkosten und Featureset im aktuellen Release verifizieren
     sources:
-      - id: sap-leanix-eam-ai-assistant-leanix-net
-  - id: sparx-enterprise-architect
+      - id: leanix-net-en-blog-ai-assistant-use-cases
+  - id: sparxsystems-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -204,8 +204,8 @@ tools:
       - AI Assist ist relativ jung; LLM-Backend und Datenfluss bei der Beschaffung explizit klaeren
       - Schwellen-Tool fuer Teams ohne UML-Kultur
     sources:
-      - id: sparx-enterprise-architect-ai-assist-sparxsystems
-  - id: bito-ai-architect
+      - id: genie-sparxsystems-com-ai-assist-for-ea
+  - id: bito-ai
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -225,10 +225,10 @@ tools:
         - Steile Onboarding-Kurve, Doku-Luecken (AgentRank)
         - Vendor-Posture wirkt fragil - kein oeffentliches Repo-Movement zum Audit-Zeitpunkt (Swanum)
     sources:
-      - id: bito-ai-architect-bito
-      - id: bito-ai-architect-bito-docs
-      - id: bito-ai-architect-agentrank
-      - id: bito-ai-architect-swanum
+      - id: bito-ai-blog-ai-architect-in-jira
+      - id: docs-bito-ai-ai-architect-integrating-ai-architect-with-your-tools-guide-for-jira
+      - id: agentrank-tech-blog-bito-review-ai-pr-reviewer-worth-15-per-month
+      - id: swanum-com-category-ai-code-review-tools-bito
 start_here: "Einstieg mit Claude Code im Plan-Mode an einem klar abgegrenzten Feature: PRD als Kontext einlesen, 2–3 Architekturansätze mit Trade-offs generieren lassen, dann gemeinsam mit Reviewer schärfen. Kiro eignet sich als Alternative für Teams, die einen erzwungenen Spec-Workflow ohne Zusatzkonfiguration bevorzugen."
 caveats: PRDs mit Personenbezug oder Datenklassifizierungen nur über Bedrock EU (Claude Code / Amazon Q Developer) oder mit aktiviertem Datennutzungs-Opt-out und AWS-EU-Region (Kiro) verarbeiten. Alle drei Tools tendieren ohne explizite Constraints in Skills oder Steering-Files dazu, den Klärungsschritt zu überspringen und direkt in Implementierungsdetails zu kippen.
 sources: []

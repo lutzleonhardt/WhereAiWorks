@@ -9,7 +9,7 @@ goal_label: Shell-Befehle, Git-Operationen und Build-Tasks per Prompt erledigen
 suitability: good_fit
 rationale: GitHub Copilot und Tabnine bringen NL-Shell-Integration mit DACH-konformen Deployment-Pfaden in Produktionsreife — das Use Case ist damit über frühe Experimente hinausgewachsen. Praktiker nennen die Unterstützung bei unbekannten CLIs wie kubectl oder awscli als unmittelbaren Produktivitätsgewinn ohne langen Einarbeitungsaufwand.
 tools:
-  - id: copilot
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -34,11 +34,11 @@ tools:
         - Schreibzugriff-Anforderung disqualifiziert das Tool für manche
         - Premium-Request-Pricing pro Prompt
     sources:
-      - id: github-copilot-cli-infoq
-      - id: github-copilot-cli-github
-      - id: github-copilot-cli-github-blog
-      - id: github-copilot-cli-reddit
-  - id: openai-codex
+      - id: infoq-com-news-2026-04-github-copilot-cli-ga
+      - id: github-com-github-copilot-cli
+      - id: github-blog-ai-and-ml-github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line
+      - id: reddit-com-r-githubcopilot-comments-1r5a1jj-anyone-use-gh-cli-for-copilot
+  - id: openai-com-codex
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -61,10 +61,10 @@ tools:
       complaints:
         - Schwächer bei komplexer Multi-File-Reasoning vs. Claude Code
     sources:
-      - id: openai-codex-cli-termdock
-      - id: openai-codex-cli-dev-to
-      - id: openai-codex-cli-reddit
-  - id: opencode
+      - id: termdock-com-blog-ai-cli-tools-guide
+      - id: dev-to-rahulxsingh-claude-code-vs-codex-cli-vs-gemini-cli-which-ai-terminal-agent-wins-in-2026-55f5
+      - id: reddit-com-r-chatgptcoding-comments-1rxw1gu-what-ai-tools-are-actually-worth-trying-beyond
+  - id: opencode-ai
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -87,9 +87,9 @@ tools:
       complaints:
         - Mehr Setup-Aufwand
     sources:
-      - id: github-copilot-cli-reddit
-      - id: opencode-reddit-2
-  - id: google-gemini-cli
+      - id: reddit-com-r-githubcopilot-comments-1r5a1jj-anyone-use-gh-cli-for-copilot
+      - id: reddit-com-user-ikcode-igor
+  - id: github-com-google-gemini-gemini-cli
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -113,10 +113,10 @@ tools:
         - In der Praxis weniger zuverlässig als Claude Code
         - Hallucinationen häufiger bei DevOps-Tasks
     sources:
-      - id: google-gemini-cli-github
-      - id: google-gemini-cli-geminicli
-      - id: openai-codex-cli-reddit
-  - id: goose
+      - id: github-com-google-gemini-gemini-cli
+      - id: geminicli-com-docs
+      - id: reddit-com-r-chatgptcoding-comments-1rxw1gu-what-ai-tools-are-actually-worth-trying-beyond
+  - id: block-github-io-goose
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -130,8 +130,8 @@ tools:
       - Tooling-Reife unter den Top-CLI-Agents niedriger
       - Wenig Praktiker-Threads im DACH-Raum
     sources:
-      - id: openai-codex-cli-termdock
-  - id: open-interpreter
+      - id: termdock-com-blog-ai-cli-tools-guide
+  - id: github-com-openinterpreter-open-interpreter
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: high
@@ -156,9 +156,9 @@ tools:
         - Sicherheitsmodell zu schwach für produktive Nutzung
         - Hallucination kann Dateien zerstören
     sources:
-      - id: open-interpreter-github
-      - id: open-interpreter-simonwillison-net
-  - id: wave-terminal
+      - id: github-com-openinterpreter-open-interpreter
+      - id: simonwillison-net-2024-nov-24-open-interpreter
+  - id: waveterm-dev
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -179,9 +179,9 @@ tools:
       complaints:
         - Weniger ausgereifte UX als Warp
     sources:
-      - id: wave-terminal-reddit
-      - id: wave-terminal-reddit-2
-  - id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant
+      - id: reddit-com-r-devops-comments-yt2d57-warp-terminal-alternative
+      - id: reddit-com-r-warpdotdev-comments-1p31v83-is-warp-good-as-a-terminal
+  - id: developers-redhat-com-products-ansible-overview-lightspeed
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -191,9 +191,9 @@ tools:
       - watsonx-Code-Assistant-Subscription erforderlich
       - Nutzung über VS-Code-Extension, kein eigenes Terminal-Tool
     sources:
-      - id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant-redhat
-      - id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant-ibm
-  - id: kubectl-ai
+      - id: developers-redhat-com-products-ansible-overview-lightspeed
+      - id: ibm-com-docs-en-software-hub-5-1-x-topic-new-watsonx-code-assistant-red-hat-ansible-lightspeed
+  - id: github-com-googlecloudplatform-kubectl-ai
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -214,10 +214,10 @@ tools:
         - Reduziert kubectl-Syntax-Frust spürbar
         - Lokale-Modell-Pfad via Ollama
     sources:
-      - id: kubectl-ai-github
-      - id: kubectl-ai-medium
-      - id: kubectl-ai-virtualizationhowto
-  - id: anteroom
+      - id: github-com-googlecloudplatform-kubectl-ai
+      - id: medium-com-yadav-deepak012-ai-powered-kubernetes-troubleshooting-a-deep-dive-into-k8sgpt-kubectl-ai-and-kagent-278793771728
+      - id: virtualizationhowto-com-2025-05-meet-kubectl-ai-google-just-delivered-the-best-tool-for-kubernetes-management
+  - id: anteroom-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -229,9 +229,9 @@ tools:
       - Kein etablierter Reseller-Kanal in DACH bekannt
       - Keine DACH-Referenzkunden öffentlich sichtbar
     sources:
-      - id: anteroom-anteroom
-      - id: anteroom-github
-  - id: tabnine
+      - id: anteroom-ai
+      - id: github-com-troylar-anteroom
+  - id: tabnine-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -241,10 +241,10 @@ tools:
       - NL-Shell ist Teil eines breiteren Coding-Agents — nicht primär 'NL-zu-Shell'-Tool
       - Open-Weight-Modelle on-prem heisst eigene GPU-Infra notwendig
     sources:
-      - id: tabnine-cli-tabnine
-      - id: tabnine-cli-tabnine-2
-      - id: google-gemini-code-assist-vibecoding-app
-      - id: tabnine-devapps-uk
+      - id: docs-tabnine-com-main-getting-started-tabnine-cli-features-cli-commands
+      - id: docs-tabnine-com-main-welcome-readme-architecture-deployment-options
+      - id: vibecoding-app-blog-tabnine-review
+      - id: devapps-uk-reviews-tabnine-in-2026-the-enterprise-ai-assistant-that-guards-your-code
 start_here: "Für Enterprise-Teams ist GitHub Copilot CLI der risikoärmste Einstieg: der Confirm-vor-Run-Schritt verhindert destruktive Aktionen, und der Microsoft-EA-Pfad deckt DACH-Compliance ab. Wo Air-Gap oder BaFin-Anforderungen Cloud-Telemetrie ausschließen, ist Tabnine mit On-Prem-/VPC-Deployment die geprüfte Alternative."
 caveats: "Halluzinierte Flags landen direkt in der Shell — destruktive Befehle brauchen immer einen Bestätigungsschritt oder Dry-Run, unabhängig vom gewählten Tool. Für DACH-Banken muss der Telemetrie-Datenweg geprüft werden: Tabnine bietet Air-Gap-Deployment, GitHub Copilot den EU-Data-Boundary-Pfad."
 sources: []

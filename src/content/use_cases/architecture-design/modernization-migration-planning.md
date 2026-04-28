@@ -9,7 +9,7 @@ goal_label: Migrationspfad und Transition-Architektur ableiten
 suitability: conditional
 rationale: Amazon Q Developer Transform und OpenRewrite bieten produktionsreife, agentische Migrationspfade für Java/JVM-Stacks — der manuelle Aufwand für Codebase-Analyse, Risk-Mapping und schrittweise Planung lässt sich damit erheblich reduzieren. Für DACH-Organisationen mit Mainframe-Bestand ergänzt CAST Imaging / Highlight den Stack mit tiefem Multi-Sprach-Reverse-Engineering, das in Banken und Versicherungen bereits etabliert ist.
 tools:
-  - id: smartshift-technologies
+  - id: smartshifttech-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -19,8 +19,8 @@ tools:
       - AI-Layer eher Automatisierungs-Engine als Frontier-LLM
       - Vertriebs-/Beratungsmodell, kein Self-Service
     sources:
-      - id: smartshift-technologies-smartshifttech
-  - id: snp-crystalbridge
+      - id: smartshifttech-com-solutions-s4hana-transformation
+  - id: snpgroup-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -30,8 +30,8 @@ tools:
       - Lizenz-/Projektkosten signifikant
       - AI-Anteil eher unterstützend als zentral
     sources:
-      - id: snp-crystalbridge-snpgroup
-  - id: tricentis-livecompare
+      - id: snpgroup-com-en-products-crystalbridge
+  - id: tricentis-com-products-livecompare
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -41,8 +41,8 @@ tools:
       - Tricentis ist österreichisches Unternehmen, US-Eigentümer (Vista) — Datenfluss prüfen
       - Migrationsplan-Output ist Risiko-Sicht, kein Roadmap-Generator
     sources:
-      - id: tricentis-livecompare-tricentis
-  - id: amazon-q-developer-transform
+      - id: tricentis-com-products-livecompare
+  - id: aws-amazon-com-q-developer-transform
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -66,10 +66,10 @@ tools:
         - Mainframe-Pfad noch unreif
         - Wert sinkt stark außerhalb des AWS-Ökosystems
     sources:
-      - id: amazon-q-developer-transform-amazon
-      - id: amazon-q-developer-devtoolsreview
-      - id: amazon-q-developer-awesomeagents
-  - id: cast-imaging
+      - id: aws-amazon-com-q-developer-transform
+      - id: devtoolsreview-com-reviews-amazon-q-review
+      - id: awesomeagents-ai-reviews-review-amazon-q-developer
+  - id: castsoftware-com-products-imaging
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -90,9 +90,9 @@ tools:
         - Hohe TCO
         - Schwerer Onboarding-Prozess
     sources:
-      - id: cast-imaging-castsoftware
-      - id: cast-imaging-gartner-peer
-  - id: ibm-watsonx-code-assistant-for-z
+      - id: castsoftware-com-products-imaging
+      - id: gartner-com-reviews-market-ai-augmented-code-modernization-tools-vendor-cast-product-cast-imaging
+  - id: ibm-com-products-watsonx-code-assistant-z
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -115,9 +115,9 @@ tools:
         - IBM-Stack-Lock-in
         - Verfügbare Erfahrungsberichte überwiegend IBM-nahe — wenig neutrale Datenpunkte
     sources:
-      - id: ibm-watsonx-code-assistant-for-z-ibm
-      - id: ibm-wca4z-pilot-linkedin
-  - id: copilot
+      - id: ibm-com-products-watsonx-code-assistant-z
+      - id: linkedin-com-pulse-ibm-genai-watsonx-code-assistant-z-wcaz-pilot-journey-piyush-mishra-1qeee
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -140,11 +140,11 @@ tools:
         - Komplexe WCF-Fälle bleiben Handarbeit
         - Funktioniert nicht mit exotischen Build-Setups (Maven/Gradle bevorzugt)
     sources:
-      - id: microsoft-github-copilot-app-modernization-for-net-microsoft
-      - id: microsoft-github-copilot-upgrade-assistant-for-java-github-blog
-      - id: copilot-cashfree-java-21
-      - id: copilot-modernize-dotnet-learn
-  - id: openrewrite-moderne
+      - id: devblogs-microsoft-com-dotnet-github-copilot-app-modernization-dotnet
+      - id: github-blog-ai-and-ml-github-copilot-upgrade-assistant-for-java
+      - id: cashfree-com-blog-github-copilot-agent-java-21-upgrade
+      - id: learn-microsoft-com-en-us-dotnet-core-porting-github-copilot-app-modernization-overview
+  - id: moderne-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -167,10 +167,10 @@ tools:
         - Java/Kotlin-Mix-Projekte erfordern Sorgfalt beim Scoping
         - Premium-Recipes hinter kommerzieller Lizenz
     sources:
-      - id: openrewrite-moderne-moderne
-      - id: openrewrite-infoworld-primer
-      - id: openrewrite-kleinanzeigen-berlin-techblog
-  - id: vfunction
+      - id: moderne-ai-platform
+      - id: infoworld-com-article-4073173-a-practitioners-primer-on-deterministic-application-modernization-html
+      - id: medium-com-berlin-tech-blog-automate-your-java-upgrades-a-practical-case-study-with-openrewrite-and-github-actions-44275f841082
+  - id: vfunction-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -194,8 +194,8 @@ tools:
         - Dynamic-Trace-Daten schwer zu bekommen
         - Wenig neutrale Drittberichte zur Validierung der Vendor-ROI-Claims
     sources:
-      - id: vfunction-vfunction-vfunction-com-platform
-      - id: vfunction-futurum-analyst
+      - id: vfunction-com-platform
+      - id: futurumgroup-com-insights-vfunction-earns-coveted-and-prestigious-recognition
 start_here: "Einstieg über Amazon Q Developer Transform an einem einzelnen, klar abgegrenzten Java-Service: Der Upgrade-Agent erzeugt PR-basierte Migrationspfade inklusive Build-Verification, sodass Aufwand und Risiko kontrollierbar bleiben. Für deterministische Massenrefactorings (z.B. Spring Boot 2→3 über mehrere Repos) OpenRewrite parallel auf einem nicht-produktiven Repository pilotieren, bevor ein breiterer Rollout erfolgt."
 caveats: AI-generierte Pläne decken den technischen Migrationspfad ab, blenden aber DACH-spezifische Hürden aus — Betriebsrats-/Personalrats-Mitbestimmung bei Systemwechseln und regulatorische Anzeigepflichten (z.B. BaFin §44 KWG) bleiben manuell zu verantworten. Alle drei Ankertools sind auf JVM- oder .NET-Stacks optimiert; COBOL/Mainframe-Einsatz über CAST Imaging ist möglich, erfordert aber 3–6 Monate Lead-Time und signifikante TCO.
 sources: []

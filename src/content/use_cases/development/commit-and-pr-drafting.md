@@ -8,7 +8,7 @@ goal_label: Commit-Messages und PR-/MR-Beschreibungen aus dem Diff generieren
 suitability: good_fit
 rationale: "Commit- und PR-Drafting ist der risikoärmste KI-Einstieg im Entwicklungsprozess: mehrere Tools sind GA und in bestehenden Stacks direkt verfügbar — GitHub Copilot Enterprise für GitHub-Cloud-Kunden, JetBrains AI Assistant für Java/Kotlin-Shops, Qodo Merge (PR-Agent) als selbst gehostete OSS-Option ohne Vendor-Lock-in. Der Zeitgewinn ist real und messbar, weil das Ergebnis vor dem Push vom Autor gegengelesen wird und Fehler so unmittelbar auffallen."
 tools:
-  - id: aws-amazon-q-developer-debug-diagnose
+  - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -23,7 +23,7 @@ tools:
       - Modellqualitaet historisch unter GPT-4/Claude.
       - "Datenresidenz: us-east-1 default, EU-Region fuer Q Developer eingeschraenkt."
     sources:
-      - id: amazon-q-developer-commit-and-pr-description-amazon
+      - id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-what-is-html
   - id: continue-dev
     fit: conditional
     enterprise_readiness: team_ready
@@ -38,8 +38,8 @@ tools:
       - Verbreitung im Enterprise eher noch gering (Power-User-Tool).
       - PR-Workflow nur bis Clipboard; kein direkter Push an GitHub/GitLab.
     sources:
-      - id: continue-dev-commit-pr-via-custom-slash-commands-continue
-  - id: gemini-code-assist-pr-review-and-summary-in-github
+      - id: docs-continue-dev-customize-slash-commands
+  - id: developers-google-com-gemini-code-assist-docs-review-github-code
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -54,8 +54,8 @@ tools:
       - Diff verlaesst Repo-Boundary an Google.
       - Ergebnisqualitaet schwankt — Praktikerstimmen berichten generische Summaries.
     sources:
-      - id: gemini-code-assist-pr-review-and-summary-in-github-google
-  - id: opencommit
+      - id: developers-google-com-gemini-code-assist-docs-review-github-code
+  - id: github-com-di-sukharev-opencommit
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -69,8 +69,8 @@ tools:
       - Kein Enterprise-Support / SLA.
       - Qualitaet bei lokalen Modellen (Ollama/Llama) deutlich schlechter als bei GPT-4o/Claude.
     sources:
-      - id: opencommit-github
-  - id: aider
+      - id: github-com-di-sukharev-opencommit
+  - id: aider-chat
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -80,8 +80,8 @@ tools:
       - Diff-Egress haengt von gewaehltem Backend ab — Default OpenAI/Anthropic.
       - Fokus ist Coding-Agent, nicht reines PR-Drafting; fuer alleinigen Use Case oft Overkill.
     sources:
-      - id: aider-aider-chat-aider-chat-docs-usage-commands-html
-  - id: atlassian-rovo-dev-bitbucket-ai-pr-descriptions
+      - id: aider-chat-docs-usage-commands-html
+  - id: support-atlassian-com-bitbucket-cloud-docs-use-ai-to-generate-pull-request-descriptions
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -91,8 +91,8 @@ tools:
       - Cloud-Migration darf nicht durch PR-Drafting motiviert werden.
       - Rovo-Datenfluss ueber AWS Bedrock; DPA und Sub-Processor-Liste pruefen.
     sources:
-      - id: atlassian-rovo-dev-bitbucket-ai-pr-descriptions-atlassian
-  - id: tabnine
+      - id: support-atlassian-com-bitbucket-cloud-docs-use-ai-to-generate-pull-request-descriptions
+  - id: tabnine-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -102,8 +102,8 @@ tools:
       - Modellqualitaet historisch unter GPT-4/Claude — bei nicht-air-gapped Setups gewinnt Copilot/Duo.
       - Kein dediziertes PR-Description-Feature.
     sources:
-      - id: tabnine-ai-commit-messages-air-gapped-tabnine
-  - id: claude-code
+      - id: docs-tabnine-com-main-software-development-with-tabnine-tabnine-chat-tabnine-chat-commands-generating-a-commit-message
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -117,9 +117,9 @@ tools:
       - Kein PR-Bot wie Copilot; laeuft lokal als CLI.
       - Konfiguration der Prompt-Vorlagen liegt beim Team — Konsistenz erfordert Disziplin.
     sources:
-      - id: claude-code-cli-commit-pr-summary-anthropic
-      - id: claude-code-devto-git-workflow
-  - id: coderabbit-pr-summary
+      - id: docs-anthropic-com-en-docs-claude-code-common-tasks
+      - id: dev-to-subprime2010-claude-code-git-auto-generate-commit-messages-pr-descriptions-and-pre-commit-reviews-423f
+  - id: coderabbit-ai
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -133,9 +133,9 @@ tools:
       - Kann bei sehr grossen PRs lueckenhafte Summaries liefern.
       - 2-4 Wochen Einlernphase bis Reviews peak-relevant werden.
     sources:
-      - id: coderabbit-pr-summary-coderabbit
-      - id: coderabbit-stvck-dev-review
-  - id: copilot
+      - id: docs-coderabbit-ai-overview-introduction
+      - id: stvck-dev-articles-one-month-with-coderabbit-an-ai-assisted-code-review-experience
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -149,10 +149,10 @@ tools:
       - Generierte Texte oft generisch; Designintent muss manuell ergaenzt werden.
       - Kein PR-Botworkflow — Nutzer muss Feature aktiv im GitHub-UI ausloesen.
     sources:
-      - id: github-copilot-pr-summary-and-commit-message-github
-      - id: github-copilot-pr-summary-and-commit-message-github-blog
-      - id: copilot-refacto-pr-review-2026
-  - id: gitlab-duo-merge-request-summary-and-commit-message
+      - id: docs-github-com-en-copilot-using-github-copilot-using-github-copilot-for-pull-requests-creating-a-pull-request-summary-with-github-copilot
+      - id: github-blog-changelog-2024-04-30-github-copilot-pull-request-summaries-now-generally-available
+      - id: refacto-ai-blog-github-copilot-code-review-in-2026-what-it-does-well-and-where-it-falls-short
+  - id: docs-gitlab-com-ee-user-project-merge-requests-duo-in-merge-requests-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -165,9 +165,9 @@ tools:
       - Modellqualitaet von Self-Hosted-Backend abhaengig (Mistral/Mixtral schwaecher als Claude/GPT).
       - Kein unabhaengiger Practitioner-Vergleich der MR-Summary-Qualitaet gefunden — Qualitaetseinschaetzung basiert allein auf Vendor-Doku.
     sources:
-      - id: gitlab-duo-merge-request-summary-and-commit-message-gitlab
-      - id: gitlab-duo-merge-request-summary-and-commit-message-gitlab-2
-  - id: qodo-merge-formerly-pr-agent
+      - id: docs-gitlab-com-ee-user-project-merge-requests-duo-in-merge-requests-html
+      - id: docs-gitlab-com-ee-administration-self-hosted-models
+  - id: qodo-ai-products-qodo-merge
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -180,10 +180,10 @@ tools:
       - Feature-Parity OSS vs. Qodo-Merge-SaaS unklar — Roadmap-Risiko durch Community-Handoff verstaerkt.
       - PR-Agent-OSS-Repo getrennt von Qodo-Merge-SaaS — Feature-Paritaet nicht garantiert.
     sources:
-      - id: qodo-merge-formerly-pr-agent-github
-      - id: qodo-merge-aicodereview-independent-review
-      - id: qodo-community-handoff-announcement
-  - id: jetbrains-ai-assistant-commit-message
+      - id: github-com-qodo-ai-pr-agent
+      - id: aicodereview-cc-blog-qodo-merge-review
+      - id: qodo-ai-blog-qodo-is-handing-pr-agent-over-to-the-community
+  - id: jetbrains-com-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -195,8 +195,8 @@ tools:
       - Kein CLI, keine Web-Oberflaeche, kein PR-Review-Bot — Tool ist hart an JetBrains-IDEs gebunden.
       - Fuer Teams ausserhalb des JetBrains-Oekosystems kein Mehrwert.
     sources:
-      - id: jetbrains-ai-assistant-commit-message-jetbrains
-      - id: jetbrains-devtoolsreview-2026-comparison
+      - id: jetbrains-com-help-idea-ai-commit-message-html
+      - id: devtoolsreview-com-comparisons-copilot-vs-jetbrains-ai-2026
 start_here: GitHub-Enterprise-Cloud-Shops starten mit Copilot Enterprise (PR Summary im GitHub-UI, Commit-Message in VS Code/JetBrains); JetBrains-Häuser aktivieren AI Assistant Commit Message als Suite-Feature ohne Zusatzbeschaffung. Self-Managed-GitLab-Stacks wählen GitLab Duo MR Summary — echter Datenhaltungsweg erfordert Duo Enterprise mit eigener GPU-Infra. In jedem Fall den generierten Text einmal lesen und Risiko/Test-Plan manuell ergänzen.
 caveats: Generierte Texte sind oft pauschal-wohlklingend und verschleiern Designentscheidungen — Redaktion durch den Autor bleibt Pflicht. Diff-Inhalte verlassen das Repo Richtung LLM-Backend; bei vertraulichen Repos (Trading-Algorithmen, Versicherungsmathematik) Self-Hosted-LLM oder Diff-Filter einplanen. Copilot PR Summary ist an die Enterprise-Lizenzklasse gebunden (nicht Business/Pro); in DACH-Betrieben Betriebsratsbeteiligung nach §87 BetrVG frühzeitig einplanen.
 sources: []

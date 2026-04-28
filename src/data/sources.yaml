@@ -1,2340 +1,2340 @@
-- id: apiiro-ai-augmented-application-risk-platform-apiiro
+- id: apiiro-com-platform-ai-code-security
   label: Apiiro vermarktet AI Code Security mit Risiko-Reports
   url: https://apiiro.com/platform/ai-code-security/
   type: vendor_doc
-- id: claude-code-permission-modes-bedrock-vertex-deployment-hooks-anthropic
+- id: docs-anthropic-com-en-docs-claude-code-security
   label: Anthropic dokumentiert Permission-Modell und Sicherheits-Architektur von Claude Code
   url: https://docs.anthropic.com/en/docs/claude-code/security
   type: vendor_doc
-- id: claude-code-permission-modes-bedrock-vertex-deployment-hooks-anthropic-2
+- id: docs-anthropic-com-en-docs-claude-code-hooks
   label: Hooks ermöglichen audit-relevantes Logging und Policy-Enforcement
   url: https://docs.anthropic.com/en/docs/claude-code/hooks
   type: vendor_doc
-- id: github-copilot-enterprise-audit-log-content-exclusions-github
+- id: docs-github-com-en-copilot-managing-copilot-managing-copilot-for-your-enterprise-reviewing-activity-related-to-github-copilot-in-your-enterprise
   label: GitHub dokumentiert Audit-Log-Events für Copilot-Aktivitäten auf Enterprise-Ebene
   url: https://docs.github.com/en/copilot/managing-copilot/managing-copilot-for-your-enterprise/reviewing-activity-related-to-github-copilot-in-your-enterprise
   type: vendor_doc
-- id: github-copilot-enterprise-audit-log-content-exclusions-github-2
+- id: docs-github-com-en-copilot-managing-copilot-managing-copilot-for-your-enterprise-excluding-content-from-github-copilot
   label: Content Exclusions als Baustein für Credential-/Repo-Isolation
   url: https://docs.github.com/en/copilot/managing-copilot/managing-copilot-for-your-enterprise/excluding-content-from-github-copilot
   type: vendor_doc
-- id: gitpod-flex-sicheres-coding-agent-workspace-gitpod
+- id: gitpod-io-flex
   label: Gitpod Flex bietet self-hosted, isolierte Workspaces
   url: https://www.gitpod.io/flex
   type: vendor_doc
-- id: snyk-ai-trust-platform-deepcode-ai-guardrails-snyk
+- id: snyk-io-platform-ai-trust
   label: Snyk vermarktet eine AI-Trust-Schicht für Coding-Agent-Output
   url: https://snyk.io/platform/ai-trust/
   type: vendor_doc
-- id: cloudflare-ai-gateway-cloudflare
+- id: developers-cloudflare-com-ai-gateway
   label: Cloudflare AI Gateway loggt und steuert LLM-Traffic über Provider hinweg
   url: https://developers.cloudflare.com/ai-gateway/
   type: vendor_doc
-- id: lakera-guard-lakera
+- id: lakera-ai
   label: Lakera positioniert Schweizer GenAI-Security-Plattform
   url: https://www.lakera.ai/
   type: vendor_doc
-- id: litellm-proxy-berriai-github
+- id: github-com-berriai-litellm
   label: LiteLLM Proxy bietet Virtual Keys, Logging, Budgets über 100+ LLMs
   url: https://github.com/BerriAI/litellm
   type: vendor_doc
-- id: portkey-ai-gateway-portkey
+- id: portkey-ai
   label: Portkey vermarktet Gateway mit Virtual Keys, Logs und Guardrails
   url: https://portkey.ai/
   type: vendor_doc
-- id: sourcegraph-cody-enterprise-self-hosted-byo-llm-audit-sourcegraph
+- id: sourcegraph-com-docs-cody-clients-enable-cody-enterprise
   label: Cody Enterprise unterstützt Self-Hosting und konfigurierbare Modell-Provider
   url: https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise
   type: vendor_doc
-- id: sourcegraph-cody-toolchase-byo-llm-compliance-independent
+- id: toolchase-com-tool-cody
   label: Unabhängige Review bestätigt BYO-LLM, SOC2, RBAC und air-gapped Betrieb für regulierte Kunden
   url: https://toolchase.com/tool/cody/
   type: review
-- id: tabnine-enterprise-air-gapped-self-hosted-tabnine
+- id: tabnine-com-enterprise
   label: Tabnine bewirbt air-gapped / on-prem Deployment für Enterprise
   url: https://www.tabnine.com/enterprise/
   type: vendor_doc
-- id: tabnine-gartner-peer-insights-regulated-industry
+- id: gartner-com-reviews-market-ai-code-assistants-vendor-tabnine-product-tabnine
   label: "Gartner Peer Insights: Enterprise-Nutzer in regulierter Branche wählt Tabnine wegen privater LLM-Isolation"
   url: https://www.gartner.com/reviews/market/ai-code-assistants/vendor/tabnine/product/tabnine
   type: analyst_report
-- id: aws-amazon-q-developer-debug-diagnose-amazon
+- id: aws-amazon-com-q-developer
   label: AWS bewirbt Q Developer fuer Troubleshooting/Diagnose von AWS-Workloads, inkl. Stack-Trace- und Log-Analyse in der Kons…
   url: https://aws.amazon.com/q/developer/
   type: vendor_doc
-- id: continue-dev-continue
+- id: docs-continue-dev
   label: Continue dokumentiert sich als modellagnostischer OSS-IDE-Assistent mit Custom-Backend-Konfiguration.
   url: https://docs.continue.dev/
   type: vendor_doc
-- id: honeycomb-query-assistant-ai-honeycomb
+- id: honeycomb-io-ai
   label: Honeycomb dokumentiert Query Assistant als AI-Layer ueber Tracing-Daten zur Beschleunigung von Debugging.
   url: https://www.honeycomb.io/ai
   type: vendor_doc
-- id: new-relic-ai-newrelic
+- id: newrelic-com-platform-new-relic-ai
   label: New Relic dokumentiert AI-gestuetzte Error-Triage und Stack-Trace-Erklaerung in Errors Inbox.
   url: https://newrelic.com/platform/new-relic-ai
   type: vendor_doc
-- id: rookout-dynatrace-live-debugger-ai-dynatrace
+- id: dynatrace-com-platform-live-debugger
   label: Dynatrace dokumentiert Live Debugger fuer Production-Snapshot-Debugging in Verbindung mit Davis AI fuer Root-Cause.
   url: https://www.dynatrace.com/platform/live-debugger/
   type: vendor_doc
-- id: tabnine-chat-tabnine
+- id: tabnine-com-code-privacy
   label: Tabnine dokumentiert Self-Hosted/On-Prem-Deployment und Code-Privacy als Kernunterscheidung.
   url: https://www.tabnine.com/code-privacy/
   type: vendor_doc
-- id: augment-code-augmentcode
+- id: augmentcode-com
   label: Augment positioniert sich explizit als Enterprise-Coding-AI mit Codebase-Index und Compliance-Differenzierung.
   url: https://www.augmentcode.com
   type: vendor_doc
-- id: google-gemini-code-assist-google
+- id: cloud-google-com-products-gemini-code-assist
   label: Google bewirbt Gemini Code Assist explizit fuer Code-Erklaerung, Debugging und Stack-Trace-Analyse innerhalb GCP-Region.
   url: https://cloud.google.com/products/gemini/code-assist
   type: vendor_doc
-- id: komodor-komodor
+- id: komodor-com
   label: Komodor positioniert sich als Kubernetes-Troubleshooting-Plattform mit AI-gestuetzter Root-Cause-Analyse.
   url: https://komodor.com
   type: vendor_doc
-- id: aider-aider-chat
+- id: aider-chat
   label: Aider-Website beschreibt das Tool als AI-Pair-Programmer im Terminal mit Git-Integration und Multi-File-Edits.
   url: https://aider.chat
   type: vendor_doc
-- id: claude-code-claude
+- id: docs-claude-com-en-docs-claude-code-overview
   label: Claude Code wird explizit als agentischer Debugger und Repo-Explorer positioniert, der Tests ausfuehren und Fehler iterativ beheben kann.
   url: https://docs.claude.com/en/docs/claude-code/overview
   type: vendor_doc
-- id: cline-github
+- id: github-com-cline-cline
   label: Cline-README beschreibt einen autonomen Coding-Agenten in VS Code, der Files liest, Befehle ausfuehrt und Aenderungen macht.
   url: https://github.com/cline/cline
   type: documentation
-- id: datadog-bits-ai-datadoghq
+- id: datadoghq-com-product-bits-ai
   label: Datadog positioniert Bits AI als generativen Assistenten fuer Incident-Triage und Root-Cause-Suche ueber Telemetrie hinweg.
   url: https://www.datadoghq.com/product/bits-ai/
   type: vendor_doc
-- id: github-copilot-chat-debug-mode-github
+- id: docs-github-com-en-copilot-using-github-copilot-asking-github-copilot-questions-in-your-ide
   label: Copilot Chat dokumentiert /fix und /explain als spezifische Befehle fuer Fehlermeldungen und Stack-Trace-Erklaerungen.
   url: https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide
   type: vendor_doc
-- id: jetbrains-ai-assistant-junie-jetbrains
+- id: jetbrains-com-help-idea-ai-assistant-html
   label: JetBrains dokumentiert 'Explain Runtime Error' und 'AI Actions' im Debugger als Erstanlauf fuer Stack-Trace-Verstaendnis.
   url: https://www.jetbrains.com/help/idea/ai-assistant.html
   type: vendor_doc
-- id: sentry-seer-sentry
+- id: sentry-io-product-ai-in-sentry-seer
   label: Sentry positioniert Seer explizit als AI-Agent fuer Root-Cause-Analyse und Autofix von Production-Bugs aus Stack-Trace-Daten.
   url: https://sentry.io/product/ai-in-sentry/seer/
   type: vendor_doc
-- id: sourcegraph-cody-sourcegraph
+- id: sourcegraph-com-docs-cody
   label: Sourcegraph dokumentiert Cody mit Code-Graph-Kontext fuer Cross-Repo-Debugging und Self-Hosted-Deployment.
   url: https://sourcegraph.com/docs/cody
   type: vendor_doc
-- id: aider-mitchgordon-me
+- id: mitchgordon-me-tools-2025-02-26-aider-html
   label: "ML-Ingenieur beschreibt konkreten Aider-Debug-Workflow: Fehlermeldung einfuegen, Aider liest betroffene Files, schlaegt Diagnostic-Logging vor und nutzt Log-Output zur Root-Cause-Eingrenzung ueber mehrere Files."
   url: https://mitchgordon.me/tools/2025/02/26/aider.html
   type: practitioner_post
-- id: aider-michael-hoennig-de
+- id: michael-hoennig-de-blog-2025-2025-04-11-exploring-the-aider-ai-coding-assistant-html
   label: "Deutscher Entwickler testet Aider an Java/PostgreSQL-Codebase: fehlgeschlagene Tests werden zurueck an Aider gegeben fuer iteratives Bugfixing — DACH-relevanter Praxisbericht (2025-04-11)."
   url: https://michael.hoennig.de/blog/2025/2025-04-11-exploring-the-aider-ai-coding-assistant.html
   type: practitioner_post
-- id: claude-code-dev-to-debugging-patterns
+- id: dev-to-myougatheaxo-5-debugging-patterns-with-claude-code-from-stack-trace-to-root-cause-20f4
   label: "Praktiker-Post DEV Community: fuenf konkrete Debugging-Muster mit Claude Code — vollstaendige Stack-Trace-Injektion, Hypothesen-Ranking vor Fixes, Logging-Strategien fuer nicht-reproduzierbare Bugs."
   url: https://dev.to/myougatheaxo/5-debugging-patterns-with-claude-code-from-stack-trace-to-root-cause-20f4
   type: practitioner_post
-- id: claude-code-dev-to-production-workflow
+- id: dev-to-subprime2010-how-i-use-claude-code-to-debug-production-errors-a-complete-workflow-4mp2
   label: "Praktiker-Post DEV Community: strukturierter Produktions-Incident-Workflow mit Claude Code — Error-Context-Dump, explizite Hypothesen-Generierung, Fix plus Test plus Blast-Radius-Pruefung."
   url: https://dev.to/subprime2010/how-i-use-claude-code-to-debug-production-errors-a-complete-workflow-4mp2
   type: practitioner_post
-- id: cline-mtlynch-io
+- id: mtlynch-io-notes-cline-is-mesmerizing
   label: "Michael Lynch dokumentiert 5-Stunden-Session: Cline korrigiert sich iterativ aus Compiler-Fehlermeldungen und setzt Debug-Print-Statements zur Root-Cause-Eingrenzung bei Zig-Bugs (2025-02-01)."
   url: https://mtlynch.io/notes/cline-is-mesmerizing/
   type: practitioner_post
-- id: cline-sap-linkedin-sabetta
+- id: linkedin-com-pulse-ai-coding-practice-what-we-learned-after-using-cline-month-sabetta-ucckf
   label: "SAP-Security-Research-Entwickler testet Cline + Claude Sonnet ueber SAP AI Core: Debugging-Last verlagert sich zum Menschen, AI-Fixes benoetigen aktive Validierung — Enterprise-relevanter Praxisbericht (2025-09-10)."
   url: https://www.linkedin.com/pulse/ai-coding-practice-what-we-learned-after-using-cline-month-sabetta-ucckf
   type: practitioner_post
-- id: datadog-bits-ai-betterstack
+- id: betterstack-com-community-comparisons-bits-ai-vs-resolve-ai
   label: "BetterStack vergleicht Datadog Bits AI SRE mit Resolve AI: bestaetigt Stack-Trace-zu-Code-Korrelation (GA Maerz 2026), MTTR-Belege von Kunden (iFood: -70%) und hypothesengetriebene Root-Cause-Analyse."
   url: https://betterstack.com/community/comparisons/bits-ai-vs-resolve-ai/
   type: comparison
-- id: datadog-bits-ai-bytesized-substack
+- id: bytesizeddesign-substack-com-p-how-datadog-taught-an-ai-to-investigate
   label: "Unabhaengiges Practitioner-Newsletter analysiert Bits AI Design: Shift von 'alles zusammenfassen' zu kausaler Hypothesen-Kette fuer Root-Cause, mit realem Kafka-Lag-Incident als Beispiel (2026-01-20)."
   url: https://bytesizeddesign.substack.com/p/how-datadog-taught-an-ai-to-investigate
   type: practitioner_post
-- id: copilot-dev-to-production-troubleshooting
+- id: dev-to-anchildress1-troubleshooting-production-with-github-copilot-the-guide-for-real-humans-and-bots-with-good-taste-253o
   label: "Praktiker-Guide DEV Community: konkrete Copilot-Chat-Prompts fuer Stack-Traces und Log-Snippets — zeigt /fix-artiges Debugging in realen Produktions-Incident-Szenarien (2025-06-25)."
   url: https://dev.to/anchildress1/troubleshooting-production-with-github-copilot-the-guide-for-real-humans-and-bots-with-good-taste-253o
   type: practitioner_post
-- id: copilot-dev-to-robin-debugging
+- id: dev-to-johnschibelli-how-github-copilots-robin-takes-debugging-to-the-next-level-36nh
   label: "Entwickler-Artikel ueber Copilot ROBIN (zit. Microsoft Research VL/HCC 2025): SerializationException-Stack-Trace analysiert, Breakpoint-Platzierung gefuehrt, echter Root-Cause gefunden — bestaetigt Stack-Trace-Debugging-Tiefe."
   url: https://dev.to/johnschibelli/how-github-copilots-robin-takes-debugging-to-the-next-level-36nh
   type: practitioner_post
-- id: jetbrains-ai-devtoolsreview
+- id: devtoolsreview-com-reviews-jetbrains-ai-review
   label: "Sechsmonatiger Praxistest in IntelliJ/WebStorm: JetBrains AI liefert kontextbewusste Fix-Vorschlaege bei IDE-Inspection-Warnungen (unhandled exceptions, potential null pointers) tiefer als Third-Party-Tools."
   url: https://devtoolsreview.com/reviews/jetbrains-ai-review
   type: review
-- id: jetbrains-ai-toolstac
+- id: toolstac-com-tool-jetbrains-ai-assistant-overview
   label: "Practitioner-Erfahrungsbericht: konkrete Stack-Trace-Analyse im AI Chat (UnsatisfiedDependencyException, RejectedExecutionException, NullPointerException) sowie Screenshot-Analyse von Error-Dialogen."
   url: https://toolstac.com/tool/jetbrains-ai-assistant/overview
   type: review
-- id: sentry-seer-visualsoft
+- id: visualsoft-co-uk-blog-sentry-seer
   label: "UK-Entwicklungsagentur Visualsoft testet Sentry Seer hands-on: Root-Cause-Hypothesen in jedem Testfall korrekt, mehrere Seer-generierte PR-Fixes erfolgreich in Production uebernommen (2025-07-10)."
   url: https://www.visualsoft.co.uk/blog/sentry-seer
   type: practitioner_post
-- id: sentry-seer-dev-to-mastra
+- id: dev-to-bdigital00-my-mastra-agent-found-a-production-bug-in-five-minutes-348e
   label: Entwickler beschreibt, wie Sentry Seers Autofix-Muster ihn inspirierten — validiert das 'AI-Fix-aus-Production-Error'-Muster; eigener Agent fand 66 silent-crashing Production-Fehler die Uptime-Monitoring uebersehen hatte.
   url: https://dev.to/bdigital00/my-mastra-agent-found-a-production-bug-in-five-minutes-348e
   type: practitioner_post
-- id: sourcegraph-cody-devtoolsreview
+- id: devtoolsreview-com-reviews-cody-review
   label: "Fuenfmonatiger Monorepo-Test (2.000+ Dateien, 15 Repos): Cody loest Cross-Repo-Debugging ohne manuellen Kontext — Event-Flow zwischen Services exakt verfolgt; go-to-definition und find-all-references ueber Repo-Grenzen als Differenzierungsmerkmal."
   url: https://devtoolsreview.com/reviews/cody-review
   type: review
-- id: sourcegraph-cody-aiforcode
+- id: aiforcode-io-tools-sourcegraph-cody
   label: "Unabhaengige Scoring-Plattform: Cody trackt Data-Flow ueber mehrere Repos ('user object is null' — Transformation bis zur Fehlerquelle verfolgt) ohne manuelles Code-Snippet-Einfuegen."
   url: https://aiforcode.io/tools/sourcegraph-cody
   type: review
-- id: jetbrains-ai-assistant-mit-junie-vibecodedthis
+- id: vibecodedthis-com-reviews-jetbrains-ai-review-2026
   label: Free unlimited lokale Completions als Differenzierungsmerkmal
   url: https://vibecodedthis.com/reviews/jetbrains-ai-review-2026/
   type: review
-- id: jetbrains-ai-assistant-mit-junie-jetbrains
+- id: jetbrains-com-help-ai-assistant-installation-guide-ai-assistant-html
   label: AI Enterprise erlaubt LLM-Hosting in eigener Umgebung
   url: https://www.jetbrains.com/help/ai-assistant/installation-guide-ai-assistant.html
   type: vendor_doc
-- id: jetbrains-ai-assistant-mit-junie-reddit
+- id: reddit-com-r-claudeai-comments-1rp9a57-i-analyzed-15-competitors-in-the-ai-coding
   label: JetBrains-AI-Credit-Problematik in Community-Analyse genannt
   url: https://www.reddit.com/r/ClaudeAI/comments/1rp9a57/i_analyzed_15_competitors_in_the_ai_coding/
   type: community
-- id: tabnine-medium
+- id: medium-com-tarxemo-i-tested-5-ai-coding-assistants-in-production-heres-what-actually-worked-6ad698951152
   label: Niedrigere Acceptance-Rate als Copilot/Cursor in Praxistest
   url: https://medium.com/@tarxemo/i-tested-5-ai-coding-assistants-in-production-heres-what-actually-worked-6ad698951152
   type: review
-- id: tabnine-reddit
+- id: reddit-com-r-webdev-comments-1h20eq5-which-one-to-use-copilot-tabnine-codeium
   label: Praxiseinsatz von Tabnine self-hosted in datensensitiven Teams
   url: https://www.reddit.com/r/webdev/comments/1h20eq5/which_one_to_use_copilot_tabnine_codeium/
   type: community
-- id: amazon-q-developer-awesomeagents
+- id: awesomeagents-ai-reviews-review-amazon-q-developer
   label: Hohe Acceptance-Rates bei Enterprise-Kunden, aber Quality-Lag außerhalb AWS
   url: https://awesomeagents.ai/reviews/review-amazon-q-developer/
   type: review
-- id: amazon-q-developer-amazon
+- id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-q-in-ide-setup-html
   label: Enterprise-Auth via IAM Identity Center mit Profilen
   url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE-setup.html
   type: vendor_doc
-- id: amazon-q-developer-toolstac
+- id: toolstac-com-compare-cursor-github-copilot-windsurf-codeium-amazon-q-developer-comprehensive-developer-comparison
   label: Praxis-Kritik außerhalb AWS-Kontext
   url: https://toolstac.com/compare/cursor/github-copilot/windsurf/codeium/amazon-q-developer/comprehensive-developer-comparison
   type: community
-- id: continue-dev-aicodingcompare
+- id: aicodingcompare-com-tool-continue
   label: Open-Source-Connector mit lokalen LLMs via Ollama
   url: https://aicodingcompare.com/tool/continue
   type: review
-- id: continue-dev-jackson
+- id: jackson-dev-post-cody-hates-reset
   label: Praktiker bevorzugt Continue wegen Konfigurierbarkeit und lokaler Modelle
   url: https://jackson.dev/post/cody-hates-reset/
   type: blog
-- id: google-gemini-code-assist-vibecoding-app
+- id: vibecoding-app-blog-tabnine-review
   label: Gemini Code Assist als generöser Free-Tier in Vergleichstabelle
   url: https://vibecoding.app/blog/tabnine-review
   type: review
-- id: sourcegraph-cody-sourcegraph-2
+- id: docs-sourcegraph-com-docs-cody-faq
   label: Free/Pro abgekündigt — nur Enterprise bleibt
   url: https://docs.sourcegraph.com/docs/cody/faq
   type: vendor_doc
-- id: sourcegraph-cody-sourcegraph-3
+- id: docs-sourcegraph-com-docs-cody-enterprise-model-configuration
   label: BYOK gegen Bedrock/Vertex und Self-hosted Modelle
   url: https://docs.sourcegraph.com/docs/cody/enterprise/model-configuration
   type: vendor_doc
-- id: tabby-reddit
+- id: reddit-com-r-webdev-comments-1rtrgmj-built-an-ai-coding-assistant-finder-filter-and-json
   label: Tabby in Tool-Übersicht 2026 als 19 verglichene Optionen gelistet
   url: https://www.reddit.com/r/webdev/comments/1rtrgmj/built_an_ai_coding_assistant_finder_filter_and.json
   type: community
-- id: tabby-tabbyml
+- id: tabbyml-com
   label: Self-hosted OSS Coding-Assistent mit Inline-Completion
   url: https://www.tabbyml.com
   type: vendor_doc
-- id: lurus-code-lurus
+- id: code-lurus-ai-en
   label: Deutscher GDPR-konformer Coding-Agent ohne Code-Speicherung
   url: https://code.lurus.ai/en/
   type: vendor_doc
-- id: sourcegraph-cody-sourcegraph-sourcegraph-com-cody
+- id: sourcegraph-com-cody
   label: Cody nutzt Code-Graph fuer Repo-weites Verstaendnis und Erklaerungen.
   url: https://sourcegraph.com/cody
   type: vendor_doc
-- id: sourcegraph-cody-sourcegraph-2-sourcegraph-com-docs-cody-enterprise
+- id: sourcegraph-com-docs-cody-enterprise
   label: Self-hosted/Enterprise-Deployment fuer sensible Codebasen verfuegbar.
   url: https://sourcegraph.com/docs/cody/enterprise
   type: documentation
-- id: aider-aider-chat-aider-chat-docs-repomap-html
+- id: aider-chat-docs-repomap-html
   label: Aider erstellt Repo-Map und nutzt sie als Kontext fuer Code-Verstaendnis.
   url: https://aider.chat/docs/repomap.html
   type: documentation
-- id: sap-joule-for-developers-sap
+- id: sap-com-products-artificial-intelligence-ai-assistant-html
   label: Joule unterstuetzt SAP-Entwickler mit Code-Erklaerung in ABAP-Umgebungen.
   url: https://www.sap.com/products/artificial-intelligence/ai-assistant.html
   type: vendor_doc
-- id: amazon-q-developer-amazon-docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
+- id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
   label: Amazon Q Developer bietet Explain-Code- und Workspace-Q&A-Features.
   url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/inline-chat.html
   type: vendor_doc
-- id: amazon-q-developer-devtoolsreview
+- id: devtoolsreview-com-reviews-amazon-q-review
   label: "Unabhaengige Rezension: Q Developer stark im AWS-Oekosystem, erklaert Java-Legacy gut, schwaecher ausserhalb."
   url: https://devtoolsreview.com/reviews/amazon-q-review
   type: article
-- id: augment-code-vibecodedthis
+- id: vibecodedthis-com-reviews-augment-code-review-2026
   label: "Unabhaengige Rezension: 200K-Token-Kontext-Engine fuer grosse Monorepos bestaetigt; Memories fuer persistenten Projekt-Kontext."
   url: https://www.vibecodedthis.com/reviews/augment-code-review-2026
   type: article
-- id: continue-dev-continue-docs-continue-dev-customize-deep-dives-codebase
+- id: docs-continue-dev-customize-deep-dives-codebase
   label: Continue.dev unterstuetzt @codebase-Kontext mit lokaler Indexierung.
   url: https://docs.continue.dev/customize/deep-dives/codebase
   type: vendor_doc
-- id: continue-dev-github
+- id: github-com-continuedev-continue
   label: 32K-Sterne-Open-Source-Repo mit 400 Contributors bestaetigt starke Community-Adoption (Apache-2.0, aktiv 2026).
   url: https://github.com/continuedev/continue
   type: community
-- id: cursor-cursor
+- id: docs-cursor-com-context-codebase-indexing
   label: Cursor indexiert Codebasis fuer @Codebase-Abfragen.
   url: https://docs.cursor.com/context/codebase-indexing
   type: vendor_doc
-- id: cursor-aitoolbriefing
+- id: aitoolbriefing-com-blog-cursor-ai-review-2026
   label: "Unabhaengige Rezension: @Codebase-Chat fuer direkte Repo-Erklaerungen bestaetigt ('How does authentication work?')."
   url: https://aitoolbriefing.com/blog/cursor-ai-review-2026/
   type: article
-- id: copilot-devtoolsreview
+- id: devtoolsreview-com-comparisons-cursor-vs-copilot-2026
   label: "Unabhaengiger Vergleich: Copilot Enterprise mit Org-Indexierung, SSO, Audit Logs und IP-Indemnity dokumentiert."
   url: https://devtoolsreview.com/comparisons/cursor-vs-copilot-2026
   type: article
-- id: google-gemini-code-assist-google-cloud-google-com-gemini-docs-codeassist-code-customization
+- id: cloud-google-com-gemini-docs-codeassist-code-customization
   label: Gemini Code Assist Enterprise unterstuetzt Repo-Indexing fuer kontextbezogene Erklaerung.
   url: https://cloud.google.com/gemini/docs/codeassist/code-customization
   type: vendor_doc
-- id: google-gemini-code-assist-devclass
+- id: devclass-com-development-2024-10-11-googles-code-assist-enterprise-can-be-trained-on-internal-source-code-is-focused-on-google-services-1625091
   label: "Tech-Presse (Tim Anderson, devclass.com): Code Assist Enterprise mit internem Quellcode-Training und GCP-IAM-Kontrolle."
   url: https://www.devclass.com/development/2024/10/11/googles-code-assist-enterprise-can-be-trained-on-internal-source-code-is-focused-on-google-services/1625091
   type: article
-- id: jetbrains-ai-assistant-explain-docs
+- id: jetbrains-com-help-ai-assistant-explain-code-with-ai-html
   label: Dedizierte Explain-Code-Aktion mit IDE-Kontext, RegExp- und SQL-Unterstuetzung dokumentiert.
   url: https://www.jetbrains.com/help/ai-assistant/explain-code-with-ai.html
   type: documentation
-- id: windsurf-codeium-windsurf
+- id: windsurf-com-editor
   label: Windsurf bietet agentische Repo-Erkundung mit Cascade.
   url: https://windsurf.com/editor
   type: vendor_doc
-- id: windsurf-codeium-openaitoolshub
+- id: openaitoolshub-org-en-blog-windsurf-editor-review
   label: "Unabhaengige Rezension: Cascade-Chat fuer Repo-Erklaerung bestaetigt; Enterprise-Compliance-Luecken gegenueber Copilot und Akquisitions-Risiko vermerkt."
   url: https://openaitoolshub.org/en/blog/windsurf-editor-review
   type: article
-- id: ibm-watsonx-code-assistant-for-z-ibm
+- id: ibm-com-products-watsonx-code-assistant-z
   label: watsonx Code Assistant for Z erklaert und modernisiert COBOL-Code.
   url: https://www.ibm.com/products/watsonx-code-assistant-z
   type: vendor_doc
-- id: ibm-watsonx-code-assistant-for-z-croz
+- id: croz-net-honest-take-on-watsonx-code-assistant-for-z
   label: "Unabhaengige Praktiker-Rezension: Z Understand mit Code-Erklaerung fuer COBOL/PL/I/JCL/REXX/Assembler in echten Mainframe-Shops bestaetigt."
   url: https://croz.net/honest-take-on-watsonx-code-assistant-for-z/
   type: article
-- id: amazon-q-developer-commit-and-pr-description-amazon
+- id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-what-is-html
   label: AWS-Doku Q Developer mit Commit-/PR-Hilfen
   url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html
   type: vendor_doc
-- id: continue-dev-commit-pr-via-custom-slash-commands-continue
+- id: docs-continue-dev-customize-slash-commands
   label: Continue-Doku zu Custom-Slash-Commands
   url: https://docs.continue.dev/customize/slash-commands
   type: vendor_doc
-- id: gemini-code-assist-pr-review-and-summary-in-github-google
+- id: developers-google-com-gemini-code-assist-docs-review-github-code
   label: Vendor-Doc zur PR-Review-/Summary-Funktion
   url: https://developers.google.com/gemini-code-assist/docs/review-github-code
   type: vendor_doc
-- id: opencommit-github
+- id: github-com-di-sukharev-opencommit
   label: Multi-Provider-CLI inkl. Ollama fuer Self-Hosted
   url: https://github.com/di-sukharev/opencommit
   type: documentation
-- id: aider-aider-chat-aider-chat-docs-usage-commands-html
+- id: aider-chat-docs-usage-commands-html
   label: Auto-Commit-Message-Funktion
   url: https://aider.chat/docs/usage/commands.html
   type: vendor_doc
-- id: atlassian-rovo-dev-bitbucket-ai-pr-descriptions-atlassian
+- id: support-atlassian-com-bitbucket-cloud-docs-use-ai-to-generate-pull-request-descriptions
   label: Bitbucket Cloud AI-PR-Description-Feature
   url: https://support.atlassian.com/bitbucket-cloud/docs/use-ai-to-generate-pull-request-descriptions/
   type: vendor_doc
-- id: tabnine-ai-commit-messages-air-gapped-tabnine
+- id: docs-tabnine-com-main-software-development-with-tabnine-tabnine-chat-tabnine-chat-commands-generating-a-commit-message
   label: Tabnine-Chat-Command fuer Commit-Message
   url: https://docs.tabnine.com/main/software-development-with-tabnine/tabnine-chat/tabnine-chat-commands/generating-a-commit-message
   type: vendor_doc
-- id: claude-code-cli-commit-pr-summary-anthropic
+- id: docs-anthropic-com-en-docs-claude-code-common-tasks
   label: Claude-Code-Doku zeigt Commit-Workflow
   url: https://docs.anthropic.com/en/docs/claude-code/common-tasks#create-a-commit
   type: vendor_doc
-- id: coderabbit-pr-summary-coderabbit
+- id: docs-coderabbit-ai-overview-introduction
   label: Vendor-Doku zu PR-Summary-Funktion und Multi-Plattform-Support
   url: https://docs.coderabbit.ai/overview/introduction
   type: vendor_doc
-- id: github-copilot-pr-summary-and-commit-message-github
+- id: docs-github-com-en-copilot-using-github-copilot-using-github-copilot-for-pull-requests-creating-a-pull-request-summary-with-github-copilot
   label: Offizielle Dokumentation der PR-Summary-Funktion in github.com
   url: https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-for-pull-requests/creating-a-pull-request-summary-with-github-copilot
   type: vendor_doc
-- id: github-copilot-pr-summary-and-commit-message-github-blog
+- id: github-blog-changelog-2024-04-30-github-copilot-pull-request-summaries-now-generally-available
   label: GA-Ankuendigung des Features
   url: https://github.blog/changelog/2024-04-30-github-copilot-pull-request-summaries-now-generally-available/
   type: vendor_doc
-- id: gitlab-duo-merge-request-summary-and-commit-message-gitlab
+- id: docs-gitlab-com-ee-user-project-merge-requests-duo-in-merge-requests-html
   label: Duo-Funktionen fuer MR-Summary und Diff-Review
   url: https://docs.gitlab.com/ee/user/project/merge_requests/duo_in_merge_requests.html
   type: vendor_doc
-- id: gitlab-duo-merge-request-summary-and-commit-message-gitlab-2
+- id: docs-gitlab-com-ee-administration-self-hosted-models
   label: Self-Hosted-Modell-Support fuer Duo Enterprise (DACH-relevant)
   url: https://docs.gitlab.com/ee/administration/self_hosted_models/
   type: vendor_doc
-- id: qodo-merge-formerly-pr-agent-github
+- id: github-com-qodo-ai-pr-agent
   label: OSS-Repo des PR-Agent-Bots
   url: https://github.com/qodo-ai/pr-agent
   type: documentation
-- id: jetbrains-ai-assistant-commit-message-jetbrains
+- id: jetbrains-com-help-idea-ai-commit-message-html
   label: AI-Commit-Message-Funktion in JetBrains-VCS-Toolwindow
   url: https://www.jetbrains.com/help/idea/ai-commit-message.html
   type: vendor_doc
-- id: claude-code-devto-git-workflow
+- id: dev-to-subprime2010-claude-code-git-auto-generate-commit-messages-pr-descriptions-and-pre-commit-reviews-423f
   label: "Practitioner-Blog: Claude Code + git fuer Commit-Messages und PR-Descriptions (DEV Community, Maerz 2026)"
   url: https://dev.to/subprime2010/claude-code-git-auto-generate-commit-messages-pr-descriptions-and-pre-commit-reviews-423f
   type: blog_post
-- id: coderabbit-stvck-dev-review
+- id: stvck-dev-articles-one-month-with-coderabbit-an-ai-assisted-code-review-experience
   label: Unabhaengige Ein-Monats-Erfahrung mit CodeRabbit — explizit kein Sponsoring, Open-Source-Maintainer-Perspektive
   url: https://www.stvck.dev/articles/one-month-with-coderabbit-an-ai-assisted-code-review-experience
   type: community_review
-- id: copilot-refacto-pr-review-2026
+- id: refacto-ai-blog-github-copilot-code-review-in-2026-what-it-does-well-and-where-it-falls-short
   label: Unabhaengige Analyse GitHub Copilot Code Review 2026 inkl. PR-Summary-Funktion und Limitierungen
   url: https://refacto.ai/blog/github-copilot-code-review-in-2026-what-it-does-well-and-where-it-falls-short/
   type: blog_post
-- id: qodo-merge-aicodereview-independent-review
+- id: aicodereview-cc-blog-qodo-merge-review
   label: Unabhaengige Bewertung Qodo Merge / PR-Agent inkl. OSS- vs. SaaS-Unterscheidung (Maerz 2026)
   url: https://aicodereview.cc/blog/qodo-merge-review
   type: community_review
-- id: qodo-community-handoff-announcement
+- id: qodo-ai-blog-qodo-is-handing-pr-agent-over-to-the-community
   label: Qodo gibt PR-Agent an Community ab — Repo wechselt zu The-PR-Agent-Org, externer Maintainer (April 2026)
   url: https://www.qodo.ai/blog/qodo-is-handing-pr-agent-over-to-the-community/
   type: vendor_doc
-- id: jetbrains-devtoolsreview-2026-comparison
+- id: devtoolsreview-com-comparisons-copilot-vs-jetbrains-ai-2026
   label: Unabhaengiger Copilot-vs-JetBrains-AI-Vergleich 2026 — bestaetigt starke Commit-Message-Funktion und IDE-Boundary-Einschraenkung
   url: https://devtoolsreview.com/comparisons/copilot-vs-jetbrains-ai-2026
   type: community_review
-- id: claude-code-github-action-anthropic-github
+- id: github-com-anthropics-claude-code-action
   label: Multi-Provider-Auth (Anthropic, Bedrock, Vertex, Foundry); laeuft auf Kunden-Runner.
   url: https://github.com/anthropics/claude-code-action
   type: vendor_doc
-- id: claude-code-github-action-anthropic-github-2
+- id: github-com-rdar-lab-self-hosted-claude-github-agent
   label: "Praktikermuster: Claude Code als Self-Hosted GitHub-Action-Runner — relevant fuer DACH-Compliance."
   url: https://github.com/rdar-lab/self-hosted-claude-github-agent
   type: community
-- id: claude-code-github-action-anthropic-github-3
+- id: github-com-anthropics-claude-code-issues-15957
   label: Issue ueber Context-Compaction-Race bei parallelen Async-Agents.
   url: https://github.com/anthropics/claude-code/issues/15957
   type: community
-- id: claude-code-github-action-anthropic-dev-to
+- id: dev-to-whoffagents-github-actions-claude-code-i-automated-my-entire-dev-workflow-26b
   label: "Praktiker-Setup: Claude Code in GHA fuer PR-Review/Issue-zu-PR mit konkreten Kosten."
   url: https://dev.to/whoffagents/github-actions-claude-code-i-automated-my-entire-dev-workflow-26b
   type: blog
-- id: factory-droids-factory
+- id: docs-factory-ai-enterprise
   label: Drei Deployment-Pattern inkl. Fully Airgapped — direkt anschlussfaehig an DORA-Anforderungen.
   url: https://docs.factory.ai/enterprise
   type: vendor_doc
-- id: factory-droids-factory-2
+- id: factory-ai-news-factory-is-ga
   label: "GA-Ankuendigung: autonomous end-to-end coding aus Ticket/Spec, Linear/Jira/Slack-Integrationen."
   url: https://factory.ai/news/factory-is-ga
   type: vendor_doc
-- id: factory-droids-cxodigitalpulse
+- id: cxodigitalpulse-com-factory-hits-1-5-billion-valuation-to-build-ai-coding-platform-for-enterprises
   label: $1.5B Valuation, Kunden Morgan Stanley, EY, Palo Alto Networks.
   url: https://www.cxodigitalpulse.com/factory-hits-1-5-billion-valuation-to-build-ai-coding-platform-for-enterprises/
   type: news
-- id: github-copilot-cloud-agent-formerly-coding-agent-github
+- id: docs-github-com-en-copilot-concepts-coding-agent-coding-agent
   label: Offizielle Beschreibung des Cloud-Agents als asynchroner GitHub-Actions-betriebener Agent fuer Issue-zu-PR.
   url: https://docs.github.com/en/copilot/concepts/coding-agent/coding-agent
   type: vendor_doc
-- id: github-copilot-cloud-agent-formerly-coding-agent-github-blog
+- id: github-blog-2026-02-whats-new-with-github-copilot-coding-agent
   label: Self-Review, Security-Scanning, CLI-Handoff sind GA; Roadmap zu Private Mode.
   url: https://github.blog/2026/02/whats-new-with-github-copilot-coding-agent/
   type: vendor_doc
-- id: github-copilot-cloud-agent-formerly-coding-agent-microsoftnegotiations
+- id: microsoftnegotiations-com-blog-github-enterprise-licensing-guide-html
   label: GHEC bietet EU-Data-Residency seit 2024; GHES fuer DORA/Air-Gap relevant.
   url: https://microsoftnegotiations.com/blog/github-enterprise-licensing-guide.html
   type: review
-- id: github-copilot-cloud-agent-formerly-coding-agent-reddit
+- id: reddit-com-r-dotnet-comments-1s31tq4-ten-months-with-copilot-coding-agent-in
   label: "10-Monats-Retro aus dotnet/runtime: 67.9% Merge-Rate ueber 878 PRs, Setup ist groesster Hebel."
   url: https://www.reddit.com/r/dotnet/comments/1s31tq4/ten_months_with_copilot_coding_agent_in/
   type: community
-- id: github-copilot-cloud-agent-formerly-coding-agent-ycombinator
+- id: news-ycombinator-com-item-id-44031432
   label: HN-Diskussion zur GA-Ankuendigung mit Microsoft-internem Dogfooding.
   url: https://news.ycombinator.com/item?id=44031432
   type: community
-- id: google-jules-jules-google
+- id: jules-google
   label: Workflow Issue/Prompt -> Cloud-VM -> Plan -> Diff -> PR; Pro/Ultra-Quoten.
   url: https://jules.google/
   type: vendor_doc
-- id: google-jules-blog-google
+- id: blog-google-innovation-and-ai-models-and-research-google-labs-jules-now-available
   label: Jules GA seit Aug 2025, 140k Code-Verbesserungen in Beta.
   url: https://blog.google/innovation-and-ai/models-and-research/google-labs/jules-now-available/
   type: vendor_doc
-- id: google-jules-reddit
+- id: reddit-com-r-programminghorror-comments-1ktlje0-tried-out-jules-ai-agent
   label: Reddit-Thread zu Jules-Halluzinationen ohne Env-Variablen-Zugriff.
   url: https://www.reddit.com/r/programminghorror/comments/1ktlje0/tried_out_jules_ai_agent/
   type: community
-- id: google-jules-reddit-2
+- id: reddit-com-r-singularity-comments-1kqkfvw-jules-googles-coding-agent
   label: "Praxiserfahrung: Jules-PR-Workflow gut, aber Limits frustrierend."
   url: https://www.reddit.com/r/singularity/comments/1kqkfvw/jules_googles_coding_agent/
   type: community
-- id: openhands-formerly-opendevin-all-hands
+- id: all-hands-dev
   label: Self-Hosted/Air-Gapped-Deployment, Sandbox-Runtime in Docker/Kubernetes, Auditability.
   url: https://www.all-hands.dev/
   type: vendor_doc
-- id: openhands-formerly-opendevin-github
+- id: github-com-all-hands-ai-openhands-tree-main
   label: MIT-Core, SDK + CLI + Local GUI + Cloud + Enterprise; Skalierung bis 1000s of agents.
   url: https://github.com/All-Hands-AI/OpenHands/tree/main
   type: vendor_doc
-- id: openhands-formerly-opendevin-github-2
+- id: github-com-zhao6300-openhands
   label: "OSS-Caveat: Self-Hosted nur Single-User, kein Multi-Tenant."
   url: https://github.com/zhao6300/OpenHands
   type: community
-- id: aider-in-ci-github-action-github
+- id: github-com-mirrajabi-aider-github-action
   label: Action laeuft Aider im Container, pusht Branch, gehoert dem Kunden-Runner.
   url: https://github.com/mirrajabi/aider-github-action
   type: documentation
-- id: aider-in-ci-github-action-github-2
+- id: github-com-mirrajabi-aider-github-workflows-blob-main-docs-issue-to-pr-md
   label: Konkretes Issue-zu-PR-Workflow-Pattern mit Label-Trigger.
   url: https://github.com/mirrajabi/aider-github-workflows/blob/main/docs/issue-to-pr.md
   type: documentation
-- id: atlassian-rovo-dev-agents-atlassian
+- id: atlassian-com-software-rovo
   label: Rovo Dev Agents als Atlassian-eigene Coding-/PR-Agents.
   url: https://www.atlassian.com/software/rovo
   type: vendor_doc
-- id: devin-devin
+- id: docs-devin-ai-enterprise-vpc-overview
   label: "In-VPC-Deployment: stateless DevBox in Kunden-VPC, Brain in Cognition-Tenant ueber Websocket."
   url: https://docs.devin.ai/enterprise/vpc/overview
   type: vendor_doc
-- id: devin-devin-2
+- id: docs-devin-ai-admin-security
   label: SOC2 Type II seit 2024, Enterprise-No-Train-Klausel.
   url: https://docs.devin.ai/admin/security
   type: vendor_doc
-- id: devin-devin-3
+- id: devin-ai
   label: Enterprise-Praxisbeispiele (Nubank Migration 8-12x schneller).
   url: https://devin.ai/
   type: vendor_doc
-- id: devin-imseankim
+- id: blog-imseankim-com-devin-2-ai-software-engineer-review-cognition-pricing-benchmark
   label: Mehrwoechiger Praxistest mit dokumentierten SWE-bench-Resolutionsraten.
   url: https://blog.imseankim.com/devin-2-ai-software-engineer-review-cognition-pricing-benchmark/
   type: blog
-- id: devin-carlrippon
+- id: carlrippon-com-autonomous-coding-agents
   label: "Praktiker-Reflexion: Throughput statt Latency ist die richtige Metrik fuer Devin/Codex/Jules."
   url: https://www.carlrippon.com/autonomous-coding-agents/
   type: blog
-- id: jetbrains-junie-cli-ci-cd-mode-jetbrains
+- id: jetbrains-com-help-junie-code-mode-html
   label: Junie kann headless im CI/CD-Modus und in GitHub-/GitLab-CI integriert werden.
   url: https://www.jetbrains.com/help/junie/code-mode.html
   type: vendor_doc
-- id: sourcegraph-amp-github
+- id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-cli-readme-md
   label: Amp ist explizit fuer Terminal/CI/CD/Docker designed — passt zum Delegated-Pattern aus Pipelines.
   url: https://github.com/sourcegraph/amp-examples-and-guides/blob/main/guides/cli/README.md
   type: vendor_doc
-- id: sourcegraph-amp-github-2
+- id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-context-management-context-20engineering-20-20amp-md
   label: Subagent-Delegation und MCP-Erweiterbarkeit fuer komplexe Multi-Step-Workflows.
   url: https://github.com/sourcegraph/amp-examples-and-guides/blob/main/guides/context-management/Context%20Engineering%20-%20Amp.md
   type: vendor_doc
-- id: coder-com-ai-governance-layer-coder
+- id: coder-com-solutions-ai-governance
   label: Coder positioniert sich explizit auf GDPR/DORA, self-hosted und air-gapped.
   url: https://coder.com/solutions/ai-governance
   type: vendor_doc
-- id: coder-com-ai-governance-layer-coder-2
+- id: coder-com-docs-ai-coder-agents
   label: Coder Agents laeuft Agent-Loop im Control Plane, keine API-Keys im Workspace.
   url: https://coder.com/docs/ai-coder/agents
   type: vendor_doc
-- id: lurus-code-lurus-code-lurus-ai-en-security
+- id: code-lurus-ai-en-security
   label: Deutsches Unternehmen, EU-Infra-Partner, kein persistentes Speichern von Source-Code.
   url: https://code.lurus.ai/en/security/
   type: vendor_doc
-- id: cursor-cloud-agents-with-self-hosted-pool-cursor
+- id: cursor-com-blog-self-hosted-cloud-agents
   label: Self-Hosted Cloud Agents GA seit 25.03.2026; Code/Build verlassen Kunden-Netz nicht.
   url: https://cursor.com/blog/self-hosted-cloud-agents
   type: vendor_doc
-- id: cursor-cloud-agents-with-self-hosted-pool-cursor-2
+- id: cursor-com-docs-enterprise-privacy-and-data-governance
   label: DPA, Privacy Mode (ZDR) und CMEK fuer Enterprise-Tier verfuegbar.
   url: https://cursor.com/docs/enterprise/privacy-and-data-governance
   type: vendor_doc
-- id: cursor-lgallardo-practitioner
+- id: lgallardo-com-2025-06-11-cursor-background-agents-experience
   label: "Hands-on Praxistest Background Agents: $4.63 fuer einfachen PR, solide Code-Qualitaet, 3-Minuten-Completion; Privacy-Mode musste deaktiviert werden (Preview-Stand)."
   url: https://lgallardo.com/2025/06/11/cursor-background-agents-experience/
   type: blog
-- id: cursor-effloow-review
+- id: effloow-com-articles-cursor-3-review-background-agents-2026
   label: "Cursor 3-Review (Apr 2026): Background Agents produktionstauglich mit Pflicht-Review; $2B ARR, 50%+ Fortune-500-Nutzung; Vergleich mit Claude Code und Copilot."
   url: https://www.effloow.com/articles/cursor-3-review-background-agents-2026
   type: review
-- id: bump-sh-bump-sh
+- id: bump-sh
   label: Bump.sh detektiert API-Aenderungen und veroeffentlicht Doku aus OpenAPI
   url: https://bump.sh/
   type: vendor_doc
-- id: readme-readme
+- id: readme-com
   label: ReadMe synct OpenAPI als Quelle fuer API-Doku
   url: https://readme.com/
   type: vendor_doc
-- id: stainless-stainless
+- id: stainless-com
   label: Stainless erzeugt SDKs und API-Referenzdoku aus OpenAPI
   url: https://www.stainless.com/
   type: vendor_doc
-- id: tabnine-tabnine
+- id: docs-tabnine-com-main-software-development-with-tabnine-tabnine-chat
   label: Tabnine Chat unterstuetzt Code-Erklaerung und Doku-Generierung
   url: https://docs.tabnine.com/main/software-development-with-tabnine/tabnine-chat
   type: vendor_doc
-- id: document360-document360
+- id: document360-com-security
   label: Document360 ist SOC2 Typ 2 und ISO27001 zertifiziert mit EU-Hosting-Optionen
   url: https://document360.com/security/
   type: vendor_doc
-- id: refact-ai-refact
+- id: refact-ai
   label: Refact.ai bietet self-hostbaren Open-Source-Coding-Assistenten mit Code-Erklaerung und Doku-Funktionen
   url: https://refact.ai/
   type: vendor_doc
-- id: stoplight-stoplight
+- id: stoplight-io
   label: Stoplight rendert API-Doku aus OpenAPI mit Validierung/Drift-Erkennung
   url: https://stoplight.io/
   type: vendor_doc
-- id: claude-code-devreviewer
+- id: devreviewer-com-claude-code-review-2
   label: "Unabhaengiger Review: Claude Code stark bei Docstrings und README-Generierung verglichen mit Copilot"
   url: https://devreviewer.com/claude-code-review-2/
   type: review
-- id: claude-code-dev-to
+- id: dev-to-subprime2010-how-i-use-claude-code-to-write-documentation-a-complete-workflow-2jk4
   label: "Practitioner-Workflow fuer Claude Code Doku: Docstrings, README-Rekonstruktion, OpenAPI-Generierung mit Token-Caveats"
   url: https://dev.to/subprime2010/how-i-use-claude-code-to-write-documentation-a-complete-workflow-2jk4
   type: practitioner_blog
-- id: cursor-cursor-cursor-com-features
+- id: cursor-com-features
   label: Cursor bietet Repo-weiten Kontext via @-References fuer Mehrdatei-Aufgaben wie Doku
   url: https://cursor.com/features
   type: vendor_doc
-- id: cursor-medium-jsdoc
+- id: medium-com-vibecodingdirectory-cursor-rules-for-code-documentation-auto-generate-jsdoc-and-readmes-without-the-hassle-92dc6ae5bf0e
   label: "Practitioner-Post: Cursor Rules fuer automatische JSDoc/README-Generierung, 60% weniger Doku-Pflegeaufwand berichtet"
   url: https://medium.com/@vibecodingdirectory/cursor-rules-for-code-documentation-auto-generate-jsdoc-and-readmes-without-the-hassle-92dc6ae5bf0e
   type: practitioner_blog
-- id: cursor-markaicode
+- id: markaicode-com-cursor-background-agents-documentation
   label: "Practitioner: Cursor Background Agents fuer automatisierte Docstring- und README-Generierung inkl. bekannter Failure-Modes"
   url: https://markaicode.com/cursor-background-agents-documentation/
   type: practitioner_blog
-- id: copilot-medium-architect
+- id: medium-com-harpreetset-generating-documentation-on-large-projects-using-github-co-pilot-2788b729fc09
   label: AI-Architect beschreibt Top-Down-Prompting fuer Legacy-Codebase-Doku mit Copilot, inkl. Failure-Modes
   url: https://medium.com/@harpreetset/generating-documentation-on-large-projects-using-github-co-pilot-2788b729fc09
   type: practitioner_blog
-- id: copilot-clickup
+- id: clickup-com-blog-how-to-use-github-copilot-for-code-documentation
   label: "Practitioner-Walkthrough: Copilot fuer Docstrings, Inline-Kommentare und README mit Genauigkeits-Einschraenkungen"
   url: https://clickup.com/blog/how-to-use-github-copilot-for-code-documentation/
   type: practitioner_blog
-- id: mintlify-mintlify
+- id: mintlify-com-docs
   label: Mintlify generiert Doku aus OpenAPI und Code mit AI-Unterstuetzung
   url: https://mintlify.com/docs
   type: vendor_doc
-- id: mintlify-ferndesk
+- id: ferndesk-com-blog-mintlify-review
   label: "Unabhaengiger Deep-Dive: Mintlify Pricing $150-$300/Monat, kein EU-Hosting dokumentiert, AI-Autopilot-Agent und MCP bewertet"
   url: https://ferndesk.com/blog/mintlify-review
   type: review
-- id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities
+- id: sourcegraph-com-docs-cody-capabilities
   label: Cody nutzt Repo-Index fuer Doku- und Erklaerfunktionen
   url: https://sourcegraph.com/docs/cody/capabilities
   type: vendor_doc
-- id: swimm-swimm
+- id: swimm-io-why-swimm
   label: Swimm bindet Doku an Source-Snippets mit CI-Drift-Erkennung
   url: https://swimm.io/why-swimm
   type: vendor_doc
-- id: swimm-tooliverse
+- id: tooliverse-ai-tools-swimm
   label: "Aggregiertes User-Review (58+ Berichte): bestaetigt CI-Drift-Detection und AI-Doku-Generierung; 24 Berichte ueber Auto-Sync False Positives"
   url: https://tooliverse.ai/tools/swimm
   type: review
-- id: swimm-overcast
+- id: overcast-blog-ai-driven-documentation-in-2026-f993f0c6d0d6
   label: "Unabhaengiger Practitioner-Vergleich: Swimm CI-Drift-Workflow (Commit-Hooks, Merge-Blocking) konkret beschrieben"
   url: https://overcast.blog/ai-driven-documentation-in-2026-f993f0c6d0d6
   type: practitioner_blog
-- id: aider-vibecodemeta
+- id: vibecodemeta-com-blog-aider-vs-cline-vs-continue
   label: "Reale Praxis: token-effiziente Multi-File-Refactorings mit sauberen Diffs."
   url: https://vibecodemeta.com/blog/aider-vs-cline-vs-continue/
   type: blog
-- id: aider-agentwiki
+- id: agentwiki-org-aider
   label: Multi-File-Diffs werden atomar angewandt und auto-commit-fähig.
   url: https://agentwiki.org/aider
   type: documentation
-- id: augment-code-augmentcode-augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
+- id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
   label: Multi-Agent-Refactoring über sehr große Codebasen ist explizites Produktversprechen.
   url: https://www.augmentcode.com/learn/automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
   type: vendor_doc
-- id: augment-code-byteable
+- id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
   label: Marktreife für Enterprise-Refactoring, mit dokumentierten Schwächen.
   url: https://www.byteable.ai/blog/top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
   type: review
-- id: openai-codex-openai
+- id: openai-com-codex
   label: Refactorings und Migrationen sind explizites Produktziel.
   url: https://openai.com/codex/
   type: vendor_doc
-- id: openai-codex-plainenglish
+- id: ai-plainenglish-io-i-tested-claude-code-codex-gemini-cli-and-aider-back-to-back-heres-what-i-actually-bill-with-2aec70e75846
   label: "Praktiker-Pattern: Codex für schnelle Iteration, Claude Code für harte Refactorings."
   url: https://ai.plainenglish.io/i-tested-claude-code-codex-gemini-cli-and-aider-back-to-back-heres-what-i-actually-bill-with-2aec70e75846
   type: blog
-- id: sourcegraph-cody-batch-changes-sourcegraph
+- id: sourcegraph-com
   label: Kernpositionierung als Multi-Repo-Refactor-Plattform mit Agentic Migrations.
   url: https://sourcegraph.com/
   type: vendor_doc
-- id: sourcegraph-cody-batch-changes-devapps-uk
+- id: devapps-uk-tools-sourcegraph-cody-in-2026-the-enterprise-navigator-for-your-code-jungle
   label: Batch Changes als praktischer Mechanismus für groß-skalige Refactorings.
   url: https://devapps.uk/tools/sourcegraph-cody-in-2026-the-enterprise-navigator-for-your-code-jungle/
   type: review
-- id: amazon-q-developer-mightybot
+- id: mightybot-ai-blog-coding-ai-agents-for-accelerating-engineering-workflows
   label: Amazon Q wird als Refactoring-Agent kategorisiert.
   url: https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/
   type: review
-- id: cline-morphllm
+- id: morphllm-com-comparisons-aider-vs-cline
   label: Plan/Act-Architektur trennt Recherche und Ausführung – passend für riskante Refactorings.
   url: https://www.morphllm.com/comparisons/aider-vs-cline
   type: review
-- id: cline-reddit
+- id: reddit-com-r-claudeai-comments-1izmyps-claude-cursor-aider-cline-or-github-copilotwhich
   label: "Praktiker-Schmerzpunkt: Cline scheitert teilweise an Schreibvorgängen großer Dateien."
   url: https://www.reddit.com/r/ClaudeAI/comments/1izmyps/claude_cursor_aider_cline_or_github_copilotwhich/
   type: community
-- id: qodo-qodo
+- id: qodo-ai-question-code-refactoring
   label: System-aware Reviews mit Breaking-Change-Detection für Multi-Repo-Refactoring.
   url: https://www.qodo.ai/question/code-refactoring/
   type: vendor_doc
-- id: zencoder-zencoder
+- id: zencoder-ai-product
   label: Multi-File-Refactor-Workflow ist Kernfeature der Produktbeschreibung.
   url: https://zencoder.ai/product
   type: vendor_doc
-- id: lurus-code-lurus-2
+- id: code-lurus-ai-en-docs-cli-commands
   label: Refactor als dedizierter Orchestrator-Workflow.
   url: https://code.lurus.ai/en/docs/cli-commands/
   type: documentation
-- id: vault-getvault
+- id: getvault-dev
   label: On-Prem agentisches Multi-File-Refactoring mit Compliance-Posture.
   url: https://www.getvault.dev/
   type: vendor_doc
-- id: vostracode-vostracode
+- id: vostracode-com
   label: On-Prem-Coding-Assistent mit Multi-File-Operationen, SSO und Audit-Logging.
   url: https://vostracode.com/
   type: vendor_doc
-- id: junie-vibecoder
+- id: blog-vibecoder-me-jetbrains-ai-intellij-pycharm-webstorm
   label: "Unabhängige Bestätigung: IDE-native Typ-/Import-Verifikation macht Multi-File-Refactoring zuverlässiger als bei reinen LLM-Agenten."
   url: https://blog.vibecoder.me/jetbrains-ai-intellij-pycharm-webstorm
   type: blog
-- id: junie-lengrand
+- id: lengrand-fr-my-experience-using-junie-for-the-past-few-months
   label: "Ehrlicher Praktiker-Erfahrungsbericht: Multi-File-Refactoring funktioniert, aber mit Scope-Creep, 3–4 min Latenz und fehlendem partiellen Diff-Accept."
   url: https://lengrand.fr/my-experience-using-junie-for-the-past-few-months/
   type: blog
-- id: github-copilot-cli-infoq
+- id: infoq-com-news-2026-04-github-copilot-cli-ga
   label: Copilot CLI ist GA und übersetzt natürliche Sprache in Shell- und Git-Operationen
   url: https://www.infoq.com/news/2026/04/github-copilot-cli-ga/
   type: news
-- id: github-copilot-cli-github
+- id: github-com-github-copilot-cli
   label: Approval-Modell und GitHub-Integration
   url: https://github.com/github/copilot-cli/
   type: vendor_doc
-- id: github-copilot-cli-github-blog
+- id: github-blog-ai-and-ml-github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line
   label: Confirm-before-run-Pattern und Slash-Commands
   url: https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line
   type: vendor_doc
-- id: github-copilot-cli-reddit
+- id: reddit-com-r-githubcopilot-comments-1r5a1jj-anyone-use-gh-cli-for-copilot
   label: Praktische Nutzung als Alternative zu opencode, GitHub-Write-Access als Knackpunkt
   url: https://www.reddit.com/r/GithubCopilot/comments/1r5a1jj/anyone_use_gh_cli_for_copilot/
   type: community
-- id: openai-codex-cli-termdock
+- id: termdock-com-blog-ai-cli-tools-guide
   label: Codex CLI als Open-Source-Option mit Cloud-Sandbox-Execution
   url: https://www.termdock.com/blog/ai-cli-tools-guide
   type: review
-- id: openai-codex-cli-dev-to
+- id: dev-to-rahulxsingh-claude-code-vs-codex-cli-vs-gemini-cli-which-ai-terminal-agent-wins-in-2026-55f5
   label: Codex CLI als bester Open-Source-Free-Option mit autonomer Task-Execution
   url: https://dev.to/rahulxsingh/claude-code-vs-codex-cli-vs-gemini-cli-which-ai-terminal-agent-wins-in-2026-55f5
   type: blog
-- id: openai-codex-cli-reddit
+- id: reddit-com-r-chatgptcoding-comments-1rxw1gu-what-ai-tools-are-actually-worth-trying-beyond
   label: Codex CLI schlägt Claude Code auf Terminal/DevOps-Aufgaben
   url: https://www.reddit.com/r/ChatGPTCoding/comments/1rxw1gu/what_ai_tools_are_actually_worth_trying_beyond/
   type: community
-- id: opencode-reddit-2
+- id: reddit-com-user-ikcode-igor
   label: Praktiker bringen OpenCode via BYOK in jedes Terminal — bevorzugte Architektur
   url: https://www.reddit.com/user/IKcode_Igor/
   type: community
-- id: google-gemini-cli-github
+- id: github-com-google-gemini-gemini-cli
   label: Open-Source Terminal-Agent mit nativen Shell-Tools, Sandboxing und Policy-Engine
   url: https://github.com/google-gemini/gemini-cli
   type: vendor_doc
-- id: google-gemini-cli-geminicli
+- id: geminicli-com-docs
   label: Sandboxing, Trusted Folders und Policy-Engine als Sicherheits-Primitives
   url: https://www.geminicli.com/docs/
   type: vendor_doc
-- id: open-interpreter-github
+- id: github-com-openinterpreter-open-interpreter
   label: Lokales Ausführen von Shell/Python/JS via natürlicher Sprache mit User-Confirm
   url: https://github.com/openinterpreter/open-interpreter
   type: vendor_doc
-- id: open-interpreter-simonwillison-net
+- id: simonwillison-net-2024-nov-24-open-interpreter
   label: Skepsis am Safe-Mode und Empfehlung für echtes Sandboxing
   url: https://simonwillison.net/2024/Nov/24/open-interpreter
   type: blog
-- id: wave-terminal-reddit
+- id: reddit-com-r-devops-comments-yt2d57-warp-terminal-alternative
   label: Wave Terminal als Open-Source-Warp-Alternative im DevOps-Subreddit
   url: https://www.reddit.com/r/devops/comments/yt2d57/warp_terminal_alternative/
   type: community
-- id: wave-terminal-reddit-2
+- id: reddit-com-r-warpdotdev-comments-1p31v83-is-warp-good-as-a-terminal
   label: Praktiker findet Wave 'a bit clunky and not intuitive enough' im Direktvergleich
   url: https://www.reddit.com/r/warpdotdev/comments/1p31v83/is_warp_good_as_a_terminal/
   type: community
-- id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant-redhat
+- id: developers-redhat-com-products-ansible-overview-lightspeed
   label: NL-Prompts → Ansible Playbooks/Tasks/Roles
   url: https://developers.redhat.com/products/ansible/overview/lightspeed
   type: vendor_doc
-- id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant-ibm
+- id: ibm-com-docs-en-software-hub-5-1-x-topic-new-watsonx-code-assistant-red-hat-ansible-lightspeed
   label: On-Prem-Deployment via IBM Software Hub
   url: https://www.ibm.com/docs/en/software-hub/5.1.x?topic=new-watsonx-code-assistant-red-hat-ansible-lightspeed
   type: vendor_doc
-- id: kubectl-ai-github
+- id: github-com-googlecloudplatform-kubectl-ai
   label: Native Multi-Provider-Support inkl. lokaler Modelle und MCP-Server-Mode
   url: https://github.com/GoogleCloudPlatform/kubectl-ai
   type: vendor_doc
-- id: kubectl-ai-medium
+- id: medium-com-yadav-deepak012-ai-powered-kubernetes-troubleshooting-a-deep-dive-into-k8sgpt-kubectl-ai-and-kagent-278793771728
   label: Konversationelle AI-Schnittstelle, die kubectl-Befehle erklärt und mit Permission ausführt
   url: https://medium.com/@yadav.deepak012/ai-powered-kubernetes-troubleshooting-a-deep-dive-into-k8sgpt-kubectl-ai-and-kagent-278793771728
   type: blog
-- id: kubectl-ai-virtualizationhowto
+- id: virtualizationhowto-com-2025-05-meet-kubectl-ai-google-just-delivered-the-best-tool-for-kubernetes-management
   label: "Unabhängiger Review: NL-zu-kubectl reduziert Syntax-Overhead, empfiehlt dev/test vor Production"
   url: https://www.virtualizationhowto.com/2025/05/meet-kubectl-ai-google-just-delivered-the-best-tool-for-kubernetes-management/
   type: blog
-- id: anteroom-anteroom
+- id: anteroom-ai
   label: Self-hosted, Audit-Logs, Policy-Enforcement und CLI
   url: https://anteroom.ai/
   type: vendor_doc
-- id: anteroom-github
+- id: github-com-troylar-anteroom
   label: OWASP ASVS L2 Sicherheitspostur, Threat Model und vollständige Quelloffenheit (Apache 2.0)
   url: https://github.com/troylar/anteroom
   type: vendor_doc
-- id: tabnine-cli-tabnine
+- id: docs-tabnine-com-main-getting-started-tabnine-cli-features-cli-commands
   label: Native Shell-Ausführung via '!' oder NL plus Headless-Mode
   url: https://docs.tabnine.com/main/getting-started/tabnine-cli/features/cli-commands
   type: vendor_doc
-- id: tabnine-cli-tabnine-2
+- id: docs-tabnine-com-main-welcome-readme-architecture-deployment-options
   label: Air-Gap-Deployment für regulierte Industrien
   url: https://docs.tabnine.com/main/welcome/readme/architecture/deployment-options
   type: vendor_doc
-- id: tabnine-devapps-uk
+- id: devapps-uk-reviews-tabnine-in-2026-the-enterprise-ai-assistant-that-guards-your-code
   label: "Unabhängiger Review: CLI übernimmt Multi-Step-Workflows (Branch → Impl → Test → PR) und CI/CD-Pipelines"
   url: https://devapps.uk/reviews/tabnine-in-2026-the-enterprise-ai-assistant-that-guards-your-code/
   type: review
-- id: github-copilot-chat-with-database-mcp-github
+- id: docs-github-com-en-copilot
   label: Copilot Chat unterstützt SQL-Generierung mit Repo- und MCP-Kontext
   url: https://docs.github.com/en/copilot
   type: vendor_doc
-- id: exasol-espresso-ai-lab-exasol
+- id: exasol-com-de
   label: Exasol ist ein deutscher Analytics-DB-Vendor mit AI-Erweiterungen
   url: https://www.exasol.com/de/
   type: vendor_doc
-- id: oracle-select-ai-oracle
+- id: docs-oracle-com-en-cloud-paas-autonomous-database-serverless-adbsb-sql-generation-ai-autonomous-html
   label: Oracle Select AI generiert SQL aus NL direkt in Autonomous Database
   url: https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/sql-generation-ai-autonomous.html
   type: vendor_doc
-- id: thoughtspot-sage-thoughtspot
+- id: thoughtspot-com-product-sage-ai
   label: ThoughtSpot Sage ist eine NL-Search/SQL-Generierungs-Schicht für moderne Cloud-DWHs
   url: https://www.thoughtspot.com/product/sage-ai
   type: vendor_doc
-- id: amazon-q-for-quicksight-and-redshift-amazon
+- id: docs-aws-amazon-com-redshift-latest-mgmt-query-editor-v2-generative-sql-html
   label: Amazon Q Generative SQL ist in Redshift Query Editor v2 für NL→SQL eingebaut
   url: https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-generative-sql.html
   type: vendor_doc
-- id: databricks-genie-databricks
+- id: docs-databricks-com-en-genie-index-html
   label: Databricks Genie ist ein NL→SQL-Service mit Unity-Catalog-Grounding
   url: https://docs.databricks.com/en/genie/index.html
   type: vendor_doc
-- id: databricks-genie-toolchase
+- id: toolchase-com-tool-databricks-genie
   label: "Toolchase-Review: Databricks Genie 4,4/5 — hervorragende NL→SQL-Schicht für Databricks-Kunden (unabhängig)"
   url: https://toolchase.com/tool/databricks-genie/
   type: review
-- id: google-bigquery-data-canvas-gemini-in-bigquery-google
+- id: cloud-google-com-bigquery-docs-data-canvas
   label: BigQuery Data Canvas mit Gemini bietet NL→SQL und Schema-Exploration
   url: https://cloud.google.com/bigquery/docs/data-canvas
   type: vendor_doc
-- id: google-bigquery-text-to-sql-techniques-google
+- id: cloud-google-com-blog-products-databases-techniques-for-improving-text-to-sql
   label: Google Cloud beschreibt Evaluierungsansatz und Limitierungen des BigQuery NL2SQL-Systems intern
   url: https://cloud.google.com/blog/products/databases/techniques-for-improving-text-to-sql/
   type: vendor_doc
-- id: microsoft-fabric-copilot-copilot-in-sql-server-management-studio-microsoft
+- id: learn-microsoft-com-en-us-fabric-data-warehouse-copilot
   label: Microsoft Fabric Copilot generiert T-SQL aus natürlicher Sprache mit Schema-Kontext
   url: https://learn.microsoft.com/en-us/fabric/data-warehouse/copilot
   type: vendor_doc
-- id: microsoft-fabric-copilot-brentozar
+- id: brentozar-com-archive-2025-05-review-ssms-copilot-vs-other-ai-tools
   label: "Brent Ozar (unabhängiger SQL-Experte): SSMS-Copilot-Prompting lieferte schlechte Ratschläge; Underlying-Modell solide (Mai 2025)"
   url: https://www.brentozar.com/archive/2025/05/review-ssms-copilot-vs-other-ai-tools/
   type: review
-- id: snowflake-cortex-analyst-snowflake
+- id: docs-snowflake-com-en-user-guide-snowflake-cortex-cortex-analyst
   label: Cortex Analyst ist Snowflakes nativer NL-zu-SQL-Service mit Semantic-Model-Grundlage
   url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst
   type: vendor_doc
-- id: snowflake-cortex-analyst-theodo
+- id: theodo-com-blog-is-cortex-analyst-the-ultimate-text-to-sql-tool-for-snowflake-users
   label: "Theodo-Evaluation (Jan 2026): Cortex Analyst gut für Prototyping, Einschränkungen bei Monitoring und LLM-Customization"
   url: https://www.theodo.com/blog/is-cortex-analyst-the-ultimate-text-to-sql-tool-for-snowflake-users
   type: review
-- id: vanna-ai-github
+- id: github-com-vanna-ai-vanna
   label: Vanna ist ein OSS-RAG-Framework für Text-zu-SQL mit pluggbaren LLMs und Vektorstores
   url: https://github.com/vanna-ai/vanna
   type: vendor_doc
-- id: vanna-ai-aicoolies
+- id: aicoolies-com-reviews-vanna-ai-review
   label: "AICoolies-Review (Apr 2026): Vanna 2.0 stärkste OSS-Text-to-SQL-Lösung mit RAG-Genauigkeit und Enterprise-Security-Features"
   url: https://aicoolies.com/reviews/vanna-ai-review
   type: review
-- id: aikido-security-ai-autofix-aikido
+- id: aikido-dev
   label: Aikido vermarktet eine AI AutoFix-Funktion fuer Security-Findings mit PR-Integration
   url: https://www.aikido.dev/
   type: vendor_doc
-- id: checkmarx-one-ai-security-champion-checkmarx
+- id: checkmarx-com-product-ai-security
   label: Checkmarx vermarktet eine AI-Security-Funktion mit Erklaerungen und Fix-Vorschlaegen fuer Findings
   url: https://checkmarx.com/product/ai-security/
   type: vendor_doc
-- id: endor-labs-magic-patches-ai-remediation-endorlabs
+- id: endorlabs-com
   label: Endor Labs liefert AI-gestuetzte Remediation und Upgrade-Vorschlaege fuer SCA-Findings
   url: https://www.endorlabs.com/
   type: vendor_doc
-- id: mend-io-mend-ai-renovate-ai-mend
+- id: mend-io
   label: Mend bietet automatisierte Fix-PRs fuer SCA und AI-gestuetzte Remediation
   url: https://www.mend.io/
   type: vendor_doc
-- id: sonarqube-ai-codefix-sonarsource
+- id: sonarsource-com-products-sonarqube-ai-codefix
   label: Sonar dokumentiert AI CodeFix als generative-AI-Fix-Funktion fuer SonarQube-Issues
   url: https://www.sonarsource.com/products/sonarqube/ai-codefix/
   type: vendor_doc
-- id: code-intelligence-ci-spark-ci-sense-code-intelligence
+- id: code-intelligence-com
   label: DACH-Vendor mit AI-gestuetzter App-Security-Plattform inkl. AI-Fix-Vorschlaegen
   url: https://www.code-intelligence.com/
   type: vendor_doc
-- id: qwiet-ai-prezero-qwiet
+- id: qwiet-ai
   label: Qwiet AI vermarktet AI AutoFix oberhalb einer Code-Property-Graph-SAST-Engine
   url: https://qwiet.ai/
   type: vendor_doc
-- id: github-copilot-autofix-code-scanning-autofix-github-blog
+- id: github-blog-news-insights-product-news-secure-code-more-than-three-times-faster-with-copilot-autofix
   label: GitHub kuendigt Copilot Autofix als generative AI-Fix-Vorschlaege fuer CodeQL-Findings im PR an, mit gemessener Beschleunigung
   url: https://github.blog/news-insights/product-news/secure-code-more-than-three-times-faster-with-copilot-autofix/
   type: vendor_doc
-- id: github-copilot-autofix-code-scanning-autofix-github
+- id: docs-github-com-en-code-security-code-scanning-managing-code-scanning-alerts-about-autofix-for-codeql
   label: Offizielle Dokumentation zur Autofix-Funktion in CodeQL Code Scanning
   url: https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-autofix-for-codeql
   type: documentation
-- id: gitlab-duo-vulnerability-resolution-gitlab
+- id: about-gitlab-com-gitlab-duo
   label: GitLab Duo vermarktet Vulnerability Resolution als AI-Funktion fuer Auto-Patches in Merge Requests
   url: https://about.gitlab.com/gitlab-duo/
   type: vendor_doc
-- id: semgrep-assistant-semgrep
+- id: semgrep-dev-products-semgrep-assistant
   label: Semgrep Assistant bietet AI-gestuetzte Triage und Fix-Vorschlaege fuer Semgrep-Findings im PR
   url: https://semgrep.dev/products/semgrep-assistant
   type: vendor_doc
-- id: snyk-deepcode-ai-fix-snyk
+- id: snyk-io-platform-deepcode-ai
   label: Snyk vermarktet DeepCode AI Fix als hybrid-AI-Engine fuer automatische Vulnerability-Fixes in Snyk Code
   url: https://snyk.io/platform/deepcode-ai/
   type: vendor_doc
-- id: veracode-fix-veracode
+- id: veracode-com-products-veracode-fix
   label: Veracode Fix generiert AI-basierte Patch-Vorschlaege fuer Veracode-SAST-Findings in IDE und PR
   url: https://www.veracode.com/products/veracode-fix
   type: vendor_doc
-- id: copilot-autofix-techtarget-searchsecurity-2024
+- id: techtarget-com-searchsecurity-news-366603045-github-copilot-autofix-tackles-vulnerabilities-with-ai
   label: TechTarget/SearchSecurity GA-Coverage mit IDC-Analyst-Quote (Katie Norton) und named Enterprise Practitioner (Veradigm), bestaetigt unabhaengig den Autofix-Workflow und benennt Grenzen datei-lokaler Fixes
   url: https://www.techtarget.com/searchsecurity/news/366603045/GitHub-Copilot-Autofix-tackles-vulnerabilities-with-AI
   type: press_coverage
-- id: copilot-autofix-developer-tech-2024
+- id: developer-tech-com-news-github-copilot-autofix-triples-vulnerability-remediation-speed
   label: Developer-Tech GA-Coverage mit On-Record-Zitat von Mario Landgraf (Community Manager Security, Otto Group, Hamburg) — erster oeffentlicher DACH-Enterprise-Testimonial fuer Copilot Autofix
   url: https://www.developer-tech.com/news/github-copilot-autofix-triples-vulnerability-remediation-speed/
   type: press_coverage
-- id: gitlab-duo-vuln-resolution-better-programming-2025
+- id: betterprogramming-pub-your-ai-security-analyst-gitlab-duo-meets-security-automation-42c8741e9ba9
   label: Practitioner-Walkthrough in Better Programming (Medium) zeigt GitLab Duo Security Analyst Agent mit konkretem SQL-Injection-Fix (before/after) auf Go-Projekt; 30-Minuten-Zyklus vs. 2h manuell
   url: https://betterprogramming.pub/your-ai-security-analyst-gitlab-duo-meets-security-automation-42c8741e9ba9
   type: practitioner_blog
-- id: semgrep-assistant-gartner-peer-insights-2026
+- id: gartner-com-reviews-product-semgrep-code
   label: "Gartner Peer Insights: Senior Director (IT Security & Risk, >10 Mrd. USD IT-Services-Unternehmen) bestaetigt Semgrep Assistant Auto-Patching unabhaengig — 'it also suggests code fix that works!'"
   url: https://www.gartner.com/reviews/product/semgrep-code
   type: peer_review
-- id: snyk-deepcode-forrester-wave-sast-q3-2025
+- id: forrester-com-blogs-announcing-the-forrester-wave-static-application-security-testing-solutions-and-buyers-guide-ai-brings-opportunity-to-sast-solutions
   label: "Forrester Wave: Static Application Security Testing Solutions Q3 2025 — Snyk als Leader, AI-gestuetzte automatische Remediation explizit als Differenzierungskriterium bewertet"
   url: https://www.forrester.com/blogs/announcing-the-forrester-wave-static-application-security-testing-solutions-and-buyers-guide-ai-brings-opportunity-to-sast-solutions/
   type: analyst_report
-- id: snyk-deepcode-peerspot-2026
+- id: peerspot-com-products-deepcode-reviews
   label: "PeerSpot: Senior Software Engineering Manager bei Finanzdienstleister (10.000+ Mitarbeiter) beschreibt produktiven Einsatz von Snyk Autofix mit AI-Agenten zur automatischen Fix-PR-Generierung fuer jeden Fund"
   url: https://www.peerspot.com/products/deepcode-reviews
   type: peer_review
-- id: veracode-fix-gartner-peer-insights
+- id: gartner-com-reviews-product-veracode
   label: "Gartner Peer Insights: Veracode 4,6/5 aus 423 verifizierten Enterprise-Reviews; recurrente Themen: starke Remediation-Guidance und actionable Fix-Suggestions, Caveats bei False Positives und hohen Kosten"
   url: https://www.gartner.com/reviews/product/veracode
   type: peer_review
-- id: veracode-fix-forrester-tei-2024
+- id: tei-forrester-com-go-veracode-veracodefix
   label: "Forrester TEI (Veracode-beauftragt): Versicherungsunternehmen 5.000-10.000 FTE mit HIPAA/SEC-Anforderungen misst 200% schnellere MTTR und Fix-Rate-Anstieg von ~5% auf ~80% mit Veracode Fix"
   url: https://tei.forrester.com/go/veracode/veracodefix/
   type: analyst_report
-- id: github-copilot-tests-tests-command-github-blog
+- id: github-blog-2023-05-02-how-github-copilot-is-getting-better-at-understanding-your-code
   label: GitHub-Blog beschreibt Test-Generation als Kern-Workflow von Copilot Chat
   url: https://github.blog/2023-05-02-how-github-copilot-is-getting-better-at-understanding-your-code/
   type: blog
-- id: qodo-gen-qodo-cover-ehem-codium-ai-qodo
+- id: qodo-ai-products-qodo-gen
   label: Qodo Gen wird als IDE-Plugin fuer Test-Generierung aus Code-Kontext positioniert
   url: https://www.qodo.ai/products/qodo-gen/
   type: vendor_doc
-- id: qodo-gen-qodo-cover-ehem-codium-ai-github
+- id: github-com-codium-ai-cover-agent
   label: Cover-Agent ist Open-Source CLI fuer iteratives Test-Generieren mit Coverage-Loop
   url: https://github.com/Codium-ai/cover-agent
   type: documentation
-- id: keploy-keploy
+- id: keploy-io-docs-running-keploy-unit-test-generator
   label: Keploy dokumentiert Unit-Test-Generator (UT-Gen) auf LLM-Basis als Teil der Plattform
   url: https://keploy.io/docs/running-keploy/unit-test-generator/
   type: documentation
-- id: amazon-q-developer-test-generation-amazon
+- id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-test-generation-html
   label: AWS-Doku beschreibt /test als Q Developer Agent fuer automatische Unit-Test-Erzeugung
   url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/test-generation.html
   type: documentation
-- id: amazon-q-developer-toolstac-review
+- id: toolstac-com-review-amazon-q-developer-comprehensive-review
   label: "Unabhaengige Practitioner-Review (3 Monate): Q Developer Test-Generierung gut fuer Java/AWS, IDE-Bugs und Langsamkeit schraenken allgemeine Nutzung ein"
   url: https://toolstac.com/review/amazon-q-developer/comprehensive-review
   type: blog
-- id: amazon-q-developer-audible-case-study
+- id: aws-amazon-com-blogs-devops-boosting-unit-test-automation-at-audible-with-amazon-q-developer
   label: "AWS DevOps Blog: Audible nutzt Amazon Q Developer fuer Java-Unit-Test-Automatisierung (5000+ Testfaelle migriert)"
   url: https://aws.amazon.com/blogs/devops/boosting-unit-test-automation-at-audible-with-amazon-q-developer/
   type: blog
-- id: claude-code-claude-docs-claude-com-en-docs-claude-code-hooks
+- id: docs-claude-com-en-docs-claude-code-hooks
   label: Claude Code Hooks dokumentieren PostToolUse-Hooks zum automatischen Ausfuehren von Tests nach Edits
   url: https://docs.claude.com/en/docs/claude-code/hooks
   type: vendor_doc
-- id: claude-code-devto-tdd-workflow
+- id: dev-to-subprime2010-claude-code-tdd-write-tests-first-let-claude-implement-watch-them-pass-238i
   label: "Unabhaengiger Practitioner-Blog auf dev.to: TDD-Workflow mit Claude Code PostToolUse-Hook — Failing Test schreiben, Claude implementiert und iteriert bis gruen"
   url: https://dev.to/subprime2010/claude-code-tdd-write-tests-first-let-claude-implement-watch-them-pass-238i
   type: blog
-- id: claude-code-32blog-test-generation
+- id: 32blog-com-en-claude-code-claude-code-test-generation-practical-guide
   label: "Unabhaengiger Practitioner-Blog: CLAUDE.md-Regeln + Hooks + Mutation-Testing als dreischichtiges System fuer robuste Test-Generierung mit Claude Code"
   url: https://32blog.com/en/claude-code/claude-code-test-generation-practical-guide
   type: blog
-- id: diffblue-cover-diffblue
+- id: diffblue-com-products
   label: Diffblue positioniert Cover als AI-Werkzeug fuer automatische jUnit-Generierung in Java-Codebasen
   url: https://www.diffblue.com/products/
   type: vendor_doc
-- id: diffblue-cover-aicoolies-independent-review
+- id: aicoolies-com-reviews-diffblue-cover-review
   label: "Unabhaengige Review: Diffblue Cover generiert ausfuehrbare JUnit-Tests via Reinforcement Learning; Enterprise-Kunden Goldman Sachs, JPMorgan, Cisco, AstraZeneca; On-Prem verfuegbar"
   url: https://aicoolies.com/reviews/diffblue-cover-review
   type: blog
-- id: jetbrains-ai-assistant-mit-junie-jetbrains-jetbrains-com-help-ai-assistant-generate-unit-tests-html
+- id: jetbrains-com-help-ai-assistant-generate-unit-tests-html
   label: JetBrains-Dokumentation beschreibt 'Generate Unit Tests'-Aktion via AI Assistant
   url: https://www.jetbrains.com/help/ai-assistant/generate-unit-tests.html
   type: documentation
-- id: jetbrains-ai-assistant-medium-seatcode
+- id: medium-com-seat-code-testing-jetbrains-ai-assistant-2c06eeebb34a
   label: "Practitioner-Bericht (Medium/Seat Code): JetBrains AI Assistant generiert korrekte Kotlin-Unit-Tests mit relevanten Edge-Cases; IDE-Integration als Hauptvorteil"
   url: https://medium.com/seat-code/testing-jetbrains-ai-assistant-2c06eeebb34a
   type: blog
-- id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
+- id: sourcegraph-com-docs-cody-capabilities-commands
   label: Sourcegraph-Doku listet 'Generate Unit Tests' als built-in Cody-Command
   url: https://sourcegraph.com/docs/cody/capabilities/commands
   type: documentation
-- id: gitlab-duo-gitlab
+- id: docs-gitlab-com-ee-user-gitlab-duo
   label: GitLab-Doku beschreibt GitLab Duo mit Test-Generation-Funktionen
   url: https://docs.gitlab.com/ee/user/gitlab_duo/
   type: vendor_doc
-- id: gitlab-duo-blog-test-automation
+- id: about-gitlab-com-blog-automating-with-gitlab-duo-part-1-generating-tests
   label: "GitLab-Blog: Practitioner-Bericht ueber Test-Generierung mit GitLab Duo — 84% Coverage erreicht, Nachbearbeitung bei verschachtelten Abhaengigkeiten noetig"
   url: https://about.gitlab.com/blog/automating-with-gitlab-duo-part-1-generating-tests/
   type: blog
-- id: github-copilot-chat-github
+- id: docs-github-com-en-copilot-using-github-copilot-copilot-chat
   label: Copilot Chat unterstützt Workspace-Kontext und Dokumentations-Generierung in IDE und auf github.com — direkt nutzbar fü…
   url: https://docs.github.com/en/copilot/using-github-copilot/copilot-chat
   type: vendor
-- id: sap-leanix-leanix-net
+- id: leanix-net-en
   label: LeanIX (SAP) ist eine Enterprise-Architecture-Plattform mit Architektur-Inventar und Decision-Tracking; AI-Features erg…
   url: https://www.leanix.net/en/
   type: vendor
-- id: chatgpt-openai-openai
+- id: openai-com-chatgpt-enterprise
   label: ChatGPT Enterprise mit SOC2, kein Training auf Kundendaten, Admin-Konsole — relevant für unternehmensweite Dokumentatio…
   url: https://openai.com/chatgpt/enterprise/
   type: vendor
-- id: claude-anthropic-anthropic
+- id: anthropic-com-claude
   label: Claude wird von Anthropic explizit für strukturierte Dokumentenarbeit (Analyse, Drafting, Templates) positioniert; Proj…
   url: https://www.anthropic.com/claude
   type: vendor
-- id: chatgpt-adr-equal-experts
+- id: equalexperts-com-blog-ai-accelerating-architectural-decision-records-adrs-with-generative-ai
   label: "Equal Experts Praxisbericht: ChatGPT (web) wird zusammen mit Gemini per Metaprompting eingesetzt, um ADR-Drafts in Kundenprojekten zu erzeugen — gerade weil beide häufig kundenseitig freigegeben sind."
   url: https://www.equalexperts.com/blog/ai/accelerating-architectural-decision-records-adrs-with-generative-ai/
   type: practitioner
-- id: chatgpt-adr-brandon-pugh
+- id: brandonpugh-com-til-ai-chatgpt-to-help-write-adr
   label: "Brandon Pugh (Praktiker-TIL): ChatGPT erzeugt aus einem 'Why X over Y'-Prompt brauchbare ADR-Drafts in MADR/Nygard-Format und kopiert Markdown sauber zurück — typischer Solo-Architect-Workflow."
   url: https://www.brandonpugh.com/til/ai/chatgpt-to-help-write-adr/
   type: practitioner
-- id: claude-adr-futurecraft
+- id: futurecraft-pro-blog-adr-template-ai
   label: "Futurecraft.pro: praxisnaher ADR-Generator-Prompt, explizit getestet mit Claude, GPT-4 und Gemini; Claude wird für längere kohärente Prosa und Template-Treue empfohlen."
   url: https://futurecraft.pro/blog/adr-template-ai/
   type: practitioner
-- id: claude-adr-claudeworld
+- id: claude-world-com-guides-g18-architecture-decisions
   label: "ClaudeWorld-Guide für Architecture Decisions: konkreter Workflow, mit Claude eine Entscheidung zu analysieren und daraus einen ADR (Title, Status, Context, Decision, Consequences, Alternatives) zu drafte­n."
   url: https://claude-world.com/guides/g18-architecture-decisions
   type: practitioner
-- id: claude-code-adr-beyond-autocomplete
+- id: beyondautocomplete-nl-how-i-use-claude-code-to-keep-my-architecture-decisions-on-track
   label: "Beyond Autocomplete: detaillierter Praxisbericht zur Nutzung von Claude Code Skills (`/record-adr`) für ADRs — inkl. Templates, Nummerierung und Update der Decision-Index-Datei."
   url: https://www.beyondautocomplete.nl/how-i-use-claude-code-to-keep-my-architecture-decisions-on-track/
   type: practitioner
-- id: claude-code-adr-morey-tech
+- id: morey-tech-homelab-ai-and-adrs
   label: "Morey Tech: Platform-Engineering-Bericht, Claude Code dokumentiert ADRs parallel zur IaC/K8s-Arbeit — über 30 ADRs in einer Woche, inklusive Supersede-Relationen."
   url: https://morey.tech/homelab/AI-and-ADRs/
   type: practitioner
-- id: claude-code-adr-adolfi
+- id: adolfi-dev-blog-ai-generated-adr
   label: "Dennis Adolfi: Claude Code scannt bestehende Codebasis, erstellt template-basierte ADRs nach Nygard-Format und pflegt eine overview.md — kontinuierlicher Modus via agents.md-Instruktion."
   url: https://adolfi.dev/blog/ai-generated-adr/
   type: practitioner
-- id: codacy-ai-inventory-codacy
+- id: codacy-com-ai-inventory
   label: Detection-Umfang und kontinuierliches Tracking pro Commit.
   url: https://www.codacy.com/ai-inventory
   type: vendor_doc
-- id: codacy-ai-inventory-prweb
+- id: prweb-com-releases-codacy-launches-ai-inventory-giving-engineering-organizations-source-code-level-visibility-into-ai-tool-usage-across-repositories-302736655-html
   label: Launch-Bestätigung April 2026 mit klarem Architektur-Use-Case.
   url: https://www.prweb.com/releases/codacy-launches-ai-inventory-giving-engineering-organizations-source-code-level-visibility-into-ai-tool-usage-across-repositories-302736655.html
   type: news
-- id: microsoft-defender-for-cloud-apps-purview-dspm-for-ai-microsoft
+- id: learn-microsoft-com-en-us-security-security-for-ai-discover
   label: "Mehrstufiger Discovery-Ansatz: Entra Agent ID, Purview DSPM, Defender for Cloud Apps."
   url: https://learn.microsoft.com/en-us/security/security-for-ai/discover
   type: documentation
-- id: reco-reco
+- id: reco-ai-use-cases-ai-usage-control
   label: Tracking eingebetteter SaaS-AI-Features und SaaS-zu-SaaS-Connections.
   url: https://www.reco.ai/use-cases/ai-usage-control
   type: vendor_doc
-- id: reco-reco-2
+- id: reco-ai-solutions-generative-ai-discovery
   label: "Discovery-Methoden: OAuth, E-Mail-Metadaten, Verhaltens- und Netzwerkmuster."
   url: https://reco.ai/solutions/generative-ai-discovery
   type: vendor_doc
-- id: reco-reco-3
+- id: reco-ai-use-cases-shadow-ai-discovery
   label: G2-Reviews und CISO-Zitat zur Sichtbarkeit.
   url: https://www.reco.ai/use-cases/shadow-ai-discovery
   type: community
-- id: annexora-annexora
+- id: annexora-com
   label: EU-AI-Act-Compliance-OS mit EU-Datenresidenz default und Annex-III-Playbooks.
   url: https://annexora.com/
   type: vendor_doc
-- id: collibra-ai-governance-collibra
+- id: collibra-com-products-ai-governance
   label: AI-Registry mit Lineage über AWS, Azure, Databricks, Vertex AI, MLflow, SAP AI Core.
   url: https://www.collibra.com/products/ai-governance
   type: vendor_doc
-- id: ibm-watsonx-governance-nudgesecurity
+- id: nudgesecurity-com-post-best-ai-security-tools
   label: IBM watsonx.governance mit Modell-Inventar und ISO-42001/EU-AI-Act-Compliance-Doku.
   url: https://www.nudgesecurity.com/post/best-ai-security-tools
   type: review
-- id: jfrog-ai-catalog-aibom-jfrog
+- id: jfrog-com-learn-ai-security-aibom
   label: AIBOM-Funktion in JFrog Software-Supply-Chain-Plattform mit CI/CD-Integration und Signatur.
   url: https://jfrog.com/learn/ai-security/aibom/
   type: vendor_doc
-- id: kertos-kertos
+- id: kertos-io-plattform-ai-inventory
   label: EU-AI-Act-Inventar mit deutscher UI und Asset-/Datenquellen-Verknüpfung.
   url: https://kertos.io/plattform/ai-inventory
   type: vendor_doc
-- id: onetrust-ai-governance-onetrust
+- id: onetrust-com-de-products-data-access-governance
   label: OneTrust AI Governance mit deutscher UI, EU-AI-Act-/ISO-42001-Templates und KI-Verzeichnis.
   url: https://www.onetrust.com/de/products/data-access-governance/
   type: vendor_doc
-- id: xenetra-cross-identity-crossidentity
+- id: crossidentity-com-xenetra-html
   label: AI-Agent-Discovery über SaaS, Cloud, Netzwerk und Devices mit EU-AI-Act-/NIST-/ISO-Mapping.
   url: https://www.crossidentity.com/xenetra.html
   type: vendor_doc
-- id: cisco-ai-defense-ai-bom-github
+- id: github-com-cisco-ai-defense-aibom
   label: Statische Python-Analyse plus Container-Scan zur AI-Komponenten-Inventur.
   url: https://github.com/cisco-ai-defense/aibom
   type: documentation
-- id: cisco-ai-defense-ai-bom-trusera
+- id: github-com-trusera-ai-bom-blob-main-docs-comparison-md
   label: "Unabhängiger AIBOM-Tool-Vergleich (Trusera/ai-bom): Cisco AIBOM auf 1 Scanner (Python-fokussiert) und 2 Output-Formate begrenzt, kein eingebauter CI/CD-Workflow."
   url: https://github.com/Trusera/ai-bom/blob/main/docs/comparison.md
   type: community
-- id: snyk-ai-bom-snyk
+- id: docs-snyk-io-developer-tools-snyk-cli-commands-aibom
   label: AI-BOM-CLI generiert Inventar aus Code inkl. MCP-Komponenten.
   url: https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom
   type: documentation
-- id: snyk-ai-bom-snyk-2
+- id: labs-snyk-io-resources-aibom-cli-snyk
   label: DeepCode-basierte Detection auch ohne Manifest, CLI plus API.
   url: https://labs.snyk.io/resources/aibom-cli-snyk/
   type: vendor_doc
-- id: wiz-ai-spm-ai-bom-wiz
+- id: wiz-io-solutions-ai-security-posture-management
   label: Agentenlose AI-Discovery über Cloud-Provider plus AI-BOM und Security-Graph.
   url: https://www.wiz.io/solutions/ai-security-posture-management
   type: vendor_doc
-- id: wiz-ai-spm-ai-bom-wiz-2
+- id: wiz-io-academy-ai-security-ai-inventory
   label: Lebendes AI-Inventar auf Basis Cloud-Topologie und Graph-Modell.
   url: https://www.wiz.io/academy/ai-security/ai-inventory
   type: vendor_doc
-- id: wiz-ai-spm-ai-bom-forrester
+- id: wiz-io-blog-forrester-wave-cnapp-2026
   label: "Forrester Wave CNAPP Q1 2026: Wiz als Leader mit höchster Current-Offering-Wertung; Höchstnote in 10/12 Kriterien inkl. 'Agentic AI and copilots' — unabhängige Analystenbestätigung der AI-SPM-Reife."
   url: https://www.wiz.io/blog/forrester-wave-cnapp-2026
   type: analyst
-- id: wiz-ai-spm-ai-bom-toolworthy
+- id: toolworthy-ai-blog-best-ai-spm-tools
   label: "Toolworthy.ai CISO Buyer's Guide 2026 (Hands-on-Test): Wiz AI-SPM auf Platz 1 für Multi-Cloud-AI-Asset-Discovery mit agentenlosem Deployment."
   url: https://www.toolworthy.ai/blog/best-ai-spm-tools
   type: review
-- id: wiz-ai-spm-ai-bom-gartner-peer
+- id: gartner-com-reviews-market-cloud-security-posture-management-tools-vendor-wiz-product-wiz
   label: "Gartner Peer Insights: Wiz CNAPP 4.7/5 (300 Bewertungen) inkl. AI-SPM-/AI-BOM-Fähigkeiten — unabhängige Anwenderbewertung."
   url: https://www.gartner.com/reviews/market/cloud-security-posture-management-tools/vendor/wiz/product/wiz
   type: review
-- id: plantuml-mit-c4-plantuml-plantuml
+- id: plantuml-com
   label: Belegt PlantUML als textbasiertes Diagrammwerkzeug, lokal lauffaehig.
   url: https://plantuml.com/
   type: vendor
-- id: plantuml-mit-c4-plantuml-github
+- id: github-com-plantuml-stdlib-c4-plantuml
   label: Belegt C4-PlantUML-Bibliothek fuer C4-Diagramme in PlantUML.
   url: https://github.com/plantuml-stdlib/C4-PlantUML
   type: vendor
-- id: icepanel-icepanel
+- id: icepanel-io
   label: Belegt IcePanel als C4-Modell-Tool mit kollaborativem Editor.
   url: https://icepanel.io/
   type: vendor
-- id: multiplayer-app-multiplayer-app
+- id: multiplayer-app
   label: Belegt Multiplayer als System-Design- und Architektur-Tool mit AI-Generierung.
   url: https://www.multiplayer.app/
   type: vendor
-- id: aris-software-ag-softwareag
+- id: softwareag-com-en-corporate-platform-aris-html
   label: Belegt ARIS als EAM/BPM-Plattform mit AI-gestuetzter Modell-Erstellung.
   url: https://www.softwareag.com/en_corporate/platform/aris.html
   type: vendor
-- id: leanix-sap-leanix-net
+- id: leanix-net-en-products-enterprise-architecture-management
   label: Belegt LeanIX als EAM-Plattform mit AI-Funktionen fuer Architektur-Visualisierung.
   url: https://www.leanix.net/en/products/enterprise-architecture-management
   type: vendor
-- id: sparx-enterprise-architect-sparxsystems
+- id: sparxsystems-com-products-ea
   label: Belegt Sparx Enterprise Architect als UML/SysML-Modellierungswerkzeug mit Pro-Cloud-Server fuer Enterprise-Deployments.
   url: https://sparxsystems.com/products/ea/
   type: vendor
-- id: c4-dsl-vs-code-extension-structurizr-dsl-c4-plantuml-visualstudio
+- id: marketplace-visualstudio-com-items-itemname-systemticks-c4-dsl-extension
   label: Belegt VS-Code-Extension fuer Structurizr/C4-DSL mit Preview.
   url: https://marketplace.visualstudio.com/items?itemName=systemticks.c4-dsl-extension
   type: vendor
-- id: c4-dsl-vs-code-extension-structurizr-community
+- id: docs-structurizr-com-community
   label: Structurizr-Community-Liste nennt die systemticks-VS-Code-Extension als etabliertes DSL-Tooling.
   url: https://docs.structurizr.com/community
   type: vendor
-- id: c4-dsl-vs-code-extension-michaeltschreiber
+- id: github-com-michaeltschreiber-c4-structurizr-llm-assistant
   label: Independent Open-Source-Projekt baut LLM-Workflow auf der systemticks C4-DSL-Extension auf — Beleg fuer praktischen Einsatz in AI-gestuetzter C4-Modellierung.
   url: https://github.com/michaeltschreiber/c4-structurizr-llm-assistant
   type: practitioner
-- id: chatgpt-mit-mermaid-canvas-openai
+- id: openai-com-enterprise
   label: Belegt ChatGPT Enterprise mit Datensouveraenitaets- und SOC-2-Compliance-Garantien.
   url: https://openai.com/enterprise
   type: vendor
-- id: chatgpt-mit-mermaid-canvas-devto-barakplasma
+- id: dev-to-barakplasma-chatgpt-can-draw-system-architecture-diagrams-using-mermaid-34p6
   label: Praktiker-Blog zeigt, wie ChatGPT aus Klartext direkt Mermaid-System-Architekturdiagramme erzeugt.
   url: https://dev.to/barakplasma/chatgpt-can-draw-system-architecture-diagrams-using-mermaid-34p6
   type: practitioner
-- id: chatgpt-mit-mermaid-canvas-daveengineer
+- id: dave-engineer-blog-2024-04-creating-diagrams-with-chatgpt
   label: Independent Practitioner-Bericht ueber ChatGPT als Mermaid-Diagramm-Generator inklusive Workflow mit Mermaid.live.
   url: https://dave.engineer/blog/2024/04/creating-diagrams-with-chatgpt/
   type: practitioner
-- id: claude-code-anthropic-smeuse
+- id: smeuse-org-posts-claude-code-review-2026
   label: Independent Review von Claude Code in 2026 — bestaetigt Eignung fuer Reasoning-/Architektur-Aufgaben in grossen Codebasen.
   url: https://smeuse.org/posts/claude-code-review-2026
   type: practitioner
-- id: claude-code-anthropic-kindredintelligence
+- id: kindredintelligence-com-reviews-mermaid-diagramming-tool
   label: Independent Review zu Mermaid + AI-Tools nennt Claude explizit als zuverlaessigen Mermaid-Generator fuer Architekturdiagramme.
   url: https://www.kindredintelligence.com/reviews/mermaid-diagramming-tool
   type: practitioner
-- id: cursor-cursor-cursor-com-enterprise
+- id: cursor-com-enterprise
   label: Belegt Cursor Enterprise mit Privacy-Mode fuer datensouveraene Nutzung.
   url: https://cursor.com/enterprise
   type: vendor
-- id: cursor-skywork
+- id: skywork-ai-blog-cursor-ai-review-2025-agent-refactors-privacy
   label: Independent Review (2025) bestaetigt Cursor Agent Mode, Repo-weite Refactors und Privacy Mode mit SOC-2-Type-II.
   url: https://skywork.ai/blog/cursor-ai-review-2025-agent-refactors-privacy/
   type: practitioner
-- id: cursor-similarlabs
+- id: similarlabs-com-blog-cursor-review
   label: Independent Cursor-Review bestaetigt Codebase-Awareness und Multi-File-Editing als Kernstaerke.
   url: https://similarlabs.com/blog/cursor-review
   type: practitioner
-- id: eraser-diagramgpt-eraser
+- id: eraser-io-diagramgpt
   label: Belegt DiagramGPT als Text-zu-Diagramm-Generator mit Mermaid-Export und Architekturfokus.
   url: https://www.eraser.io/diagramgpt
   type: vendor
-- id: eraser-diagramgpt-devto-tkssharma
+- id: dev-to-tkssharma-diagramgpt-review-of-eraser-ai-l3i
   label: Independent Praktiker-Review zu Eraser DiagramGPT auf DEV Community.
   url: https://dev.to/tkssharma/diagramgpt-review-of-eraser-ai-l3i
   type: practitioner
-- id: eraser-diagramgpt-meechward
+- id: youtube-com-watch-v-tz84qah-7bm
   label: Independent Video-Review (Sam Meech-Ward) bewertet Nutzen von DiagramGPT in echten Engineering-Workflows.
   url: https://www.youtube.com/watch?v=Tz84qAH_7bM
   type: practitioner
-- id: excalidraw-excalidraw-ai-excalidraw
+- id: plus-excalidraw-com-blog-ai-diagrams
   label: Belegt Excalidraw-AI-Feature zur Mermaid-basierten Diagrammgenerierung.
   url: https://plus.excalidraw.com/blog/ai-diagrams
   type: vendor
-- id: excalidraw-excalidraw-ai-medium
+- id: medium-com-venn5708-excalidraw-open-sources-its-text-to-diagram-feature-3810169df601
   label: Independent Praktiker-Bericht zur Open-Source-Veroeffentlichung des Text-to-Diagram-Features in Excalidraw (Mermaid-Bridge).
   url: https://medium.com/@venn5708/excalidraw-open-sources-its-text-to-diagram-feature-3810169df601
   type: practitioner
-- id: excalidraw-excalidraw-ai-ifb
+- id: ifb-me-en-blog-en-backend-excalidraw
   label: Independent Developer-Review beschreibt Excalidraw-AI-Workflow mit Stark- und Schwachstellen.
   url: https://www.ifb.me/en/blog/en/backend/excalidraw
   type: practitioner
-- id: github-copilot-chat-mermaid-cookbook
+- id: docs-github-com-en-copilot-tutorials-copilot-chat-cookbook-communicate-effectively-creating-diagrams
   label: Offizielle GitHub-Dokumentation zeigt, wie Copilot Chat Mermaid-Diagramme aus Beschreibungen oder Code generiert.
   url: https://docs.github.com/en/copilot/tutorials/copilot-chat-cookbook/communicate-effectively/creating-diagrams
   type: vendor
-- id: github-copilot-chat-dontpaniclabs
+- id: dontpaniclabs-com-blog-post-2026-03-31-building-with-the-github-copilot-sdk-part-4-building-mermaid-js-diagrams
   label: Independent Praktiker-Blog (Don't Panic Labs) demonstriert Copilot SDK fuer Mermaid-Diagrammgenerierung in echtem Produkt.
   url: https://dontpaniclabs.com/blog/post/2026/03/31/building-with-the-github-copilot-sdk-part-4-building-mermaid-js-diagrams/
   type: practitioner
-- id: mermaid-open-source-js
+- id: mermaid-js-org
   label: Belegt Mermaid als Diagramm-DSL mit breiter Renderer-Unterstuetzung.
   url: https://mermaid.js.org/
   type: vendor
-- id: mermaid-open-source-korny
+- id: blog-korny-info-2025-03-14-mermaid-js-revisited
   label: Independent Practitioner-Review (Korny Sietsma) vergleicht Mermaid mit PlantUML und dokumentiert breite Tool-Unterstuetzung.
   url: https://blog.korny.info/2025/03/14/mermaid-js-revisited
   type: practitioner
-- id: mermaid-chart-ai-mermaidchart
+- id: mermaidchart-com
   label: Offizielles kommerzielles Mermaid-Tool mit AI-Diagramm-Generierung; Code-First-Ansatz.
   url: https://www.mermaidchart.com/
   type: vendor
-- id: mermaid-chart-ai-mermaideditor
+- id: mermaideditor-com-blog-mermaid-vs-plantuml-vs-drawio
   label: Independent Vergleich (Mermaid vs PlantUML vs Draw.io) ordnet Mermaid-Chart als kommerzielle Erweiterung des Mermaid-Oekosystems ein.
   url: https://mermaideditor.com/blog/mermaid-vs-plantuml-vs-drawio
   type: practitioner
-- id: structurizr-structurizr
+- id: structurizr-com
   label: Belegt Structurizr als C4-Tool mit DSL und On-Prem-Installation.
   url: https://structurizr.com/
   type: vendor
-- id: structurizr-watzek
+- id: watzek-dev-posts-2023-03-30-beautiful-architecture-diagrams
   label: Independent Practitioner-Bericht (Tobias Watzek) zu Structurizr-DSL und seiner Eignung fuer C4-Architekturdiagramme.
   url: https://watzek.dev/posts/2023/03/30/beautiful-architecture-diagrams
   type: practitioner
-- id: structurizr-nicholasrogoff
+- id: nicholasrogoff-com-2024-09-13-a-guide-to-getting-started-with-c4-diagrams-and-structurizr
   label: Independent Praktiker-Guide zu Structurizr und C4-DSL inkl. Versionierung und Diagrammen-as-Code.
   url: https://nicholasrogoff.com/2024/09/13/a-guide-to-getting-started-with-c4-diagrams-and-structurizr/
   type: practitioner
-- id: aider-aider-chat-aider-chat-docs-usage-modes-html
+- id: aider-chat-docs-usage-modes-html
   label: Aider bietet einen expliziten architect-Modus, der Plaene und Optionen vor der Code-Aenderung erzeugt.
   url: https://aider.chat/docs/usage/modes.html
   type: vendor
-- id: github-copilot-chat-workspace-github
+- id: docs-github-com-en-copilot-github-copilot-chat-copilot-chat-in-ides-about-github-copilot-chat-in-your-ide
   label: Copilot Chat im Ask-Modus diskutiert Code- und Designoptionen mit Repo-Kontext.
   url: https://docs.github.com/en/copilot/github-copilot-chat/copilot-chat-in-ides/about-github-copilot-chat-in-your-ide
   type: vendor
-- id: miro-ai-miro
+- id: miro-com-ai
   label: Miro AI bietet Cluster-, Diagramm- und Zusammenfassungs-Funktionen fuer Workshop-Boards.
   url: https://miro.com/ai/
   type: vendor
-- id: perplexity-enterprise-perplexity
+- id: perplexity-ai-enterprise
   label: Perplexity Enterprise bietet Quellenangabe und SOC2/DPA-Konformitaet fuer recherchegestuetzte Optionen-Bewertung.
   url: https://www.perplexity.ai/enterprise
   type: vendor
-- id: aleph-alpha-phariaassistant-aleph-alpha
+- id: aleph-alpha-com-pharia-assistant
   label: PhariaAssistant ist als sovereign deployable Enterprise-Assistent mit deutschem Datenschutz positioniert.
   url: https://aleph-alpha.com/pharia-assistant/
   type: vendor
-- id: claude-anthropic-via-aws-bedrock-gcp-vertex-amazon
+- id: aws-amazon-com-bedrock-claude
   label: Claude-Modelle sind ueber Amazon Bedrock unter AWS-DPA und in EU-Regionen verfuegbar.
   url: https://aws.amazon.com/bedrock/claude/
   type: vendor
-- id: claude-anthropic-via-aws-bedrock-gcp-vertex-anthropic
+- id: anthropic-com-news-projects
   label: Claude Projects erlauben Wissens-Pinning fuer wiederkehrende Architektur-Sparring-Sessions.
   url: https://www.anthropic.com/news/projects
   type: vendor
-- id: ionos-ai-model-hub-ionos-de
+- id: ionos-de-cloud-ai-model-hub
   label: IONOS bietet AI Model Hub mit deutscher Datenresidenz und OpenAI-API-Kompatibilitaet.
   url: https://www.ionos.de/cloud/ai-model-hub
   type: vendor
-- id: microsoft-365-copilot-chat-enterprise-microsoft
+- id: learn-microsoft-com-en-us-copilot-microsoft-365-microsoft-365-copilot-overview
   label: M365 Copilot bietet kommerziellen Datenschutz und EU Data Boundary fuer Enterprise-Tenants.
   url: https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview
   type: vendor
-- id: mistral-le-chat-enterprise-mistral
+- id: mistral-ai-news-le-chat-enterprise
   label: Le Chat Enterprise bietet EU-Datenhaltung, SSO und Self-Hosting-/VPC-Optionen.
   url: https://mistral.ai/news/le-chat-enterprise
   type: vendor
-- id: azure-openai-service-mit-azure-ai-foundry-microsoft
+- id: learn-microsoft-com-en-us-azure-ai-services-openai-overview
   label: Azure OpenAI bietet die OpenAI-Modelle mit Azure-Compliance, regionaler Datenhaltung und Private Networking.
   url: https://learn.microsoft.com/en-us/azure/ai-services/openai/overview
   type: vendor
-- id: azure-openai-amitkoth-independent
+- id: amitkoth-com-azure-openai-vs-openai
   label: "Praktiker-Vergleich Azure OpenAI vs OpenAI: EU-Datenresidenz, regulierte Branchen und Migrationspfade aus Architektensicht."
   url: https://amitkoth.com/azure-openai-vs-openai/
   type: independent
-- id: azure-openai-pratikpathak-independent
+- id: pratikpathak-com-why-enterprises-are-ditching-native-openai-for-azure-its-not-just-about-privacy
   label: "Praktiker-Bericht zur Migration auf Azure OpenAI: PTU-Reservierung, VNet-Isolation und Entra-ID-RBAC als Architektur-Treiber."
   url: https://pratikpathak.com/why-enterprises-are-ditching-native-openai-for-azure-its-not-just-about-privacy/
   type: independent
-- id: chatgpt-enterprise-openai-2
+- id: help-openai-com-en-articles-8554407-gpts-faq
   label: Custom GPTs erlauben einen wiederverwendbaren Architektur-Optionen-Prompt mit fixiertem Output-Schema.
   url: https://help.openai.com/en/articles/8554407-gpts-faq
   type: vendor
-- id: chatgpt-enterprise-aiadvisory-independent
+- id: aiadvisorypractice-com-blog-chatgpt-enterprise-what-works-production
   label: "Praktiker-Beobachtung aus 200+ ChatGPT-Enterprise-Deployments: hohe Trefferquote nur bei klar definierten Use Cases mit Prompt-Governance."
   url: https://aiadvisorypractice.com/blog/chatgpt-enterprise-what-works-production
   type: independent
-- id: chatgpt-enterprise-davidgomez-independent
+- id: blog-itsdavidg-co-posts-chatgpt-enterprise
   label: "Erfahrungsbericht zu ChatGPT-Enterprise-Implementierung 2026: Governance, Custom GPTs und RAG als Erfolgsfaktoren."
   url: https://blog.itsdavidg.co/posts/chatgpt_enterprise/
   type: independent
-- id: sourcegraph-cody-aipedia-independent
+- id: aipedia-wiki-tools-cody
   label: "Unabhaengiger Cody-Review: Code-Graph als Differenzierer fuer Multi-Repo-Architekturfragen ueber 50+ Repos."
   url: https://aipedia.wiki/tools/cody/
   type: independent
-- id: sourcegraph-cody-mgx-independent
+- id: mgx-dev-insights-sourcegraph-cody-an-in-depth-analysis-of-its-functionality-architecture-use-cases-and-competitive-landscape-a1c220a9fb544c84bc6a6c531e8cf8cd
   label: "Unabhaengige Analyse: Cody bei Qualtrics, CERN (15 Mio. LOC) und F5 (350+ Repos) als Beispiel fuer Multi-Repo-Codeverstaendnis."
   url: https://mgx.dev/insights/sourcegraph-cody-an-in-depth-analysis-of-its-functionality-architecture-use-cases-and-competitive-landscape/a1c220a9fb544c84bc6a6c531e8cf8cd
   type: independent
-- id: gemini-for-workspace-vertex-ai-google
+- id: workspace-google-com-solutions-ai
   label: Gemini for Workspace bietet enterprise-konforme Datennutzung und EU-Region.
   url: https://workspace.google.com/solutions/ai/
   type: vendor
-- id: gemini-promptpulse-independent
+- id: dj420-gif-github-io-promptpulse-aitools-gemini-gemini-review-html
   label: "Unabhaengiger Praxis-Review: 1M-Token-Kontext als Alleinstellungsmerkmal fuer ganze Codebasen/RFCs; bei reiner Architektur-Reasoning-Tiefe leicht hinter Claude."
   url: https://dj420-gif.github.io/PromptPulse/AITools/gemini/gemini-review.html
   type: independent
-- id: gemini-arsturn-independent
+- id: arsturn-com-blog-gemini-1-5-pro-long-context-capabilities-and-limits
   label: "Technische Analyse zum 1M/2M-Token-Kontext von Gemini 1.5 Pro: MoE-Architektur, Needle-in-Haystack >99% Recall, Latenz-/Kosten-Trade-offs."
   url: https://www.arsturn.com/blog/gemini-1-5-pro-long-context-capabilities-and-limits
   type: independent
-- id: claude-code-claude-claude-com-product-claude-code
+- id: claude-com-product-claude-code
   label: Offizielle Produktseite Claude Code als agentic coding tool fuer Engineering-Aufgaben.
   url: https://claude.com/product/claude-code
   type: vendor
-- id: credo-ai-credo
+- id: credo-ai
   label: AI-Governance-Plattform mit EU-AI-Act-Mapping.
   url: https://www.credo.ai
   type: vendor
-- id: datadog-llm-observability-datadoghq
+- id: datadoghq-com-product-llm-observability
   label: LLM-Observability als Bestandteil der Datadog-Plattform.
   url: https://www.datadoghq.com/product/llm-observability/
   type: vendor
-- id: dynatrace-ai-observability-dynatrace
+- id: dynatrace-com-platform-artificial-intelligence
   label: AI-Observability als Plattform-Erweiterung.
   url: https://www.dynatrace.com/platform/artificial-intelligence/
   type: vendor
-- id: langfuse-langfuse
+- id: langfuse-com
   label: "Offizielle Produktseite: Open-Source-LLM-Observability mit Self-Hosting und Audit-Logs."
   url: https://langfuse.com
   type: vendor
-- id: langfuse-audit-logs-docs
+- id: langfuse-com-docs-administration-audit-logs
   label: "Langfuse-Doku zu Audit Logs: immutable Records, who/what/when/where, Before/After-State, UI-Export — operative Belege fuer Audit-Trail-Tauglichkeit."
   url: https://langfuse.com/docs/administration/audit-logs
   type: vendor
-- id: langfuse-spring-ai-otel-dev
+- id: dev-to-henry9527-youre-flying-blind-adding-llm-observability-to-spring-ai-with-opentelemetry-and-self-hosted-5gj4
   label: "Praktiker-Bericht (dev.to): Spring-AI-Service mit OpenTelemetry-Spans an self-hosted Langfuse — kompletter Setup mit Docker Compose, Daten verlassen die Infrastruktur nicht; explizit als Loesung fuer regulierte Umgebungen."
   url: https://dev.to/henry9527/youre-flying-blind-adding-llm-observability-to-spring-ai-with-opentelemetry-and-self-hosted-5gj4
   type: practitioner
-- id: langfuse-vadim-evals
+- id: vadim-blog-ai-observability-llm-evals-langfuse
   label: "Praktiker-Bericht (Vadim's blog): Trace-/Span-/Session-Design in Langfuse fuer EU-Job-Klassifikator — Reproduzierbarkeit, Debug, Run-Level-Grouping, Prompt-Versioning."
   url: https://vadim.blog/ai-observability-llm-evals-langfuse
   type: practitioner
-- id: langsmith-not-audit-trail-dev
+- id: dev-to-ramon-galego-your-langsmith-traces-are-not-an-audit-trail-3d63
   label: "Kritischer Praktiker-Artikel (dev.to): warum LangSmith/Langfuse/Arize/Helicone als Observability-Tools allein keinen Audit-Trail im EU-AI-Act-/HIPAA-Sinn ergeben (Retention, Immutability, Legibility) — wichtige Skeptiker-Sicht fuer den Architekten."
   url: https://dev.to/ramon_galego/your-langsmith-traces-are-not-an-audit-trail-3d63
   type: practitioner
-- id: litellm-litellm
+- id: litellm-ai
   label: Offizielle Produktseite LiteLLM als LLM-Gateway/Proxy mit Logging-Callbacks.
   url: https://www.litellm.ai
   type: vendor
-- id: litellm-audit-logs-docs
+- id: docs-litellm-ai-docs-proxy-multiple-admins
   label: "LiteLLM-Doku zu Audit Logs: store_audit_logs, Export nach S3 (audit_log_callbacks), JSON-Schema mit changed_by/action/before_value/updated_values — direkt fuer Architektur-Skeleton verwertbar."
   url: https://docs.litellm.ai/docs/proxy/multiple_admins
   type: vendor
-- id: litellm-webcoderspeed-blog
+- id: webcoderspeed-com-blog-scaling-ai-gateway-litellm
   label: "Praktiker-Blog (webcoderspeed): LiteLLM-Proxy als unified AI Gateway in Production — Request/Response-Logging, Postgres-Persistenz, Custom-Logging-Handler, Datadog/CloudWatch-Sinks."
   url: https://webcoderspeed.com/blog/scaling/ai-gateway-litellm
   type: practitioner
-- id: litellm-supply-chain-incident-dev
+- id: dev-to-jay-singh-e5b5ee6be59c0e0-how-i-audited-my-infra-after-the-litellm-supply-chain-attack-and-what-im-doing-differently-now-39ma
   label: "Praktiker-Incident-Report (dev.to, April 2026): LiteLLM-PyPI-Lieferketten-Angriff (Versionen 1.82.7 und 1.81.8) ueber kompromittierte CircleCI-Credentials; relevant fuer Architektur-Entscheidung mit BaFin-/DORA-Lieferketten-Anforderungen."
   url: https://dev.to/jay_singh_e5b5ee6be59c0e0/how-i-audited-my-infra-after-the-litellm-supply-chain-attack-and-what-im-doing-differently-now-39ma
   type: practitioner
-- id: azure-api-management-genai-gateway-microsoft
+- id: learn-microsoft-com-azure-api-management-genai-gateway-capabilities
   label: "Microsoft-Doku: APIM als GenAI-Gateway mit Token-Limits, Logging und Load-Balancing fuer Azure OpenAI."
   url: https://learn.microsoft.com/azure/api-management/genai-gateway-capabilities
   type: vendor
-- id: azure-apim-llm-logging-howto
+- id: learn-microsoft-com-en-us-azure-api-management-api-management-howto-llm-logs
   label: "Microsoft Learn How-To: ApiManagementGatewayLlmLog mit Token-Usage, Modellname, optional Prompt/Completion (chunked, CorrelationId) — direkte Belegbasis fuer Audit-Schema."
   url: https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-llm-logs
   type: vendor
-- id: azure-apim-uniper-pattern
+- id: techcommunity-microsoft-com-blog-integrationsonazureblog-azure-api-management-unified-ai-gateway-design-pattern-4495436
   label: "Customer-Reference (Uniper, ueber techcommunity): Unified-AI-Gateway-Pattern in Production fuer Multi-Provider (Foundry/Gemini) inkl. trace-logging via Application Insights und llm-emit-token-metric — DACH-naher Praxisbeleg."
   url: https://techcommunity.microsoft.com/blog/integrationsonazureblog/azure-api-management---unified-ai-gateway-design-pattern/4495436
   type: practitioner
-- id: azure-apim-3rdparty-llm-medium
+- id: medium-com-microsoftazure-retrieve-prompt-logs-for-3rd-party-llms-deployed-behind-azure-api-management-27775c8c0ab5
   label: "Praktiker-Artikel (Medium): Prompt-Logs fuer Drittanbieter-LLMs (Gemini, Claude/Anthropic) hinter APIM in dieselbe ApiManagementGatewayLogs-Tabelle wie Azure OpenAI bringen — Multi-Provider-Audit-Pfad."
   url: https://medium.com/microsoftazure/retrieve-prompt-logs-for-3rd-party-llms-deployed-behind-azure-api-management-27775c8c0ab5
   type: practitioner
-- id: openllmetry-traceloop-traceloop
+- id: traceloop-com
   label: OpenLLMetry als OpenTelemetry-Erweiterung fuer LLM-Tracing.
   url: https://www.traceloop.com
   type: vendor
-- id: openllmetry-otel-semconv-issue
+- id: github-com-open-telemetry-semantic-conventions-issues-810
   label: "OpenTelemetry-Standards-Body (GitHub Issue #810): initiale GenAI-Semconv (gen_ai.system, request.model, usage.prompt_tokens etc.) — unabhaengiger Beleg, dass die OpenLLMetry-Konventionen in OTel-Standard ueberfuehrt sind."
   url: https://github.com/open-telemetry/semantic-conventions/issues/810
   type: community
-- id: openllmetry-spanora-blog
+- id: spanora-ai-blog-opentelemetry-llm-monitoring
   label: "Praktiker-Blog (spanora.ai): OpenTelemetry-LLM-Monitoring-Architektur mit OpenLLMetry-/Traceloop-Auto-Instrumentation und GenAI-Semconv-Attributen — vendor-neutrales Spans-Modell fuer replay-faehige Topologie."
   url: https://spanora.ai/blog/opentelemetry-llm-monitoring
   type: practitioner
-- id: openllmetry-dynatrace-community
+- id: community-dynatrace-com-t5-ai-openllmetry-semantic-conventions-are-now-part-of-opentelemetry-td-p-267984
   label: "Dynatrace Community-Beitrag: Bestaetigung, dass OpenLLMetry-Semconv offiziell in OpenTelemetry uebernommen wurden — drittanbieter-Validierung jenseits Traceloop selbst."
   url: https://community.dynatrace.com/t5/AI/OpenLLMetry-semantic-conventions-are-now-part-of-OpenTelemetry/td-p/267984
   type: vendor
-- id: deepwiki-deepwiki
+- id: deepwiki-com
   label: DeepWiki erstellt automatisch Architektur-Dokumentation für GitHub-Repositories.
   url: https://deepwiki.com
   type: vendor
-- id: jetbrains-ai-assistant-junie-jetbrains-jetbrains-com-ai
+- id: jetbrains-com-ai
   label: JetBrains AI nutzt IDE-Code-Intelligenz für kontextreiche Antworten.
   url: https://www.jetbrains.com/ai/
   type: vendor
-- id: appmap-appmap
+- id: appmap-io
   label: AppMap erzeugt aus Runtime-Traces Architektur-Diagramme und liefert AI-gestützte Code-Insights.
   url: https://appmap.io
   type: vendor
-- id: brokk-brokk
+- id: brokk-ai
   label: Brokk bietet Code-Intelligence-Tools wie searchSymbols und getFileSummaries für AI-gestütztes Codebase-Verständnis.
   url: https://brokk.ai
   type: vendor
-- id: brokk-github
+- id: github-com-brokkai-brokk
   label: Brokk OSS-Repo zeigt sehr junges Projekt (sehr geringe Star-Zahl, viele offene Issues, JVM-zentriert via Joern).
   url: https://github.com/BrokkAi/brokk
   type: community
-- id: claude-code-karanprasad-reverse-engineering
+- id: karanprasad-com-blog-how-claude-code-actually-works-reverse-engineering-512k-lines
   label: Unabhängige Tiefenanalyse der Claude-Code-Architektur (512K LoC, 1.902 Files, 16 Architektur-Diagramme) — bestätigt Reife des agentischen Codebase-Explorationsansatzes.
   url: https://www.karanprasad.com/blog/how-claude-code-actually-works-reverse-engineering-512k-lines
   type: independent
-- id: continue-dev-codebase-deprecated-issue
+- id: github-com-continuedev-continue-issues-4254
   label: "Continue-Maintainer-Kommentar im offiziellen GitHub-Repo: '@codebase is fully deprecated' — Zuverlässigkeit des Repo-weiten Indexing-Pfads ist offiziell eingeschränkt."
   url: https://github.com/continuedev/continue/issues/4254
   type: community
-- id: google-gemini-code-assist-enterprise-gartner
+- id: gartner-com-reviews-product-gemini-code-assist
   label: Gartner Peer Insights aggregiert verifizierte Enterprise-Reviews zu Gemini Code Assist; Kritik an Kontext-Tiefe und Halluzinationen ist konsistent dokumentiert.
   url: https://www.gartner.com/reviews/product/gemini-code-assist
   type: independent
-- id: repomix-github
+- id: github-com-yamadashy-repomix
   label: Repomix bündelt Repos in ein einzelnes AI-freundliches File.
   url: https://github.com/yamadashy/repomix
   type: vendor
-- id: repomix-thefocus-ai-recipe
+- id: thefocus-ai-recipes-repomix
   label: Practitioner-Recipe demonstriert Repomix als Standardbaustein, um Codebases an Claude/Gemini/Ollama-Modelle zu pipen.
   url: https://thefocus.ai/recipes/repomix/
   type: independent
-- id: cast-imaging-castsoftware
+- id: castsoftware-com-products-imaging
   label: CAST Imaging visualisiert Architektur und Abhängigkeiten komplexer Enterprise-Anwendungen über Sprachen und Frameworks…
   url: https://www.castsoftware.com/products/imaging
   type: vendor
-- id: cast-imaging-thoughtworks-rapid-assessment
+- id: thoughtworks-com-insights-blog-legacy-modernization-from-black-box-to-blueprint-how-we-performed-rapid-assessment-of-legacy-system
   label: "Thoughtworks-Praxisbericht: CAST Imaging liefert in einem Monat eine architektonische Blueprint eines Legacy-Systems mit Mio. LoC, dient als 'digital SME'."
   url: https://www.thoughtworks.com/insights/blog/legacy-modernization/from-black-box-to-blueprint-how-we-performed-rapid-assessment-of-legacy-system
   type: independent
-- id: vfunction-vfunction
+- id: vfunction-com
   label: vFunction analysiert Monolithen und identifiziert Service-Boundaries für Modernisierung.
   url: https://vfunction.com
   type: vendor
-- id: vfunction-gartner-cool-vendor-2024
+- id: vfunction-com-blog-gartner-cool-vendor-2024
   label: Gartner Cool Vendor 2024 in 'AI-Augmented Development and Testing' — externe Validierung des Architectural-Observability-Ansatzes (Gartner-Originalbericht, vom Vendor zitiert).
   url: https://vfunction.com/blog/gartner-cool-vendor-2024/
   type: independent
-- id: azure-openai-service-gpt-5-x-mit-eu-data-boundary-microsoft
+- id: learn-microsoft-com-en-us-azure-ai-services-openai-concepts-data-residency
   label: Azure OpenAI mit EU Data Boundary ist verfuegbar und fuer regulierte EU-Workloads geeignet
   url: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-residency
   type: vendor
-- id: collibra-ai-governance-collibra-collibra-com-us-en-products-ai-governance
+- id: collibra-com-us-en-products-ai-governance
   label: AI Governance auf Basis Data Catalog, inkl. Use-Case-Registry und Policy-Mapping
   url: https://www.collibra.com/us/en/products/ai-governance
   type: vendor
-- id: dach-beratungs-accelerators-kpmg-ebnerstolz-pexon-kpmg
+- id: kpmg-com-de-de-home-themen-uebersicht-kuenstliche-intelligenz-ki-governance-html
   label: DACH-Beratungen positionieren KI-Governance- und Mapping-Services
   url: https://kpmg.com/de/de/home/themen/uebersicht/kuenstliche-intelligenz/ki-governance.html
   type: vendor
-- id: holistic-ai-holisticai
+- id: holisticai-com-eu-ai-act
   label: Eigene EU-AI-Act-Compliance-Suite und Risiko-Klassifizierung
   url: https://www.holisticai.com/eu-ai-act
   type: vendor
-- id: microsoft-purview-ai-hub-azure-ai-foundry-governance-microsoft
+- id: learn-microsoft-com-en-us-purview-ai-hub-microsoft-purview
   label: AI Hub bietet Inventar, Risk-Insights und Verbindung zu Compliance Manager Templates inkl. EU AI Act
   url: https://learn.microsoft.com/en-us/purview/ai-hub-microsoft-purview
   type: vendor
-- id: mistral-le-chat-enterprise-mistral-mistral-ai-products-le-chat
+- id: mistral-ai-products-le-chat
   label: EU-basiertes LLM-Angebot mit Enterprise-Tier und Datenresidenz
   url: https://mistral.ai/products/le-chat
   type: vendor
-- id: onetrust-ai-governance-onetrust-onetrust-com-products-ai-governance
+- id: onetrust-com-products-ai-governance
   label: AI Governance Modul mit Inventar, Risiko-Assessment und regulatorischem Content
   url: https://www.onetrust.com/products/ai-governance/
   type: vendor
-- id: bizzdesign-horizzon-bizzdesign
+- id: bizzdesign-com
   label: EA-Tool mit ArchiMate und Risk-/Compliance-Overlays
   url: https://bizzdesign.com
   type: vendor
-- id: metricstream-ai-governance-metricstream
+- id: metricstream-com
   label: GRC-Plattform mit AI-Governance-Modul und regulatorischen Content-Packs
   url: https://www.metricstream.com
   type: vendor
-- id: servicenow-ai-control-tower-irm-servicenow
+- id: servicenow-com-products-ai-control-tower-html
   label: AI Control Tower fuer Inventar, Policy und Compliance-Mapping ueber IRM/CMDB
   url: https://www.servicenow.com/products/ai-control-tower.html
   type: vendor
-- id: credo-ai-credo-credo-ai-product
+- id: credo-ai-product
   label: Plattform bietet AI Governance inkl. EU-AI-Act-spezifischer Policy Packs und Use-Case-Inventar
   url: https://www.credo.ai/product
   type: vendor
-- id: credo-ai-forrester-wave
+- id: credo-ai-resources-formats-blog-topics-eu-ai-act
   label: Credo AI als Leader im Forrester Wave AI Governance Solutions Q3 2025 mit 12 Perfect Scores ausgezeichnet — unabhaengige Analystenbewertung
   url: https://www.credo.ai/resources?formats=Blog&topics=EU+AI+Act
   type: analyst
-- id: credo-ai-fronterio-comparison
+- id: fronterio-com-en-blog-ai-governance-platform-comparison-credo-fairly-holistic-fronterio
   label: Unabhaengiger Praktiker-Vergleich (Fronterio) positioniert Credo AI als 'serioese Wahl' fuer regulierte Enterprises mit dediziertem Risk-Team und mehrfach-regulatorischem Reporting
   url: https://fronterio.com/en/blog/ai-governance-platform-comparison-credo-fairly-holistic-fronterio
   type: practitioner
-- id: ibm-watsonx-governance-ibm
+- id: ibm-com-products-watsonx-governance
   label: AI Governance mit Policy- und Regulator-Mapping, Inventar und Risk-Reports
   url: https://www.ibm.com/products/watsonx-governance
   type: vendor
-- id: ibm-watsonx-governance-aligne
+- id: aligne-ai-blog-posts-why-ai-governance-is-no-longer-optional-preparing-for-eu-ai-act-with-ibm-watsonx-governance
   label: Unabhaengige Implementierungs-Perspektive eines IBM-Partners (Aligne) zur Nutzung von watsonx.governance fuer EU-AI-Act-Vorbereitung mit konkreten Funktionen (automatische Risk-Klassifizierung, Lifecycle-Workflows)
   url: https://www.aligne.ai/blog-posts/why-ai-governance-is-no-longer-optional-preparing-for-eu-ai-act-with-ibm-watsonx-governance
   type: practitioner
-- id: ibm-watsonx-governance-exceeds-review
+- id: blog-exceeds-ai-ibm-watsonx-governance-features-comparison
   label: Unabhaengige Vergleichsanalyse 2026 dokumentiert reale Rollouts (Bank of Brasil, Infosys), bestaetigt Compliance-Accelerators fuer EU AI Act/ISO 42001/NIST AI RMF, weist auf Vendor-Lock-in hin
   url: https://blog.exceeds.ai/ibm-watsonx-governance-features-comparison/
   type: practitioner
-- id: modulos-ai-governance-modulos
+- id: modulos-ai
   label: Schweizer AI-Governance-Plattform mit EU-AI-Act- und ISO-42001-Mapping
   url: https://www.modulos.ai
   type: vendor
-- id: modulos-certx-iso42001-conformity
+- id: modulos-ai-press-releases-modulos-iso-42001-product-conformity
   label: Erste AI-Governance-Plattform mit ISO/IEC-42001:2023-Produktkonformitaetsbewertung durch unabhaengigen Schweizer Auditor CertX (akkreditierte Stelle); Xayn nutzte Modulos fuer erste deutsche ISO-42001-Zertifizierung (auditiert durch SGS)
   url: https://www.modulos.ai/press-releases/modulos-iso-42001-product-conformity/
   type: vendor
-- id: saidot-saidot
+- id: saidot-com-platform
   label: EU-AI-Act-orientierte Governance-Plattform mit Use-Case-Register
   url: https://www.saidot.com/platform
   type: vendor
-- id: saidot-oecd-catalogue
+- id: oecd-ai-en-catalogue-tools-saidot
   label: Saidot ist im OECD.AI Catalogue of Tools & Metrics for Trustworthy AI als finnischer Anbieter mit Fokus auf AI Compliance, Risk Management und EU-AI-Act-Templates gelistet — unabhaengige Drittanbieter-Validierung
   url: https://oecd.ai/en/catalogue/tools/saidot
   type: analyst
-- id: leanix-sap-enterprise-architecture-mit-ai-governance-erweiterungen-leanix-net
+- id: leanix-net
   label: EAM-Plattform mit AI-Komponenten-Inventar und Compliance-Overlays
   url: https://www.leanix.net
   type: vendor
-- id: leanix-gartner-mq-2025
+- id: leanix-net-en-download-gartner-magic-quadrant-for-enterprise-architecture-tools-2025
   label: SAP LeanIX zum 5. Mal in Folge als Leader im Gartner Magic Quadrant for Enterprise Architecture Tools 2025 anerkannt — staerkstes unabhaengiges Analystensignal
   url: https://www.leanix.net/en/download/gartner-magic-quadrant-for-enterprise-architecture-tools-2025
   type: analyst
-- id: leanix-gartner-peer-insights
+- id: gartner-com-reviews-market-enterprise-architecture-tools-vendor-sap-product-leanix-enterprise-architecture
   label: "Gartner Peer Insights: 4.7/5 aus 475 Bewertungen im EA-Tools-Markt — breite Praktiker-Validierung"
   url: https://www.gartner.com/reviews/market/enterprise-architecture-tools/vendor/sap/product/leanix-enterprise-architecture
   type: analyst
-- id: mega-hopex-ai-governance-mega
+- id: mega-com-solutions-ai-governance
   label: EA/GRC-Plattform mit AI-Governance-Modul und ArchiMate-Repository
   url: https://www.mega.com/solutions/ai-governance
   type: vendor
-- id: mega-hopex-peerspot-reviews
+- id: peerspot-com-products-mega-hopex-reviews
   label: "PeerSpot: MEGA HOPEX 7.8/10, Top-5 EAM und Top-7 GRC; 61% Large-Enterprise-Nutzer, 20% Financial Services — unabhaengige Praktiker-Reviews"
   url: https://www.peerspot.com/products/mega-hopex-reviews
   type: practitioner
-- id: mega-hopex-bizzdesign-merger
+- id: main-nl-press-release-bizzdesign-acquires-mega
   label: Bizzdesign hat MEGA International (HOPEX) im September 2024 uebernommen; HOPEX bleibt als Produkt erhalten neben Horizzon und Alfabet — relevant fuer Beschaffungs- und Roadmap-Planung
   url: https://main.nl/press-release/bizzdesign-acquires-mega/
   type: practitioner
-- id: dbdiagram-io-dbdiagram
+- id: dbdiagram-io
   label: DBML-ERD-Editor mit AI-Assistant fuer Schema-Generierung
   url: https://dbdiagram.io
   type: vendor_doc
-- id: idera-er-studio-idera
+- id: idera-com-er-studio-enterprise-data-modeling-and-architecture-tools
   label: Enterprise-Data-Modeler mit Repository und Governance
   url: https://www.idera.com/er-studio-enterprise-data-modeling-and-architecture-tools/
   type: vendor_doc
-- id: sap-powerdesigner-sap
+- id: sap-com-products-technology-platform-powerdesigner-data-modeling-tools-html
   label: Enterprise-Datenmodellierungs-Tool von SAP mit konzeptionellem/logischem/physischem Modell
   url: https://www.sap.com/products/technology-platform/powerdesigner-data-modeling-tools.html
   type: vendor_doc
-- id: chartdb-chartdb
+- id: chartdb-io
   label: Open-Source-ERD-Editor mit AI-Funktionen und DDL-Import
   url: https://chartdb.io
   type: vendor_doc
-- id: chartdb-hackernews
+- id: news-ycombinator-com-item-id-44972238
   label: "Show HN: ChartDB Cloud - Hacker-News-Diskussion mit Praktiker-Feedback (Supabase ERD-Limit, Schema-Diff-Feature-Request, OSS-Adoption)"
   url: https://news.ycombinator.com/item?id=44972238
   type: practitioner
-- id: chartdb-github
+- id: github-com-chartdb-chartdb
   label: ChartDB GitHub Repo - 22k+ Stars, AGPL-3.0, dokumentierte AI-Powered-DDL-Export-Funktion
   url: https://github.com/chartdb/chartdb
   type: practitioner
-- id: claude-code-db-design-claudecodelab
+- id: claudecode-lab-com-en-blog-claude-code-database-design
   label: "ClaudeCodeLab: 7 Praxis-Techniken fuer DB-Design mit Claude Code - End-to-End-Workflow von Anforderungen ueber Prisma-Schema bis Migration und Index-Optimierung"
   url: https://claudecode-lab.com/en/blog/claude-code-database-design/
   type: practitioner
-- id: claude-code-prisma-claudecodeguides
+- id: claudecodeguides-com-claude-code-prisma-schema-migrations-advanced-workflow-guide
   label: Claude Code Prisma Schema Migrations Advanced Workflow Guide - Multi-Schema-Monorepo-Orchestrierung, atomare Multi-Step-Migrations, Production-Pattern
   url: https://claudecodeguides.com/claude-code-prisma-schema-migrations-advanced-workflow-guide/
   type: practitioner
-- id: claude-code-postgres-usagebar
+- id: usagebar-com-blog-how-to-do-postgresql-migrations-on-claude-code
   label: "Usagebar: PostgreSQL-Migrations mit Claude Code - Flyway/Liquibase/Alembic/Prisma-Integration, CLAUDE.md-Konvention fuer Migration-Patterns"
   url: https://usagebar.com/blog/how-to-do-postgresql-migrations-on-claude-code
   type: practitioner
-- id: cursor-cursor-cursor-com
+- id: cursor-com
   label: AI-IDE mit Repo-Awareness fuer Schema-/Migration-Generierung
   url: https://cursor.com
   type: vendor_doc
-- id: cursor-db-design-developertoolkit
+- id: developertoolkit-ai-en-cursor-ide-lessons-database-design
   label: "Developer Toolkit: Database Schema Design Using Cursor - Ask-Mode fuer Normalisierung, Agent-Mode fuer Drizzle/Prisma/Knex-Migrations mit Rollback, Index-Optimierung"
   url: https://developertoolkit.ai/en/cursor-ide/lessons/database-design/
   type: practitioner
-- id: cursor-prisma-stork
+- id: stork-ai-blog-this-ai-ide-replaced-my-team
   label: "Stork.AI: Cursor + Prisma Workflow - schema.prisma als Single Source of Truth, Agent generiert Migration-Names, Auto-Recovery bei Migration-Fehlern"
   url: https://www.stork.ai/blog/this-ai-ide-replaced-my-team
   type: practitioner
-- id: cursor-composer-markaicode
+- id: markaicode-com-cursor-composer-mode-guide
   label: "Markaicode: Cursor Composer Mode Guide - Multi-File-Edits ueber Schema/Types/API/Component, Migration-Generierung mit Diff-Review"
   url: https://www.markaicode.com/cursor-composer-mode-guide/
   type: practitioner
-- id: erwin-data-modeler-quest-erwin
+- id: erwin-com-products-erwin-data-modeler
   label: Enterprise-Datenmodellierung mit Governance- und AI-Features
   url: https://www.erwin.com/products/erwin-data-modeler/
   type: vendor_doc
-- id: erwin-peerspot
+- id: peerspot-com-products-erwin-data-modeler-reviews
   label: "PeerSpot/IT Central Station: erwin Data Modeler 8.4/10 mit 60%+ Large-Enterprise-Nutzung, Top-Industrie Financial Services - dokumentiert Reverse-/Forward-Engineering, logical/physical Modeling"
   url: https://www.peerspot.com/products/erwin-data-modeler-reviews
   type: practitioner
-- id: erwin-trustradius
+- id: trustradius-com-products-erwin-data-modeler-reviews
   label: "TrustRadius: erwin Data Modeler-Reviews aus Enterprise-Kontext - Standard-Tooling fuer Government und Grossorganisationen, ER-Diagramm-basierte Forward-Engineering-Workflows"
   url: https://www.trustradius.com/products/erwin-data-modeler/reviews
   type: practitioner
-- id: github-copilot-github
+- id: github-com-features-copilot
   label: AI-Pair-Programming inkl. Schema/ORM-Code-Generierung
   url: https://github.com/features/copilot
   type: vendor_doc
-- id: copilot-prisma-docs
+- id: prisma-io-docs-ai-tools-github-copilot
   label: "Prisma-Dokumentation: GitHub Copilot Agent Mode in VS Code - Schema-Scaffolding, prisma migrate dev, Prisma-MCP-Server-Integration"
   url: https://www.prisma.io/docs/ai/tools/github-copilot
   type: practitioner
-- id: copilot-techcommunity-msft
+- id: techcommunity-microsoft-com-blog-azuredevcommunityblog-create-a-database-schema-and-rest-apis-with-a-single-prompt-using-github-copilot-4422778
   label: "Microsoft Tech Community: GitHub Copilot + GibsonAI MCP fuer Schema-Design + Serverless-MySQL-Deployment + REST-APIs aus einem Prompt"
   url: https://techcommunity.microsoft.com/blog/azuredevcommunityblog/create-a-database-schema-and-rest-apis-with-a-single-prompt-using-github-copilot/4422778
   type: practitioner
-- id: jetbrains-datagrip-ai-docs
+- id: jetbrains-com-help-ai-assistant-use-ai-assistant-html
   label: "JetBrains DataGrip AI Assistant-Doku: Attach-Schema, Natural-Language-zu-SQL, EXPLAIN-PLAN-Optimierung, DDL-Vergleich zwischen DB-Objekten"
   url: https://www.jetbrains.com/help/ai-assistant/use-ai-assistant.html
   type: vendor_doc
-- id: ellie-ai-ellie
+- id: ellie-ai
   label: EU-Tool fuer konzeptionelle Datenmodelle mit AI-Augmentation
   url: https://ellie.ai
   type: vendor_doc
-- id: ellie-cdata-case-study
+- id: cdata-com-case-study-ellie-ai
   label: "CData Case Study: Ellie.ai nutzt CData Embed Cloud fuer 160+ Source-System-Konnektoren - dokumentiert AI-augmented Modeling, LLM-Suggestions, Reduced-Onboarding-Time"
   url: https://www.cdata.com/case-study/ellie-ai/
   type: practitioner
-- id: hackolade-studio-hackolade
+- id: hackolade-com
   label: Polyglot-Datenmodellierer mit On-Prem-Variante und Datenklassifizierung
   url: https://hackolade.com
   type: vendor_doc
-- id: hackolade-mongodb-blog
+- id: mongodb-com-company-blog-technical-optimize-data-modeling-and-schema-design-with-hackolade-and-mongodb
   label: "MongoDB Engineering Blog: Hackolade als zertifizierter MongoDB-Partner fuer ERD von JSON-Hierarchien - Schema-Inferenz, JSON-Schema-Validator-Integration, Iterative Evolution"
   url: https://www.mongodb.com/company/blog/technical/optimize-data-modeling-and-schema-design-with-hackolade-and-mongodb
   type: practitioner
-- id: hackolade-featuredcustomers
+- id: featuredcustomers-com-vendor-hackolade
   label: "FeaturedCustomers: 25 Hackolade Customer-Reviews und 834 Reference-Ratings (4.8/5) - dokumentierte Kundenwahl ueber konkurrierende MongoDB/JSON-Tools (z.B. major US bank)"
   url: https://www.featuredcustomers.com/vendor/hackolade
   type: practitioner
-- id: sqldbm-sqldbm
+- id: sqldbm-com
   label: Cloud-ERD-Tool mit AI-Copilot fuer Schema-Generierung
   url: https://sqldbm.com
   type: vendor_doc
-- id: sqldbm-snowflake-quickstart
+- id: snowflake-com-en-developers-guides-database-modeling-with-sqldbm
   label: "Snowflake Quickstart: Cloud-native Database Modeling with SqlDBM - dokumentiert Reverse-/Forward-Engineering, Snowflake-spezifisches DDL, Revision-History"
   url: https://www.snowflake.com/en/developers/guides/database-modeling-with-sqldbm/
   type: practitioner
-- id: sqldbm-medium-snowflake
+- id: medium-com-snowflake-how-i-did-cloud-native-data-modeling-for-snowflake-a63cc456fe03
   label: "Medium/Snowflake: Praktiker-Bericht zu Cloud-Native-Data-Modeling mit SqlDBM auf Snowflake - DDL-Forward-Engineering, Compare-Revisions, Data-Dictionary-Workflows"
   url: https://medium.com/snowflake/how-i-did-cloud-native-data-modeling-for-snowflake-a63cc456fe03
   type: practitioner
-- id: aws-bedrock-eu-regions-nitro-enclaves-amazon
+- id: aws-amazon-com-de-blogs-security-aws-european-sovereign-cloud
   label: AWS European Sovereign Cloud als kommendes Sovereign-Cloud-Angebot in Deutschland
   url: https://aws.amazon.com/de/blogs/security/aws-european-sovereign-cloud/
   type: vendor_doc
-- id: delos-cloud-microsoft-cloud-for-sovereignty-de-delos-cloud
+- id: delos-cloud
   label: Delos Cloud als souveraene Microsoft-/Azure-basierte Cloud fuer deutschen Public Sector
   url: https://delos.cloud
   type: vendor_doc
-- id: google-cloud-vertex-ai-eu-confidential-space-sovereign-controls-google
+- id: cloud-google-com-sovereign-cloud
   label: Google Cloud Sovereign Controls und Sovereign-Partnerschaften fuer EU/DACH dokumentiert
   url: https://cloud.google.com/sovereign-cloud
   type: vendor_doc
-- id: microsoft-azure-openai-eu-data-boundary-confidential-vms-microsoft
+- id: learn-microsoft-com-azure-ai-services-openai-concepts-data-residency
   label: Azure OpenAI EU Data Boundary und Datenresidenz-Optionen offiziell dokumentiert
   url: https://learn.microsoft.com/azure/ai-services/openai/concepts/data-residency
   type: vendor_doc
-- id: nvidia-nim-nvidia-inference-microservices-nvidia
+- id: docs-nvidia-com-nim
   label: NVIDIA NIM als Container-basierte LLM-Inferenz-Microservices fuer On-Prem/Hybrid
   url: https://docs.nvidia.com/nim/
   type: documentation
-- id: plusserver-pluscloud-open-sovereign-ai-plusserver
+- id: plusserver-com-de-loesungen-sovereign-cloud
   label: PlusServer positioniert pluscloud open als souveraene Cloud auf SCS-Standard
   url: https://www.plusserver.com/de/loesungen/sovereign-cloud
   type: vendor_doc
-- id: sap-ai-core-joule-eu-region-sap
+- id: sap-com-products-artificial-intelligence-ai-core-html
   label: SAP AI Core als BTP-Service mit EU-Datenresidenz fuer Generative-AI-Workloads
   url: https://www.sap.com/products/artificial-intelligence/ai-core.html
   type: vendor_doc
-- id: aleph-alpha-pharia-ai-aleph-alpha
+- id: aleph-alpha-com-pharia-ai
   label: Pharia AI als souveraene LLM-Plattform fuer On-Prem/Private-Cloud-Deployment in DACH
   url: https://aleph-alpha.com/pharia-ai/
   type: vendor_doc
-- id: aleph-alpha-pharia-ai-heise
+- id: heise-de-en-news-european-solution-aleph-alpha-offers-pharia-ai-via-schwarz-digits-10399088-html
   label: heise online berichtet ueber Aleph Alpha PhariaAI-as-a-Service auf STACKIT als europaeische Souveraenitaets-Loesung
   url: https://www.heise.de/en/news/European-solution-Aleph-Alpha-offers-Pharia-AI-via-Schwarz-Digits-10399088.html
   type: news
-- id: aleph-alpha-pharia-ai-european-cloud
+- id: european-cloud-2026-02-schwarz-group-aleph-alpha
   label: EUROPEAN CLOUD analysiert Schwarz-Gruppe-Konsolidierung um Aleph Alpha als Sovereign-AI-Blueprint fuer DACH
   url: https://european.cloud/2026/02/schwarz-group-aleph-alpha/
   type: analyst
-- id: claude-code-mit-cloud-architect-subagents-anthropic
+- id: anthropic-com-news-european-data-region
   label: Anthropic bietet European Data Region fuer Claude API/Enterprise — relevant fuer DACH-Datenresidenz-Architekturen
   url: https://www.anthropic.com/news/european-data-region
   type: vendor_doc
-- id: claude-code-compound-law-eu-hosting
+- id: compound-law-en-de-tools-claude-eu-hosting
   label: "Compound Law (DE) prueft Claude EU-Hosting-Pfade: Bedrock-EU/Vertex-EU bestaetigt, direkte API/claude.ai standardmaessig US"
   url: https://compound.law/en-DE/tools/claude-eu-hosting/
   type: analyst
-- id: claude-code-github-eu-residency-issue
+- id: github-com-anthropics-claude-code-issues-40530
   label: "GitHub-Issue dokumentiert: Claude Code CLI unterstuetzt EU-Residency via CLAUDE_CODE_USE_BEDROCK/VERTEX/FOUNDRY — fuer DACH-Architekten praktisch nutzbar"
   url: https://github.com/anthropics/claude-code/issues/40530
   type: community
-- id: ionos-ai-model-hub-ionos-de-cloud-ionos-de-managed-services-ai-model-hub
+- id: cloud-ionos-de-managed-services-ai-model-hub
   label: IONOS AI Model Hub als deutsches LLM-Inferenz-Angebot fuer Sovereign-Cloud-Architekturen
   url: https://cloud.ionos.de/managed-services/ai-model-hub
   type: vendor_doc
-- id: ionos-ai-model-hub-puhlmann-vergleich
+- id: nico-puhlmann-de-blog-deutsche-cloud-anbieter-im-vergleich-ionos-vs-stackit
   label: Praktiker-Vergleich IONOS vs. STACKIT als deutsche Souveraenitaets-LLM-Anbieter (Nico Puhlmann IT-Beratung)
   url: https://www.nico-puhlmann.de/blog/deutsche-cloud-anbieter-im-vergleich-ionos-vs-stackit
   type: blog
-- id: ionos-ai-model-hub-european-cloud-benchmark
+- id: european-cloud-2025-05-ovhcloud-ai-endpoints-are-now-in-general-availability
   label: "EUROPEAN CLOUD Preis-/Verfuegbarkeits-Vergleich: OVH/IONOS/STACKIT/Scaleway/AWS/Azure fuer Llama 3.3 70B"
   url: https://european.cloud/2025/05/ovhcloud-ai-endpoints-are-now-in-general-availability/
   type: analyst
-- id: mistral-europeanstack-review
+- id: europeanstack-com-software-mistral-ai
   label: "EuropeanStack Review 2026: Mistral als EU-domiziliert, EU-only API-Verarbeitung, SOC2 Type II — Default-Wahl bei Datensouveraenitaet"
   url: https://europeanstack.com/software/mistral-ai
   type: analyst
-- id: mistral-hyperion-enterprise-guide
+- id: hyperion-consulting-io-en-insights-mistral-ai-complete-guide-2026
   label: "Hyperion Consulting Guide 2026: Mistral als einzige Frontier-Class-Option ohne transatlantischen Datentransfer (Schrems-II-Hintergrund)"
   url: https://hyperion-consulting.io/en/insights/mistral-ai-complete-guide-2026
   type: analyst
-- id: open-telekom-cloud-sovereign-ai-open-telekom-cloud
+- id: open-telekom-cloud-com-de-produkte-sovereign-ai
   label: OTC vermarktet Sovereign-AI-Angebot in deutschem Rechenzentrum
   url: https://open-telekom-cloud.com/de/produkte/sovereign-ai
   type: vendor_doc
-- id: open-telekom-cloud-europeanstack-review
+- id: europeanstack-com-software-open-telekom-cloud
   label: "EuropeanStack Review 2026: OTC mit BSI C5 Type 2, ISO27001/27018/27701, TISAX, SOC1/2/3, DORA/NIS2 — fuer regulierte DACH-Industrien oft einzige Option"
   url: https://europeanstack.com/software/open-telekom-cloud
   type: analyst
-- id: open-telekom-cloud-bsi-souveraenitaet-heise
+- id: heise-de-news-bsi-definiert-wann-eine-cloud-wirklich-souveraen-ist-11272737-html
   label: "heise online: BSI definiert Souveraenitaets-Kriterien fuer Cloud-Dienste — direkter Bewertungs-Rahmen fuer OTC und andere DACH-Sovereign-Anbieter"
   url: https://www.heise.de/news/BSI-definiert-wann-eine-Cloud-wirklich-souveraen-ist-11272737.html
   type: news
-- id: ovhcloud-ai-endpoints-ai-deploy-ovhcloud
+- id: ovhcloud-com-de-public-cloud-ai-endpoints
   label: OVHcloud bietet LLM-Inferenz-Endpoints in europaeischen Rechenzentren als Sovereign-Cloud-Alternative
   url: https://www.ovhcloud.com/de/public-cloud/ai-endpoints/
   type: vendor_doc
-- id: ovhcloud-eu-commission-selection
+- id: boursorama-com-bourse-actualites-ovhcloud-deep-et-clever-cloud-retenus-pour-cloud-souverain-ue-marche-plafond-180-millions-eur-2d0a7baf5a40a4f83ff16f7e712ce728
   label: EU-Kommission waehlt OVHcloud (mit DEEP/Clever Cloud) fuer Sovereign-Cloud-Rahmenvertrag bis 180 Mio. EUR — Souveraenitaets-Glaubwuerdigkeit auf institutioneller Ebene bestaetigt
   url: https://www.boursorama.com/bourse/actualites/ovhcloud-deep-et-clever-cloud-retenus-pour-cloud-souverain-ue-marche-plafond-180-millions-eur-2d0a7baf5a40a4f83ff16f7e712ce728
   type: news
-- id: red-hat-openshift-ai-redhat
+- id: redhat-com-en-technologies-cloud-computing-openshift-openshift-ai
   label: OpenShift AI als Enterprise-Plattform fuer On-Prem-/Hybrid-LLM-Workloads
   url: https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-ai
   type: vendor_doc
-- id: red-hat-openshift-ai-architecture-medium
+- id: rdalal3-medium-com-architecture-of-red-hat-openshift-ai-7e4c4c4f6c08
   label: "Praktiker-Analyse RHOAI-Architektur: KServe, vLLM, GPU Operator, Hybrid-Cloud-Deployment"
   url: https://rdalal3.medium.com/architecture-of-red-hat-openshift-ai-7e4c4c4f6c08
   type: blog
-- id: stackit-ai-model-serving-stackit-de
+- id: stackit-de-de-produkt-services-aiml
   label: STACKIT bietet AI/ML-Services inkl. Model Serving in deutschen Rechenzentren
   url: https://www.stackit.de/de/produkt-services/aiml/
   type: vendor_doc
-- id: stackit-akkodis-partnership-news
+- id: uk-advfn-com-stock-market-share-news-akkodis-and-stackit-enter-strategic-partnership-fo-98272791
   label: Akkodis (Adecco) und STACKIT verkuenden strategische Partnerschaft fuer souveraene Cloud-Transformation in Deutschland — Marktreife-Signal fuer DACH-Architekturen
   url: https://uk.advfn.com/stock-market/share-news/Akkodis-and-STACKIT-enter-strategic-partnership-fo/98272791
   type: news
-- id: vllm-vllm
+- id: docs-vllm-ai
   label: vLLM als Open-Source-LLM-Inferenz-Engine fuer On-Prem-Deployments
   url: https://docs.vllm.ai
   type: documentation
-- id: vllm-introl-production-deployment
+- id: introl-com-blog-vllm-production-deployment-inference-serving-architecture
   label: "Introl Production-Deployment-Analyse: vLLM dominanter Inference-Stack bei Meta/Mistral/Cohere/IBM, 2-24x Throughput vs. Standard-Frameworks"
   url: https://introl.com/blog/vllm-production-deployment-inference-serving-architecture
   type: blog
-- id: vllm-youngju-benchmark
+- id: youngju-dev-blog-llm-2026-03-07-llm-vllm-serving-optimization-production-en
   label: Praktiker-Benchmark vLLM vs. SGLang vs. TensorRT-LLM vs. LMDeploy (Llama 3.1 8B, A100 80GB) — vLLM hohe Production Maturity
   url: https://www.youngju.dev/blog/llm/2026-03-07-llm-vllm-serving-optimization-production.en
   type: blog
-- id: smartshift-technologies-smartshifttech
+- id: smartshifttech-com-solutions-s4hana-transformation
   label: SmartShift automatisiert SAP-S/4HANA-Custom-Code-Transformation für Großkunden.
   url: https://smartshifttech.com/solutions/s4hana-transformation/
   type: vendor_doc
-- id: snp-crystalbridge-snpgroup
+- id: snpgroup-com-en-products-crystalbridge
   label: SNP CrystalBridge ist die Software-Plattform für SAP-Transformations- und Migrationsprojekte.
   url: https://www.snpgroup.com/en/products/crystalbridge/
   type: vendor_doc
-- id: tricentis-livecompare-tricentis
+- id: tricentis-com-products-livecompare
   label: LiveCompare nutzt AI für SAP-Change-Impact- und Risiko-Analyse.
   url: https://www.tricentis.com/products/livecompare
   type: vendor_doc
-- id: amazon-q-developer-transform-amazon
+- id: aws-amazon-com-q-developer-transform
   label: Q Developer Transform deckt Java-Upgrades, .NET-Portierung, VMware-Migration und Mainframe-Modernisierung ab.
   url: https://aws.amazon.com/q/developer/transform/
   type: vendor_doc
-- id: cast-imaging-gartner-peer
+- id: gartner-com-reviews-market-ai-augmented-code-modernization-tools-vendor-cast-product-cast-imaging
   label: "Gartner Peer Insights (validierte Enterprise-Reviews): CAST Imaging als Plattform für 'multi-technology environment' mit positivem Tenor zu Impact-Analyse und Modernisierungs-Mapping; Gartner-eigene Marktdefinition."
   url: https://www.gartner.com/reviews/market/ai-augmented-code-modernization-tools/vendor/cast/product/cast-imaging
   type: review
-- id: ibm-wca4z-pilot-linkedin
+- id: linkedin-com-pulse-ibm-genai-watsonx-code-assistant-z-wcaz-pilot-journey-piyush-mishra-1qeee
   label: "Pilot-Bericht (LinkedIn Pulse, 2024): 3,5 Mio LOC COBOL über fünf Apps mit ADDI ingestiert, 60% geschätzte Transformationsersparnis, 14–47% Produktivitätsgewinn — aber Autor IBM-affiliiert, daher mit Vorsicht zu lesen."
   url: https://www.linkedin.com/pulse/ibm-genai-watsonx-code-assistant-z-wcaz-pilot-journey-piyush-mishra-1qeee
   type: blog
-- id: microsoft-github-copilot-app-modernization-for-net-microsoft
+- id: devblogs-microsoft-com-dotnet-github-copilot-app-modernization-dotnet
   label: GitHub Copilot App Modernization for .NET unterstützt .NET-Framework-zu-.NET-Migrationen mit agentischen PRs.
   url: https://devblogs.microsoft.com/dotnet/github-copilot-app-modernization-dotnet/
   type: blog
-- id: microsoft-github-copilot-upgrade-assistant-for-java-github-blog
+- id: github-blog-ai-and-ml-github-copilot-upgrade-assistant-for-java
   label: GitHub liefert einen dedizierten Copilot-Agenten für Java-Versions-Upgrades.
   url: https://github.blog/ai-and-ml/github-copilot/upgrade-assistant-for-java/
   type: blog
-- id: copilot-cashfree-java-21
+- id: cashfree-com-blog-github-copilot-agent-java-21-upgrade
   label: "Praktiker-Case-Study (Cashfree Blog, 2025): Quarkus/Spring-Boot-Apps von Java 17→21 mit Copilot Agent in 20 Minuten statt 3–4 h; iterativer build-fix-test-Loop, ehrliche Beschreibung der Grenzen."
   url: https://www.cashfree.com/blog/github-copilot-agent-java-21-upgrade/
   type: blog
-- id: copilot-modernize-dotnet-learn
+- id: learn-microsoft-com-en-us-dotnet-core-porting-github-copilot-app-modernization-overview
   label: "Microsoft Learn (autoritative Doku, 2026): GitHub Copilot Modernization-Agent für .NET — assess→plan→execute-Modell mit assessment.md/plan.md/tasks.md, abdeckt .NET Framework→Modern .NET, Azure-Migration; Lizenzpfad ab Copilot Free."
   url: https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-app-modernization/overview
   type: vendor_doc
-- id: openrewrite-moderne-moderne
+- id: moderne-ai-platform
   label: Moderne führt deterministische Massenrefactorings via OpenRewrite-Recipes über große Code-Portfolios aus.
   url: https://www.moderne.ai/platform
   type: vendor_doc
-- id: openrewrite-infoworld-primer
+- id: infoworld-com-article-4073173-a-practitioners-primer-on-deterministic-application-modernization-html
   label: "InfoWorld (2025): 'Practitioner's primer on deterministic application modernization' — beschreibt Moderne als horizontalen Skalierungs-Layer für OpenRewrite über tausende Repos und Milliarden LOC, mit deterministischen Lossless-Semantic-Trees als Anti-Halluzinations-Argument."
   url: https://www.infoworld.com/article/4073173/a-practitioners-primer-on-deterministic-application-modernization.html
   type: press
-- id: openrewrite-kleinanzeigen-berlin-techblog
+- id: medium-com-berlin-tech-blog-automate-your-java-upgrades-a-practical-case-study-with-openrewrite-and-github-actions-44275f841082
   label: "Praktiker-Case-Study DACH (Berlin Tech Blog / Kleinanzeigen·mobile.de, 2025): OpenRewrite produktiv über 14 Services, >40 automatisierte Merge-PRs; ehrlicher Bericht über Java/Kotlin-Mix-Probleme und über kommerzielle Spring-Boot-Recipe-Lizenzen."
   url: https://medium.com/berlin-tech-blog/automate-your-java-upgrades-a-practical-case-study-with-openrewrite-and-github-actions-44275f841082
   type: blog
-- id: vfunction-vfunction-vfunction-com-platform
+- id: vfunction-com-platform
   label: vFunction analysiert Monolithen und liefert AI-basierte Decomposition-Empfehlungen mit Migration-Roadmaps.
   url: https://vfunction.com/platform/
   type: vendor_doc
-- id: vfunction-futurum-analyst
+- id: futurumgroup-com-insights-vfunction-earns-coveted-and-prestigious-recognition
   label: "Analyst-Kommentar (Futurum Group, 2024) zu vFunction Architectural-Observability-Vision; nennt 18% AO-Reife-Quote und positioniert ATD-Reduktion — Hinweis: Analyst arbeitet als bezahlter Sponsor-Analyst, daher nur ergänzend zu werten."
   url: https://futurumgroup.com/insights/vfunction-earns-coveted-and-prestigious-recognition/
   type: analyst
-- id: continue-dev-continue-continue-dev
+- id: continue-dev
   label: Continue.dev ist Open-Source-AI-Coding-Assistent mit eigener Modell-/Kontextwahl
   url: https://www.continue.dev/
   type: vendor_doc
-- id: redocly-mit-ai-assist-redocly
+- id: redocly-com
   label: Redocly ist API-Plattform mit OpenAPI-Linting und AI-gestuetzter Doku
   url: https://redocly.com/
   type: vendor_doc
-- id: speakeasy-speakeasy
+- id: speakeasy-com
   label: Speakeasy bewirbt OpenAPI-Toolchain inkl. AI-Spec-Improvement und SDK-Generation
   url: https://www.speakeasy.com/
   type: vendor_doc
-- id: microsoft-azure-api-center-microsoft
+- id: learn-microsoft-com-en-us-azure-api-center
   label: Azure API Center ist Microsofts zentrale API-Inventory- und Design-Plattform
   url: https://learn.microsoft.com/en-us/azure/api-center/
   type: documentation
-- id: mulesoft-anypoint-design-center-mulesoft
+- id: mulesoft-com-platform-api-anypoint-designer
   label: Anypoint Design Center ist API-Designer fuer OpenAPI/RAML in der MuleSoft-Plattform
   url: https://www.mulesoft.com/platform/api/anypoint-designer
   type: vendor_doc
-- id: software-ag-webmethods-api-designer-softwareag
+- id: softwareag-com-en-corporate-platform-api-html
   label: webMethods API ist Software AGs API-Management-Plattform mit OpenAPI-Designer
   url: https://www.softwareag.com/en_corporate/platform/api.html
   type: vendor_doc
-- id: tyk-tyk
+- id: tyk-io
   label: Tyk ist Open-Source-API-Gateway mit OpenAPI-First-Design
   url: https://tyk.io/
   type: vendor_doc
-- id: kong-insomnia-ai-runner-api-dev-insomnia-rest
+- id: insomnia-rest
   label: Insomnia ist Kongs API-Design-Client mit AI-Funktionen fuer OpenAPI-Workflows
   url: https://insomnia.rest/
   type: vendor_doc
-- id: postman-postbot-ai-spec-builder-postman
+- id: postman-com-postbot
   label: Postman bewirbt Postbot als AI-Assistant fuer API-Workflows inkl. Spec-Erzeugung
   url: https://www.postman.com/postbot/
   type: vendor_doc
-- id: swaggerhub-mit-ai-swagger
+- id: swagger-io-tools-swaggerhub
   label: SwaggerHub ist die Enterprise-Plattform fuer OpenAPI-Design und integriert AI-Hilfen
   url: https://swagger.io/tools/swaggerhub/
   type: vendor_doc
-- id: theneo-theneo
+- id: theneo-io
   label: Vendor positioniert Theneo als AI-Tool fuer API-Dokumentation und OpenAPI-Generierung
   url: https://www.theneo.io/
   type: vendor_doc
-- id: recombobulate-claude-openapi
+- id: recombobulate-dev-tips-ask-claude-to-generate-an-openapi-spec-from-your-existing-api-endpoints
   label: Recombobulate beschreibt Praxis-Workflow, Claude Code aus Routes/Controllern eine OpenAPI-3.1-Spec generieren zu lassen
   url: https://recombobulate.dev/tips/ask-claude-to-generate-an-openapi-spec-from-your-existing-api-endpoints
   type: practitioner_blog
-- id: lowcode-claude-openapi
+- id: lowcode-agency-blog-claude-code-api-documentation-generation
   label: Lowcode Agency Praxisleitfaden zu Claude-Code-OpenAPI-Generierung mit Prompts und Best Practices
   url: https://www.lowcode.agency/blog/claude-code-api-documentation-generation
   type: practitioner_blog
-- id: mulesoft-cursor-openapi-demo
+- id: youtube-com-watch-v-ddyqnxw-lgo
   label: "MuleSoft Developer-Advocate-Livedemo: OpenAPI-Spec-Generierung mit Cursor AI inkl. Cursor-Rules-Datei"
   url: https://www.youtube.com/watch?v=DdyqNXW_lGo
   type: practitioner_blog
-- id: apidog-cursor-openapi
+- id: apidog-com-blog-gpt-5-with-cursor-cli
   label: "Apidog-Tutorial: Cursor CLI mit GPT-5 erzeugt OpenAPI-3.0.3-YAML in nicht-interaktivem Modus"
   url: https://apidog.com/blog/gpt-5-with-cursor-cli
   type: practitioner_blog
-- id: ms-azure-copilot-openapi-doc
+- id: learn-microsoft-com-en-us-azure-api-center-design-api-github-copilot-azure
   label: "Microsoft-Learn-Tutorial: GitHub Copilot for Azure + API Center Plugin generieren OpenAPI-Spec aus Natural-Language-Prompt"
   url: https://learn.microsoft.com/en-us/azure/api-center/design-api-github-copilot-azure
   type: documentation
-- id: sas-copilot-openapi
+- id: communities-sas-com-t5-sas-communities-library-building-applications-faster-with-sas-openapi-specifications-and-tac-p-985808
   label: SAS Communities Library zeigt Copilot mit OpenAPI-Specs fuer Modell-/Service-Code-Generierung in VS Code
   url: https://communities.sas.com/t5/SAS-Communities-Library/Building-Applications-Faster-with-SAS-OpenAPI-Specifications-and/tac-p/985808
   type: practitioner_blog
-- id: github-docs-document-api-prompt
+- id: docs-github-com-en-copilot-tutorials-customization-library-prompt-files-document-api
   label: GitHub-eigener Prompt-File-Tutorial 'document-api' fuer OpenAPI-3.0-Spec-Generierung im Copilot-Agent-Modus
   url: https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/document-api
   type: documentation
-- id: infoworld-insomnia12
+- id: infoworld-com-article-4086891-kong-insomnia-12-bolsters-ai-mcp-tools-html
   label: "InfoWorld-Artikel zu Kong Insomnia 12: AI-Mock-Generierung aus OpenAPI/JSON/Beschreibung sowie AI-Commits, lokale LLMs moeglich"
   url: https://www.infoworld.com/article/4086891/kong-insomnia-12-bolsters-ai-mcp-tools.html
   type: news
-- id: kong-chatgpt-openapi-blog
+- id: konghq-com-blog-engineering-using-chatgpt-to-reinvigorate-apis
   label: Kong-Engineering-Blog beschreibt, dass ChatGPT eine OpenAPI-Spec entwirft, die anschliessend in Insomnia gelintert wird — AI-Drafting passiert eher ausserhalb von Insomnia
   url: https://konghq.com/blog/engineering/using-chatgpt-to-reinvigorate-apis
   type: vendor_doc
-- id: postman-spec-hub-generate-spec-doc
+- id: learning-postman-com-docs-design-apis-collections-generate-specifications
   label: "Postman Docs: Spec Hub generiert OpenAPI 2.0/3.0/3.1 deterministisch aus typisierten Collections (kein AI-Schritt)"
   url: https://learning.postman.com/docs/design-apis/collections/generate-specifications/
   type: vendor_doc
-- id: testingdocs-postbot
+- id: testingdocs-com-postman-postbot-to-generate-api-tests
   label: "TestingDocs-Praxisartikel: Postbot fokussiert primaer auf Test-Skript-Generierung, Spec-Drafting nicht der Hauptfokus"
   url: https://www.testingdocs.com/postman-postbot-to-generate-api-tests/
   type: practitioner_blog
-- id: letsdatascience-swaggerhub-ai
+- id: letsdatascience-com-news-smartbear-updates-swagger-to-detect-ai-driven-api-drift-0a739cf6
   label: Let's Data Science berichtet ueber SmartBear-Update mit AI-Code-Generierung im Swagger-Editor, Spectral-Governance und MCP-Server
   url: https://letsdatascience.com/news/smartbear-updates-swagger-to-detect-ai-driven-api-drift-0a739cf6
   type: news
-- id: swaggerhub-design-with-ai-docs
+- id: support-smartbear-com-swaggerhub-docs-en-design-with-ai-html
   label: "SwaggerHub-Doku Design with AI: Natural-Language-Prompt -> OpenAPI/AsyncAPI-Definition mit Governance-Validierung"
   url: https://support.smartbear.com/swaggerhub/docs/en/design-with-ai.html
   type: documentation
-- id: swaggerhub-generate-api-from-code
+- id: support-smartbear-com-swaggerhub-docs-en-design-with-ai-generating-an-api-from-code-html
   label: "SwaggerHub-Doku: AI generiert OpenAPI-Definition aus bis zu 20 Source-Code-Dateien (Java/JS/TS/Python)"
   url: https://support.smartbear.com/swaggerhub/docs/en/design-with-ai/generating-an-api-from-code.html
   type: documentation
-- id: gtmtools-theneo-review
+- id: gtmtools-dev-tools-theneo
   label: "GTM-Tools-Review: Theneo ist AI-Doku-Plattform, die Stripe-aehnliche Docs aus bestehenden OpenAPI/Swagger/Postman-Specs erzeugt — kein NL-zu-Spec-Drafting"
   url: https://gtmtools.dev/tools/theneo/
   type: practitioner_blog
-- id: aijet-theneo-review
+- id: aijet-cc-item-theneo
   label: "Aijet-Review 2026: Theneo-Hauptwert ist API-/SDK-Doku-Generierung aus bestehender Spec, nicht Spec-Authoring"
   url: https://aijet.cc/item/theneo
   type: practitioner_blog
-- id: amazon-q-developer-amazon-docs-aws-amazon-com-prescriptive-guidance-latest-best-practices-code-generation-developer-workflows-html
+- id: docs-aws-amazon-com-prescriptive-guidance-latest-best-practices-code-generation-developer-workflows-html
   label: AWS Prescriptive Guidance positioniert Q Developer fuer Design and Planning
   url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/developer-workflows.html
   type: vendor_doc
-- id: amazon-q-developer-amazon-2
+- id: aws-amazon-com-blogs-devops-amazon-q-developer-cli-supports-image-inputs-in-your-terminal
   label: Q Developer CLI nimmt Architektur-Skizzen als Bild und konvertiert sie zu Design-Doc + IaC
   url: https://aws.amazon.com/blogs/devops/amazon-q-developer-cli-supports-image-inputs-in-your-terminal/
   type: blog
-- id: amazon-q-developer-awsfundamentals
+- id: awsfundamentals-com-blog-amazon-q-architecture-diagrams
   label: "Praxis-Tutorial: Q + AWS-Diagram-MCP-Server erzeugt AWS-Architekturdiagramme aus Anforderungen"
   url: https://awsfundamentals.com/blog/amazon-q-architecture-diagrams
   type: blog
-- id: amazon-q-developer-reddit
+- id: reddit-com-r-aws-comments-1qfmw2j-kiro-cant-get-a-good-web-ui
   label: Vergleichsthread, in dem Q Developer mit Kiro/Cursor verglichen wird und akzeptable Ergebnisse liefert
   url: https://www.reddit.com/r/aws/comments/1qfmw2j/kiro_cant_get_a_good_web_ui/
   type: community
-- id: claude-code-medium
+- id: medium-com-haberlah-how-to-write-prds-for-ai-coding-agents-d60d72efb797
   label: Beschreibt, wie Anthropic Skills und PRD-Workflows in Claude Code fuer Spec/Design-Phase genutzt werden
   url: https://medium.com/@haberlah/how-to-write-prds-for-ai-coding-agents-d60d72efb797
   type: blog
-- id: claude-code-reddit
+- id: reddit-com-r-vibecoding-comments-1od2tyv-claude-code-crevo-achieving-efficient-highquality
   label: Praktiker-Setup mit Claude Code + Crevo MCP, das User Stories, PRD, System Architecture Design generiert
   url: https://www.reddit.com/r/vibecoding/comments/1od2tyv/claude_code_crevo_achieving_efficient_highquality/
   type: community
-- id: claude-code-reddit-2
+- id: reddit-com-r-claudecode-comments-1r5gk1d-40-days-of-vibe-coding-taught-me-the-most
   label: 40-Tage-Praktiker beschreibt CLAUDE.md + architecture.md als zentrales Element fuer Architektur-Konsistenz
   url: https://www.reddit.com/r/ClaudeCode/comments/1r5gk1d/40_days_of_vibe_coding_taught_me_the_most/
   type: community
-- id: github-spec-kit-github
+- id: github-github-io-spec-kit
   label: Offizielle Doku beschreibt den specify -> plan -> tasks -> implement Workflow inkl. Architektur-Phase
   url: https://github.github.io/spec-kit/
   type: vendor_doc
-- id: github-spec-kit-martinfowler
+- id: martinfowler-com-articles-exploring-gen-ai-sdd-3-tools-html
   label: Boeckeler/Fowler-Vergleich von Kiro, Spec-Kit und Tessl mit klarer Beschreibung der Architektur-Mappings
   url: https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
   type: blog
-- id: github-spec-kit-epam
+- id: epam-com-insights-ai-blogs-inside-spec-driven-development-what-githubspec-kit-makes-possible-for-ai-engineering
   label: EPAM beschreibt System-Design-Layer im Plan-Step explizit als architektonisches Wie
   url: https://www.epam.com/insights/ai/blogs/inside-spec-driven-development-what-githubspec-kit-makes-possible-for-ai-engineering
   type: blog
-- id: github-spec-kit-ycombinator
+- id: news-ycombinator-com-item-id-47728487
   label: HN-Diskussion zu Spec-Kit-Workflow und Edge-Case-Handling
   url: https://news.ycombinator.com/item?id=47728487
   type: community
-- id: kiro-github
+- id: github-com-aws-samples-sample-kiro-cli-prompts-for-product-teams-blob-main-kiro-steering-prd-guide-md
   label: Kiro nimmt PRD-Inhalte und mappt sie auf requirements.md (EARS) und design.md im Spec-Format
   url: https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams/blob/main/.kiro/steering/prd-guide.md
   type: vendor_doc
-- id: kiro-amazon
+- id: docs-aws-amazon-com-transform-latest-userguide-transform-forward-engineering-tutorial-specs-html
   label: Kiro generiert Architektur-Spezifikationen via DDD/Bounded Contexts fuer Microservices
   url: https://docs.aws.amazon.com/transform/latest/userguide/transform-forward-engineering-tutorial-specs.html
   type: vendor_doc
-- id: kiro-ohaiknow
+- id: ohaiknow-com-reviews-kiro
   label: "Praktiker-Review nach 4 Monaten: Spec Mode reduziert Rework, dauert anfangs 40% laenger"
   url: https://ohaiknow.com/reviews/kiro/
   type: review
-- id: kiro-reddit
+- id: reddit-com-r-betteroffline-comments-1r9nazc-amazons-ai-tools-caused-a-13hour-long-disruption
   label: Loeschvorfall mit 13h Outage daempft Vertrauen in autonome Spec-Execution
   url: https://www.reddit.com/r/BetterOffline/comments/1r9nazc/amazons_ai_tools_caused_a_13hour_long_disruption/
   type: community
-- id: kiro-reddit-2
+- id: reddit-com-r-claudeai-comments-1lzsvot-amazons-new-claudepowered-specdriven-ide-kiro
   label: User berichtet, dass Kiro automatisch Requirements/Design/Tasks-Files erstellt hat, inkl. korrekter Mermaid-Charts
   url: https://www.reddit.com/r/ClaudeAI/comments/1lzsvot/amazons_new_claudepowered_specdriven_ide_kiro/
   type: community
-- id: github-copilot-spaces-workspace-microsoft
+- id: developer-microsoft-com-blog-spec-driven-development-spec-kit
   label: Microsoft/GitHub-Blog beschreibt Spec Kit + Copilot/Codex/Claude als Coding-Agent-Backends
   url: https://developer.microsoft.com/blog/spec-driven-development-spec-kit
   type: vendor_doc
-- id: github-copilot-spaces-workspace-ycombinator
+- id: news-ycombinator-com-item-id-47775653
   label: HN-Diskussion ueber Spec/PRD-Workflows mit Copilot/Claude/Codex und Linear/GitHub als Storage
   url: https://news.ycombinator.com/item?id=47775653
   type: community
-- id: tessl-framework-spec-registry-tessl
+- id: docs-tessl-io-use-spec-driven-development-with-tessl
   label: Beschreibt expliziten 'Agent stellt Klaerungsfragen, schreibt Specs, wartet auf Approval, dann Implementation' Flow
   url: https://docs.tessl.io/use/spec-driven-development-with-tessl
   type: vendor_doc
-- id: tessl-framework-spec-registry-tessl-2
+- id: docs-tessl-io-best-practices-clarify-product-requirements-and-design-system-architecture
   label: Tessl-Best-Practice fordert project-architecture.md und Reviewen der Specs vor Implementation
   url: https://docs.tessl.io/best-practices/clarify-product-requirements-and-design-system-architecture
   type: vendor_doc
-- id: tessl-framework-spec-registry-tessl-3
+- id: tessl-io-blog-tessl-launches-spec-driven-framework-and-registry
   label: Launch-Post von Spec Registry (open beta) und Framework (closed beta) mit 10k+ Specs
   url: https://tessl.io/blog/tessl-launches-spec-driven-framework-and-registry/
   type: vendor_doc
-- id: miro-ai-technical-design-miro
+- id: miro-com-products-technical-design
   label: Technical-Design-Bundle mit AI-Diagrammen, Mermaid und Compliance-Profil
   url: https://miro.com/products/technical-design/
   type: vendor_doc
-- id: sap-leanix-eam-ai-assistant-leanix-net
+- id: leanix-net-en-blog-ai-assistant-use-cases
   label: LeanIX AI Assistant generiert Architektur-Beschreibungen und API-Skizzen aus EAM-Daten
   url: https://www.leanix.net/en/blog/ai-assistant-use-cases
   type: vendor_doc
-- id: sparx-enterprise-architect-ai-assist-sparxsystems
+- id: genie-sparxsystems-com-ai-assist-for-ea
   label: AI Assist erlaubt Modellbearbeitung und Diagrammgenerierung im EA-Repository per natuerlicher Sprache
   url: https://genie.sparxsystems.com/ai-assist-for-ea/
   type: vendor_doc
-- id: bito-ai-architect-bito
+- id: bito-ai-blog-ai-architect-in-jira
   label: AI Architect erzeugt Technical Design Document aus Jira-Epics inkl. Open Questions
   url: https://bito.ai/blog/ai-architect-in-jira/
   type: vendor_doc
-- id: bito-ai-architect-bito-docs
+- id: docs-bito-ai-ai-architect-integrating-ai-architect-with-your-tools-guide-for-jira
   label: "Bito Docs: AI Architect postet Feasibility, Story-Breakdown und Risk-Analyse als Jira-Kommentar (bito-epic-to-plan Skill)"
   url: https://docs.bito.ai/ai-architect/integrating-ai-architect-with-your-tools/guide-for-jira
   type: vendor_doc
-- id: bito-ai-architect-agentrank
+- id: agentrank-tech-blog-bito-review-ai-pr-reviewer-worth-15-per-month
   label: "Unabhaengiges Praxis-Review (AgentRank, Maerz 2026): Codebase-Awareness wirkt oberflaechlicher als Greptile, Test-Generation schwach, steile Onboarding-Kurve"
   url: https://www.agentrank.tech/blog/bito-review-ai-pr-reviewer-worth-15-per-month
   type: review
-- id: bito-ai-architect-swanum
+- id: swanum-com-category-ai-code-review-tools-bito
   label: "Swanum CISO-Audit (April 2026): trotz SOC2 Type II warnt vor 'Vendor appears abandoned' und fehlender IP-Indemnification - explizite Enterprise-Avoid-Empfehlung"
   url: https://swanum.com/category/ai-code-review-tools/bito/
   type: review
-- id: chatgpt-deep-research-g2
+- id: learn-g2-com-perplexity-vs-chatgpt
   label: ChatGPT Deep Research liefert tieferen, strategischen Report mit klarer Struktur
   url: https://learn.g2.com/perplexity-vs-chatgpt
   type: review
-- id: chatgpt-deep-research-freeacademy
+- id: freeacademy-ai-blog-google-deep-research-vs-perplexity-vs-chatgpt-comparison-2026
   label: Vergleichsartikel beschreibt OpenAI Deep Research als o3-basierten Multi-Step-Research-Agent
   url: https://freeacademy.ai/blog/google-deep-research-vs-perplexity-vs-chatgpt-comparison-2026
   type: review
-- id: chatgpt-deep-research-ycombinator
+- id: news-ycombinator-com-item-id-43236184
   label: HN-Praktiker beschreibt OpenAI Deep Research als 'narrow and deep' mit hochwertigen Quellen
   url: https://news.ycombinator.com/item?id=43236184
   type: community
-- id: claude-pro-research-emergent-sh
+- id: emergent-sh-learn-perplexity-vs-claude
   label: Claude wird als 'thinking partner' fuer strukturiertes Reasoning positioniert, Perplexity fuer Recherche
   url: https://emergent.sh/learn/perplexity-vs-claude
   type: review
-- id: claude-pro-research-gerloff
+- id: gerloff-dev-writing-claude-aws-azure-google-gdpr
   label: AWS Bedrock ist die einzige Variante mit garantierter EU-Datenresidenz fuer Claude
   url: https://www.gerloff.dev/writing/claude-aws-azure-google-gdpr
   type: blog
-- id: claude-pro-research-reddit
+- id: reddit-com-user-enoumen-comments-1rn72uv-the-convergence-of-latent-reasoning-and-agentic-json
   label: Reddit/HN-Devs bevorzugen Claude Opus fuer langes Repo-Reasoning
   url: https://www.reddit.com/user/enoumen/comments/1rn72uv/the_convergence_of_latent_reasoning_and_agentic.json
   type: community
-- id: fossa-mit-fossabot-appsecsanta
+- id: appsecsanta-com-fossa
   label: FOSSA mit fossabot AI-Agent fuer strategische Dependency-Updates und Lizenzdetektion
   url: https://appsecsanta.com/fossa
   type: review
-- id: fossa-mit-fossabot-softwareseni
+- id: softwareseni-com-adding-ai-licence-compliance-to-your-existing-engineering-workflow
   label: FOSSA unterstuetzt AI-Modell-Lizenz-Scanning und Snippet-Detection als SCA-Erweiterung
   url: https://www.softwareseni.com/adding-ai-licence-compliance-to-your-existing-engineering-workflow/
   type: blog
-- id: fossa-mit-fossabot-stackinsight-net
+- id: stackinsight-net-snyk-vs-fossa-comparison
   label: FOSSA als Wahl fuer Enterprise-Compliance, Fortune-500-Adoption
   url: https://www.stackinsight.net/snyk-vs-fossa-comparison/
   type: review
-- id: scanoss-scanoss
+- id: scanoss-com-license-dataset
   label: SCANOSS prueft AI-generierten und undeclared Code auf Lizenzherkunft, ohne Code hochzuladen
   url: https://scanoss.com/license-dataset/
   type: vendor_doc
-- id: aleph-alpha-phariaai-post-cohere-merger-businesswire
+- id: businesswire-com-news-home-20260424174908-en-sovereign-ai-for-the-world-cohere-and-aleph-alpha-to-form-global-ai-powerhouse-as-nations-and-enterprises-demand-control-over-their-technology
   label: Cohere/Aleph-Alpha-Merger 04/2026 mit Schwarz/STACKIT als souveraene Plattform fuer Public Sector und DAX-Konzerne
   url: https://www.businesswire.com/news/home/20260424174908/en/Sovereign-AI-for-the-World-Cohere-and-Aleph-Alpha-to-Form-Global-AI-Powerhouse-as-Nations-and-Enterprises-Demand-Control-Over-Their-Technology
   type: news
-- id: mistral-le-chat-enterprise-deep-research-mistral
+- id: mistral-ai-news-le-chat-dives-deep
   label: Mistral Le Chat Deep Research Preview als strukturierter Recherche-Agent
   url: https://mistral.ai/news/le-chat-dives-deep
   type: vendor_doc
-- id: black-duck-software-composition-analysis-blackduck
+- id: blackduck-com
   label: Black Duck als etablierter SCA-Vendor fuer Lizenz- und Sicherheitspruefung
   url: https://www.blackduck.com
   type: vendor_doc
-- id: black-duck-software-composition-analysis-gartner
+- id: gartner-com-reviews-product-black-duck-software-composition-analysis
   label: "Gartner Peer Insights: Black Duck SCA fuer Security, Quality und License-Compliance in regulierten Branchen"
   url: https://www.gartner.com/reviews/product/black-duck-software-composition-analysis
   type: review
-- id: black-duck-software-composition-analysis-appsecsanta
+- id: appsecsanta-com-sca-tools-black-duck-vs-snyk
   label: "AppSec Santa: Black Duck mit 2.900+ Lizenzen, Snippet-Detection und Magic-Quadrant-Leader fuer 8 Jahre"
   url: https://www.appsecsanta.com/sca-tools/black-duck-vs-snyk
   type: review
-- id: black-duck-software-composition-analysis-itcentralstation
+- id: itcentralstation-com-products-black-duck-sca-reviews
   label: "PeerSpot/ITCentralStation: Black Duck #2 in SCA, 66% Large-Enterprise-Adoption, Stiche bei DevSecOps-CI/CD"
   url: https://www.itcentralstation.com/products/black-duck-sca-reviews
   type: review
-- id: microsoft-365-copilot-researcher-researcher-agent-microsoft
+- id: microsoft-com-en-us-microsoft-365-copilot-researcher
   label: Microsoft 365 Copilot mit Researcher-Agent als Enterprise-Recherche-Tool im M365-Bundle
   url: https://www.microsoft.com/en-us/microsoft-365/copilot/researcher
   type: vendor_doc
-- id: microsoft-365-copilot-researcher-excellence-it
+- id: excellence-it-co-uk-insights-microsoft-copilot-researcher-agent
   label: "Hands-on-Test: Researcher-Agent erzeugt strukturierten Report in 15 min, respektiert Domain-Constraints"
   url: https://excellence-it.co.uk/insights/microsoft-copilot-researcher-agent/
   type: review
-- id: microsoft-365-copilot-researcher-buckleyplanet
+- id: buckleyplanet-com-2025-12-copilot-agents-getting-real-work-done-with-the-researcher-agent
   label: "Praktiker-Blog: Researcher fuer Synthese und Decision-Support, Validation-Pass empfohlen"
   url: https://buckleyplanet.com/2025/12/copilot-agents-getting-real-work-done-with-the-researcher-agent/
   type: blog
-- id: microsoft-365-copilot-researcher-shimonifrah
+- id: shimonifrah-com-2026-04-14-microsoft-critique-runs-two-ai-models-against-each-other-for-better-research-my-first-look
   label: Critique-Modus laesst GPT generieren und Claude reviewen — Multi-Model-Architektur fuer Trust-Gap
   url: https://www.shimonifrah.com/2026/04/14/microsoft-critique-runs-two-ai-models-against-each-other-for-better-research-my-first-look/
   type: blog
-- id: perplexity-enterprise-inkl-deep-research-sonar-api-lmmarketcap
+- id: lmmarketcap-com-model-sonar-deep-research
   label: "Sonar Deep Research: Multi-Step-Retrieval-Modell, autonomes Quellen-Lesen und Synthese, Pricing $2/$8 pro M Token"
   url: https://lmmarketcap.com/model/sonar-deep-research
   type: review
-- id: perplexity-enterprise-inkl-deep-research-sonar-api-colinmcnamara
+- id: colinmcnamara-com-blog-perplexity-sonar-api-enterprise
   label: "Praktiker-Blog: Sonar API in IDE/Cline-Workflows, Echtzeit-Web-Connection als Schluesselvorteil ggue. statischen LLMs"
   url: https://colinmcnamara.com/blog/perplexity-sonar-api-enterprise
   type: blog
-- id: perplexity-enterprise-inkl-deep-research-sonar-api-multi-ai
+- id: multi-ai-ai-en-blog-perplexity-sonar-en
   label: Sonar Multi-Modell-Integration mit GPT-4o/Claude und SimpleQA-F-Score 0.858 — bester Faktualitaets-Score
   url: https://multi-ai.ai/en/blog/perplexity-sonar-en
   type: review
-- id: snyk-advisor-license-compliance-enterprise-snyk
+- id: docs-snyk-io-scan-with-snyk-snyk-open-source-scan-open-source-libraries-and-licenses-snyk-license-compliance-management
   label: Snyk License-Compliance kennzeichnet AGPL/GPL/SSPL in Direct- und Transitive-Deps
   url: https://docs.snyk.io/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management
   type: documentation
-- id: snyk-advisor-license-compliance-enterprise-aicodereview
+- id: aicodereview-cc-blog-snyk-vs-black-duck
   label: "Snyk vs Black Duck 2026: Snyk dev-first mit IDE/PR-Checks, Reachability und AI-Fix-Suggestions; Lizenz-Compliance basic"
   url: https://aicodereview.cc/blog/snyk-vs-black-duck
   type: review
-- id: snyk-advisor-license-compliance-enterprise-appsecsanta-licensing
+- id: appsecsanta-com-sca-tools-open-source-license-compliance
   label: "AppSec Santa Open-Source-License-Compliance-Vergleich: Snyk gut fuer Vulnerability + License in einem Tool"
   url: https://appsecsanta.com/sca-tools/open-source-license-compliance
   type: review
-- id: sonatype-lifecycle-mit-mcp-server-sonatype
+- id: guide-sonatype-com-mcp
   label: Sonatype MCP-Server gibt LLM-Copilots Zugriff auf Komponenten- und Vulnerability-Intelligence
   url: https://guide.sonatype.com/mcp
   type: vendor_doc
-- id: sonatype-lifecycle-mit-mcp-server-infoq
+- id: infoq-com-news-2026-03-sonatype-guide-safety-mcp-server
   label: "InfoQ: Sonatype Guide MCP als erster produktionsreifer MCP-Server fuer SCA — Snyk nur experimentell, Mend/OWASP-Dep-Check ohne MCP"
   url: https://www.infoq.com/news/2026/03/sonatype-guide-safety-mcp-server/
   type: news
-- id: sonatype-lifecycle-mit-mcp-server-github
+- id: github-com-sonatype-dependency-management-mcp-server
   label: "GitHub-Repo dependency-management-mcp-server: Komponenten-Versionswahl, CVE-Scan, License-Compliance-Tools fuer AI-Assistants"
   url: https://github.com/sonatype/dependency-management-mcp-server
   type: documentation
-- id: owasp-threat-dragon-ai-tool-github
+- id: github-com-infosecotb-threat-dragon-ai-tool
   label: LiteLLM-basiertes Tool mit STRIDE-Prompt + Validator, schreibt Ergebnisse zurueck in Threat-Dragon-Modelle.
   url: https://github.com/InfosecOTB/threat-dragon-ai-tool
   type: vendor_doc
-- id: owasp-threat-dragon-ai-tool-reddit
+- id: reddit-com-r-cybersecurity-comments-1rsll21-opensource-ai-tool-for-owasp-threat-dragon-that
   label: Veroeffentlichung in r/cybersecurity durch den Autor; positives Echo.
   url: https://www.reddit.com/r/cybersecurity/comments/1rsll21/opensource_ai_tool_for_owasp_threat_dragon_that/
   type: community
-- id: stride-gpt-github
+- id: github-com-mrwadams-stride-gpt
   label: "Funktionsumfang: STRIDE, Attack Trees, DREAD, Multi-Modal, OWASP LLM/ASI Top 10, Multi-Provider inkl. Ollama/LM Studio."
   url: https://github.com/mrwadams/stride-gpt
   type: vendor_doc
-- id: stride-gpt-aicodeshield
+- id: aicodeshield-com-blog-from-whiteboards-to-llms-automating-stride-threat-models-with-genai
   label: Praxisbericht eines AppSec-Engineers, der STRIDE-GPT lokal via Docker betreibt und in CI/CD einbettet.
   url: https://www.aicodeshield.com/blog/from-whiteboards-to-llms-automating-stride-threat-models-with-genai
   type: blog
-- id: stride-gpt-github-2
+- id: github-com-mrwadams-stride-gpt-issues-56
   label: Community fragt aktiv nach DFD-Generierung; Maintainer plant Mermaid-basierte DFDs.
   url: https://github.com/mrwadams/stride-gpt/issues/56
   type: community
-- id: threagile-threagile
+- id: threagile-io
   label: Open-Source-Toolkit, YAML-Architekturmodell, Rules-Engine, Docker/REST-Server.
   url: https://threagile.io/
   type: vendor_doc
-- id: threagile-github
+- id: github-com-threagile-threagile
   label: Aktives Repo (~740 Stars), MIT-Lizenz, Stand 2026.
   url: https://github.com/Threagile/threagile
   type: vendor_doc
-- id: threagile-reddit
+- id: reddit-com-r-cybersecurity-comments-1regk4k-threat-modeling-sessions-that-actually-work-whats
   label: Threagile wird als ein Standard-Vergleichswert in r/cybersecurity genannt.
   url: https://www.reddit.com/r/cybersecurity/comments/1regk4k/threat_modeling_sessions_that_actually_work_whats/
   type: community
-- id: aws-threat-designer-github
+- id: github-com-awslabs-threat-designer
   label: Architekturanalyse, iteratives Refinement, Sentry-Assistent, CLI mit Bedrock/OpenAI.
   url: https://github.com/awslabs/threat-designer
   type: vendor_doc
-- id: aws-threat-designer-amazon
+- id: aws-amazon-com-blogs-machine-learning-accelerate-threat-modeling-with-generative-ai
   label: Offizieller AWS-Blogpost beschreibt Bedrock + Claude Sonnet 3.7 als Standard-Backend.
   url: https://aws.amazon.com/blogs/machine-learning/accelerate-threat-modeling-with-generative-ai
   type: vendor_doc
-- id: claude-code-security-review-threat-modeling-skill-pawanpatra
+- id: pawanpatra-com-a-developers-guide-to-anthropics-claude-code-security-for-proactive-threat-modeling
   label: Beschreibung der Claude-Code-Security-Funktion und /security-review-Workflow.
   url: https://pawanpatra.com/a-developers-guide-to-anthropics-claude-code-security-for-proactive-threat-modeling/
   type: blog
-- id: claude-code-security-review-threat-modeling-skill-github
+- id: github-com-alirezarezvani-claude-skills-blob-main-engineering-team-senior-security-scripts-threat-modeler-py
   label: Beispiel fuer eine STRIDE-Threat-Modeler-Skill-Implementierung in Claude Code.
   url: https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/senior-security/scripts/threat_modeler.py
   type: vendor_doc
-- id: claude-code-security-review-threat-modeling-skill-github-2
+- id: xvnpw-github-io-posts-leveraging-llms-for-threat-modelling-claude-3-vs-gpt-4
   label: Praktiker-Vergleich Claude vs GPT-4 fuer Threat Modeling, Claude leicht vorne.
   url: https://xvnpw.github.io/posts/leveraging-llms-for-threat-modelling-claude-3-vs-gpt-4/
   type: blog
-- id: csa-maestro-threat-analyzer-github
+- id: github-com-cloudsecurityalliance-maestro
   label: MAESTRO-Threat-Analyzer fuer Multi-Agent-Systeme, Multi-Provider inkl. Ollama.
   url: https://github.com/CloudSecurityAlliance/MAESTRO
   type: vendor_doc
-- id: csa-maestro-threat-analyzer-bishopfox
+- id: bishopfox-com-blog-taking-maestro-in-stride-ai-threat-modeling-frameworks
   label: "Bishop-Fox-Bewertung: STRIDE + MAESTRO komplementaer fuer agentic AI."
   url: https://bishopfox.com/blog/taking-maestro-in-stride-ai-threat-modeling-frameworks
   type: blog
-- id: csa-maestro-threat-analyzer-cloudsecurityalliance
+- id: cloudsecurityalliance-org-blog-2026-02-11-applying-maestro-to-real-world-agentic-ai-threat-models-from-framework-to-ci-cd-pipeline
   label: Praktiker-Bericht (TITO) zur MAESTRO-Operationalisierung in CI/CD.
   url: https://cloudsecurityalliance.org/blog/2026/02/11/applying-maestro-to-real-world-agentic-ai-threat-models-from-framework-to-ci-cd-pipeline
   type: blog
-- id: owasp-pytm-pytmgpt-github
+- id: github-com-owasp-pytm
   label: pytm erzeugt DFD/Sequence/Threat-Reports aus Code; pytmGPT generiert Modelle aus Prosa.
   url: https://github.com/OWASP/pytm
   type: vendor_doc
-- id: owasp-secopstm-owasp
+- id: owasp-org-www-project-secopstm
   label: SecOpsTM erweitert pytm um LLM-Threats und RAG-Pipeline, fully offline-tauglich.
   url: https://owasp.org/www-project-secopstm/
   type: vendor_doc
-- id: sd-elements-navigator-ai-co-uk
+- id: silicon-co-uk-press-release-security-compass-expands-industry-leading-ai-security-content-and-introduces-ai-powered-navigator-beta
   label: Navigator AI generiert Threat-Modelle aus GitHub-Repos und beantwortet Survey-Fragen automatisch.
   url: https://www.silicon.co.uk/press-release/security-compass-expands-industry-leading-ai-security-content-and-introduces-ai-powered-navigator-beta
   type: news
-- id: sd-elements-navigator-ai-sdelements
+- id: docs-sdelements-com-master-guide-docs-threat-modeling-diagrams-html
   label: Diagramm-zu-Threats Beta in SD Elements 2023.4+.
   url: https://docs.sdelements.com/master/guide/docs/threat_modeling/diagrams.html
   type: documentation
-- id: threatforge-github
+- id: github-com-exit-zero-labs-threat-forge
   label: OSS-Desktop-App mit git-diffbaren YAML-Modellen, deterministische STRIDE-Engine, optionaler AI-Layer.
   url: https://github.com/exit-zero-labs/threat-forge
   type: vendor_doc
-- id: threatshield-threatshield-eu
+- id: threatshield-eu
   label: EU-orientiertes AI-Threat-Modeling mit Self-Hosting-Option.
   url: https://threatshield.eu/
   type: vendor_doc
-- id: paranoid-github
+- id: github-com-theastiv-paranoid
   label: STRIDE + MAESTRO Dual-Framework, 362 deterministische Patterns, Ollama-Air-Gap, SQLite-Persistenz.
   url: https://github.com/theAstiv/paranoid
   type: vendor_doc
-- id: paranoid-pypi
+- id: pypi-org-project-paranoid-cli
   label: PyPI-Listung paranoid-cli v1.3.0; Apache-2.0, Python 3.12+, Status Production/Stable, Keywords STRIDE/MAESTRO/DREAD.
   url: https://pypi.org/project/paranoid-cli/
   type: vendor_doc

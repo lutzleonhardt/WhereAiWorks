@@ -9,7 +9,7 @@ goal_label: Audit-Logging, Credential-Isolation und Sub-Processor-Listing rund u
 suitability: conditional
 rationale: Claude Code liefert mit Hooks (PreToolUse/PostToolUse), Permission-Modell und Bedrock/Vertex-EU-Deployment operative Bausteine, aus denen sich ein DORA-tauglicher Harness zusammensetzen lässt. Wer den Sub-Processor-Fußabdruck minimieren muss, findet in Sourcegraph Cody (self-hosted, BYO-LLM) eine Alternative mit vergleichbarem Audit-Logging und RBAC.
 tools:
-  - id: apiiro-ai-augmented-application-risk-platform
+  - id: apiiro-com-platform-ai-code-security
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -24,8 +24,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: apiiro-ai-augmented-application-risk-platform-apiiro
-  - id: claude-code
+      - id: apiiro-com-platform-ai-code-security
+  - id: claude-com-product-claude-code
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -44,9 +44,9 @@ tools:
       complaints:
         - Default-Risiko bei --dangerously-skip-permissions
     sources:
-      - id: claude-code-permission-modes-bedrock-vertex-deployment-hooks-anthropic
-      - id: claude-code-permission-modes-bedrock-vertex-deployment-hooks-anthropic-2
-  - id: copilot
+      - id: docs-anthropic-com-en-docs-claude-code-security
+      - id: docs-anthropic-com-en-docs-claude-code-hooks
+  - id: github-com-features-copilot
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -65,9 +65,9 @@ tools:
       complaints:
         - Audit-Granularität für regulierte Sektoren teils zu grob
     sources:
-      - id: github-copilot-enterprise-audit-log-content-exclusions-github
-      - id: github-copilot-enterprise-audit-log-content-exclusions-github-2
-  - id: gitpod-flex-sicheres-coding-agent-workspace
+      - id: docs-github-com-en-copilot-managing-copilot-managing-copilot-for-your-enterprise-reviewing-activity-related-to-github-copilot-in-your-enterprise
+      - id: docs-github-com-en-copilot-managing-copilot-managing-copilot-for-your-enterprise-excluding-content-from-github-copilot
+  - id: gitpod-io-flex
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -85,8 +85,8 @@ tools:
       complaints:
         - Komplexität der Self-hosted Installation
     sources:
-      - id: gitpod-flex-sicheres-coding-agent-workspace-gitpod
-  - id: snyk-ai-trust-platform-deepcode-ai-guardrails
+      - id: gitpod-io-flex
+  - id: snyk-io-platform-ai-trust
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -100,8 +100,8 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: snyk-ai-trust-platform-deepcode-ai-guardrails-snyk
-  - id: cloudflare-ai-gateway
+      - id: snyk-io-platform-ai-trust
+  - id: developers-cloudflare-com-ai-gateway
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -111,8 +111,8 @@ tools:
       - Logging-Retention konfigurieren, sonst kein DORA-Beweis
       - Coding-Agent-Integration ist Eigenbau (Endpoint-Override)
     sources:
-      - id: cloudflare-ai-gateway-cloudflare
-  - id: lakera-guard
+      - id: developers-cloudflare-com-ai-gateway
+  - id: lakera-ai
     fit: partial
     enterprise_readiness: team_ready
     confidence: low
@@ -122,8 +122,8 @@ tools:
       - Tiefe gegen MCP-/Tool-Use-Angriffe schwankt mit Modell
       - Pricing für Enterprise-Volumen verhandeln
     sources:
-      - id: lakera-guard-lakera
-  - id: litellm-proxy-berriai
+      - id: lakera-ai
+  - id: github-com-berriai-litellm
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -133,8 +133,8 @@ tools:
       - Audit-Log-Persistenz und Retention selbst betreiben
       - Plattform-Team-Investition nötig
     sources:
-      - id: litellm-proxy-berriai-github
-  - id: portkey-ai-gateway
+      - id: github-com-berriai-litellm
+  - id: portkey-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -144,8 +144,8 @@ tools:
       - Sub-Processor-Profil bei SaaS US-zentriert
       - Coding-Agent-Endpoint-Override muss organisatorisch durchgesetzt werden
     sources:
-      - id: portkey-ai-gateway-portkey
-  - id: sourcegraph-cody
+      - id: portkey-ai
+  - id: sourcegraph-com-cody
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -163,9 +163,9 @@ tools:
       complaints:
         - Agent-Tiefe hinter Claude Code/Cursor
     sources:
-      - id: sourcegraph-cody-enterprise-self-hosted-byo-llm-audit-sourcegraph
-      - id: sourcegraph-cody-toolchase-byo-llm-compliance-independent
-  - id: tabnine
+      - id: sourcegraph-com-docs-cody-clients-enable-cody-enterprise
+      - id: toolchase-com-tool-cody
+  - id: tabnine-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -183,8 +183,8 @@ tools:
       complaints:
         - Modellqualität hinter Frontier-Modellen
     sources:
-      - id: tabnine-enterprise-air-gapped-self-hosted-tabnine
-      - id: tabnine-gartner-peer-insights-regulated-industry
+      - id: tabnine-com-enterprise
+      - id: gartner-com-reviews-market-ai-code-assistants-vendor-tabnine-product-tabnine
 start_here: "Einstieg über Claude Code auf Bedrock EU: Hooks als auditfähige Pipeline verdrahten, Command-Deny-Lists aktivieren und alle MCP-Server in der Sub-Processor-Liste erfassen. Parallel DPA und Revisionseinbindung organisatorisch klären — ohne diesen Schritt bleibt die technische Konfiguration ohne Nachweiskraft."
 caveats: Der Harness ist Plattform- und Architektur-Disziplin, keine Tool-Auswahl — ohne Plattformteam, das Hooks und Credential-Isolation betreibt, bleibt das Setup wirkungslos. Kein Anchor-Tool liefert out-of-the-box eine vollständige DORA-Lösung; Audit-Export, Retention und Sub-Processor-Tracking erfordern Eigenbau-Anteile.
 sources: []

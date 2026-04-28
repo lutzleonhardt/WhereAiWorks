@@ -8,7 +8,7 @@ goal_label: Weniger Boilerplate tippen
 suitability: good_fit
 rationale: Code-Completion für bekannte Muster und Boilerplate funktioniert zuverlässig. Bei gut verstandenem Code spart man klar messbar Tippzeit; Reviews bleiben trotzdem nötig.
 tools:
-  - id: jetbrains-ai-assistant-commit-message
+  - id: jetbrains-com-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -32,11 +32,11 @@ tools:
         - Credits brennen schnell ab
         - Autocomplete-Qualität hinter Cursor
     sources:
-      - id: jetbrains-ai-devtoolsreview
-      - id: jetbrains-ai-assistant-mit-junie-vibecodedthis
-      - id: jetbrains-ai-assistant-mit-junie-jetbrains-jetbrains-com-help-ai-assistant-generate-unit-tests-html
-      - id: jetbrains-ai-assistant-mit-junie-reddit
-  - id: tabnine
+      - id: devtoolsreview-com-reviews-jetbrains-ai-review
+      - id: vibecodedthis-com-reviews-jetbrains-ai-review-2026
+      - id: jetbrains-com-help-ai-assistant-generate-unit-tests-html
+      - id: reddit-com-r-claudeai-comments-1rp9a57-i-analyzed-15-competitors-in-the-ai-coding
+  - id: tabnine-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -60,10 +60,10 @@ tools:
         - Suggestions schwächer als Konkurrenz
         - Wirkt feature-mäßig hinter Copilot/Cursor zurück
     sources:
-      - id: tabnine-tabnine
-      - id: tabnine-medium
-      - id: tabnine-reddit
-  - id: aws-amazon-q-developer-debug-diagnose
+      - id: docs-tabnine-com-main-software-development-with-tabnine-tabnine-chat
+      - id: medium-com-tarxemo-i-tested-5-ai-coding-assistants-in-production-heres-what-actually-worked-6ad698951152
+      - id: reddit-com-r-webdev-comments-1h20eq5-which-one-to-use-copilot-tabnine-codeium
+  - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -87,9 +87,9 @@ tools:
         - Außerhalb AWS unbrauchbar
         - Suggestions schwächer als Copilot
     sources:
-      - id: amazon-q-developer-awesomeagents
-      - id: amazon-q-developer-amazon-docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
-      - id: amazon-q-developer-toolstac
+      - id: awesomeagents-ai-reviews-review-amazon-q-developer
+      - id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
+      - id: toolstac-com-compare-cursor-github-copilot-windsurf-codeium-amazon-q-developer-comprehensive-developer-comparison
   - id: continue-dev
     fit: conditional
     enterprise_readiness: team_ready
@@ -114,9 +114,9 @@ tools:
         - UX hinter Cursor/Copilot
         - Mehr Konfigurationsaufwand
     sources:
-      - id: continue-dev-aicodingcompare
-      - id: continue-dev-jackson
-  - id: google-gemini-code-assist
+      - id: aicodingcompare-com-tool-continue
+      - id: jackson-dev-post-cody-hates-reset
+  - id: cloud-google-com-products-gemini-code-assist
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -133,9 +133,9 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: google-gemini-code-assist-vibecoding-app
-      - id: google-gemini-code-assist-google-cloud-google-com-gemini-docs-codeassist-code-customization
-  - id: sourcegraph-cody
+      - id: vibecoding-app-blog-tabnine-review
+      - id: cloud-google-com-gemini-docs-codeassist-code-customization
+  - id: sourcegraph-com-cody
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -159,11 +159,11 @@ tools:
         - Free/Pro Abkündigung enttäuschte Community
         - $59/User/Monat schließt Individuen aus
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
-      - id: sourcegraph-cody-sourcegraph-2-sourcegraph-com-docs-cody-enterprise
-      - id: sourcegraph-cody-sourcegraph-3
-      - id: continue-dev-jackson
-  - id: tabby
+      - id: sourcegraph-com-docs-cody-capabilities-commands
+      - id: sourcegraph-com-docs-cody-enterprise
+      - id: docs-sourcegraph-com-docs-cody-enterprise-model-configuration
+      - id: jackson-dev-post-cody-hates-reset
+  - id: tabbyml-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -180,9 +180,9 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: tabby-reddit
-      - id: tabby-tabbyml
-  - id: lurus-code
+      - id: reddit-com-r-webdev-comments-1rtrgmj-built-an-ai-coding-assistant-finder-filter-and-json
+      - id: tabbyml-com
+  - id: code-lurus-ai
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -192,7 +192,7 @@ tools:
       - Keine ISO 27001 / SOC 2-Zertifikate ersichtlich
       - Eher Coding-Agent als reines Inline-Completion-Tool
     sources:
-      - id: lurus-code-lurus
+      - id: code-lurus-ai-en
 start_here: JetBrains-Shops starten mit JetBrains AI Assistant — Mellum läuft lokal, für reine Inline-Completion ist keine DPIA erforderlich. Wer IDE-unabhängig oder cloud-neutral bleiben muss, prüft Tabnine (air-gapped) oder Continue.dev mit Azure-OpenAI-Frankfurt-Backend. Einen Monat Acceptance-Rate grob mitführen, bevor weitere Workflows auf dem Tool aufbauen.
 caveats: "Übermäßiges Vertrauen in Generiertes ohne Review ist das Hauptrisiko. Realistische Erwartung: 20–30% subjektiv, kein 10x."
 sources: []

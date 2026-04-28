@@ -1,19 +1,19 @@
-- id: claude-code
+- id: claude-com-product-claude-code
   name: Claude Code
   category: coding
   url: https://claude.com/product/claude-code
   maturity: production
-- id: copilot
+- id: github-com-features-copilot
   name: GitHub Copilot
   category: coding
   url: https://github.com/features/copilot
   maturity: production
-- id: sourcegraph-cody
+- id: sourcegraph-com-cody
   name: Sourcegraph Cody
   category: coding
   url: https://sourcegraph.com/cody
   maturity: production
-- id: tabnine
+- id: tabnine-com
   name: Tabnine
   category: coding
   url: https://www.tabnine.com
@@ -23,202 +23,202 @@
   category: coding
   url: https://www.continue.dev/
   maturity: production
-- id: jetbrains-ai-assistant
+- id: jetbrains-com-ai
   name: JetBrains AI Assistant (mit Junie)
   category: coding
   url: https://www.jetbrains.com/ai/
   maturity: production
-- id: cursor
+- id: cursor-com
   name: Cursor
   category: coding
   url: https://cursor.com
   maturity: production
-- id: jetbrains-ai-assistant-commit-message
-  name: JetBrains AI Assistant (mit Junie)
-  category: coding
-  url: https://www.jetbrains.com/ai/
-  maturity: production
-- id: aider
+- id: aider-chat
   name: Aider
   category: coding
   url: https://aider.chat
   maturity: production
-- id: aws-amazon-q-developer-debug-diagnose
+- id: aws-amazon-com-q-developer
   name: AWS Amazon Q Developer (Debug/Diagnose)
   category: coding
   url: https://aws.amazon.com/q/developer/
   maturity: production
-- id: atlassian-rovo
+- id: atlassian-com-software-rovo
   name: Atlassian Rovo
   category: other
   url: https://www.atlassian.com/software/rovo
   maturity: production
-- id: jetbrains-junie
+- id: jetbrains-com-junie
   name: JetBrains Junie
   category: coding
   url: https://www.jetbrains.com/junie/
   maturity: production
-- id: lurus-code
+- id: code-lurus-ai
   name: Lurus Code
   category: other
   url: https://code.lurus.ai
   maturity: production
-- id: openai-codex
+- id: openai-com-codex
   name: OpenAI Codex
   category: coding
   url: https://openai.com/codex/
   maturity: production
-- id: apiiro-ai-augmented-application-risk-platform
+- id: apiiro-com-platform-ai-code-security
   name: Apiiro (AI-Augmented Application Risk Platform)
   category: other
   url: https://apiiro.com/platform/ai-code-security/
   maturity: production
-- id: gitpod-flex-sicheres-coding-agent-workspace
+- id: gitpod-io-flex
   name: Gitpod Flex (Sicheres Coding-Agent-Workspace)
   category: other
   url: https://www.gitpod.io/flex
   maturity: production
-- id: snyk-ai-trust-platform-deepcode-ai-guardrails
+- id: snyk-io-platform-ai-trust
   name: Snyk AI Trust Platform / DeepCode AI Guardrails
   category: coding
   url: https://snyk.io/platform/ai-trust/
   maturity: production
-- id: cloudflare-ai-gateway
+- id: developers-cloudflare-com-ai-gateway
   name: Cloudflare AI Gateway
   category: other
   url: https://developers.cloudflare.com/ai-gateway/
   maturity: production
-- id: lakera-guard
+- id: lakera-ai
   name: Lakera Guard
   category: other
   url: https://www.lakera.ai/
   maturity: production
-- id: litellm-proxy-berriai
+- id: github-com-berriai-litellm
   name: LiteLLM Proxy (BerriAI)
   category: other
   url: https://github.com/BerriAI/litellm
   maturity: production
-- id: portkey-ai-gateway
+- id: portkey-ai
   name: Portkey AI Gateway
   category: other
   url: https://portkey.ai/
   maturity: production
-- id: honeycomb-query-assistant-ai
+- id: honeycomb-io-ai
   name: Honeycomb Query Assistant / AI
   category: other
   url: https://www.honeycomb.io/ai
   maturity: production
-- id: new-relic-ai
+- id: newrelic-com-platform-new-relic-ai
   name: New Relic AI
   category: other
   url: https://newrelic.com/platform/new-relic-ai
   maturity: production
-- id: rookout-dynatrace-live-debugger-ai
+- id: dynatrace-com-platform-live-debugger
   name: Rookout (Dynatrace) Live Debugger + AI
   category: other
   url: https://www.dynatrace.com/platform/live-debugger/
   maturity: production
-- id: augment-code
+- id: augmentcode-com
   name: Augment Code
   category: other
   url: https://www.augmentcode.com
   maturity: production
-- id: google-gemini-code-assist
+- id: cloud-google-com-products-gemini-code-assist
   name: Google Gemini Code Assist
   category: other
   url: https://cloud.google.com/products/gemini/code-assist
   maturity: production
-- id: komodor
+- id: komodor-com
   name: Komodor
   category: other
   url: https://komodor.com
   maturity: production
-- id: cline
+- id: github-com-cline-cline
   name: Cline
   category: coding
   url: https://github.com/cline/cline
   maturity: production
-- id: datadog-bits-ai
+- id: datadoghq-com-product-bits-ai
   name: Datadog Bits AI
   category: other
   url: https://www.datadoghq.com/product/bits-ai/
   maturity: production
-- id: sentry-seer
+- id: sentry-io-product-ai-in-sentry-seer
   name: Sentry Seer
   category: other
   url: https://sentry.io/product/ai-in-sentry/seer/
   maturity: production
-- id: tabby
+- id: tabbyml-com
   name: Tabby
   category: coding
   url: https://www.tabbyml.com
   maturity: production
-- id: sap-joule-for-developers
+- id: sap-com-products-artificial-intelligence-ai-assistant-html
   name: SAP Joule for Developers
   category: other
   url: https://www.sap.com/products/artificial-intelligence/ai-assistant.html
   maturity: production
-- id: windsurf-codeium
+- id: windsurf-com
   name: Windsurf (Codeium)
   category: coding
   url: https://windsurf.com
   maturity: production
-- id: ibm-watsonx-code-assistant-for-z
+- id: ibm-com-products-watsonx-code-assistant-z
   name: IBM watsonx Code Assistant for Z
   category: other
   url: https://www.ibm.com/products/watsonx-code-assistant-z
   maturity: production
-- id: gemini-code-assist-pr-review-and-summary-in-github
+- id: developers-google-com-gemini-code-assist-docs-review-github-code
   name: Gemini Code Assist (PR review & summary in GitHub)
   category: coding
   url: https://developers.google.com/gemini-code-assist/docs/review-github-code
   maturity: production
-- id: opencommit
+- id: github-com-di-sukharev-opencommit
   name: OpenCommit
   category: coding
   url: https://github.com/di-sukharev/opencommit
   maturity: production
-- id: atlassian-rovo-dev-bitbucket-ai-pr-descriptions
+- id: support-atlassian-com-bitbucket-cloud-docs-use-ai-to-generate-pull-request-descriptions
   name: Atlassian Rovo Dev / Bitbucket AI PR descriptions
   category: other
   url: https://support.atlassian.com/bitbucket-cloud/docs/use-ai-to-generate-pull-request-descriptions/
   maturity: production
-- id: coderabbit-pr-summary
+- id: coderabbit-ai
   name: CodeRabbit (PR summary)
   category: coding
   url: https://www.coderabbit.ai
   maturity: production
-- id: gitlab-duo-merge-request-summary-and-commit-message
+- id: docs-gitlab-com-ee-user-project-merge-requests-duo-in-merge-requests-html
   name: GitLab Duo (Merge Request Summary & Commit Message)
   category: coding
   url: https://docs.gitlab.com/ee/user/project/merge_requests/duo_in_merge_requests.html
   maturity: production
-- id: qodo-merge-formerly-pr-agent
+- id: qodo-ai-products-qodo-merge
   name: Qodo Merge (formerly PR-Agent)
   category: coding
   url: https://www.qodo.ai/products/qodo-merge/
   maturity: production
-- id: factory-droids
+- id: factory-ai
   name: Factory Droids
   category: coding
   url: https://factory.ai/
   maturity: production
-- id: google-jules
+- id: jules-google
   name: Google Jules
   category: coding
   url: https://jules.google/
   maturity: production
-- id: openhands-formerly-opendevin
+- id: all-hands-dev
   name: OpenHands (formerly OpenDevin)
   category: coding
   url: https://www.all-hands.dev/
   maturity: production
-- id: devin
+- id: devin-ai
   name: Devin
   category: coding
   url: https://devin.ai/
   maturity: production
-- id: coder-com-ai-governance-layer
+- id: sourcegraph-com
+  name: Sourcegraph (Cody + Batch Changes)
+  category: coding
+  url: https://sourcegraph.com
+  maturity: production
+- id: coder-com-solutions-ai-governance
   name: Coder.com (AI Governance Layer)
   category: other
   url: https://coder.com/solutions/ai-governance
@@ -228,17 +228,17 @@
   category: other
   url: https://bump.sh
   maturity: production
-- id: readme
+- id: readme-com
   name: ReadMe
   category: other
   url: https://readme.com
   maturity: production
-- id: stainless
+- id: stainless-com
   name: Stainless
   category: other
   url: https://www.stainless.com
   maturity: production
-- id: document360
+- id: document360-com
   name: Document360
   category: other
   url: https://document360.com
@@ -248,117 +248,112 @@
   category: other
   url: https://refact.ai
   maturity: production
-- id: stoplight
+- id: stoplight-io
   name: Stoplight
   category: other
   url: https://stoplight.io
   maturity: production
-- id: mintlify
+- id: mintlify-com
   name: Mintlify
   category: other
   url: https://mintlify.com
   maturity: production
-- id: swimm
+- id: swimm-io
   name: Swimm
   category: other
   url: https://swimm.io
   maturity: production
-- id: sourcegraph-cody-batch-changes
-  name: Sourcegraph (Cody + Batch Changes)
-  category: coding
-  url: https://sourcegraph.com
-  maturity: production
-- id: qodo
+- id: qodo-ai
   name: Qodo
   category: coding
   url: https://www.qodo.ai
   maturity: production
-- id: zencoder
+- id: zencoder-ai
   name: Zencoder
   category: coding
   url: https://zencoder.ai
   maturity: production
-- id: vault
+- id: getvault-dev
   name: Vault
   category: other
   url: https://www.getvault.dev/
   maturity: production
-- id: vostracode
+- id: vostracode-com
   name: VostraCode
   category: other
   url: https://vostracode.com/
   maturity: production
-- id: opencode
+- id: opencode-ai
   name: OpenCode
   category: coding
   url: https://opencode.ai
   maturity: production
-- id: google-gemini-cli
+- id: github-com-google-gemini-gemini-cli
   name: Google Gemini CLI
   category: coding
   url: https://github.com/google-gemini/gemini-cli
   maturity: production
-- id: goose
+- id: block-github-io-goose
   name: Goose
   category: coding
   url: https://block.github.io/goose/
   maturity: production
-- id: open-interpreter
+- id: github-com-openinterpreter-open-interpreter
   name: Open Interpreter
   category: coding
   url: https://github.com/openinterpreter/open-interpreter
   maturity: production
-- id: wave-terminal
+- id: waveterm-dev
   name: Wave Terminal
   category: coding
   url: https://www.waveterm.dev
   maturity: production
-- id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant
+- id: developers-redhat-com-products-ansible-overview-lightspeed
   name: Red Hat Ansible Lightspeed (mit watsonx Code Assistant)
   category: other
   url: https://developers.redhat.com/products/ansible/overview/lightspeed
   maturity: production
-- id: kubectl-ai
+- id: github-com-googlecloudplatform-kubectl-ai
   name: kubectl-ai
   category: other
   url: https://github.com/GoogleCloudPlatform/kubectl-ai
   maturity: production
-- id: anteroom
+- id: anteroom-ai
   name: Anteroom
   category: other
   url: https://anteroom.ai/
   maturity: production
-- id: exasol-espresso-ai-lab
+- id: exasol-com-de
   name: Exasol Espresso AI Lab
   category: other
   url: https://www.exasol.com/de/
   maturity: production
-- id: oracle-select-ai
+- id: oracle-com-autonomous-database-select-ai
   name: Oracle Select AI
   category: other
   url: https://www.oracle.com/autonomous-database/select-ai/
   maturity: production
-- id: thoughtspot-sage
+- id: thoughtspot-com-product-sage-ai
   name: ThoughtSpot Sage
   category: other
   url: https://www.thoughtspot.com/product/sage-ai
   maturity: production
-- id: amazon-q-for-quicksight-and-redshift
+- id: aws-amazon-com-q
   name: Amazon Q for QuickSight & Redshift
   category: data
   url: https://aws.amazon.com/q/
   maturity: production
-- id: databricks-genie
+- id: databricks-com-product-ai-bi-genie
   name: Databricks Genie
   category: data
   url: https://www.databricks.com/product/ai-bi/genie
   maturity: production
-- id: google-bigquery-data-canvas-gemini-in-bigquery
+- id: cloud-google-com-bigquery-docs-data-canvas
   name: Google BigQuery Data Canvas / Gemini in BigQuery
   category: data
   url: https://cloud.google.com/bigquery/docs/data-canvas
   maturity: production
-- id: snowflake-cortex-analyst
+- id: docs-snowflake-com-en-user-guide-snowflake-cortex-cortex-analyst
   name: Snowflake Cortex Analyst
   category: data
   url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst
@@ -368,182 +363,157 @@
   category: data
   url: https://vanna.ai/
   maturity: production
-- id: aikido-security-ai-autofix
+- id: aikido-dev
   name: Aikido Security (AI AutoFix)
   category: coding
   url: https://www.aikido.dev/
   maturity: production
-- id: checkmarx-one-ai-security-champion
+- id: checkmarx-com-product-ai-security
   name: Checkmarx One AI Security Champion
   category: coding
   url: https://checkmarx.com/product/ai-security/
   maturity: production
-- id: endor-labs-magic-patches-ai-remediation
+- id: endorlabs-com
   name: Endor Labs (Magic Patches / AI Remediation)
   category: coding
   url: https://www.endorlabs.com/
   maturity: production
-- id: mend-io-mend-ai-renovate-ai
+- id: mend-io
   name: Mend.io (Mend AI / Renovate AI)
   category: coding
   url: https://www.mend.io/
   maturity: production
-- id: sonarqube-ai-codefix
+- id: sonarsource-com-products-sonarqube-ai-codefix
   name: SonarQube AI CodeFix
   category: coding
   url: https://www.sonarsource.com/products/sonarqube/ai-codefix/
   maturity: production
-- id: code-intelligence-ci-spark-ci-sense
+- id: code-intelligence-com
   name: Code Intelligence (CI Spark / CI Sense)
   category: other
   url: https://www.code-intelligence.com/
   maturity: production
-- id: qwiet-ai-prezero
+- id: qwiet-ai
   name: Qwiet AI (preZero)
   category: other
   url: https://qwiet.ai/
   maturity: production
-- id: gitlab-duo-vulnerability-resolution
+- id: about-gitlab-com-gitlab-duo
   name: GitLab Duo Vulnerability Resolution
   category: coding
   url: https://about.gitlab.com/gitlab-duo/
   maturity: production
-- id: semgrep-assistant
+- id: semgrep-dev-products-semgrep-assistant
   name: Semgrep Assistant
   category: coding
   url: https://semgrep.dev/products/semgrep-assistant
   maturity: production
-- id: snyk-deepcode-ai-fix
+- id: snyk-io-platform-deepcode-ai
   name: Snyk DeepCode AI Fix
   category: coding
   url: https://snyk.io/platform/deepcode-ai/
   maturity: production
-- id: veracode-fix
+- id: veracode-com-products-veracode-fix
   name: Veracode Fix
   category: coding
   url: https://www.veracode.com/products/veracode-fix
   maturity: production
-- id: keploy
+- id: keploy-io
   name: Keploy
   category: testing
   url: https://keploy.io/
   maturity: production
-- id: diffblue-cover
+- id: diffblue-com
   name: Diffblue Cover
   category: testing
   url: https://www.diffblue.com/
   maturity: production
-- id: github-copilot-chat
-  name: GitHub Copilot
-  category: coding
-  url: https://github.com/features/copilot
-  maturity: production
-- id: jetbrains-ai-assistant-mit-junie
-  name: JetBrains AI Assistant (mit Junie)
-  category: coding
-  url: https://www.jetbrains.com/ai/
-  maturity: production
-- id: github-copilot-chat-workspace
-  name: GitHub Copilot
-  category: coding
-  url: https://github.com/features/copilot
-  maturity: production
-- id: github-copilot-workspace-chat-workspace
-  name: GitHub Copilot
-  category: coding
-  url: https://github.com/features/copilot
-  maturity: production
-- id: jetbrains-ai-assistant-junie
-  name: JetBrains AI Assistant (mit Junie)
-  category: coding
-  url: https://www.jetbrains.com/ai/
-  maturity: production
-- id: sap-leanix
+- id: leanix-net-en
   name: SAP LeanIX
   category: <coding|testing|discovery|support|...>
   url: https://www.leanix.net/en/
   maturity: production
-- id: chatgpt-openai
+- id: chatgpt-com
   name: ChatGPT (OpenAI)
   category: productivity
   url: https://chatgpt.com
   maturity: production
-- id: codacy-ai-inventory
+- id: codacy-com-ai-inventory
   name: Codacy AI Inventory
   category: coding
   url: https://www.codacy.com/ai-inventory
   maturity: production
-- id: microsoft-defender-for-cloud-apps-purview-dspm-for-ai
+- id: learn-microsoft-com-en-us-security-security-for-ai-discover
   name: Microsoft Defender for Cloud Apps + Purview DSPM for AI
   category: other
   url: https://learn.microsoft.com/en-us/security/security-for-ai/discover
   maturity: production
-- id: reco
+- id: reco-ai-use-cases-ai-usage-control
   name: Reco
   category: other
   url: https://www.reco.ai/use-cases/ai-usage-control
   maturity: production
-- id: annexora
+- id: annexora-com
   name: Annexora
   category: other
   url: https://annexora.com/
   maturity: production
-- id: collibra-ai-governance
+- id: collibra-com-products-ai-governance
   name: Collibra AI Governance
   category: other
   url: https://www.collibra.com/products/ai-governance
   maturity: production
-- id: ibm-watsonx-governance
+- id: ibm-com-products-watsonx-governance
   name: IBM watsonx.governance
   category: other
   url: https://www.ibm.com/products/watsonx-governance
   maturity: production
-- id: jfrog-ai-catalog-aibom
+- id: jfrog-com-learn-ai-security-aibom
   name: JFrog AI Catalog (AIBOM)
   category: other
   url: https://jfrog.com/learn/ai-security/aibom/
   maturity: production
-- id: kertos
+- id: kertos-io-plattform-ai-inventory
   name: Kertos
   category: other
   url: https://kertos.io/plattform/ai-inventory
   maturity: production
-- id: nudge-security-ai-agent-discovery
+- id: nudgesecurity-com-post-best-ai-security-tools
   name: Nudge Security AI Agent Discovery
   category: other
   url: https://www.nudgesecurity.com/post/best-ai-security-tools
   maturity: production
-- id: onetrust-ai-governance
+- id: onetrust-com-de-products-data-access-governance
   name: OneTrust AI Governance
   category: other
   url: https://www.onetrust.com/de/products/data-access-governance/
   maturity: production
-- id: xenetra-cross-identity
+- id: crossidentity-com-xenetra-html
   name: Xenetra (Cross Identity)
   category: other
   url: https://www.crossidentity.com/xenetra.html
   maturity: production
-- id: cisco-ai-defense-ai-bom
+- id: github-com-cisco-ai-defense-aibom
   name: Cisco AI Defense AI-BOM
   category: coding
   url: https://github.com/cisco-ai-defense/aibom
   maturity: production
-- id: snyk-ai-bom
+- id: docs-snyk-io-developer-tools-snyk-cli-commands-aibom
   name: Snyk AI-BOM
   category: coding
   url: https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom
   maturity: production
-- id: wiz-ai-spm-ai-bom
+- id: wiz-io-solutions-ai-security-posture-management
   name: Wiz AI-SPM (AI-BOM)
   category: other
   url: https://www.wiz.io/solutions/ai-security-posture-management
   maturity: production
-- id: plantuml-mit-c4-plantuml
+- id: plantuml-com
   name: PlantUML (mit C4-PlantUML)
   category: other
   url: https://plantuml.com/
   maturity: production
-- id: icepanel
+- id: icepanel-io
   name: IcePanel
   category: other
   url: https://icepanel.io/
@@ -553,87 +523,87 @@
   category: other
   url: https://www.multiplayer.app/
   maturity: production
-- id: aris-software-ag
+- id: softwareag-com-en-corporate-platform-aris-html
   name: ARIS (Software AG)
   category: <coding|testing|discovery|support|...>
   url: https://www.softwareag.com/en_corporate/platform/aris.html
   maturity: production
-- id: leanix-sap
+- id: leanix-net
   name: LeanIX (SAP)
   category: <coding|testing|discovery|support|...>
   url: https://www.leanix.net/
   maturity: production
-- id: sparx-enterprise-architect
+- id: sparxsystems-com
   name: Sparx Enterprise Architect
   category: <coding|testing|discovery|support|...>
   url: https://sparxsystems.com/
   maturity: production
-- id: c4-dsl-vs-code-extension-structurizr-dsl-c4-plantuml
+- id: marketplace-visualstudio-com-items-itemname-systemticks-c4-dsl-extension
   name: C4-DSL VS Code Extension (Structurizr DSL / C4-PlantUML)
   category: coding
   url: https://marketplace.visualstudio.com/items?itemName=systemticks.c4-dsl-extension
   maturity: production
-- id: eraser-diagramgpt
+- id: eraser-io-diagramgpt
   name: Eraser DiagramGPT
   category: other
   url: https://www.eraser.io/diagramgpt
   maturity: production
-- id: excalidraw-excalidraw-ai
+- id: excalidraw-com
   name: Excalidraw + Excalidraw AI
   category: other
   url: https://excalidraw.com/
   maturity: production
-- id: mermaid-open-source
+- id: mermaid-js-org
   name: Mermaid (Open Source)
   category: other
   url: https://mermaid.js.org/
   maturity: production
-- id: mermaid-chart-ai
+- id: mermaidchart-com
   name: Mermaid Chart AI
   category: other
   url: https://www.mermaidchart.com/
   maturity: production
-- id: structurizr
+- id: structurizr-com
   name: Structurizr
   category: other
   url: https://structurizr.com/
   maturity: production
-- id: miro-ai
+- id: miro-com-ai
   name: Miro AI
   category: productivity
   url: https://miro.com/ai/
   maturity: production
-- id: perplexity-enterprise
+- id: perplexity-ai-enterprise
   name: Perplexity Enterprise
   category: productivity
   url: https://www.perplexity.ai/enterprise
   maturity: production
-- id: aleph-alpha-phariaassistant
+- id: aleph-alpha-com-pharia-assistant
   name: Aleph Alpha PhariaAssistant
   category: <coding|testing|discovery|support|...>
   url: https://aleph-alpha.com/pharia-assistant/
   maturity: production
-- id: ionos-ai-model-hub
+- id: ionos-de-cloud-ai-model-hub
   name: IONOS AI Model Hub
   category: <coding|testing|discovery|support|...>
   url: https://www.ionos.de/cloud/ai-model-hub
   maturity: production
-- id: mistral-le-chat-enterprise
+- id: mistral-ai-news-le-chat-enterprise
   name: Mistral Le Chat Enterprise
   category: <coding|testing|discovery|support|...>
   url: https://mistral.ai/news/le-chat-enterprise
   maturity: production
-- id: azure-openai-service-mit-azure-ai-foundry
+- id: azure-microsoft-com-en-us-products-ai-services-openai-service
   name: Azure OpenAI Service (mit Azure AI Foundry)
   category: productivity
   url: https://azure.microsoft.com/en-us/products/ai-services/openai-service
   maturity: production
-- id: chatgpt-enterprise
+- id: openai-com-chatgpt-enterprise
   name: ChatGPT Enterprise
   category: productivity
   url: https://openai.com/chatgpt/enterprise/
   maturity: production
-- id: gemini-for-workspace-vertex-ai
+- id: workspace-google-com-solutions-ai
   name: Gemini for Workspace / Vertex AI
   category: <coding|testing|discovery|support|...>
   url: https://workspace.google.com/solutions/ai/
@@ -643,112 +613,112 @@
   category: <coding|testing|discovery|support|...>
   url: https://www.credo.ai
   maturity: production
-- id: datadog-llm-observability
+- id: datadoghq-com-product-llm-observability
   name: Datadog LLM Observability
   category: <coding|testing|discovery|support|...>
   url: https://www.datadoghq.com/product/llm-observability/
   maturity: production
-- id: dynatrace-ai-observability
+- id: dynatrace-com-platform-artificial-intelligence
   name: Dynatrace AI Observability
   category: <coding|testing|discovery|support|...>
   url: https://www.dynatrace.com/platform/artificial-intelligence/
   maturity: production
-- id: langfuse
+- id: langfuse-com
   name: Langfuse
   category: other
   url: https://langfuse.com
   maturity: production
-- id: litellm
+- id: litellm-ai
   name: LiteLLM
   category: other
   url: https://www.litellm.ai
   maturity: production
-- id: azure-api-management-genai-gateway
+- id: learn-microsoft-com-azure-api-management-genai-gateway-capabilities
   name: Azure API Management (GenAI Gateway)
   category: <coding|testing|discovery|support|...>
   url: https://learn.microsoft.com/azure/api-management/genai-gateway-capabilities
   maturity: production
-- id: openllmetry-traceloop
+- id: traceloop-com
   name: OpenLLMetry / Traceloop
   category: <coding|testing|discovery|support|...>
   url: https://www.traceloop.com
   maturity: production
-- id: deepwiki
+- id: deepwiki-com
   name: DeepWiki
   category: coding
   url: https://deepwiki.com
   maturity: production
-- id: appmap
+- id: appmap-io
   name: AppMap
   category: coding
   url: https://appmap.io
   maturity: production
-- id: brokk
+- id: brokk-ai
   name: Brokk
   category: coding
   url: https://brokk.ai
   maturity: production
-- id: repomix
+- id: github-com-yamadashy-repomix
   name: Repomix
   category: coding
   url: https://github.com/yamadashy/repomix
   maturity: production
-- id: cast-imaging
+- id: castsoftware-com-products-imaging
   name: CAST Imaging
   category: <coding|testing|discovery|support|...>
   url: https://www.castsoftware.com/products/imaging
   maturity: production
-- id: vfunction
+- id: vfunction-com
   name: vFunction
   category: <coding|testing|discovery|support|...>
   url: https://vfunction.com
   maturity: production
-- id: anthropic-claude-claude-enterprise-claude-on-aws-bedrock
+- id: anthropic-com-claude
   name: Anthropic Claude (Claude Enterprise / Claude on AWS Bedrock)
   category: productivity
   url: https://www.anthropic.com/claude
   maturity: production
-- id: dach-beratungs-accelerators-kpmg-ebnerstolz-pexon
+- id: kpmg-com-de-de-home-themen-uebersicht-kuenstliche-intelligenz-ki-governance-html
   name: DACH-Beratungs-Accelerators (KPMG, EbnerStolz, Pexon)
   category: other
   url: https://kpmg.com/de/de/home/themen/uebersicht/kuenstliche-intelligenz/ki-governance.html
   maturity: production
-- id: holistic-ai
+- id: holisticai-com
   name: Holistic AI
   category: other
   url: https://www.holisticai.com
   maturity: production
-- id: microsoft-purview-ai-hub-azure-ai-foundry-governance
+- id: learn-microsoft-com-en-us-purview-ai-hub-microsoft-purview
   name: Microsoft Purview AI Hub / Azure AI Foundry Governance
   category: other
   url: https://learn.microsoft.com/en-us/purview/ai-hub-microsoft-purview
   maturity: production
-- id: bizzdesign-horizzon
+- id: bizzdesign-com
   name: Bizzdesign Horizzon
   category: <coding|testing|discovery|support|...>
   url: https://bizzdesign.com
   maturity: production
-- id: metricstream-ai-governance
+- id: metricstream-com
   name: MetricStream AI Governance
   category: <coding|testing|discovery|support|...>
   url: https://www.metricstream.com
   maturity: production
-- id: servicenow-ai-control-tower-irm
+- id: servicenow-com-products-ai-control-tower-html
   name: ServiceNow AI Control Tower / IRM
   category: <coding|testing|discovery|support|...>
   url: https://www.servicenow.com/products/ai-control-tower.html
   maturity: production
-- id: modulos-ai-governance
+- id: modulos-ai
   name: Modulos AI Governance
   category: other
   url: https://www.modulos.ai
   maturity: production
-- id: saidot
+- id: saidot-com
   name: Saidot
   category: other
   url: https://www.saidot.com
   maturity: production
-- id: mega-hopex-ai-governance
+- id: mega-com-solutions-ai-governance
   name: MEGA HOPEX AI Governance
   category: <coding|testing|discovery|support|...>
   url: https://www.mega.com/solutions/ai-governance
@@ -758,22 +728,22 @@
   category: other
   url: https://dbdiagram.io
   maturity: production
-- id: idera-er-studio
+- id: idera-com-er-studio-enterprise-data-modeling-and-architecture-tools
   name: Idera ER/Studio
   category: other
   url: https://www.idera.com/er-studio-enterprise-data-modeling-and-architecture-tools/
   maturity: production
-- id: sap-powerdesigner
+- id: sap-com-products-technology-platform-powerdesigner-data-modeling-tools-html
   name: SAP PowerDesigner
   category: other
   url: https://www.sap.com/products/technology-platform/powerdesigner-data-modeling-tools.html
   maturity: production
-- id: chartdb
+- id: chartdb-io
   name: ChartDB
   category: other
   url: https://chartdb.io
   maturity: production
-- id: erwin-data-modeler-quest
+- id: erwin-com-products-erwin-data-modeler
   name: erwin Data Modeler (Quest)
   category: other
   url: https://www.erwin.com/products/erwin-data-modeler/
@@ -783,262 +753,262 @@
   category: other
   url: https://ellie.ai
   maturity: production
-- id: hackolade-studio
+- id: hackolade-com
   name: Hackolade Studio
   category: other
   url: https://hackolade.com
   maturity: production
-- id: sqldbm
+- id: sqldbm-com
   name: SqlDBM
   category: other
   url: https://sqldbm.com
   maturity: production
-- id: aws-bedrock-eu-regions-nitro-enclaves
+- id: aws-amazon-com-bedrock
   name: AWS Bedrock (EU regions + Nitro Enclaves)
   category: other
   url: https://aws.amazon.com/bedrock/
   maturity: production
-- id: delos-cloud-microsoft-cloud-for-sovereignty-de
+- id: delos-cloud
   name: Delos Cloud (Microsoft Cloud for Sovereignty DE)
   category: other
   url: https://delos.cloud
   maturity: production
-- id: google-cloud-vertex-ai-eu-confidential-space-sovereign-controls
+- id: cloud-google-com-vertex-ai
   name: Google Cloud Vertex AI (EU + Confidential Space / Sovereign Controls)
   category: other
   url: https://cloud.google.com/vertex-ai
   maturity: production
-- id: microsoft-azure-openai-eu-data-boundary-confidential-vms
+- id: learn-microsoft-com-azure-ai-services-openai-concepts-data-residency
   name: Microsoft Azure OpenAI (EU Data Boundary + Confidential VMs)
   category: other
   url: https://learn.microsoft.com/azure/ai-services/openai/concepts/data-residency
   maturity: production
-- id: nvidia-nim-nvidia-inference-microservices
+- id: nvidia-com-en-us-ai
   name: NVIDIA NIM (NVIDIA Inference Microservices)
   category: other
   url: https://www.nvidia.com/en-us/ai/
   maturity: production
-- id: plusserver-pluscloud-open-sovereign-ai
+- id: plusserver-com
   name: Plusserver pluscloud open / Sovereign AI
   category: other
   url: https://www.plusserver.com
   maturity: production
-- id: sap-ai-core-joule-eu-region
+- id: sap-com-products-artificial-intelligence-ai-core-html
   name: SAP AI Core / Joule (EU-Region)
   category: other
   url: https://www.sap.com/products/artificial-intelligence/ai-core.html
   maturity: production
-- id: aleph-alpha-pharia-ai
+- id: aleph-alpha-com
   name: Aleph Alpha Pharia AI
   category: other
   url: https://aleph-alpha.com
   maturity: production
-- id: mistral-le-chat-enterprise-la-plateforme
+- id: mistral-ai
   name: Mistral Le Chat Enterprise / La Plateforme
   category: other
   url: https://mistral.ai
   maturity: production
-- id: open-telekom-cloud-sovereign-ai
+- id: open-telekom-cloud-com
   name: Open Telekom Cloud (Sovereign AI)
   category: other
   url: https://open-telekom-cloud.com
   maturity: production
-- id: ovhcloud-ai-endpoints-ai-deploy
+- id: ovhcloud-com-de-public-cloud-ai-endpoints
   name: OVHcloud AI Endpoints / AI Deploy
   category: other
   url: https://www.ovhcloud.com/de/public-cloud/ai-endpoints/
   maturity: production
-- id: red-hat-openshift-ai
+- id: redhat-com-en-technologies-cloud-computing-openshift-openshift-ai
   name: Red Hat OpenShift AI
   category: other
   url: https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-ai
   maturity: production
-- id: stackit-ai-model-serving
+- id: stackit-de
   name: STACKIT AI / Model Serving
   category: other
   url: https://www.stackit.de
   maturity: production
-- id: vllm
+- id: docs-vllm-ai
   name: vLLM
   category: other
   url: https://docs.vllm.ai
   maturity: production
-- id: smartshift-technologies
+- id: smartshifttech-com
   name: SmartShift Technologies
   category: other
   url: https://smartshifttech.com
   maturity: production
-- id: snp-crystalbridge
+- id: snpgroup-com
   name: SNP (CrystalBridge)
   category: other
   url: https://www.snpgroup.com
   maturity: production
-- id: tricentis-livecompare
+- id: tricentis-com-products-livecompare
   name: Tricentis LiveCompare
   category: other
   url: https://www.tricentis.com/products/livecompare
   maturity: production
-- id: amazon-q-developer-transform
+- id: aws-amazon-com-q-developer-transform
   name: Amazon Q Developer Transform
   category: coding
   url: https://aws.amazon.com/q/developer/transform/
   maturity: production
-- id: openrewrite-moderne
+- id: moderne-ai
   name: OpenRewrite (Moderne)
   category: other
   url: https://www.moderne.ai
   maturity: production
-- id: redocly-mit-ai-assist
+- id: redocly-com
   name: Redocly (mit AI Assist)
   category: coding
   url: https://redocly.com/
   maturity: production
-- id: speakeasy
+- id: speakeasy-com
   name: Speakeasy
   category: coding
   url: https://www.speakeasy.com/
   maturity: production
-- id: microsoft-azure-api-center
+- id: learn-microsoft-com-en-us-azure-api-center
   name: Microsoft Azure API Center
   category: other
   url: https://learn.microsoft.com/en-us/azure/api-center/
   maturity: production
-- id: mulesoft-anypoint-design-center
+- id: mulesoft-com-platform-api-anypoint-designer
   name: MuleSoft Anypoint Design Center
   category: other
   url: https://www.mulesoft.com/platform/api/anypoint-designer
   maturity: production
-- id: software-ag-webmethods-api-designer
+- id: softwareag-com-en-corporate-platform-api-html
   name: Software AG webMethods API Designer
   category: other
   url: https://www.softwareag.com/en_corporate/platform/api.html
   maturity: production
-- id: tyk
+- id: tyk-io
   name: Tyk
   category: other
   url: https://tyk.io/
   maturity: production
-- id: kong-insomnia-ai-runner-api-dev
+- id: insomnia-rest
   name: Kong Insomnia (AI Runner / api.dev)
   category: coding
   url: https://insomnia.rest/
   maturity: production
-- id: postman-postbot-ai-spec-builder
+- id: postman-com
   name: Postman (Postbot + AI Spec Builder)
   category: coding
   url: https://www.postman.com/
   maturity: production
-- id: swaggerhub-mit-ai
+- id: swagger-io-tools-swaggerhub
   name: SwaggerHub (mit AI)
   category: coding
   url: https://swagger.io/tools/swaggerhub/
   maturity: production
-- id: theneo
+- id: theneo-io
   name: Theneo
   category: coding
   url: https://www.theneo.io/
   maturity: production
-- id: github-spec-kit
+- id: github-com-github-spec-kit
   name: GitHub Spec Kit
   category: coding
   url: https://github.com/github/spec-kit
   maturity: production
-- id: kiro
+- id: kiro-dev
   name: Kiro
   category: coding
   url: https://kiro.dev
   maturity: production
-- id: tessl-framework-spec-registry
+- id: tessl-io
   name: Tessl Framework + Spec Registry
   category: coding
   url: https://tessl.io
   maturity: production
-- id: bito-ai-architect
+- id: bito-ai
   name: Bito AI Architect
   category: other
   url: https://bito.ai/
   maturity: production
-- id: chatgpt-deep-research
+- id: openai-com-index-introducing-deep-research
   name: ChatGPT Deep Research
   category: discovery
   url: https://openai.com/index/introducing-deep-research/
   maturity: production
-- id: fossa-mit-fossabot
+- id: fossa-com
   name: FOSSA (mit fossabot)
   category: coding
   url: https://fossa.com
   maturity: production
-- id: scanoss
+- id: scanoss-com
   name: SCANOSS
   category: coding
   url: https://scanoss.com
   maturity: production
-- id: black-duck-software-composition-analysis
+- id: blackduck-com
   name: Black Duck (Software Composition Analysis)
   category: other
   url: https://www.blackduck.com
   maturity: production
-- id: snyk-advisor-license-compliance-enterprise
+- id: snyk-io
   name: Snyk (Advisor + License Compliance, Enterprise)
   category: other
   url: https://snyk.io
   maturity: production
-- id: sonatype-lifecycle-mit-mcp-server
+- id: sonatype-com-products-sonatype-lifecycle
   name: Sonatype Lifecycle (mit MCP-Server)
   category: other
   url: https://www.sonatype.com/products/sonatype-lifecycle
   maturity: production
-- id: owasp-threat-dragon-ai-tool
+- id: github-com-infosecotb-threat-dragon-ai-tool
   name: OWASP Threat Dragon AI Tool
   category: other
   url: https://github.com/InfosecOTB/threat-dragon-ai-tool
   maturity: production
-- id: stride-gpt
+- id: github-com-mrwadams-stride-gpt
   name: STRIDE GPT
   category: other
   url: https://github.com/mrwadams/stride-gpt
   maturity: production
-- id: threagile
+- id: threagile-io
   name: Threagile
   category: other
   url: https://threagile.io/
   maturity: production
-- id: aws-threat-designer
+- id: github-com-awslabs-threat-designer
   name: AWS Threat Designer
   category: other
   url: https://github.com/awslabs/threat-designer
   maturity: production
-- id: csa-maestro-threat-analyzer
+- id: github-com-cloudsecurityalliance-maestro
   name: CSA MAESTRO Threat Analyzer
   category: other
   url: https://github.com/CloudSecurityAlliance/MAESTRO
   maturity: production
-- id: owasp-pytm-pytmgpt
+- id: owasp-org-www-project-pytm
   name: OWASP pytm + pytmGPT
   category: other
   url: https://owasp.org/www-project-pytm
   maturity: production
-- id: owasp-secopstm
+- id: owasp-org-www-project-secopstm
   name: OWASP SecOpsTM
   category: other
   url: https://owasp.org/www-project-secopstm/
   maturity: production
-- id: sd-elements-navigator-ai
+- id: securitycompass-com-sdelements
   name: SD Elements (Navigator AI)
   category: other
   url: https://www.securitycompass.com/sdelements/
   maturity: production
-- id: threatforge
+- id: github-com-exit-zero-labs-threat-forge
   name: ThreatForge
   category: other
   url: https://github.com/exit-zero-labs/threat-forge
   maturity: production
-- id: threatshield
+- id: threatshield-eu
   name: ThreatShield
   category: other
   url: https://threatshield.eu/
   maturity: production
-- id: paranoid
+- id: github-com-theastiv-paranoid
   name: Paranoid
   category: other
   url: https://github.com/theAstiv/paranoid

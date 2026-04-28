@@ -9,7 +9,7 @@ goal_label: STRIDE/MAESTRO-Threats aus Architekturbeschreibung ableiten
 suitability: conditional
 rationale: "STRIDE-GPT und Threagile bilden gemeinsam eine belastbare OSS-Basis: STRIDE-GPT liefert LLM-gestützte Threat-Listen mit Self-Hosting-Option (Ollama, Azure OpenAI EU), Threagile ergänzt eine deterministische Rules-Engine, die für ISO-27001/BSI-Grundschutz-Audits höherwertig ist als jeder LLM-Vorschlag. Der strukturierte, prüfbare Output macht diesen Anwendungsfall zu einem der wenigen Security-AI-Einstiege, die auch in regulierten DACH-Branchen tragbar sind."
 tools:
-  - id: owasp-threat-dragon-ai-tool
+  - id: github-com-infosecotb-threat-dragon-ai-tool
     fit: good_fit
     enterprise_readiness: evaluation_only
     confidence: high
@@ -35,9 +35,9 @@ tools:
         - Nur STRIDE
         - Solo-Projekt, Wartung unklar
     sources:
-      - id: owasp-threat-dragon-ai-tool-github
-      - id: owasp-threat-dragon-ai-tool-reddit
-  - id: stride-gpt
+      - id: github-com-infosecotb-threat-dragon-ai-tool
+      - id: reddit-com-r-cybersecurity-comments-1rsll21-opensource-ai-tool-for-owasp-threat-dragon-that
+  - id: github-com-mrwadams-stride-gpt
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -63,10 +63,10 @@ tools:
         - Output braucht Senior-Review
         - DFD-Generierung noch unreif
     sources:
-      - id: stride-gpt-github
-      - id: stride-gpt-aicodeshield
-      - id: stride-gpt-github-2
-  - id: threagile
+      - id: github-com-mrwadams-stride-gpt
+      - id: aicodeshield-com-blog-from-whiteboards-to-llms-automating-stride-threat-models-with-genai
+      - id: github-com-mrwadams-stride-gpt-issues-56
+  - id: threagile-io
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -89,10 +89,10 @@ tools:
       complaints:
         - Keine AI, manuelles YAML
     sources:
-      - id: threagile-threagile
-      - id: threagile-github
-      - id: threagile-reddit
-  - id: aws-threat-designer
+      - id: threagile-io
+      - id: github-com-threagile-threagile
+      - id: reddit-com-r-cybersecurity-comments-1regk4k-threat-modeling-sessions-that-actually-work-whats
+  - id: github-com-awslabs-threat-designer
     fit: conditional
     enterprise_readiness: team_ready
     confidence: high
@@ -111,9 +111,9 @@ tools:
       volume: low
       tenor: unknown
     sources:
-      - id: aws-threat-designer-github
-      - id: aws-threat-designer-amazon
-  - id: claude-code
+      - id: github-com-awslabs-threat-designer
+      - id: aws-amazon-com-blogs-machine-learning-accelerate-threat-modeling-with-generative-ai
+  - id: claude-com-product-claude-code
     fit: conditional
     enterprise_readiness: team_ready
     confidence: high
@@ -138,10 +138,10 @@ tools:
         - Lizenz/Datenschutz fuer regulierte Branchen
         - Halluzinationen erfordern Senior-Review
     sources:
-      - id: claude-code-security-review-threat-modeling-skill-pawanpatra
-      - id: claude-code-security-review-threat-modeling-skill-github
-      - id: claude-code-security-review-threat-modeling-skill-github-2
-  - id: csa-maestro-threat-analyzer
+      - id: pawanpatra-com-a-developers-guide-to-anthropics-claude-code-security-for-proactive-threat-modeling
+      - id: github-com-alirezarezvani-claude-skills-blob-main-engineering-team-senior-security-scripts-threat-modeler-py
+      - id: xvnpw-github-io-posts-leveraging-llms-for-threat-modelling-claude-3-vs-gpt-4
+  - id: github-com-cloudsecurityalliance-maestro
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: high
@@ -165,10 +165,10 @@ tools:
         - Framework noch jung
         - Tool ist Demo-Reife
     sources:
-      - id: csa-maestro-threat-analyzer-github
-      - id: csa-maestro-threat-analyzer-bishopfox
-      - id: csa-maestro-threat-analyzer-cloudsecurityalliance
-  - id: owasp-pytm-pytmgpt
+      - id: github-com-cloudsecurityalliance-maestro
+      - id: bishopfox-com-blog-taking-maestro-in-stride-ai-threat-modeling-frameworks
+      - id: cloudsecurityalliance-org-blog-2026-02-11-applying-maestro-to-real-world-agentic-ai-threat-models-from-framework-to-ci-cd-pipeline
+  - id: owasp-org-www-project-pytm
     fit: conditional
     enterprise_readiness: team_ready
     confidence: high
@@ -191,9 +191,9 @@ tools:
       complaints:
         - Hohe Einstiegshuerde fuer Nicht-Devs
     sources:
-      - id: owasp-pytm-pytmgpt-github
-      - id: threagile-reddit
-  - id: owasp-secopstm
+      - id: github-com-owasp-pytm
+      - id: reddit-com-r-cybersecurity-comments-1regk4k-threat-modeling-sessions-that-actually-work-whats
+  - id: owasp-org-www-project-secopstm
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: medium
@@ -209,8 +209,8 @@ tools:
       - RAG-Setup nicht trivial
       - Keine grosse Praktiker-Basis
     sources:
-      - id: owasp-secopstm-owasp
-  - id: sd-elements-navigator-ai
+      - id: owasp-org-www-project-secopstm
+  - id: securitycompass-com-sdelements
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -226,9 +226,9 @@ tools:
       - Hoher Konfigurationsaufwand
       - Lizenzkosten Enterprise-Niveau
     sources:
-      - id: sd-elements-navigator-ai-co-uk
-      - id: sd-elements-navigator-ai-sdelements
-  - id: threatforge
+      - id: silicon-co-uk-press-release-security-compass-expands-industry-leading-ai-security-content-and-introduces-ai-powered-navigator-beta
+      - id: docs-sdelements-com-master-guide-docs-threat-modeling-diagrams-html
+  - id: github-com-exit-zero-labs-threat-forge
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -239,8 +239,8 @@ tools:
       - Kein zentraler Audit-Trail – Modelle leben in Git
       - Keine MAESTRO-Coverage
     sources:
-      - id: threatforge-github
-  - id: threatshield
+      - id: github-com-exit-zero-labs-threat-forge
+  - id: threatshield-eu
     fit: conditional
     enterprise_readiness: evaluation_only
     confidence: low
@@ -251,8 +251,8 @@ tools:
       - Workshop-Modell impliziert hohen Beratungs-Anteil
       - Reife der OSS-Komponente vor PoC verifizieren
     sources:
-      - id: threatshield-threatshield-eu
-  - id: paranoid
+      - id: threatshield-eu
+  - id: github-com-theastiv-paranoid
     fit: immature
     enterprise_readiness: evaluation_only
     confidence: low
@@ -272,8 +272,8 @@ tools:
       complaints:
         - Keine unabhaengigen Berichte oeffentlich verfuegbar
     sources:
-      - id: paranoid-github
-      - id: paranoid-pypi
+      - id: github-com-theastiv-paranoid
+      - id: pypi-org-project-paranoid-cli
 start_here: "Einstieg mit STRIDE-GPT auf Ollama-Backend an einem klar abgegrenzten Bounded Context: DFD als Input liefern und Mitigation-Vorschläge direkt mit dem Security-Team gegenprüfen. Für Audit-Anforderungen (ISO-27001 A.8.27) Threagile als deterministischen Layer ergänzen — das YAML-Modell kann per STRIDE-GPT vorgeschlagen und anschließend regelbasiert geprüft werden."
 caveats: Cloud-LLMs exponieren Architekturmodelle beim Anbieter — für BAIT-/KRITIS-Systeme sind ausschließlich Self-Hosted-Backends (Ollama) oder Azure OpenAI EU mit DPA tragbar. Klassisches STRIDE deckt agentische und KI-spezifische Risiken nicht ab; MAESTRO-basierte Tools existieren, haben aber noch keine ausreichende Produktionsreife für den regulierten Betrieb.
 sources: []

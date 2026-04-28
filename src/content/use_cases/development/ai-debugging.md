@@ -8,7 +8,7 @@ goal_label: Stack-Traces erklären und Root-Cause finden lassen
 suitability: good_fit
 rationale: AI-Debugging ist der zweitstärkste AI-Einsatzbereich in Entwickler-Surveys (Stack Overflow 56,7%, ACTI 45,4%) und in jedem Mainstream-Coding-Tool verbaut. Copilot, Claude Code und Sentry Seer belegen, dass der Stack-Trace-zu-Root-Cause-Loop heute produktionsreif ist. Für DACH-Unternehmen mit bestehendem Observability-Stack (Datadog, Sentry) ist der Einstieg ohne Zusatzbeschaffung möglich.
 tools:
-  - id: aws-amazon-q-developer-debug-diagnose
+  - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -29,7 +29,7 @@ tools:
         - Schwach bei generischer Code-Analyse
         - UX hinter Copilot/Cursor
     sources:
-      - id: aws-amazon-q-developer-debug-diagnose-amazon
+      - id: aws-amazon-com-q-developer
   - id: continue-dev
     fit: conditional
     enterprise_readiness: team_ready
@@ -51,8 +51,8 @@ tools:
         - Setup-Aufwand
         - Polish hinter SaaS-Konkurrenz
     sources:
-      - id: continue-dev-commit-pr-via-custom-slash-commands-continue
-  - id: honeycomb-query-assistant-ai
+      - id: docs-continue-dev-customize-slash-commands
+  - id: honeycomb-io-ai
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -63,8 +63,8 @@ tools:
       - Honeycomb hostet primaer in US — fuer GDPR-strikte Daten Hosting-Region pruefen
       - Query Assistant erklaert keine Stack Traces im Code-Sinn, nur Trace-Queries
     sources:
-      - id: honeycomb-query-assistant-ai-honeycomb
-  - id: new-relic-ai
+      - id: honeycomb-io-ai
+  - id: newrelic-com-platform-new-relic-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -75,8 +75,8 @@ tools:
       - Pricing-Modell (Compute-basiert) macht AI-Volumen schwer kalkulierbar
       - Telemetrie-Daten in US/EU-Region — pruefen fuer DACH-Compliance
     sources:
-      - id: new-relic-ai-newrelic
-  - id: rookout-dynatrace-live-debugger-ai
+      - id: newrelic-com-platform-new-relic-ai
+  - id: dynatrace-com-platform-live-debugger
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -86,8 +86,8 @@ tools:
       - Plattform-Lock-in und aufwendiges Onboarding
       - Rookout-Brand wird bei Dynatrace ausgephased — Migration zu Live Debugger pruefen
     sources:
-      - id: rookout-dynatrace-live-debugger-ai-dynatrace
-  - id: tabnine
+      - id: dynatrace-com-platform-live-debugger
+  - id: tabnine-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -107,8 +107,8 @@ tools:
         - Schwaecher als Copilot bei komplexen Bugs
         - UX weniger ausgereift
     sources:
-      - id: tabnine-chat-tabnine
-  - id: augment-code
+      - id: tabnine-com-code-privacy
+  - id: augmentcode-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -118,8 +118,8 @@ tools:
       - EU-Hosting-Verfuegbarkeit am Vertrag pruefen
       - Praktiker-Signal-Lage in DACH duenn
     sources:
-      - id: augment-code-augmentcode-augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
-  - id: google-gemini-code-assist
+      - id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
+  - id: cloud-google-com-products-gemini-code-assist
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -129,8 +129,8 @@ tools:
       - Modell-Qualitaet im Code-Bereich historisch hinter Claude/GPT
       - DACH-Marktanteil GCP klein — oft nicht der dominante Hyperscaler
     sources:
-      - id: google-gemini-code-assist-google-cloud-google-com-gemini-docs-codeassist-code-customization
-  - id: komodor
+      - id: cloud-google-com-gemini-docs-codeassist-code-customization
+  - id: komodor-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -140,8 +140,8 @@ tools:
       - SaaS-First — On-Prem/EU-Region pruefen
       - Eigenstaendig zu Observability-Stack (Datadog/Dynatrace) — Funktionsdopplung moeglich
     sources:
-      - id: komodor-komodor
-  - id: aider
+      - id: komodor-com
+  - id: aider-chat
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -161,10 +161,10 @@ tools:
         - Steile Lernkurve ggue. IDE-Tools
         - Manuelle Kontextpflege
     sources:
-      - id: aider-aider-chat-aider-chat-docs-usage-commands-html
-      - id: aider-mitchgordon-me
-      - id: aider-michael-hoennig-de
-  - id: claude-code
+      - id: aider-chat-docs-usage-commands-html
+      - id: mitchgordon-me-tools-2025-02-26-aider-html
+      - id: michael-hoennig-de-blog-2025-2025-04-11-exploring-the-aider-ai-coding-assistant-html
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -183,10 +183,10 @@ tools:
         - Teuer bei langen Sessions
         - Kann sich in Sackgassen festfahren
     sources:
-      - id: claude-code-claude-docs-claude-com-en-docs-claude-code-hooks
-      - id: claude-code-dev-to-debugging-patterns
-      - id: claude-code-dev-to-production-workflow
-  - id: cline
+      - id: docs-claude-com-en-docs-claude-code-hooks
+      - id: dev-to-myougatheaxo-5-debugging-patterns-with-claude-code-from-stack-trace-to-root-cause-20f4
+      - id: dev-to-subprime2010-how-i-use-claude-code-to-debug-production-errors-a-complete-workflow-4mp2
+  - id: github-com-cline-cline
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -206,10 +206,10 @@ tools:
         - Token-Verbrauch hoch
         - Ohne starkes Modell schwach
     sources:
-      - id: cline-github
-      - id: cline-mtlynch-io
-      - id: cline-sap-linkedin-sabetta
-  - id: datadog-bits-ai
+      - id: github-com-cline-cline
+      - id: mtlynch-io-notes-cline-is-mesmerizing
+      - id: linkedin-com-pulse-ai-coding-practice-what-we-learned-after-using-cline-month-sabetta-ucckf
+  - id: datadoghq-com-product-bits-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -220,10 +220,10 @@ tools:
       - Bits AI SRE erst GA Dez 2025 — EU-Region-Verfuegbarkeit je Feature staged
       - Outbound zu Datadog-LLM-Pipeline — fuer Banken/Versicherer Pseudonymisierung pflichtig
     sources:
-      - id: datadog-bits-ai-datadoghq
-      - id: datadog-bits-ai-betterstack
-      - id: datadog-bits-ai-bytesized-substack
-  - id: copilot
+      - id: datadoghq-com-product-bits-ai
+      - id: betterstack-com-community-comparisons-bits-ai-vs-resolve-ai
+      - id: bytesizeddesign-substack-com-p-how-datadog-taught-an-ai-to-investigate
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -243,10 +243,10 @@ tools:
         - Patcht Symptom statt Ursache
         - Verliert Kontext bei langen Traces
     sources:
-      - id: github-copilot-chat-debug-mode-github
-      - id: copilot-dev-to-production-troubleshooting
-      - id: copilot-dev-to-robin-debugging
-  - id: jetbrains-ai-assistant
+      - id: docs-github-com-en-copilot-using-github-copilot-asking-github-copilot-questions-in-your-ide
+      - id: dev-to-anchildress1-troubleshooting-production-with-github-copilot-the-guide-for-real-humans-and-bots-with-good-taste-253o
+      - id: dev-to-johnschibelli-how-github-copilots-robin-takes-debugging-to-the-next-level-36nh
+  - id: jetbrains-com-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -266,10 +266,10 @@ tools:
         - Antworten teils langsamer/dumpfer als Copilot
         - Junie-Agent noch unreif
     sources:
-      - id: jetbrains-ai-assistant-junie-jetbrains
-      - id: jetbrains-ai-devtoolsreview
-      - id: jetbrains-ai-toolstac
-  - id: sentry-seer
+      - id: jetbrains-com-help-idea-ai-assistant-html
+      - id: devtoolsreview-com-reviews-jetbrains-ai-review
+      - id: toolstac-com-tool-jetbrains-ai-assistant-overview
+  - id: sentry-io-product-ai-in-sentry-seer
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -280,10 +280,10 @@ tools:
       - Daten verlassen Kunden-Infra Richtung Sentry/LLM-Anbieter — DACH-Compliance pruefen
       - Lock-in an Sentry als Error-Monitoring-Plattform
     sources:
-      - id: sentry-seer-sentry
-      - id: sentry-seer-visualsoft
-      - id: sentry-seer-dev-to-mastra
-  - id: sourcegraph-cody
+      - id: sentry-io-product-ai-in-sentry-seer
+      - id: visualsoft-co-uk-blog-sentry-seer
+      - id: dev-to-bdigital00-my-mastra-agent-found-a-production-bug-in-five-minutes-348e
+  - id: sourcegraph-com-cody
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -303,9 +303,9 @@ tools:
         - Weniger 'magisch' als Cursor/Copilot
         - Setup-Aufwand hoch
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
-      - id: sourcegraph-cody-devtoolsreview
-      - id: sourcegraph-cody-aiforcode
+      - id: sourcegraph-com-docs-cody-capabilities-commands
+      - id: devtoolsreview-com-reviews-cody-review
+      - id: aiforcode-io-tools-sourcegraph-cody
 start_here: "Einstieg mit Copilot Chat (/explain, /fix) oder JetBrains AI Assistant direkt am konkreten Stack-Trace — niedrige Hürde, da kein neues Tool nötig. Bei Production-Bugs mit Observability-Daten ist Datadog Bits AI oder Sentry Seer direkter: Trace, Logs und Deploy-Kontext sind dort bereits gebündelt. Reproduzierbarer Test plus menschliche Verifikation des Fix-Vorschlags bleiben in jedem Fall Pflicht."
 caveats: "AI erklärt häufig das Symptom statt der Ursache — plausibel klingende Falschdiagnosen sind dokumentiert und erfordern Dev-Verifikation. In DACH-Banken und Versicherern können Stack-Traces Personenbezug enthalten: Pseudonymisierung oder On-Prem-Deployment (Tabnine, Continue.dev) ist vor dem Versand an Cloud-LLMs obligatorisch. Token-Kosten bei langen iterativen Debug-Sessions sollten per Budget-Cap begrenzt werden."
 sources: []

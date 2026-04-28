@@ -20,9 +20,13 @@ Der risikoärmste Einstieg sind Code-Completion und KI-gestütztes Debugging: In
 
 
 
+
+
 ## Grenzen
 
 KI-Fixes sind überwiegend datei-lokal: Schwachstellen mit modulübergreifendem Taint-Flow, komplexe Architekturentscheidungen und Legacy-Code mit spärlicher Testabdeckung überfordern aktuelle Modelle zuverlässig. In DACH-Finanz- und Versicherungsumgebungen muss der Datenpfad zum LLM-Backend vertraglich im DPA freigegeben und ein EU-Tenant oder Self-Hosted-Pfad explizit konfiguriert sein — ohne diesen Schritt bleibt der Rollout blockiert.
+
+
 
 
 

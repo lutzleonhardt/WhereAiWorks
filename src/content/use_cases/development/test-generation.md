@@ -9,7 +9,7 @@ goal_label: Unit-Tests und Test-Scaffolding aus Funktionssignaturen ableiten las
 suitability: good_fit
 rationale: "Test-Generierung gehört zu den am schnellsten amortisierenden KI-Anwendungen im Entwicklungsalltag: GitHub Copilot, Claude Code und Diffblue Cover adressieren den Use Case mit stabilen, produktionserprobten Features. Praktiker-Daten — darunter die Audible-Fallstudie zu Amazon Q und unabhängige Diffblue-Reviews aus dem Finanz- und Pharmabereich — belegen skalierbaren Einsatz im Konzernumfeld. Für DACH-Teams mit Spring-/JEE-Legacy bietet Diffblue Cover zusätzlich eine Cloud-freie On-Prem-Option ohne LLM-Datentransfer."
 tools:
-  - id: copilot
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -25,9 +25,9 @@ tools:
       - Mocking-Setups muessen haeufig manuell nachgezogen werden
       - Coverage-Metriken koennen Robustheit vortaeuschen
     sources:
-      - id: github-copilot-chat-debug-mode-github
-      - id: github-copilot-tests-tests-command-github-blog
-  - id: qodo
+      - id: docs-github-com-en-copilot-using-github-copilot-asking-github-copilot-questions-in-your-ide
+      - id: github-blog-2023-05-02-how-github-copilot-is-getting-better-at-understanding-your-code
+  - id: qodo-ai
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -41,8 +41,8 @@ tools:
       - Free-Tier fuer Open-Source; Enterprise-Features kostenpflichtig
       - Mocking-Setup teilweise heuristisch und fragil
     sources:
-      - id: qodo-gen-qodo-cover-ehem-codium-ai-qodo
-      - id: qodo-gen-qodo-cover-ehem-codium-ai-github
+      - id: qodo-ai-products-qodo-gen
+      - id: github-com-codium-ai-cover-agent
   - id: continue-dev
     fit: conditional
     enterprise_readiness: team_ready
@@ -59,8 +59,8 @@ tools:
       - Kein dedizierter Test-Runner-Loop wie Cursor/Claude Code
       - Mehr Bastelfaktor, weniger Out-of-the-box
     sources:
-      - id: continue-dev-commit-pr-via-custom-slash-commands-continue
-  - id: keploy
+      - id: docs-continue-dev-customize-slash-commands
+  - id: keploy-io
     fit: conditional
     enterprise_readiness: team_ready
     confidence: medium
@@ -74,8 +74,8 @@ tools:
       - Datenschutz-Review fuer Traffic-Aufzeichnung noetig
       - AI-Unit-Modul juenger als Replay-Stack
     sources:
-      - id: keploy-keploy
-  - id: aws-amazon-q-developer-debug-diagnose
+      - id: keploy-io-docs-running-keploy-unit-test-generator
+  - id: aws-amazon-com-q-developer
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -88,10 +88,10 @@ tools:
       - Practitioner-Reviews berichten von 3-4s Antwortzeiten und IDE-Stabilitaetsproblemen (VS Code Extension crasht)
       - Agentic-Requests-Kontingent im Free-Tier knapp; Pro-Tier teurer als Copilot Individual
     sources:
-      - id: amazon-q-developer-test-generation-amazon
-      - id: amazon-q-developer-toolstac-review
-      - id: amazon-q-developer-audible-case-study
-  - id: claude-code
+      - id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-test-generation-html
+      - id: toolstac-com-review-amazon-q-developer-comprehensive-review
+      - id: aws-amazon-com-blogs-devops-boosting-unit-test-automation-at-audible-with-amazon-q-developer
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: high
@@ -103,10 +103,10 @@ tools:
       - Hook-Konfiguration braucht TDD-Disziplin im Team
       - Generiert teils Tests gegen Implementierung, nicht Verhalten
     sources:
-      - id: claude-code-claude-docs-claude-com-en-docs-claude-code-hooks
-      - id: claude-code-devto-tdd-workflow
-      - id: claude-code-32blog-test-generation
-  - id: diffblue-cover
+      - id: docs-claude-com-en-docs-claude-code-hooks
+      - id: dev-to-subprime2010-claude-code-tdd-write-tests-first-let-claude-implement-watch-them-pass-238i
+      - id: 32blog-com-en-claude-code-claude-code-test-generation-practical-guide
+  - id: diffblue-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
@@ -118,9 +118,9 @@ tools:
       - Kommerzielle Enterprise-Lizenz noetig fuer Skalierung; Preismodell (Lines of Code + User) opak
       - IntelliJ IDEA als einzige IDE-Integration — kein Eclipse oder VS Code
     sources:
-      - id: diffblue-cover-diffblue
-      - id: diffblue-cover-aicoolies-independent-review
-  - id: jetbrains-ai-assistant
+      - id: diffblue-com-products
+      - id: aicoolies-com-reviews-diffblue-cover-review
+  - id: jetbrains-com-ai
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -133,9 +133,9 @@ tools:
       - Junie noch in Evolution, Test-Repair-Loops koennen lang werden
       - "Kreditbasiertes Preismodell: umfangreiche Test-Suites verbrauchen 8-12 Credits pro Test-Klasse"
     sources:
-      - id: jetbrains-ai-assistant-mit-junie-jetbrains-jetbrains-com-help-ai-assistant-generate-unit-tests-html
-      - id: jetbrains-ai-assistant-medium-seatcode
-  - id: sourcegraph-cody
+      - id: jetbrains-com-help-ai-assistant-generate-unit-tests-html
+      - id: medium-com-seat-code-testing-jetbrains-ai-assistant-2c06eeebb34a
+  - id: sourcegraph-com-cody
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -148,9 +148,9 @@ tools:
       - Best-of-Breed nur in indizierten Repos — Setup-Aufwand
       - Boilerplate-stark, kritische Pfade weiter manuell
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
-      - id: sourcegraph-cody-devtoolsreview
-  - id: gitlab-duo-vulnerability-resolution
+      - id: sourcegraph-com-docs-cody-capabilities-commands
+      - id: devtoolsreview-com-reviews-cody-review
+  - id: about-gitlab-com-gitlab-duo
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -162,8 +162,8 @@ tools:
       - Self-Managed-Lizenz teuer (Ultimate-Tier fuer volle AI-Features)
       - AI-Modelle ueber GitLab-Cloud — Subprozessoren pruefen oder Self-Hosted-LLM einsetzen
     sources:
-      - id: gitlab-duo-gitlab
-      - id: gitlab-duo-blog-test-automation
+      - id: docs-gitlab-com-ee-user-gitlab-duo
+      - id: about-gitlab-com-blog-automating-with-gitlab-duo-part-1-generating-tests
 start_here: Einstieg über den GitHub Copilot `/tests`-Command oder Claude Code mit PostToolUse-Hook (automatischer Test-Run nach jedem File-Edit) — beide erfordern kein zusätzliches Tooling im bestehenden Stack. Coverage-Metriken erst dann vertrauen, wenn Mutation-Testing (Stryker/PIT) sie validiert; reine Line-Coverage lügt regelmäßig. Geschäftskritische Assertions und Kernpfade weiterhin manuell schreiben und reviewen.
 caveats: Generierte Tests reproduzieren typischerweise Implementierungsdetails statt Verhalten — Mutation-Testing deckt Lücken auf, die Coverage-Reports verbergen. In regulierten Branchen (Finanz, Versicherung) müssen kritische Pfad-Tests (Kreditscoring, Vertragslogik) manuell verfasst und abgenommen werden; sonst täuscht hohe Coverage Robustheit vor. Für Java-/Kotlin-Stacks mit strengen Datenschutzanforderungen bleibt Diffblue Cover mit On-Prem-Betrieb die sicherste Option, ist aber auf diese Sprachen beschränkt.
 sources: []

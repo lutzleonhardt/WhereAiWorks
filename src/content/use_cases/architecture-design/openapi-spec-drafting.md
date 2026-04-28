@@ -20,8 +20,8 @@ tools:
       - Kein Vendor-Support in OSS-Variante
       - Kein Vendor-Support-Vertrag in OSS-Variante
     sources:
-      - id: continue-dev-continue-continue-dev
-  - id: jetbrains-ai-assistant
+      - id: continue-dev
+  - id: jetbrains-com-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -32,8 +32,8 @@ tools:
       - Modell-Provider-Auswahl (Google, Anthropic) je Kunde unterschiedlich
       - AI-Modellqualitaet variiert je Provider-Backend
     sources:
-      - id: jetbrains-ai-assistant-junie-jetbrains-jetbrains-com-ai
-  - id: redocly-mit-ai-assist
+      - id: jetbrains-com-ai
+  - id: redocly-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -44,8 +44,8 @@ tools:
       - AI-Reifegrad noch im Aufbau
       - AI eher unterstuetzend, nicht primaerer Generator
     sources:
-      - id: redocly-mit-ai-assist-redocly
-  - id: sourcegraph-cody
+      - id: redocly-com
+  - id: sourcegraph-com-cody
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -55,8 +55,8 @@ tools:
       - Self-Host-Aufwand nicht trivial
       - Volle Wirkung erst mit indexierter Codebasis
     sources:
-      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-cody
-  - id: speakeasy
+      - id: sourcegraph-com-cody
+  - id: speakeasy-com
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -67,8 +67,8 @@ tools:
       - Vendor jung — Roadmap- und Bestand-Risiko
       - Eher Spec-Veredelung als Spec-Generierung from-scratch
     sources:
-      - id: speakeasy-speakeasy
-  - id: microsoft-azure-api-center
+      - id: speakeasy-com
+  - id: learn-microsoft-com-en-us-azure-api-center
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -78,9 +78,9 @@ tools:
       - API Center selbst ist juenger (GA 2024); Reifegrad waechst
       - AI-Features verteilen sich auf Copilot for Azure und Extensions
     sources:
-      - id: microsoft-azure-api-center-microsoft
-      - id: ms-azure-copilot-openapi-doc
-  - id: mulesoft-anypoint-design-center
+      - id: learn-microsoft-com-en-us-azure-api-center
+      - id: learn-microsoft-com-en-us-azure-api-center-design-api-github-copilot-azure
+  - id: mulesoft-com-platform-api-anypoint-designer
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -90,8 +90,8 @@ tools:
       - AI-Reifegrad in Design Center juenger als in Flow Designer
       - Lock-in in Anypoint-Plattform
     sources:
-      - id: mulesoft-anypoint-design-center-mulesoft
-  - id: software-ag-webmethods-api-designer
+      - id: mulesoft-com-platform-api-anypoint-designer
+  - id: softwareag-com-en-corporate-platform-api-html
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -101,8 +101,8 @@ tools:
       - AI-Features sind juenger als Kernprodukt
       - Vendor in Restrukturierung — Roadmap pruefen (IBM-Akquisition 2024)
     sources:
-      - id: software-ag-webmethods-api-designer-softwareag
-  - id: tyk
+      - id: softwareag-com-en-corporate-platform-api-html
+  - id: tyk-io
     fit: partial
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -112,8 +112,8 @@ tools:
       - Hauptwert liegt im Gateway, nicht im Designer
       - UK-Vendor; EU-Datenresidenz konfigurieren
     sources:
-      - id: tyk-tyk
-  - id: claude-code
+      - id: tyk-io
+  - id: claude-com-product-claude-code
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -127,10 +127,10 @@ tools:
       - Cloud-only; on-prem nicht verfuegbar
       - DACH-Lokalisierung promptseitig forcieren
     sources:
-      - id: claude-code-claude-claude-com-product-claude-code
-      - id: recombobulate-claude-openapi
-      - id: lowcode-claude-openapi
-  - id: cursor
+      - id: claude-com-product-claude-code
+      - id: recombobulate-dev-tips-ask-claude-to-generate-an-openapi-spec-from-your-existing-api-endpoints
+      - id: lowcode-agency-blog-claude-code-api-documentation-generation
+  - id: cursor-com
     fit: good_fit
     enterprise_readiness: team_ready
     confidence: medium
@@ -144,10 +144,10 @@ tools:
       - Pro-Lizenz fuer Frontier-Modelle noetig
       - Spec-spezifisches Linting nicht eingebaut
     sources:
-      - id: cursor-cursor-cursor-com
-      - id: mulesoft-cursor-openapi-demo
-      - id: apidog-cursor-openapi
-  - id: copilot
+      - id: cursor-com
+      - id: youtube-com-watch-v-ddyqnxw-lgo
+      - id: apidog-com-blog-gpt-5-with-cursor-cli
+  - id: github-com-features-copilot
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: medium
@@ -162,11 +162,11 @@ tools:
       - DACH-Konventionen muessen explizit geprompted werden
       - Kein dediziertes Spec-Linting out-of-the-box
     sources:
-      - id: github-copilot-github
-      - id: ms-azure-copilot-openapi-doc
-      - id: sas-copilot-openapi
-      - id: github-docs-document-api-prompt
-  - id: kong-insomnia-ai-runner-api-dev
+      - id: github-com-features-copilot
+      - id: learn-microsoft-com-en-us-azure-api-center-design-api-github-copilot-azure
+      - id: communities-sas-com-t5-sas-communities-library-building-applications-faster-with-sas-openapi-specifications-and-tac-p-985808
+      - id: docs-github-com-en-copilot-tutorials-customization-library-prompt-files-document-api
+  - id: insomnia-rest
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -179,10 +179,10 @@ tools:
       - Fokus auf REST/OpenAPI; GraphQL nur sekundaer
       - Generierte Specs replizieren US-Konventionen
     sources:
-      - id: kong-insomnia-ai-runner-api-dev-insomnia-rest
-      - id: infoworld-insomnia12
-      - id: kong-chatgpt-openapi-blog
-  - id: postman-postbot-ai-spec-builder
+      - id: insomnia-rest
+      - id: infoworld-com-article-4086891-kong-insomnia-12-bolsters-ai-mcp-tools-html
+      - id: konghq-com-blog-engineering-using-chatgpt-to-reinvigorate-apis
+  - id: postman-com
     fit: conditional
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -197,10 +197,10 @@ tools:
       - Cloud-First; on-prem Optionen nur in hoeheren Tiers
       - Spec-Qualitaet stark prompt-abhaengig
     sources:
-      - id: postman-postbot-ai-spec-builder-postman
-      - id: postman-spec-hub-generate-spec-doc
-      - id: testingdocs-postbot
-  - id: swaggerhub-mit-ai
+      - id: postman-com-postbot
+      - id: learning-postman-com-docs-design-apis-collections-generate-specifications
+      - id: testingdocs-com-postman-postbot-to-generate-api-tests
+  - id: swagger-io-tools-swaggerhub
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: low
@@ -214,11 +214,11 @@ tools:
       - AI-Features eher inkrementell, nicht generativer Hauptantrieb
       - UI-Reife schwaecher als bei jueengeren Wettbewerbern
     sources:
-      - id: swaggerhub-mit-ai-swagger
-      - id: swaggerhub-design-with-ai-docs
-      - id: swaggerhub-generate-api-from-code
-      - id: letsdatascience-swaggerhub-ai
-  - id: theneo
+      - id: swagger-io-tools-swaggerhub
+      - id: support-smartbear-com-swaggerhub-docs-en-design-with-ai-html
+      - id: support-smartbear-com-swaggerhub-docs-en-design-with-ai-generating-an-api-from-code-html
+      - id: letsdatascience-com-news-smartbear-updates-swagger-to-detect-ai-driven-api-drift-0a739cf6
+  - id: theneo-io
     fit: conditional
     enterprise_readiness: team_ready
     confidence: low
@@ -232,9 +232,9 @@ tools:
       - DACH-Lokalisierung muss manuell nachgezogen werden
       - Eingeschraenkte Self-Host-Optionen
     sources:
-      - id: theneo-theneo
-      - id: gtmtools-theneo-review
-      - id: aijet-theneo-review
+      - id: theneo-io
+      - id: gtmtools-dev-tools-theneo
+      - id: aijet-cc-item-theneo
 start_here: Wer Copilot bereits im Unternehmen nutzt, startet mit einem Workspace-Prompt auf einer abgegrenzten Ressource und versioniert die Spec direkt im Repo. SwaggerHub ist die bessere Wahl, wenn Style-Guide-Governance oder OnPrem-Betrieb im Vordergrund stehen — Spectral-Linting ist dort direkt integriert.
 caveats: Generierte Specs folgen standardmäßig US-Konventionen; DACH-spezifische Felder wie IBAN, Steuer-ID und ISO-3166-Ländercodes müssen im Prompt explizit eingefordert werden. Schemas decken in der Regel nur den Happy Path ab — Fehlermodelle und Edge Cases bleiben manuelle Aufgabe.
 sources: []
