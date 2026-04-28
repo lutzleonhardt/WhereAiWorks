@@ -6,158 +6,194 @@ roles:
 title: Code-Completion
 goal_label: Weniger Boilerplate tippen
 suitability: good_fit
-adoption_maturity: mainstream
-enterprise_relevance: high
-evidence_strength: strong
-rationale: "Code-Completion für bekannte Muster und Boilerplate funktioniert zuverlässig. Bei gut verstandenem Code spart man messbar Tippzeit; Reviews bleiben trotzdem nötig."
-start_here: "Mit dem im Konzern bereits beschafften Tool starten (meist GitHub Copilot über Microsoft EA). Einen Monat bewusst einsetzen, eigenes Produktivitätsgefühl beobachten und Acceptance-Rate grob mitführen, bevor größere Workflows daran hängen."
-caveats: "Übermäßiges Vertrauen in Generiertes ohne Review ist das Hauptrisiko. Realistische Erwartung: 20–30% subjektiv, kein 10x. Für regulierte Branchen vorab klären, welche Tools Datenschutz/Hosting-Anforderungen erfüllen."
+rationale: Code-Completion für bekannte Muster und Boilerplate funktioniert zuverlässig. Bei gut verstandenem Code spart man klar messbar Tippzeit; Reviews bleiben trotzdem nötig.
 tools:
-  - id: copilot
+  - id: jetbrains-ai-assistant-commit-message
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
-    why_it_fits: "Etablierter Standard für Inline-Completion und Next Edit Suggestions in VS Code, JetBrains, Neovim, Visual Studio, Xcode, Eclipse. Reduziert Boilerplate-Tippen messbar, ohne IDE-Wechsel. Enterprise-Tier liefert SSO, IP-Indemnity, Policy-Controls. DACH-Beschaffung über bestehende Microsoft/EA-Verträge meist unkompliziert."
+    why_it_fits: EU-Vendor (Tschechien), in DACH-Java/Kotlin-Stacks tief verankert. Mellum läuft lokal für Inline-Completion ohne Cloud-Roundtrip; AI Enterprise erlaubt org-eigenes LLM-Hosting — das löst die DACH-Compliance-Frage besser als die meisten US-Anbieter.
     caveats:
-      - "Codebase-Kontext schwächer als Cursor bei großen Repos"
-      - "Auto-Completion qualitativ teils hinter Cursor Tab"
-      - "Premium-Modelle in Pro+/Enterprise per Request-Quota statt unlimited"
-      - "Datenverarbeitung über Microsoft/OpenAI in den USA — separates DPIA üblich"
-    practitioner_signal:
-      volume: high
-      tenor: mixed
-      praise:
-        - "Zuverlässig, niedriger Reibungsverlust"
-        - "Beste Verbreitung über alle IDEs"
-        - "Solide für Boilerplate und Standard-Patterns"
-      complaints:
-        - "Schwächere Codebase-Awareness als Cursor"
-        - "Pro+ Quoten unzureichend für Heavy User"
-    sources:
-      - id: copilot-marketplace
-      - id: copilot-vs-jetbrains-devtoolsreview
-      - id: copilot-cursor-reddit-2025
-
-  - id: cursor
-    fit: good_fit
-    enterprise_readiness: team_ready
-    confidence: high
-    why_it_fits: "VS-Code-Fork mit eigenem Tab-Modell und Codebase-Indexing. Speculative Editing liefert messbar längere und präzisere Vervollständigungen, gerade dort, wo Boilerplate Mustern im Projekt folgt. SOC 2 Type II, Privacy Mode, Enterprise-Tier mit SSO/RBAC vorhanden — für DACH-Konzern-Procurement (ISO 27001, AVV nach DSGVO Art. 28) reicht das aber oft noch nicht."
-    caveats:
-      - "Credit-basiertes Pricing seit 08/2025 unvorhersehbar bei Heavy Use"
-      - "Kein ISO 27001 — bei vielen DACH-Großkonzernen ein KO-Kriterium"
-      - "Kein natives JetBrains-Erlebnis (VS-Code-basiert)"
-      - "Closed-Source — Lock-in-Risiko"
-    practitioner_signal:
-      volume: high
-      tenor: polarized
-      praise:
-        - "Tab-Completion in einer eigenen Liga"
-        - "Beste Codebase-Awareness im Mainstream"
-      complaints:
-        - "Credit-System teuer und unvorhersehbar"
-        - "Wechselnde Qualität je nach Modell-Updates"
-    sources:
-      - id: cursor-enterprise
-      - id: cursor-vs-copilot-devtoolsreview
-      - id: claude-ai-coding-competitors-reddit
-      - id: copilot-cursor-reddit-2025
-
-  - id: jetbrains-ai-assistant
-    fit: good_fit
-    enterprise_readiness: enterprise_ready
-    confidence: high
-    why_it_fits: "EU-Vendor (Tschechien), in DACH-Java/Kotlin-Stacks tief verankert. Mellum-Modell läuft lokal für Inline-Completion ohne Cloud-Roundtrip; AI Enterprise erlaubt org-eigenes LLM-Hosting — das löst die DACH-Compliance-Frage besser als die meisten US-Anbieter. Suggestions sind type-correct und inspection-clean, besonders stark in Java/Kotlin/Spring."
-    caveats:
-      - "Nur in JetBrains-IDEs — kein VS-Code-Build"
-      - "Cloud-Features routen je nach Modell zu OpenAI/Google/Anthropic — DPIA pflicht"
-      - "Credits brennen schnell ab (Pro-Quota)"
-      - "Raw-Completion-Qualität laut Reviews hinter Cursor Tab"
+      - Cloud-Features routen je nach Modell zu OpenAI/Google/Anthropic — DPIA pflicht
+      - Nur in JetBrains-IDEs (kein VS-Code-Build)
+      - Credits in Pro/Enterprise-Tiers schnell aufgebraucht
+      - Cloud-Features routen je nach Modell zu OpenAI/Google/Anthropic — DPIA bleibt notwendig
+      - Enterprise-Plan für Self-host kostet deutlich mehr; reine Free-Tier-Local-Completion ist Compliance-sicher, aber funktional begrenzt
+      - Nur in JetBrains-IDEs — kein VS-Code-Build
+      - Cloud-Features (Chat, Junie) verbrauchen Credits, Pro-Quota oft schnell erschöpft
+      - Raw-Completion-Qualität laut Reviews hinter Cursor Tab/Supermaven
     practitioner_signal:
       volume: medium
       tenor: mixed
       praise:
-        - "Beste IDE-Integration für JetBrains-Stack"
-        - "Type-aware Completions für Java/Kotlin"
+        - Beste IDE-Integration für JetBrains-Stack
+        - Type-aware Completions für Java/Kotlin
       complaints:
-        - "Credits brennen schnell ab"
-        - "Autocomplete-Qualität hinter Cursor"
+        - Credits brennen schnell ab
+        - Autocomplete-Qualität hinter Cursor
     sources:
       - id: jetbrains-ai-devtoolsreview
-      - id: jetbrains-ai-vibecodedthis
-      - id: jetbrains-ai-installation-docs
-      - id: claude-ai-coding-competitors-reddit
-
+      - id: jetbrains-ai-assistant-mit-junie-vibecodedthis
+      - id: jetbrains-ai-assistant-mit-junie-jetbrains-jetbrains-com-help-ai-assistant-generate-unit-tests-html
+      - id: jetbrains-ai-assistant-mit-junie-reddit
   - id: tabnine
     fit: good_fit
     enterprise_readiness: enterprise_ready
     confidence: high
-    why_it_fits: "Air-gapped/On-Prem-Deployment plus SOC 2, ISO 27001, GDPR und IP-Indemnity machen Tabnine in regulierten DACH-Branchen oft zur einzig zulassungsfähigen Option für Inline-Completion. Kernziel 'weniger Boilerplate tippen' wird zuverlässig bedient."
+    why_it_fits: Air-gapped/On-Prem-Deployment plus SOC 2, ISO 27001, GDPR und IP-Indemnity machen Tabnine in regulierten DACH-Branchen oft zur einzig zulassungsfähigen Option für Inline-Completion. Kernziel 'weniger Boilerplate tippen' wird zuverlässig bedient.
     caveats:
-      - "Acceptance-Rate praxis-niedriger als Copilot/Cursor (~45% vs. ~65%)"
-      - "Free-Tier 2025 deutlich beschnitten"
-      - "Self-hosted Setup verlangt Aufwand und GPU-Infrastruktur"
+      - Acceptance-Rate praxis-niedriger als Copilot/Cursor (~45% vs. ~65%)
+      - Air-gapped TCO durch GPU-Infrastruktur und Ops oft deutlich >$39/User
+      - Israelischer Vendor — in DE-Defense/öffentl. Sektor gelegentlich Politik-Thema
+      - Israelischer Vendor — bei Defense/öffentlichem Sektor in Deutschland gelegentlich politisches Thema
+      - Air-gapped Setup verlangt eigene GPU-Infrastruktur und Ops-Kompetenz; TCO meist deutlich höher als $39/User
+      - Completion-Qualität laut mehreren Tests unter Copilot/Cursor (~45% vs. 65% Akzeptanzrate)
+      - Free-Tier 2025 deutlich beschnitten
+      - Self-hosted Setup verlangt Aufwand
     practitioner_signal:
       volume: medium
       tenor: mixed
       praise:
-        - "Self-hosted bleibt Daten im Haus"
-        - "Funktioniert in allen großen IDEs"
+        - Self-hosted bleibt Daten im Haus
+        - Funktioniert in allen großen IDEs
       complaints:
-        - "Suggestions schwächer als Konkurrenz"
-        - "Wirkt feature-mäßig hinter Copilot/Cursor zurück"
+        - Suggestions schwächer als Konkurrenz
+        - Wirkt feature-mäßig hinter Copilot/Cursor zurück
     sources:
-      - id: tabnine-enterprise
-      - id: tabnine-medium-acceptance-rate
-      - id: tabnine-reddit-selfhosted
-
-  - id: continue-dev
-    fit: conditional
-    enterprise_readiness: team_ready
-    confidence: medium
-    why_it_fits: "Apache-2.0 Plugin mit BYOK ermöglicht Routing zu Azure OpenAI Frankfurt oder lokalem Ollama — naheliegender Compliance-by-Design-Pfad für DACH-Banken/Versicherungen. Inline-Completion und Sidebar-Chat in VS Code/JetBrains."
-    caveats:
-      - "Kein zentrales Admin-/Audit-Backend für Hunderte Entwickler"
-      - "UX hinter Cursor/Copilot, mehr Konfigurationsaufwand"
-      - "Qualität abhängig vom gewählten Modell"
-    practitioner_signal:
-      volume: medium
-      tenor: positive
-      praise:
-        - "Volle Modell-Wahl, lokal möglich"
-        - "OSS, kein Lock-in"
-      complaints:
-        - "UX hinter Cursor/Copilot"
-        - "Mehr Konfigurationsaufwand"
-    sources:
-      - id: continue-aicodingcompare
-      - id: continue-jackson-blog
-
-  - id: sourcegraph-cody
+      - id: tabnine-tabnine
+      - id: tabnine-medium
+      - id: tabnine-reddit
+  - id: aws-amazon-q-developer-debug-diagnose
     fit: conditional
     enterprise_readiness: enterprise_ready
-    confidence: medium
-    why_it_fits: "Einer der wenigen Anbieter mit aktiv supportetem Self-host-Pfad inkl. BYOK gegen Bedrock/Vertex. Sinnvoll für DACH-Konzerne mit großen Monorepos, in denen 'Boilerplate' projektspezifisch ist und cross-repo Kontext entscheidend ist."
+    confidence: high
+    why_it_fits: Suite-Feature der AWS-Plattform mit IAM Identity Center, in DACH-AWS-Häusern (Versicherungen, Banken mit AWS-Strategie) über bestehenden EA meist beschaffbar. Inline-Completion + Security-Scan + /transform-Agent für Java-Upgrades.
     caveats:
-      - "Free/Pro 2025 abgekündigt; nur Enterprise ab ~$59/User/Monat"
-      - "Setup-Aufwand: Sourcegraph-Instanz nötig"
-      - "Außerhalb großer Monorepos teurer Overkill"
+      - Außerhalb AWS-Stack wenig Mehrwert
+      - Datenverarbeitung in USA, sofern Region nicht explizit gesetzt — DPIA pflicht
+      - Suggestions außerhalb AWS-Kontext qualitativ unter Copilot/Cursor
+      - Q Developer Pro-Tier verarbeitet in den USA, sofern keine spezifische Region konfigurierbar — DPIA prüfen
+      - Stark proprietär an AWS-Region und IAM Identity Center gebunden, Lock-in
+      - Allgemeine Completion-Qualität laut Reviews unter Copilot/Cursor
+      - Wenig Mehrwert außerhalb des AWS-Ökosystems
+      - Suggestions oft konservativ, eher Line- als Function-Level
     practitioner_signal:
       volume: low
       tenor: mixed
       praise:
-        - "Stark bei Monorepo-Kontext"
-        - "Self-host für IP-sensitive Umgebungen"
+        - Stark bei AWS-Workflows (CDK, Lambda, CloudFormation)
+        - Generöser Free-Tier
       complaints:
-        - "Free/Pro Abkündigung enttäuschte Community"
-        - "$59/User/Monat schließt Individuen aus"
+        - Außerhalb AWS unbrauchbar
+        - Suggestions schwächer als Copilot
     sources:
-      - id: cody-sourcegraph-docs
-      - id: cody-faq-deprecation
-      - id: cody-byok-config
-      - id: continue-jackson-blog
-
-sources:
-  - id: metr-rct-2025
-  - id: claude-ai-coding-competitors-reddit
+      - id: amazon-q-developer-awesomeagents
+      - id: amazon-q-developer-amazon-docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
+      - id: amazon-q-developer-toolstac
+  - id: continue-dev
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: high
+    why_it_fits: Apache-2.0 Plugin mit BYOK ermöglicht Routing zu Azure OpenAI Frankfurt oder lokalem Ollama — naheliegender Compliance-by-Design-Pfad für DACH-Banken/Versicherungen. Inline-Completion und Sidebar-Chat in VS Code/JetBrains.
+    caveats:
+      - Kein zentrales Admin-/Audit-Backend für Hunderte Entwickler
+      - Setup-Aufwand höher als Copilot/Cursor
+      - Vendor-Backing dünn — Support-SLA nicht enterprise-grade
+      - Kein zentrales Admin-/Audit-Backend — Governance bei mehreren hundert Entwicklern wird mühsam
+      - Vendor-Backing dünn — Support-SLA nicht vergleichbar mit Copilot Enterprise
+      - Mehr Setup als Copilot/Cursor
+      - Qualität abhängig vom gewählten Modell
+      - Kein Managed-Backend; API-Key-Verwaltung selbst
+    practitioner_signal:
+      volume: medium
+      tenor: positive
+      praise:
+        - Volle Modell-Wahl, lokal möglich
+        - OSS, keine Lock-in
+      complaints:
+        - UX hinter Cursor/Copilot
+        - Mehr Konfigurationsaufwand
+    sources:
+      - id: continue-dev-aicodingcompare
+      - id: continue-dev-jackson
+  - id: google-gemini-code-assist
+    fit: conditional
+    enterprise_readiness: enterprise_ready
+    confidence: medium
+    why_it_fits: Suite-Bundle mit GCP, SOC 1/2/3, ISO 27001/27017/27018/27701 und EU-Region (Frankfurt). Für DACH-Häuser mit GCP-Strategie über bestehenden Cloud-Vertrag oft genehmigungsfähig.
+    caveats:
+      - Außerhalb GCP-Stack wenig Mehrwert
+      - Code-Assist Add-on muss separat gebucht werden — nicht automatisch im GCP-EA
+      - Praktiker-Signal in Reviews schwächer als Copilot/Cursor
+      - Außerhalb GCP-Stack wenig Wert
+      - Vertrags-Add-ons für Code-Assist müssen explizit gebucht und bewertet werden — nicht automatisch im GCP-EA enthalten
+      - Außerhalb GCP-Ökosystem weniger Zusatznutzen
+      - Enterprise-Pricing nicht öffentlich
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+    sources:
+      - id: google-gemini-code-assist-vibecoding-app
+      - id: google-gemini-code-assist-google-cloud-google-com-gemini-docs-codeassist-code-customization
+  - id: sourcegraph-cody
+    fit: conditional
+    enterprise_readiness: enterprise_ready
+    confidence: high
+    why_it_fits: Einer der wenigen Anbieter mit aktiv supportetem Self-host-Pfad inkl. BYOK gegen Bedrock/Vertex. Sinnvoll für DACH-Konzerne mit großen Monorepos, in denen 'Boilerplate' projektspezifisch ist und cross-repo Kontext entscheidend ist.
+    caveats:
+      - Free/Pro 2025 abgekündigt; nur Enterprise ab ~$59/User
+      - Self-hosted braucht weiterhin Internet-Zugang zu LLM-Providern (außer via Bedrock/Vertex/Selfhost-Modell)
+      - Strategischer Fokus verschiebt sich auf neues Agent-Tool 'Amp' — Cody-Roadmap beobachten
+      - Self-hosted Cody braucht trotzdem Internet-Zugang zu LLM-Provider (Anthropic/OpenAI) — air-gapped nur via Bedrock/Vertex/Selfhosted-Modell
+      - Sourcegraph-Strategie verlagert Fokus auf 'Amp' (neues Agent-Tool) — Cody-Roadmap weiter beobachten
+      - Free/Pro 2025 abgekündigt; nur noch Enterprise ab $59/User/Monat
+      - "Setup-Aufwand: Sourcegraph-Instanz nötig"
+      - Außerhalb großer Monorepos teurer Overkill
+    practitioner_signal:
+      volume: low
+      tenor: mixed
+      praise:
+        - Stark bei Monorepo-Kontext
+        - Self-host für IP-sensitive Umgebungen
+      complaints:
+        - Free/Pro Abkündigung enttäuschte Community
+        - $59/User/Monat schließt Individuen aus
+    sources:
+      - id: sourcegraph-cody-sourcegraph-sourcegraph-com-docs-cody-capabilities-commands
+      - id: sourcegraph-cody-sourcegraph-2-sourcegraph-com-docs-cody-enterprise
+      - id: sourcegraph-cody-sourcegraph-3
+      - id: continue-dev-jackson
+  - id: tabby
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: medium
+    why_it_fits: OSS-self-hosted Coding-Assistent mit Inline-Completion — valide Tabnine-Alternative ohne Vendor-Bindung für DACH-Teams mit Sovereignty-Anforderungen. Likely missed by market scan because positioned as developer-OSS-tooling rather than 'AI product' und in DACH-Compliance-Suchen seltener prominent.
+    caveats:
+      - Eigene GPU-Infrastruktur und Ops-Kompetenz erforderlich
+      - Suggestion-Qualität abhängig vom selbst gehosteten Modell
+      - Kommerzieller Support begrenzt — Integrator empfohlen
+      - Eigene GPU-Infrastruktur erforderlich
+      - Kommerzieller Support begrenzt — DACH-Konzern wird ggf. Integrator dazwischen schalten
+      - Setup-Aufwand inkl. GPU-Infrastruktur
+      - Kleinere Community als Copilot
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+    sources:
+      - id: tabby-reddit
+      - id: tabby-tabbyml
+  - id: lurus-code
+    fit: conditional
+    enterprise_readiness: evaluation_only
+    confidence: low
+    why_it_fits: Deutscher Anbieter mit explizitem GDPR-Marketing, SSO und VS-Code-/CLI-Integration; Code wird laut Vendor nicht persistiert. Likely missed by market scan because DACH-only Player, der durch generische Capability-Suchen typisch durchrutscht.
+    caveats:
+      - Kleiner, junger Anbieter — Vendor-Risk hoch, kaum Referenzkunden öffentlich
+      - Keine ISO 27001 / SOC 2-Zertifikate ersichtlich
+      - Eher Coding-Agent als reines Inline-Completion-Tool
+    sources:
+      - id: lurus-code-lurus
+start_here: JetBrains-Shops starten mit JetBrains AI Assistant — Mellum läuft lokal, für reine Inline-Completion ist keine DPIA erforderlich. Wer IDE-unabhängig oder cloud-neutral bleiben muss, prüft Tabnine (air-gapped) oder Continue.dev mit Azure-OpenAI-Frankfurt-Backend. Einen Monat Acceptance-Rate grob mitführen, bevor weitere Workflows auf dem Tool aufbauen.
+caveats: "Übermäßiges Vertrauen in Generiertes ohne Review ist das Hauptrisiko. Realistische Erwartung: 20–30% subjektiv, kein 10x."
+sources: []
 ---

@@ -1,110 +1,435 @@
-- id: copilot
-  name: "GitHub Copilot"
-  vendor: "GitHub (Microsoft)"
-  description: "Inline-Completion und Next-Edit-Suggestions in VS Code, JetBrains, Neovim, Visual Studio."
-  category: coding
-  url: "https://github.com/features/copilot"
-  maturity: production
-  pricing: "$10–19/User/Monat"
-
-- id: cursor
-  name: "Cursor"
-  vendor: "Anysphere"
-  description: "VS-Code-Fork mit eigenem Tab-Modell und Codebase-Indexing für längere, präzisere Suggestions."
-  category: coding
-  url: "https://cursor.com"
-  maturity: production
-  pricing: "$20/User/Monat (Credit-basiert seit 08/2025)"
-
 - id: claude-code
-  name: "Claude Code"
-  vendor: "Anthropic"
-  description: "Agent-orientierter Coding-Assistant in Terminal/IDE mit großem Kontext."
+  name: Claude Code
   category: coding
-  url: "https://claude.com/product/claude-code"
+  url: https://claude.com/product/claude-code
   maturity: production
-  pricing: "ab $20/User/Monat"
-
-- id: jetbrains-ai-assistant
-  name: "JetBrains AI Assistant (mit Junie)"
-  vendor: "JetBrains"
-  description: "Native AI-Completion in IntelliJ, PyCharm, WebStorm — Mellum-Modell läuft lokal, AI Enterprise erlaubt eigenes LLM-Hosting."
+- id: copilot
+  name: GitHub Copilot
   category: coding
-  url: "https://www.jetbrains.com/ai/"
+  url: https://github.com/features/copilot
   maturity: production
-  pricing: "ab $10/User/Monat"
-
-- id: tabnine
-  name: "Tabnine"
-  vendor: "Tabnine"
-  description: "Privacy-first Code-Completion mit on-prem/air-gapped Deployment, BYO-LLM, SOC 2/ISO 27001/GDPR."
-  category: coding
-  url: "https://www.tabnine.com"
-  maturity: production
-  pricing: "ab $39/User/Monat (Enterprise)"
-
-- id: continue-dev
-  name: "Continue.dev"
-  vendor: "Continue"
-  description: "Apache-2.0 IDE-Plugin mit BYOK — bindet beliebige LLMs (OpenAI, Anthropic, Gemini, lokale Ollama-Modelle) als Completion-Backend ein."
-  category: coding
-  url: "https://www.continue.dev/"
-  maturity: production
-
 - id: sourcegraph-cody
-  name: "Sourcegraph Cody"
-  vendor: "Sourcegraph"
-  description: "Code-Completion und Chat über Sourcegraph-Kontext-Engine — zieht Symbole und Usages aus dem ganzen Remote-Repo."
+  name: Sourcegraph Cody
   category: coding
-  url: "https://sourcegraph.com/cody"
+  url: https://sourcegraph.com/cody
   maturity: production
-  pricing: "ab $59/User/Monat (nur Enterprise)"
-
-- id: blinqio
-  name: "BlinqIO"
+- id: tabnine
+  name: Tabnine
+  category: coding
+  url: https://www.tabnine.com
+  maturity: production
+- id: continue-dev
+  name: Continue.dev
+  category: coding
+  url: https://www.continue.dev/
+  maturity: production
+- id: jetbrains-ai-assistant
+  name: JetBrains AI Assistant (mit Junie)
+  category: coding
+  url: https://www.jetbrains.com/ai/
+  maturity: production
+- id: cursor
+  name: Cursor
+  category: coding
+  url: https://cursor.com
+  maturity: production
+- id: jetbrains-ai-assistant-commit-message
+  name: JetBrains AI Assistant (mit Junie)
+  category: coding
+  url: https://www.jetbrains.com/ai/
+  maturity: production
+- id: aider
+  name: Aider
+  category: coding
+  url: https://aider.chat
+  maturity: production
+- id: aws-amazon-q-developer-debug-diagnose
+  name: AWS Amazon Q Developer (Debug/Diagnose)
+  category: coding
+  url: https://aws.amazon.com/q/developer/
+  maturity: production
+- id: atlassian-rovo
+  name: Atlassian Rovo
+  category: other
+  url: https://www.atlassian.com/software/rovo
+  maturity: production
+- id: jetbrains-junie
+  name: JetBrains Junie
+  category: coding
+  url: https://www.jetbrains.com/junie/
+  maturity: production
+- id: lurus-code
+  name: Lurus Code
+  category: other
+  url: https://code.lurus.ai
+  maturity: production
+- id: openai-codex
+  name: OpenAI Codex
+  category: coding
+  url: https://openai.com/codex/
+  maturity: production
+- id: apiiro-ai-augmented-application-risk-platform
+  name: Apiiro (AI-Augmented Application Risk Platform)
+  category: other
+  url: https://apiiro.com/platform/ai-code-security/
+  maturity: production
+- id: gitpod-flex-sicheres-coding-agent-workspace
+  name: Gitpod Flex (Sicheres Coding-Agent-Workspace)
+  category: other
+  url: https://www.gitpod.io/flex
+  maturity: production
+- id: snyk-ai-trust-platform-deepcode-ai-guardrails
+  name: Snyk AI Trust Platform / DeepCode AI Guardrails
+  category: coding
+  url: https://snyk.io/platform/ai-trust/
+  maturity: production
+- id: cloudflare-ai-gateway
+  name: Cloudflare AI Gateway
+  category: other
+  url: https://developers.cloudflare.com/ai-gateway/
+  maturity: production
+- id: lakera-guard
+  name: Lakera Guard
+  category: other
+  url: https://www.lakera.ai/
+  maturity: production
+- id: litellm-proxy-berriai
+  name: LiteLLM Proxy (BerriAI)
+  category: other
+  url: https://github.com/BerriAI/litellm
+  maturity: production
+- id: portkey-ai-gateway
+  name: Portkey AI Gateway
+  category: other
+  url: https://portkey.ai/
+  maturity: production
+- id: honeycomb-query-assistant-ai
+  name: Honeycomb Query Assistant / AI
+  category: other
+  url: https://www.honeycomb.io/ai
+  maturity: production
+- id: new-relic-ai
+  name: New Relic AI
+  category: other
+  url: https://newrelic.com/platform/new-relic-ai
+  maturity: production
+- id: rookout-dynatrace-live-debugger-ai
+  name: Rookout (Dynatrace) Live Debugger + AI
+  category: other
+  url: https://www.dynatrace.com/platform/live-debugger/
+  maturity: production
+- id: augment-code
+  name: Augment Code
+  category: other
+  url: https://www.augmentcode.com
+  maturity: production
+- id: google-gemini-code-assist
+  name: Google Gemini Code Assist
+  category: other
+  url: https://cloud.google.com/products/gemini/code-assist
+  maturity: production
+- id: komodor
+  name: Komodor
+  category: other
+  url: https://komodor.com
+  maturity: production
+- id: cline
+  name: Cline
+  category: coding
+  url: https://github.com/cline/cline
+  maturity: production
+- id: datadog-bits-ai
+  name: Datadog Bits AI
+  category: other
+  url: https://www.datadoghq.com/product/bits-ai/
+  maturity: production
+- id: sentry-seer
+  name: Sentry Seer
+  category: other
+  url: https://sentry.io/product/ai-in-sentry/seer/
+  maturity: production
+- id: tabby
+  name: Tabby
+  category: coding
+  url: https://www.tabbyml.com
+  maturity: production
+- id: sap-joule-for-developers
+  name: SAP Joule for Developers
+  category: other
+  url: https://www.sap.com/products/artificial-intelligence/ai-assistant.html
+  maturity: production
+- id: windsurf-codeium
+  name: Windsurf (Codeium)
+  category: coding
+  url: https://windsurf.com
+  maturity: production
+- id: ibm-watsonx-code-assistant-for-z
+  name: IBM watsonx Code Assistant for Z
+  category: other
+  url: https://www.ibm.com/products/watsonx-code-assistant-z
+  maturity: production
+- id: gemini-code-assist-pr-review-and-summary-in-github
+  name: Gemini Code Assist (PR review & summary in GitHub)
+  category: coding
+  url: https://developers.google.com/gemini-code-assist/docs/review-github-code
+  maturity: production
+- id: opencommit
+  name: OpenCommit
+  category: coding
+  url: https://github.com/di-sukharev/opencommit
+  maturity: production
+- id: atlassian-rovo-dev-bitbucket-ai-pr-descriptions
+  name: Atlassian Rovo Dev / Bitbucket AI PR descriptions
+  category: other
+  url: https://support.atlassian.com/bitbucket-cloud/docs/use-ai-to-generate-pull-request-descriptions/
+  maturity: production
+- id: coderabbit-pr-summary
+  name: CodeRabbit (PR summary)
+  category: coding
+  url: https://www.coderabbit.ai
+  maturity: production
+- id: gitlab-duo-merge-request-summary-and-commit-message
+  name: GitLab Duo (Merge Request Summary & Commit Message)
+  category: coding
+  url: https://docs.gitlab.com/ee/user/project/merge_requests/duo_in_merge_requests.html
+  maturity: production
+- id: qodo-merge-formerly-pr-agent
+  name: Qodo Merge (formerly PR-Agent)
+  category: coding
+  url: https://www.qodo.ai/products/qodo-merge/
+  maturity: production
+- id: factory-droids
+  name: Factory Droids
+  category: coding
+  url: https://factory.ai/
+  maturity: production
+- id: google-jules
+  name: Google Jules
+  category: coding
+  url: https://jules.google/
+  maturity: production
+- id: openhands-formerly-opendevin
+  name: OpenHands (formerly OpenDevin)
+  category: coding
+  url: https://www.all-hands.dev/
+  maturity: production
+- id: devin
+  name: Devin
+  category: coding
+  url: https://devin.ai/
+  maturity: production
+- id: coder-com-ai-governance-layer
+  name: Coder.com (AI Governance Layer)
+  category: other
+  url: https://coder.com/solutions/ai-governance
+  maturity: production
+- id: bump-sh
+  name: Bump.sh
+  category: other
+  url: https://bump.sh
+  maturity: production
+- id: readme
+  name: ReadMe
+  category: other
+  url: https://readme.com
+  maturity: production
+- id: stainless
+  name: Stainless
+  category: other
+  url: https://www.stainless.com
+  maturity: production
+- id: document360
+  name: Document360
+  category: other
+  url: https://document360.com
+  maturity: production
+- id: refact-ai
+  name: Refact.ai
+  category: other
+  url: https://refact.ai
+  maturity: production
+- id: stoplight
+  name: Stoplight
+  category: other
+  url: https://stoplight.io
+  maturity: production
+- id: mintlify
+  name: Mintlify
+  category: other
+  url: https://mintlify.com
+  maturity: production
+- id: swimm
+  name: Swimm
+  category: other
+  url: https://swimm.io
+  maturity: production
+- id: sourcegraph-cody-batch-changes
+  name: Sourcegraph (Cody + Batch Changes)
+  category: coding
+  url: https://sourcegraph.com
+  maturity: production
+- id: qodo
+  name: Qodo
+  category: coding
+  url: https://www.qodo.ai
+  maturity: production
+- id: zencoder
+  name: Zencoder
+  category: coding
+  url: https://zencoder.ai
+  maturity: production
+- id: vault
+  name: Vault
+  category: other
+  url: https://www.getvault.dev/
+  maturity: production
+- id: vostracode
+  name: VostraCode
+  category: other
+  url: https://vostracode.com/
+  maturity: production
+- id: opencode
+  name: OpenCode
+  category: coding
+  url: https://opencode.ai
+  maturity: production
+- id: google-gemini-cli
+  name: Google Gemini CLI
+  category: coding
+  url: https://github.com/google-gemini/gemini-cli
+  maturity: production
+- id: goose
+  name: Goose
+  category: coding
+  url: https://block.github.io/goose/
+  maturity: production
+- id: open-interpreter
+  name: Open Interpreter
+  category: coding
+  url: https://github.com/openinterpreter/open-interpreter
+  maturity: production
+- id: wave-terminal
+  name: Wave Terminal
+  category: coding
+  url: https://www.waveterm.dev
+  maturity: production
+- id: red-hat-ansible-lightspeed-mit-watsonx-code-assistant
+  name: Red Hat Ansible Lightspeed (mit watsonx Code Assistant)
+  category: other
+  url: https://developers.redhat.com/products/ansible/overview/lightspeed
+  maturity: production
+- id: kubectl-ai
+  name: kubectl-ai
+  category: other
+  url: https://github.com/GoogleCloudPlatform/kubectl-ai
+  maturity: production
+- id: anteroom
+  name: Anteroom
+  category: other
+  url: https://anteroom.ai/
+  maturity: production
+- id: exasol-espresso-ai-lab
+  name: Exasol Espresso AI Lab
+  category: other
+  url: https://www.exasol.com/de/
+  maturity: production
+- id: oracle-select-ai
+  name: Oracle Select AI
+  category: other
+  url: https://www.oracle.com/autonomous-database/select-ai/
+  maturity: production
+- id: thoughtspot-sage
+  name: ThoughtSpot Sage
+  category: other
+  url: https://www.thoughtspot.com/product/sage-ai
+  maturity: production
+- id: amazon-q-for-quicksight-and-redshift
+  name: Amazon Q for QuickSight & Redshift
+  category: data
+  url: https://aws.amazon.com/q/
+  maturity: production
+- id: databricks-genie
+  name: Databricks Genie
+  category: data
+  url: https://www.databricks.com/product/ai-bi/genie
+  maturity: production
+- id: google-bigquery-data-canvas-gemini-in-bigquery
+  name: Google BigQuery Data Canvas / Gemini in BigQuery
+  category: data
+  url: https://cloud.google.com/bigquery/docs/data-canvas
+  maturity: production
+- id: snowflake-cortex-analyst
+  name: Snowflake Cortex Analyst
+  category: data
+  url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst
+  maturity: production
+- id: vanna-ai
+  name: Vanna.AI
+  category: data
+  url: https://vanna.ai/
+  maturity: production
+- id: aikido-security-ai-autofix
+  name: Aikido Security (AI AutoFix)
+  category: coding
+  url: https://www.aikido.dev/
+  maturity: production
+- id: checkmarx-one-ai-security-champion
+  name: Checkmarx One AI Security Champion
+  category: coding
+  url: https://checkmarx.com/product/ai-security/
+  maturity: production
+- id: endor-labs-magic-patches-ai-remediation
+  name: Endor Labs (Magic Patches / AI Remediation)
+  category: coding
+  url: https://www.endorlabs.com/
+  maturity: production
+- id: mend-io-mend-ai-renovate-ai
+  name: Mend.io (Mend AI / Renovate AI)
+  category: coding
+  url: https://www.mend.io/
+  maturity: production
+- id: sonarqube-ai-codefix
+  name: SonarQube AI CodeFix
+  category: coding
+  url: https://www.sonarsource.com/products/sonarqube/ai-codefix/
+  maturity: production
+- id: code-intelligence-ci-spark-ci-sense
+  name: Code Intelligence (CI Spark / CI Sense)
+  category: other
+  url: https://www.code-intelligence.com/
+  maturity: production
+- id: qwiet-ai-prezero
+  name: Qwiet AI (preZero)
+  category: other
+  url: https://qwiet.ai/
+  maturity: production
+- id: gitlab-duo-vulnerability-resolution
+  name: GitLab Duo Vulnerability Resolution
+  category: coding
+  url: https://about.gitlab.com/gitlab-duo/
+  maturity: production
+- id: semgrep-assistant
+  name: Semgrep Assistant
+  category: coding
+  url: https://semgrep.dev/products/semgrep-assistant
+  maturity: production
+- id: snyk-deepcode-ai-fix
+  name: Snyk DeepCode AI Fix
+  category: coding
+  url: https://snyk.io/platform/deepcode-ai/
+  maturity: production
+- id: veracode-fix
+  name: Veracode Fix
+  category: coding
+  url: https://www.veracode.com/products/veracode-fix
+  maturity: production
+- id: keploy
+  name: Keploy
   category: testing
-  url: "https://blinq.io"
+  url: https://keploy.io/
   maturity: production
-  pricing: "auf Anfrage"
-
-- id: applitools
-  name: "Applitools"
+- id: diffblue-cover
+  name: Diffblue Cover
   category: testing
-  url: "https://applitools.com"
+  url: https://www.diffblue.com/
   maturity: production
-  pricing: "auf Anfrage"
-
-- id: mabl
-  name: "Mabl"
-  category: testing
-  url: "https://mabl.com"
-  maturity: production
-  pricing: "auf Anfrage"
-
-- id: productboard-ai
-  name: "Productboard AI"
-  category: discovery
-  url: "https://www.productboard.com/product/ai/"
-  maturity: production
-  pricing: "ab $20/User/Monat"
-
-- id: dovetail
-  name: "Dovetail"
-  category: discovery
-  url: "https://dovetail.com"
-  maturity: production
-  pricing: "ab $29/User/Monat"
-
-- id: intercom-fin
-  name: "Intercom Fin"
-  category: support
-  url: "https://www.intercom.com/fin"
-  maturity: production
-  pricing: "$0.99/Resolution"
-
-- id: zendesk-ai
-  name: "Zendesk AI"
-  category: support
-  url: "https://www.zendesk.com/service/ai/"
-  maturity: production
-  pricing: "ab $50/Agent/Monat"
