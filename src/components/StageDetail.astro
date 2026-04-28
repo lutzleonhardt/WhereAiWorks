@@ -190,6 +190,12 @@ const useCases = useCaseEntries.map((entry) => entry.data);
               <span class="stage-uc-title">{uc.title}</span>
               <span class="stage-uc-pill-slot">
                 <SuitabilityBadge suitability={uc.suitability} context="ai" />
+                <span
+                  class={`stage-uc-coverage-mini stage-uc-coverage-mini-${coverage}`}
+                  role="img"
+                  title={`${coverageLabels[coverage]} — ${coverageTooltip}`}
+                  aria-label={`${coverageLabels[coverage]}. ${coverageTooltip}`}
+                ></span>
               </span>
               <span class="stage-uc-tools-line">
                 <span class="label">Tools ({uc.tools.length})</span>

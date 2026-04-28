@@ -856,7 +856,31 @@ a.src:hover { color: var(--ink); }
   grid-column: 2;
   grid-row: 1;
   align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
 }
+
+.stage-uc-coverage-mini {
+  display: inline-block;
+  width: 28px;
+  height: 6px;
+  border-radius: 1px;
+  background:
+    linear-gradient(
+      to right,
+      var(--ink) 0%,
+      var(--ink) var(--fill, 25%),
+      var(--rule) var(--fill, 25%),
+      var(--rule) 100%
+    );
+  cursor: help;
+}
+.stage-uc-coverage-mini-strong { --fill: 100%; }
+.stage-uc-coverage-mini-ok { --fill: 66%; }
+.stage-uc-coverage-mini-thin { --fill: 33%; }
+.stage-uc-coverage-mini-open { --fill: 0%; }
 
 .stage-uc-tools-line {
   grid-column: 1 / -1;
