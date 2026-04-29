@@ -5,6 +5,33 @@ Einstieg: erst **was wir suchen und was nicht**, dann die **inhaltlichen
 Kriterien**, dann die **Mechanik** (wo welche Datei mit welchen Feldern
 liegt), zum Schluss der **PR-Ablauf**.
 
+## TL;DR — In drei Schritten zum PR
+
+Für den häufigsten Fall („ein Tool zu einem bestehenden Use Case
+ergänzen"):
+
+1. **Datei finden** unter `src/content/use_cases/<stage>/<slug>.md`,
+   neuen Eintrag im `tools:`-Array ergänzen — Minimal-Form:
+
+   ```yaml
+   - id: <tool-id-aus-tools.yaml>
+     fit: good_fit              # oder conditional | partial | immature
+     why_it_fits: "1–3 Sätze, warum dieses Tool für genau diesen Use Case passt."
+   ```
+
+2. **Tool fehlt noch in `src/data/tools.yaml`?** Eintrag anhängen
+   (Pflicht: `id`, `name`, `category`, `url`, `maturity`). Quellen
+   analog in `src/data/sources.yaml`.
+
+3. **Vor dem Push:** `npm run build` muss grün sein. Im PR die acht
+   Fragen aus der PR-Template-Vorgabe beantworten.
+
+Größeres geplant — neuer Use Case, neue Rolle, oder Tool mit unklarer
+DACH-/DSGVO-Lage? Dann bitte erst **„Bevor du anfängst"** und für die
+Detailfelder den Mechanik-Teil lesen.
+
+---
+
 ## Was wir suchen — und was nicht
 
 Der Atlas ist bewusst kuratiert, kein offenes „AI-Tools-Verzeichnis".
