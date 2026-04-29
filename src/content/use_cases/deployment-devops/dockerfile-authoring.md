@@ -232,6 +232,26 @@ tools:
     sources:
       - id: github-com-google-gemini-gemini-cli-pull-15860
       - id: medium-com-willn2-building-an-app-with-gemini-code-assist-2f99801c498a
+  - id: snyk-io-platform-deepcode-ai
+    fit: partial
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Snyk Container schlägt für gescannte Images Base-Image-Upgrades vor und kann diese als PR im Repo gegen das Dockerfile vorschlagen. Stark als Komplement zur AI-Erstgenerierung — verschiebt unsichere Defaults proaktiv auf gehärtete Bases. DACH-relevant, da viele Banken bereits Snyk-Lizenzen haben.
+    caveats:
+      - Schreibt Dockerfiles nicht von Null
+      - Kosten-/Lizenzmodell wird in Praktiker-Kommentaren als hoch wahrgenommen
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Identifies real Docker image vulnerabilities effectively
+        - Catches dependency issues in container scans
+      complaints:
+        - Overwhelms teams with alert volume requiring heavy tuning
+        - Container CVE reporting accuracy issues vs free registry scans
+        - APIs inconsistent; missing reachability analysis in practice
+    sources:
+      - id: aikido-dev-comparison-aikido-vs-snyk
 start_here: "Pilot-Einstieg: GitHub Copilot im Agent-Modus (nicht Inline) auf ein bestehendes naives Dockerfile loslassen und als Multi-Stage-Build refaktorieren lassen. Vor dem ersten Lauf eine Base-Image-Allowlist (UBI, Distroless) als Repo-Kontext oder Copilot-Instruction hinterlegen, da AI-Defaults Alpine/Debian bevorzugen."
 caveats: AI-Tools wählen Alpine- oder Debian-Basis-Images als Default — DACH-Unternehmen mit UBI- oder Distroless-Policy müssen die Allowlist explizit als Kontext mitgeben. Die @docker-Extension klont das Repo in In-Memory-Storage auf Docker-Backend; die eigene Datenklassifikation muss klären, ob das für den betreffenden Code zulässig ist.
 sources: []

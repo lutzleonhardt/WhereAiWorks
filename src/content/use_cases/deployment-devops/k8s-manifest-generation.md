@@ -116,6 +116,13 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Improving with Gemini 3.1 model, more reliable than 3.0 version
+        - Follows instructions consistently, better file-editing control
+      complaints:
+        - Rate limit tracking poorly documented, hard to find usage info
+        - Hangs frequently and slower than Claude Opus for bug fixes
+        - Not as reliable at fixing bugs as Opus or Claude competitors
     sources:
       - id: augmentcode-com-guides-gemini-code-assist-vs-amazon-q-cloud-native-fit-and-toolchains
   - id: github-com-features-copilot

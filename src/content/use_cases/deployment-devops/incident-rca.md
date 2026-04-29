@@ -283,6 +283,14 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Human-centric design respects approval workflows, no autonomous mutations
+        - Correlates logs, metrics, traces, and deployments for full incident context
+        - Slack/Zoom integration natural for incident response workflows
+      complaints:
+        - Very new product (preview status); limited independent practitioner reports
+        - Widespread skepticism about AI SREs diagnosing incidents autonomously
+        - Uncertain causal analysis performance on unfamiliar or novel outages
     sources:
       - id: newrelic-com-platform-sre-agent
       - id: newrelic-com-solutions-aiops

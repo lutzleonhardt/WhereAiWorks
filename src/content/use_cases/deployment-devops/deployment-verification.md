@@ -56,6 +56,14 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Plug-and-play setup reduces onboarding burden vs. manual metric tuning
+        - "Cuts alert fatigue: 60% reduction in pager floods after deployment tuning"
+        - Automatic version comparison detects errors within minutes without manual gates
+      complaints:
+        - "Platform dependency risk: teams mention needing deploy-abort checks if Datadog is down"
+        - Aggressive sales practices discourage adoption (reported blocking domain emails)
+        - Pricing and vendor lock-in concerns mentioned in broader Datadog feedback
     sources:
       - id: docs-datadoghq-com-watchdog-faulty-deployment-detection
       - id: docs-datadoghq-com-monitors-types-ci-tab-deployments
@@ -215,10 +223,41 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Auto-adaptive thresholds via Davis AI learn normal behavior, eliminating manual SLO maintenance
+        - Validates up to 50 health dimensions (logs, metrics, traces, business events)
+        - "Gateway-friendly: integrates as parallel release gate with other verification systems"
+      complaints:
+        - Davis CoPilot limited to DQL query generation, feels rigid without workflow automation
+        - Requires separate manual workflow setup for real agency beyond data fetching
+        - Auto-adaptive learning needs 5+ training cycles; quarterly exceptions still require tuning
     sources:
       - id: dynatrace-com-news-blog-auto-adaptive-thresholds-for-ai-driven-quality-gating
       - id: developer-harness-io-docs-continuous-delivery-verify-configure-cv-health-sources-dynatrace-dynatrace-srg
       - id: linkedin-com-pulse-enhancing-reliability-dynatrace-site-guardian-deep-dive-durga-saran-wde4c
+  - id: komodor-com
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: low
+    why_it_fits: Komodor zentralisiert K8s-Change-, Deploy- und Cluster-State-Daten und korreliert mit Symptomen wie ReplicaSet-Flapping nach Rollout. Agentische AI Klaudia diagnostiziert Konfigurations-Drift (z.B. ConfigMap-Key entfernt) waehrend eines Rollouts und schlaegt direkt Rollback-Aktionen vor. Damit eher 'Verifikation nach Deploy + remediation' als nativer Canary-Gating, aber stark fuer Kubernetes-on-prem-Stories und Rollout-Inzidenten.
+    caveats:
+      - Kein nativer Canary-Analyzer - eher reaktiv nach Rollout
+      - SaaS-Modell, EU-Hosting separat klaeren
+      - Ergaenzt Argo/Flagger, ersetzt sie nicht
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Klaudia RCA accuracy >95% on real failure scenarios (OOM, config drift, networking)
+        - Correlates deployment changes with pod failures instantly, no sequential log hunting
+        - Provides specific remediation commands (rollback vs. config fix) with evidence trails
+      complaints:
+        - Freemium plan discontinued; $15K/year pricing for small teams feels unjustifiable
+        - Post-deployment reactive approach, not proactive canary gating like Argo/Flagger
+        - Requires Komodor platform; complements rather than replaces core deployment tools
+    sources:
+      - id: komodor-com-blog-ai-sre-in-practice-diagnosing-configuration-drift-in-deployment-failures
+      - id: komodor-com
 start_here: Mit AWS CodeDeploy und zwei bis drei CloudWatch-Alarmen auf Error-Rate und Latency-p99 einen einzelnen Lambda- oder ECS-Service mit Canary-Strategie absichern; Auto-Rollback zunächst nur beobachten, nicht als Automatik schalten. Harness CV ist der nächste Schritt, wenn ML-basiertes Signaling und plattformübergreifende Health-Quellen benötigt werden.
 caveats: Auto-Rollback in regulierten Umgebungen (BaFin/MaRisk) erfordert einen vorab genehmigten ITIL-Standard-Change — auch ein automatisierter Rollback ist dokumentationspflichtig. SLO-Baselines für Hochlastphasen (Quartalsende, Steuerstichtag) brauchen explizite Trainingsausnahmen, da anomaliebasierte Modelle sonst Fehlalarme produzieren.
 sources: []

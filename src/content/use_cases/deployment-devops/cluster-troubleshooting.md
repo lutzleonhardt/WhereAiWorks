@@ -83,6 +83,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - ReAct loop investigates multi-hop (exit code → logs → metrics → runbook match)
+        - 40–60% of investigations resolve automatically (OOMKilled, ImagePullBackOff patterns)
+        - Alert dedup + Slack threads cut triage time from 20min to 2min per incident
+        - Flexible routing by alert name, namespace, team — integrates Slack, Jira, GitHub
+      complaints:
+        - Glue code required — 200-line playbook for timing, dedup, routing integration
+        - HolmesGPT+Robusta SaaS needed for frontier models (OSS requires own LLM key)
+        - Setup complexity spans Prometheus hooks, custom playbooks, runbook curation
+        - Cross-cluster investigations hit API rate/VPC limits with managed LLM endpoints
     sources:
       - id: softwareplaza-com-it-magazine-robusta-holmesgpt-for-ai-driven-incident-investigation-in-the-cloud
       - id: docs-robusta-dev-master-configuration-holmesgpt-getting-started-html

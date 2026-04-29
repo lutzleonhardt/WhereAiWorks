@@ -145,6 +145,13 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Incident summarization synthesizes timeline and context in seconds
+        - Delivers genuine time savings for initial post-incident capture
+      complaints:
+        - Amplifies weak foundations; poor data/process quality makes outputs worse
+        - Hallucination risk demands human review on outputs
+        - Effectiveness heavily dependent on knowledge base and process maturity
     sources:
       - id: servicenow-com-ai-use-cases-generate-post-incident-reviews-html
       - id: servicenow-com-community-secops-articles-revolutionizing-security-incident-management-introducing-ta-p-3098002

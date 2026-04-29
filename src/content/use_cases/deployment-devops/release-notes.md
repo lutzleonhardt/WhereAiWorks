@@ -143,6 +143,19 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Zero configuration, works out of the box with sensible defaults
+        - Style guide customization (.github/release-notes-instructions.md) makes filtering rules reviewable
+        - Structured output (markdown + JSON) feeds into Slack, dashboards, releases seamlessly
+        - Uncertainty flagging separates confident entries from those needing human review
+        - Security hardened with adversarial review; mitigates prompt injection and secret leaks
+        - Dogfooded by GitHub itself (github/desktop, copilot-sdk use in production)
+      complaints:
+        - "Vendor lock-in: requires Copilot license and GitHub Actions runner"
+        - Consumes premium request quota even for simple changelogs
+        - Uncertain entries still need manual review, not fully hands-off
+        - Filter logic for regulatory/compliance hints must be hand-coded in instructions
+        - No built-in distribution (publish to docs, email, Slack) — you build that part
     sources:
       - id: github-com-github-copilot-release-notes
       - id: github-com-desktop-desktop-pull-21887

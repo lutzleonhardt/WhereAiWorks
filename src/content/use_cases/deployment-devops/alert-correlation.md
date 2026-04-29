@@ -339,6 +339,95 @@ tools:
       - id: ilert-com-blog-cut-alert-noise-with-ai-powered-grouping-for-msps
       - id: peerspot-com-products-ilert-ai-reviews
       - id: omr-com-de-reviews-product-ilert
+  - id: bmcsoftware-de-it-solutions-observability-aiops-ai-event-correlation-root-cause-analysis-html
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: high
+    why_it_fits: Enterprise-AIOps von BMC mit AI-driven Noise Reduction, Event-/Log-/Topologie-Korrelation und Deep Root Cause Analyzer Agent. Korreliert Alerts über Tools hinweg in eine actionable Incident-Sicht. Klassischer Spieler im DACH-Großkunden-Segment (Banken, Telco), oft im Bundle mit Helix Discovery/CMDB.
+    caveats:
+      - Schwerer Plattform-Footprint; lange Implementierungsprojekte
+      - Marketing-Sprache eher Vendor-zentriert; konkrete Benchmarks rar
+      - Primär für Bestandskunden mit BMC-Stack relevant
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Predictive analytics aid proactive issue identification and resolution
+        - Dashboards and risk insights effectively reduce critical incidents
+        - Reduces MTTR and improves operational agility
+      complaints:
+        - Complex initial setup and licensing model ambiguous, expensive
+        - Requires mature ITSM processes to maximize benefits
+        - GUI and patching information areas need improvements
+    sources:
+      - id: bmc-com-it-solutions-bmc-helix-operations-management-html
+  - id: ibm-com-de-de-products-cloud-pak-for-aiops
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: high
+    why_it_fits: IBM-Plattform für Alert-Deduplication, Anomaly Detection und Event-Correlation über 90+ Monitoring-Tools. On-prem auf OpenShift deploybar — eine der wenigen Optionen für souveräne/airgapped Anforderungen (BaFin, öffentlicher Sektor). GDPR-Readiness und Security-/Privacy-by-Design in Produktdokumentation explizit; deutsche IBM-Vertriebs- und Support-Organisation.
+    caveats:
+      - OpenShift-Plattform-Voraussetzung; hoher Setup-Aufwand und TCO
+      - Mehrfaches Rebranding (Watson AIOps → Cloud Pak → watsonx) — EOL-/Upgrade-Zusagen einholen
+      - Vendor-Benchmarks (99% Noise Reduction) ohne unabhängige Validierung
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Handles multiple host operations and cloud environments effectively
+        - Strong machine learning and data science features for insights
+        - Can correlate vast amounts of structured and unstructured data
+      complaints:
+        - Very expensive with steep learning curve for platform usage
+        - Installation challenges with version upgrades; platform sluggish
+        - Difficult for teams to understand and implement without training
+    sources:
+      - id: ibm-com-cloud-cloud-pak-for-management
+  - id: logicmonitor-com-de-edwin-ai
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: "Edwin AI ingestiert Metrics/Logs/Traces/Events aus 3000+ Tools, Cross-Domain-Correlation mit Deduplication und Topologie-Anreicherung. Vendor-Claim: >90% Lärmreduktion. Genannt in ServiceNow-Integrations-Architekturen als bevorzugter Monitoring-Agent."
+    caveats:
+      - Vergleichsweise junger AIOps-Spieler; wenig unabhängige Practitioner-Reviews
+      - ROI bei vorhandenem LogicMonitor-Footprint deutlich höher
+      - GenAI-Anteil unklar abgegrenzt von ML-Korrelation
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Cross-domain alert correlation reduces overload by over 90%
+        - Purpose-built for IT ops, not generic—trained on observability data
+        - Automatic deduplication and grouping of related alerts from 3000+ tools
+      complaints:
+        - Fewer independent practitioner reviews available; mostly vendor material
+        - ROI depends heavily on existing LogicMonitor monitoring footprint
+        - GenAI component unclear; distinction from ML-based correlation vague
+    sources:
+      - id: logicmonitor-com-edwin-ai-event-intelligence
+  - id: newrelic-com-platform-new-relic-ai
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: medium
+    why_it_fits: Applied Intelligence (Teil von New Relic AI) korreliert Alerts/Incidents traffic-basiert, dedupliziert und routet. Eigener Blog-Artikel beschreibt Vorgehen und Visualisierung. Bereits im Atlas erkannt; passt eindeutig auf diesen Use Case. Going-Private (Francisco Partners/TPG, 2023) reduziert Roadmap-Transparenz — vertraglich absichern.
+    caveats:
+      - Korrelation primär auf New-Relic-Telemetrie beschränkt
+      - Konkurrenz zu Datadog/Dynatrace im DACH-Markt schwächer positioniert
+      - Strategie-Unsicherheit nach PE-Übernahme; AI-Features erst nach Monaten Datensammlung belastbar
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Alert correlation groups related issues to reduce distracting noise
+        - Topology correlation improves quality of correlations
+        - Customizable decision logic for team-specific patterns
+      complaints:
+        - Default alert thresholds garbage; need 2-3 weeks of tuning to stop spam
+        - AI features hit-or-miss until months of data collected
+        - AIOps mostly states obvious insights; doesn't fix fundamental problems
+    sources:
+      - id: newrelic-com-blog-observability-alert-correlation
+      - id: newrelic-com-blog-ai-best-aiops-tools
 start_here: Bei vorhandenem Dynatrace-Footprint ist Davis AI der direkteste Einstieg — Topologie-Korrelation ist ohne zusätzliche Instrumentation sofort aktiv. Für Multi-Tool-Stacks empfiehlt sich BigPanda mit der EU-Instanz (AWS Frankfurt), pilotiert auf einem abgegrenzten Service-Cluster über vier Wochen.
 caveats: Alert-Korrelation basiert auf statistischer ML, nicht auf generativer KI — die EU-AI-Act-Klassifikation ist meist minimal risk, bleibt aber dokumentationspflichtig. Die Korrelationsqualität hängt direkt von der Güte der vorgelagerten Monitoring-Daten ab; unvollständige CMDBs oder inkonsistente Labels produzieren auch mit reifen Tools False Groupings.
 sources: []

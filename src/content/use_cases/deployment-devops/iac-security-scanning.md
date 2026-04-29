@@ -133,6 +133,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Deep code analysis provides continuous context for risk prioritization
+        - Strong secrets detection feature prevents multiple compliance incidents
+        - Excellent workflow automation for SDLC visibility and governance
+        - Responsive vendor addresses customer feedback quickly
+      complaints:
+        - Performance severely degrades when scanning 400+ repositories at once
+        - Limited RBAC and clunky user management; custom dashboards require API tokens
+        - Only GitHub supported; no self-hosted or on-premises Git integration
+        - Typical startup instability; platform fails under large scans
     sources:
       - id: amplify-security-blog-ai-appsec-vendors-auto-fix-code
   - id: about-gitlab-com-gitlab-duo

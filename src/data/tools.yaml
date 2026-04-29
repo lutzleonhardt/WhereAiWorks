@@ -2391,3 +2391,9 @@
   url: https://www.observe.ai/
   maturity: production
   vendor: Observe.AI
+- id: help-splunk-com-en-splunk-cloud-platform-search-splunk-ai-assistant
+  name: Splunk AI Assistant for SPL (SAIA)
+  category: observability
+  url: https://help.splunk.com/en/splunk-cloud-platform/search/splunk-ai-assistant
+  maturity: production
+  vendor: Splunk (Cisco)

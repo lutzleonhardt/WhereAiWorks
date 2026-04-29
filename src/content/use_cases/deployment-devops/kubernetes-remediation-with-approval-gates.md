@@ -49,6 +49,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Action Runner executes in customer VPC; credentials stay on-prem
+        - Responder-triggered Slack/app actions keep humans in control
+        - Effective alert notification with audit trail
+      complaints:
+        - Alert frequency and timing significantly impact on-call engineer morale
+        - Integration complexity requires substantial engineering effort to customize
+        - AI component is alert correlation, not deep RCA like Klaudia/HolmesGPT
+        - Runbook catalog curation is ongoing organizational burden
+        - AIOps features require Business/Enterprise license tier (additional cost)
     sources:
       - id: pagerduty-com-platform-automation-actions
       - id: devpost-com-software-chronos-ipxuq5
@@ -125,6 +135,15 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - AI integrated from day one, handles repetitive tasks well
+        - Maps contributing factors carefully instead of premature RCA guessing
+        - "Strong integrations: Datadog, GitHub, Jira pull richer context"
+        - Teams successfully migrate from PagerDuty, prefer full incident lifecycle
+      complaints:
+        - Automated RCA still not GA—'release accurate over sounds smart' philosophy
+        - Requires mature runbooks; most teams lack structured runbook catalog
+        - Pricing model scales with team/incidents; unclear fixed costs
     sources:
       - id: rootly-com-sre-rootly-automated-remediation-with-iac-kubernetes
   - id: akmatori-com

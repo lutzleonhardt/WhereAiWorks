@@ -103,6 +103,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - NRQL syntax clicks like SQL; intuitive for engineers familiar with structured queries
+        - Transparent, predictable billing unlike pay-per-query pricing models
+        - Approachable platform for teams without deep observability expertise
+        - Recognized for fastest time-to-insight in independent DevOps comparisons
+      complaints:
+        - Dashboard responsiveness slower than Datadog; sluggish on complex queries
+        - Less granular control over log cardinality vs Datadog ingest protections
+        - Perceived market position weakening vs Datadog despite solid features
+        - Transparent pricing doesn't yield cost savings vs competitors
     sources:
       - id: energent-ai-energent-compare-en-log-analysis-with-ai
       - id: stridec-com-blog-best-ai-log-file-analysis-tools-devops-teams
@@ -122,6 +132,15 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Centralizes traces, metrics, logs in single high-cardinality store
+        - AI-driven investigation lets teams ask questions vs static dashboards
+        - MCP/IDE integration for debugging workflows where engineers work
+        - Unified telemetry surface for asking cross-signal questions
+      complaints:
+        - US-only hosting; no EU-Residenz option for DSGVO-strict orgs
+        - Event/trace-focused; pure log searching is secondary concern
+        - Less specialized for log-centric teams than dedicated backends
     sources:
       - id: honeycomb-io-blog-introducing-query-assistant
   - id: incidentfox-ai
@@ -240,6 +259,30 @@ tools:
       - id: logz-io-blog-ai-log-analysis
       - id: logz-io-news-posts-logz-io-accelerates-autonomous-observability-with-ai-agent-launch
       - id: trustradius-com-products-logz-io-reviews
+  - id: help-splunk-com-en-splunk-cloud-platform-search-splunk-ai-assistant
+    fit: conditional
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Bidirektionale NL<->SPL-Übersetzung und 'Explain SPL'-Funktion senken Eintrittshürde für SPL-Neulinge und beschleunigen die Arbeit erfahrener Analysten. Das Werkzeug generiert und optimiert Suchabfragen aus Klartext, was Log-Analyse-Workflows direkt unterstützt — auch wenn der Assistant selbst keine Log-Events sieht und das eigentliche Lesen/Erklären von Inhalten über Standard-Splunk-Search erfolgt.
+    caveats:
+      - Assistant sieht keine Events/Logs - reine Query-Hilfe, keine Erklärung von Log-Inhalten
+      - Nur AWS-Commercial-Stack; DACH-Datenresidenz mit Cisco klären
+      - Petabyte-Lizenzen historisch sehr teuer
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Generates SPL queries from natural language; good for learning syntax
+        - Lowers barrier to entry for SPL novices; explains obscure log entries
+        - Bidirectional NL ↔ SPL translation helps optimize existing searches
+      complaints:
+        - Assistant doesn't see actual logs; only generates queries, not explanations
+        - Petabyte-scale licensing historically very expensive
+        - AWS-Commercial-only; DACH-Datenresidenz requires vendor coordination
+        - Pure query-generation tool; doesn't enable log content analysis or RCA
+    sources:
+      - id: help-splunk-com-en-splunk-cloud-platform-search-splunk-ai-assistant
+      - id: splunk-com-en-us-products-splunk-ai-assistant-for-spl-faq-html
 start_here: "Einstiegspunkt ist ein bekanntes Fehlerbild: Mit Dynatrace Davis Assist oder Coralogix Olly ein wiederkehrendes Log-Pattern per Spracheingabe untersuchen und das Ergebnis mit der bisherigen manuellen Query vergleichen. Beide Tools lassen sich im bestehenden Stack aktivieren, ohne die Ingest-Pipeline anzufassen — Voraussetzung ist, dass Logs bereits in einer EU-Region verarbeitet werden."
 caveats: Produktions-Logs enthalten typischerweise personenbezogene Daten — vor der LLM-Übergabe ist eine Maskierungspipeline erforderlich, unabhängig vom gewählten Tool. AVV mit dem Vendor muss EU-Datenresidenz und SCC explizit abdecken; Datadog-Nutzer müssen zusätzlich das volatile Per-Query-Preismodell budgetieren.
 sources: []

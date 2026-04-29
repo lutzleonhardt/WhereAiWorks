@@ -5698,3 +5698,31 @@
   label: Observe.AI Business Insights product page
   url: https://www.observe.ai/products/business-insights
   type: documentation
+- id: bmc-com-it-solutions-bmc-helix-operations-management-html
+  label: BMC Helix korreliert Events/Metrics/Logs in Incidents, AI-powered Noise Reduction
+  url: https://www.bmc.com/it-solutions/bmc-helix-operations-management.html
+  type: documentation
+- id: ibm-com-cloud-cloud-pak-for-management
+  label: IBM Cloud Pak for AIOps korreliert/dedupliziert Alerts aus 90+ Tools, vendor-claim 99% Noise Reduction
+  url: https://www.ibm.com/cloud/cloud-pak-for-management
+  type: documentation
+- id: logicmonitor-com-edwin-ai-event-intelligence
+  label: "Edwin AI Event Intelligence: Cross-Domain-Korrelation und >90% Alert-Overload-Reduktion"
+  url: http://logicmonitor.com/edwin-ai/event-intelligence
+  type: documentation
+- id: komodor-com-blog-ai-sre-in-practice-diagnosing-configuration-drift-in-deployment-failures
+  label: "Komodor blog: Klaudia ConfigMap drift diagnosis & rollback"
+  url: https://komodor.com/blog/ai-sre-in-practice-diagnosing-configuration-drift-in-deployment-failures/
+  type: documentation
+- id: aikido-dev-comparison-aikido-vs-snyk
+  label: Aikido vs Snyk competitor comparison
+  url: https://www.aikido.dev/comparison/aikido-vs-snyk
+  type: review
+- id: help-splunk-com-en-splunk-cloud-platform-search-splunk-ai-assistant
+  label: Splunk AI Assistant docs
+  url: https://help.splunk.com/en/splunk-cloud-platform/search/splunk-ai-assistant
+  type: documentation
+- id: splunk-com-en-us-products-splunk-ai-assistant-for-spl-faq-html
+  label: Splunk AI Assistant FAQ
+  url: https://www.splunk.com/en_us/products/splunk-ai-assistant-for-spl/faq.html
+  type: documentation
