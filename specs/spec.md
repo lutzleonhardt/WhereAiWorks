@@ -562,7 +562,7 @@ Genau hier liegt der Mittelstand-Pain: Nicht nur "geht das?", sondern "darf ich 
 
 ### Lizenz
 
-MIT für Code, CC-BY-SA für Content (noch zu bestätigen).
+MIT für Code, CC BY-SA 4.0 für Content.
 
 ---
 
@@ -589,7 +589,6 @@ Nicht mit allen 10 Stufen starten, sondern mit 4 Stufen, die zusammen ein starke
 - [ ] Entscheiden: Markdown-Tabellen vs. YAML-Dateien für Tool-Katalog
 - [ ] Frontend-Technologie bestätigen (React? Astro? Next.js?)
 - [ ] Hosting klären (GitHub Pages, Vercel, Netlify?)
-- [ ] Lizenz bestätigen (MIT + CC-BY-SA)
 - [ ] Griffigeren externen Namen/Framing finden ("AI Value Chain Atlas"? "AI Software Map"?)
 
 ---

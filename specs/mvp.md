@@ -221,7 +221,7 @@ Warum Astro und kein SPA (Angular, React, Next.js):
 - [x] Frontend-Technologie → **Astro** (statisch, Markdown-native, Islands für Interaktivität)
 - [ ] Sprache: Deutsch, Englisch, oder beides?
 - [ ] Hosting (GitHub Pages oder Netlify mit Custom Domain)
-- [ ] Lizenz bestätigen
+- [x] Lizenz: MIT (Code) + CC BY-SA 4.0 (Content)
 
 ---
 

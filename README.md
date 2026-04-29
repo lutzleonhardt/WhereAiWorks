@@ -82,8 +82,12 @@ Details und Begründung: `specs/design.md` und `specs/execplan-mvp.md`.
 - `specs/design.md` — technische Design-Entscheidungen
 - `specs/execplan-mvp.md` — Implementierungs-ExecPlan (siehe auch `specs/PLANS.md`)
 
+## Lizenz
+
+- **Code:** [MIT](LICENSE)
+- **Content** (Use Cases, Tool-Beschreibungen, Quellen, Texte): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
 ## Offene Entscheidungen
 
 - **Sprache:** UI derzeit Deutsch. Englische Lokalisierung ist Phase-3.
 - **Hosting:** GitHub Pages oder Netlify (beide kostenlos mit Custom Domain).
-- **Lizenz:** Geplant MIT für Code + CC-BY-SA für Content; final bestätigen.

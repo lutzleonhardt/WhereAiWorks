@@ -923,7 +923,6 @@ Entscheidung fällt, wenn die Datenbasis tatsächlich wächst.
 
 - [ ] Sprache: Englisch (internationaler) oder Deutsch (näher an Zielgruppe Mittelstand)?
 - [ ] Hosting: GitHub Pages oder Netlify? (Beide kostenlos, Netlify hat einfacheres Custom-Domain-Setup)
-- [ ] Lizenz bestätigen: MIT für Code + CC-BY-SA für Content
 - [ ] CSS-Reset: Welcher? (modern-normalize, Andy Bell Reset, oder eigener Minimal-Reset)
 - [ ] OG-/Social-Metadata für teilbare Stage-Seiten (Phase 1 oder 2?)
 
