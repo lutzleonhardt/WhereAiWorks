@@ -2373,3 +2373,15 @@
   category: other
   url: https://github.com/swapnildahiphale/OpenSRE
   maturity: production
+- id: github-com-aetheris-ai-aibom-generator
+  name: OWASP AIBOM Generator
+  category: other
+  url: https://github.com/aetheris-ai/aibom-generator
+  maturity: production
+  vendor: OWASP GenAI Security Project
+- id: guide-sonatype-com-mcp
+  name: Sonatype Dependency Management MCP / Sonatype Guide
+  category: coding
+  url: https://guide.sonatype.com/mcp
+  maturity: production
+  vendor: Sonatype

@@ -5686,3 +5686,11 @@
   label: 26 unabhängige Enterprise-Bewertungen (Ø 8.0/10) auf SoftwareReviews — bestätigt produktiven Einsatz in ITOps/SRE-Incident-Management
   url: https://www.softwarereviews.com/products/ibm-cloud-pak-for-aiops
   type: community
+- id: github-com-aetheris-ai-aibom-generator
+  label: OWASP AIBOM Generator GitHub repo
+  url: https://github.com/aetheris-ai/aibom-generator
+  type: documentation
+- id: cyclonedx-org-capabilities-mlbom
+  label: CycloneDX ML-BOM standard capability page
+  url: https://cyclonedx.org/capabilities/mlbom/
+  type: documentation

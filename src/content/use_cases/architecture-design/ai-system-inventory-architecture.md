@@ -26,6 +26,15 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Keine Agenten nötig, durchsucht alle verbundenen Repos automatisch
+        - 28+ AI-Coding-Tools, 35+ Python/18+ JavaScript-Pakete erkannt
+        - Automatisch bei neuen Commits, keine Plugin-Konfiguration erforderlich
+        - Kostenlos in 14-Tage Trial inklusive; Foundation für Compliance-Audit
+      complaints:
+        - Auf Code-Repos beschränkt, keine Cloud- oder SaaS-Discovery
+        - April 2026 Launch; Reife, Stabilität und Kundenerfahrung noch unbewiesen
+        - Policy enforcement und Merge Gates nicht implementiert
     sources:
       - id: codacy-com-ai-inventory
       - id: prweb-com-releases-codacy-launches-ai-inventory-giving-engineering-organizations-source-code-level-visibility-into-ai-tool-usage-across-repositories-302736655-html
@@ -47,6 +56,17 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Out-of-the-box 1000+ GenAI-SaaS-Apps im Katalog mit Risk-Scores
+        - Unified Monitoring für Microsoft 365, Azure, GCP, und 3rd-party SaaS
+        - Ready-to-deploy Policies reduzieren Setup-Zeit für Teams
+        - Kontinuierliche Überwachung mit Activity Explorer für Prompts und Responses
+        - Natural fit für Microsoft-Shops; kein zusätzlicher Vendor nötig
+      complaints:
+        - Stark Microsoft-zentriert; non-MS Cloud (GCP, Databricks) weniger detailliert
+        - Komplexe Deployment (Browser-Extension, Device-Onboarding, MDE-Integration)
+        - Multi-SKU Lizenzierung nötig (E5, Defender, Purview); hohe Gesamtkosten
+        - Ongoing policy refinement erforderlich für False Positive Reduction
     sources:
       - id: learn-microsoft-com-en-us-security-security-for-ai-discover
   - id: reco-ai-use-cases-ai-usage-control
@@ -69,6 +89,10 @@ tools:
       praise:
         - Schnelle SaaS-Integrationen auf Kundenwunsch
         - Sichtbarkeit in tatsächliches Schatten-AI
+      complaints:
+        - Massive initial discovery creates overwhelmingly high findings load
+        - Requires ongoing triage/categorization work; decision fatigue bei 15-20/Tag
+        - Inventar-Drift-Risiko bleibt; Tool stoppt Neufunde nach ~6 Monaten nicht
     sources:
       - id: reco-ai-use-cases-ai-usage-control
       - id: reco-ai-solutions-generative-ai-discovery
@@ -194,6 +218,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - DeepCode erkennt AI-Nutzung auch ohne Manifest-Referenzen im Code
+        - CycloneDX-Standard-Output für Integrationen mit bestehenden Tools
+        - Schnelle, klare Sichtbarkeit in AI-Komponenten lokal oder in CI/CD
+        - HTML-Visualisierung für schnelle Exploration von Abhängigkeiten
+        - API für Skalierung über Organisation und Shadow-AI-Finding
+      complaints:
+        - Aktuell nur Python; TypeScript, Go, Java noch nicht unterstützt
+        - Experimental-Feature mit HTML-Output nur für allowlist-Orgs
+        - Related tooling (snyk-agent-scan) hatte Execute-First-Vulnerability
     sources:
       - id: docs-snyk-io-developer-tools-snyk-cli-commands-aibom
       - id: labs-snyk-io-resources-aibom-cli-snyk
@@ -219,12 +253,44 @@ tools:
         - Forrester Leader CNAPP Q1 2026 mit Höchstwerten u. a. in 'Agentic AI and copilots'
         - Gartner Peer Insights 4.7/5 (300 Reviews) — agentenloses Deployment, schnelle Sichtbarkeit
         - "Toolworthy.ai 2026 CISO Buyer's Guide ranked Wiz AI-SPM #1 für Multi-Cloud"
+      complaints:
+        - UI/UX verwirrend und langsam; Navigation zwischen Views frustrierend
+        - Docker Hub Organization Tokens seit April 2023 nicht unterstützt
+        - Dokumentation nur für angemeldete Benutzer zugänglich
+        - Hunderte von Auto-Generated Jira Tickets pro Scan erzeugen Rauschen
+        - Expensive mit keine öffentlichen Preisen; Enterprise-Budget erforderlich
     sources:
       - id: wiz-io-solutions-ai-security-posture-management
       - id: wiz-io-academy-ai-security-ai-inventory
       - id: wiz-io-blog-forrester-wave-cnapp-2026
       - id: toolworthy-ai-blog-best-ai-spm-tools
       - id: gartner-com-reviews-market-cloud-security-posture-management-tools-vendor-wiz-product-wiz
+  - id: github-com-aetheris-ai-aibom-generator
+    fit: partial
+    enterprise_readiness: evaluation_only
+    confidence: low
+    why_it_fits: Open-source CycloneDX-1.6-AI-BOM-Generator mit OWASP-Patenschaft für Hugging-Face-Modelle, inklusive Completeness-Scoring und API. Nützlicher Baustein für modell-card-basierte Governance in Release-Pipelines; kein eigenständiges Enterprise-Inventar und keine SaaS-/Codebasis-Discovery.
+    caveats:
+      - Beschränkt auf Hugging-Face-Modelle, keine Codebasis-/SaaS-Discovery.
+      - Standalone-Tool ohne Inventar-Workflow oder Drift-Erkennung.
+      - Eher Glied in Pipeline als Komplettlösung.
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Open-source mit OWASP-Patenschaft; CycloneDX-Standard-Alignment
+        - Completeness-Scoring zeigt konkrete Dokumentations-Lücken auf
+        - API-Automation für Operationalisierung in Release-Pipelines
+        - Praktischer Workflow für Model-Card-Governance mit Versionierung
+        - Listed im CycloneDX Tool Center; Standard wird mainstream
+      complaints:
+        - Beschränkt auf Hugging-Face-Modelle; keine Discovery-Funktion
+        - Abhängig von Model-Card-Qualität der Input-Modelle
+        - Single-Maintainer-Projekt; kein Enterprise-Distribution oder Support-Vertrag
+        - Eher Baustein in Pipeline als komplette Inventar-Lösung
+    sources:
+      - id: github-com-aetheris-ai-aibom-generator
+      - id: cyclonedx-org-capabilities-mlbom
 start_here: Teams mit Multi-Cloud-Footprint starten am risikoärmsten mit Wiz AI-SPM — EU-Tenant beim Onboarding konfigurieren, Cloud-Konnektoren aktivieren, AI-BOM-Dashboard auswerten. Wer noch kein CNAPP-Budget hat, beginnt mit Codacy AI Inventory auf einem Pilot-Repo; DACH-Enterprises mit vorhandenem M365-E5-Stack können Microsoft Defender for Cloud Apps parallel für SaaS-AI-Discovery aktivieren, ohne einen neuen Vendor einzuführen.
 caveats: Inventar-Drift ist das unmittelbarste Risiko — ohne CI/CD-Anbindung und Procurement-Kopplung veraltet der Scan-Befund binnen Wochen und taugt nicht als dauerhafter Compliance-Nachweis. SaaS-eingebettete KI (Workday, Salesforce Einstein) bleibt für reine Code- und Cloud-Scanner unsichtbar; dieser Bereich erfordert einen ergänzenden SSPM-Layer.
 sources: []

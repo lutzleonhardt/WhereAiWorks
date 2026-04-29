@@ -231,6 +231,30 @@ tools:
       - id: guide-sonatype-com-mcp
       - id: infoq-com-news-2026-03-sonatype-guide-safety-mcp-server
       - id: github-com-sonatype-dependency-management-mcp-server
+  - id: guide-sonatype-com-mcp
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: "Directly addresses the core caveat in tech-stack evaluation: LLMs overlook license, vulnerability, and maintenance risks when recommending libraries. The Sonatype MCP server gives Copilot/Claude Code/Cursor access to deterministic component scores, CVE data, and license analysis before 'npm install', embedded in the IDE workflow at the exact moment a stack decision is being made. Enterprise heritage (Maven Central lineage) is relevant for DACH financial institutions; full policy-engine capabilities are unlocked at the enterprise tier."
+    caveats:
+      - MCP setup requires API token and IDE integration
+      - Scoped to components/packages — does not replace architectural trade-off analysis
+      - Optimal value requires enterprise plan and policy engine
+      - Very new product (March 2026 launch) — limited community adoption track record
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Lightweight MCP setup integrates directly into IDE without breaking developer flow
+        - Prevents AI hallucinated/outdated/vulnerable packages from reaching codebase
+        - Provides Developer Trust Score and license compliance checks in real-time
+        - Reduces manual review cycles and rework caused by unsafe dependency choices
+      complaints:
+        - Very new product (March 2026 launch), limited community adoption yet
+        - Free tier available but full compliance/policy features in enterprise plans
+        - Requires MCP configuration and system prompt tuning for optimal effectiveness
+    sources:
+      - id: guide-sonatype-com-mcp
 start_here: "Pilot mit ChatGPT Deep Research (Azure-OpenAI-EU-Region) starten: Kandidatenliste auf 3–5 Frameworks eingrenzen und eine eigene Bewertungsmatrix mit Performance-, Lizenz- und EU-Residenz-Spalten vorgeben statt offen nach einer Empfehlung zu fragen. FOSSA für die Shortlist einsetzen, um AGPL/SSPL-Konflikte und AI-generierte Snippet-Risiken vor der finalen Entscheidung systematisch zu klären."
 caveats: LLMs prüfen Lizenz- und Provenance-Risiken (AGPL, SSPL) nur auf explizite Aufforderung — ohne ein dediziertes SCA-Tool bleibt dieser Blindspot in der Entscheidungsdokumentation bestehen. Framework-Versionswissen der LLMs kann ohne aktiven Web-Search-Modus veraltet sein; genannte Versionen und Kompatibilitäten sollten gegen offizielle Release-Notes validiert werden.
 sources: []

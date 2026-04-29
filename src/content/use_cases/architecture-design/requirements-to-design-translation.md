@@ -157,6 +157,14 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Focus on specs over raw code generation reduces technical debt
+        - 10,000+ versioned library specs prevent API hallucinations
+        - Package manager concept for agent skills enables knowledge sharing
+      complaints:
+        - Framework closed beta; limited real-world production usage data
+        - Skepticism about handling edge cases with upfront specs alone
+        - Requires strict discipline writing perfect specs; complexity barrier
     sources:
       - id: docs-tessl-io-use-spec-driven-development-with-tessl
       - id: docs-tessl-io-best-practices-clarify-product-requirements-and-design-system-architecture

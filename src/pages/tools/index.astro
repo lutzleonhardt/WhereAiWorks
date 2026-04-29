@@ -214,4 +214,180 @@ const totalSources = sources.length;
       </div>
     </div>
   </section>
+
+  <script>
+    // Filter + Multi-Column-Sort für die /tools-Tabelle.
+    // SSG-rendered tbody — DOM ist die Datenquelle, kein zusätzlicher JSON-Blob.
+
+    type SortKey =
+      | 'name'
+      | 'stages_count'
+      | 'uc_count'
+      | 'good_fit'
+      | 'caveats'
+      | 'maturity';
+    type SortDir = 'asc' | 'desc';
+    type SortEntry = { key: SortKey; dir: SortDir };
+
+    const tbody = document.getElementById('tools-tbody') as HTMLTableSectionElement | null;
+    const countEl = document.getElementById('tools-count');
+    const emptyEl = document.getElementById('tools-empty');
+    const resetEl = document.getElementById('tools-reset');
+    const filterSelects = document.querySelectorAll<HTMLSelectElement>('select[data-filter]');
+    const headerCells = document.querySelectorAll<HTMLTableCellElement>(
+      'table.tools-table thead th[data-sort]'
+    );
+
+    if (!tbody) throw new Error('tools-tbody not found');
+
+    const allRows = Array.from(tbody.querySelectorAll<HTMLTableRowElement>('tr'));
+    const totalRows = allRows.length;
+
+    let sortStack: SortEntry[] = [{ key: 'good_fit', dir: 'desc' }];
+
+    function rowVal(row: HTMLTableRowElement, key: SortKey): string | number {
+      switch (key) {
+        case 'name':
+          return row.dataset.name ?? '';
+        case 'stages_count':
+          return Number(row.dataset.stagesCount ?? 0);
+        case 'uc_count':
+          return Number(row.dataset.ucCount ?? 0);
+        case 'good_fit':
+          return Number(row.dataset.goodFit ?? 0);
+        case 'caveats':
+          return Number(row.dataset.caveatsLevel ?? 0);
+        case 'maturity':
+          // production = 0, experimental = 1 — preview-Tools sortieren ans Ende bei 'asc'
+          return row.dataset.maturity === 'experimental' ? 1 : 0;
+      }
+    }
+
+    function compare(a: HTMLTableRowElement, b: HTMLTableRowElement): number {
+      for (const { key, dir } of sortStack) {
+        const va = rowVal(a, key);
+        const vb = rowVal(b, key);
+        let c: number;
+        if (typeof va === 'number' && typeof vb === 'number') {
+          c = va - vb;
+        } else {
+          c = String(va).localeCompare(String(vb));
+        }
+        if (c !== 0) return dir === 'asc' ? c : -c;
+      }
+      // Stabile Tiebreaker — Default-Sort-Reihenfolge: ucCount DESC, name ASC
+      const ua = Number(a.dataset.ucCount ?? 0);
+      const ub = Number(b.dataset.ucCount ?? 0);
+      if (ua !== ub) return ub - ua;
+      return (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '');
+    }
+
+    function passesFilters(row: HTMLTableRowElement): boolean {
+      for (const sel of filterSelects) {
+        const v = sel.value;
+        if (!v) continue;
+        const filter = sel.dataset.filter;
+        if (filter === 'category') {
+          if (row.dataset.category !== v) return false;
+        } else if (filter === 'stage') {
+          const stages = (row.dataset.stages ?? '').split(',');
+          if (!stages.includes(v)) return false;
+        } else if (filter === 'maturity') {
+          if (row.dataset.maturity !== v) return false;
+        } else if (filter === 'suitability') {
+          const gf = Number(row.dataset.goodFit ?? 0);
+          const cd = Number(row.dataset.conditional ?? 0);
+          if (v === 'good_fit' && gf < 1) return false;
+          if (v === 'conditional' && gf + cd < 1) return false;
+        }
+      }
+      return true;
+    }
+
+    function render() {
+      const visible = allRows.filter(passesFilters);
+      visible.sort(compare);
+
+      // Sichtbarkeit nach Filter — keine Zeilen aus dem DOM nehmen, nur ausblenden,
+      // damit die Sort-Stack-Reihenfolge stabil bleibt.
+      for (const row of allRows) row.hidden = true;
+      const frag = document.createDocumentFragment();
+      for (const row of visible) {
+        row.hidden = false;
+        frag.appendChild(row);
+      }
+      tbody.appendChild(frag);
+
+      if (countEl) countEl.textContent = String(visible.length);
+      if (emptyEl) emptyEl.hidden = visible.length > 0;
+      updateSortBadges();
+    }
+
+    function updateSortBadges() {
+      headerCells.forEach((th) => {
+        th.classList.remove('sorted');
+        const old = th.querySelector('.sortb');
+        if (old) old.remove();
+      });
+      sortStack.forEach((entry, idx) => {
+        const th = Array.from(headerCells).find(
+          (c) => c.dataset.sort === entry.key
+        );
+        if (!th) return;
+        th.classList.add('sorted');
+        const inner = th.querySelector('.th-inner');
+        if (!inner) return;
+        const badge = document.createElement('span');
+        badge.className = 'sortb';
+        const arrow = entry.dir === 'asc' ? '↑' : '↓';
+        // Index nur zeigen, wenn es einen sekundären Key gibt
+        badge.textContent = sortStack.length > 1 ? `${idx + 1}${arrow}` : arrow;
+        inner.appendChild(badge);
+      });
+    }
+
+    headerCells.forEach((th) => {
+      th.addEventListener('click', (e) => {
+        const key = th.dataset.sort as SortKey | undefined;
+        if (!key) return;
+        const shift = (e as MouseEvent).shiftKey;
+        const existing = sortStack.find((s) => s.key === key);
+
+        if (shift) {
+          // Sekundär/Tertiär: hinzufügen oder Richtung toggeln
+          if (existing) {
+            existing.dir = existing.dir === 'asc' ? 'desc' : 'asc';
+          } else {
+            sortStack.push({ key, dir: keyDefaultDir(key) });
+          }
+        } else {
+          // Primär: ersetzen oder togglen wenn schon primär
+          if (sortStack.length === 1 && sortStack[0].key === key) {
+            sortStack[0].dir = sortStack[0].dir === 'asc' ? 'desc' : 'asc';
+          } else {
+            sortStack = [{ key, dir: keyDefaultDir(key) }];
+          }
+        }
+        render();
+      });
+    });
+
+    function keyDefaultDir(key: SortKey): SortDir {
+      // Numerische Spalten DESC, Name ASC, Maturity ASC (production zuerst)
+      return key === 'name' || key === 'maturity' ? 'asc' : 'desc';
+    }
+
+    filterSelects.forEach((sel) => sel.addEventListener('change', render));
+
+    if (resetEl) {
+      resetEl.addEventListener('click', (e) => {
+        e.preventDefault();
+        filterSelects.forEach((s) => (s.value = ''));
+        sortStack = [{ key: 'good_fit', dir: 'desc' }];
+        render();
+      });
+    }
+
+    render();
+  </script>
 </Base>
