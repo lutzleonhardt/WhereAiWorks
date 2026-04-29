@@ -432,9 +432,8 @@ const useCaseData: FinderUseCase[] = assembled.map(
 
     function emptySignalHtml(): string {
       const tooltip =
-        'Es wurde nach Diskussionen auf Reddit, Hacker News, lobste.rs und Foren gesucht. Keine ausreichend belastbaren öffentlichen Stimmen gefunden.';
-      const text =
-        'Keine öffentlichen Praktiker-Stimmen gefunden — Tool ist neu, nischig oder primär Enterprise.';
+        'Für dieses Tool wurden in der Recherche keine belastbaren öffentlichen Praktiker-Stimmen erfasst (Reddit / Hacker News / lobste.rs / Foren). Das kann an einer engen Enterprise-/NDA-Vermarktung, junger Marktlebenszeit oder unvollständiger Recherche liegen.';
+      const text = 'Kein öffentliches Praktiker-Signal erfasst.';
       return `<div class="tool-signal tool-signal-empty">
         <div class="tool-signal-head" title="${escapeHtml(tooltip)}" aria-label="Praxis-Signal. ${escapeHtml(tooltip)}">Praxis-Signal · <i>${escapeHtml(text)}</i></div>
       </div>`;
