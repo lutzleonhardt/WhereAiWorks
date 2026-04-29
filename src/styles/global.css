@@ -1401,6 +1401,11 @@ a.src:hover { color: var(--ink); }
   color: var(--rule-strong);
   margin: 0 8px;
 }
+.site-footer .footer-maintainer {
+  flex-basis: 100%;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
 
 /* small helpers */
 .sr-only {

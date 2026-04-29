@@ -80,3 +80,9 @@ Details und Begründung: `specs/design.md` und `specs/execplan-mvp.md`.
 
 - **Sprache:** UI derzeit Deutsch. Englische Lokalisierung ist Phase-3.
 - **Hosting:** GitHub Pages oder Netlify (beide kostenlos mit Custom Domain).
+
+## Maintainer
+
+Kuratiert und gepflegt von **Lutz Leonhardt** — [lutzleonhardt.de](https://lutzleonhardt.de) · [hello@lutzleonhardt.de](mailto:hello@lutzleonhardt.de).
+
+Issues und Pull Requests sind willkommen; inhaltliche Reviews orientieren sich an [`docs/dach-curation.md`](docs/dach-curation.md) und [`docs/curation-policy.md`](docs/curation-policy.md).
