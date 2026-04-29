@@ -2621,3 +2621,780 @@
   category: other
   url: https://www.opsrift.com/
   maturity: production
+- id: fairlanguage-com
+  name: Fairlanguage (LUB GmbH)
+  category: other
+  url: https://fairlanguage.com/
+  maturity: production
+- id: jade-or-at
+  name: JADE Job Ad Decoder
+  category: other
+  url: https://www.jade.or.at/
+  maturity: production
+- id: gb-check-de
+  name: gb-check (Antidiskriminierungsstelle des Bundes)
+  category: other
+  url: https://www.gb-check.de/
+  maturity: production
+- id: centric-eu-de-portfolio-dokumenten-intensive-prozesse-zeugnis-generator
+  name: Centric Reference Letter
+  category: other
+  url: https://centric.eu/de/portfolio/dokumenten-intensive-prozesse/zeugnis-generator/
+  maturity: production
+- id: flowmium-com-zeugnisgenerator
+  name: Flowmium Zeugnisgenerator
+  category: other
+  url: https://flowmium.com/zeugnisgenerator
+  maturity: production
+- id: rexx-systems-com-software-hr
+  name: rexx HR Suite (mit KI-Assistent Rai)
+  category: other
+  url: https://www.rexx-systems.com/software-hr/
+  maturity: production
+- id: hrworks-de-produkt-arbeitszeugnis-software
+  name: HRworks Arbeitszeugnis-Software
+  category: other
+  url: https://www.hrworks.de/produkt/arbeitszeugnis-software/
+  maturity: production
+- id: arbeitszeugnisgenerator-haufe-de
+  name: Haufe Zeugnis Manager
+  category: other
+  url: https://www.arbeitszeugnisgenerator.haufe.de/
+  maturity: production
+- id: zeugnissoftware-rudy-de
+  name: RUDY (PSRM)
+  category: other
+  url: https://zeugnissoftware-rudy.de/
+  maturity: production
+- id: skriba-ch
+  name: Skriba
+  category: other
+  url: https://skriba.ch/
+  maturity: production
+- id: verlingo-zeugnisgenerator-de
+  name: verlingo Zeugnisgenerator
+  category: other
+  url: https://verlingo-zeugnisgenerator.de/
+  maturity: production
+- id: paradox-ai
+  name: Paradox (Olivia)
+  category: support
+  url: https://www.paradox.ai/
+  maturity: production
+- id: workday-com-en-us-products-talent-management-ai-recruiting-html
+  name: Workday Recruiting Agent / HiredScore (mit Paradox-Integration)
+  category: productivity
+  url: https://www.workday.com/en-us/products/talent-management/ai-recruiting.html
+  maturity: production
+- id: onlyfy-com-de
+  name: onlyfy by XING (Bewerbungsmanager)
+  category: productivity
+  url: https://onlyfy.com/de/
+  maturity: production
+- id: personio-de-funktionen-recruiting
+  name: Personio Recruiting (mit Joule/AI-Templates)
+  category: productivity
+  url: https://www.personio.de/funktionen/recruiting/
+  maturity: production
+- id: sap-com-products-hcm-recruiting-software-html
+  name: SAP SuccessFactors Recruiting mit Joule
+  category: productivity
+  url: https://www.sap.com/products/hcm/recruiting-software.html
+  maturity: production
+- id: beesite-de
+  name: beesite Recruiting
+  category: other
+  url: https://beesite.de/
+  maturity: production
+- id: cleverconnect-com-de
+  name: CleverConnect
+  category: other
+  url: https://www.cleverconnect.com/de/
+  maturity: production
+- id: dvinci-de
+  name: d.vinci Bewerbermanagement
+  category: other
+  url: https://www.dvinci.de/
+  maturity: production
+- id: rexx-systems-com-recruiting
+  name: rexx Systems Recruiting (mit Rai)
+  category: other
+  url: https://www.rexx-systems.com/recruiting/
+  maturity: production
+- id: support-greenhouse-io-hc-en-us-articles-25618229870107-email-generator
+  name: Greenhouse Email Generator
+  category: productivity
+  url: https://support.greenhouse.io/hc/en-us/articles/25618229870107-Email-generator
+  maturity: production
+- id: softgarden-com-de
+  name: softgarden (mit TalentMail KI und AGG-Templates)
+  category: other
+  url: https://softgarden.com/de/
+  maturity: production
+- id: eightfold-ai-use-case-candidate-relationship-management
+  name: Eightfold AI (Talent Acquisition CRM)
+  category: other
+  url: https://eightfold.ai/use-case/candidate-relationship-management/
+  maturity: production
+- id: herohunt-ai
+  name: HeroHunt.ai
+  category: other
+  url: https://www.herohunt.ai
+  maturity: production
+- id: hireez-com
+  name: hireEZ
+  category: other
+  url: https://hireez.com
+  maturity: production
+- id: business-linkedin-com-talent-solutions-recruiter
+  name: LinkedIn Recruiter (mit AI-Assist)
+  category: other
+  url: https://business.linkedin.com/talent-solutions/recruiter
+  maturity: production
+- id: seekout-com
+  name: SeekOut
+  category: other
+  url: https://seekout.com
+  maturity: production
+- id: spott-io
+  name: Spott
+  category: other
+  url: https://www.spott.io
+  maturity: production
+- id: yena-ai
+  name: Yena
+  category: other
+  url: https://yena.ai
+  maturity: production
+- id: learn-microsoft-com-en-us-fabric-data-warehouse-copilot
+  name: Microsoft Fabric Copilot / Copilot in SQL Server Management Studio
+  category: data
+  url: https://learn.microsoft.com/en-us/fabric/data-warehouse/copilot
+  maturity: production
+- id: beamery-com-platform-sourcing
+  name: Beamery
+  category: other
+  url: https://beamery.com/platform/sourcing
+  maturity: production
+- id: workday-com-en-us-products-talent-management-hiredscore-talent-orchestration-html
+  name: HiredScore (Workday)
+  category: other
+  url: https://www.workday.com/en-us/products/talent-management/hiredscore-talent-orchestration.html
+  maturity: production
+- id: phenom-com-talent-crm
+  name: Phenom Talent CRM (X+ Sourcing)
+  category: other
+  url: https://www.phenom.com/talent-crm
+  maturity: production
+- id: onlyfy-com-de-products-application-manager
+  name: onlyfy one
+  category: other
+  url: https://onlyfy.com/de/products/application-manager/
+  maturity: production
+- id: smartrecruiters-com
+  name: SmartRecruiters (Winston AI)
+  category: other
+  url: https://www.smartrecruiters.com/
+  maturity: production
+- id: talentwunder-com
+  name: Talentwunder
+  category: other
+  url: https://talentwunder.com/
+  maturity: production
+- id: recruiting-xing-com-de-produkte-talentmanager
+  name: XING TalentManager
+  category: other
+  url: https://recruiting.xing.com/de/produkte/talentmanager/
+  maturity: production
+- id: idnow-io-human-resources
+  name: IDnow (AutoIdent / VideoIdent / eID)
+  category: other
+  url: https://www.idnow.io/human-resources/
+  maturity: production
+- id: workday-com-en-us-products-human-capital-management-overview-html
+  name: Workday HCM (mit Illuminate / Workday AI)
+  category: other
+  url: https://www.workday.com/en-us/products/human-capital-management/overview.html
+  maturity: production
+- id: clickboarding-com
+  name: ClickBoarding
+  category: other
+  url: https://www.clickboarding.com/
+  maturity: production
+- id: drata-com
+  name: Drata
+  category: other
+  url: https://drata.com/
+  maturity: production
+- id: haufe-de-personal-talent-management
+  name: Haufe Talent Management
+  category: other
+  url: https://www.haufe.de/personal/talent-management
+  maturity: production
+- id: vanta-com
+  name: Vanta
+  category: other
+  url: https://www.vanta.com/
+  maturity: production
+- id: sap-com-products-hcm-employee-onboarding-offboarding-html
+  name: SAP SuccessFactors Onboarding 2.0 (mit Joule)
+  category: other
+  url: https://www.sap.com/products/hcm/employee-onboarding-offboarding.html
+  maturity: production
+- id: hrworks-de
+  name: HRworks
+  category: other
+  url: https://www.hrworks.de/
+  maturity: production
+- id: personio-de
+  name: Personio
+  category: other
+  url: https://www.personio.de/
+  maturity: production
+- id: cultureamp-com-ai
+  name: undefined
+  category: hr
+  url: https://www.cultureamp.com/ai
+  maturity: production
+  vendor: Culture Amp
+- id: staffbase-com-companion
+  name: Staffbase Companion / Employee AI
+  category: other
+  url: https://staffbase.com/companion
+  maturity: production
+- id: beekeeper-io-platform-ai
+  name: Beekeeper Maia
+  category: other
+  url: https://www.beekeeper.io/platform/ai/
+  maturity: production
+- id: sap-com-products-hcm-html
+  name: SAP SuccessFactors Joule (AI Writing Assistant)
+  category: other
+  url: https://www.sap.com/products/hcm.html
+  maturity: production
+- id: workday-com-en-us-products-artificial-intelligence-overview-html
+  name: Workday Illuminate (HR-Messages)
+  category: other
+  url: https://www.workday.com/en-us/products/artificial-intelligence/overview.html
+  maturity: production
+- id: deepl-com-de-products-write
+  name: DeepL Write Pro
+  category: other
+  url: https://www.deepl.com/de/products/write
+  maturity: production
+- id: sociabble-com-platform-ai-features
+  name: Sociabble Ask AI
+  category: other
+  url: https://www.sociabble.com/platform/ai-features/
+  maturity: production
+- id: visiblethread-com-vt-writer
+  name: VisibleThread VT Writer
+  category: other
+  url: https://www.visiblethread.com/vt-Writer/
+  maturity: production
+- id: haiilo-com-ai-features
+  name: Haiilo AVA
+  category: other
+  url: https://www.haiilo.com/ai-features
+  maturity: production
+- id: personio-de-funktionen-assistant
+  name: Personio Assistant
+  category: other
+  url: https://www.personio.de/funktionen/assistant/
+  maturity: production
+  vendor: Personio
+- id: workday-com-en-us-products-ai-overview-html
+  name: Workday Assistant / Workday AI Agents (Illuminate)
+  category: support
+  url: https://www.workday.com/en-us/products/ai/overview.html
+  maturity: production
+- id: ibm-com-products-watsonx-assistant
+  name: IBM watsonx Assistant
+  category: support
+  url: https://www.ibm.com/products/watsonx-assistant
+  maturity: production
+- id: kore-ai-ai-for-work-ai-for-hr
+  name: Kore.ai (Agent Platform for HR)
+  category: support
+  url: https://www.kore.ai/ai-for-work/ai-for-hr
+  maturity: production
+- id: moveworks-com
+  name: Moveworks (now ServiceNow)
+  category: support
+  url: https://www.moveworks.com/
+  maturity: production
+- id: personio-de-conversations
+  name: Personio Conversations (AI-powered Answers)
+  category: other
+  url: https://www.personio.de/conversations/
+  maturity: production
+- id: haufe-de-hr-chatbot
+  name: Haufe HR Assistant
+  category: support
+  url: https://www.haufe.de/hr/chatbot
+  maturity: production
+- id: servicenow-com-products-hr-service-delivery-html
+  name: ServiceNow Now Assist for HRSD
+  category: support
+  url: https://www.servicenow.com/products/hr-service-delivery.html
+  maturity: production
+- id: support-greenhouse-io-hc-en-us-articles-33870806581915-use-ai-to-get-suggestions-for-interview-questions
+  name: Greenhouse Recruiting AI – Interview Question Suggestions
+  category: other
+  url: https://support.greenhouse.io/hc/en-us/articles/33870806581915-Use-AI-to-get-suggestions-for-interview-questions
+  maturity: production
+- id: sap-com-use-cases-generating-interview-questions
+  name: SAP SuccessFactors Recruiting – Generate Interview Questions / Joule
+  category: other
+  url: https://www.sap.com/use-cases/generating-interview-questions
+  maturity: production
+- id: workable-com-interview-questions-generator
+  name: Workable – Interview Questions Generator + Workable Agent
+  category: other
+  url: https://www.workable.com/interview-questions-generator
+  maturity: production
+- id: blog-workday-com-en-us-issue-2-workday-rising-daily-2024-html
+  name: Workday Recruiting / Illuminate / Recruiter Agent
+  category: other
+  url: https://blog.workday.com/en-us/issue-2-workday-rising-daily-2024.html
+  maturity: production
+- id: dvinci-de-en-features-software
+  name: d.vinci
+  category: other
+  url: https://dvinci.de/en/features-software
+  maturity: production
+- id: candidate-fyi
+  name: candidate.fyi
+  category: productivity
+  url: https://candidate.fyi/
+  maturity: production
+- id: support-personio-de-hc-en-us-articles-4486092226973-use-smart-interview-scheduling
+  name: Personio Smart Interview Scheduling
+  category: productivity
+  url: https://support.personio.de/hc/en-us/articles/4486092226973-Use-smart-interview-scheduling
+  maturity: production
+- id: greenhouse-com
+  name: Prelude
+  category: productivity
+  url: https://www.greenhouse.com/
+  maturity: production
+- id: cronofy-com
+  name: Cronofy
+  category: productivity
+  url: https://www.cronofy.com/
+  maturity: production
+- id: help-sap-com-docs-successfactors-recruiting-setting-up-and-maintaining-sap-successfactors-recruiting-configuring-interview-scheduling
+  name: SAP SuccessFactors Recruiting (Interview Scheduling + Joule Agents)
+  category: productivity
+  url: https://help.sap.com/docs/successfactors-recruiting/setting-up-and-maintaining-sap-successfactors-recruiting/configuring-interview-scheduling
+  maturity: production
+- id: workday-com-content-dam-web-de-documents-datasheets-datasheet-workday-recruiting-pdf
+  name: Workday Recruiting (mit AI Interview Agent Marketplace)
+  category: productivity
+  url: https://workday.com/content/dam/web/de/documents/datasheets/datasheet-workday-recruiting.pdf
+  maturity: production
+- id: cal-com-europe
+  name: Cal.com (Cal.eu)
+  category: other
+  url: https://cal.com/europe
+  maturity: production
+- id: calenso-com-en-recruiting-terminvereinbarung
+  name: Calenso
+  category: other
+  url: https://calenso.com/en/recruiting-terminvereinbarung
+  maturity: production
+- id: recruitee-com-security-gdpr
+  name: Recruitee (Tellent)
+  category: other
+  url: https://recruitee.com/security-gdpr
+  maturity: production
+- id: timify-de-en-solutions-recruiting-scheduling-software
+  name: TIMIFY
+  category: other
+  url: https://www.timify.de/en/solutions/recruiting-scheduling-software/
+  maturity: production
+- id: meetergo-com-en-solutions-talent
+  name: meetergo
+  category: other
+  url: https://meetergo.com/en/solutions/talent
+  maturity: production
+- id: metaview-app
+  name: Metaview
+  category: other
+  url: https://www.metaview.app/
+  maturity: production
+- id: amberscript-com-en
+  name: AmberScript / Amber Notes
+  category: other
+  url: https://www.amberscript.com/en/
+  maturity: production
+- id: happyscribe-com
+  name: Happy Scribe
+  category: other
+  url: https://www.happyscribe.com/
+  maturity: production
+- id: github-com-openai-whisper
+  name: OpenAI Whisper (self-hosted / faster-whisper)
+  category: other
+  url: https://github.com/openai/whisper
+  maturity: production
+- id: orfi-ai
+  name: Orfi
+  category: other
+  url: https://orfi.ai/
+  maturity: production
+- id: speechmatics-com
+  name: Speechmatics
+  category: other
+  url: https://www.speechmatics.com/
+  maturity: production
+- id: jobinterview-live-en-features
+  name: JobInterview.live
+  category: other
+  url: https://jobinterview.live/en/features
+  maturity: production
+- id: lizzy-ai-com-de
+  name: lizzyAI
+  category: other
+  url: https://www.lizzy-ai.com/de
+  maturity: production
+- id: ashbyhq-com-add-ons-ai-notetaker
+  name: Ashby AI Notetaker
+  category: other
+  url: https://www.ashbyhq.com/add-ons/ai-notetaker
+  maturity: production
+- id: noota-io-use-case-for-recruiters
+  name: Noota
+  category: other
+  url: https://www.noota.io/use-case/for-recruiters
+  maturity: production
+- id: developdiverse-com
+  name: Develop Diverse
+  category: other
+  url: https://developdiverse.com
+  maturity: production
+- id: support-google-com-a-users-answer-14171678-hl-en
+  name: Google Gemini for Workspace (HR Use Case)
+  category: productivity
+  url: https://support.google.com/a/users/answer/14171678?hl=en
+  maturity: production
+- id: workable-com-workable-ai
+  name: Workable AI (Job Description Generator + Workable Agent)
+  category: other
+  url: https://www.workable.com/workable-ai
+  maturity: production
+- id: openai-com-enterprise
+  name: OpenAI ChatGPT Enterprise
+  category: other
+  url: https://openai.com/enterprise
+  maturity: production
+- id: rexx-systems-com-ai-hiring
+  name: rexx Systems Recruiting Suite
+  category: other
+  url: https://www.rexx-systems.com/ai-hiring/
+  maturity: production
+- id: softgarden-com-de-loesungen-multiposting
+  name: softgarden Multiposting AI Job Ad Generator
+  category: other
+  url: https://softgarden.com/de/loesungen/multiposting
+  maturity: production
+- id: getmaia-ai-en-teams-hr
+  name: MAIA
+  category: support
+  url: https://www.getmaia.ai/en/teams/hr
+  maturity: production
+- id: squirro-com
+  name: Squirro
+  category: support
+  url: https://squirro.com/
+  maturity: production
+- id: workday-com-content-dam-web-en-us-documents-other-wd-assistant-pdf
+  name: Workday Assistant
+  category: support
+  url: https://www.workday.com/content/dam/web/en-us/documents/other/WD_Assistant.pdf
+  maturity: production
+- id: agent-schomerus-de
+  name: WissensWerk (Agent Schomerus)
+  category: other
+  url: https://agent-schomerus.de/
+  maturity: production
+- id: ambersearch-de-use-cases-employee-onboarding
+  name: amberAI
+  category: other
+  url: https://ambersearch.de/use-cases/employee-onboarding/
+  maturity: production
+- id: servicenow-com-products-now-assist-for-hr-html
+  name: ServiceNow Now Assist for HR
+  category: support
+  url: https://www.servicenow.com/products/now-assist-for-hr.html
+  maturity: production
+- id: scribehow-com
+  name: Scribe
+  category: productivity
+  url: https://scribehow.com/
+  maturity: production
+- id: enboarder-com
+  name: Enboarder
+  category: productivity
+  url: https://enboarder.com/
+  maturity: production
+- id: notebooklm-google
+  name: Google NotebookLM
+  category: productivity
+  url: https://notebooklm.google/
+  maturity: production
+- id: atlassian-com-software-artificial-intelligence
+  name: Atlassian Intelligence (Confluence)
+  category: productivity
+  url: https://www.atlassian.com/software/artificial-intelligence
+  maturity: production
+- id: synthesia-io
+  name: Synthesia
+  category: productivity
+  url: https://www.synthesia.io/
+  maturity: production
+- id: sap-com-products-hcm-successfactors-onboarding-html
+  name: SAP SuccessFactors Onboarding (AI Assisted Writing + Joule)
+  category: other
+  url: https://www.sap.com/products/hcm/successfactors-onboarding.html
+  maturity: production
+- id: hibob-com-features-performance
+  name: HiBob Bob (AI Writing Assistance)
+  category: productivity
+  url: https://www.hibob.com/features/performance
+  maturity: production
+- id: lattice-com-ai
+  name: Lattice (Lattice AI / Writing Assist)
+  category: productivity
+  url: https://www.lattice.com/ai
+  maturity: production
+- id: leapsome-com
+  name: Leapsome (AI Writing Assistant)
+  category: productivity
+  url: https://www.leapsome.com/
+  maturity: production
+- id: 15five-com
+  name: 15Five (Spark AI)
+  category: productivity
+  url: https://www.15five.com/
+  maturity: production
+- id: teamflect-com
+  name: Teamflect
+  category: productivity
+  url: https://teamflect.com/
+  maturity: production
+- id: workday-com-en-us-perspectives-hr-ai-for-personalized-bias-free-feedback-html
+  name: Workday (Manager Insights / AI Feedback)
+  category: productivity
+  url: https://www.workday.com/en-us/perspectives/hr/ai-for-personalized-bias-free-feedback.html
+  maturity: production
+- id: flowit-ai-product-performance-lite
+  name: flowit
+  category: other
+  url: https://flowit.ai/product/performance-lite
+  maturity: production
+- id: betterworks-com
+  name: Betterworks (Feedback Assist / AI-Synthesized Performance Summary)
+  category: productivity
+  url: https://www.betterworks.com/
+  maturity: production
+- id: sap-com-use-cases-writing-personalized-employee-feedback
+  name: SAP SuccessFactors (AI-Assisted Writing / Performance Insights)
+  category: productivity
+  url: https://www.sap.com/use-cases/writing-personalized-employee-feedback
+  maturity: production
+- id: textio-com
+  name: Textio (Lift for SuccessFactors / Workday / Lattice)
+  category: productivity
+  url: https://www.textio.com/
+  maturity: production
+- id: sprad-io-talent-management
+  name: Sprad (Atlas AI)
+  category: other
+  url: https://sprad.io/talent-management
+  maturity: production
+- id: docebo-com-products-shape
+  name: Docebo Shape / Creator (Docebo AgentHub)
+  category: productivity
+  url: https://www.docebo.com/products/shape/
+  maturity: production
+- id: articulate-com-features-assessments
+  name: Articulate 360 AI Assistant (Rise 360 / Storyline 360)
+  category: productivity
+  url: https://www.articulate.com/features/assessments/
+  maturity: production
+- id: mindsmith-ai-en
+  name: Mindsmith
+  category: productivity
+  url: https://www.mindsmith.ai/en
+  maturity: production
+- id: litmos-com-platform-authoring-tools
+  name: SAP Litmos (AI Authoring)
+  category: productivity
+  url: https://www.litmos.com/platform/authoring-tools
+  maturity: production
+- id: learning-sap-com-courses-sap-successfactors-learning-academy-enabling-ai-services-for-sap-successfactors-learning
+  name: SAP SuccessFactors Learning + Joule (AI Services)
+  category: productivity
+  url: https://learning.sap.com/courses/sap-successfactors-learning-academy/enabling-ai-services-for-sap-successfactors-learning
+  maturity: production
+- id: dokeos-com
+  name: Dokeos
+  category: other
+  url: https://www.dokeos.com/
+  maturity: production
+- id: scheer-imc-com-learning-suite-lms-for-enterprise
+  name: imc Learning Suite + imc Express
+  category: other
+  url: https://www.scheer-imc.com/learning-suite-lms-for-enterprise/
+  maturity: production
+- id: kertos-io-en-product-updates-compliance-policy-ai
+  name: Kertos KAIA
+  category: other
+  url: https://www.kertos.io/en/product-updates/compliance-policy-ai
+  maturity: production
+- id: 360learning-com-lp-authoring-tool
+  name: 360Learning (AI Authoring)
+  category: productivity
+  url: https://360learning.com/lp/authoring-tool/
+  maturity: production
+- id: cornerstoneondemand-com-resources-article-introducing-advanced-insights-benchmarking-and-genai-in-cornerstone-content-studio
+  name: Cornerstone Content Studio (GenAI) + Create Tool
+  category: productivity
+  url: https://www.cornerstoneondemand.com/resources/article/introducing-advanced-insights-benchmarking-and-genai-in-cornerstone-content-studio/
+  maturity: production
+- id: easygenerator-com-de-anwendungsfall-compliance-schulungs-software
+  name: Easygenerator (EasyAI)
+  category: productivity
+  url: https://www.easygenerator.com/de/anwendungsfall/compliance-schulungs-software/
+  maturity: production
+- id: lawpilots-com-de
+  name: lawpilots (E-Learning Plattform + LMS+)
+  category: productivity
+  url: https://lawpilots.com/de
+  maturity: production
+- id: doinstruct-com-product-genius
+  name: doinstruct Genius
+  category: other
+  url: https://doinstruct.com/product/genius
+  maturity: production
+- id: deepl-com-en-pro-data-security
+  name: DeepL Pro / DeepL for Business
+  category: productivity
+  url: https://www.deepl.com/en/pro-data-security
+  maturity: production
+- id: phrase-com-platform-tms
+  name: Phrase Localization Platform (TMS + Strings + Language AI)
+  category: productivity
+  url: https://phrase.com/platform/tms/
+  maturity: production
+- id: tilde-ai-translate
+  name: Tilde MT (TildeOpen LLM)
+  category: productivity
+  url: https://tilde.ai/translate/
+  maturity: production
+- id: deepl-com-customization-hub
+  name: DeepL Customization Hub (Glossare, Style Rules, Translation Memory)
+  category: productivity
+  url: https://www.deepl.com/customization-hub
+  maturity: production
+- id: e-kern-com-en-ai-mt4client-ai-solution
+  name: KERN MT4client Enterprise AI
+  category: productivity
+  url: https://www.e-kern.com/en/ai/mt4client-ai-solution/
+  maturity: production
+- id: across-net
+  name: Across Language Server
+  category: other
+  url: https://www.across.net/
+  maturity: production
+- id: languagewire-com-de-produkte-languagewire-tms
+  name: LanguageWire TMS
+  category: other
+  url: https://www.languagewire.com/de/produkte/languagewire-tms/
+  maturity: production
+- id: softgarden-com-de-loesungen-ki-recruiting
+  name: softgarden KI-Matching
+  category: other
+  url: https://softgarden.com/de/loesungen/ki-recruiting/
+  maturity: production
+- id: recruitis-io
+  name: Recruitis.io
+  category: other
+  url: https://recruitis.io
+  maturity: production
+- id: treegarden-io
+  name: Treegarden
+  category: other
+  url: https://treegarden.io
+  maturity: production
+- id: x0pa-com
+  name: X0PA AI
+  category: other
+  url: https://x0pa.com
+  maturity: production
+- id: cornerstoneondemand-com-platform-cornerstone-galaxy-ai
+  name: Cornerstone Galaxy (mit Cornerstone Skills Engine, SkyHive, EdCast)
+  category: other
+  url: https://www.cornerstoneondemand.com/platform/cornerstone-galaxy-ai/
+  maturity: production
+- id: degreed-com-experience-artificial-intelligence
+  name: Degreed (Maestro)
+  category: other
+  url: https://degreed.com/experience/artificial-intelligence/
+  maturity: production
+- id: workday-com-en-us-products-human-capital-management-skills-cloud-html
+  name: Workday Skills Cloud + Career Hub (Workday Illuminate)
+  category: other
+  url: https://www.workday.com/en-us/products/human-capital-management/skills-cloud.html
+  maturity: production
+- id: docs-oracle-com-en-cloud-saas-talent-management-faimh-overview-of-dynamic-skills-html
+  name: Oracle Dynamic Skills (HCM Cloud)
+  category: other
+  url: https://docs.oracle.com/en/cloud/saas/talent-management/faimh/overview-of-dynamic-skills.html
+  maturity: production
+- id: workera-ai-skillmap-ai
+  name: Workera
+  category: other
+  url: https://workera.ai/skillmap-ai
+  maturity: production
+- id: haufe-com-talent
+  name: Haufe Talent
+  category: other
+  url: https://www.haufe.com/talent/
+  maturity: production
+- id: 365talents-com-en
+  name: 365Talents
+  category: other
+  url: https://365talents.com/en/
+  maturity: production
+- id: edyoucated-org-en
+  name: edyoucated
+  category: other
+  url: https://edyoucated.org/en
+  maturity: production
+- id: eightfold-ai-products-talent-intelligence-suite
+  name: Eightfold Talent Intelligence Platform (Talent Upskilling / Career Hub)
+  category: other
+  url: https://eightfold.ai/products/talent-intelligence-suite/
+  maturity: production
+- id: gloat-com-use-cases-agents-upskilling-agent
+  name: Gloat Talent Marketplace + AI Upskilling Agent
+  category: other
+  url: https://gloat.com/use-cases-agents/upskilling-agent/
+  maturity: production
+- id: sap-com-uk-products-hcm-career-talent-development-features-html
+  name: SAP SuccessFactors Talent Intelligence Hub + Joule
+  category: other
+  url: https://www.sap.com/uk/products/hcm/career-talent-development/features.html
+  maturity: production
+- id: skillsoft-com-percipio
+  name: Skillsoft Percipio
+  category: other
+  url: https://www.skillsoft.com/percipio
+  maturity: production
+- id: techwolf-ai
+  name: TechWolf
+  category: other
+  url: https://techwolf.ai/
+  maturity: production
