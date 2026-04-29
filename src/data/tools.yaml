@@ -3770,3 +3770,366 @@
   category: other
   url: https://www.servicenow.com/ai/use-cases/incident-resolution.html
   maturity: production
+- id: productboard-com-product-ai
+  name: Productboard AI
+  category: discovery
+  url: https://www.productboard.com/product/ai/
+  maturity: production
+- id: claude-com-resources-tutorials-use-artifacts-to-visualize-and-create-ai-apps-without-ever-writing-a-line-of-code
+  name: Claude Artifacts
+  category: productivity
+  url: https://www.claude.com/resources/tutorials/use-artifacts-to-visualize-and-create-ai-apps-without-ever-writing-a-line-of-code
+  maturity: production
+- id: lovable-dev
+  name: Lovable
+  category: productivity
+  url: https://lovable.dev
+  maturity: production
+- id: locofy-ai
+  name: Locofy
+  category: other
+  url: https://locofy.ai
+  maturity: production
+- id: feedly-com-market-intelligence
+  name: Feedly Market Intelligence (Leo AI)
+  category: discovery
+  url: https://feedly.com/market-intelligence
+  maturity: production
+- id: alpha-sense-com
+  name: AlphaSense
+  category: discovery
+  url: https://www.alpha-sense.com
+  maturity: production
+- id: gemini-google-overview-deep-research
+  name: Gemini Deep Research (Workspace)
+  category: discovery
+  url: https://gemini.google/overview/deep-research/
+  maturity: production
+- id: kompyte-com
+  name: Kompyte
+  category: discovery
+  url: https://www.kompyte.com
+  maturity: production
+- id: valonaintelligence-com
+  name: Valona Intelligence
+  category: discovery
+  url: https://www.valonaintelligence.com
+  maturity: production
+- id: visualping-io
+  name: Visualping
+  category: discovery
+  url: https://visualping.io
+  maturity: production
+- id: salesbattle-de
+  name: SalesBattle
+  category: other
+  url: https://www.salesbattle.de/
+  maturity: production
+- id: altasigma-com-de-solutions-prompt-analytics
+  name: AltaSigma Prompt Analytics
+  category: other
+  url: https://www.altasigma.com/de/solutions/prompt-analytics
+  maturity: production
+- id: hypescale-com-en-products-hypeanalytics
+  name: HypeAnalytics
+  category: other
+  url: https://hypescale.com/en/products/hypeanalytics
+  maturity: production
+- id: sap-com-germany-products-data-cloud-analytics-cloud-natural-language-query-html
+  name: SAP Analytics Cloud — Just Ask / Joule
+  category: other
+  url: https://www.sap.com/germany/products/data-cloud/analytics-cloud-natural-language-query.html
+  maturity: production
+- id: cube-dev-use-cases-llm-and-ai-semantic-layer
+  name: Cube AI / Cube Semantic Layer (Delphi)
+  category: data
+  url: https://cube.dev/use-cases/llm-and-ai-semantic-layer
+  maturity: production
+- id: posthog-com-docs-max-ai
+  name: PostHog AI (Max)
+  category: data
+  url: https://posthog.com/docs/max-ai
+  maturity: production
+- id: anthropic-com-news-research
+  name: Claude Research (Advanced Research)
+  category: discovery
+  url: https://www.anthropic.com/news/research
+  maturity: production
+- id: aws-amazon-com-quicksuite-research
+  name: Amazon Quick Research (Quick Suite)
+  category: discovery
+  url: https://aws.amazon.com/quicksuite/research/
+  maturity: production
+- id: elicit-com
+  name: Elicit
+  category: discovery
+  url: https://elicit.com/
+  maturity: production
+- id: mistral-ai-news-le-chat-dives-deep
+  name: Mistral Le Chat (Deep Research)
+  category: discovery
+  url: https://mistral.ai/news/le-chat-dives-deep
+  maturity: production
+- id: dreamleap-com
+  name: dreamleap
+  category: other
+  url: https://www.dreamleap.com/
+  maturity: production
+- id: canny-io
+  name: Canny (mit Autopilot)
+  category: discovery
+  url: https://canny.io
+  maturity: production
+- id: heymarvin-com
+  name: HeyMarvin
+  category: discovery
+  url: https://heymarvin.com
+  maturity: production
+- id: looppanel-com
+  name: Looppanel
+  category: discovery
+  url: https://www.looppanel.com
+  maturity: production
+- id: medallia-com
+  name: Medallia (Text Analytics)
+  category: discovery
+  url: https://www.medallia.com
+  maturity: production
+- id: qualtrics-com
+  name: Qualtrics XM (Text iQ / XM Discover)
+  category: discovery
+  url: https://www.qualtrics.com
+  maturity: production
+- id: cycle-app
+  name: Cycle
+  category: discovery
+  url: https://www.cycle.app
+  maturity: production
+- id: caplena-com
+  name: Caplena
+  category: discovery
+  url: https://caplena.com
+  maturity: production
+- id: deepsight-de
+  name: deepsight cloud
+  category: discovery
+  url: https://www.deepsight.de
+  maturity: production
+- id: feedier-ai
+  name: Feedier
+  category: discovery
+  url: https://feedier.ai
+  maturity: production
+- id: podojo-com
+  name: Podojo
+  category: discovery
+  url: https://www.podojo.com
+  maturity: production
+- id: sentisum-com
+  name: SentiSum
+  category: discovery
+  url: https://www.sentisum.com
+  maturity: production
+- id: anthropic-com-claude-enterprise
+  name: Claude Projects / Claude Enterprise
+  category: productivity
+  url: https://www.anthropic.com/claude/enterprise
+  maturity: production
+- id: cloud-google-com-products-agentspace
+  name: Gemini Enterprise / Google Agentspace
+  category: discovery
+  url: https://cloud.google.com/products/agentspace
+  maturity: production
+- id: rheininsights-com
+  name: RheinInsights Retrieval Suite
+  category: other
+  url: https://www.rheininsights.com/
+  maturity: production
+- id: intrafind-com
+  name: IntraFind iFinder / iAssistant
+  category: other
+  url: https://intrafind.com/
+  maturity: production
+- id: meetjamie-ai
+  name: Jamie
+  category: productivity
+  url: https://www.meetjamie.ai
+  maturity: production
+- id: microsoft-com-en-us-microsoft-teams-premium
+  name: Microsoft Teams Premium (Intelligent Recap)
+  category: productivity
+  url: https://www.microsoft.com/en-us/microsoft-teams/premium
+  maturity: production
+- id: zoom-com-en-products-ai-assistant
+  name: Zoom AI Companion
+  category: productivity
+  url: https://zoom.com/en/products/ai-assistant/
+  maturity: production
+- id: fathom-ai
+  name: Fathom
+  category: productivity
+  url: https://fathom.ai
+  maturity: production
+- id: fellow-app
+  name: Fellow
+  category: productivity
+  url: https://fellow.app
+  maturity: production
+- id: meetily-ai
+  name: Meetily
+  category: productivity
+  url: https://meetily.ai
+  maturity: production
+- id: sembly-ai
+  name: Sembly AI
+  category: productivity
+  url: https://www.sembly.ai
+  maturity: production
+- id: tldv-io
+  name: tl;dv
+  category: productivity
+  url: https://tldv.io
+  maturity: production
+- id: boardwise-io
+  name: Boardwise
+  category: other
+  url: https://www.boardwise.io/
+  maturity: production
+- id: sally-io
+  name: Sally AI
+  category: productivity
+  url: https://www.sally.io
+  maturity: production
+- id: prodcycle-com
+  name: ProdCycle
+  category: other
+  url: https://prodcycle.com/
+  maturity: production
+- id: specgraph-dev
+  name: SpecGraph
+  category: other
+  url: https://specgraph.dev/
+  maturity: production
+- id: specnavi-com
+  name: SpecNavi
+  category: other
+  url: https://specnavi.com/
+  maturity: production
+- id: aha-io-ai-library-agent-product-requirements-document
+  name: Aha! (Elle AI Assistant + PRD Agent)
+  category: discovery
+  url: https://www.aha.io/ai-library/agent-product-requirements-document
+  maturity: production
+- id: dreamleap-com-ai-legal-compliance-assistant
+  name: Dreamleap AI Compliance Assistant
+  category: productivity
+  url: https://www.dreamleap.com/ai-legal-compliance-assistant
+  maturity: production
+- id: durava-de-ki-compliance-management
+  name: Durava
+  category: other
+  url: https://durava.de/ki-compliance-management/
+  maturity: production
+- id: eurocomply-app-de
+  name: EuroComply
+  category: other
+  url: https://eurocomply.app/de
+  maturity: production
+- id: tracegov-ai
+  name: TraceGov
+  category: other
+  url: https://tracegov.ai/
+  maturity: production
+- id: eqs-com-platform-data-privacy-ai-compliance
+  name: EQS AI Governance (Privacy & Compliance Cockpit)
+  category: other
+  url: https://www.eqs.com/platform-data-privacy/ai-compliance/
+  maturity: production
+- id: n8n-io-workflows-11569-generate-github-release-notes-with-ai-comparison
+  name: n8n Release-Notes-Workflows (GitHub + LLM)
+  category: productivity
+  url: https://n8n.io/workflows/11569-generate-github-release-notes-with-ai-comparison/
+  maturity: production
+- id: featurebase-app
+  name: Featurebase
+  category: discovery
+  url: https://www.featurebase.app/
+  maturity: production
+- id: marketplace-atlassian-com-apps-1215431-ai-powered-automated-release-notes-reports-for-jira
+  name: Automated Release Notes & Reports for Jira (AI-powered)
+  category: other
+  url: https://marketplace.atlassian.com/apps/1215431/ai-powered-automated-release-notes-reports-for-jira
+  maturity: production
+- id: marketplace-atlassian-com-apps-1230872-released-ai-release-notes-changelog-automation-for-jira
+  name: Released - AI Release Notes for Jira
+  category: other
+  url: https://marketplace.atlassian.com/apps/1230872/released-ai-release-notes-changelog-automation-for-jira
+  maturity: production
+- id: announcekit-app
+  name: AnnounceKit
+  category: discovery
+  url: https://announcekit.app/
+  maturity: production
+  vendor: AnnounceKit
+- id: asana-com-resources-ai-teammates-overview
+  name: Asana AI Teammates - Status Reporter
+  category: productivity
+  url: https://www.asana.com/resources/ai-teammates-overview
+  maturity: production
+- id: linear-app-docs-linear-agent
+  name: Linear Agent
+  category: productivity
+  url: https://linear.app/docs/linear-agent
+  maturity: production
+- id: community-monday-com-announcements-updates-post-ai-2026-what-s-new-and-what-s-coming-e3eafithvo1cust
+  name: Monday Sidekick / Monday AI
+  category: productivity
+  url: https://community.monday.com/announcements-updates/post/ai-2026-what-s-new-and-what-s-coming-e3eAFIThvO1cust
+  maturity: production
+- id: servicenow-com-community-spm-articles-ai-status-reports-generate-complete-project-status-report-with-ta-p-3517292
+  name: ServiceNow Now Assist for SPM (AI Status Reports)
+  category: other
+  url: https://www.servicenow.com/community/spm-articles/ai-status-reports-generate-complete-project-status-report-with/ta-p/3517292
+  maturity: production
+- id: clickup-com-blog-clickup-brain-actionable-insights
+  name: ClickUp Brain (Project Status Reporter / Executive Summary Cards)
+  category: productivity
+  url: https://clickup.com/blog/clickup-brain-actionable-insights/
+  maturity: production
+  vendor: ClickUp
+- id: stepsize-com-use-cases-executive-summary
+  name: Stepsize AI
+  category: productivity
+  url: https://stepsize.com/use-cases/executive-summary
+  maturity: production
+  vendor: Stepsize (acquired by ClickUp)
+- id: claude-com
+  name: Claude (Anthropic) für PM-Workflows
+  category: productivity
+  url: https://claude.com/
+  maturity: production
+- id: ones-com
+  name: ONES.com
+  category: other
+  url: https://www.ones.com/
+  maturity: production
+- id: scagile-io-de-pi-planning-tool
+  name: scagile
+  category: other
+  url: https://scagile.io/de/pi-planning-tool/
+  maturity: production
+- id: vdf-ai-products-vdf-agile
+  name: VDF Agile
+  category: other
+  url: https://vdf.ai/products/vdf-agile/
+  maturity: production
+- id: aha-io-ai-library-request-user-stories
+  name: Aha! AI Assistant (Elle)
+  category: discovery
+  url: https://www.aha.io/ai-library/request-user-stories
+  maturity: production
+- id: marketplace-atlassian-com-apps-3016668857-refinely-ai-backlog-refinement-for-jira
+  name: Refinely - AI Backlog Refinement for Jira
+  category: other
+  url: https://marketplace.atlassian.com/apps/3016668857/refinely-ai-backlog-refinement-for-jira
+  maturity: production

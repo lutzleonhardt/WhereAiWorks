@@ -9270,3 +9270,1051 @@
   label: "Barclays PR Newswire (2018): named Enterprise Agreement mit Barclays für strukturelle Reformen, Cloud-Migration, DC-Resi…"
   url: https://www.prnewswire.com/news-releases/barclays-signs-enterprise-agreement-with-cutover-680149053.html
   type: news
+- id: claude-com-resources-tutorials-use-artifacts-to-visualize-and-create-ai-apps-without-ever-writing-a-line-of-code
+  label: Anthropic positioniert Artifacts ausdrücklich für Produkt-Prototypen ohne Designer/Engineer.
+  url: https://www.claude.com/resources/tutorials/use-artifacts-to-visualize-and-create-ai-apps-without-ever-writing-a-line-of-code
+  type: vendor_doc
+- id: aitoolbriefing-com-blog-claude-artifacts-guide-2026
+  label: "Praxis-Workflow: Prototyp in Claude bauen, bei Bewährung in echtem Codebase nachbauen."
+  url: https://aitoolbriefing.com/blog/claude-artifacts-guide-2026/
+  type: review
+- id: reddit-com-r-agile-comments-1rca834-any-product-managers-using-tools-like-lovable
+  label: PMs auf Reddit raten von Full-App-Buildern wie Lovable für reines Discovery-Prototyping ab und nutzen Light-Tools (inkl…
+  url: https://www.reddit.com/r/agile/comments/1rca834/any_product_managers_using_tools_like_lovable/
+  type: community
+- id: enterprise-lovable-dev-data-processing-agreement
+  label: Lovable bietet als einziger der vibe-coding-Anbieter dokumentierte SOC 2 Type II + ISO 27001 + SSO/SAML + DPA für Enter…
+  url: https://enterprise.lovable.dev/data-processing-agreement
+  type: vendor_doc
+- id: annaarteeva-medium-com-choosing-your-ai-prototyping-stack-lovable-v0-bolt-replit-cursor-magic-patterns-compared-9a5194f163e9
+  label: Lovable ist die kompletteste Idee-zu-Anwendung-Umgebung; scaffoldet fehlende Backend-Teile automatisch, inklusive Auto-…
+  url: https://annaarteeva.medium.com/choosing-your-ai-prototyping-stack-lovable-v0-bolt-replit-cursor-magic-patterns-compared-9a5194f163e9
+  type: blog
+- id: dev-to-systagproject-the-12-security-issues-i-keep-finding-in-vibe-coded-apps-lovable-bolt-v0-786
+  label: Sicherheitsrisiken in Lovable-/Bolt-/v0-Apps sind systematisch (RLS aus, Webhook-Signaturen fehlen, API-Keys im Bundle).
+  url: https://dev.to/systagproject/the-12-security-issues-i-keep-finding-in-vibe-coded-apps-lovable-bolt-v0-786
+  type: blog
+- id: lovable-dev-security
+  label: Lovable bietet SAML/OIDC/SCIM, regionales Hosting (EU/US/AU), SOC2 + GDPR-Doku.
+  url: https://lovable.dev/security
+  type: vendor_doc
+- id: lovable-dev-privacy
+  label: AI-Gateway leitet Prompts an US-LLM-Provider (OpenAI, Gemini, OpenRouter) – relevant für DACH-AVV.
+  url: https://www.lovable.dev/privacy
+  type: vendor_doc
+- id: reddit-com-r-nocode-comments-1psty9l-anyone-here-move-off-lovable-bolt-why
+  label: "Praktiker bestätigen: Lovable ist stark für Form, schwach für Logik; bei eigenen Anpassungen kämpft man gegen das Tool."
+  url: https://www.reddit.com/r/nocode/comments/1psty9l/anyone_here_move_off_lovable_bolt_why/
+  type: community
+- id: indiehackers-com-post-are-lovable-bolt-good-enough-for-real-apps-or-just-prototypes-5f7b1ccc91
+  label: "Indie-Hackers-Konsens: Lovable/Bolt sind ideal für Demos und Discovery, aber Vendor-Lock-in und Toy-Backend bei Skalier…"
+  url: https://www.indiehackers.com/post/are-lovable-bolt-good-enough-for-real-apps-or-just-prototypes-5f7b1ccc91
+  type: community
+- id: locofy-ai-convert-figma-to-react
+  label: ISO 27001 + SOC 2 Zertifizierung, kein Training auf Kundendaten, SAML SSO – Enterprise-Profil.
+  url: https://locofy.ai/convert/figma-to-react
+  type: vendor_doc
+- id: builder-io-meet-visual-copilot
+  label: Builder.io Visual Copilot ist explizit enterprise-positioniert mit SOC2 Type II und Training-Exclusion für Enterprise-D…
+  url: https://www.builder.io/meet-visual-copilot
+  type: vendor_doc
+- id: site-builder-io-enterprise
+  label: Design-System-Intelligence indexiert die echten Komponenten der Organisation – adressiert das 'generic UI patterns'-Cav…
+  url: https://site.builder.io/enterprise
+  type: vendor_doc
+- id: codeclouds-com-blog-builder-io-visual-copilot
+  label: "Dev-Agentur-Review: 'Bringt dich 75% des Wegs. In den Händen eines PMs/Designers ohne Coding-Erfahrung: schlechte Websites. In den Händen eines Developers: Figma-zu-Code in Rekordzeit.'"
+  url: https://www.codeclouds.com/blog/builder-io-visual-copilot
+  type: blog
+- id: mobileappdaily-com-product-review-builder-io
+  label: "Methodisch getestete Rezension (4.3/5): Code-Output sauber, 50-80% Zeitersparnis realistisch – aber Responsive Editing und komplexe Interaktionen erfordern Developer-Input."
+  url: https://mobileappdaily.com/product-review/builder-io
+  type: review
+- id: blog-vibecoder-me-builder-io-visual-development-teams
+  label: "Team-fokussierter Praxis-Bericht: PM/Designer-Self-Service funktioniert nur wenn Dev-Team Komponenten vorkonfiguriert hat; Setup ist 'kein Wochenendprojekt'."
+  url: https://blog.vibecoder.me/builder-io-visual-development-teams
+  type: blog
+- id: feedly-com-market-intelligence
+  label: Feedly Market Intelligence nutzt AI Feeds + Leo AI für strategische Wettbewerbs- und Trend-Recherche
+  url: https://feedly.com/market-intelligence
+  type: vendor_doc
+- id: gartner-com-reviews-product-klue-alternatives
+  label: Gartner reiht Feedly Market Intelligence unter den Top-Alternativen zu Klue ein
+  url: https://www.gartner.com/reviews/product/klue/alternatives
+  type: review
+- id: globenewswire-com-news-release-2026-04-24-3280934-0-en-alphasense-named-a-leader-in-inaugural-gartner-magic-quadrant-for-competitive-and-market-intelligence-html
+  label: AlphaSense ist Leader im Gartner MQ für Competitive & Market Intelligence (April 2026)
+  url: https://www.globenewswire.com/news-release/2026/04/24/3280934/0/en/AlphaSense-Named-a-Leader-in-Inaugural-Gartner-Magic-Quadrant-for-Competitive-and-Market-Intelligence.html
+  type: news
+- id: alpha-sense-com-platform-generative-search
+  label: Multi-Agent-Architektur mit auditierbaren Outputs und Satz-Citations gegen Halluzinationen
+  url: https://www.alpha-sense.com/platform/generative-search/
+  type: vendor_doc
+- id: pasqualepillitteri-it-en-news-1191-google-deep-research-max-gemini-3-1-pro-ai-agents
+  label: Vergleich der Deep-Research-Agenten zeigt ChatGPT als stark in Long-Form Synthesis, aber langsam und Quotenbeschränkt
+  url: https://pasqualepillitteri.it/en/news/1191/google-deep-research-max-gemini-3-1-pro-ai-agents
+  type: review
+- id: klue-com-newsletter-reddit-enters-the-search-wars
+  label: Klue selbst betont, dass ChatGPT für Konkurrenzanalyse aus generischem Web-Wissen halluziniert
+  url: https://klue.com/newsletter/reddit-enters-the-search-wars
+  type: blog
+- id: prospeo-io-s-crayon-vs-klue
+  label: Crayon nutzt explizit Claude für API-/Agent-Use-Cases im CI-Workflow
+  url: https://prospeo.io/s/crayon-vs-klue
+  type: review
+- id: reddit-com-r-productmarketing-comments-1l3eqqh-favorite-tools-for-competitive-intelligence
+  label: PMMs bauen eigene CI-Workflows mit LLM-Tools statt Klue/Crayon
+  url: https://www.reddit.com/r/ProductMarketing/comments/1l3eqqh/favorite_tools_for_competitive_intelligence/
+  type: community
+- id: gemini-google-overview-deep-research
+  label: "Gemini Deep Research expliziter Use-Case: Konkurrenz-Reports + interne Strategie-Memos cross-referenzieren"
+  url: https://gemini.google/overview/deep-research/
+  type: vendor_doc
+- id: blog-google-innovation-and-ai-models-and-research-gemini-models-next-generation-gemini-deep-research
+  label: Deep Research Max läuft auf Gemini 3.1 Pro, blendet Open Web mit proprietären Datenströmen über MCP
+  url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/
+  type: vendor_doc
+- id: skywork-ai-blog-ai-agent-gemini-vs-chatgpt-research
+  label: "Hands-on-Vergleich: Gemini Deep Research präzise mit Workspace-Kontext, ChatGPT besser im Drafting"
+  url: https://skywork.ai/blog/ai-agent/gemini-vs-chatgpt-research/
+  type: review
+- id: kompyte-com-blog-competitive-intelligence-kompyte-gpt
+  label: Kompyte GPT-Suite enthält AI-Battlecard-Creator/Updater und Daily Competitor Insight Summary
+  url: https://www.kompyte.com/blog/competitive-intelligence-kompyte-gpt
+  type: vendor_doc
+- id: toolsolved-com-guides-best-competitive-intelligence-tools-in-2026-crayon-klue-kompyte-and-5-others-compared
+  label: Kompyte als Mid-Market-Option mit automatischer Battlecard-Generierung, ~20k$/Jahr
+  url: https://toolsolved.com/guides/best-competitive-intelligence-tools-in-2026-crayon-klue-kompyte-and-5-others-compared
+  type: review
+- id: blog-segment8-com-posts-building-battlecards-powerpoint-vs-platforms
+  label: "PMM-Praktiker berichtet: Kompyte gut fürs Tracking, Battlecards aber zu lang für Sales"
+  url: https://blog.segment8.com/posts/building-battlecards-powerpoint-vs-platforms/
+  type: blog
+- id: visualping-io-blog-competitor-pricing-change-alerts
+  label: Visualping + Zapier + Claude API als dokumentierter Workflow für automatische Battlecard-Updates
+  url: https://visualping.io/blog/competitor-pricing-change-alerts
+  type: vendor_doc
+- id: visualping-io-reviews
+  label: G2-#1 Website-Change-Monitoring mit AI-Important-Filter
+  url: https://visualping.io/reviews
+  type: review
+- id: salesbattle-de-loesungen-unternehmen
+  label: DSGVO-Konformität, Hosting in Deutschland, Enterprise-Tier mit Compliance-Fokus
+  url: https://salesbattle.de/loesungen/unternehmen
+  type: vendor_doc
+- id: altasigma-com-de-solutions-prompt-analytics
+  label: BYO-LLM und On-Prem mit AI-Act-Positionierung
+  url: https://www.altasigma.com/de/solutions/prompt-analytics
+  type: vendor_doc
+- id: hypescale-com-en-products-hypeanalytics
+  label: Made in Germany, On-Prem, GDPR und EU AI Act Ready
+  url: https://hypescale.com/en/products/hypeanalytics
+  type: vendor_doc
+- id: docs-microsoft-com-en-us-fabric-fundamentals-copilot-privacy-security
+  label: Copilot in Fabric kann auf EU-Data-Boundary beschränkt werden
+  url: https://docs.microsoft.com/en-us/fabric/fundamentals/copilot-privacy-security
+  type: vendor_doc
+- id: inkl-com-news-this-new-microsoft-365-copilot-feature-could-throw-your-gdpr-compliance-into-question
+  label: Flex-Routing-Standard kann GDPR-Compliance gefährden
+  url: https://www.inkl.com/news/this-new-microsoft-365-copilot-feature-could-throw-your-gdpr-compliance-into-question
+  type: news
+- id: community-sap-com-t5-technology-q-a-questions-on-just-ask-in-sap-analytics-cloud-sac-qaq-p-13733146
+  label: Just-Ask-LLM läuft im SAC-Backend, keine Calls an Public-LLMs
+  url: https://community.sap.com/t5/technology-q-a/questions-on-just-ask-in-sap-analytics-cloud-sac/qaq-p/13733146
+  type: community
+- id: vanna-ai
+  label: Open-Source NL-to-SQL mit BYO-LLM und Self-Host
+  url: https://vanna.ai/
+  type: vendor_doc
+- id: cube-dev-use-cases-llm-and-ai-semantic-layer
+  label: Cube AI Semantic Layer für LLM-Q&A (Vendor)
+  url: https://cube.dev/use-cases/llm-and-ai-semantic-layer
+  type: vendor_doc
+- id: cube-dev-blog-semantic-layer-and-ai-the-future-of-data-querying-with-natural-language
+  label: "Semantic Layer und AI: Future of Data Querying (Vendor)"
+  url: https://cube.dev/blog/semantic-layer-and-ai-the-future-of-data-querying-with-natural-language
+  type: vendor_doc
+- id: cube-dev-blog-conversational-interface-for-semantic-layer
+  label: Conversational Interface für Semantic Layer (Vendor)
+  url: https://cube.dev/blog/conversational-interface-for-semantic-layer
+  type: vendor_doc
+- id: reddit-com-r-dataengineering-comments-1gjnvi2-is-it-me-or-semantic-layer-are-getting-one-of-the
+  label: "r/dataengineering: Semantic-Layer-Vendor-Narrative für LLMs kritisch hinterfragt"
+  url: https://www.reddit.com/r/dataengineering/comments/1gjnvi2/is_it_me_or_semantic_layer_are_getting_one_of_the/
+  type: community
+- id: databricks-com-product-ai-bi
+  label: Databricks AI/BI Genie Produktseite (Vendor)
+  url: https://www.databricks.com/product/ai-bi
+  type: vendor_doc
+- id: reddit-com-r-databricks-comments-1l9lhgs-lets-talk-about-genie
+  label: "r/databricks: Genie-Praxiserfahrung — 20-Tabellen-Limit, SQL-only ohne Row-Daten, hoher Metadaten-Pflegeaufwand"
+  url: https://www.reddit.com/r/databricks/comments/1l9lhgs/lets_talk_about_genie/
+  type: community
+- id: sunnydata-ai-blog-databricks-genie-code-production-review
+  label: "SunnyData: 2 Wochen Genie Code in Produktion — 77% Task-Success, Curation-Tax bestätigt"
+  url: https://www.sunnydata.ai/blog/databricks-genie-code-production-review
+  type: blog
+- id: posthog-com-docs-max-ai
+  label: PostHog Max AI Docs (Vendor)
+  url: https://posthog.com/docs/max-ai
+  type: vendor_doc
+- id: posthog-com-docs-product-analytics-analyze-data-ai
+  label: PostHog AI Analyse-Dokumentation (Vendor)
+  url: https://posthog.com/docs/product-analytics/analyze-data-ai
+  type: vendor_doc
+- id: posthog-com-docs-posthog-ai-example-prompts
+  label: PostHog AI Example Prompts (Vendor)
+  url: https://posthog.com/docs/posthog-ai/example-prompts
+  type: vendor_doc
+- id: growthmethod-com-posthog-max-ai
+  label: "Growth Method: Max AI NL-to-SQL, Session-Memory, Follow-up-Queries — Praxisbericht Juli 2025"
+  url: https://growthmethod.com/posthog-max-ai/
+  type: blog
+- id: snowflake-com-en-data-cloud-cortex
+  label: Snowflake Cortex Produktseite (Vendor)
+  url: https://www.snowflake.com/en/data-cloud/cortex/
+  type: vendor_doc
+- id: reddit-com-r-snowflake-comments-1rq1jup-cortex-analyst-in-snowflake-text-to-sql-that
+  label: "r/snowflake: Cortex Analyst in Produktion — Semantic-Layer-Qualität als Haupthebel, Double-Billing-Gotcha"
+  url: https://www.reddit.com/r/snowflake/comments/1rq1jup/cortex_analyst_in_snowflake_text_to_sql_that/
+  type: community
+- id: medium-com-agarwal-viren96-the-neuro-symbolic-shift-a-deep-dive-into-snowflake-cortex-analyst-and-semantic-views-0d49d39e01a2
+  label: "Coinbase Staff Engineer: Cortex Analyst Graph-Validation-Layer, Join-Pfad-Limitierungen, viele-zu-viele Workarounds"
+  url: https://medium.com/@agarwal.viren96/the-neuro-symbolic-shift-a-deep-dive-into-snowflake-cortex-analyst-and-semantic-views-0d49d39e01a2
+  type: blog
+- id: docs-thoughtspot-com-cloud-latest-search-sage
+  label: ThoughtSpot Search Sage Dokumentation (Vendor)
+  url: https://docs.thoughtspot.com/cloud/latest/search-sage
+  type: vendor_doc
+- id: thoughtspot-com-press-releases-thoughtspot-launches-spotter-for-industries-purpose-built-agents-transform-complex-industry-content-into-trusted-actionable-insights
+  label: ThoughtSpot Spotter for Industries Launch (Vendor)
+  url: https://www.thoughtspot.com/press-releases/thoughtspot-launches-spotter-for-industries-purpose-built-agents-transform-complex-industry-content-into-trusted-actionable-insights
+  type: vendor_doc
+- id: gartner-com-reviews-market-analytics-business-intelligence-platforms-vendor-thoughtspot-product-thoughtspot-analytics
+  label: "Gartner Peer Insights: 679 validierte Enterprise-Reviews, 4.5/5 — NL-Search stark, aber Datenmodellierung Pflicht"
+  url: https://www.gartner.com/reviews/market/analytics-business-intelligence-platforms/vendor/thoughtspot/product/thoughtspot-analytics
+  type: analyst
+- id: techtarget-com-searchbusinessanalytics-news-366636078-thoughtspot-automates-full-platform-with-new-spotter-agents
+  label: "TechTarget/SearchBI: Analyst Donald Farmer und Michael Ni — Spotter führend bei Agentic Analytics, aber Markt-Narrativ noch unklar"
+  url: https://www.techtarget.com/searchbusinessanalytics/news/366636078/ThoughtSpot-automates-full-platform-with-new-Spotter-agents
+  type: news
+- id: resources-rework-com-comparisons-ai-tools-perplexity-vs-chatgpt-search-vs-gemini
+  label: ChatGPT Enterprise erfüllt SSO/SAML, Zero-Retention, SOC 2, DPA — relevant für DACH-Procurement
+  url: https://resources.rework.com/comparisons/ai-tools/perplexity-vs-chatgpt-search-vs-gemini
+  type: review
+- id: zdnet-com-article-i-tested-chatgpts-deep-research-against-gemini-perplexity-and-grok-ai-to-see-which-is-best
+  label: ChatGPT Deep Research liefert die robustesten und gleichzeitig prägnantesten Reports im Vergleich zu Gemini/Perplexity
+  url: https://www.zdnet.com/article/i-tested-chatgpts-deep-research-against-gemini-perplexity-and-grok-ai-to-see-which-is-best/
+  type: review
+- id: reddit-com-r-chatgpt-comments-1lcx4es-a-warning-about-chatgpts-deep-research
+  label: Praktiker warnt vor komplett fabrizierten Deep-Research-Sektionen mit autoritärem Ton
+  url: https://www.reddit.com/r/ChatGPT/comments/1lcx4es/a_warning_about_chatgpts_deep_research/
+  type: community
+- id: reddit-com-r-chatgpt-comments-1r1v3w7-do-you-actually-use-deep-research-agent-mode
+  label: Power-User nutzen Deep Research regelmäßig als Kontextlieferant, akzeptieren aber Quotas-Limits
+  url: https://www.reddit.com/r/ChatGPT/comments/1r1v3w7/do_you_actually_use_deep_research_agent_mode/
+  type: community
+- id: anthropic-com-news-research
+  label: Claude Research arbeitet agentisch über Web + Workspace mit nachprüfbaren Citations
+  url: https://www.anthropic.com/news/research
+  type: vendor_doc
+- id: arstechnica-com-ai-2025-05-claudes-ai-research-mode-now-runs-for-up-to-45-minutes-before-delivering-reports
+  label: Advanced Research läuft bis 45 Min und durchforstet hunderte interne+externe Quellen
+  url: https://arstechnica.com/ai/2025/05/claudes-ai-research-mode-now-runs-for-up-to-45-minutes-before-delivering-reports/
+  type: news
+- id: scribehow-com-page-genspark-vs-claude-ai-deep-research-and-writing-comparison-2026-of-vwovuttwxscqms-eeya
+  label: Claude Research punktet mit Reasoning-Tiefe und geringeren Halluzinationen
+  url: https://scribehow.com/page/Genspark_vs_Claude_AI_Deep_Research_and_Writing_Comparison_2026__Of-vwoVUTTWxscqMs_eEyA
+  type: review
+- id: findskill-ai-blog-perplexity-vs-chatgpt-vs-gemini-research
+  label: Gemini Deep Research stark in Tiefe und Multimodalität, schwächt sich aber bei zweifelhaften Quellen
+  url: https://findskill.ai/blog/perplexity-vs-chatgpt-vs-gemini-research/
+  type: review
+- id: reddit-com-r-singularity-comments-1r948jk-gemini-31-pro-preview-has-google-finally-fixed
+  label: Power-User berichten, dass Gemini Deep Research Narrative über Quellenbindung priorisiert
+  url: https://www.reddit.com/r/singularity/comments/1r948jk/gemini_31_pro_preview_has_google_finally_fixed/
+  type: community
+- id: docs-langdock-com-product-chat-deep-research
+  label: Langdock Deep Research erstellt Reports in 5–30 Min mit Citations und PDF-Export, mehrstufige strategische Web-Suche
+  url: https://docs.langdock.com/product/chat/deep-research
+  type: vendor_doc
+- id: aicamp-so-blog-mistral-le-chat-alternatives
+  label: Langdock als EU-first AI-Workspace mit Workflows und RBAC für Teams positioniert
+  url: https://aicamp.so/blog/mistral-le-chat-alternatives/
+  type: review
+- id: airesearchreviews-com-comparisons-notebooklm-gemini-notebooks-chatgpt-study-mode-perplexity-research-workflow
+  label: NotebookLM ist stärkste Wahl für quellengebundene Synthese sobald Quellenbasis stabil ist
+  url: https://www.airesearchreviews.com/comparisons/notebooklm-gemini-notebooks-chatgpt-study-mode-perplexity-research-workflow
+  type: review
+- id: productbench-co-blog-notebooklm-for-product-managers-your-most-trustworthy-ai-thinking-partner
+  label: "PM-Praxisbericht: NotebookLM bleibt strikt quellengebunden, Aussagen sind in Stakeholder-Meetings verteidigbar"
+  url: https://www.productbench.co/blog/notebooklm-for-product-managers-your-most-trustworthy-ai-thinking-partner
+  type: blog
+- id: medium-com-justeattakeaway-tech-how-notebooklm-became-my-secret-sauce-as-a-technical-program-manager-98cf42691043
+  label: TPM bei Just Eat Takeaway nutzt NotebookLM für Stakeholder-Logs, Risk-Register und Synthese aus eigenen Quellen
+  url: https://medium.com/justeattakeaway-tech/how-notebooklm-became-my-secret-sauce-as-a-technical-program-manager-98cf42691043
+  type: blog
+- id: aws-amazon-com-quicksuite-research
+  label: Quick Research kombiniert Org-Daten + Web + Premium-Datasets zu strukturierten Reports mit Source-Links
+  url: https://aws.amazon.com/quicksuite/research/
+  type: vendor_doc
+- id: elicit-com-blog-introducing-research-agent-workflows
+  label: Elicit Research Agent unterstützt Competitive-Landscape-Workflows mit Quellen jenseits Publikationen
+  url: https://elicit.com/blog/introducing-research-agent-workflows
+  type: vendor_doc
+- id: elicit-com-blog-introducing-elicit-reports
+  label: Elicit Reports übertrafen in Studie mit 17 PhD-Researchern OpenAI/Perplexity/Gemini Deep Research
+  url: https://elicit.com/blog/introducing-elicit-reports
+  type: vendor_doc
+- id: greaterwrong-com-posts-chpkoaor2nfwjuik4-ai-deep-research-tools-reviewed
+  label: "Praktiker-Vergleich: Elicit liefert höhere Quellenqualität als Perplexity/Gemini Deep Research"
+  url: https://www.greaterwrong.com/posts/chPKoAoR2NfWjuik4/ai-deep-research-tools-reviewed
+  type: blog
+- id: reddit-com-r-perplexity-ai-comments-1j7dl2m-how-good-is-perplexity-deep-research
+  label: Praktiker bewertet Le Chat Web Search als schnell, aber halluzinationsanfällig
+  url: https://www.reddit.com/r/perplexity_ai/comments/1j7dl2m/how_good_is_perplexity_deep_research/
+  type: community
+- id: dreamleap-com-platform-overview
+  label: All-in-One Secure-AI-Plattform mit Deep AI Search, Swiss/EU/Private-Cloud-Hosting, GDPR + AI-Act-Ready
+  url: https://www.dreamleap.com/platform-overview
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-microsoft-365-copilot-faq-researcher
+  label: Researcher operiert vollständig im M365 Commercial Data Processing Boundary
+  url: https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-researcher
+  type: vendor_doc
+- id: smartcontentreport-com-deep-research-tools-comparison
+  label: "Fünf-Tool-Vergleich: Copilot Researcher stärker als Konkurrenten bei interner Datenfusion, schwächer bei reiner Web-Recherche; Bing-Abhängigkeit als Hauptlimitation"
+  url: https://smartcontentreport.com/deep-research-tools-comparison/
+  type: review
+- id: office-watch-com-2026-microsoft-copilot-researcher-critique-council
+  label: Critique/Council nur Enterprise Frontier mit inkonsistentem Rollout; DRACO-Benchmark +13,88% über Perplexity aber kein unabhängiger Replikationsnachweis; Community-Skepsis dokumentiert
+  url: https://office-watch.com/2026/microsoft-copilot-researcher-critique-council/
+  type: review
+- id: claude-com-resources-use-cases-analyze-patterns-in-user-feedback
+  label: Anthropic dokumentiert Feedback-Cluster-Use-Case explizit, inkl. Intercom-Connector
+  url: https://www.claude.com/resources/use-cases/analyze-patterns-in-user-feedback
+  type: vendor
+- id: claude-world-com-guides-g10-survey-feedback-analysis
+  label: Praxis-Guide zeigt strukturierten Cluster-Prompt mit Frequenz, Quotes, Klassifikation
+  url: https://claude-world.com/guides/g10-survey-feedback-analysis
+  type: blog
+- id: reddit-com-r-userexperience-comments-1kka6s3-are-there-good-tools-that-help-make-user
+  label: PM/Researcher in Reddit-Thread berichtet pragmatischen ChatGPT/o3-Workflow fuer Interview-Themen
+  url: https://www.reddit.com/r/userexperience/comments/1kka6s3/are_there_good_tools_that_help_make_user/
+  type: community
+- id: go-getthematic-com-product
+  label: Auto-Theme-Discovery plus Theme-Editor fuer Human-in-the-Loop
+  url: https://go.getthematic.com/product
+  type: vendor
+- id: feedbackrobot-com-articles-ai-customer-feedback-analysis-tools
+  label: Listet Thematic als Top-7-Tool 2026 mit klarer Positionierung
+  url: https://www.feedbackrobot.com/articles/ai-customer-feedback-analysis-tools
+  type: review
+- id: getthematic-com-product-plan-and-pricing
+  label: SOC2 Type II + GDPR explizit dokumentiert
+  url: https://www.getthematic.com/product/plan-and-pricing
+  type: vendor
+- id: help-canny-io-en-articles-12478095-insights
+  label: Autopilot extrahiert Insights aus Zoom-Calls, App-Reviews, CRM und linkt sie zu Ideas
+  url: https://help.canny.io/en/articles/12478095-insights
+  type: vendor
+- id: heymarvin-com-resources-ai-thematic-analysis
+  label: Direkte Beschreibung von Pattern- und Theme-Detection in qualitativen Daten
+  url: https://heymarvin.com/resources/ai-thematic-analysis/
+  type: vendor
+- id: g2-com-compare-looppanel-vs-marvin-marvin
+  label: G2-Vergleich attestiert HeyMarvin staerkere AI-Funktionen als Looppanel
+  url: https://www.g2.com/compare/looppanel-vs-marvin-marvin
+  type: review
+- id: help-looppanel-com-en-articles-11010042-how-to-use-the-insights-summary-panel-on-looppanel
+  label: AI generiert Insights mit Evidence; Human-in-the-Loop Review-Workflow dokumentiert
+  url: https://help.looppanel.com/en/articles/11010042-how-to-use-the-insights-summary-panel-on-looppanel
+  type: vendor
+- id: reddit-com-r-productmanagement-comments-1klawf2-analyzing-customer-feedback-at-scale
+  label: PM in Reddit-Thread empfiehlt Medallia als Enterprise-VoC-Stack
+  url: https://www.reddit.com/r/ProductManagement/comments/1klawf2/analyzing_customer_feedback_at_scale/
+  type: community
+- id: chattermill-io
+  label: Direktes Theme-Tagging und AI-Summaries fuer Cluster-Use-Case
+  url: https://chattermill.io/
+  type: vendor
+- id: gcom-pdo-aws-gartner-com-reviews-market-voice-of-the-customer-platforms-vendor-chattermill
+  label: "Gartner Peer Insights: Chattermill im VoC-Plattform-Markt mit Enterprise-Nutzer-Reviews"
+  url: https://gcom.pdo.aws.gartner.com/reviews/market/voice-of-the-customer-platforms/vendor/chattermill
+  type: review
+- id: cycle-app-customers-fabriq
+  label: Quantifizierter Case mit 80% weniger manueller Gruppierungszeit durch AI-Clustering
+  url: https://cycle.app/customers/fabriq
+  type: vendor
+- id: cycle-app-blog-launching-the-first-self-organizing-feedback-hub
+  label: Designprinzip 'AI-generated, user-verified' mit Audit-Tags - relevant fuer Caveat-Validierung
+  url: https://cycle.app/blog/launching-the-first-self-organizing-feedback-hub
+  type: vendor
+- id: caplena-com-de-solutions-cx-analysis
+  label: Belegt DSGVO + SOC2 Type II + ISO27001 + PII-Anonymisierung
+  url: https://caplena.com/de/solutions-cx-analysis
+  type: vendor
+- id: caplena-com-en
+  label: DHL Group und Lufthansa als Referenzen, Fortune-500-Positionierung
+  url: https://caplena.com/en
+  type: vendor
+- id: g2-com-compare-caplena-vs-thematic
+  label: "G2-Vergleich Caplena vs Thematic: 9.6 Ease of Use, 10.0 Support-Score, robuste Themenanalyse"
+  url: https://www.g2.com/compare/caplena-vs-thematic
+  type: review
+- id: deepsight-de-en-deepsight-cloud
+  label: Deutsche Server, DSGVO, deutsche Sprache, Themen-/NPS-Driver-Analyse
+  url: https://www.deepsight.de/en/deepsight-cloud
+  type: vendor
+- id: feedier-ai-platform
+  label: ISO27001 + SOC2 + 100% EU-Hosting + Mistral
+  url: https://feedier.ai/platform
+  type: vendor
+- id: podojo-com-podojo-ai
+  label: DACH-Hosting, GDPR-Anonymisierung, mobile.de-Validierung
+  url: https://www.podojo.com/podojo-ai
+  type: vendor
+- id: sentisum-com
+  label: GDPR + SOC2 Type 2 + Encryption + RBAC
+  url: https://www.sentisum.com/
+  type: vendor
+- id: toolsforhumans-ai-ai-tools-sentisum
+  label: "Unabhaengiges Analyst-Assessment: duenner Review-Footprint, EU-Residenz unklar, hohes Pricing-Commitment-Risiko"
+  url: https://toolsforhumans.ai/ai-tools/sentisum
+  type: blog
+- id: atlassian-com-blog-atlassian-engineering-advancing-rovo-semantic-search
+  label: "Rovo nutzt Hybrid-Retrieval auf 'work-shaped' Inhalten: PRDs, Postmortems, RFCs."
+  url: https://www.atlassian.com/blog/atlassian-engineering/advancing-rovo-semantic-search
+  type: vendor_doc
+- id: hean-tech-blog-rovo-lessons-learned-agent
+  label: "Praktiker-Walkthrough: Rovo-Agent für Lessons-Learned-Recherche in Confluence/Jira."
+  url: https://hean.tech/blog/rovo-lessons-learned-agent
+  type: blog
+- id: medium-com-40paul-hackenberger-atlassian-rovo-from-loom-user-interviews-to-product-backlog-5d18b85bed4b
+  label: "PM-Workflow: Rovo analysiert Loom-Interviews + Jira-Tickets und erzeugt Discovery-Sektionen."
+  url: https://medium.com/%40paul-hackenberger/atlassian-rovo-from-loom-user-interviews-to-product-backlog-5d18b85bed4b
+  type: blog
+- id: onyx-app-insights-enterprise-search-tools-2026
+  label: Glean als Marktführer mit 100+ Konnektoren, ~$50/User/Monat, kein Open-Source/Self-Host.
+  url: https://onyx.app/insights/enterprise-search-tools-2026
+  type: review
+- id: reddit-com-r-productmanagement-comments-1p6ef3p-real-examples-of-agents-youre-using-as-a-pm
+  label: PM nutzt Glean-Agent für Slack-Monitoring rund um Produkt-Aussagen.
+  url: https://www.reddit.com/r/ProductManagement/comments/1p6ef3p/real_examples_of_agents_youre_using_as_a_pm/
+  type: community
+- id: reddit-com-r-techsales-comments-1qkag4y-glean-technologies
+  label: Sales-Insider berichten von Renewal-Schwierigkeiten und Preis-/ROI-Diskussionen.
+  url: https://www.reddit.com/r/techsales/comments/1qkag4y/glean_technologies/
+  type: community
+- id: reddit-com-r-productmanagement-comments-1r9vcsk-how-are-you-creating-a-project-brain-with-ai-prds
+  label: PMs beschreiben konkrete Claude-Projects-Setups als 'Project Brain'.
+  url: https://www.reddit.com/r/ProductManagement/comments/1r9vcsk/how_are_you_creating_a_project_brain_with_ai_prds/
+  type: community
+- id: reddit-com-r-productmanagement-comments-1quo0qk-how-are-you-using-claude-code
+  label: PMs nutzen Claude Code mit MCP-Connector zu Confluence/Jira als Wissensbasis.
+  url: https://www.reddit.com/r/ProductManagement/comments/1quo0qk/how_are_you_using_claude_code/
+  type: community
+- id: dust-tt-blog-glean-alternatives-ai-enterprise-search
+  label: Gemini Enterprise wird in Glean-Alternativen 2026 als Plattform-Player gelistet.
+  url: https://dust.tt/blog/glean-alternatives-ai-enterprise-search
+  type: review
+- id: learn-microsoft-com-en-us-copilot-microsoft-365-configure-secure-governed-data-foundation-microsoft-365-copilot
+  label: Microsoft selbst dokumentiert Pflicht-Schritt 'Remediate oversharing' vor Copilot-Rollout.
+  url: https://learn.microsoft.com/en-us/copilot/microsoft-365/configure-secure-governed-data-foundation-microsoft-365-copilot
+  type: vendor_doc
+- id: sharepointsupport-com-blog-sharepoint-permissions-security-complete-guide-2026
+  label: "Praktiker-Bericht aus 200+ SharePoint-Audits: Copilot vergrößert bestehende Permission-Probleme."
+  url: https://sharepointsupport.com/blog/sharepoint-permissions-security-complete-guide-2026
+  type: blog
+- id: techcommunity-microsoft-com-blog-microsoft365copilotblog-from-oversharing-to-optimization-deploying-microsoft-365-copilot-with-confidence-4357963
+  label: Microsoft Tech Community dokumentiert Oversharing als Hauptthema in Rollouts.
+  url: https://techcommunity.microsoft.com/blog/microsoft365copilotblog/from-oversharing-to-optimization-deploying-microsoft-365-copilot-with-confidence/4357963
+  type: community
+- id: rheininsights-com-de-connectors-sharepoint-online-php
+  label: RheinInsights bietet vollständigen Support des SharePoint-Online-Berechtigungsschemas und Early-Binding-Security-Trimming.
+  url: https://www.rheininsights.com/de/connectors/sharepoint-online.php
+  type: vendor_doc
+- id: eu-dust-tt-home-security
+  label: Dust bietet EU-Hosting, GDPR, SOC2 Typ II und Spaces für Datenisolation.
+  url: https://eu.dust.tt/home/security
+  type: vendor_doc
+- id: eu-dust-tt-blog-what-is-data-sovereignty
+  label: Dust adressiert EU-Datensouveränität explizit, inkl. Mistral-Inference in EU-Regionen.
+  url: https://eu.dust.tt/blog/what-is-data-sovereignty
+  type: blog
+- id: super-work-blog-super-vs-dust
+  label: "Unabhängiger Praktiker-Vergleich (15 identische Queries): gleiche Genauigkeit wie Konkurrenz, 35% langsamer; kein Per-User-ACL-Sync aus Quellsystemen bestätigt."
+  url: https://super.work/blog/super-vs-dust
+  type: review
+- id: mindbreeze-com-deployment-options
+  label: Mindbreeze bietet On-Prem-Appliance, Cloud und Hybrid; GDPR-Anonymisierung integriert.
+  url: https://www.mindbreeze.com/deployment-options
+  type: vendor_doc
+- id: inspire-mindbreeze-com-de-replacement
+  label: Mindbreeze positioniert sich explizit als europäische On-Prem-Alternative zu Sinequa/Coveo.
+  url: https://inspire.mindbreeze.com/de/replacement
+  type: vendor_doc
+- id: onyx-app-search
+  label: Onyx koppelt RAG, Knowledge-Graph, Permission-Sync und Self-Host-Deployment.
+  url: https://www.onyx.app/search
+  type: vendor_doc
+- id: news-ycombinator-com-item-id-46049095
+  label: "HackerNews: Praktiker mit 1+ Jahr Produktionserfahrung bestätigt Multi-Connector-Retrieval; F100-Nutzer bevorzugt Onyx gegenüber M365 Copilot."
+  url: https://news.ycombinator.com/item?id=46049095
+  type: community
+- id: topaiproduct-com-2026-03-28-onyx-hits-19-7k-github-stars-the-open-source-answer-to-gleans-7-2b-enterprise-ai-play
+  label: 19.7K GitHub-Stars, SOC 2 Type II, GDPR; Produktionsreferenzen Netflix, Ramp, Thales Group — Preis-/Leistungs-Positionierung vs. Glean.
+  url: https://topaiproduct.com/2026/03/28/onyx-hits-19-7k-github-stars-the-open-source-answer-to-gleans-7-2b-enterprise-ai-play/
+  type: review
+- id: sinequa-com-product-enterprise-search
+  label: Sinequa als agentic Enterprise-AI-Plattform mit On-Prem/Private-Cloud und Permission-Vererbung.
+  url: https://www.sinequa.com/product-enterprise-search/
+  type: vendor_doc
+- id: businesswire-com-news-home-20241118794850-en-chapsvision-strengthens-ai-capabilities-with-sinequa-acquisition-and-completes-new-us90m-funding-round
+  label: "BusinessWire Nov 2024: ChapsVision-Übernahme + €85M Finanzierung bestätigt; Kundenbasis Airbus, TotalEnergies, Pfizer, NASA verifiziert."
+  url: https://www.businesswire.com/news/home/20241118794850/en/ChapsVision-Strengthens-AI-Capabilities-With-Sinequa-Acquisition-and-Completes-New-US90M-Funding-Round
+  type: news
+- id: cotocus-com-blog-top-10-enterprise-search-platforms-features-pros-cons-comparison
+  label: "Unabhängiger Top-10-Enterprise-Search-Vergleich: Sinequa Rang 4, stärkste Compliance-Governance, schwächstes Ease-of-Use (7.0) und Preis/Leistung (7.5)."
+  url: https://www.cotocus.com/blog/top-10-enterprise-search-platforms-features-pros-cons-comparison/
+  type: review
+- id: ambersearch-de-en-product
+  label: amberSearch ist ISO 27001 zertifiziert, SOC 2 compliant, GDPR/EU-AI-Act-konform, AI-Hosting in Europa, 70+ Connectoren.
+  url: https://ambersearch.de/en/product
+  type: vendor_doc
+- id: startbase-de-news-ambersearch-erfolgreich-mit-21-millionen-euro-seed
+  label: "Startbase: €2.1M Seed (Ventech, Apr 2025), 30 Mitarbeiter, 200+ DACH-Kunden — bestätigt Mittelstand-Fokus und frühe Unternehmensphase."
+  url: https://www.startbase.de/news/ambersearch-erfolgreich-mit-21-millionen-euro-seed/
+  type: news
+- id: tech-eu-2025-03-24-german-ai-search-firm-ambersearch-secures-eur21m-seed-investment
+  label: "Tech.eu Mar 2025: gleiche Seed-Runde — neutrale EU-Technologiepresse bestätigt RWTH-Gründer, 2021 gegründet, Ventech-Lead."
+  url: https://tech.eu/2025/03/24/german-ai-search-firm-ambersearch-secures-eur21m-seed-investment/
+  type: news
+- id: intrafind-com-en-about-us
+  label: IntraFind ist ISO 27001:2022 zertifiziert, in Gartner Magic Quadrant for Insight Engines 2022 und Forrester Wave Cognitive Search.
+  url: https://intrafind.com/en/about-us
+  type: vendor_doc
+- id: intrafind-com-sites-default-files-media-intrafind-customer-reference-bge-en-pdf
+  label: "Konzern-/Behördenreferenz BGE: iFinder als zentrales Knowledge-Management mit Permission-Vererbung."
+  url: https://intrafind.com/sites/default/files/media/IntraFind_Customer_Reference_BGE_EN.pdf
+  type: vendor_doc
+- id: g2-com-compare-copernic-desktop-search-vs-ifinder
+  label: "G2: 10 verifizierte Bewertungen, 4.5/5 — Nutzer loben nahtlose Umgebungsintegration; Forrester Wave Q3 2021 + Q4 2023: Strong Performer, Sweet Spot Government und Manufacturing."
+  url: https://www.g2.com/compare/copernic-desktop-search-vs-ifinder
+  type: review
+- id: cognitivefuture-ai-best-ai-tools-for-meetings
+  label: Native Empfehlung fuer Google-Workspace-Orgs
+  url: https://cognitivefuture.ai/best-ai-tools-for-meetings/
+  type: review
+- id: magai-co-ai-voice-assistants-zoom-teams-meet
+  label: Pricing und Sprachenumfang
+  url: https://magai.co/ai-voice-assistants-zoom-teams-meet/
+  type: review
+- id: reddit-com-r-saas-comments-1ruem4m-the-meeting-tool-you-use-probably-does-not-matter-json
+  label: Native AI-Notes konvergieren ueber alle Plattformen
+  url: https://www.reddit.com/r/SaaS/comments/1ruem4m/the_meeting_tool_you_use_probably_does_not_matter.json
+  type: community
+- id: docs-meetjamie-ai-pages-faqs-troubleshooting-data
+  label: EU-Hosting in Frankfurt, klare Subprocessor-Liste
+  url: https://docs.meetjamie.ai/pages/faqs_troubleshooting/data
+  type: vendor_doc
+- id: sally-de-blog-jamie-dsgvo-und-datenschutz
+  label: DSGVO-Bewertung mit Caveat zur Transparenzpflicht
+  url: https://www.sally.de/blog/jamie-dsgvo-und-datenschutz
+  type: blog
+- id: transcribeer-nl
+  label: Wettbewerber-Vergleichstabelle markiert Jamie als 'OpenAI (USA)' Subprocessor
+  url: https://transcribeer.nl/
+  type: community
+- id: microsoft-com-en-us-microsoft-teams-premium
+  label: Offizielle Produktseite mit Intelligent Recap und Pricing
+  url: https://www.microsoft.com/en-us/microsoft-teams/premium
+  type: vendor_doc
+- id: microsoftnegotiations-com-blog-teams-premium-features-licensing-deep-dive-html
+  label: "Praxis-Caveat: Recap braucht Recording-Kultur, Overlap mit Copilot"
+  url: https://microsoftnegotiations.com/blog/teams-premium-features-licensing-deep-dive.html
+  type: blog
+- id: windowsreport-com-microsoft-preparing-to-roll-out-privacy-first-copilot-recaps-in-teams
+  label: Privacy-first Recap GA Mitte Juni 2026 — relevant fuer Betriebsrat
+  url: https://windowsreport.com/microsoft-preparing-to-roll-out-privacy-first-copilot-recaps-in-teams/
+  type: news
+- id: learn-microsoft-com-en-us-microsoftteams-privacy-intelligent-recap
+  label: Tenant-Datenresidenz, Azure-OpenAI in Microsoft-Compliance-Boundary, kein Modeltraining auf Kundendaten
+  url: https://learn.microsoft.com/en-us/microsoftteams/privacy/intelligent-recap
+  type: vendor_doc
+- id: reddit-com-r-microsoftteams-comments-1o5y1pm-had-an-ai-notetaking-bot-join-a-client-call-today
+  label: Praktiker bevorzugen native Teams-Recap weil Drittanbieter-Bots Kunden befremden
+  url: https://www.reddit.com/r/MicrosoftTeams/comments/1o5y1pm/had_an_ai_notetaking_bot_join_a_client_call_today/
+  type: community
+- id: zoom-com-en-compare-zoom-vs-other-ai-tools
+  label: Pricing-Modell und Feature-Umfang inkl. Cross-Platform My-Notes
+  url: https://zoom.com/en/compare/zoom-vs-other-ai-tools/
+  type: vendor_doc
+- id: zoom-com-en-blog-ai-companion-data-residency-options
+  label: EU-Datenresidenz via ZM+ und Bedrock/Anthropic in EU-Region
+  url: https://www.zoom.com/en/blog/ai-companion-data-residency-options/
+  type: vendor_doc
+- id: preview-zoom-com-en-products-ai-assistant-resources-privacy-security
+  label: ISO 27001/27017/27018 Zertifizierung und SOC 2 Inklusion
+  url: https://preview.zoom.com/en/products/ai-assistant/resources/privacy-security/
+  type: vendor_doc
+- id: fathom-ai-solutions-teams
+  label: Team/Enterprise-Features fuer Discovery + CRM-Sync
+  url: https://fathom.ai/solutions/teams
+  type: vendor_doc
+- id: cotera-co-articles-best-ai-note-taker
+  label: Praxistest, 2000+ Meetings, Suchen-Limitation als Dealbreaker
+  url: https://cotera.co/articles/best-ai-note-taker
+  type: review
+- id: reddit-com-r-ai-application-comments-1rrm8v1-tested-5-ai-meeting-note-takers-across-different
+  label: PM-Test bestaetigt Solo-Eignung
+  url: https://www.reddit.com/r/AI_Application/comments/1rrm8v1/tested_5_ai_meeting_note_takers_across_different/
+  type: community
+- id: simular-ai-alternatives-ai-meeting-note-takers
+  label: Fellow als Meeting-Management-Plattform mit Action-Item-Tracking
+  url: https://www.simular.ai/alternatives/ai-meeting-note-takers
+  type: review
+- id: fellow-app-pricing
+  label: Enterprise-Tier mit SOC 2, GDPR, SSO, HIPAA/BAA
+  url: https://fellow.app/pricing/
+  type: vendor_doc
+- id: meetily-ai-de
+  label: Lokal/Open-Source/Schrems-II Positionierung
+  url: https://meetily.ai/de
+  type: vendor_doc
+- id: sembly-ai
+  label: Action-Item-Extraktion + EU-Residenz + 48 Sprachen
+  url: https://www.sembly.ai/
+  type: vendor_doc
+- id: tldv-io-blog-tldv-vs-avoma-which-ai-meeting-assistant-do-you-need
+  label: Multi-Meeting-Reports und Auto-Record fuer Teams
+  url: https://tldv.io/blog/tldv-vs-avoma-which-ai-meeting-assistant-do-you-need/
+  type: vendor_doc
+- id: meetjamie-ai-blog-gdpr-note-takers-in-europe
+  label: tl;dv als GDPR-Option mit Sales-Fokus gelistet
+  url: https://www.meetjamie.ai/blog/gdpr-note-takers-in-europe
+  type: blog
+- id: stackscored-com-pricing-ai-meeting-notes
+  label: "Praktiker-Empfehlung: tl;dv nur bei spezifischen Reports/Sprachbedarf"
+  url: https://www.stackscored.com/pricing/ai-meeting-notes/
+  type: review
+- id: boardwise-io
+  label: Tenant-Sovereignty, ISO 27001, EU-Hosting, OWASP-Pentests
+  url: https://www.boardwise.io/
+  type: vendor_doc
+- id: sally-io-de-ki-meeting-protokoll-management-meeting-transkription
+  label: DSGVO + Hosting in DE + Betriebsratskonformitaet beworben
+  url: https://www.sally.io/de/ki-meeting-protokoll/management-meeting-transkription
+  type: vendor_doc
+- id: sally-io-de-blog-ist-sally-ai-betriebsratkonform
+  label: Explizite Betriebsratskonformitaet, BetrVG §87, BDSG, DSGVO-Saeulen dokumentiert
+  url: https://www.sally.io/de/blog/ist-sally-ai-betriebsratkonform
+  type: vendor_doc
+- id: omr-com-en-reviews-product-sally
+  label: 19 verifizierte Nutzerbewertungen, 4.7/5 auf OMR Reviews (DACH-B2B-Plattform)
+  url: https://omr.com/en/reviews/product/sally
+  type: review
+- id: atlassian-com-software-rovo-use-cases-agent-product-requirements-expert
+  label: Atlassian dokumentiert dedizierten PRD-Agent mit Generate/Review-Prompts und Confluence/Jira-Kontext
+  url: https://www.atlassian.com/software/rovo/use-cases/agent-product-requirements-expert
+  type: vendor_doc
+- id: support-atlassian-com-jira-product-discovery-docs-explore-atlassian-intelligence-in-jira-product-discovery
+  label: Rovo ist in Jira Product Discovery integriert, Premium-Plan und OpenAI-Backend
+  url: https://support.atlassian.com/jira-product-discovery/docs/explore-atlassian-intelligence-in-jira-product-discovery
+  type: documentation
+- id: us-seibert-group-blog-atlassian-data-privacy-ai-training-policy-change
+  label: Atlassian aendert ab 17.08.2026 Datenkontributions-Policy; OpenAI/Databricks US-only Sub-Prozessoren; Data Residency de…
+  url: https://us.seibert.group/blog/atlassian-data-privacy-ai-training-policy-change
+  type: news
+- id: atlassian-com-blog-announcements-eu-ai-pact
+  label: Atlassian hat SOC-2/ISO-27001 fuer Rovo und Data Residency GA; EU-AI-Pact-Signatar
+  url: https://www.atlassian.com/blog/announcements/eu-ai-pact
+  type: vendor_doc
+- id: reddit-com-r-productmanagement-comments-1qwklro-i-dont-care-if-youre-team-chatgpt-or-team-claude
+  label: PMs in r/ProductManagement nutzen ChatGPT mit Mega-Prompts fuer PRDs/GTM/Roadmaps; Prompt-Qualitaet schlaegt Plattform
+  url: https://www.reddit.com/r/ProductManagement/comments/1qwklro/i_dont_care_if_youre_team_chatgpt_or_team_claude/
+  type: community
+- id: aakashgupta-medium-com-streamline-your-prd-drafting-with-chatprd-a-pms-experience-364a0e509e48
+  label: GPT-4o mit Mega-Prompt erreicht ~45 Min Draft-Zeit, aber viel Editierung
+  url: https://aakashgupta.medium.com/streamline-your-prd-drafting-with-chatprd-a-pms-experience-364a0e509e48
+  type: review
+- id: reddit-com-r-productmanagement-comments-1r4jzti-how-do-you-write-prds-in-2026
+  label: ChatGPT in Top-Tools fuer PRD-Workflows 2026
+  url: https://www.reddit.com/r/ProductManagement/comments/1r4jzti/how_do_you_write_prds_in_2026/
+  type: community
+- id: firesidepm-substack-com-p-i-tested-5-ai-tools-to-write-a-prdheres
+  label: "Direkter Vergleich von 5 AI-Tools fuer PRDs: Claude gewinnt klar bei wichtigen, strategischen PRDs"
+  url: https://firesidepm.substack.com/p/i-tested-5-ai-tools-to-write-a-prdheres
+  type: review
+- id: ideaplan-io-blog-best-free-ai-prd-generators-2026
+  label: "Aakash Gupta head-to-head: Claude matched ChatPRD in PRD-Qualitaet, hoeher in Strategic Thinking"
+  url: https://www.ideaplan.io/blog/best-free-ai-prd-generators-2026
+  type: review
+- id: adoption-microsoft-com-en-us-ai-agents-templates-and-examples
+  label: Microsoft liefert offiziell ein Product-Crafter-Template fuer M365 Copilot Studio, das User Stories und Customer Journe…
+  url: https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/
+  type: vendor_doc
+- id: bestagenthub-com-compare-microsoft-365-copilot-business-vs-notion-ai
+  label: "M365 Copilot Business 2026: $18 user/month yearly, Microsoft-Graph-Grounding fuer Enterprise"
+  url: https://bestagenthub.com/compare/microsoft-365-copilot-business-vs-notion-ai
+  type: review
+- id: learn-microsoft-com-de-de-microsoft-365-copilot-microsoft-365-copilot-privacy
+  label: M365 Copilot ist EU-Data-Boundary-Service mit DSGVO/ISO-27001/ISO-42001 — aber Anthropic-Modelle aktuell ausgenommen
+  url: https://learn.microsoft.com/de-de/microsoft-365/copilot/microsoft-365-copilot-privacy
+  type: documentation
+- id: srd-rechtsanwaelte-de-blog-microsoft-copilot-datenschutz-unternehmen
+  label: "Deutsche Datenschutz-Kanzlei: DSFA fuer Copilot regelmaessig empfohlen; Need-to-know-Berechtigungen entscheidend"
+  url: https://www.srd-rechtsanwaelte.de/blog/microsoft-copilot-datenschutz-unternehmen
+  type: blog
+- id: prodcycle-com
+  label: ProdCycle adressiert regulierte Branchen mit HIPAA/SOC-2-getriebener Spec-Generierung und Jira/Linear-Export
+  url: https://prodcycle.com/
+  type: vendor_doc
+- id: specgraph-dev
+  label: SpecGraph adressiert Cross-Department-PRDs mit Audit-Trail und Konfliktdetektion
+  url: https://specgraph.dev/
+  type: vendor_doc
+- id: specnavi-com
+  label: SpecNavi liefert Citations, Confidence-Scores und Mandatory-Human-Review fuer AI-Requirements
+  url: https://specnavi.com/
+  type: vendor_doc
+- id: aha-io-ai-library-agent-product-requirements-document
+  label: Aha! liefert dedizierten PRD-Agent, der auf Basis von Vision/Persona/Use-Cases Releases, Epics und Features vorschlaegt
+  url: https://www.aha.io/ai-library/agent-product-requirements-document
+  type: vendor_doc
+- id: aha-io-suite-ai-overview
+  label: Elle nutzt OpenAI/Anthropic/Google mit automatischer Modellauswahl, in Aha!-Roadmaps integriert
+  url: https://www.aha.io/suite/ai-overview
+  type: vendor_doc
+- id: aipmtools-org-product-management-aha-roadmaps
+  label: "Unabhaengige Review: Aha! Roadmaps mit SOC-2/GDPR, AI Content Generation 4/5 — aber Agentic AI nur 1/5; kein starkes Praktiker-Signal"
+  url: https://aipmtools.org/product-management/aha-roadmaps
+  type: review
+- id: aleph-alpha-com-use-cases-use-case-homologation-assistant-for-compliance-and-efficiency
+  label: PhariaAI deckt regulatorische Analyse über Produktlebenszyklus mit PwC-Lösung Creance ab
+  url: https://aleph-alpha.com/use-cases/use-case-homologation-assistant-for-compliance-and-efficiency/
+  type: vendor_doc
+- id: aleph-alpha-com-aleph-alpha-partners-with-stackit-to-deliver-sovereign-enterprise-ai-at-scale-with-pharia-ai-as-a-service
+  label: Sovereign Stack auf deutschen STACKIT-Rechenzentren
+  url: https://aleph-alpha.com/aleph-alpha-partners-with-stackit-to-deliver-sovereign-enterprise-ai-at-scale-with-pharia-ai-as-a-service/
+  type: vendor_doc
+- id: ittech-pulse-com-news-cohere-aleph-alpha-launch-sovereign-ai-powerhouse
+  label: Strategische Cohere-Aleph-Alpha-Allianz im April 2026
+  url: https://ittech-pulse.com/news/cohere-aleph-alpha-launch-sovereign-ai-powerhouse/
+  type: news
+- id: the-playbook-de-de-produkte-pharia
+  label: Sovereign-Stack auf STACKIT mit Bundeswehr-/Land-BW-Referenzen
+  url: https://www.the-playbook.de/de/produkte/pharia/
+  type: review
+- id: learn-microsoft-com-en-us-copilot-microsoft-365-microsoft-365-copilot-privacy
+  label: GDPR-/EU-Data-Boundary-Commitments und ISO 42001 für M365 Copilot
+  url: https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-purview-ai-microsoft-purview
+  label: Purview Compliance Manager liefert regulatorische Templates für GenAI
+  url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview
+  type: vendor_doc
+- id: inkl-com-news-this-new-microsoft-365-copilot-feature-could-throw-your-gdpr-compliance-into-question-here-s-how-to-check-and-how-turn-it-off
+  label: Flex Routing kann GDPR-Compliance gefährden
+  url: https://www.inkl.com/news/this-new-microsoft-365-copilot-feature-could-throw-your-gdpr-compliance-into-question-here-s-how-to-check-and-how-turn-it-off
+  type: news
+- id: docs-microsoft-com-en-us-purview-compliance-manager-assessments
+  label: Premium-Templates für EU AI Act, NIST AI RMF, ISO/IEC plus Azure-AI-Foundry-Integration
+  url: https://docs.microsoft.com/en-us/purview/compliance-manager-assessments
+  type: vendor_doc
+- id: gartner-com-peer-community-post-encountering-significant-challenges-assessing-managing-legal-data-privacy-risks-associated-microsoft-copilot-suite-copilot
+  label: Praktiker beklagen Compliance-Unsicherheit und Versionschaos
+  url: https://www.gartner.com/peer-community/post/encountering-significant-challenges-assessing-managing-legal-data-privacy-risks-associated-microsoft-copilot-suite-copilot
+  type: community
+- id: reddit-com-r-microsoft-365-copilot-comments-1pi2e7j-cloude-models-included-in-enterprise-data-tl-de
+  label: Anthropic-Modelle in Copilot für EU-Kunden standardmäßig deaktiviert
+  url: https://www.reddit.com/r/microsoft_365_copilot/comments/1pi2e7j/cloude_models_included_in_enterprise_data/?tl=de
+  type: community
+- id: aws-amazon-com-bedrock-security-compliance
+  label: GDPR-konforme Bedrock-Nutzung mit Audit-Trails
+  url: https://aws.amazon.com/bedrock/security-compliance/
+  type: vendor_doc
+- id: aws-amazon-com-bedrock-security-privacy-responsible-ai
+  label: Bedrock Guardrails inklusive Automated-Reasoning gegen Hallucinations
+  url: https://aws.amazon.com/bedrock/security-privacy-responsible-ai/
+  type: vendor_doc
+- id: productresources-collibra-com-docs-collibra-latest-content-aigovernance-co-about-ai-governance-htm
+  label: Eingebautes EU-AI-Act-Assessment für Use Cases
+  url: https://productresources.collibra.com/docs/collibra/latest/Content/AIGovernance/co_about-ai-governance.htm
+  type: vendor_doc
+- id: dreamleap-com-ai-legal-compliance-assistant
+  label: DACH-gehostet, FINMA/BaFin/EU-AI-Act-Quellen, 'May I'-Decision-Tree
+  url: https://www.dreamleap.com/ai-legal-compliance-assistant
+  type: vendor_doc
+- id: community-ibm-com-community-user-viewdocument-the-era-of-responsible-ai-from-a-b-communitykey-803d3318-9b29-4131-be29-018a27c5c38d
+  label: Risk-based assessment vor Deployment, applicability analysis, compliance planning
+  url: https://community.ibm.com/community/user/viewdocument/the-era-of-responsible-ai-from-a-b?CommunityKey=803d3318-9b29-4131-be29-018a27c5c38d
+  type: vendor_doc
+- id: modulos-ai-blog-ai-compliance-guide
+  label: Modulos positioniert geteilten Control Graph über EU-Frameworks plus DORA
+  url: https://www.modulos.ai/blog/ai-compliance-guide/
+  type: blog
+- id: onetrust-com-news-onetrust-introduces-ai-governance-solution
+  label: AI-Use-Case-Risk-Assessment gegen EU AI Act / NIST RMF
+  url: https://www.onetrust.com/news/onetrust-introduces-ai-governance-solution/
+  type: vendor_doc
+- id: credo-ai-blog-whyenterprisesareleadingwithcredoaiandnotonetrust
+  label: Praktiker-Zitate zu OneTrust-Komplexität (Vendor-Bias beachten)
+  url: https://www.credo.ai/blog/whyenterprisesareleadingwithcredoaiandnotonetrust
+  type: blog
+- id: durava-de-ki-compliance-management
+  label: Deutsche RZ, Multi-Framework-Mapping, optional in Kunden-Azure
+  url: https://durava.de/ki-compliance-management/
+  type: vendor_doc
+- id: eurocomply-app-de
+  label: EU-Hosting Frankfurt+Paris, keine US-Cloud-Abhängigkeit, Multi-Regulation
+  url: https://eurocomply.app/de
+  type: vendor_doc
+- id: tracegov-ai
+  label: Frankfurt-Hosting, Zero-US-Transfer, 50+ Framework-Mapping
+  url: https://tracegov.ai/
+  type: vendor_doc
+- id: eqs-com-platform-data-privacy-ai-compliance
+  label: EU-Hosting, ISO-27001, integriertes AI-Governance- + Privacy-Modul
+  url: https://www.eqs.com/platform-data-privacy/ai-compliance/
+  type: vendor_doc
+- id: n8n-io-workflows-11569-generate-github-release-notes-with-ai-comparison
+  label: n8n liefert kuratierte Release-Notes-Workflow-Templates mit OpenRouter-LLM
+  url: https://n8n.io/workflows/11569-generate-github-release-notes-with-ai-comparison/
+  type: documentation
+- id: about-gitlab-com-releases-2026-02-19-gitlab-18-9-released
+  label: GitLab Duo Agent Platform Self-Managed mit Self-Hosted-Modellen ist seit 18.9 GA
+  url: https://about.gitlab.com/releases/2026/02/19/gitlab-18-9-released/
+  type: vendor_doc
+- id: docs-gitlab-com-releases-18-gitlab-18-11-released
+  label: Mistral AI als Self-Hosted-Modell ergänzt — relevant für EU-Modell-Souveränität
+  url: https://docs.gitlab.com/releases/18/gitlab-18-11-released/
+  type: vendor_doc
+- id: featurebase-app-features-announce-updates
+  label: Featurebase AI-Drafted-Changelogs aus completed Features in Jira/Linear
+  url: https://www.featurebase.app/features/announce-updates
+  type: vendor_doc
+- id: checkthat-ai-brands-featurebase-alternatives
+  label: "Featurebase: G2 4.8/5 aus 49 unabhängigen Reviews — Nutzer loben einfache UI, gutes Free-Tier, AI-Feedback-Tagging"
+  url: https://checkthat.ai/brands/featurebase/alternatives
+  type: review
+- id: launchnotes-com-features-ai-announcement-generator
+  label: AI Announcement Generator akzeptiert PRDs, Jira/Linear-Tickets als Input
+  url: https://www.launchnotes.com/features/ai-announcement-generator
+  type: vendor_doc
+- id: updates-launchnotes-com-announcements-announcing-launchnotes-soc-2-type-ii-certification
+  label: LaunchNotes hat SOC2 Type II Zertifizierung
+  url: https://updates.launchnotes.com/announcements/announcing-launchnotes-soc-2-type-ii-certification
+  type: vendor_doc
+- id: toolradar-com-tools-launchnotes
+  label: "LaunchNotes: G2 4.9/5 (33 Reviews), Capterra 4.9/5 (25 Reviews) — unabhängige Nutzerbewertungen"
+  url: https://toolradar.com/tools/launchnotes
+  type: review
+- id: worknotes-ai-compare-worknotes-vs-launchnotes
+  label: "Konkurrenz-Vergleich (Worknotes) bestätigt unabhängig: LaunchNotes hat SOC2, SAML-SSO, Audit-Logs und Jira-Integration"
+  url: https://www.worknotes.ai/compare/worknotes-vs-launchnotes
+  type: review
+- id: support-atlassian-com-confluence-cloud-docs-summarize-changes-with-atlassian-intelligence
+  label: Atlassian Intelligence/Rovo summarisiert Page-Diffs in Confluence Premium/Enterprise
+  url: https://support.atlassian.com/confluence-cloud/docs/summarize-changes-with-atlassian-intelligence
+  type: vendor_doc
+- id: atlassian-com-software-rovo-use-cases-agent-release-notes-drafter
+  label: "Dedizierter Rovo 'Release Notes Drafter Agent': verarbeitet bis zu 20 Jira Issues, gruppiert Themes, publiziert in Confluence"
+  url: https://www.atlassian.com/software/rovo/use-cases/agent-release-notes-drafter
+  type: vendor_doc
+- id: atlassian-com-blog-confluence-streamline-release-notes-creation-with-confluence-and-jira
+  label: "Atlassian Blog: Release Notes Drafter mit Brand-Voice-Anpassung, Jira-Filter, bis zu 20 Issues — Rovo als nativer Drafter in Confluence"
+  url: https://www.atlassian.com/blog/confluence/streamline-release-notes-creation-with-confluence-and-jira
+  type: vendor_doc
+- id: marketplace-atlassian-com-apps-1215431-ai-powered-automated-release-notes-reports-for-jira
+  label: Marketplace-App mit Audit-Log, Edit-History und Data-Center-Support
+  url: https://marketplace.atlassian.com/apps/1215431/ai-powered-automated-release-notes-reports-for-jira
+  type: vendor_doc
+- id: community-atlassian-com-forums-app-central-articles-what-s-new-in-automated-release-notes-amp-reports-app-december-ba-p-3172825
+  label: Vendor-Artikel bestätigt GPT-5-Integration, Export-Audit-Log und erweiterte AI-Kontrollen (Dezember 2025)
+  url: https://community.atlassian.com/forums/App-Central-articles/What-s-New-in-Automated-Release-Notes-amp-Reports-App-December/ba-p/3172825
+  type: vendor_doc
+- id: marketplace-atlassian-com-apps-1230872-released-ai-release-notes-changelog-automation-for-jira
+  label: Released-App generiert AI-Release-Notes aus Jira-Tickets, Marketplace-Bug-Bounty-Programm
+  url: https://marketplace.atlassian.com/apps/1230872/released-ai-release-notes-changelog-automation-for-jira
+  type: vendor_doc
+- id: marketplace-atlassian-com-apps-1230872-released-ai-release-notes-and-roadmap-automation-for-jira-tab-overview-hosting-cloud
+  label: "Released: Cloud Fortified Badge, Atlassian Partner of the Year (Marketplace Collaboration), 32 Marketplace-Reviews bei 4/4 Sternen, 719 Installs"
+  url: https://marketplace.atlassian.com/apps/1230872/released-ai-release-notes-and-roadmap-automation-for-jira?tab=overview&hosting=cloud
+  type: review
+- id: announcekit-app
+  label: AnnounceKit product page — AI Post Generator, Inline Editor, Auto-Translate
+  url: https://announcekit.app/
+  type: documentation
+- id: asana-com-resources-ai-teammates-overview
+  label: Status Reporter ist offizieller Pre-built AI Teammate für Status-Drafts
+  url: https://www.asana.com/resources/ai-teammates-overview
+  type: vendor_doc
+- id: investors-asana-com-news-releases-news-release-details-asana-announces-new-ai-teammates-collaborative-agents-deliver
+  label: Checkpoints und Governance für AI-Outputs eingebaut - relevant für Konzern-Reporting
+  url: https://investors.asana.com/news-releases/news-release-details/asana-announces-new-ai-teammates-collaborative-agents-deliver
+  type: vendor_doc
+- id: pmtoolscout-com-best-ai-pm-tools-status-reports-mdx
+  label: Tester-Review nennt Asana Status Reporter als 'Best Overall' für PM-Status-Drafts
+  url: https://pmtoolscout.com/best/ai-pm-tools-status-reports.mdx/
+  type: review
+- id: support-atlassian-com-platform-experiences-docs-create-project-updates-with-rovo
+  label: Rovo bietet offizielles 'Draft with Rovo' für Projekt- und Goal-Status-Updates
+  url: https://support.atlassian.com/platform-experiences/docs/create-project-updates-with-rovo/
+  type: vendor_doc
+- id: community-atlassian-com-forums-rovo-questions-using-rovo-to-roll-up-and-post-project-status-updates-qaq-p-3082391
+  label: "Praxis-Setup für Roll-up: Jira Automation + Rovo Agent für scheduled Status-Comments"
+  url: https://community.atlassian.com/forums/Rovo-questions/Using-Rovo-to-Roll-Up-and-Post-Project-Status-Updates/qaq-p/3082391
+  type: community
+- id: heise-de-en-news-atlassian-ai-agents-in-jira-now-as-full-team-members-11191778-html
+  label: Atlassian nennt Bosch und Deutsche Bank als Enterprise-Kunden mit Rovo-Nutzung
+  url: https://www.heise.de/en/news/Atlassian-AI-agents-in-Jira-now-as-full-team-members-11191778.html
+  type: news
+- id: reddit-com-r-jira-comments-1rmj2uk-is-anyone-using-atlassian-goals-projects-json
+  label: Skepsis gegenüber Goals & Projects als sinnvolle Status-Roll-up-Schicht
+  url: https://www.reddit.com/r/jira/comments/1rmj2uk/is_anyone_using_atlassian_goals_projects.json
+  type: community
+- id: linear-app-docs-linear-agent
+  label: Linear Agent draftet Stakeholder-Updates und Statuszusammenfassungen aus Workspace-Daten
+  url: https://linear.app/docs/linear-agent
+  type: vendor_doc
+- id: linear-app-changelog-2026-03-24-introducing-linear-agent
+  label: Public Beta ab März 2026 für alle Teams
+  url: https://linear.app/changelog/2026-03-24-introducing-linear-agent
+  type: vendor_doc
+- id: linear-app-changelog-2025-10-02-issue-discussion-summaries
+  label: Discussion Summaries mit Citations auf Source-Comments für Audit-Nachvollziehbarkeit
+  url: https://linear.app/changelog/2025-10-02-issue-discussion-summaries
+  type: vendor_doc
+- id: reddit-com-r-linear-comments-1s4gqdy-linearnative-ai-dev-agent-using-claude-code-mcp
+  label: Praktiker nutzen Linear als Control Plane für Status- und Plan-Drafts
+  url: https://www.reddit.com/r/Linear/comments/1s4gqdy/linearnative_ai_dev_agent_using_claude_code_mcp/
+  type: community
+- id: notion-so-blog-project-schedule
+  label: Notion AI summarized Schedule-Changes und draftet Weekly Updates aus verknüpften Task-DBs
+  url: https://www.notion.so/blog/project-schedule
+  type: vendor_doc
+- id: community-monday-com-announcements-updates-post-ai-2026-what-s-new-and-what-s-coming-e3eafithvo1cust
+  label: Sidekick GA seit Januar 2026 mit cross-board Summaries und Doc-Generation
+  url: https://community.monday.com/announcements-updates/post/ai-2026-what-s-new-and-what-s-coming-e3eAFIThvO1cust
+  type: vendor_doc
+- id: support-microsoft-com-en-us-office-generate-automatic-status-reports-with-planner-agent-d9c87789-da05-4606-b1ff-27fc4f1bf999
+  label: Planner Agent generiert automatisierte Status-Report-E-Mails aus Plan-Daten
+  url: https://support.microsoft.com/en-us/office/generate-automatic-status-reports-with-planner-agent-d9c87789-da05-4606-b1ff-27fc4f1bf999
+  type: vendor_doc
+- id: adoption-microsoft-com-en-us-scenario-library-operations-executing-a-project-review
+  label: Microsoft positioniert Copilot in Teams/PowerPoint/Outlook als End-to-End Stakeholder-Review-Stack
+  url: https://adoption.microsoft.com/en-us/scenario-library/operations/executing-a-project-review/
+  type: vendor_doc
+- id: office365itpros-com-2026-03-19-planner-agent
+  label: "Tony Redmond / Office365itpros testet Planner Agent hands-on: Qualität direkt abhängig von präzisem Task-Framing"
+  url: https://office365itpros.com/2026/03/19/planner-agent/
+  type: review
+- id: servicenow-com-community-spm-articles-ai-status-reports-generate-complete-project-status-report-with-ta-p-3517292
+  label: Now Assist for SPM generiert komplette Status-Reports mit RAG-Praediktion und Exec-Summary
+  url: https://www.servicenow.com/community/spm-articles/ai-status-reports-generate-complete-project-status-report-with/ta-p/3517292
+  type: vendor_doc
+- id: servicenow-com-docs-r-it-business-management-now-assist-for-strategic-portfolio-management-spm-generate-ai-status-report-na-html
+  label: Offizielle ServiceNow-Dokumentation fuer AI-Status-Report-Generierung in SPM
+  url: https://www.servicenow.com/docs/r/it-business-management/now-assist-for-strategic-portfolio-management-spm/generate-ai-status-report-na.html
+  type: documentation
+- id: clickup-com-blog-clickup-brain-actionable-insights
+  label: ClickUp Brain Actionable Insights overview
+  url: https://clickup.com/blog/clickup-brain-actionable-insights/
+  type: documentation
+- id: agents-staging2-web-clickup-com-brain-agents-templates-listings-project-status-reporter
+  label: Project Status Reporter Agent template
+  url: https://agents-staging2.web.clickup.com/brain/agents/templates/listings/project-status-reporter
+  type: documentation
+- id: tossom-com-products-stepsize-ai-sprint
+  label: "Tossom review: Stepsize acquired by ClickUp"
+  url: https://tossom.com/products/stepsize-ai-sprint
+  type: review
+- id: stepsize-com-use-cases-executive-summary
+  label: Stepsize executive summary use-case page
+  url: https://stepsize.com/use-cases/executive-summary
+  type: documentation
+- id: support-atlassian-com-jira-software-cloud-docs-use-atlassian-intelligence-to-help-write-or-edit-content
+  label: Rovo bietet vordefinierte Prompts wie 'Create user stories', 'Suggest subtasks', 'Generate acceptance criteria' direkt…
+  url: https://support.atlassian.com/jira-software-cloud/docs/use-atlassian-intelligence-to-help-write-or-edit-content
+  type: vendor_doc
+- id: community-atlassian-com-learning-course-create-and-enhance-content-with-atlassian-intelligence-lesson-generate-new-content-using-atlassian-intelligence
+  label: AI work breakdown bricht Epics in Child-Items inklusive AC und Description automatisch herunter.
+  url: https://community.atlassian.com/learning/course/create-and-enhance-content-with-atlassian-intelligence/lesson/generate-new-content-using-atlassian-intelligence
+  type: vendor_doc
+- id: atlassian-com-de-software-rovo-guides-admin-guide-rovo-data-usage-privacy
+  label: Belegt LLM-Anbieter (OpenAI, Anthropic, Google, Mistral) und DSGVO-Konformität, aber Verarbeitung extern.
+  url: https://www.atlassian.com/de/software/rovo/guides/admin-guide/rovo-data-usage-privacy
+  type: vendor_doc
+- id: community-atlassian-com-learning-path-atlassian-organization-admin-course-configure-and-govern-rovo-for-your-organization-lesson-understand-rovo-data-handling-and-residency
+  label: Rovo erbt Datenresidenz von Jira/Confluence; eigenes Pinning nicht möglich.
+  url: https://community.atlassian.com/learning/path/atlassian-organization-admin/course/configure-and-govern-rovo-for-your-organization/lesson/understand-rovo-data-handling-and-residency
+  type: vendor_doc
+- id: atlassian-com-de-trust-atlassian-intelligence
+  label: Atlassian bestätigt Datenresidenz für Rovo und SOC2/ISO27001/DSGVO-Konformität.
+  url: https://www.atlassian.com/de/trust/atlassian-intelligence
+  type: vendor_doc
+- id: community-atlassian-com-forums-atlassian-intelligence-articles-data-residency-support-for-rovo-limited-availability-ba-p-2992150
+  label: Beleg, dass Rovo-EU-Pinning erst Limited Availability ist und manuell aktiviert werden muss.
+  url: https://community.atlassian.com/forums/Atlassian-Intelligence-articles/Data-residency-support-for-Rovo-Limited-availability/ba-p/2992150
+  type: vendor_doc
+- id: jira-atlassian-com-browse-rovo-22
+  label: 55 Votes europäischer Kunden zeigen anhaltenden Druck auf eigene Rovo-Datenresidenz.
+  url: https://jira.atlassian.com/browse/ROVO-22
+  type: community
+- id: devblogs-microsoft-com-devops-github-copilot-for-azure-boards
+  label: Integration ist GA; Workitem-Beschreibung und Comments werden an Coding Agent übergeben.
+  url: https://devblogs.microsoft.com/devops/github-copilot-for-azure-boards/
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-azure-devops-boards-github-work-item-integration-github-copilot
+  label: Best Practice empfiehlt klare AC im Workitem für bessere Copilot-Resultate — bestätigt indirekt den AC-Konsum-Workflow.
+  url: https://learn.microsoft.com/en-us/azure/devops/boards/github/work-item-integration-github-copilot
+  type: vendor_doc
+- id: ones-com
+  label: Belegt Enterprise-Compliance und On-Prem-Option als Atlassian-Replacement.
+  url: https://www.ones.com/
+  type: vendor_doc
+- id: scagile-io-de-pi-planning-tool
+  label: Vendor-Beschreibung als AI-gestützte scaled-agile-Plattform für PI-Planning mit Backlog-Integration.
+  url: https://scagile.io/de/pi-planning-tool/
+  type: vendor_doc
+- id: vdf-ai-products-vdf-agile
+  label: Belegt Cloud- und On-Prem-Deployment mit Enterprise-Security und Story-Generator.
+  url: https://vdf.ai/products/vdf-agile/
+  type: vendor_doc
+- id: aha-io-ai-library-request-user-stories
+  label: Dedizierter User-Stories-Prompt mit Connextra-Template, Persona-Hinweisen und Pairing zu Acceptance-Criteria-Request.
+  url: https://www.aha.io/ai-library/request-user-stories
+  type: vendor_doc
+- id: support-aha-io-aha-roadmaps-support-articles-ai-assistant-draft-text-with-the-ai-assistant-7527452804647116662
+  label: Elle ist im Text-Editor jeder Aha!-Record-Description verfügbar; ausdrücklich auf User Stories und Use Cases zugeschnitten.
+  url: https://support.aha.io/aha-roadmaps/support-articles/ai-assistant/draft-text-with-the-ai-assistant~7527452804647116662
+  type: vendor_doc
+- id: productboard-com-skills-lean-story-writer
+  label: Native Spark-Skill schreibt Story + 3-5 AC im Given/When/Then-Format aus 1-3 Sätzen Input.
+  url: https://www.productboard.com/skills/lean-story-writer/
+  type: vendor_doc
+- id: support-productboard-com-hc-en-us-articles-15113485128467-productboard-ai
+  label: AI-Feature-Specs nutzen verlinkte Insights; Datenpfad zu OpenAI dokumentiert; mindestens 3 verlinkte Insights erforderlich.
+  url: https://support.productboard.com/hc/en-us/articles/15113485128467-Productboard-AI
+  type: vendor_doc
+- id: reddit-com-r-productmanagement-comments-1mzqw58-product-board-worth-it
+  label: "Reddit r/ProductManagement: Nutzer bezeichnet Productboard-AI-Features als 'thoroughly slop'; AI-Tools greifen nur auf bereits geloggte Daten zu."
+  url: https://www.reddit.com/r/ProductManagement/comments/1mzqw58/product_board_worth_it/
+  type: community
+- id: blog-buildbetter-ai-buildbetter-vs-productboard-2026-comparison
+  label: "Wettbewerber-Vergleich zitiert G2/Capterra: Productboard AI nur auf bereits geloggten Daten; hoher Prozessaufwand, AI-Features oft nicht erfüllt."
+  url: https://blog.buildbetter.ai/buildbetter-vs-productboard-2026-comparison/
+  type: community
+- id: copilot4devops-com-de-convert
+  label: Beschreibt Konvertierung von Anforderungen in Stories mit AC und Gherkin direkt in Azure DevOps Work Items.
+  url: https://copilot4devops.com/de/convert/
+  type: vendor_doc
+- id: azuremarketplace-microsoft-com-en-us-marketplace-apps-2101440ontarioinc-copilot4devops-official
+  label: "Azure Marketplace-Eintrag (Microsoft-Partner): 5,0/5 bei 51 Ratings; bestätigt Convert-Feature für User Stories, AC und Gherkin in Azure DevOps."
+  url: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/2101440ontarioinc.copilot4devops_official
+  type: vendor_doc
+- id: marketplace-atlassian-com-apps-3016668857-refinely-ai-backlog-refinement-for-jira
+  label: Marketplace-Listing dokumentiert Given/When/Then-AC, BYOK-Modell und aktive Clarifying-Questions vor der Generierung — aber 'No reviews yet'.
+  url: https://marketplace.atlassian.com/apps/3016668857/refinely-ai-backlog-refinement-for-jira
+  type: vendor_doc

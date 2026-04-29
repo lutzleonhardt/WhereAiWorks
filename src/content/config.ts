@@ -62,7 +62,7 @@ const confidenceEnum = z.enum(['high', 'medium', 'low']);
 const adoptionMaturityEnum = z.enum(['mainstream', 'growing', 'emerging']);
 const enterpriseRelevanceEnum = z.enum(['high', 'medium', 'low']);
 const evidenceStrengthEnum = z.enum(['strong', 'medium', 'weak']);
-const practitionerVolumeEnum = z.enum(['high', 'medium', 'low']);
+const practitionerVolumeEnum = z.enum(['high', 'medium', 'low', 'none']);
 const practitionerTenorEnum = z.enum(['positive', 'mixed', 'polarized', 'negative', 'unknown']);
 
 // Source-Referenz im Use-Case-Frontmatter: nur `id` (Pflicht) + optionale
