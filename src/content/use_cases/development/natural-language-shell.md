@@ -213,6 +213,11 @@ tools:
       praise:
         - Reduziert kubectl-Syntax-Frust spürbar
         - Lokale-Modell-Pfad via Ollama
+      complaints:
+        - Langsamer als direkte Befehlseingabe für bekannte kubectl-Operationen
+        - Scheitert bei komplexen, benutzerdefinierten Cluster-Setups
+        - Cluster-Daten an Cloud-LLMs übertragen — Datenschutzrisiko ohne Ollama
+        - Kann Skill-Atrophie fördern wenn zu stark genutzt statt kubectl zu lernen
     sources:
       - id: github-com-googlecloudplatform-kubectl-ai
       - id: medium-com-yadav-deepak012-ai-powered-kubernetes-troubleshooting-a-deep-dive-into-k8sgpt-kubectl-ai-and-kagent-278793771728

@@ -132,6 +132,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Großzügigster Free-Tier ohne Kreditkarte für Individual-Entwickler
+        - 1M-Token-Fenster, größtes im Mainstream-Markt
+        - Tiefe Google-Cloud-Integration mit nativer Kontext-Nutzung
+        - Niedrigster Reibungsverlust durch IDE-native Integration
+      complaints:
+        - Latenz in VS Code deutlich höher als bei Cursor/Copilot
+        - Außerhalb GCP-Ökosystem signifikant weniger nützlich
+        - Kleinere Community als Copilot/Cursor, wenig Peer-Support
+        - Schwach bei komplexer Architektur und mehrteiligen Problemen
     sources:
       - id: vibecoding-app-blog-tabnine-review
       - id: cloud-google-com-gemini-docs-codeassist-code-customization

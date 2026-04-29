@@ -57,6 +57,12 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Excellent for parallel multi-task development without coordination friction
+        - Transparent pricing with flexible model selection (GPT, Claude, GLM)
+      complaints:
+        - Droid-Shield secret detection flags false positives aggressively
+        - Token consumption with Claude models significantly higher than GPT
     sources:
       - id: docs-factory-ai-enterprise
       - id: factory-ai-news-factory-is-ga
@@ -291,6 +297,9 @@ tools:
       praise:
         - Frontier-Modell-Bundle out-of-the-box
         - Pay-as-you-go ohne Markup
+      complaints:
+        - Terminal-first UX alienates developers accustomed to IDE-integrated agents
+        - Breaking changes policy creates friction for teams needing backward-compatible tools
     sources:
       - id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-cli-readme-md
       - id: github-com-sourcegraph-amp-examples-and-guides-blob-main-guides-context-management-context-20engineering-20-20amp-md
@@ -348,6 +357,108 @@ tools:
       - id: cursor-com-docs-enterprise-privacy-and-data-governance
       - id: lgallardo-com-2025-06-11-cursor-background-agents-experience
       - id: effloow-com-articles-cursor-3-review-background-agents-2026
+  - id: jetbrains-com-junie
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: low
+    why_it_fits: "Junie ist primaer IDE-Agent, kann aber via Junie CLI headless in CI/CD und in GitHub-/GitLab-CI-Workflows laufen. Damit eingeschraenkt fuer Delegated-Modus nutzbar: Junie als Step in einem Workflow, der ein Ticket einliest und einen PR oeffnet. Vorteil: bestehende JetBrains-Lizenzierung in DACH-Konzernen, deutsche Doku, AI-Pro-/AI-Ultra-Bundles abrechenbar ueber JetBrains."
+    caveats:
+      - Kein nativer Cloud-Agent-Modus mit eigenem UI fuer Backlog-Delegation (anders als Jules/Devin)
+      - Cloud-Brain JetBrains-gehostet — EU-Region-Garantien nicht prominent
+      - CI/CD-Pfad noch jung; Mustererarbeitung beim Kunden noetig
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Least aggressive code edits vs competitors; preserves intentional patterns well
+        - LLM-agnostic design supports Gemini, Anthropic, OpenAI without vendor lock-in
+      complaints:
+        - Response latency markedly slower than Cursor/Copilot; disrupts development flow
+        - Context amnesia between messages drives repetitive context re-feeding per request
+    sources:
+      - id: jetbrains-com-help-junie-code-mode-html
+  - id: aider-chat
+    fit: conditional
+    enterprise_readiness: evaluation_only
+    confidence: low
+    why_it_fits: "Aider ist als CLI-Coding-Agent etabliert; Community-Workflows wie aider-github-workflows liefern ein Issue-zu-PR-Pattern: Issue mit 'aider'-Label triggert GitHub Action, Aider laeuft im Container, committet und oeffnet PR. Da der Action-Code im Kunden-Repo + Self-Hosted-Runner laeuft und beliebige LLM-Provider (inkl. EU-Bedrock/Vertex/Azure-OpenAI-EU) verwendbar sind, ist das ein billiger DORA-kompatibler Einstieg fuer kleinere Teams."
+    caveats:
+      - Community-Action, kein Vendor-Support / SLA
+      - Kein managed UI — Operations bleiben beim Team
+      - Kontextgroesse / Codebase-Verstaendnis schwaecher als hosted Agents
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Community-driven, low-cost GitHub Action with EU-residency via BYOK
+        - Familiar git workflows and /diff command reduce mental overhead vs proprietary UIs
+      complaints:
+        - Codebase context understanding weaker than managed agents; struggles with large repos
+        - No vendor support SLA; community action maintenance uncertain long-term
+    sources:
+      - id: github-com-mirrajabi-aider-github-action
+      - id: github-com-mirrajabi-aider-github-workflows-blob-main-docs-issue-to-pr-md
+  - id: github-com-swe-agent-swe-agent
+    fit: immature
+    enterprise_readiness: evaluation_only
+    confidence: low
+    why_it_fits: "Open-Source-SWE-Agent-Forschungsstack: nimmt GitHub-Issue, versucht es mit dem LM der Wahl zu loesen. mini-SWE-agent (100 Zeilen Python) erreicht ueber 65% auf SWE-bench Verified. Fuer Forschung, eigene Sandboxen und benchmark-getriebene Eigenentwicklungen relevant — als Fundament fuer ein selbstgebautes, EU-resident betriebenes Delegated-Agent-System ein guter Anker."
+    caveats:
+      - Forschungs-Code, kein Enterprise-Support
+      - Operations / Sandbox / Secrets-Management komplett selbst zu loesen
+      - Kein managed Web-UI / Ticket-Integration out-of-the-box
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - State-of-the-art SWE-bench Verified among open-source projects (12%+ SWE-bench Full)
+        - Mini-variant proves core insights in 100 lines of Python; maximum hackability
+      complaints:
+        - Setup requires Docker, API key management, sandbox provisioning; research-focused
+        - Performs best with well-structured issues; vague specs yield poor results
+    sources:
+      - id: github-com-princeton-nlp-swe-agent
+      - id: swebench-com
+  - id: aws-amazon-com-q-developer
+    fit: conditional
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Amazon Q Developer enthaelt Agents fuer Feature-Implementierung, Code-Transformations (Java-Versionsmigration), Test-Generation. Laeuft im AWS-IAM-Kontext, also EU-Regions/Bedrock-EU einsetzbar — fuer DACH-regulierte AWS-Kunden ein Standardpfad. Async-Charakter staerker bei Code-Transformation als bei freien Tickets; Q kann GitHub-/CodeCatalyst-Issues aufgreifen.
+    caveats:
+      - Async-Ticket-zu-PR-Workflow weniger ausgereift als Copilot Cloud Agent oder Jules
+      - Stark an AWS-Stack gebunden (CodeCommit/CodeCatalyst-zentrisch)
+      - Open-PRs-aus-Issues weniger prominent als Refactor/Transform-Use-Cases
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Unmatched AWS integration; CloudFormation/IAM/Lambda expertise native to the tool
+        - Security scanning and compliance recommendations exceed public benchmarks
+      complaints:
+        - Response latency 3-4 seconds significantly slower than general-purpose competitors
+        - Free tier caps at 50 agentic requests/month; utility drops sharply outside AWS
+    sources:
+      - id: aws-amazon-com-q-developer
+  - id: support-atlassian-com-bitbucket-cloud-docs-use-ai-to-generate-pull-request-descriptions
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: low
+    why_it_fits: "Rovo Dev Agents knuepfen Jira-Tickets an Bitbucket-PRs: Ticket weisen, Agent generiert PR-Beschreibung, Code-Aenderung, Review. Da Atlassian im DACH-Enterprise tief verankert ist (Jira/Confluence/Bitbucket Cloud bzw. Data Center), und Atlassian Cloud EU-Region anbietet, fuer regulierte Kunden ein anschlussfaehiger Pfad — vor allem fuer 'Ticket asynchron in PR' ohne neuen Vendor."
+    caveats:
+      - Bindet stark an Atlassian-Stack (Bitbucket-Repos, Jira als Trigger)
+      - Reife / Erfolgsquote weniger oeffentlich validiert als Copilot/Cursor/Jules
+      - Data-Center-Variante (selbst gehostet) hinkt Cloud bei AI-Features hinterher
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Jira-to-PR workflow reduces manual context-switching for Atlassian ecosystem teams
+        - Included free for Jira Standard+ customers; no separate licensing burden
+      complaints:
+        - Performs poorly on multi-file Git operations; struggles with non-trivial refactors
+        - API access still limited; most use cases require chat-based interaction workflow
+    sources:
+      - id: atlassian-com-software-rovo
 start_here: Einstieg mit klar abgegrenzten Backlog-Tickets (Tests hinzufügen, Dependency-Bumps, kleine Bugfixes) bei GitHub Copilot Cloud Agent oder Cursor Background Agents – ein sauberes Build-Setup im Sandbox und ein Kontext-Primer (copilot-instructions.md / CLAUDE.md) sind Voraussetzung. In regulierten DACH-Umgebungen von Anfang an Self-Hosted-Runner, expliziten DPA und EU-Modell-Routing einplanen.
 caveats: "Das Pattern funktioniert nur bei klar abgegrenzten Tickets mit ausreichender Test-Suite; die Review-Last skaliert mit dem Agent-Output und wird zum eigentlichen Throughput-Limiter. In DACH-Banken und Versicherern greift DORA Art. 28: Cloud-Agent-Execution gilt als IKT-Drittparteienrisiko, Default-Runner verlassen die EU-Region – Self-Hosted-Runner und vollständiges Drittparteienregister sind Pflicht."
 sources: []

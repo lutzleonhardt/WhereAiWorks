@@ -23,6 +23,14 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Deep code analysis detects material changes with quantifiable business context
+        - Excellent secrets detection; reduced supply-chain security incidents
+        - Strong customer responsiveness; improves based on user feedback
+      complaints:
+        - Initial overwhelming alert noise requires extensive fine-tuning
+        - Complex setup if AppSec team lacks maturity; significant ramp time
+        - Slow performance on 400+ repo portfolios; limited Git server support
     sources:
       - id: apiiro-com-platform-ai-code-security
   - id: claude-com-product-claude-code
@@ -99,6 +107,15 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - 80%-accurate autofixes reduce mean time to remediate by 84%
+        - Self-hosted option ensures data privacy for sensitive environments
+        - Multiple specialized AI models tuned for security, minimal hallucinations
+      complaints:
+        - High false-positive rate forces teams to disable in CI/CD pipelines
+        - Poor UI and alert fatigue cause developers to ignore findings
+        - Support slow (2+ weeks for high-priority tickets)
+        - Often suggests wrong dependency versions (alpha/beta releases)
     sources:
       - id: snyk-io-platform-ai-trust
   - id: developers-cloudflare-com-ai-gateway

@@ -24,6 +24,19 @@ tools:
     sources:
       - id: vibecodemeta-com-blog-aider-vs-cline-vs-continue
       - id: agentwiki-org-aider
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - 40% fewer tokens than Cline on same 40-file refactor
+        - Atomic multi-file diffs in single response
+        - Git-based edits make rollback trivial
+        - Tree-sitter repo map efficient for focused refactoring
+      complaints:
+        - Requires explicit file listing — weak auto-discovery
+        - Fails on large codebases due to repo map limitations
+        - No integrated test-loop self-healing
+        - No enterprise governance or SSO/compliance features
   - id: augmentcode-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
@@ -40,6 +53,19 @@ tools:
     sources:
       - id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
       - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - JetBrains plugin support where competitors struggle
+        - Strong IDE integration for review and exploration
+        - Handles large files and 400k+ file analysis
+        - Token-efficient compared to Cline on large refactors
+      complaints:
+        - Credit-based pricing gets expensive fast on intensive refactoring
+        - Chat context loss mid-session loses hours of work context
+        - Reliability issues reported at scale
+        - Pricing gaps force comparisons with cheaper alternatives
   - id: openai-com-codex
     fit: good_fit
     enterprise_readiness: team_ready
@@ -55,6 +81,17 @@ tools:
     sources:
       - id: openai-com-codex
       - id: ai-plainenglish-io-i-tested-claude-code-codex-gemini-cli-and-aider-back-to-back-heres-what-i-actually-bill-with-2aec70e75846
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Built-in worktrees for parallel multi-repo work
+        - Cloud sandboxes reduce local environment burden
+        - Skills and automations bind refactorings to team conventions
+      complaints:
+        - Practitioners hand off deep refactoring to Claude Code
+        - Multi-Surface setup (Cloud, ChatGPT, CLI) increases complexity
+        - Better for keystroke iteration than hard structural refactoring
   - id: sourcegraph-com
     fit: good_fit
     enterprise_readiness: enterprise_ready
@@ -71,6 +108,19 @@ tools:
     sources:
       - id: sourcegraph-com
       - id: devapps-uk-tools-sourcegraph-cody-in-2026-the-enterprise-navigator-for-your-code-jungle
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Batch Changes handles code migrations across hundreds of repos
+        - Multi-repo search integration saves real time at scale
+        - Platform approach bundles search with refactoring
+        - Case studies report hundreds of hours saved per team
+      complaints:
+        - Slow character-by-character output in browser
+        - No memory across sessions despite manual context provision
+        - Hallucination issues on code analysis
+        - UI/UX confusing, poor button visibility and repo management
   - id: aws-amazon-com-q-developer
     fit: conditional
     enterprise_readiness: enterprise_ready
@@ -84,6 +134,18 @@ tools:
       - SWE-bench unter 50% – schwächer als Claude Code (~80%).
     sources:
       - id: mightybot-ai-blog-coding-ai-agents-for-accelerating-engineering-workflows
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Java transformation handles version migrations reliably
+        - Deep AWS ecosystem integration (Lambda, DynamoDB, CloudFormation)
+        - Inline chat makes in-place refactoring convenient
+      complaints:
+        - 3-4 second response times kill developer flow
+        - Repository context unreliable outside AWS
+        - Multi-repo awareness fails on mixed-language projects
+        - Slow compared to GitHub Copilot baseline
   - id: github-com-cline-cline
     fit: conditional
     enterprise_readiness: evaluation_only
@@ -100,6 +162,18 @@ tools:
     sources:
       - id: morphllm-com-comparisons-aider-vs-cline
       - id: reddit-com-r-claudeai-comments-1izmyps-claude-cursor-aider-cline-or-github-copilotwhich
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Plan/Act separation lets you review before execution
+        - Good for unfamiliar or risky codebases
+        - Transparency on what's approved
+      complaints:
+        - Consistently fails writing to large files
+        - Produces placeholders instead of complete edits
+        - Higher API costs than CLI-based tools
+        - Approve-everything model creates click friction on many files
   - id: qodo-ai
     fit: conditional
     enterprise_readiness: enterprise_ready
@@ -115,6 +189,18 @@ tools:
     sources:
       - id: qodo-ai-question-code-refactoring
       - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Multi-repo awareness detects downstream API impact
+        - Breaking-change detection across services
+        - PR-time refactoring with system-level context
+      complaints:
+        - Context completely fails on 100k+ file repos (timeouts)
+        - Two-thirds of developers report context misses during refactoring
+        - Misinterprets mixed-language codebases (PHP vs JavaScript)
+        - Credit charges even on failed indexing attempts
   - id: zencoder-ai
     fit: conditional
     enterprise_readiness: team_ready
@@ -129,6 +215,18 @@ tools:
     sources:
       - id: zencoder-ai-product
       - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Cross-repo dependency mapping with daily updates
+        - Multi-file refactoring marked as safe core feature
+        - 70+ language support across refactoring workflows
+      complaints:
+        - Credit consumption extremely high on multi-file tasks
+        - Each tool invocation costs 5-7 credits minimum
+        - Response interruptions cost additional credits to continue
+        - Daily limits appreciated but expensive for power users
   - id: code-lurus-ai
     fit: conditional
     enterprise_readiness: team_ready
@@ -179,6 +277,90 @@ tools:
     sources:
       - id: blog-vibecoder-me-jetbrains-ai-intellij-pycharm-webstorm
       - id: lengrand-fr-my-experience-using-junie-for-the-past-few-months
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Semantic index finds every symbol usage correctly across files
+        - Handles overloads and same-name variables in different scopes
+        - Targeted edits don't leave random changes everywhere
+        - Works well on medium refactors (5-10 file scale)
+      complaints:
+        - Slowest performance among tested agents
+        - Uncomfortable beyond 5-10 files currently
+        - Missing features like checkpoints and mid-task redirection
+        - JetBrains ecosystem lock-in limits broader adoption
+  - id: refact-ai
+    fit: conditional
+    enterprise_readiness: team_ready
+    confidence: low
+    why_it_fits: "Self-hostbarer Refactoring-fokussierter Coding-Agent mit Refactoring im Produktnamen; relevant für Teams, die On-Premise/Air-Gapped arbeiten und dennoch Multi-File-Refactor-Automation wollen. Unterstützt lokale und Remote-Modelle. Fit ist konditional: nützlich, wenn On-Prem-Constraint die größeren Agents ausschließt."
+    caveats:
+      - Funktionstiefe und Community kleiner als Aider, Cursor oder Claude Code.
+      - Governance- und Skalierungs-Posture laut Drittvergleich nur mittel (3/5 in Byteable-Scorecard).
+      - Limited enterprise footprint reduces confidence in production-scale evidence.
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Self-hosted option for on-premise/air-gapped environments
+        - Open-source alternative with full control
+        - Local and remote model flexibility
+      complaints:
+        - Smaller community and fewer independent reviews
+        - Functionality depth lags behind Aider/Cursor
+        - Governance posture rated only mid (3/5) in comparisons
+        - Limited enterprise footprint
+    sources:
+      - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
+      - id: vibecoding-app-compare-qodo-vs-refact-ai
+  - id: continue-dev
+    fit: partial
+    enterprise_readiness: evaluation_only
+    confidence: low
+    why_it_fits: Open-Source-IDE-Extension (VS Code & JetBrains) mit Bring-your-own-key-Ansatz; in direktem Praktiker-Vergleich (Aider vs Cline vs Continue) als drittes Open-Source-Tool genannt. Geeignet für leichte, gezielte Multi-File-Edits; für autonome Großrefactorings fehlt die agentische Tiefe.
+    caveats:
+      - In direkten Praxis-Tests Letzter unter den Open-Source-CLIs für Refactor-Tasks.
+      - Eher Autocomplete und gezielte Edits als autonomes Multi-File-Refactoring.
+      - Agent mode required for any multi-file work — base edit mode too limited.
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Open-source with bring-your-own-key flexibility
+        - Lightweight IDE extension model
+        - Good for targeted edits in familiar files
+      complaints:
+        - Finished third in direct multi-file refactor test
+        - Missed FOUC issues without follow-up prompts
+        - Agent mode required for multi-file — edit mode too basic
+        - Lacks autocomplete reach in some IDEs versus dedicated tools
+    sources:
+      - id: vibecodemeta-com-blog-aider-vs-cline-vs-continue
+  - id: tabnine-com
+    fit: partial
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: "Enterprise-Coding-Assistent mit der stärksten Air-Gapped-/On-Prem-Story im Markt (Byteable-Scorecard: 5/5 Security Posture). Für Multi-File-Refactoring nur konditional relevant: Stärke liegt in Compliance-konformer Inferenz und Team-Learning auf eigenem Codebase, nicht in agentischer Cross-File-Koordination. Einzige Option, wenn regulatorische Constraints jede externe API ausschließen."
+    caveats:
+      - Niedrige Codebase-Skala/Kontexttiefe-Bewertung im Drittvergleich (2/5).
+      - Kein Refactoring-Agent im engeren Sinne; eher relevant, wenn Compliance > Autonomie.
+      - On-premise setup complex — 2 weeks + DevOps expertise required.
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Only AI assistant with true air-gapped deployment
+        - Team learning trains on your codebase patterns
+        - On-premise inference with zero external calls
+        - Unique positioning for defense/finance/healthcare
+      complaints:
+        - Multi-file refactoring weak — can't see symbol connections
+        - Function renames across 20 files require manual find-replace
+        - Context awareness limited vs Cursor for system-wide work
+        - On-premise setup complex (2 weeks + DevOps expertise)
+    sources:
+      - id: byteable-ai-blog-top-ai-code-refactoring-tools-for-enterprise-code-integrity-in-2026
 start_here: JetBrains-Nutzer beginnen mit Junie an einem eng umrissenen Rename-Refactoring über 5–10 Dateien — die IDE-native PSI-Propagierung ist semantisch korrekter als reines Text-Replace. Für Multi-Repo- oder Monorepo-Scale bietet sich ein Sourcegraph-Pilot mit Batch Changes an; der Indexierungs-Aufwand ist dabei einzuplanen. Ergebnis stets als PR reviewen, nicht blind übernehmen.
 caveats: "Qualität skaliert direkt mit Testabdeckung — ohne Regressionstests fehlt die Rückkopplungsschleife, die AI-Fehler sichtbar macht. Scope-Creep ist bei allen Tools dokumentiert: Junie macht unaufgeforderte Formatierungs- und Build-Änderungen, Augment zeigt Reliability-Probleme bei sehr großem Scope. DACH-Compliance erfordert explizite Klärung: EU-Hosting und DPA sind nicht bei allen Tools standardmäßig aktiv."
 sources: []

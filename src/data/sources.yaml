@@ -5726,3 +5726,19 @@
   label: Splunk AI Assistant FAQ
   url: https://www.splunk.com/en_us/products/splunk-ai-assistant-for-spl/faq.html
   type: documentation
+- id: tabnine-com-chat
+  label: Tabnine Chat — repo-context code explanation with on-prem option
+  url: https://www.tabnine.com/chat
+  type: documentation
+- id: github-com-princeton-nlp-swe-agent
+  label: SWE-agent GitHub repo
+  url: https://github.com/princeton-nlp/SWE-agent
+  type: documentation
+- id: swebench-com
+  label: SWE-bench leaderboard
+  url: https://www.swebench.com/
+  type: documentation
+- id: vibecoding-app-compare-qodo-vs-refact-ai
+  label: Vibecoding Qodo vs Refact.ai comparison
+  url: https://vibecoding.app/compare/qodo-vs-refact-ai
+  type: review

@@ -24,6 +24,16 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: mixed
+      praise:
+        - Exceptional context retrieval for multi-repo architectures and monorepos
+        - Multi-LLM support lets you choose Claude, GPT-4, or Gemini per task
+        - Always cites sources so you can navigate to relevant code
+        - Outperforms Copilot at understanding codebase relationships at scale
+      complaints:
+        - Enterprise tier at $49/month is expensive for individual developers
+        - Free tier too limited to be practical for serious evaluation
+        - Chat slower than Cursor or Copilot despite better indexing
+        - Autocomplete quality trails specialized completion tools
     sources:
       - id: sourcegraph-com-docs-cody-capabilities-commands
       - id: sourcegraph-com-docs-cody-enterprise
@@ -41,6 +51,16 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: positive
+      praise:
+        - Free, open source, model-agnostic (Claude, GPT, local LLMs)
+        - "Clean git integration: automatic commits with no manual work"
+        - Outperforms commercial tools on SWE-bench coding benchmarks
+        - Repo map approach scales well for complex codebases
+      complaints:
+        - Terminal-only interface alienates developers preferring GUI
+        - "Too aggressive: always wants to edit; hard to use for Q&A only"
+        - Consumes massive token counts even for small codebases
+        - Struggles with large repos; hits token limits before making changes
     sources:
       - id: aider-chat-docs-usage-commands-html
   - id: sap-com-products-artificial-intelligence-ai-assistant-html
@@ -67,6 +87,16 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: mixed
+      praise:
+        - AWS integration is genuine; /transform agent solves legacy upgrades
+        - Security scanning best-in-class among coding assistants
+        - Generous free tier; VPC boundaries keep code on-prem
+        - Strong for Java/Python in AWS-native environments
+      complaints:
+        - General completion quality trails Cursor and Copilot significantly
+        - Heavily AWS-centric; value drops outside AWS ecosystem
+        - Context management inadequate for cross-service understanding
+        - Personal Google One account + GCP projects cause 403 permission errors
     sources:
       - id: docs-aws-amazon-com-amazonq-latest-qdeveloper-ug-inline-chat-html
       - id: devtoolsreview-com-reviews-amazon-q-review
@@ -83,6 +113,16 @@ tools:
     practitioner_signal:
       volume: low
       tenor: mixed
+      praise:
+        - Context engine outstanding for 400K+ file enterprise codebases
+        - Understands architectural patterns and respects existing code style
+        - Persistent indexing eliminates manual context setup for onboarding
+        - Strong ROI documented in enterprise case studies
+      complaints:
+        - Credit system exhausts quickly ($200/month plan runs out by mid-month)
+        - Circles fixing its own code; 30-50 review iterations on single PR
+        - Overkill for simple tasks; alternatives perform as well at lower cost
+        - Intent agent hangs frequently during long sessions
     sources:
       - id: augmentcode-com-learn-automate-multi-file-code-refactoring-with-ai-agents-a-step-by-step-guide
       - id: vibecodedthis-com-reviews-augment-code-review-2026
@@ -101,6 +141,16 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: positive
+      praise:
+        - Open source with local model support (Ollama, LMStudio)
+        - Configuration via config.yaml gives fine-grained control
+        - Works offline with private models—DACH compliance-friendly
+        - 95% of Cursor functionality at 1/4 the cost for power users
+      complaints:
+        - Autocomplete with local models causes VS Code lag and slowness
+        - Missing per-line accept/reject (can only accept full edit blocks)
+        - Local model latency makes it feel sluggish vs cloud-backed tools
+        - Requires more setup and troubleshooting than SaaS alternatives
     sources:
       - id: docs-continue-dev-customize-slash-commands
       - id: github-com-continuedev-continue
@@ -117,6 +167,16 @@ tools:
     practitioner_signal:
       volume: high
       tenor: positive
+      praise:
+        - Codebase indexing is gold-standard for multi-file refactoring (Composer)
+        - "@Codebase feature understands entire project context automatically"
+        - Inline diff preview with accept/reject per-line gives full control
+        - Dominates r/cursor_ai and r/programming for complex project work
+      complaints:
+        - Indexing performance degrades on 100K+ file repos (needs restart)
+        - Rate limits on Pro plan frustrate power users working on refactors
+        - Cloud indexing requires uploading code; no on-prem option
+        - Architectural drift after many sessions without explicit documentation
     sources:
       - id: cursor-com-features
       - id: aitoolbriefing-com-blog-cursor-ai-review-2026
@@ -148,6 +208,15 @@ tools:
     practitioner_signal:
       volume: low
       tenor: mixed
+      praise:
+        - Long context window (Gemini 2M) handles large module understanding
+        - "Enterprise features: code customization from private GitHub repos"
+        - VPC-SC and Private Google Access for compliance
+      complaints:
+        - Personal Google One AI conflicts with GCP project binding
+        - Agent Mode permanently blocked with 403 for non-enterprise users
+        - Shadow project bug locks out personal tier features despite paying
+        - Support redirects between Google One and Google Cloud teams
     sources:
       - id: cloud-google-com-gemini-docs-codeassist-code-customization
       - id: devclass-com-development-2024-10-11-googles-code-assist-enterprise-can-be-trained-on-internal-source-code-is-focused-on-google-services-1625091
@@ -164,6 +233,15 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: mixed
+      praise:
+        - "Deep IDE integration: Explain Code, Generate Tests work seamlessly"
+        - Top-notch UX compared to Copilot extensions; feels native to IntelliJ
+        - Can traverse repo structure and suggest relevant explanations
+      complaints:
+        - Separate $15/month subscription on top of JetBrains IDE license
+        - Quota system opaque; no transparency on token usage
+        - Feature development slow compared to Copilot/Cursor cadence
+        - Frequent errors; often doesn't work reliably (plugin reviews 1-2 stars)
     sources:
       - id: jetbrains-com-help-idea-ai-assistant-html
       - id: jetbrains-com-help-ai-assistant-explain-code-with-ai-html
@@ -180,6 +258,16 @@ tools:
     practitioner_signal:
       volume: medium
       tenor: mixed
+      praise:
+        - "Cascade agent with planning transparency: shows what it will change"
+        - Best value at $15/month with no usage caps or credit system
+        - Free tier legitimately generous; full functionality available
+        - Migrating from VS Code takes ~10 minutes
+      complaints:
+        - Resource exhausted errors frustrate users regularly
+        - Deletes code unnecessarily without clear reason
+        - Missing background agents (can't work on separate branch)
+        - New pricing model criticism on Reddit; subscription cancellations
     sources:
       - id: windsurf-com-editor
       - id: openaitoolshub-org-en-blog-windsurf-editor-review
@@ -195,6 +283,76 @@ tools:
     sources:
       - id: ibm-com-products-watsonx-code-assistant-z
       - id: croz-net-honest-take-on-watsonx-code-assistant-for-z
+  - id: claude-com-product-claude-code
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Claude Code agiert direkt im Terminal am lokalen Repo, traversiert Verzeichnisstrukturen und liefert agentisch Erklaerungen zu unbekannten Modulen. Das 200k-Kontextfenster erlaubt vollstaendige Modul-Erklaerungen in einem Aufruf; Tool-Use und Git-Integration machen es zum Standardwerkzeug fuer 'erklaer mir diesen Legacy-Service'. Fuer DACH-Enterprises mit Code-Retention-Anforderungen ist Bedrock/Vertex-Routing noetig.
+    caveats:
+      - Cloud-API-Aufrufe — sensible Codebasen erfordern Bedrock/Vertex-Routing
+      - Halluziniert plausibel klingende Aussagen bei spaerlich kommentiertem Code
+      - Opus 4.6 langsam trotz hoeherer Faehigkeit; Token-Kontingente limitieren intensiven Einsatz
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Terminal UX and git integration superior to other CLI agents
+        - 200k context window handles large module explanations in one shot
+        - Faster iteration than Cursor for exploratory code understanding
+        - "Excellent at non-coding tasks: git, bash, architectural discussions"
+      complaints:
+        - Cloud API uploads problematic for companies with code-retention rules
+        - Hallucinations on sparsely-commented legacy code are common
+        - Opus 4.6 is slow despite being more capable; token allocation changed
+        - Usage caps and pricing tiers create workflow friction
+    sources:
+      - id: docs-claude-com-en-docs-claude-code-overview
+  - id: tabnine-com
+    fit: conditional
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Tabnine Chat bietet Repo-Kontext-Chat mit On-Prem-Deployment und strikter No-Code-Retention-Policy — fuer DACH-Banken und Versicherungen mit Legacy-Java/COBOL-Bestaenden eine der wenigen praktikablen Optionen in hochregulierten Umgebungen. Code-Erklaerung ist nicht der Hauptfokus (eher Completion), aber die Chat-Komponente deckt den Use Case ab.
+    caveats:
+      - Code-Erklaerung nicht Hauptfokus — eher Completion-zentriert
+      - RAM-Verbrauch bis 4 GB auf moderaten Codebasen
+      - Deutlich weniger produktiv als Copilot oder Cursor bei gleichem Preis
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Fast context-aware completions for repetitive patterns and boilerplate
+        - On-premises deployment option addresses DACH compliance concerns
+        - Security-first positioning (no code retention by default)
+      complaints:
+        - RAM usage balloons to 2-4GB on moderate codebases (8GB reported)
+        - Significantly less productive than Copilot (1-2 hours saved/week vs 3-4)
+        - Overpriced for completion quality; Copilot outperforms substantially
+        - Still memory-intensive even after 2025 improvements
+    sources:
+      - id: tabnine-com-chat
+  - id: deepwiki-com
+    fit: good_fit
+    enterprise_readiness: team_ready
+    confidence: low
+    why_it_fits: DeepWiki generiert automatisch navigierbare Wiki-aehnliche Architektur-Dokumentation aus GitHub-Repos inklusive Mermaid-Diagrammen und erlaubt anschliessend Multi-Turn-Chat ueber den Code via DeepResearch-Modus. Beantwortet die Use-Case-Kernfrage 'Wie verstehe ich diese fremde Codebase schnell?' direkter als IDE-basierte Werkzeuge — besonders wertvoll beim Onboarding auf unbekannte Open-Source-Abhaengigkeiten. Enterprise/Private-Repos erfordern separates Angebot.
+    caveats:
+      - Free-Variante nur fuer oeffentliche Repos — Enterprise/private Repos separat und Preise unklar
+      - Auto-generierte Wikis koennen Halluzinationen enthalten und Edge Cases auslassen
+      - DeepResearch-Modus langsam und token-intensiv fuer grosse Codebasen
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Instant wiki generation with Mermaid architecture diagrams
+        - Chat with repo + DeepResearch for multi-turn code investigation
+        - Supports multiple model providers (Gemini, OpenAI, Ollama)
+        - Navigable documentation reduces onboarding time significantly
+      complaints:
+        - Auto-generated wikis hallucinate details and omit edge cases
+        - Free tier limited to public repos; enterprise pricing unclear
+        - DeepResearch mode slow and token-expensive for large codebases
+    sources:
+      - id: deepwiki-com
 start_here: Mit GitHub Copilot Enterprise beginnen, sofern M365- oder GitHub-Verträge vorhanden sind — /explain und Workspace-Indexing an Onboarding-Fragen zu einem Legacy-Modul erproben und Antworten gegen den Quellcode querprüfen. AWS-Shops starten analog mit Amazon Q Developer, das speziell Java-Legacy-Erklärung abdeckt.
 caveats: KI-Erklärungen klingen bei spärlich kommentiertem Code plausibel, können aber wichtige Invarianten übersehen — Ausgaben immer gegen den Quellcode validieren. Alle drei Tools senden Kontext an Cloud-Endpoints; für besonders sensible Bestände On-Prem-Alternativen wie Continue.dev prüfen.
 sources: []

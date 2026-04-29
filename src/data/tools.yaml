@@ -2397,3 +2397,9 @@
   url: https://help.splunk.com/en/splunk-cloud-platform/search/splunk-ai-assistant
   maturity: production
   vendor: Splunk (Cisco)
+- id: github-com-swe-agent-swe-agent
+  name: SWE-agent / mini-SWE-agent
+  category: coding
+  url: https://github.com/SWE-agent/SWE-agent
+  maturity: production
+  vendor: Princeton/Stanford (academic open source)
