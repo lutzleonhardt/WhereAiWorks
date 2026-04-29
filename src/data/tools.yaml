@@ -3398,3 +3398,375 @@
   category: other
   url: https://techwolf.ai/
   maturity: production
+- id: docs-datadoghq-com-watchdog
+  name: Datadog Watchdog
+  category: other
+  url: https://docs.datadoghq.com/watchdog/
+  maturity: production
+- id: grafana-com-products-cloud-oncall
+  name: Grafana OnCall + IRM (mit Asserts/Sift)
+  category: other
+  url: https://grafana.com/products/cloud/oncall/
+  maturity: production
+- id: keephq-dev
+  name: Keep
+  category: other
+  url: https://www.keephq.dev/
+  maturity: production
+- id: signl4-com
+  name: Derdack SIGNL4
+  category: other
+  url: https://www.signl4.com/
+  maturity: production
+- id: grafana-com-docs-grafana-cloud-alerting-and-irm-machine-learning-intro
+  name: Grafana ML / Adaptive Metrics & Outlier Detection
+  category: other
+  url: https://grafana.com/docs/grafana-cloud/alerting-and-irm/machine-learning/intro/
+  maturity: production
+- id: docs-victoriametrics-com-anomaly-detection
+  name: VictoriaMetrics Anomaly Detection (vmanomaly)
+  category: other
+  url: https://docs.victoriametrics.com/anomaly-detection/
+  maturity: production
+- id: graylog-org-enterprise
+  name: Graylog Enterprise (Anomaly Detection)
+  category: other
+  url: https://www.graylog.org/enterprise/
+  maturity: production
+- id: stackit-de-en-products-logging-monitoring-stackit-observability
+  name: STACKIT Observability / LogMe
+  category: other
+  url: https://stackit.de/en/products/logging-monitoring/stackit-observability
+  maturity: production
+- id: sap-com-uk-products-financial-management-process-control-html
+  name: SAP Process Control with Regulatory Insights
+  category: grc
+  url: https://www.sap.com/uk/products/financial-management/process-control.html
+  maturity: production
+- id: auditboard-com-resources-ebook-the-sox-management-playbook
+  name: AuditBoard AI (Cross-Audit Summaries)
+  category: grc
+  url: https://www.auditboard.com/resources/ebook/the-sox-management-playbook/
+  maturity: production
+- id: docs-cyberark-com-pam-self-hosted-latest-en-content-pasimp-auditing-in-psm-htm
+  name: CyberArk Identity Security Intelligence
+  category: audit
+  url: https://docs.cyberark.com/pam-self-hosted/latest/en/content/pasimp/auditing-in-psm.htm
+  maturity: production
+- id: ibm-com-products-qradar-siem-user-behavior-analytics
+  name: IBM QRadar UEBA (mit watsonx-Assistant)
+  category: siem
+  url: https://www.ibm.com/products/qradar-siem/user-behavior-analytics
+  maturity: production
+- id: logzilla-ai-solutions-ai-compliance
+  name: LogZilla AI Compliance
+  category: audit
+  url: https://www.logzilla.ai/solutions/ai-compliance
+  maturity: production
+- id: servicenow-com-community-grc-blog-now-assist-summarization-in-grc-how-to-make-it-part-of-your-risk-ba-p-3531178
+  name: ServiceNow Now Assist for IRM
+  category: grc
+  url: https://www.servicenow.com/community/grc-blog/now-assist-summarization-in-grc-how-to-make-it-part-of-your-risk/ba-p/3531178
+  maturity: production
+- id: logpoint-com-de-produkt-logpoint-als-siem-werkzeug
+  name: Logpoint Converged SIEM
+  category: other
+  url: https://www.logpoint.com/de/produkt/logpoint-als-siem-werkzeug/
+  maturity: production
+- id: delinea-com-products-ai-driven-auditing
+  name: Delinea Iris AI Auditing
+  category: audit
+  url: https://delinea.com/products/ai-driven-auditing
+  maturity: production
+- id: help-splunk-com-en-splunk-enterprise-security-8-user-guide-8-5-mission-control-summarize-findings-and-investigations-with-the-ai-assistant
+  name: Splunk Enterprise Security AI Assistant
+  category: siem
+  url: https://help.splunk.com/en/splunk-enterprise-security-8/user-guide/8.5/mission-control/summarize-findings-and-investigations-with-the-ai-assistant
+  maturity: production
+- id: aws-amazon-com-compute-optimizer
+  name: AWS Compute Optimizer
+  category: other
+  url: https://aws.amazon.com/compute-optimizer/
+  maturity: production
+- id: kubecost-com
+  name: Kubecost
+  category: other
+  url: https://www.kubecost.com/
+  maturity: production
+- id: stormforge-io
+  name: StormForge Optimize Live
+  category: other
+  url: https://www.stormforge.io/
+  maturity: production
+- id: densify-com
+  name: Densify
+  category: other
+  url: https://www.densify.com/
+  maturity: production
+- id: thoras-ai
+  name: Thoras.ai
+  category: other
+  url: https://www.thoras.ai/
+  maturity: production
+- id: bechtle-comsoft-de-service-trainings-finops-assessment
+  name: Bechtle Cloud Cost Management (powered by OptScale)
+  category: other
+  url: https://www.bechtle-comsoft.de/service/trainings/finops-assessment
+  maturity: production
+- id: finout-io
+  name: Finout
+  category: other
+  url: https://finout.io/
+  maturity: production
+- id: cloudzero-com-platform-ai-hub
+  name: CloudZero (AI Hub)
+  category: other
+  url: https://www.cloudzero.com/platform/ai-hub/
+  maturity: production
+- id: learn-microsoft-com-en-us-azure-advisor-advisor-reference-cost-recommendations
+  name: Microsoft Cost Management + Azure Advisor
+  category: other
+  url: https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations
+  maturity: production
+- id: techdocs-broadcom-com-us-en-vmware-cis-vcf-vcf-9-0-and-later-9-0-cost-and-capacity-management-html
+  name: VMware Aria Operations / VCF Operations (Cost & Capacity)
+  category: other
+  url: https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/cost-and-capacity-management.html
+  maturity: production
+- id: grafana-com-products-cloud-ai-assistant
+  name: Grafana Assistant
+  category: other
+  url: https://grafana.com/products/cloud/ai-assistant
+  maturity: production
+- id: github-com-robusta-dev-robusta
+  name: Robusta + HolmesGPT
+  category: other
+  url: https://github.com/robusta-dev/robusta
+  maturity: production
+- id: checklyhq-com
+  name: Checkly
+  category: other
+  url: https://www.checklyhq.com/
+  maturity: production
+- id: incident-io-ai
+  name: incident.io AI SRE (inkl. Scribe)
+  category: other
+  url: https://incident.io/ai
+  maturity: production
+- id: rootly-com-ai-sre
+  name: Rootly AI SRE
+  category: other
+  url: https://rootly.com/ai-sre
+  maturity: production
+- id: pagerduty-com-platform-ai
+  name: PagerDuty SRE Agent / PagerDuty AIOps
+  category: other
+  url: https://www.pagerduty.com/platform/ai/
+  maturity: production
+- id: splunk-com-en-us-products-splunk-ai-assistant-html
+  name: Splunk AI Assistant / ITSI
+  category: other
+  url: https://www.splunk.com/en_us/products/splunk-ai-assistant.html
+  maturity: production
+- id: signl4-com-de-aiops
+  name: SIGNL4 (Derdack)
+  category: other
+  url: https://www.signl4.com/de/aiops/
+  maturity: production
+- id: grafana-com-products-cloud-ai
+  name: Grafana Assistant Investigations + Sift
+  category: other
+  url: https://grafana.com/products/cloud/ai/
+  maturity: production
+- id: resolve-ai
+  name: Resolve AI
+  category: other
+  url: https://resolve.ai/
+  maturity: production
+  vendor: Resolve AI
+- id: neubird-ai
+  name: Neubird Hawkeye / Falcon
+  category: other
+  url: https://neubird.ai/
+  maturity: production
+  vendor: Neubird
+- id: cast-ai-blog-meet-opspilot-your-ai-sre-agent-built-into-cast-ai
+  name: Cast AI OpsPilot
+  category: other
+  url: https://cast.ai/blog/meet-opspilot-your-ai-sre-agent-built-into-cast-ai/
+  maturity: production
+- id: github-com-kagent-dev-kagent
+  name: kagent
+  category: other
+  url: https://github.com/kagent-dev/kagent
+  maturity: production
+- id: docs-arize-com-phoenix
+  name: Arize Phoenix
+  category: other
+  url: https://docs.arize.com/phoenix
+  maturity: production
+- id: comet-com-site-products-opik
+  name: Comet Opik
+  category: other
+  url: https://www.comet.com/site/products/opik/
+  maturity: production
+- id: helicone-ai
+  name: Helicone
+  category: other
+  url: https://www.helicone.ai/
+  maturity: production
+- id: wandb-ai-site-weave
+  name: Weights & Biases Weave
+  category: other
+  url: https://wandb.ai/site/weave
+  maturity: production
+- id: fiddler-ai
+  name: Fiddler AI
+  category: other
+  url: https://www.fiddler.ai/
+  maturity: production
+- id: langwatch-ai
+  name: Langwatch
+  category: other
+  url: https://langwatch.ai/
+  maturity: production
+- id: openobserve-ai-ai-assistant
+  name: OpenObserve AI Assistant
+  category: other
+  url: https://openobserve.ai/ai-assistant/
+  maturity: production
+- id: signoz-io
+  name: SigNoz (mit MCP-Server)
+  category: other
+  url: https://signoz.io/
+  maturity: production
+- id: graylog-org
+  name: Graylog (Operations + AI Investigator)
+  category: other
+  url: https://graylog.org/
+  maturity: production
+- id: opensearch-org-platform-observability
+  name: OpenSearch Observability mit Assistant
+  category: other
+  url: https://opensearch.org/platform/observability/
+  maturity: production
+- id: coralogix-com-platform-ai-observability
+  name: Coralogix Olly + Cora Query Assistant
+  category: other
+  url: https://coralogix.com/platform/ai-observability/
+  maturity: production
+- id: grafana-com-docs-plugins-grafana-assistant-app-latest
+  name: Grafana Assistant + Sift Investigations
+  category: other
+  url: https://grafana.com/docs/plugins/grafana-assistant-app/latest/
+  maturity: production
+- id: library-humio-com-examples-examples-tokenhash-group-similar-logs-html
+  name: CrowdStrike Falcon LogScale (Humio) tokenHash
+  category: other
+  url: https://library.humio.com/examples/examples-tokenhash-group-similar-logs.html
+  maturity: production
+- id: elastic-co-docs-explore-analyze-discover-run-pattern-analysis-discover
+  name: Elastic Pattern Analysis / ML Categorization
+  category: other
+  url: https://www.elastic.co/docs/explore-analyze/discover/run-pattern-analysis-discover
+  maturity: production
+- id: grafana-com-docs-grafana-next-visualizations-simplified-exploration-logs-patterns
+  name: Grafana Loki Patterns / Grafana Sift
+  category: other
+  url: https://grafana.com/docs/grafana/next/visualizations/simplified-exploration/logs/patterns/
+  maturity: production
+- id: docs-splunk-com-documentation-splunk-9-2-1-search-detectingpatterns
+  name: Splunk Patterns / cluster command
+  category: other
+  url: https://docs.splunk.com/Documentation/Splunk/9.2.1/Search/Detectingpatterns
+  maturity: production
+- id: servicenow-com-products-itom-aiops-html
+  name: ServiceNow ITOM Health (Predictive AIOps)
+  category: other
+  url: https://www.servicenow.com/products/itom-aiops.html
+  maturity: production
+- id: coralogix-com-platform-log-analytics
+  name: Coralogix Loggregation
+  category: other
+  url: https://coralogix.com/platform/log-analytics/
+  maturity: production
+- id: docs-edgedelta-com-patterns-page
+  name: Edge Delta Patterns (Log to Pattern Metric)
+  category: other
+  url: https://docs.edgedelta.com/patterns-page/
+  maturity: production
+- id: docs-logz-io-docs-user-guide-log-management-insights-exceptions
+  name: Logz.io Log Patterns / Exceptions
+  category: other
+  url: https://docs.logz.io/docs/user-guide/log-management/insights/exceptions
+  maturity: production
+- id: openobserve-ai
+  name: OpenObserve
+  category: other
+  url: https://openobserve.ai/
+  maturity: production
+- id: docs-opensearch-org-latest-ml-commons-plugin-agents-tools-tools-log-pattern-analysis-tool
+  name: OpenSearch Log Pattern Analysis Tool
+  category: other
+  url: https://docs.opensearch.org/latest/ml-commons-plugin/agents-tools/tools/log-pattern-analysis-tool/
+  maturity: production
+- id: docs-datadoghq-com-logs-explorer-analytics-patterns
+  name: Datadog Log Patterns / Pattern Inspector
+  category: other
+  url: https://docs.datadoghq.com/logs/explorer/analytics/patterns/
+  maturity: production
+- id: coralogix-com-docs-user-guides-release-notes-ai-observability
+  name: Coralogix Cora (Query Assistant) / Olly
+  category: other
+  url: https://coralogix.com/docs/user-guides/release-notes/ai-observability
+  maturity: production
+- id: docs-mezmo-com-docs-use-ai-assistant
+  name: Mezmo AI Assistant
+  category: other
+  url: https://docs.mezmo.com/docs/use-ai-assistant
+  maturity: production
+- id: splunk-com-en-us-products-splunk-ai-assistant-for-spl-html
+  name: Splunk AI Assistant for SPL / Observability Cloud
+  category: other
+  url: https://www.splunk.com/en_us/products/splunk-ai-assistant-for-spl.html
+  maturity: production
+- id: docs-bmc-com-xwiki-bin-view-service-management-employee-digital-workplace-bmc-helixgpt-helixgpt261-ai-agents-in-bmc-helixgpt-ms-teams
+  name: BMC Helix Ops Swarmer (HelixGPT)
+  category: other
+  url: https://docs.bmc.com/xwiki/bin/view/Service-Management/Employee-Digital-Workplace/BMC-HelixGPT/helixgpt261/AI-agents-in-BMC-HelixGPT/MS-Teams/
+  maturity: production
+- id: help-splunk-com-en-splunk-enterprise-search-splunk-ai-assistant-2-0-0-use-splunk-ai-assistant-for-spl-agent-mode-in-splunk-ai-assistant
+  name: Splunk AI Assistant 2.0 (Agent Mode)
+  category: other
+  url: https://help.splunk.com/en/splunk-enterprise/search/splunk-ai-assistant/2.0.0/use-splunk-ai-assistant-for-spl/agent-mode-in-splunk-ai-assistant
+  maturity: production
+- id: oneuptime-com
+  name: OneUptime
+  category: other
+  url: https://oneuptime.com/
+  maturity: production
+- id: pagerduty-com-platform-automation-runbook-automation
+  name: PagerDuty Runbook Automation (mit AI-Generated Runbooks)
+  category: other
+  url: https://www.pagerduty.com/platform/automation/runbook-automation/
+  maturity: production
+- id: ibm-com-products-cloud-pak-for-aiops
+  name: IBM Cloud Pak for AIOps + Instana (mit watsonx Granite Runbook-Generation)
+  category: other
+  url: https://www.ibm.com/products/cloud-pak-for-aiops
+  maturity: production
+- id: resolve-io
+  name: Resolve Systems (Resolve Actions)
+  category: other
+  url: https://resolve.io/
+  maturity: production
+- id: splunk-com-en-us-products-splunk-soar-html
+  name: Splunk SOAR (Cisco)
+  category: other
+  url: https://www.splunk.com/en_us/products/splunk-soar.html
+  maturity: production
+- id: servicenow-com-ai-use-cases-incident-resolution-html
+  name: ServiceNow Now Assist for IT Incident Resolution / AI Agents
+  category: other
+  url: https://www.servicenow.com/ai/use-cases/incident-resolution.html
+  maturity: production
