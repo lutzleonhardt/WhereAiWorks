@@ -161,7 +161,9 @@ const totalSources = sources.length;
                 data-name={t.name}
               >
                 <td class="tool-cell">
-                  <a href={t.url} class="tn" rel="noreferrer" target="_blank">{t.name}</a>
+                  <span class="hover-note" data-tooltip={t.hoverText}>
+                    <a href={t.url} class="tn" rel="noreferrer" target="_blank">{t.name}</a>
+                  </span>
                   <div class="vendor">{t.vendorHost}</div>
                   <div class="cat">{t.categoryLabel}</div>
                 </td>

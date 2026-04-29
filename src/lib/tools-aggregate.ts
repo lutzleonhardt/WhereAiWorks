@@ -13,6 +13,7 @@ export type AggregatedTool = {
   vendorHost: string;
   category: string;
   categoryLabel: string;
+  hoverText: string;
   url: string;
   maturity: 'production' | 'experimental';
   maturityLabel: 'production' | 'preview';
@@ -64,6 +65,17 @@ function caveatsLevel(perUc: number): 1 | 2 | 3 | 4 {
   if (perUc < 4) return 2;
   if (perUc < 7) return 3;
   return 4;
+}
+
+function buildHoverText(
+  categoryLabel: string,
+  maturityLabel: 'production' | 'preview',
+  stageCount: number,
+  ucCount: number
+): string {
+  const stageLabel = stageCount === 1 ? '1 Stage' : `${stageCount} Stages`;
+  const ucLabel = ucCount === 1 ? '1 Use Case' : `${ucCount} Use Cases`;
+  return `${categoryLabel}-Tool · ${maturityLabel} · empfohlen in ${stageLabel} und ${ucLabel}`;
 }
 
 export type UseCaseEntry = CollectionEntry<'use_cases'>;
@@ -120,6 +132,12 @@ export function aggregateTools(
       vendorHost: vendorHostFromUrl(tool.url),
       category: tool.category,
       categoryLabel: CATEGORY_LABELS[tool.category] ?? tool.category,
+      hoverText: buildHoverText(
+        CATEGORY_LABELS[tool.category] ?? tool.category,
+        tool.maturity === 'experimental' ? 'preview' : 'production',
+        stages.length,
+        a.ucCount
+      ),
       url: tool.url,
       maturity: tool.maturity,
       maturityLabel: tool.maturity === 'experimental' ? 'preview' : 'production',
