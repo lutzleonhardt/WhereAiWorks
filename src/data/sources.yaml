@@ -10318,3 +10318,1935 @@
   label: Marketplace-Listing dokumentiert Given/When/Then-AC, BYOK-Modell und aktive Clarifying-Questions vor der Generierung — aber 'No reviews yet'.
   url: https://marketplace.atlassian.com/apps/3016668857/refinely-ai-backlog-refinement-for-jira
   type: vendor_doc
+- id: cognism-com-emea-b2b-data
+  label: GDPR-First-Positionierung, Art. 14 Notifications, DNC in 15 Ländern, EMEA-Datentiefe.
+  url: https://www.cognism.com/emea-b2b-data
+  type: vendor_doc
+- id: saleshousestack-com-comparisons-apollo-vs-zoominfo-vs-cognism-2026
+  label: Cognism als bevorzugte Wahl für UK/EU-Teams mit Compliance-Fokus.
+  url: https://saleshousestack.com/comparisons/apollo-vs-zoominfo-vs-cognism-2026/
+  type: review
+- id: reddit-com-r-salesdevelopment-comments-1q7futw-best-aipractices-for-sdr
+  label: SDR-Community erwähnt Cognism als Standardstack-Komponente neben Apollo für EU-Targeting.
+  url: https://www.reddit.com/r/salesdevelopment/comments/1q7futw/best_aipractices_for_sdr/
+  type: community
+- id: dealfront-com-our-data
+  label: DSGVO-konforme Quellen, Hosting in EU, Quellen-Transparenz, Handelsregister-Daten.
+  url: https://www.dealfront.com/our-data
+  type: vendor_doc
+- id: syncgtm-com-blog-dealfront-review
+  label: Bestätigt DACH/Nordics-Stärke und Schwäche ausserhalb Kernmärkte.
+  url: https://syncgtm.com/blog/dealfront-review
+  type: review
+- id: usergems-com-blog-sales-trigger-events
+  label: Trigger-Event-Tracking inkl. Hires, Job-Changes, Multi-Threading-Support.
+  url: https://www.usergems.com/blog/sales-trigger-events
+  type: vendor_doc
+- id: syncgtm-com-blog-usergems-review
+  label: Pricing, Detection-Lag und Limitierung auf Job-Change-Signale.
+  url: https://syncgtm.com/blog/usergems-review
+  type: review
+- id: marketbetter-ai-blog-usergems-alternatives
+  label: "Community/Practitioner-Sicht: UserGems als Marktstandard mit Preisproblem."
+  url: https://www.marketbetter.ai/blog/usergems-alternatives/
+  type: review
+- id: cognism-com-cognism-vs-clay
+  label: Clay GDPR-Compliance ist providerabhängig; Verantwortung liegt beim Nutzer — relevante Caveat für DACH-Einsatz.
+  url: https://www.cognism.com/cognism-vs-clay
+  type: vendor_doc
+- id: bloomberry-com-blog-clay-review-what-500-gtm-pros-actually-think
+  label: "500+ GTM-Profis bestätigen: Clay ist für GTM-Engineers, nicht für Sales-Teams."
+  url: https://bloomberry.com/blog/clay-review-what-500-gtm-pros-actually-think/
+  type: review
+- id: reddit-com-r-gtmengineering
+  label: Solo-Devs/GTM-Engineers beschweren sich über Pricing, bauen Open-Source-Klone.
+  url: https://www.reddit.com/r/gtmengineering/
+  type: community
+- id: unifygtm-com-signals
+  label: Multi-Signal-Stack (Intent, Champion, Product, G2, Lookalikes) in einer Plattform.
+  url: https://www.unifygtm.com/signals
+  type: vendor_doc
+- id: unifygtm-com-product-prospecting
+  label: AI-Prospector und Lookalikes via Ocean.io.
+  url: https://www.unifygtm.com/product/prospecting
+  type: vendor_doc
+- id: reddit-com-r-marketingautomation-comments-1ijmrcz-10-best-ai-sales-agents-that-actually-work
+  label: Practitioner-Liste hebt Unify als Player für 'in-market'-Prospects hervor.
+  url: https://www.reddit.com/r/MarketingAutomation/comments/1ijmrcz/10_best_ai_sales_agents_that_actually_work/
+  type: community
+- id: trigify-io-blog-top-10-sales-trigger-2025
+  label: Common Room als Top-Player für Community-getriebene Trigger-Events.
+  url: https://www.trigify.io/blog/top-10-sales-trigger-2025
+  type: review
+- id: compelling-ai-legal-privacy-notice
+  label: DACH-Sitz (Köln, seekwhens GmbH), Verarbeitung ausschliesslich auf EU-Servern, DSGVO-Posture nach Art. 13.
+  url: https://www.compelling.ai/legal/privacy-notice
+  type: vendor_doc
+- id: compelling-io
+  label: Autonome Research-Agenten für Account-/Kontakt-Anreicherung mit CRM-Push.
+  url: https://compelling.io/
+  type: vendor_doc
+- id: evergrowth-io
+  label: Compliance-Pitch (ISO 27001 + SOC 2 + GDPR, kein LLM-Training auf Kundendaten) explizit dokumentiert.
+  url: https://www.evergrowth.io/
+  type: vendor_doc
+- id: humantic-ai-miia
+  label: Multi-Agent-Architektur mit Deep-Research, Org-Strukturen und Buying-Committee-Maps.
+  url: https://humantic.ai/miia
+  type: vendor_doc
+- id: prnewswire-com-news-releases-humantic-ai-launches-agent-miia-to-cut-enterprise-account-research-for-sellers-from-3-hours-to-8-minutes-302655402-html
+  label: Gartner Cool Vendor 2024, Enterprise-Referenzkunden, autonome Account-Research-Workflows.
+  url: https://www.prnewswire.com/news-releases/humantic-ai-launches-agent-miia-to-cut-enterprise-account-research-for-sellers-from-3-hours-to-8-minutes-302655402.html
+  type: news
+- id: salesforce-com-eu-sales-ai-sales-agent
+  label: Agentforce Sales Agent erstellt Account-Briefings und recherchiert über Salesforce, Web, Drittquellen.
+  url: https://www.salesforce.com/eu/sales/ai-sales-agent/
+  type: vendor_doc
+- id: engineering-salesforce-com-how-an-ai-crm-system-generated-1m-recommendations-while-maintaining-data-integrity-using-agentforce
+  label: Production-Deployment mit 1M+ monatlichen Empfehlungen für 13.000 Seller belegt enterprise-readiness.
+  url: https://engineering.salesforce.com/how-an-ai-crm-system-generated-1m-recommendations-while-maintaining-data-integrity-using-agentforce/
+  type: vendor_doc
+- id: salesforceben-com-heres-what-salesforce-professionals-really-think-about-agentforce
+  label: "ISV-CTOs und Lead Architects (Jan 2025): Agentforce in Enterprise-Evaluierung, aber spezifische Agentic Use Cases noch nicht klar definiert; Datenqualität in Salesforce als harte Voraussetzung benannt."
+  url: https://www.salesforceben.com/heres-what-salesforce-professionals-really-think-about-agentforce/
+  type: review
+- id: trustradius-com-reviews-agentforce-2025-10-18-01-51-41
+  label: "TrustRadius-Review (Enterprise, Nov 2025, Score 7/10): Kontext-Retention-Bugs in Multi-Turn-Flows — Agent 'vergisst Kontext', muss jedes Gespräch neu orientiert werden."
+  url: https://www.trustradius.com/reviews/agentforce-2025-10-18-01-51-41
+  type: review
+- id: infotech-com-software-reviews-products-salesforce-agentforce-c-id-523
+  label: "SoftwareReviews/InfoTech (10 validierte Enterprise-Reviews, 2025–2026): Real-Time Data Processing niedrigster Feature-Score (65/100); Ausserhalb-Salesforce-Integration 'feels limited sometimes'."
+  url: https://www.infotech.com/software-reviews/products/salesforce-agentforce?c_id=523
+  type: review
+- id: crayon-co-products-battlecards
+  label: Crayon bietet Battlecards mit Sparks AI und Crayon Answers in Slack/Salesforce/Highspot/Seismic
+  url: https://www.crayon.co/products/battlecards
+  type: vendor_doc
+- id: crayon-co-privacy
+  label: Crayon ist EU-U.S. DPF zertifiziert und hat EU-Repräsentanten nach Art. 27 GDPR
+  url: https://www.crayon.co/privacy
+  type: vendor_doc
+- id: klue-com-topics-best-competitive-intelligence-platforms
+  label: Klue positioniert sich als Battlecard-Plattform mit Salesforce/Slack-Integration und Win-Loss-Modul
+  url: https://klue.com/topics/best-competitive-intelligence-platforms
+  type: vendor_doc
+- id: klue-com-privacy
+  label: Klue verarbeitet EU/UK-Daten auf Basis von GDPR-Rechtsgrundlagen
+  url: https://klue.com/privacy
+  type: vendor_doc
+- id: g2-com-compare-crayon-crayon-vs-klue
+  label: Klue G2 4.7/5 mit 443 Reviews, vor Crayon bei Support und Roadmap
+  url: https://www.g2.com/compare/crayon-crayon-vs-klue
+  type: review
+- id: battlecard-northr-ai-blog-klue-vs-crayon-2026
+  label: Klue startet bei ~16K USD/Jahr, Mid-Tier 25–50K, Enterprise 100K+
+  url: https://battlecard.northr.ai/blog/klue-vs-crayon-2026
+  type: review
+- id: highspot-com-blog-sales-battlecards
+  label: Highspot hostet Battlecards mit Governance und Versionierung in AI-Sales-Enablement-Plattform
+  url: https://www.highspot.com/blog/sales-battlecards/
+  type: vendor_doc
+- id: cxtoday-com-marketing-sales-technology-highspot-seismic-merger-sales-enablement-platform
+  label: Highspot und Seismic kündigen Merger im April 2026 an
+  url: https://www.cxtoday.com/marketing-sales-technology/highspot-seismic-merger-sales-enablement-platform/
+  type: news
+- id: reddit-com-r-productmarketing-comments-1jgihqt-recommended-competitive-intelligence-tools
+  label: Praktiker erwähnen Highspot/Seismic im Battlecard-Stack als Komplement
+  url: https://www.reddit.com/r/ProductMarketing/comments/1jgihqt/recommended_competitive_intelligence_tools/
+  type: community
+- id: kompyte-com-kompyte-klue-crayon-comparison
+  label: Kompyte positioniert sich mit unbegrenzten Battlecards und Salesforce-Integration
+  url: https://www.kompyte.com/kompyte-klue-crayon-comparison
+  type: vendor_doc
+- id: klue-com-topics-competitive-intelligence-tools-b2b-software
+  label: Kompyte als Mid-Market-Alternative mit SEO-Fokus durch Semrush-Akquisition
+  url: https://klue.com/topics/competitive-intelligence-tools-b2b-software
+  type: blog
+- id: kompyte-com-battlecards
+  label: Kompyte bietet auto-aktualisierte Battlecards mit bidirektionaler CRM-Integration
+  url: https://www.kompyte.com/battlecards/
+  type: vendor_doc
+- id: blog-segment8-com-posts-competitive-intelligence-tools-klue-crayon-manual
+  label: Praktiker berichten von Noise-Problemen bei Kompytes automatisiertem Tracking
+  url: https://blog.segment8.com/posts/competitive-intelligence-tools-klue-crayon-manual/
+  type: blog
+- id: citybiz-co-article-832329-showpad-launches-ai-native-revenue-platform-for-field-sales
+  label: Showpad startet im April 2026 AI-native Revenue-Plattform mit GenieAI
+  url: https://www.citybiz.co/article/832329/showpad-launches-ai-native-revenue-platform-for-field-sales/
+  type: news
+- id: marketing-boerse-de-unternehmen-details-showpad
+  label: Showpad mit DACH-Office in München und expliziter DSGVO-konformer KI-Datenerfassung
+  url: https://www.marketing-boerse.de/unternehmen/details/showpad
+  type: vendor_doc
+- id: web-storytell-ai-use-case-sales-battlecards
+  label: Storytell positioniert mit SOC2 Type 2 und Source-Citation für Battlecards
+  url: https://web.storytell.ai/use-case/sales-battlecards
+  type: vendor_doc
+- id: revenuegrid-com-impact-activity-capture
+  label: Komplette Capture-Funktionalität mit Compliance-Steuerung
+  url: https://revenuegrid.com/impact-activity-capture/
+  type: vendor_doc
+- id: revenuegrid-com-compare-einstein-activity-capture-vs-revenue-grid
+  label: Private-Cloud-Deploy und unbegrenzte Retention vs. EAC
+  url: https://revenuegrid.com/compare/einstein-activity-capture-vs-revenue-grid/
+  type: vendor_doc
+- id: reddit-com-r-salesforce-comments-1o9aale-activity-tracking-and-insights-suggestions
+  label: r/salesforce empfiehlt Revenue Grid für zuverlässiges Email-Capture
+  url: https://www.reddit.com/r/salesforce/comments/1o9aale/activity_tracking_and_insights_suggestions/
+  type: community
+- id: salesforcebreak-com-2026-03-04-einstein-activity-capture-guide
+  label: Funktionsumfang und Sync-as-Salesforce-Activity-Update 2025/2026
+  url: https://salesforcebreak.com/2026/03/04/einstein-activity-capture-guide/
+  type: blog
+- id: cotera-co-articles-salesforce-einstein-ai-review
+  label: Realer Coverage-Sprung von 40% auf 85%, 8% Fehlerrate
+  url: https://cotera.co/articles/salesforce-einstein-ai-review
+  type: review
+- id: everready-ai-everything-you-need-to-know-about-einstein-activity-capture
+  label: Bekannte Limitationen rund um Reporting/Governance
+  url: https://everready.ai/everything-you-need-to-know-about-einstein-activity-capture/
+  type: review
+- id: cloudonpurpose-com-blog-einstein-activity-capture-new-feature-sync-email-as-salesforce-activity
+  label: Domain-Blocklist als Pflicht-Setting, sonst landen interne/private Mails in SFDC
+  url: https://www.cloudonpurpose.com/blog/einstein-activity-capture-new-feature-sync-email-as-salesforce-activity
+  type: blog
+- id: nektar-ai-blog-how-nektar-ai-puts-crm-data-hygiene-on-auto-pilot
+  label: Self-Healing-Logik und Standard-Object-Sync für CRM-Hygiene
+  url: https://nektar.ai/blog/how-nektar-ai-puts-crm-data-hygiene-on-auto-pilot/
+  type: vendor_doc
+- id: nektar-ai-platform-meeting-intelligence
+  label: Meeting-Intelligence ohne Recording, Daten in SFDC Event-Records
+  url: https://nektar.ai/platform/meeting-intelligence/
+  type: vendor_doc
+- id: spadoom-com-en-solutions-sales-cloud
+  label: DACH-Implementierungspartner beschreibt Joule embedded in Sales Cloud V2
+  url: https://spadoom.com/en/solutions/sales-cloud/
+  type: blog
+- id: spadoom-com-de-blog-sap-joule-sales-cloud-v2-praktischer-leitfaden
+  label: Joule unterstützt aktiv bei Dateneingabe in Sales Cloud V2
+  url: https://www.spadoom.com/de/blog/sap-joule-sales-cloud-v2-praktischer-leitfaden/
+  type: blog
+- id: answers-sap-com-t5-crm-and-cx-blog-posts-by-sap-sap-sales-cloud-s-2025-innovation-and-impact-celebrating-ai-first-b2b-sales-ba-p-14305333
+  label: "SAP-offizielle Bestätigung: Joule für Information Capture in Sales Cloud"
+  url: https://answers.sap.com/t5/crm-and-cx-blog-posts-by-sap/sap-sales-cloud-s-2025-innovation-and-impact-celebrating-ai-first-b2b-sales/ba-p/14305333
+  type: vendor_doc
+- id: news-sap-com-2026-04-sap-business-ai-release-highlights-q1-2026
+  label: "Q1-2026-Release: AI in Sales-Workflows einschliesslich Outlook-Email-to-Quote"
+  url: https://news.sap.com/2026/04/sap-business-ai-release-highlights-q1-2026/
+  type: vendor_doc
+- id: avoma-com-use-case-crm-data-enrichment
+  label: Auto-Fill für Pipeline-Stage-Felder, Next Steps, Decision-Makers
+  url: https://www.avoma.com/use-case/crm-data-enrichment
+  type: vendor_doc
+- id: help-avoma-com-mapping-crm-fields
+  label: Bidirektionale Smart-Topic-zu-CRM-Field-Synchronisation
+  url: https://help.avoma.com/mapping-crm-fields
+  type: documentation
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-copilot-data-movement
+  label: EU Data Boundary deckt Copilot for Sales bei EU-Tenants ab
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/copilot-data-movement
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-copilot-release-plan-2026wave1-copilot-sales-capture-opportunity-notes-using-voice-sales-agent
+  label: Voice-Notes 2026 mit automatischem Opportunity-Mapping
+  url: https://learn.microsoft.com/en-us/copilot/release-plan/2026wave1/copilot-sales/capture-opportunity-notes-using-voice-sales-agent
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-dynamics365-sales-sales-copilot-faq
+  label: Datenschutz/Residency-Garantien für Copilot in Dynamics Sales
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/sales-copilot-faq
+  type: vendor_doc
+- id: tei-forrester-com-go-microsoft-copilotforsales-docs-microsoft-365-copilot-for-sales-pdf
+  label: "Forrester TEI Nov 2024: 20% CRM-Update-Verbesserung, 10x Kontakterfassung – 13 Interviews bei 6 Org., Forrester-Redaktionskontrolle unabhängig"
+  url: https://tei.forrester.com/go/Microsoft/CopilotforSales/docs/Microsoft_365_Copilot_for_Sales.pdf
+  type: review
+- id: getweflow-com-product-activity-capture
+  label: Server-seitiges Capture in native Salesforce-Objekte
+  url: https://getweflow.com/product/activity-capture
+  type: vendor_doc
+- id: getweflow-com-blog-weflow-vs-einstein-activity-capture-activity-logging
+  label: Pricing $19/Seat flat, kein Implementation-Fee
+  url: https://www.getweflow.com/blog/weflow-vs-einstein-activity-capture-activity-logging
+  type: vendor_doc
+- id: getweflow-com-use-cases-salesforce-data-capture
+  label: AI-Field-Updater für Salesforce mit Template-Mapping
+  url: http://www.getweflow.com/use-cases/salesforce-data-capture
+  type: vendor_doc
+- id: rivaengine-com-solutions-activity-capture
+  label: On-Prem-/Private-Cloud-Option, SOC 2 Type II, FSI-Vertikalisierung
+  url: https://rivaengine.com/solutions/activity-capture/
+  type: vendor_doc
+- id: rivaengine-com-resources-tei
+  label: "Forrester TEI Feb 2023: 352% ROI, Payback <6 Monate – 3 globale Banken + 1 Pharmakonzern interviewt"
+  url: https://rivaengine.com/resources/tei/
+  type: review
+- id: introhive-com-partners-salesforce
+  label: Introhive Salesforce integration
+  url: https://www.introhive.com/partners/salesforce/
+  type: documentation
+- id: introhive-com-solutions-data-enrichment
+  label: Introhive data enrichment
+  url: https://www.introhive.com/solutions/data-enrichment/
+  type: documentation
+- id: skipcall-io-de-blog-crm-sdr-vergleich
+  label: DACH CRM SDR Vergleich (skipcall)
+  url: https://skipcall.io/de/blog/crm-sdr-vergleich
+  type: review
+- id: harmonix-ai-en-crm-ia-sap
+  label: CRM AI comparison (harmonix)
+  url: https://www.harmonix.ai/en/crm-ia/sap
+  type: review
+- id: xyzeo-com-product-clari
+  label: RevAI analysiert Signale aus CRM, E-Mails, Calls; Risk/Upside-Flagging und Close-Probability
+  url: https://xyzeo.com/product/clari
+  type: review
+- id: businesswire-com-news-home-20260414171093-en-clari-salesloft-connect-forecasting-to-execution-open-revenue-data-to-external-ai-with-mcp-server
+  label: Clari + Salesloft 2026 mit MCP-Server, der Revenue-Daten in externe AI-Tools öffnet
+  url: https://www.businesswire.com/news/home/20260414171093/en/Clari-Salesloft-Connect-Forecasting-to-Execution-Open-Revenue-Data-to-External-AI-with-MCP-Server
+  type: news
+- id: therevopsreport-com-tools-gong-vs-clari
+  label: Clari als Kern-Forecasting; Copilot (CI) noch reifend
+  url: https://therevopsreport.com/tools/gong-vs-clari/
+  type: review
+- id: reddit-com-r-salesoperations-comments-1rf428y-still-on-spreadsheets-for-sales-forecasting-in
+  label: Praktiker bestätigen Clari als Spreadsheet-Killer, aber CRM-Hygiene bleibt Voraussetzung
+  url: https://www.reddit.com/r/SalesOperations/comments/1rf428y/still_on_spreadsheets_for_sales_forecasting_in/
+  type: community
+- id: reddit-com-r-salesforce-comments-1bc1hln-salesforce-forecasting-vs-rev-tech-clari-gong
+  label: Sales-Ops-Diskussion ob $100K für Clari noch gerechtfertigt sind, da SF-native Forecasting aufholt
+  url: https://www.reddit.com/r/salesforce/comments/1bc1hln/salesforce_forecasting_vs_rev_tech_clari_gong/
+  type: community
+- id: oliv-ai-blog-best-deal-intelligence-platform
+  label: Gong als marktführende Conversation Intelligence mit Deal Boards positioniert; Pricing & Implementierungszeit
+  url: https://oliv.ai/blog/best-deal-intelligence-platform
+  type: review
+- id: orm-tech-com-blog-clari-vs-gong
+  label: Gong leitet Deal-Risk aus Conversation-Signalen + Deal-Progression ab
+  url: https://orm-tech.com/blog/clari-vs-gong/
+  type: review
+- id: compound-law-de-de-compliance-ai-employee-monitoring
+  label: KI-Sprachanalyse mit Mitarbeiterbezug löst regelmäßig §87 Abs. 1 Nr. 6 BetrVG aus
+  url: https://compound.law/de-DE/compliance/ai-employee-monitoring/
+  type: blog
+- id: reddit-com-r-b2bmarketing-comments-1nq2hts-the-decline-of-the-salestech-unicorns
+  label: Tool-Overload-Kritik an Gong/Clari/Outreach in der CMO-Community
+  url: https://www.reddit.com/r/b2bmarketing/comments/1nq2hts/the_decline_of_the_salestech_unicorns/
+  type: community
+- id: reddit-com-r-sales-comments-1r9292l-anyone-else-feel-like-theyre-failing-their-reps
+  label: Sales-Manager berichten, dass Gong-basiertes Coaching nicht greift
+  url: https://www.reddit.com/r/sales/comments/1r9292l/anyone_else_feel_like_theyre_failing_their_reps/
+  type: community
+- id: knowledge-hubspot-com-records-use-deal-scores
+  label: Faktoren, Refresh-Intervalle und Erklärbarkeit der HubSpot Deal Scores
+  url: https://knowledge.hubspot.com/records/use-deal-scores
+  type: vendor_doc
+- id: prospeo-io-s-opportunity-scoring-ai
+  label: HubSpot-eigene Doku warnt davor, Score als alleiniges Kriterium zu nutzen
+  url: https://prospeo.io/s/opportunity-scoring-ai
+  type: review
+- id: compound-law-de-de-tools-hubspot
+  label: HubSpot Conversation Intelligence triggert §87 BetrVG explizit, Breeze AI-Funktionen unter EU AI Act limited risk
+  url: https://compound.law/de-DE/tools/hubspot/
+  type: blog
+- id: trailhead-salesforce-com-content-learn-modules-ai-sales-ai-sales-deals
+  label: Einstein Opportunity Insights mit Deal-Predictions und Key-Moments-Detection
+  url: https://trailhead.salesforce.com/content/learn/modules/ai_sales/ai_sales_deals
+  type: vendor_doc
+- id: prospeo-io-s-deal-scoring
+  label: Daten-Mindestanforderungen und realistische Cost-of-Ownership
+  url: https://prospeo.io/s/deal-scoring
+  type: review
+- id: salesforce-com-eu-sales-artificial-intelligence
+  label: Einstein Deal Insights priorisiert kritische Deals und nennt Opportunity Scoring zur At-Risk-Pipeline-Identifikation
+  url: https://www.salesforce.com/eu/sales/artificial-intelligence/
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-dynamics365-sales-configure-opportunity-research-agent
+  label: Sales Opportunity Agent liefert Stakeholder/Wettbewerber-Intel und Risk-Mitigation
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/configure-opportunity-research-agent
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-dynamics365-sales-configure-predictive-opportunity-scoring
+  label: Predictive Opportunity Scoring 0-100 mit Top-Influencing-Factors, Mindestdaten 40/40
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-opportunity-scoring
+  type: vendor_doc
+- id: crmsoftwareblog-com-2025-10-get-more-value-out-of-your-sales-pipeline-with-predictive-opportunity-scoring
+  label: Implementierungspartner beschreibt Score-Trend-Warnungen (Pfeil-down) und Stage-Stagnation als Red Flags für stagnante Deals
+  url: https://www.crmsoftwareblog.com/2025/10/get-more-value-out-of-your-sales-pipeline-with-predictive-opportunity-scoring/
+  type: review
+- id: resources-rework-com-news-ai-at-work-microsoft-copilot-wave1-sales-agents-cro
+  label: Sales Close Agent flaggt fehlende Prozessschritte, die historisch mit 'Deals going dark' korrelieren; Change-Management-Warnung
+  url: https://resources.rework.com/news/ai-at-work/microsoft-copilot-wave1-sales-agents-cro
+  type: blog
+- id: prospeo-io-s-sales-copilot
+  label: Benchmarkt Pipeline-Forecasting als 'Limited' vs. Einstein 'Strong'; r/Dynamics365 berichtet von Nutzlosigkeit ohne hohe CRM-Datenqualität
+  url: https://prospeo.io/s/sales-copilot
+  type: review
+- id: haliro-io-en-products-deal-intelligence
+  label: Haliro detektiert Weak Signals und prescribes Actions zur Pipeline-Sicherung
+  url: https://haliro.io/en/products/deal-intelligence
+  type: vendor_doc
+- id: bliro-io-de-compare-bliro-vs-eigenentwicklung
+  label: DSGVO-konform und ISO-27001 zertifiziert, Server ausschließlich in der EU, keine Audioaufnahmen
+  url: https://www.bliro.io/de/compare/bliro-vs-eigenentwicklung
+  type: vendor_doc
+- id: kickscale-com-en-blog-best-revenue-intelligence-software
+  label: Kickscale dokumentiert Hosting in Deutschland und ISO 27001
+  url: https://www.kickscale.com/en/blog/best-revenue-intelligence-software
+  type: vendor_doc
+- id: mediafly-com-press-releases-mediafly-advances-revenue-intelligence-capabilities-extends-game-changing-deal-inspection-with-in-platform-coaching
+  label: Mediafly Energy Scores zur Risk-Detection im Pipeline-Management als Teil der Revenue360-Suite
+  url: https://www.mediafly.com/press_releases/mediafly-advances-revenue-intelligence-capabilities-extends-game-changing-deal-inspection-with-in-platform-coaching/
+  type: vendor_doc
+- id: goconcensus-com
+  label: Consensus generiert Storyboards/Skripte automatisch und personalisiert Sandbox-Daten via AI-Prompt; AI-Agents empfehlen…
+  url: https://goconcensus.com/
+  type: vendor_doc
+- id: meetrep-ai-blog-best-demo-automation-platforms-2026-the-complete-comparison
+  label: Consensus als Marktführer in der 'Presales Video'-Kategorie mit 4.7/5 G2 (1.490+ Reviews).
+  url: https://www.meetrep.ai/blog/best-demo-automation-platforms-2026-the-complete-comparison
+  type: review
+- id: goconsensus-com
+  label: Adaptive Discovery, Storyboard-/Skript-Generierung, Sandbox-Daten-Personalisierung per AI-Prompt.
+  url: https://goconsensus.com/
+  type: vendor_doc
+- id: reddit-com-r-salesoperations-comments-1oeqs44-tried-4-interactive-demo-software-tools-heres
+  label: Reddit-Praktiker wählten nach 4-Tool-Test Consensus als einziges Tool, das Personalisierung + Buyer-Intent + PreSales-E…
+  url: https://www.reddit.com/r/SalesOperations/comments/1oeqs44/tried_4_interactive_demo_software_tools_heres/
+  type: community
+- id: demoboost-com-gdpr-policy
+  label: Demoboost positioniert sich explizit als '100% GDPR Compliant Interactive Demo Platform' mit Sitz in Warschau/EU.
+  url: https://demoboost.com/gdpr-policy
+  type: vendor_doc
+- id: demoboost-com
+  label: AI-assisted Demo-Building, AI-Avatare, Narrative-Generierung; SOC 2 Type II, GDPR, SSO.
+  url: https://demoboost.com/
+  type: vendor_doc
+- id: techstartups-com-2026-02-12-poland-based-b2b-startup-demoboost-raises-e2-8m-to-turn-product-demos-into-revenue-intelligence
+  label: Bestätigt 2,8M EUR Seed (Feb 2026), DACH-Kunden Bosch/Celonis, Gartner Demo-Automation-Anerkennung.
+  url: https://techstartups.com/2026/02/12/poland-based-b2b-startup-demoboost-raises-e2-8m-to-turn-product-demos-into-revenue-intelligence/
+  type: news
+- id: demoboost-com-reviews
+  label: G2-Review nennt Latenz bei Live-Demos als wiederkehrendes Issue.
+  url: https://demoboost.com/reviews
+  type: review
+- id: navattic-com
+  label: Navattic AI Copilot baut Demos aus Produkt-Screens, Launchpad ist PreSales-Workflow, Agent Demos liefern autonome Multi…
+  url: https://www.navattic.com/
+  type: vendor_doc
+- id: navattic-com-product-agent-demos
+  label: Autonome AI-Agent-Demos in beliebiger Sprache mit Boundaries und Session-Logs.
+  url: https://www.navattic.com/product/agent-demos
+  type: vendor_doc
+- id: g2-com-compare-navattic-vs-reprise-demos
+  label: G2-Subscores zeigen Navattic-Stärke bei Support (9.7), Ease-of-Setup (9.2) und Guided Demos (9.5).
+  url: https://www.g2.com/compare/navattic-vs-reprise-demos
+  type: review
+- id: prospeo-io-s-navattic-vs-storylane
+  label: "Praktiker-Beschwerde: Demo-Pflege nach UI-Änderung manuell, Sales-Handoff schwach."
+  url: https://prospeo.io/s/navattic-vs-storylane
+  type: community
+- id: saleo-io-saleo-live
+  label: Saleo Live injiziert per AI-Modeling-Engine realistische Demo-Daten in das echte Produkt; Data Creation Agent erzeugt D…
+  url: https://saleo.io/saleo-live/
+  type: vendor_doc
+- id: demoboost-com-blog-demostack-vs-saleo
+  label: Saleo ist Live-Overlay-Plattform, kein Click-Through-Tool; benötigt Live-Environment.
+  url: https://demoboost.com/blog/demostack-vs-saleo
+  type: review
+- id: saleo-io-solutions-presales
+  label: Data Creation Agent injiziert kontextspezifische Demo-Daten ins Live-Produkt; SOC 2, GDPR, SSO, Zero Backend Access.
+  url: https://saleo.io/solutions/presales/
+  type: vendor_doc
+- id: walnut-io-personalized-interactive-demos-landing-page
+  label: Walnut bietet GenAI-Suite (StoryCaptureAI, EditsAI, InsightsAI) für Demo-Erstellung, Anonymisierung und Funnel-Analyse.
+  url: https://www.walnut.io/personalized-interactive-demos-landing-page/
+  type: vendor_doc
+- id: walnut-io-blog-product-demos-walnut-vs-storylane-comparison
+  label: Walnut positioniert sich als enterprise-grade Plattform für Sales/PreSales mit Deal-Intelligence über Interactive Deal…
+  url: https://www.walnut.io/blog/product-demos/walnut-vs-storylane-comparison/
+  type: vendor_doc
+- id: saashub-com-compare-storylane-io-vs-walnut-io
+  label: HN-Kommentar mit gemischter Stimmung zu Walnut-Demos.
+  url: https://www.saashub.com/compare-storylane-io-vs-walnut-io
+  type: community
+- id: karumi-ai-blog-best-interactive-demo-software
+  label: Demostack wird als Demo-Plattform für Sales/Marketing mit geklonten Environments, geführten Tours und High-Fidelity-San…
+  url: https://www.karumi.ai/blog/best-interactive-demo-software
+  type: review
+- id: try-saleo-io-saleo-vs-demostack
+  label: Saleo bewirbt sich als Alternative; nennt Demostack-Limits bei Live-Daten-Anpassung durch PreSales (Wettbewerber-Sicht,…
+  url: https://try.saleo.io/saleo-vs-demostack/
+  type: review
+- id: storylane-me
+  label: "Storylane positioniert sich als #1 Demo-Automation-Software mit AI-assisted Capture, dynamischen Tokens, Buyer Hubs und…"
+  url: https://www.storylane.me/
+  type: vendor_doc
+- id: peerspot-com-products-comparisons-storylane-vs-walnut
+  label: "PeerSpot rankt Storylane #1 in Interactive Product Demos mit 24,3% Mindshare (Mai 2025)."
+  url: https://www.peerspot.com/products/comparisons/storylane_vs_walnut
+  type: review
+- id: storylane-io
+  label: AI-assisted Capture, dynamische Tokens, Lily AI Sales Agent.
+  url: https://www.storylane.io/
+  type: vendor_doc
+- id: supademo-com
+  label: Supademo bietet AI Demo Agents, Route Hub, AI-Voiceovers, AI-Übersetzung in 15+ Sprachen und sandbox-style Demos.
+  url: https://www.supademo.com/
+  type: vendor_doc
+- id: supademo-com-blog-product-update-jan-recap
+  label: AI Data Editing (Beta) erlaubt Personalisierung von Tabellen/Text via Natural-Language-Prompts.
+  url: https://www.supademo.com/blog/product-update-jan-recap
+  type: vendor_doc
+- id: klarland-com-en-product
+  label: Hosting in Deutschland, DSGVO, virtuelle 3D-Produkt-Demonstrationen plus Video-Conferencing.
+  url: https://klarland.com/en/product/
+  type: vendor_doc
+- id: oltohq-com
+  label: CRM-getriggerte Live-Demo-Environments mit AI-Overlays auf dem echten Produkt; Kunden Demandbase, Eightfold, Jiminny.
+  url: https://oltohq.com/
+  type: vendor_doc
+- id: gcom-pdo-aws-gartner-com-reviews-product-reprise-demo-creation-platform
+  label: "Gartner Peer Insights: 25 validierte Reviews, 4.7/5; Gartner Market Guide for Interactive Demonstration Applications. Reviewer: Solutions Engineers und VP Presales bei $50M–$10B+ Software-Unternehmen."
+  url: https://gcom.pdo.aws.gartner.com/reviews/product/reprise-demo-creation-platform
+  type: review
+- id: toolradar-com-tools-reprise
+  label: "G2: 174 Reviews, 4.4/5 in Demo Automation Software. Praise: Demo-Erstellung ohne Engineering, Stabilität. Complaints: Buggy Editor, hoher Rebuild-Aufwand bei UI-Änderungen, steile Lernkurve, $30k–$100k+/Jahr ohne Free Trial."
+  url: https://toolradar.com/tools/reprise
+  type: review
+- id: prnewswire-com-news-releases-reprise-demo-platform-strengthens-industry-leading-security-with-iso-27001-certification-302215963-html
+  label: Reprise erhält ISO 27001:2022-Zertifikat (Aug 2024), ergänzt SOC 2 Type II. GDPR DPA verfügbar.
+  url: https://www.prnewswire.com/news-releases/reprise-demo-platform-strengthens-industry-leading-security-with-iso-27001-certification-302215963.html
+  type: news
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-view-meeting-summary-recap
+  label: Sales-spezifische Recap-Ansicht und CRM-Speicherung von Notizen
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/view-meeting-summary-recap
+  type: vendor_doc
+- id: m365admin-handsontek-net-microsoft-teams-ai-meeting-recap-without-transcript-meet-compliance-policies
+  label: "Mid-2026: Recap ohne Transkript-/Recording-Speicherung als Compliance-Variante"
+  url: https://m365admin.handsontek.net/microsoft-teams-ai-meeting-recap-without-transcript-meet-compliance-policies/
+  type: news
+- id: reddit-com-r-sales-comments-1qjtt1u-cheaper-alternatives-to-gong
+  label: "r/sales: Zoom/Teams native Recaps als guenstige Alternative diskutiert"
+  url: https://www.reddit.com/r/sales/comments/1qjtt1u/cheaper_alternatives_to_gong/
+  type: community
+- id: modjo-ai-en-trust-center
+  label: Hosting in Frankreich auf AWS Paris, GDPR-konform, SOC 2
+  url: https://www.modjo.ai/en/trust-center
+  type: vendor_doc
+- id: saleshive-com-vendors-modjo
+  label: EU-Daten-Hosting als Differenzierung, Multi-Sprach-Support inkl. Deutsch
+  url: https://saleshive.com/vendors/modjo/
+  type: review
+- id: tldv-io-blog-gdpr-compliant-meeting-assistants-you-can-actually-trust
+  label: EU-Hosting waehlbar, Retention/Deletion-Kontrolle, DPA, AI-Training abschaltbar
+  url: https://tldv.io/blog/gdpr-compliant-meeting-assistants-you-can-actually-trust/
+  type: vendor_doc
+- id: revenue-io-blog-best-gong-alternatives-and-competitors
+  label: Jiminny als Conversation-Intelligence-Plattform fuer Coaching und Pipeline-Sichtbarkeit
+  url: https://www.revenue.io/blog/best-gong-alternatives-and-competitors
+  type: review
+- id: cotera-co-articles-best-gong-alternatives
+  label: Jiminny staerker als Avoma bei Coaching-Playlists
+  url: https://www.cotera.co/articles/best-gong-alternatives
+  type: review
+- id: get-alfred-ai-blog-best-ai-meeting-notetakers
+  label: Avoma fuer MEDDIC/BANT-Scorecards relevant, Bot-Reliabilitaet kritisch
+  url: https://get-alfred.ai/blog/best-ai-meeting-notetakers
+  type: review
+- id: reddit-com-r-sales-professionals-comments-1ptzg4i-gong-alternatives-that-dont-break-the-bank
+  label: "r/Sales_Professionals: 'Don't go Avoma' Warnung"
+  url: https://www.reddit.com/r/Sales_Professionals/comments/1ptzg4i/gong_alternatives_that_dont_break_the_bank/
+  type: community
+- id: tucan-ai-blog-ai-meeting-assistant-comparison-tucan-speechmind-sally
+  label: Hetzner-Hosting (CLOUD-Act-immun), On-Premise-Option, Made-in-Germany
+  url: https://www.tucan.ai/blog/ai-meeting-assistant-comparison-tucan-speechmind-sally/
+  type: vendor_doc
+- id: reddit-com-r-sales-comments-1hb6igf-is-anyone-actually-using-ai-for-sales-coaching
+  label: "r/sales: Praktiker beschreibt Demodesk-Setup mit Scorecards je Discovery-Frage"
+  url: https://www.reddit.com/r/sales/comments/1hb6igf/is_anyone_actually_using_ai_for_sales_coaching/
+  type: community
+- id: tldv-io-blog-demodesk-review
+  label: "tl;dv-Produkttest 2025: Coaching-Insights und Discovery-Scorecards positiv; AI-Notes-Genauigkeit kritisiert"
+  url: https://tldv.io/blog/demodesk-review/
+  type: review
+- id: sembly-ai-why-choose-sembly
+  label: EU-Datenresidenz, SOC 2 Type II, GDPR, drei Enterprise-Deployment-Modi inkl. Private Cloud
+  url: https://www.sembly.ai/why-choose-sembly/
+  type: vendor_doc
+- id: aiagents-saastrac-com-sembly-review
+  label: "Sembly 2026-Review: mehrsprachige Transkription, AI-Chat fuer Discovery-Follow-ups, enterprise-taugliche Compliance; 4.6/5 auf G2"
+  url: https://aiagents.saastrac.com/sembly-review/
+  type: review
+- id: bao-ai-en-crm-automatisierung
+  label: GDPR-konforme Aufzeichnung, AI-Summary, Transkript, Action Points, 2-Way-CRM-Sync mit Salesforce/HubSpot/Salesloft
+  url: https://www.bao.ai/en/crm-automatisierung/
+  type: vendor_doc
+- id: hubspot-com-products-sales-conversation-intelligence
+  label: AI-Conversation-Intelligence eingebaut in HubSpot Sales Hub mit Coaching-Insights
+  url: https://www.hubspot.com/products/sales/conversation-intelligence
+  type: vendor_doc
+- id: summarizemeeting-com-en-tool-hubspot
+  label: "Unabhaengiger Test: nativer CRM-Sync, AI-Coaching-Insights, EU-Datacenter; nur Sales-Hub-Pro/Enterprise"
+  url: https://summarizemeeting.com/en/tool/hubspot
+  type: review
+- id: salesforce-com-products-sales-conversation-intelligence
+  label: Call Summaries, Naechste-Schritte, Objections direkt im Salesforce-Workflow
+  url: https://www.salesforce.com/products/sales-conversation-intelligence/
+  type: vendor_doc
+- id: resources-docs-salesforce-com-latest-latest-en-us-sfdc-pdf-eci-impl-guide-pdf
+  label: ECI-Setup mit Recording-Provider Zoom/Teams/Google, automatische Verarbeitung
+  url: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/eci_impl_guide.pdf
+  type: documentation
+- id: salesforcebreak-com-2026-02-26-einstein-conversation-insights-spring-26
+  label: "Spring '26: schnellere Call-Verarbeitung, generative AI, Agentforce-Integration fuer automatische CRM-Updates"
+  url: https://salesforcebreak.com/2026/02/26/einstein-conversation-insights-spring-26/
+  type: news
+- id: help-sally-io-privacy-data-processing-agreement-dpa
+  label: Art-28-DPA, EU-Hosting (bevorzugt Deutschland), keine Drittlandsuebermittlung
+  url: https://help.sally.io/privacy/data-processing-agreement-dpa
+  type: vendor_doc
+- id: sally-io-de-ki-assistent-crm
+  label: Discovery-Call-Summaries direkt in Salesforce/HubSpot/Dynamics 365
+  url: https://www.sally.io/de/ki-assistent/crm
+  type: vendor_doc
+- id: meetjamie-ai-enterprise
+  label: Jamie enterprise page
+  url: https://meetjamie.ai/enterprise
+  type: documentation
+- id: loopio-com-security-questionnaire-automation
+  label: Loopio positioniert sich explizit für Security-Questionnaire-Automatisierung mit zentraler Library, die InfoSec/Sales/I…
+  url: https://loopio.com/security-questionnaire-automation/
+  type: vendor_doc
+- id: loopio-com-privacy
+  label: Loopio nimmt EU-AI-Act explizit als Bezugsrahmen, ohne ein dediziertes AI-Act-Disclosure-Produkt zu haben.
+  url: https://loopio.com/privacy
+  type: vendor_doc
+- id: reddit-com-r-ai-rfp-software-comments-1rr1n5h-has-anyone-made-the-switch-from-loopio-to-arphie-json
+  label: Anwender-Frust mit Library-Pflege bei Loopio, aktive Suche nach Alternativen.
+  url: https://www.reddit.com/r/AI_RFP_Software/comments/1rr1n5h/has_anyone_made_the_switch_from_loopio_to_arphie.json
+  type: community
+- id: responsive-io-go-responsive-vs-loopio-refresh-prismic
+  label: Responsive deckt narrative RFPs, Government-Bids und Excel-Security-Questionnaires ab — typische DACH-Procurement-Forma…
+  url: https://www.responsive.io/go/responsive-vs-loopio-refresh-prismic
+  type: vendor_doc
+- id: loopio-com-blog-loopio-vs-responsive
+  label: Responsive dokumentiert AI-Modelle und Outputs intern, was als Quelle für AI-Act-Selbstauskünfte dient.
+  url: https://loopio.com/blog/loopio-vs-responsive/
+  type: vendor_doc
+- id: reddit-com-r-govcon-comments-1rrwkbk-whats-the-best-ai-rfp-software-for-teams-handling-json
+  label: Praktiker-Diskussion vergleicht Responsive und Loopio mit AI-nativen Alternativen.
+  url: https://www.reddit.com/r/govcon/comments/1rrwkbk/whats_the_best_ai_rfp_software_for_teams_handling.json
+  type: community
+- id: klarvo-io-templates
+  label: Klarvo liefert FRIA-Template plus Vendor-Due-Diligence-Questionnaire mit Plattform-Import fuer Tracking.
+  url: https://klarvo.io/templates/
+  type: vendor_doc
+- id: verifywise-ai-platform-ai-trust-center
+  label: Verifywise bietet konfigurierbares Trust Center mit explizitem EU-AI-Act-Badge.
+  url: https://verifywise.ai/platform/ai-trust-center
+  type: vendor_doc
+- id: safebase-io-products-ai-questionnaire-assistance
+  label: SafeBase AIQA zieht Antworten aus Trust-Center-Inhalten und kann sie via Chrome-Extension in Procurement-Portale füllen.
+  url: https://safebase.io/products/ai-questionnaire-assistance
+  type: vendor_doc
+- id: safebase-io-resources-top-ai-security-review-questions
+  label: SafeBase liefert kuratierten CAP-AI-Assessment-Fragenkatalog speziell zum EU-AI-Act für Trust-Center-Vorbereitung.
+  url: https://safebase.io/resources/top-ai-security-review-questions
+  type: vendor_doc
+- id: help-safebase-io-en-articles-10706852-integration-drata
+  label: "Drata-Integration synct Controls/Policies in SafeBase — Help-Doc bestätigt: Drata-Tenant muss in NA-Region gehostet sein; EU-Tenants verlieren Live-Sync."
+  url: https://help.safebase.io/en/articles/10706852-integration-drata
+  type: documentation
+- id: saidot-ai
+  label: Saidot ist EU-native, mit knowledge-graph-basierter automatischer Risk-Mapping und AI-Act-spezifischen Templates.
+  url: https://saidot.ai/
+  type: vendor_doc
+- id: saidot-ai-insights-ai-act-handbook-the-essentials-of-the-eu-ai-act
+  label: Saidot bietet einen EU-AI-Act-Klassifikator, der Risk-Level und Rolle bestimmt — Pflicht-Vorarbeit für Procurement-Antw…
+  url: https://www.saidot.ai/insights/ai-act-handbook-the-essentials-of-the-eu-ai-act
+  type: vendor_doc
+- id: vanta-com-products-eu-ai-act
+  label: Vanta vermarktet ein dediziertes EU-AI-Act-Produkt und erlaubt Veröffentlichung der Artefakte direkt im Trust Center, u…
+  url: https://www.vanta.com/products/eu-ai-act
+  type: vendor_doc
+- id: vanta-com-resources-introducing-vantas-ai-security-assessment
+  label: Vanta hat eigenes AI Security Assessment, das Kunden im Trust Center publizieren können — als Vorlage für AI-Act-Self-D…
+  url: https://www.vanta.com/resources/introducing-vantas-ai-security-assessment
+  type: vendor_doc
+- id: bidfix-ai
+  label: Positionierung als KI-Plattform für DACH-Ausschreibungen mit Suche, Analyse und Beantwortung
+  url: https://bidfix.ai/
+  type: vendor_doc
+- id: bidfix-ai-blog-software-beschaffung-im-oeffentlichen-sektor-verfahren-evb-it-und-abnahme
+  label: Tiefe Domänenkenntnis EVB-IT/VgV/UVgO/GWB
+  url: https://bidfix.ai/blog/software-beschaffung-im-oeffentlichen-sektor-verfahren-evb-it-und-abnahme
+  type: vendor_doc
+- id: open-pr-de-news-1305514-bidfix-ai-ki-plattform-fuer-oeffentliche-ausschreibungen-html
+  label: ISO-27001, DSGVO, EU-Server-Hosting; deckt DACH plus EU ab
+  url: http://www.open-pr.de/news/1305514/BidFix-ai-KI-Plattform-fuer-oeffentliche-Ausschreibungen.html
+  type: news
+- id: heise-de-news-bundesagentur-fuer-arbeit-will-19-millionen-euro-fuer-ki-ausgeben-9983642-html
+  label: Rahmenvertrag BA 19 Mio. €, On-Prem/Cloud, EU-AI-Act-konform
+  url: https://www.heise.de/news/Bundesagentur-fuer-Arbeit-will-19-Millionen-Euro-fuer-KI-ausgeben-9983642.html
+  type: news
+- id: deutschland-de-en-news-new-ai-alliance-for-government-agencies-and-critical-infrastructure
+  label: Aleph Alpha + Cohere + Schwarz/STACKIT als Sovereign-AI-Allianz für Behörden (April 2026)
+  url: https://www.deutschland.de/en/news/new-ai-alliance-for-government-agencies-and-critical-infrastructure
+  type: news
+- id: superkind-ai-blog-sovereign-ai
+  label: Praktiker-Einschätzung Modellqualität 2026
+  url: https://superkind.ai/blog/sovereign-ai
+  type: blog
+- id: bmds-bund-de-aktuelles-pressemitteilungen-detail-france-and-germany-join-forces-with-mistral-ai-and-sap-se-to-launch-a-sovereign-ai-for-public-administration
+  label: Offizielle DE/FR/Mistral/SAP-Allianz für Sovereign AI in Verwaltung
+  url: https://bmds.bund.de/aktuelles/pressemitteilungen/detail/france-and-germany-join-forces-with-mistral-ai-and-sap-se-to-launch-a-sovereign-ai-for-public-administration
+  type: vendor_doc
+- id: global-ai-watch-com-en-article-17483c87-8a03-414d-a77f-6c13eb83b529
+  label: EU-Kommissions-Vertrag €500 Mio. für sovereign LLM
+  url: https://global-ai-watch.com/en/article/17483c87-8a03-414d-a77f-6c13eb83b529
+  type: news
+- id: superkind-ai-de-blog-sovereign-ai
+  label: Praktiker-Bewertung Mistral Large 2026
+  url: https://superkind.ai/de/blog/sovereign-ai
+  type: blog
+- id: ontec-ai-de-loesungen-vergabe-ki
+  label: KI-Agent-Vergleich gegen vordefinierte Kriterien, SharePoint/SAP-Integration
+  url: https://ontec.ai/de/loesungen/vergabe-ki/
+  type: vendor_doc
+- id: lighton-io
+  label: On-Prem/Sovereign-Cloud RAG mit RFP-Use-Case, GDPR/AI-Act/SOC2
+  url: https://lighton.io/
+  type: vendor_doc
+- id: specgen-ai
+  label: On-Prem oder Private Cloud in Frankreich, Mistral-Modell, ISO 27001/27017, Deutsch unterstützt
+  url: https://specgen.ai/
+  type: vendor_doc
+- id: tenderbolt-ai-en
+  label: EU-Hosting, SOC2, ISO 27001, DSGVO, Public-Sector-Fokus
+  url: https://www.tenderbolt.ai/en
+  type: vendor_doc
+- id: everwise-ai-en-industries-it-services
+  label: Speziell auf EVB-IT, SLA-Anhänge und Sicherheitsanforderungen ausgelegt
+  url: https://everwise.ai/en/industries/it-services
+  type: vendor_doc
+- id: everwise-ai-en-use-cases-tender-management-software
+  label: DSGVO-Konformität, deutsche Server, kein Modelltraining auf Kundendaten
+  url: https://everwise.ai/en/use-cases/tender-management-software
+  type: vendor_doc
+- id: patterno-de-en
+  label: "Funktionsumfang: Aggregation, AI-Matching, Dokumentenanalyse mit Knockout-Erkennung"
+  url: https://www.patterno.de/en
+  type: vendor_doc
+- id: patterno-de-en-resources-reports-vergabemarkt-2026
+  label: Differenzierung 'qualifizierte KI-Suche' vs. semantische Suche; Marktüberblick
+  url: https://www.patterno.de/en/resources/reports/vergabemarkt-2026
+  type: vendor_doc
+- id: ausschreibungen-staatsanzeiger-de-auftragnehmer-bieter-services-ai-bietercockpit-angebotsabgabe-einfach-sicher-staatsanzeiger-evergabe
+  label: Bieter-Tool mit DE-Server, lokaler Verschlüsselung, Plausibilitätsprüfung, qualifizierter Signatur
+  url: https://ausschreibungen.staatsanzeiger.de/auftragnehmer-bieter/services/ai-bietercockpit-angebotsabgabe-einfach-sicher-staatsanzeiger-evergabe/
+  type: vendor_doc
+- id: ai-ag-de-ai-bietercockpit
+  label: "Administration Intelligence AG (Hersteller): Ende-zu-Ende-Verschlüsselung, Signaturanforderungen, Offline-Bearbeitung"
+  url: https://ai-ag.de/ai-bietercockpit/
+  type: vendor_doc
+- id: hannover-de-content-download-916331-file-leitfaden-20-20ai-20bietercockpit-20-f-c3-bcr-20bieter-innen-20und-20bewerber-innen-20-20stand-2010-03-2023-pdf
+  label: Region Hannover — amtlicher 48-seitiger Leitfaden (2023) macht AI Bietercockpit zur Pflicht für alle Vergabeverfahren der Region; belegt flächendeckenden institutionellen Einsatz
+  url: https://www.hannover.de/content/download/916331/file/Leitfaden%20-%20AI%20Bietercockpit%20(f%C3%BCr%20Bieter_innen%20und%20Bewerber_innen)%20-%20Stand%2010.03.2023.pdf
+  type: gov
+- id: ionos-de-newsroom-news-souveraene-ki-fuer-kleine-unternehmen-ionos-integriert-mistral-nemo-in-den-ai-model-hub
+  label: IONOS Newsroom — Mistral NeMo integration
+  url: https://www.ionos.de/newsroom/news/souveraene-ki-fuer-kleine-unternehmen-ionos-integriert-mistral-nemo-in-den-ai-model-hub/
+  type: documentation
+- id: learn-microsoft-com-en-us-dynamics365-release-plan-2024wave2-sales-microsoft-copilot-sales-post-meeting-ai-generated-summary-emails-customer-follow-up
+  label: GA seit 30. Nov 2024, AI-Drafts mit verbessertem Tonalitäts-Alignment
+  url: https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave2/sales/microsoft-copilot-sales/post-meeting-ai-generated-summary-emails-customer-follow-up
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-faqs-meeting-follow-up
+  label: Microsoft warnt explizit vor Lücken — User-Review nötig
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/faqs-meeting-follow-up
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-privacy-eudb-eu-data-boundary-ongoing-partial-transfers
+  label: EUDB ist Default für CRM in Europa, aber Flex-Routing kann unter Last in US/CA/AU verlagern
+  url: https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-ongoing-partial-transfers
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-microsoft-365-copilot-connect-to-ai-subprocessor
+  label: Anthropic-Modelle in EU/EFTA/UK standardmäßig OFF
+  url: https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor
+  type: vendor_doc
+- id: ad-hoc-news-de-boerse-news-ueberblick-betriebsvereinbarungen-2026-ki-und-zeiterfassung-treiben-verhandlungen-68657028
+  label: Copilot-Roll-out ohne Rahmen-Betriebsvereinbarung führt regelmäßig zu Blockaden
+  url: https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebsvereinbarungen-2026-ki-und-zeiterfassung-treiben-verhandlungen/68657028
+  type: news
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-sales-m365-copilot-faq
+  label: FAQ-Diskussion zu Limits (Mail-Mindestlänge, Trigger-Bedingungen)
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/sales-m365-copilot-faq
+  type: vendor_doc
+- id: salesforce-com-artificial-intelligence-use-cases-sales-meeting-support
+  label: Agentforce-Action 'Email Meeting Follow-Up' grundet Mail in CRM und Call-Daten
+  url: https://www.salesforce.com/artificial-intelligence/use-cases/sales-meeting-support/
+  type: vendor_doc
+- id: salesforce-com-blog-sales-cloud-product-release
+  label: "Spring '26 Release: Review-Before-Send + ECI-Transcripts in 30 min"
+  url: https://www.salesforce.com/blog/sales-cloud-product-release/
+  type: blog
+- id: compound-law-en-de-tools-salesforce-einstein
+  label: Einstein erfordert eigenes AVV plus EU-Datenresidenz-Konfiguration
+  url: https://compound.law/en-DE/tools/salesforce-einstein/
+  type: documentation
+- id: avoma-com-blog-fathom-alternatives
+  label: Avoma automatisiert Workflow inkl. Recap-Email und CRM-Sync
+  url: https://avoma.com/blog/fathom-alternatives
+  type: vendor_doc
+- id: g2-com-compare-avoma-vs-fathom-video
+  label: "G2-Reviewer: Speed der Recap-Mails treibt schnelleren Versand"
+  url: https://www.g2.com/compare/avoma-vs-fathom-video
+  type: review
+- id: demodesk-com-de-solutions-ai-assistant
+  label: Demodesk transkribiert, fasst zusammen und schreibt versandfertige Recap-Mails; Hosting in DE
+  url: https://demodesk.com/de/solutions/ai-assistant
+  type: vendor_doc
+- id: demodesk-com
+  label: AI Crew mit autonomen Agenten, GDPR-compliant, Made in DE/US
+  url: https://demodesk.com/
+  type: vendor_doc
+- id: youtube-com-watch-v-zq4lvtdam44
+  label: HubSpot AI Meeting Notetaker generiert Summaries, Action Items, Follow-up-Tasks im CRM
+  url: https://www.youtube.com/watch?v=zq4LVtdAM44
+  type: vendor_doc
+- id: knowledge-hubspot-com-ai-use-breeze-assistant
+  label: Breeze Assistant draftet Sales-Emails inkl. Recap nach Lifecycle-Stage
+  url: https://knowledge.hubspot.com/ai/use-breeze-assistant
+  type: vendor_doc
+- id: meetjamie-ai
+  label: Bot-frei, EU-Hosting, kein Modell-Training, 100+ Sprachen
+  url: https://www.meetjamie.ai/
+  type: vendor_doc
+- id: tooliverse-ai-tools-jamie
+  label: "Unabhängige Review-Plattform (Dez 2025): Bot-freies Privacy-First-Modell bestätigt; CRM-Integrationen begrenzt; €39/User/Monat (Team); Enterprise-Tier mit SSO + Datenresidenz ab 10 User"
+  url: https://tooliverse.ai/tools/jamie
+  type: review
+- id: leexi-ai-en
+  label: ISO 27001, France-Hosting, GDPR, automatischer Recap und CRM-Sync
+  url: https://www.leexi.ai/en/
+  type: vendor_doc
+- id: leexi-ai-en-use-cases-sales-customer-success
+  label: Sales-Recap-Templates per MEDDIC/BANT, strukturierte Follow-up-Tasks
+  url: https://www.leexi.ai/en/use-cases/sales-customer-success/
+  type: vendor_doc
+- id: tekpon-com-software-leexi-reviews
+  label: "115 User-Reviews, 4,9/5: Follow-up-E-Mail und CRM-Sync als Kernfeatures bestätigt; Daten in Frankreich, ISO 27001 + GDPR; Starter ab $12/User/Monat"
+  url: https://tekpon.com/software/leexi/reviews
+  type: review
+- id: help-bliro-io-en-articles-9502217-bliro-and-gdpr
+  label: Bliro begründet auf Art. 6(1)(f) DSGVO, da kein Audio/Video-Mitschnitt — kein § 201 StGB-Tatbestand
+  url: https://help.bliro.io/en/articles/9502217-bliro-and-gdpr
+  type: vendor_doc
+- id: bliro-io-en
+  label: ISO27001 + SOC 2 + EU-Hosting + GDPR-Audit durch Kertos
+  url: https://bliro.io/en
+  type: vendor_doc
+- id: omr-com-en-reviews-product-bliro
+  label: "OMR Reviews (48 DACH-Bewertungen): kein-Bot-Ansatz und DSGVO-konformes Setup bestätigt; Transkription bei Eigennamen/Fachbegriffen gelegentlich ungenau"
+  url: https://omr.com/en/reviews/product/bliro
+  type: review
+- id: kickscale-com-en-blog-kickscale-iso-27001-compliance-advantage-us-competitors-cannot-buy
+  label: ISO27001-zertifiziert, 100% DE-Hosting, EU-Jurisdiktion, explizit Anti-Gong-Positionierung
+  url: https://www.kickscale.com/en/blog/kickscale-iso-27001-compliance-advantage-us-competitors-cannot-buy
+  type: vendor_doc
+- id: kickscale-com-de
+  label: AI-Notetaker mit automatischen Follow-up-Mails, CRM-Updates und Deal-Health-Score
+  url: http://www.kickscale.com/de
+  type: vendor_doc
+- id: omr-com-en-reviews-product-kickscale
+  label: "OMR Reviews 117 Bewertungen, 4,8/5: Follow-up-E-Mails explizit gelobt, Vertriebsanalyse bestätigt; KI-Inhalte teils generisch; DE-Server + ISO27001 verifiziert"
+  url: https://omr.com/en/reviews/product/kickscale
+  type: review
+- id: champions-salesloft-com-product-updates-50
+  label: "März 2026 Release: One-Click Recap-Mail aus Call-Summary direkt nach Salesloft"
+  url: https://champions.salesloft.com/product-updates/50
+  type: documentation
+- id: salesloft-com-platform-conversations-conversation-agents
+  label: "Conversations Agent: Notes, Summary, Follow-up-Email automatisch"
+  url: https://salesloft.com/platform/conversations/conversation-agents
+  type: documentation
+- id: revops-tools-aviso
+  label: RevOps-Tools-Review positioniert Aviso als prescriptive Alternative; Genauigkeit von ±20% auf ±5% verbessert.
+  url: https://revops.tools/aviso/
+  type: review
+- id: aviso-com-platform
+  label: Aviso Learn nutzt RNN/LSTM/Gradient Boosted Methods/NLP; Multi-CRM Forecasting fuer Salesforce + Dynamics.
+  url: https://www.aviso.com/platform/
+  type: vendor_doc
+- id: clari-com-products-forecast
+  label: "Vendor-Claim: 98% Forecast-Genauigkeit ab Woche 2 des Quartals; 75.000+ Teams."
+  url: https://www.clari.com/products/forecast/
+  type: vendor_doc
+- id: therevopsreport-com-tools-clari
+  label: RevOps-Review bestaetigt Clari als staerkste dedizierte Forecasting-Plattform; Salesloft-Merger als Risikofaktor.
+  url: https://therevopsreport.com/tools/clari/
+  type: review
+- id: prospeo-io-s-clari-pricing-reviews-pros-and-cons
+  label: G2 4.6/5 ueber 5.588 Reviews; Forecasting-Genauigkeit und Salesforce-Integration als Top-Themen.
+  url: https://prospeo.io/s/clari-pricing-reviews-pros-and-cons
+  type: review
+- id: clari-com-security-addendum
+  label: Clari Services Customer Data Hosting in US-east region; nur Salesloft Services haben EU-Optionen (AWS eu-central-1, GCP…
+  url: https://www.clari.com/security-addendum
+  type: vendor_doc
+- id: reddit-com-r-revops-comments-1lz953i-forecasting-software
+  label: r/revops-Praktiker bestaetigt Clari erreicht <2% Dispersion bei guter Nutzung.
+  url: https://www.reddit.com/r/revops/comments/1lz953i/forecasting_software/
+  type: community
+- id: trustradius-com-compare-products-clari-vs-gong-io
+  label: TrustRadius-Reviewer benennt Clari als Forecast-Tool of choice, kritisieren aber UI und gelegentliches Verschwinden von…
+  url: https://www.trustradius.com/compare-products/clari-vs-gong-io
+  type: review
+- id: oliv-ai-blog-gong-forecasting
+  label: "Marktrealitaet: Gong CI-Rating 8/10, Forecasting 4/10; Companies kombinieren Gong+Clari fuer ~$500/User/Monat."
+  url: https://oliv.ai/blog/gong-forecasting
+  type: blog
+- id: blog-oliv-ai-blog-gong-vs-clari
+  label: "User-Reviews mit konkreten Zitaten: Gong UI 'too complicated', Pipeline-Management problematisch."
+  url: https://blog.oliv.ai/blog/gong-vs-clari
+  type: review
+- id: aiagentsquare-com-compare-hubspot-ai-vs-salesforce-einstein-html
+  label: "Vergleichstabelle: HubSpot Forecast-Genauigkeit 85-88%, AI inkludiert in Base Pricing, schnelleres Setup als Salesforce."
+  url: https://aiagentsquare.com/compare/hubspot-ai-vs-salesforce-einstein.html
+  type: review
+- id: learn-microsoft-com-en-us-dynamics365-sales-configure-premium-forecasting
+  label: "Microsoft-Doku beschreibt Premium-Forecasting-Architektur: AI-Modelle auf historischen Daten + Open Pipeline."
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/configure-premium-forecasting
+  type: documentation
+- id: learn-microsoft-com-en-us-dynamics365-sales-analyze-revenue-outcome-using-predictive-forecasting
+  label: "Konkrete Forecast-Outputs: Predicted from open, Predicted from new, Total prediction, plus Influencing Factors."
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/analyze-revenue-outcome-using-predictive-forecasting
+  type: documentation
+- id: pigment-com-plans
+  label: "Pigment AI Modeler + Analyst Agent: Modelle in natuerlicher Sprache, Anomalie-Erkennung, Reports."
+  url: https://www.pigment.com/plans
+  type: vendor_doc
+- id: planflamingo-com-revenue-forecasting
+  label: Implementierungs-Partner positioniert Pigment fuer Pipeline-zu-Bookings-Translation aus CRM heraus.
+  url: https://planflamingo.com/revenue-forecasting
+  type: blog
+- id: eesel-ai-en-blog-salesforce-einstein-ai-accuracy
+  label: "Aberdeen-Research: 79% Forecast-Genauigkeit, 28% ueber Non-AI; Kontext: ausgereifte Deployments mit sauberen Daten."
+  url: https://eesel.ai/en/blog/salesforce-einstein-ai-accuracy
+  type: blog
+- id: salesloft-com-platform-forecast-ai-forecast
+  label: AI Forecast Agent analysiert Pipeline + Buyer-Interactions + historische Outcomes.
+  url: https://salesloft.com/platform/forecast/AI-forecast
+  type: vendor_doc
+- id: kickscale-com-en-blog-why-european-sales-leaders-choose-kickscale-over-gong
+  label: Vendor positioniert sich explizit als europaeische Gong-Alternative mit EU-Hosting und niedrigerem Preis.
+  url: https://www.kickscale.com/en/blog/why-european-sales-leaders-choose-kickscale-over-gong
+  type: vendor_doc
+- id: spadoom-com-en-blog-whats-new-sap-sales-cloud-v2-q1-2026
+  label: "SAP Sales Cloud V2 Q1 2026: Joule Studio GA, Deal Intelligence mit Forecast-Integration, Drilldown nach Territory/Produ…"
+  url: https://www.spadoom.com/en/blog/whats-new-sap-sales-cloud-v2-q1-2026/
+  type: blog
+- id: help-sap-com-doc-75d5f3aa99e9494896c97efd9e728c4f-cloud-en-us-ise-add-on-c4s-pdf-pdf
+  label: SAP Intelligent Sales Execution mit Pipeline Manager, Forecast Tracker, ML-basiertem Opportunity Scoring.
+  url: https://help.sap.com/doc/75d5f3aa99e9494896c97efd9e728c4f/CLOUD/en-US/ISE-Add-On-C4S-PDF.pdf
+  type: documentation
+- id: tacton-com-buyer-engagement-platform-artificial-intelligence
+  label: Tacton AI Modeling Assistant erzeugt CPQ-Modelle aus unstrukturierten Produktunterlagen (PDF, CAD, Excel) mit Human-in-…
+  url: https://www.tacton.com/buyer-engagement-platform/artificial-intelligence/
+  type: vendor_doc
+- id: tacton-com-cpq-blog-respond-to-rfq-faster
+  label: GenAI-Pipeline für RFQ-Extraktion aus 50-seitigen PDFs in Konfigurationslogik
+  url: https://www.tacton.com/cpq-blog/respond-to-rfq-faster/
+  type: vendor_doc
+- id: gartner-com-reviews-product-tacton-cpq
+  label: "Praktiker-Kritik: starkes IT-Team nötig, UI komplexer als andere CPQ, abhängig von gut strukturierten Produktdaten"
+  url: https://www.gartner.com/reviews/product/tacton-cpq
+  type: review
+- id: rotring-data-ch-loesungen-tacton-tacton-cpq
+  label: DACH-Partnernetz (ROTRING DATA in CH) für Maschinen-/Anlagenbau-Implementierungen seit 2018
+  url: https://www.rotring-data.ch/loesungen/tacton/tacton-cpq
+  type: vendor_doc
+- id: tacton-com-cpq-blog-ai-data-security-questions
+  label: Tacton positioniert sich 2026 explizit zu AI-Datensicherheits-Fragen für Hersteller
+  url: https://www.tacton.com/cpq-blog/ai-data-security-questions/
+  type: vendor_doc
+- id: cas-merlin-de-branchen-maschinen-anlagenbau
+  label: AIA Optimization und AIA Configuration als KI-gestützte Module für Sondermaschinenbau
+  url: https://cas-merlin.de/branchen/maschinen-anlagenbau/
+  type: vendor_doc
+- id: cas-de-branchen-cpq-im-maschinen-und-anlagenbau
+  label: Direkte Abbildung von ETO/CTO/ATO-Angebotsarten im DACH-Maschinenbau
+  url: https://cas.de/branchen/cpq-im-maschinen-und-anlagenbau
+  type: vendor_doc
+- id: combeenation-com-cpq-im-maschinenbau
+  label: Sondermaschinenbau-Use-Case mit BOM-Generation und Plausibilitätsprüfung auf Knopfdruck
+  url: https://www.combeenation.com/cpq-im-maschinenbau/
+  type: vendor_doc
+- id: orisa-de-en-ai-cpq
+  label: Eigener regelbasierter KI-Konfigurator für Industriekessel/Laser/etc., Pflege per Attributzuweisung
+  url: https://www.orisa.de/en/ai-cpq
+  type: vendor_doc
+- id: spadoom-com-de-loesungen-configure-price-quote-cpq
+  label: SAP CPQ-Implementierungspartner für DACH-Maschinenbauer mit Quote-zu-S/4HANA-Auftragsanlage inkl. Stückliste
+  url: https://www.spadoom.com/de/loesungen/configure-price-quote-cpq/
+  type: vendor_doc
+- id: guideflow-com-blog-best-cpq-software
+  label: Marktvergleich positioniert SAP CPQ als ETO-fähigen Standard im SAP-Ökosystem
+  url: https://www.guideflow.com/blog/best-cpq-software
+  type: review
+- id: reddit-com-r-oraclecpq
+  label: Community-Diskussion zu CPQ-Auswahl mit SAP/Oracle/DealHub/Conga; gemischte Stimmung zu Enterprise-CPQs
+  url: https://www.reddit.com/r/OracleCPQ/
+  type: community
+- id: hivecpq-com
+  label: ISO-27001-Zertifizierung als zentrale Compliance-Botschaft
+  url: https://hivecpq.com/
+  type: vendor_doc
+- id: klarocpq-com
+  label: Industrieller CPQ-Anbieter mit Metso-Outotec-Referenz und 80% Quoting-Beschleunigung
+  url: http://klarocpq.com/
+  type: vendor_doc
+- id: rattleapp-de
+  label: DE-Hosting, GDPR, BOM-Explosion und KI-gestützte EN/ISO-Compliance-Prüfung
+  url: https://www.rattleapp.de/
+  type: vendor_doc
+- id: camos-de-de-camos-cpq-ki
+  label: Vendor-Eigenbeschreibung des KI-Moduls inkl. ML-basierter Preis-/Rabattoptimierung und GenAI-Angebotscontent
+  url: https://www.camos.de/de/camos-cpq/ki
+  type: vendor_doc
+- id: camos-de-de-cpq-loesung-camos-cpq-configure-produktkonfiguration-mit-camos-cpq-365
+  label: KI-Konfigurationsempfehlungen direkt im Konfigurator – passt zur Anforderung 'Empfehlung passend zu Kundenanforderungen'
+  url: https://www.camos.de/de/cpq-loesung/camos-cpq/configure-produktkonfiguration-mit-camos-cpq-365
+  type: vendor_doc
+- id: camos-de-de-info-center-preis-und-kostenkalkulation-im-anlagenbau-mit-cpq
+  label: Costing-Modul für ETO-Anlagenbau mit Material-, Engineering-, Simulations- und AV-Kosten
+  url: https://www.camos.de/de/info-center/preis-und-kostenkalkulation-im-anlagenbau-mit-cpq
+  type: vendor_doc
+- id: softwarereviews-com-products-camos-cpq-c-id-267
+  label: "Info-Tech/SoftwareReviews: 21 verified peer reviews, Composite 7.0/10, CX 7.3/10, +84 Net Emotional Footprint, 86% positive, 96% plan to renew; Rules Engine 86/100 (top-rated feature)"
+  url: https://www.softwarereviews.com/products/camos-cpq?c_id=267
+  type: review
+- id: omr-com-de-reviews-product-camos-cpq
+  label: "OMR Reviews (DACH-Marktplatz): 8 verifizierte Reviews, 4.6/5 Gesamtnote; Benutzerfreundlichkeit 8.8 (Kategorie-Ø 8.1), Anforderungserfüllung 9.3 (Ø 8.8), Kundensupport 9.5 (Ø 8.1)"
+  url: https://omr.com/de/reviews/product/camos-cpq
+  type: review
+- id: configit-com-news-configit-announces-the-latest-product-updates
+  label: Generativ-KI-Modellgeneration und Configit Quote Erweiterungen für komplexe Quotations
+  url: https://configit.com/news/configit-announces-the-latest-product-updates/
+  type: vendor_doc
+- id: configit-com-integrations-salesforce-cpq-and-configit-ace
+  label: BYOC-Integration mit Salesforce CPQ als Konfigurations-Engine für hochkomplexe Produkte
+  url: https://configit.com/integrations/salesforce-cpq-and-configit-ace/
+  type: vendor_doc
+- id: bloorresearch-com-configit-management-of-variants
+  label: "Bloor Research (Jun 2024), unabhängiger UK-Analyst: empfiehlt Configit explizit; validiert Virtual-Tabulation-Technologie, 200+ Enterprise-Kunden, starkes Partnernetz (PwC, Infosys, NVIDIA); 'well worth looking at'"
+  url: https://www.bloorresearch.com/configit-management-of-variants/
+  type: review
+- id: encoway-de-services-betriebsmodelle
+  label: EU-Hosting (Azure West Europe), ISO 27001/SOC2 und On-Premises-Option
+  url: https://www.encoway.de/services/betriebsmodelle/
+  type: vendor_doc
+- id: encoway-de-en-news-ai-innovations-at-encoway-lab
+  label: encoway LAB als kontrollierte GenAI-Forschungseinheit auf Symbolic-AI-Basis
+  url: https://www.encoway.de/en/news/ai-innovations-at-encoway-lab/
+  type: vendor_doc
+- id: cuspera-com-products-encoway-cpq-x-13324
+  label: "Cuspera aggregierte Peer-Reviews: 4.05/5 aus 99 Reviews (G2, Gartner Peer Insights, LinkedIn u.a.); AI-Powered-Feature 2.93/5 – bestätigt unabhängig, dass GenAI-Layer noch nicht production-ready ist"
+  url: https://cuspera.com/products/encoway-cpq-x-13324
+  type: review
+- id: cognism-com-de-compliance
+  label: Offizielle DSGVO-Compliance-Seite (deutsch) mit Art. 14, 15-DNC-Listen, ISO 27001/27701 und SOC 2 II.
+  url: https://www.cognism.com/de/compliance
+  type: vendor_doc
+- id: datastackguide-com-tools-cognism
+  label: Vergleich der EMEA/DACH-Coverage gegen ZoomInfo/Apollo.
+  url: https://datastackguide.com/tools/cognism/
+  type: review
+- id: unifygtm-com-explore-b2b-data-providers-european-coverage
+  label: "Unabhaengige Marktuebersicht: Cognism fuehrt fuer UK/DACH inkl. nachvollziehbarer DSGVO-Dokumentation."
+  url: https://www.unifygtm.com/explore/b2b-data-providers-european-coverage
+  type: review
+- id: resolve247-ai-blog-hubspot-breeze
+  label: Predictive Lead Scoring ist Enterprise-only; Pricing-Tiering und Credit-Modell.
+  url: https://resolve247.ai/blog/hubspot-breeze/
+  type: review
+- id: reddit-com-r-hubspot-comments-1lv6lcz-how-good-is-hubspots-manual-lead-scoring-versus-a
+  label: Reddit-Diskussion ueber HubSpot manuelles vs predictive Scoring; Praktiker bewerten Predictive als teuer und 'kind of a…
+  url: https://www.reddit.com/r/hubspot/comments/1lv6lcz/how_good_is_hubspots_manual_lead_scoring_versus_a/
+  type: community
+- id: genesysgrowth-com-blog-clearbit-vs-explorium-vs-madkudu
+  label: Glass-Box-Differenzierung und PLG-Fokus mit messbarem Conversion-Lift.
+  url: https://genesysgrowth.com/blog/clearbit-vs-explorium-vs-madkudu
+  type: review
+- id: breadcrumbs-io-blog-breadcrumbs-and-madkudu
+  label: Akquisition Breadcrumbs durch MadKudu (Okt 2024) staerkt Signal-based-Selling-Position.
+  url: https://breadcrumbs.io/blog/breadcrumbs-and-madkudu
+  type: vendor_doc
+- id: reddit-com-r-salesforce-comments-1o15x0a-any-experience-with-lead-scoring
+  label: Reddit-Praktiker empfehlen MadKudu (neben Default) als ernstzunehmende Option neben 6sense/Leadspace.
+  url: https://www.reddit.com/r/salesforce/comments/1o15x0a/any_experience_with_lead_scoring/
+  type: community
+- id: learn-microsoft-com-en-us-dynamics365-sales-digital-selling-scoring
+  label: Offizielle Doku zu Lead/Opportunity Scoring inkl. Lizenzanforderung und 1.500 Records/Monat.
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring
+  type: vendor_doc
+- id: aismartventures-com-posts-microsoft-copilot-for-sales-vs-salesforce-einstein-which-ai-wins-in-2026
+  label: "Vergleich Copilot for Sales vs Einstein: Einstein nativ staerker beim Predictive Scoring, Microsoft punktet bei Outlook…"
+  url: https://aismartventures.com/posts/microsoft-copilot-for-sales-vs-salesforce-einstein-which-ai-wins-in-2026/
+  type: review
+- id: dynamicscommunities-com-ug-dynamics-ce-crm-ug-smarter-selling-with-predictive-lead-scoring-in-dynamics-365-sales
+  label: Community/User-Group-Beitrag eines Dynamics-Praktikers, der Setup, Voraussetzungen und Nutzung beschreibt.
+  url: https://dynamicscommunities.com/ug/dynamics-ce-crm-ug/smarter-selling-with-predictive-lead-scoring-in-dynamics-365-sales
+  type: community
+- id: prospeo-io-s-ai-lead-scoring-tools
+  label: Realistische Mid-Market-Kosten und Implementierungszeit fuer Einstein.
+  url: https://prospeo.io/s/ai-lead-scoring-tools
+  type: review
+- id: business-adobe-com-blog-agentic-ai-redefining-user-experience-marketing-ops
+  label: "Adobe-Blog 2026: Agentic-AI-Erweiterungen fuer Datenmanagement und Analytics in Marketo Engage."
+  url: https://business.adobe.com/blog/agentic-ai-redefining-user-experience-marketing-ops
+  type: vendor_doc
+- id: docs-oracle-com-en-cloud-saas-sales-fasqa-how-does-the-ai-lead-score-get-calculated-html
+  label: "Doku: Oracle Sales AI Lead Score 0-100%, alle 12h re-kalkuliert auf Basis historischer Won/Lost-Daten."
+  url: https://docs.oracle.com/en/cloud/saas/sales/fasqa/how-does-the-ai-lead-score-get-calculated.html
+  type: vendor_doc
+- id: docs-oracle-com-en-cloud-saas-marketing-eloqua-user-help-leadscoring-leadscoring-htm
+  label: Eloqua Lead-Scoring-Modell (Profile A-D + Engagement 1-4); mehrere parallele Modelle moeglich.
+  url: https://docs.oracle.com/en/cloud/saas/marketing/eloqua-user/Help/LeadScoring/LeadScoring.htm
+  type: vendor_doc
+- id: learning-sap-com-courses-configuring-sap-sales-cloud-version-2-leveraging-machine-learning-for-intelligent-sales-and-lead-scoring
+  label: Offizielle SAP-Learning-Beschreibung von Lead Intelligence (kundenspezifisches predictive Modell aus historischen Conve…
+  url: https://learning.sap.com/courses/configuring-sap-sales-cloud-version-2/leveraging-machine-learning-for-intelligent-sales-and-lead-scoring
+  type: vendor_doc
+- id: erp-today-sap-embeds-ai-across-cx-in-q1-2026-release
+  label: "Aktuelle SAP-CX-Roadmap (Q1 2026): AI quer ueber Sales/Service/Marketing, Email-to-Quote als sichtbarstes Beispiel - ko…"
+  url: https://erp.today/sap-embeds-ai-across-cx-in-q1-2026-release/
+  type: news
+- id: compelling-ai
+  label: DACH-Anbieter mit EU-Hosting und Compliance-Positionierung.
+  url: https://www.compelling.ai/
+  type: vendor_doc
+- id: everlead-ai
+  label: DACH-Plattform mit DSGVO-konformem KI-Lead-Scoring.
+  url: https://www.everlead.ai/
+  type: vendor_doc
+- id: qymatix-de
+  label: Deutscher B2B-Predictive-Sales-Anbieter mit ERP-/CRM-Integration.
+  url: https://qymatix.de/
+  type: vendor_doc
+- id: observe-ai-real-time-agent-assist
+  label: Observe.AI Real-Time Agent Assist liefert visuelle Checklisten, dynamische Prompts mit Scripts und Alerts auf Hold-Zeit…
+  url: https://www.observe.ai/real-time/agent-assist
+  type: vendor_doc
+- id: prospeo-io-s-cresta-alternatives
+  label: Observe.AI im Drittanbieter-Vergleich als stärkstes G2-Profil der Kategorie, $60k–180k/Jahr Enterprise-Pricing
+  url: https://prospeo.io/s/cresta-alternatives
+  type: review
+- id: help-gong-io-docs-by-gong-pre-trained-smart-trackers
+  label: Gong By-Gong Smart Trackers erkennen Konzepte wie Pricing-Reactions, Customer Objections, Competitor-Mentions und feuer…
+  url: https://help.gong.io/docs/by-gong-pre-trained-smart-trackers
+  type: vendor_doc
+- id: gong-io-blog-turning-good-revenue-teams-into-great-ones-the-power-of-insights-now-in-real-time
+  label: Gong-App für Zoom liefert Echtzeit-Hinweise auf Talk/Listen-Verhältnis und stille Stakeholder, ist aber als Behavior-Nu…
+  url: https://www.gong.io/blog/turning-good-revenue-teams-into-great-ones-the-power-of-insights-now-in-real-time
+  type: vendor_doc
+- id: oliv-ai-blog-gong-analytics
+  label: "Drittanbieter-Vergleich: Gong hat 5–10 Min Analyse-Lag und keine Live-Coaching-Capabilities; Real-Time-Lücke wird expli…"
+  url: https://www.oliv.ai/blog/gong-analytics
+  type: review
+- id: reddit-com-r-salesengineers-comments-1r3aiiz-how-are-you-using-ai
+  label: SEs nennen Gong als Best-in-Class für Call-Recording, Live-Coaching kommt im Workflow nicht vor
+  url: https://www.reddit.com/r/salesengineers/comments/1r3aiiz/how_are_you_using_ai/
+  type: community
+- id: marketplace-microsoft-com-en-us-product-saas-audiocodes-live-hub-for-teams-tab-overview
+  label: AudioCodes Live Hub ist Teams-Phone-/SIP-/CCaaS-natives Voice-AI-Layer mit Live-Agent-Assist als One-of-Many-Feature, B…
+  url: https://marketplace.microsoft.com/en-us/product/saas/audiocodes.live_hub_for_teams?tab=overview
+  type: vendor_doc
+- id: getcloseai-com
+  label: CloseAI liefert Live-Transkription, Unsicherheits-Erkennung, WhisperCoach-Echtzeit-Formulierungen und Bildschirm-Analys…
+  url: https://getcloseai.com/
+  type: vendor_doc
+- id: five9-com-products-capabilities-agent-assist
+  label: Five9 AI Agent Assist bietet Real-Time Guidance Cards, Checklisten, Live-Transkription und GenAI-Summaries — explizit a…
+  url: https://www.five9.com/products/capabilities/agent-assist
+  type: vendor_doc
+- id: salesmatrix-org
+  label: Salesmatrix liefert EU-Hosting, integrierte Consent-Einholung, Anonymisierungs-Modus und Private-Cloud-Tier sowie Live-…
+  url: https://salesmatrix.org/
+  type: vendor_doc
+- id: bao-ai
+  label: "bao positioniert sich als Europe's #1 Conversation-Intelligence-Plattform mit DSGVO-konformer Aufnahme, Live-Leitfäden…"
+  url: https://bao.ai/
+  type: vendor_doc
+- id: omr-com-de-reviews-product-bao
+  label: bao auf OMR Reviews (DACH-Referenzplattform) in Kategorie Conversation Intelligence gelistet — 0 Bewertungen vorhanden, bestätigt Marktpräsenz ohne unabhängige Nutzervalidierung
+  url: https://omr.com/de/reviews/product/bao
+  type: review
+- id: genesys-com-en-gb-capabilities-agent-assist
+  label: Genesys Cloud Agent Copilot liefert Real-Time-Assistance mit Custom Scripting, Tool-/Form-Surfacing und Next-Action-Vor…
+  url: https://www.genesys.com/en-gb/capabilities/agent-assist
+  type: vendor_doc
+- id: trustradius-com-products-genesys-cloud-reviews
+  label: Genesys Cloud 4.3/5 aus 469 TrustRadius-Reviews; Agent Copilot explizit als Key Feature gelistet (real-time agent assistance, AI Copilot nativ in allen Plänen enthalten)
+  url: https://www.trustradius.com/products/genesys-cloud/reviews
+  type: review
+- id: genesys-com-company-newsroom-announcements-genesys-ranked-as-a-leader-in-cloud-contact-center-report-by-top-analyst-firm
+  label: "Genesys: Forrester Wave Q2 2025 Leader für CCaaS — höchste Scores für AI-Architektur und GenAI/LLM-Support; 'top-notch tools for agents and supervisors'; 11. Jahr in Folge im Gartner MQ als Leader"
+  url: https://genesys.com/company/newsroom/announcements/genesys-ranked-as-a-leader-in-cloud-contact-center-report-by-top-analyst-firm
+  type: review
+- id: help-gong-io-docs-get-ready-for-meetings-with-ai-powered-meeting-prep
+  label: Gong AI Meeting Prep Page mit Teilnehmer-Drilldowns, Brief-Generation und Push 30 min vor jedem externen Meeting.
+  url: https://help.gong.io/docs/get-ready-for-meetings-with-ai-powered-meeting-prep
+  type: vendor_doc
+- id: reddit-com-r-customersuccess-comments-1ov8bwc-do-you-actually-watch-sales-call-recordings-like
+  label: Praktiker setzen Gong-AI-Summaries gezielt vor Kickoffs ein und vermissen sie nach Wegfall.
+  url: https://www.reddit.com/r/CustomerSuccess/comments/1ov8bwc/do_you_actually_watch_sales_call_recordings_like/
+  type: community
+- id: help-gong-io-v1-docs-understanding-ai-briefer
+  label: AI Briefer generiert strukturierte Briefs für Accounts, Deals, Calls und Contacts aus Konversationen, Mails, CRM und Web.
+  url: https://help.gong.io/v1/docs/understanding-ai-briefer
+  type: vendor_doc
+- id: prospeo-io-s-clari-vs-gong
+  label: Reddit-Threads weisen auf $50K-Plattformgebühr und gelegentliche Recording-/AI-Fehler hin.
+  url: https://prospeo.io/s/clari-vs-gong
+  type: review
+- id: cxtoday-com-marketing-sales-technology-hubspot-aeo-context-aware-ai-updates
+  label: Spring Spotlight 2026 erweitert Breeze Assistant um Website-Analytics, Kampagnendaten und Kunden-Records.
+  url: https://www.cxtoday.com/marketing-sales-technology/hubspot-aeo-context-aware-ai-updates/
+  type: news
+- id: aiproductivity-ai-guides-hubspot-breeze-assistant-guide
+  label: Mobile-Use-Case 'Brief mich auf das 14-Uhr-Meeting' explizit dokumentiert.
+  url: https://aiproductivity.ai/guides/hubspot-breeze-assistant-guide/
+  type: blog
+- id: knowledge-hubspot-com-prospecting-use-meeting-assistant-in-the-prospecting-workspace
+  label: HubSpot Sales Workspace bietet Prepare-Sektion mit Aktivitäten und Insights vor Meetings.
+  url: https://knowledge.hubspot.com/prospecting/use-meeting-assistant-in-the-prospecting-workspace
+  type: documentation
+- id: cotera-co-articles-best-ai-sales-tools-guide
+  label: "Praktiker-Bewertung: HubSpot-CRM solide, AI-Features teils 'bolted on'."
+  url: https://cotera.co/articles/best-ai-sales-tools-guide
+  type: review
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-meeting-prep
+  label: Meeting-Preparation-Card wird automatisch 1 h vor dem Meeting in Teams ausgespielt.
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/meeting-prep
+  type: vendor_doc
+- id: learn-microsoft-com-en-us-dynamics365-sales-copilot-stay-ahead
+  label: Dynamics 365 Copilot 'Prepare for sales meetings' aus Outlook-Kalender mit Insights aus Notes, Tasks, Cases.
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/copilot-stay-ahead
+  type: documentation
+- id: learn-microsoft-com-en-us-microsoft-sales-copilot-meeting-prep-sales-chat
+  label: Meeting Preparation in Microsoft 365 Copilot Sales Agent zeigt AI-Highlights und CRM-Daten konsolidiert.
+  url: https://learn.microsoft.com/en-us/microsoft-sales-copilot/meeting-prep-sales-chat
+  type: documentation
+- id: prospeo-io-s-ai-in-sales
+  label: MS Copilot for Sales als ~50 USD-Add-on für Microsoft-365-Teams positioniert.
+  url: https://prospeo.io/s/ai-in-sales
+  type: review
+- id: salesforce-com-sales-ai-sales-agent
+  label: Agentforce liefert Meeting-Briefs in Slack/ChatGPT/Mobile mit Firmenüberblick, jüngsten Konversationen und Webupdates.
+  url: https://www.salesforce.com/sales/ai-sales-agent/
+  type: vendor_doc
+- id: trailhead-salesforce-com-content-learn-modules-einstein-summary-set-up-and-configure-einstein-summary
+  label: Einstein Summary auf Account-Objekt mit konfigurierbarem Prompt-Template direkt im Record.
+  url: https://trailhead.salesforce.com/content/learn/modules/einstein-summary/set-up-and-configure-einstein-summary
+  type: documentation
+- id: oliv-ai-blog-salesforce-einstein-features
+  label: Reddit-Praktiker kritisieren Reife einzelner Einstein-Features.
+  url: https://oliv.ai/blog/salesforce-einstein-features
+  type: review
+- id: salesforce-com-artificial-intelligence-use-cases-client-meeting-prep
+  label: Salesforce dokumentiert Client Meeting Prep als Standard-Use-Case mit Prompt-Templates für B2B/B2C-Profile.
+  url: https://www.salesforce.com/artificial-intelligence/use-cases/client-meeting-prep/
+  type: vendor_doc
+- id: reddit-com-r-aivoedge-comments-1ru9xdd-ai-praised-salesforce-then-recommended-hubspot
+  label: Salesforce wird in CRM-Kaufdiskussionen früh genannt, verliert aber bei Constraint-Prompts gegen HubSpot.
+  url: https://www.reddit.com/r/AIVOEdge/comments/1ru9xdd/ai_praised_salesforce_then_recommended_hubspot/
+  type: community
+- id: revops-tools-askelephant
+  label: AskElephant generiert vor Meetings Account-Briefs aus Calls/Mails/Slack/Docs und ist auf Rep-Handover spezialisiert.
+  url: https://revops.tools/askelephant/
+  type: review
+- id: gptfy-ai-resources-salesforce-ai-use-cases-pre-meeting-preparation
+  label: GPTfy generiert strukturierte Briefs aus echten Salesforce-Records inkl. Trigger via Flow.
+  url: https://gptfy.ai/resources/salesforce-ai-use-cases/pre-meeting-preparation
+  type: vendor_doc
+- id: gptfy-ai-resources-demo-pre-meeting-prep
+  label: Perplexity Sonar Deep Research direkt im Opportunity-Record über GPTfy Trust Layer.
+  url: https://gptfy.ai/resources/demo/pre-meeting-prep
+  type: vendor_doc
+- id: perplexity-ai-enterprise-use-cases-sales
+  label: Perplexity Enterprise bewirbt Sales-Use-Cases inkl. Lead/Wettbewerbs-Insights und Spaces als Recherche-Blueprints.
+  url: https://www.perplexity.ai/enterprise/use-cases/sales
+  type: vendor_doc
+- id: troyharrison-com-the-navigator-news-blog-how-to-use-perplexity-to-become-the-most-informed-salesperson-in-the-room
+  label: "Praktiker-Workflow: Liste hochladen, pro Konto 2-3 Hooks aus LinkedIn/News generieren."
+  url: https://www.troyharrison.com/the-navigator-news-blog/how-to-use-perplexity-to-become-the-most-informed-salesperson-in-the-room/
+  type: blog
+- id: chatgptguide-ai-perplexity-ai-assistant-features-capabilities
+  label: Pre-Meeting/Call Briefing als gelisteter Praktiker-Use-Case.
+  url: https://chatgptguide.ai/perplexity-ai-assistant-features-capabilities/
+  type: blog
+- id: rox-com-docs-product-research-pre-meeting-briefs
+  label: Rox Pre-Meeting Briefs werden automatisch aus Kalender + zugewiesenem Agent erzeugt.
+  url: https://www.rox.com/docs/product/research/pre-meeting-briefs
+  type: documentation
+- id: rox-com-security
+  label: Rox bewirbt SOC2 I/II, ISO 27001 und GDPR-Compliance auf Security-Seite.
+  url: https://www.rox.com/security
+  type: vendor_doc
+- id: salesmotion-io-agents-research-agent
+  label: Salesmotion Research Agent erstellt One-Click-Account-Briefs mit SWOT, Initiativen, Wettbewerbs-Kontext aus 1.000+ Quellen.
+  url: https://www.salesmotion.io/agents/research-agent
+  type: vendor_doc
+- id: sifthub-io-features-deal-briefs
+  label: SiftHub-Briefs sind in CRM-Daten, Call-Transkripten und Dokumenten gegroundet, jede Aussage mit Quelle/Timestamp.
+  url: http://www.sifthub.io/features/deal-briefs
+  type: vendor_doc
+- id: getventa-ai-de-gdpr-compliant-data
+  label: Venta AI wird in der EU entwickelt, DSGVO-konform in Deutschland betrieben, mit AVV-pflichtigen Anbietern.
+  url: https://www.getventa.ai/de/gdpr-compliant-data
+  type: vendor_doc
+- id: apollo-io-product-integrations-clay
+  label: Clay listet 'pre-call meeting notes' explizit als orchestrierten GTM-Workflow.
+  url: https://www.apollo.io/product/integrations/clay
+  type: vendor_doc
+- id: saleswave-ai-en
+  label: Saleswave hostet Daten in Deutschland und richtet Prozesse explizit an DSGVO aus.
+  url: https://www.saleswave.ai/en/
+  type: vendor_doc
+- id: spadoom-com-de-blog-whats-new-sap-sales-cloud-v2-q1-2026
+  label: Joule-Agent stellt vor Meeting Briefing aus Opportunities, Tickets, S/4HANA-Bestellhistorie zusammen.
+  url: https://www.spadoom.com/de/blog/whats-new-sap-sales-cloud-v2-q1-2026/
+  type: blog
+- id: marcgasser-com-en-tools-cognism
+  label: Cognism als 'Governance-First'-B2B-Datenanbieter mit GDPR-Real-Time-DNC-Check positioniert.
+  url: https://www.marcgasser.com/en/tools/cognism
+  type: review
+- id: resources-rework-com-news-sales-tech-cognism-sales-companion-vp-sales-evaluation
+  label: Cognism Sales Companion 'Research by Cortex AI' generiert automatisierte Account-Summaries für Outreach-Vorbereitung, primär für Kaltakquise ausgelegt.
+  url: https://resources.rework.com/news/sales-tech/cognism-sales-companion-vp-sales-evaluation
+  type: news
+- id: digitalbydefault-ai-blog-cognism-sales-intelligence-review-2026
+  label: Unabhängige EMEA-Review beschreibt Cognism explizit als 'data platform, not engagement platform' - kein Mention von Meeting Prep als Kernfunktion.
+  url: https://digitalbydefault.ai/blog/cognism-sales-intelligence-review-2026
+  type: review
+- id: syncgtm-com-blog-cognism-review
+  label: "Auswertung von 500+ G2-Reviews: Cognism liefert Kontaktdaten und Intent-Signale; keine strukturierten Meeting Prep Briefs als Feature dokumentiert."
+  url: https://syncgtm.com/blog/cognism-review
+  type: review
+- id: alignedbuyers-com
+  label: Aligned positioniert sich als AI Deal Workspace mit MAPs, AI-Stakeholder-Mapping und Risk/Intent-Signalen.
+  url: https://alignedbuyers.com/
+  type: vendor_doc
+- id: gartner-com-reviews-market-digital-sales-rooms
+  label: Gartner Peer Insights listet Aligned als etablierten DSR-Anbieter mit Fokus auf Stakeholder-Kollaboration und Engagement.
+  url: https://www.gartner.com/reviews/market/digital-sales-rooms
+  type: review
+- id: prospeo-io-s-aligned-pricing-reviews-pros-and-cons
+  label: Practitioner-Aggregat mit Reddit-Zitaten zu Engagement-Signalen und CRM-Sync-Lücke.
+  url: https://prospeo.io/s/aligned-pricing-reviews-pros-and-cons
+  type: community
+- id: dealhub-io-platform-dealroom
+  label: DealHub DealRoom enthält MAPs, Branded Rooms, Live Buyer Tracking, eSign und ist breit zertifiziert.
+  url: https://dealhub.io/platform/dealroom/
+  type: vendor_doc
+- id: learn-g2-com-best-digital-sales-room-software
+  label: "G2 listet Trumpet als #1 für interaktive Deal-Rooms mit MAP-Pods und 35+ Integrationen."
+  url: https://learn.g2.com/best-digital-sales-room-software
+  type: review
+- id: flowla-com-blog-best-ai-powered-digital-sales-room
+  label: "Vergleichsmatrix zeigt: Trumpet stark bei DSR-Grundlagen, schwach bei AI-Copilot und Execution-Workflows."
+  url: https://www.flowla.com/blog/best-ai-powered-digital-sales-room
+  type: review
+- id: trumpetcollaboroom-com
+  label: Trumpet zertifiziert nach SOC 2 Type II, ISO 27001 und GDPR-konform.
+  url: https://trumpetcollaboroom.com/
+  type: vendor_doc
+- id: dimmo-ai-products-trumpet-1
+  label: Sammlung von User-Reviews mit konkreten Limitations-Patterns (Chat, Mobile, Automation).
+  url: https://www.dimmo.ai/products/trumpet-1
+  type: review
+- id: getaccept-com
+  label: GetAccept positioniert AI-Agents für Buyer-Materialien, QES und SOC 2 / GDPR.
+  url: https://www.getaccept.com/
+  type: vendor_doc
+- id: getaccept-com-blog-raising-the-bar-on-deal-room-security-the-power-of-password-protection
+  label: Belegt Security-Fokus mit Passwortschutz, Verschlüsselung und QES für rechtsverbindliche Signaturen in EU.
+  url: https://www.getaccept.com/blog/raising-the-bar-on-deal-room-security-the-power-of-password-protection
+  type: vendor_doc
+- id: flowla-com-blog-top-15-digital-sales-room-software-side-by-side-comparison-faqs
+  label: "Flowla-Vergleich (15 DSR-Tools, G2-User-Zitate): GetAccept Deal Room enthält explizit Mutual Action Plans; G2-User loben Tracking, Usability und CRM-Integration."
+  url: https://www.flowla.com/blog/top-15-digital-sales-room-software-side-by-side-comparison-faqs
+  type: review
+- id: clari-com-products-align
+  label: Clari Align kombiniert MAPs mit Forecast-Intent-Daten und Templates für Buyer-Collaboration.
+  url: https://www.clari.com/products/align
+  type: vendor_doc
+- id: outreach-io-resources-blog-mutual-action-plans
+  label: Outreach beschreibt Success Plans als eingebettetes MAP-Tool mit CRM-Mapping und Methodologie-Templates.
+  url: https://www.outreach.io/resources/blog/mutual-action-plans
+  type: vendor_doc
+- id: reddit-com-r-salesforce-comments-1q5rkq0-salesforce-labs-action-plans
+  label: "r/salesforce-Thread bestätigt: Action Plans sind in Sales Cloud nativ verfügbar, externe Sichtbarkeit aber heikel."
+  url: https://www.reddit.com/r/salesforce/comments/1q5rkq0/salesforce_labs_action_plans/
+  type: community
+- id: alongspace-com-mutual-action-plans
+  label: Along positioniert sich explizit mit 'Built and hosted in Germany', GDPR, ISO 27001 und SOC 2.
+  url: https://www.alongspace.com/mutual-action-plans
+  type: vendor_doc
+- id: along-company
+  label: Along bewirbt MAPs als Kernfeature mit AI-Co-Pilot für Next-Best-Action.
+  url: https://www.along.company/
+  type: vendor_doc
+- id: valuecase-com
+  label: Valuecase bewirbt GDPR-Konformität, AI-Agents für Spaces/MAPs/Templates und native DE/EN/FR-Sprache.
+  url: https://www.valuecase.com/
+  type: vendor_doc
+- id: valuecase-com-digital-sales-room
+  label: Valuecase positioniert MAPs als Kernfeature im DSR mit CRM-Sync und 47 getrackten Prospect-Aktivitäten.
+  url: https://www.valuecase.com/digital-sales-room
+  type: vendor_doc
+- id: g2-com-compare-consensus-vs-valuecase
+  label: G2 Compare-Seite bestätigt Valuecase 4.9/5 aus 25 Reviews; kategorisiert als Digital Sales Room + Client Onboarding.
+  url: https://www.g2.com/compare/consensus-vs-valuecase
+  type: review
+- id: allego-com-platform
+  label: Allego ist EU/UK GDPR + SOC 2 + FINRA/SEC 17a-4 compliant; Rooms decken MAPs und Stakeholder-Collaboration ab.
+  url: https://www.allego.com/platform
+  type: vendor_doc
+- id: highspot-com-blog-highspot-launches-new-agentic-ai
+  label: Highspot Winter Launch 2026 mit Deal Agent für MAP-/DSR-Empfehlungen aus CRM-Signalen.
+  url: https://www.highspot.com/blog/highspot-launches-new-agentic-ai/
+  type: vendor_doc
+- id: showpad-com-blog-revenue-effectiveness-platforms-guide-2026
+  label: Showpad positioniert GenieAI als End-to-End-Suite mit Buyer-Engagement (DSR/MAP) für komplexe Field-Sales-Organisationen.
+  url: https://www.showpad.com/blog/revenue-effectiveness-platforms-guide-2026
+  type: vendor_doc
+- id: apollo-io-product-engage
+  label: Apollo positioniert AI-Sequenz und Hyperpersonalisierung als Kernfeature.
+  url: https://www.apollo.io/product/engage
+  type: vendor_doc
+- id: apollo-io-insights-how-do-ai-sales-assistants-personalize-outreach-at-scale
+  label: Apollo nutzt Perplexity Sonar, GPT-4o mini und Claude Haiku 3.5 als Modell-Stack für Personalisierung.
+  url: https://www.apollo.io/insights/how-do-ai-sales-assistants-personalize-outreach-at-scale
+  type: vendor_doc
+- id: ai-agent-brief-com-ai-for-business-sales-crm-apollo-io-ai-vs-outreach-ai-vs-salesloft-ai-sales-engagement-platforms-compared-html
+  label: Apollo wird im Mid-Market-Vergleich als günstige All-in-one-Lösung gegen Outreach/Salesloft positioniert.
+  url: https://www.ai-agent-brief.com/ai-for-business/sales-crm/apollo-io-ai-vs-outreach-ai-vs-salesloft-ai-sales-engagement-platforms-compared.html
+  type: review
+- id: apollo-io-product-sales-engagement
+  label: Apollo wirbt mit GDPR-Compliance auf Produktseite Sales Engagement.
+  url: https://apollo.io/product/sales-engagement
+  type: vendor_doc
+- id: reddit-com-r-sales-comments-1oe12kd-does-anyone-have-their-cold-email-prospecting
+  label: Praktiker empfehlen AI nur als Draft-Layer, nicht für Auto-Send – auch bei Apollo.
+  url: https://www.reddit.com/r/sales/comments/1oe12kd/does_anyone_have_their_cold_email_prospecting/
+  type: community
+- id: hubspot-com-products-sales-ai-prospecting-agent
+  label: Prospecting Agent recherchiert Accounts und schreibt Outreach-E-Mails mit Review-vor-Versand-Option.
+  url: https://www.hubspot.com/products/sales/ai-prospecting-agent
+  type: vendor_doc
+- id: hubspot-com-products-artificial-intelligence-use-cases-send-personalized-sales-outreach
+  label: Breeze referenziert konkrete Trigger-Events (Funding, Leadership Changes) für Outreach-Personalisierung.
+  url: https://www.hubspot.com/products/artificial-intelligence/use-cases/send-personalized-sales-outreach
+  type: vendor_doc
+- id: octavehq-com-post-hubspot-breeze-vs-salesforce-agentforce-vs-einstein
+  label: Octave-Vergleich kritisiert Breeze als 'blind' gegenüber Daten außerhalb HubSpot.
+  url: https://www.octavehq.com/post/hubspot-breeze-vs-salesforce-agentforce-vs-einstein
+  type: review
+- id: lagrowthmachine-com-instantly-vs-smartlead-vs-lgm
+  label: LGM positioniert sich als All-in-one-Multichannel mit LinkedIn + E-Mail + X und Waterfall-Enrichment.
+  url: https://lagrowthmachine.com/instantly-vs-smartlead-vs-lgm/
+  type: vendor_doc
+- id: lagrowthmachine-com-instantly-alternatives
+  label: LGM-Pricing ab €60/Identität inkl. CRM-Sync und Enrichment.
+  url: https://lagrowthmachine.com/instantly-alternatives/
+  type: review
+- id: apollo-io-insights-how-do-i-evaluate-which-sales-engagement-platform-is-the-best-fit-for-a-high-volume-outbound-team
+  label: Outreach hat 2026 als 'AI Revenue Workflow Platform' relauncht und MCP-Server-Anbindung für externe Agenten ergänzt.
+  url: https://www.apollo.io/insights/how-do-i-evaluate-which-sales-engagement-platform-is-the-best-fit-for-a-high-volume-outbound-team
+  type: review
+- id: surferstack-com-guides-sales-engagement-platforms-compared-salesloft-vs-apollo-io-vs-outreach-in-2026
+  label: Outreach wird als Enterprise-Wahl mit Kaia-AI-Coach und tiefster CRM-Integration gewertet.
+  url: https://surferstack.com/guides/sales-engagement-platforms-compared-salesloft-vs-apollo-io-vs-outreach-in-2026
+  type: review
+- id: outreach-io-security
+  label: Outreach hält SOC 2 Type II und ISO 27001; EU-Datenresidenz für EU-Kundendaten verfügbar.
+  url: https://www.outreach.io/security
+  type: vendor_doc
+- id: satellyte-ai-blog-best-ai-sdr-tools-2026
+  label: Regie wird als Copilot mit Brand-Voice-Stärke positioniert, aber abhängig von externem Sequenzer.
+  url: https://satellyte.ai/blog/best-ai-sdr-tools-2026
+  type: review
+- id: deathtocoldemails-com-email-personalization-tools
+  label: Regie.ai generiert Sequenzen mit Enterprise-Security und Compliance-Fokus.
+  url: https://deathtocoldemails.com/email-personalization-tools
+  type: review
+- id: bestagentpick-com-best-ai-sdr-software-2026
+  label: Reply.io ist reife Sequencing-Plattform; Jason AI unterstützt mehrere LLMs und Auto-/Copilot-Modus.
+  url: https://bestagentpick.com/best-ai-sdr-software-2026/
+  type: review
+- id: reply-io-jason-ai-vs-11x
+  label: Jason AI bietet Multi-Sprach-Sequenzen und unterscheidet sich von 11x durch Multichannel-Tiefe.
+  url: https://reply.io/jason-ai-vs-11x/
+  type: vendor_doc
+- id: agentsindex-ai-compare-artisan-vs-reply-io
+  label: Reviewer dokumentieren Pricing-Transparenz-Beschwerden bei Reply.io.
+  url: https://agentsindex.ai/compare/artisan-vs-reply-io
+  type: review
+- id: pxlpeak-com-ai-tools-compare-hubspot-ai-vs-salesforce-ai
+  label: Praktiker bestätigen, dass Einstein ohne dedizierten Admin nur eingeschränkt produktiv wird.
+  url: https://www.pxlpeak.com/ai-tools/compare/hubspot-ai-vs-salesforce-ai
+  type: review
+- id: twain-ai
+  label: Twain ist Research-Agent, der Touchpoints inkl. E-Mail aus deep web research baut.
+  url: https://www.twain.ai/
+  type: vendor_doc
+- id: bao-ai-en-kaltakquise
+  label: bao ist europäische Conversation-Intelligence-Plattform mit Cold-Calling-Fokus für deutschsprachige Märkte.
+  url: https://www.bao.ai/en/kaltakquise/
+  type: vendor_doc
+- id: herman-ai-com
+  label: Herman AI positioniert sich als DACH-spezifischer mehrsprachiger Vertriebsassistent mit HITL-Review.
+  url: https://herman-ai.com/
+  type: vendor_doc
+- id: getventa-ai-de-compliant-outreach
+  label: Venta AI adressiert UWG § 7 explizit mit Lead-Qualifizierung für mutmaßliche Einwilligung und EU-Hosting.
+  url: https://www.getventa.ai/de/compliant-outreach
+  type: vendor_doc
+- id: linkedin-com-posts-y-combinator-venta-ai-yc-s23-is-an-eu-compliant-ai-sdr-activity-7310314768949485569-wcog
+  label: YC-Launch positioniert Venta als EU-konformen AI-SDR mit Brief-Kanal als UWG-Workaround.
+  url: https://www.linkedin.com/posts/y-combinator_venta-ai-yc-s23-is-an-eu-compliant-ai-sdr-activity-7310314768949485569-wcOg
+  type: news
+- id: getventa-ai-de
+  label: Deutsches UI, Hyperpersonalisierung mit deutschsprachigen Quellen und Anredeführung.
+  url: https://www.getventa.ai/de
+  type: vendor_doc
+- id: getventa-ai-blog-venta-ai-launches-four-new-ai-sales-employees
+  label: Vendor-News belegt Roadmap-Ausbau (4 zusätzliche AI-Mitarbeiter Sept. 2025); unabhängige DACH-Threads bisher dünn.
+  url: https://www.getventa.ai/blog/venta-ai-launches-four-new-ai-sales-employees
+  type: vendor_doc
+- id: tryfondo-com-blog-venta-ai2-launches
+  label: "Fondo-Launch-Post (Feb 2026) bestätigt Venta AI 2.0: EU-Compliance-Story, Brief-Kanal, 2x Reply-Rate gegenüber E-Mail in eigenen Tests (1.200 Kontakte)."
+  url: https://www.tryfondo.com/blog/venta-ai2-launches
+  type: review
+- id: lifestyle-myeaglecountry-com-story-179245-loopio-becomes-the-first-response-management-provider-to-launch-a-microsoft-365-copilot-agent
+  label: Loopio Copilot Agent fuer M365 (April 2026) bringt RFP-Inhalte in Word/Teams/Outlook.
+  url: https://lifestyle.myeaglecountry.com/story/179245/loopio-becomes-the-first-response-management-provider-to-launch-a-microsoft-365-copilot-agent/
+  type: news
+- id: arphie-ai-blog-loopio-vs-responsive-comparing-legacy-rfp-software-tools
+  label: Wettbewerber-Analyse beschreibt Loopios Library-/Keyword-Schwaechen.
+  url: https://www.arphie.ai/blog/loopio-vs-responsive-comparing-legacy-rfp-software-tools
+  type: review
+- id: pandadoc-com-alternatives-proposify
+  label: PandaDoc bietet Drag-and-Drop-Editor, 1000+ Templates, 30+ CRM-Integrationen und Produktkatalog mit dynamischer Preista…
+  url: https://www.pandadoc.com/alternatives/proposify
+  type: vendor_doc
+- id: heyiris-ai-blog-automated-proposal-creation-tools
+  label: PandaDoc enthaelt Content-Library, CPQ-Funktionen und detaillierte Analytics.
+  url: https://heyiris.ai/blog/automated-proposal-creation-tools
+  type: review
+- id: pandadoc-com-legal-pandadoc-data-residency
+  label: PandaDoc bietet EU-Region Frankfurt mit isolierter Datenhaltung; Support-Daten fliessen in die USA.
+  url: https://www.pandadoc.com/legal/pandadoc-data-residency/
+  type: vendor_doc
+- id: av-vertrag-org-dienst-anbieter-pandadoc
+  label: PandaDoc bietet AVV/DPA mit SCCs an.
+  url: https://av-vertrag.org/dienst-anbieter/pandadoc/
+  type: review
+- id: reddit-com-r-techsales-comments-1re3b2o-is-pandadoc-still-relevant
+  label: Polarisierte Stimmung zu PandaDoc nach Editor-Refresh in r/techsales.
+  url: https://www.reddit.com/r/techsales/comments/1re3b2o/is_pandadoc_still_relevant/
+  type: community
+- id: responsive-io-go-proposal-writing-software
+  label: Responsive vermarktet Proposal-/RFP-/RFQ-Automation mit AI-Drafts.
+  url: https://www.responsive.io/go/proposal-writing-software
+  type: vendor_doc
+- id: toolradar-com-tools-responsive
+  label: Toolradar fasst Responsive-Capabilities (TRACE Score, AI Agent Studio, CRM-Connectoren) zusammen.
+  url: https://toolradar.com/tools/responsive
+  type: review
+- id: salesforce-com-sales-cpq-sales-quote-automation
+  label: Agentforce + Revenue Cloud generiert Quotes aus natuerlicher Sprache.
+  url: https://www.salesforce.com/sales/cpq/sales-quote-automation
+  type: vendor_doc
+- id: canvaslogic-com-salesforce-cpq-ai
+  label: Einstein GPT erzeugt Proposal-Dokumente aus CRM-Kontext.
+  url: https://canvaslogic.com/salesforce-cpq-ai/
+  type: blog
+- id: solvetect-com-2026-sap-cpq-roadmap-features-to-watch-how-to-prepare
+  label: Joule wird in SAP CPQ 2026 Predictive Quoting, Dynamic Pricing und Workflow-Automation ergaenzen.
+  url: https://solvetect.com/2026-sap-cpq-roadmap-features-to-watch-how-to-prepare
+  type: blog
+- id: news-sap-com-germany-2025-04-vertrieb-mit-joule-in-sap-sales-cloud
+  label: SAP DACH dokumentiert Joule fuer Sales Cloud und Quote-Updates aus S/4HANA-Kontext.
+  url: https://news.sap.com/germany/2025/04/vertrieb-mit-joule-in-sap-sales-cloud/
+  type: vendor_doc
+- id: community-sap-com-t5-enterprise-resource-planning-blog-posts-by-members-feedback-on-joule-ba-p-14219219
+  label: SAP-Community-Bericht zu Joule-Schwaechen in S/4HANA Cloud Private Edition.
+  url: https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/feedback-on-joule/ba-p/14219219
+  type: community
+- id: tacton-com-de-produkte-tacton-cpq
+  label: Tacton positioniert sich explizit fuer DACH-Industriefertiger.
+  url: https://www.tacton.com/de/produkte/tacton-cpq/
+  type: vendor_doc
+- id: softwarereviews-com-products-tacton-cpq
+  label: SoftwareReviews aggregiert 47 User-Reviews mit hoher Recommendation-Rate.
+  url: https://www.softwarereviews.com/products/tacton-cpq
+  type: review
+- id: getaccept-com-blog-getaccept-vs-qwilr
+  label: GetAccept positioniert Digital Sales Room mit Mutual Action Plans, Chat und WCAG/GDPR-Compliance.
+  url: https://www.getaccept.com/blog/getaccept-vs-qwilr
+  type: vendor_doc
+- id: alexberman-com-pandadoc-competitors
+  label: "GetAccept vs PandaDoc: bessere Engagement-Tiefe, schwaecherer Editor."
+  url: https://www.alexberman.com/pandadoc-competitors
+  type: review
+- id: peony-ink-blog-pandadoc-alternatives
+  label: Hands-on-Vergleich beschreibt GetAccepts Sales-Room-Tiefe und Komplexitaet.
+  url: https://www.peony.ink/blog/pandadoc-alternatives
+  type: community
+- id: vantagepoint-io-blog-hs-hubspot-commerce-hub-cpq-ai-powered-quoting
+  label: Closing Agent als AI-Chatbot auf Quotes mit Eskalationsregeln.
+  url: https://vantagepoint.io/blog/hs/hubspot-commerce-hub-cpq-ai-powered-quoting
+  type: blog
+- id: learn-microsoft-com-en-us-microsoft-365-copilot-extensibility-agent-template-rfp-assistant
+  label: Microsoft Learn dokumentiert RFP-Generator-Agent-Template fuer Microsoft 365 Copilot.
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-template-rfp-assistant
+  type: documentation
+- id: microsoft-com-en-us-microsoft-copilot-copilot-101-ai-for-sales
+  label: Copilot for Sales verbindet CRM mit Outlook/Word fuer Proposals und Pitch-Decks.
+  url: https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-for-sales
+  type: vendor_doc
+- id: docs-oracle-com-en-cloud-saas-readiness-sales-25b-scpq-25b-25b-cpq-wn-f37737-htm
+  label: Oracle CPQ 25B liefert GenAI Quote Summaries via Ask-Oracle-Bar.
+  url: https://docs.oracle.com/en/cloud/saas/readiness/sales/25b/scpq-25b/25B-cpq-wn-f37737.htm
+  type: documentation
+- id: docs-oracle-com-en-cloud-saas-readiness-sales-25c-scpq-25c-25c-cpq-wn-f39330-htm
+  label: Oracle CPQ 25C fuehrt AI-Powered Quote Assistance Agent ein.
+  url: https://docs.oracle.com/en/cloud/saas/readiness/sales/25c/scpq-25c/25C-cpq-wn-f39330.htm
+  type: documentation
+- id: autorfp-ai-trust
+  label: AutoRFP.ai bietet EU-Hosting (Frankfurt), ISO 27001, SOC 2 Type II, GDPR-DPA.
+  url: https://autorfp.ai/trust
+  type: vendor_doc
+- id: bryo-ai
+  label: BRYO ist Berlin-/Muenchen-basiert, 'Made in Germany' und GDPR-compliant.
+  url: https://bryo.ai/
+  type: vendor_doc
+- id: camos-de-en-camos-cpq-ai
+  label: camos CPQ kombiniert ML und GenAI fuer Quoting und Modellierung.
+  url: https://www.camos.de/en/camos-cpq/ai/
+  type: vendor_doc
+- id: softwarereviews-com-products-camos-cpq
+  label: "SoftwareReviews: 21 validierte Peer-Reviews, Composite Score 7,0/10; Tacton schlaegt camos (8,5 vs. 7,0); Plan to Renew 96%, Cost Fairness nur 66%."
+  url: https://www.softwarereviews.com/products/camos-cpq
+  type: review
+- id: cpq-integrations-com-cpq-camos-cpq
+  label: "Neutrale CPQ-Aggregatorseite: Gartner Peer Insights 3/5 Sterne (100% EMEA-Reviewer, $50M-$1B), Implementierungskomplexitaet als Schwachpunkt; camos fehlt in Gartner MQ 2026."
+  url: https://cpq-integrations.com/cpq/camos-cpq/
+  type: review
+- id: arphie-ai-software-rfp-automation-software
+  label: AI-native Architektur, Live-Integrationen, hohe AI-Acceptance, Migrationen weg von Loopio/Responsive/Ombud
+  url: https://arphie.ai/software/rfp-automation-software
+  type: vendor_doc
+- id: reddit-com-r-ai-rfp-software-comments-1rr1n5h-has-anyone-made-the-switch-from-loopio-to-arphie
+  label: Reddit-User evaluiert aktiv Arphie als Loopio-Alternative wegen Live-Integrationen
+  url: https://www.reddit.com/r/AI_RFP_Software/comments/1rr1n5h/has_anyone_made_the_switch_from_loopio_to_arphie/
+  type: community
+- id: autogenai-com-blog-the-best-rfp-software-in-2026
+  label: AutogenAI als End-to-End-RFP-Plattform mit AI-Drafting, Win-Themes, FedRAMP High
+  url: https://autogenai.com/blog/the-best-rfp-software-in-2026/
+  type: vendor_doc
+- id: autogenai-com-blog-autogenai-vs-responsive-for-proposal-teams
+  label: Positionierung als 'winning' vs. 'filling'-Plattform mit eigener Compliance-Automatisierung
+  url: https://autogenai.com/blog/autogenai-vs-responsive-for-proposal-teams/
+  type: vendor_doc
+- id: autogenai-com
+  label: Enterprise-Adoption durch Salesforce/Serco/Kyndryl, FedRAMP High
+  url: https://autogenai.com/
+  type: vendor_doc
+- id: reddit-com-r-ai-rfp-software-comments-1qjqi6r-how-do-you-handle-multiple-rfps-without
+  label: Diskussion über AI-Tool-Auswahl in RFP-Communities
+  url: https://www.reddit.com/r/AI_RFP_Software/comments/1qjqi6r/how_do_you_handle_multiple_rfps_without/
+  type: community
+- id: autorfp-ai
+  label: AI-Importer, Trust Scores, Browser-Extension für Portale, Multi-Format
+  url: https://autorfp.ai/
+  type: vendor_doc
+- id: moge-ai-de-product-autorfpai
+  label: Mehrsprachigkeit (30+ Sprachen) und Azure-Hosting für DACH-Relevanz
+  url: https://moge.ai/de/product/autorfpai
+  type: review
+- id: autorfp-ai-blog-loopio-review-2025-real-user-feedback-from-610-reviews
+  label: Ehemaliger Loopio-User schildert Wechsel zu AutoRFP.ai wegen Library-Frust
+  url: https://autorfp.ai/blog/loopio-review-2025-real-user-feedback-from-610-reviews
+  type: community
+- id: heyiris-ai-instantly-access-your-institutional-knowledge
+  label: Inline-Quellen, Confidence-Scores, Knowledge-Ledger gegen Outdated-Content
+  url: https://heyiris.ai/instantly-access-your-institutional-knowledge
+  type: vendor_doc
+- id: rfpaihub-com-iris
+  label: Drittquelle bestätigt Funktionsumfang und Integrationen
+  url: https://www.rfpaihub.com/iris
+  type: review
+- id: sifthub-io
+  label: Voller RFP-Lifecycle plus Deal-Orchestration mit RAG, Validation, SOC2, ISO27001
+  url: https://sifthub.io/
+  type: vendor_doc
+- id: tribble-ai-blog-best-ai-rfp-response-software-2026
+  label: Wettbewerber bestätigt Pre-Sales-Fokus und Implementierungs-Caveat
+  url: https://tribble.ai/blog/best-ai-rfp-response-software-2026/
+  type: review
+- id: beyondrfp-de-de-home-de
+  label: DACH-RFP-Tool mit ML-/AI-Antworten, Excel/Word/Outlook-Integration, EU-Konformität
+  url: https://www.beyondrfp.de/de/home-de/
+  type: vendor_doc
+- id: linkedin-com-posts-jain-arvind-rfp-responses-can-be-a-real-challenge-they-activity-7344100158109904897-28j
+  label: Glean-CEO dokumentiert RFP-Agent-Suite bei globaler Beratung mit konkreten Ergebnissen
+  url: https://www.linkedin.com/posts/jain-arvind_rfp-responses-can-be-a-real-challenge-they-activity-7344100158109904897-_28j
+  type: vendor_doc
+- id: conveyor-com-blog-the-buyers-guide-to-the-best-rfp-response-software
+  label: QorusDocs profile in RFP-Buyers-Guide — Stärken bei Pitch-Erstellung
+  url: https://www.conveyor.com/blog/the-buyers-guide-to-the-best-rfp-response-software
+  type: review
+- id: loopio-com-blog-best-ai-software-rfp-responses
+  label: Qvidian gelistet unter Top-7 RFP-AI-Tools 2026 mit Fokus auf High-Compliance
+  url: https://loopio.com/blog/best-ai-software-rfp-responses/
+  type: review
+- id: reddit-com-r-procurement-comments-1odz1kv-best-rfp-tool-need-suggestion
+  label: Qvidian wird im Reddit-Procurement-Thread genannt aber selten als erste Wahl
+  url: https://www.reddit.com/r/procurement/comments/1odz1kv/best_rfp_tool_need_suggestion/
+  type: community
+- id: tendium-ai-de-qualification-tool
+  label: Deutsche UI, KI-Assistent für öffentliche Tenders, BidFlow-Workflow
+  url: https://tendium.ai/de/qualification-tool/
+  type: vendor_doc
+- id: de-brainial-com-platform
+  label: "Plattform-Features: Dokumentenanalyse, Bieterfragen, Angebote/RFx mit Quellenangaben"
+  url: https://de.brainial.com/platform
+  type: vendor_doc
+- id: saashub-com-compare-upland-qvidian-vs-brainial
+  label: SaasHub-Vergleichslisting bestätigt Brainial als Marktteilnehmer neben Upland Qvidian, Loopio, RocketDocs
+  url: https://www.saashub.com/compare-upland-qvidian-vs-brainial
+  type: review
+- id: cognaire-com
+  label: Governed Corpus, Topic-Approval, Quality-Scoring gegen Halluzinationen
+  url: https://www.cognaire.com/
+  type: vendor_doc
+- id: forgent-ai-de
+  label: Deutscher Agentic-AI-Vendor für öffentliche Ausschreibungen
+  url: https://www.forgent.ai/de/
+  type: vendor_doc
+- id: omr-com-de-reviews-product-forgent-ai
+  label: "OMR Reviews (DE unabhängige SaaS-Plattform): 1 verifiziertes Review, Benutzerfreundlichkeit 8.6, Anforderungserfüllung 10, ISO27001, DSGVO, EU-Hosting bestätigt"
+  url: https://www.omr.com/de/reviews/product/forgent-ai
+  type: review
+- id: bidfix-ai-blog-forgent-vs-bidfix-ein-detaillierter-vergleich-fuer-modernes-bid-management-2025
+  label: "BidFix-Wettbewerbervergleich 2025: Forgent Pros (End-to-End, Prozesssteuerung) und Cons (kein Word/XLS/PDF-Edit, Premium-Pricing) aus Konkurrenten-Perspektive"
+  url: https://bidfix.ai/blog/forgent-vs-bidfix-ein-detaillierter-vergleich-fuer-modernes-bid-management-2025
+  type: review
+- id: rocketdocs-com-solutions-rfp-plus
+  label: 100% private AI, SOC 2 + ISO 27001, Audit-ready
+  url: https://rocketdocs.com/solutions/rfp-plus/
+  type: vendor_doc
+- id: gartner-com-reviews-market-rfp-response-management-applications-vendor-rocketdocs-product-rocketdocs
+  label: "Gartner Peer Insights: 3 validierte Enterprise-Reviews, Gesamtbewertung 4.3/5, Product Capabilities 5.0/5 — Reviewer aus $250M-500M und $10B-30B USD Unternehmen"
+  url: https://www.gartner.com/reviews/market/rfp-response-management-applications/vendor/rocketdocs/product/rocketdocs
+  type: review
+- id: g2-com-compare-responsive-formerly-rfpio-vs-rocketdocs
+  label: "G2: 101 Reviews, 4.2/5 — RFP-Software-Kategorievergleich bestätigt Markpräsenz"
+  url: https://www.g2.com/compare/responsive-formerly-rfpio-vs-rocketdocs
+  type: review
+- id: sequesto-com
+  label: EU-Vendor mit DE-FR-NL-Cross-Language, Office-nativ, DACH-Referenz QBC
+  url: https://sequesto.com/
+  type: vendor_doc
+- id: softwaresuggest-com-sequesto
+  label: SoftwareSuggest-Directory-Listing bestätigt RFP-Kategorisierung und Feature-Set (Bid/No-Bid, Workflow Automation, Audit Trail, Compliance Tracking)
+  url: https://www.softwaresuggest.com/sequesto
+  type: review
+- id: pipeline-zoominfo-com-sales-sales-coaching-software-tools
+  label: Chorus wird als Sales-Coaching-Plattform mit Scorecards und Methodik-Tracking positioniert.
+  url: https://pipeline.zoominfo.com/sales/sales-coaching-software-tools
+  type: vendor_doc
+- id: firstsales-io-blog-meddic-sales-methodology
+  label: Chorus wird in MEDDIC-Implementations-Stacks als Tool für automatisches MEDDIC-Element-Tracking gelistet.
+  url: https://firstsales.io/blog/meddic-sales-methodology
+  type: blog
+- id: softwarereviews-com-categories-conversation-intelligence-compare-chorus-by-zoominfo-vs-jiminny
+  label: 353 verifizierte SoftwareReviews-Reviews zu Chorus mit Score 8.5; reale Nutzer-Daten.
+  url: https://softwarereviews.com/categories/conversation-intelligence/compare/chorus-by-zoominfo-vs-jiminny
+  type: review
+- id: stackscored-com-pricing-revenue-intelligence
+  label: Pricing-Niveau Clari $200-500/Seat/Monat (Industrie-Schätzung) — Premium-Segment.
+  url: https://www.stackscored.com/pricing/revenue-intelligence/
+  type: review
+- id: reddit-com-r-productmanagement-comments-1r6t9yp-has-anyone-had-experience-with-ai-qa-tools-for
+  label: "Praktiker-Konsens: Real-time-AI-Coaching wird von Agents/Reps weitgehend abgelehnt; Post-Call-Analyse besser akzeptiert."
+  url: https://www.reddit.com/r/ProductManagement/comments/1r6t9yp/has_anyone_had_experience_with_ai_qa_tools_for/
+  type: community
+- id: gong-io-blog-meddic-sales-process
+  label: Gong vermarktet explizit MEDDIC-Coaching und Pattern-Erkennung gegen Methodik.
+  url: https://www.gong.io/blog/meddic-sales-process
+  type: vendor_doc
+- id: getweflow-com-blog-weflow-vs-gong-meddic
+  label: Gong kann Calls automatisch gegen Scorecards bewerten ohne Manager-Eingriff und enthält AI Trainer für Methodik-Übung.
+  url: https://www.getweflow.com/blog/weflow-vs-gong-meddic
+  type: review
+- id: marketbetter-ai-blog-gong-review-2026
+  label: Pricing-Niveau und Adoptionsrisiken nach 6.470+ G2-Reviews und Reddit-Threads.
+  url: https://marketbetter.ai/blog/gong-review-2026/
+  type: review
+- id: upnorth-ai-fi-insights-ai-act-gong
+  label: "Up North AI: Gong fuer Coaching = limited risk, sobald Daten Promotion/PIP/Termination informieren = Annex-III-High-Risk."
+  url: https://www.upnorth.ai/fi/insights/ai-act-gong
+  type: blog
+- id: jiminny-com-blog-sales-call-scoring-the-fundamental-guide
+  label: Jiminny bietet automatisches Call-Scoring inklusive Methodik-Adoption-Tracking als Kernfeature.
+  url: https://jiminny.com/blog/sales-call-scoring-the-fundamental-guide
+  type: vendor_doc
+- id: jiminny-com-chorus-alternative
+  label: Jiminny scort Calls und Reps anhand Playbook, Objection-Handling und Rapport.
+  url: https://jiminny.com/chorus-alternative
+  type: vendor_doc
+- id: avoma-com-blog-sales-coaching-software
+  label: "Drittsicht: Avoma listet Limitationen von Jiminny — keine customizable AI Scorecards, basic call scoring."
+  url: https://www.avoma.com/blog/sales-coaching-software
+  type: blog
+- id: mindtickle-com-blog-ai-sales-coaching-and-training
+  label: Mindtickle bewirbt AI-Coaching mit On-Demand-Score auf Roleplays und realen Calls.
+  url: https://www.mindtickle.com/blog/ai-sales-coaching-and-training/
+  type: vendor_doc
+- id: revenue-io-ai-conversation-scorecard
+  label: Revenue.io bewirbt AI-Generative-Scorecards mit MEDDIC/Challenger und automatisches Scoring jedes Calls.
+  url: https://www.revenue.io/ai-conversation-scorecard
+  type: vendor_doc
+- id: revenue-io-blog-best-conversation-intelligence-solutions
+  label: Revenue.io positioniert sich als Salesforce-native CI-Plattform mit Real-time-Guidance.
+  url: https://www.revenue.io/blog/best-conversation-intelligence-solutions
+  type: review
+- id: salesloft-com-innovation-monthly-releases-ai-powered-sales-coaching
+  label: Salesloft beschreibt AI-Conversation-Scorecards mit Conductor-AI-suggested-Scores und Rhythm-Prioritisierung der Coaching-Aktionen.
+  url: https://www.salesloft.com/innovation/monthly-releases/ai-powered-sales-coaching
+  type: vendor_doc
+- id: salesloft-com-legal-gdpr-overview
+  label: Salesloft hat ISO 27001 und SOC 2 Type 2 sowie eigene GDPR-Übersicht; relevant für DACH-Compliance-Prüfung.
+  url: https://www.salesloft.com/legal/gdpr-overview
+  type: vendor_doc
+- id: softwarereviews-com-categories-conversation-intelligence-compare-salesloft-vs-avoma
+  label: Vergleichsdaten Salesloft vs Avoma aus 41 verifizierten Reviews.
+  url: https://softwarereviews.com/categories/conversation-intelligence/compare/salesloft-vs-avoma
+  type: review
+- id: getweflow-com-faq-weflow-ai
+  label: Weflow bewirbt 250+ Prompts und 1-5-Coaching-Scorecards für MEDDIC/MEDDPICC/Challenger.
+  url: https://www.getweflow.com/faq/weflow-ai
+  type: vendor_doc
+- id: i2x-ai-de-datenschutz
+  label: i2x liefert DSGVO-konforme Anonymisierung, deutsches Hosting, EU-AI-Act-Positionierung und Betriebsrat-Paket mit Betriebsvereinbarungs-Vorlagen.
+  url: https://i2x.ai/de/datenschutz/
+  type: vendor_doc
+- id: tracxn-com-d-companies-bao-systems-tmcrxpwvxyjy6zkk50lwirc3psczl8oxsoq1gtb4wb0
+  label: "Tracxn-Profil bestätigt: München, €4,16M Seed 2021 (Peak/BayBG), 188 Wettbewerber; kein Follow-on-Funding sichtbar."
+  url: https://tracxn.com/d/companies/bao-systems/__tmCRXpWvXYJY6zkK50lWiRC3psCzl8OXSOq1gtB4wB0
+  type: blog
+- id: omr-com-en-reviews-product-bao
+  label: "OMR (primäre DACH-Review-Plattform): bao hat 0 verifizierte Reviews — trotz Selbstdarstellung als 'Europe's #1 CI Platform'."
+  url: https://omr.com/en/reviews/product/bao
+  type: review
+- id: demodesk-com-products-coaching
+  label: Demodesk liefert pre-built Scorecards (BANT, MEDDIC, SPICED), KI-vorgefüllte QA-Checklisten und GDPR-konformen Notetaker.
+  url: https://demodesk.com/products/coaching
+  type: vendor_doc
+- id: demodesk-com-resources-guides-automated-deal-scoring
+  label: Demodesk extrahiert MEDDIC-Elemente aus Transkripten und erzeugt Coaching-Feedback nach jedem Meeting.
+  url: https://demodesk.com/resources-guides/automated-deal-scoring
+  type: vendor_doc
+- id: omr-com-en-reviews-product-demodesk-coaching-ai
+  label: "OMR: 26 verifizierte Reviews, 4,8/5, Leader-Badge AI Meeting Assistants Q1/26; Serverstandort DE/EU und EU-Standardvertrag bestätigt."
+  url: https://omr.com/en/reviews/product/demodesk-coaching-ai
+  type: review
+- id: kendo-ai-ai-call-scoring
+  label: Kendo listet Hyperbound neben Second Nature und Pitchmonster als AI-Roleplay-Vergleichsanbieter — bestätigt Marktpositionierung.
+  url: https://kendo.ai/ai-call-scoring
+  type: review
+- id: agentrank-tech-blog-hyperbound-review-ai-sales-roleplay-training
+  label: "Unabhängige Review Feb 2026: G2 4,9/5 (39 Reviews), YC-backed, Enterprise-Kunden Databricks/Snowflake/Cognism; ~$15k/Jahr, kein transparentes Pricing, kein DACH/EU-Hosting-Nachweis."
+  url: https://www.agentrank.tech/blog/hyperbound-review-ai-sales-roleplay-training
+  type: review
+- id: reddit-com-r-sales-comments-1hvqu38-ever-used-ai-roleplaying-tools-like-hyperbound-or
+  label: "r/sales Jan 2025: gemischtes Practitioner-Feedback — Fans loben Call-Recording-basierte Szenarien; Kritiker finden Bots 'robotic'; ~$15k/Jahr bestätigt; Custom Personas brauchen externe Entwickler."
+  url: https://www.reddit.com/r/sales/comments/1hvqu38/ever_used_ai_roleplaying_tools_like_hyperbound_or/
+  type: community
+- id: kickscale-com
+  label: Kickscale bewirbt ISO 27001, GDPR Compliant und EU AI Act Ready zusammen mit Coaching-/Forecasting-Features.
+  url: https://kickscale.com/
+  type: vendor_doc
+- id: omr-com-de-reviews-product-kickscale
+  label: "OMR: 118 verifizierte Reviews, 4,8/5, Leader & Top Rated Q2/26 in Conversation Intelligence und Sales Coaching; Serverstandort DE/EU bestätigt."
+  url: https://omr.com/de/reviews/product/kickscale
+  type: review
+- id: retorio-com-blog-navigating-ai-coaching-compliance-eu-ai-act-saas
+  label: "Argument von Retorio (übertragbar auf Second Nature): Training-Tools fallen oft NICHT unter Annex III, weil sie Lernende schulen statt Mitarbeitende bewerten."
+  url: https://www.retorio.com/blog/navigating-ai-coaching-compliance-eu-ai-act-saas
+  type: blog
+- id: airoleplayreviews-com-articles-secondnature-ai-review
+  label: "Unabhängige Review Mai 2025: AI folgt rigiden Scripts statt dynamischen Konversationen; Feedback nur Tonlage/Keyword-Matching; technisch hinter neueren Wettbewerbern; kein CI-Stack-Integration."
+  url: https://www.airoleplayreviews.com/articles/secondnature-ai-review
+  type: review
+- id: bliro-io-en-compare-bliro-vs-kickscale
+  label: Bliro betont real-time-Transkription ohne Recording, EU-Verarbeitung, ISO27001, und positioniert sich als compliant gegenüber Kickscale.
+  url: https://www.bliro.io/en/compare/bliro-vs-kickscale
+  type: vendor_doc
+- id: omr-com-de-reviews-product-bliro
+  label: "OMR: 48 verifizierte Reviews, 4,6/5; Serverstandort DE/EU bestätigt, EU-Standardvertrag, deutschsprachiger Support (9,6/10); Ease of Setup 9,5/10 (über Kategoriedurchschnitt 8,1)."
+  url: https://omr.com/de/reviews/product/bliro
+  type: review
+- id: glean-com-product-work-ai-platform
+  label: Glean als AI-Enterprise-Search mit Permission-Awareness
+  url: https://www.glean.com/product/work-ai-platform
+  type: vendor
+- id: microsoft-com-en-us-microsoft-365-copilot-copilot-for-sales
+  label: Copilot for Sales surfaces relevante Inhalte und CRM-Daten im Workflow
+  url: https://www.microsoft.com/en-us/microsoft-365/copilot/copilot-for-sales
+  type: vendor
+- id: salesforce-com-sales-enablement
+  label: Salesforce Enablement mit AI-Empfehlungen für Reps
+  url: https://www.salesforce.com/sales/enablement/
+  type: vendor
+- id: templafy-com
+  label: EU-Anbieter mit AI-gestützter Content-Activation für Sales/Office
+  url: https://www.templafy.com/
+  type: vendor
+- id: highspot-com-platform-ai
+  label: Highspot Copilot positioniert AI-Content-Empfehlungen als Kernfeature
+  url: https://www.highspot.com/platform/ai/
+  type: vendor
+- id: highspot-com-trust
+  label: EU-Datenresidenz und Trust-Posture für DACH-Enterprise
+  url: https://www.highspot.com/trust/
+  type: vendor
+- id: gartner-com-reviews-product-highspot
+  label: "Gartner Peer Insights: Highspot 4.7/5 (181 Reviews), Customers' Choice 2025 für Revenue Enablement Platforms"
+  url: https://www.gartner.com/reviews/product/highspot
+  type: review
+- id: seismic-com-products-aura
+  label: Aura ist Seismics AI-Engine für Content-Empfehlungen und Buyer-Personalisierung
+  url: https://seismic.com/products/aura/
+  type: vendor
+- id: seismic-com-company-trust-center
+  label: EU-Hosting und Compliance-Posture
+  url: https://seismic.com/company/trust-center/
+  type: vendor
+- id: gartner-com-reviews-market-revenue-enablement-platforms-vendor-seismic-product-seismic-enablement-cloud
+  label: "Gartner Peer Insights: Seismic Enablement Cloud 4.7/5 (307 Reviews), IDC MarketScape Leader"
+  url: https://www.gartner.com/reviews/market/revenue-enablement-platforms/vendor/seismic/product/seismic-enablement-cloud
+  type: review
+- id: showpad-com-platform-showpad-ai
+  label: Showpad AI als Content-Recommendation- und Search-Layer
+  url: https://www.showpad.com/platform/showpad-ai/
+  type: vendor
+- id: showpad-com-trust
+  label: EU-Hosting und GDPR-Posture
+  url: https://www.showpad.com/trust/
+  type: vendor
+- id: gartner-com-reviews-product-showpad
+  label: "Gartner Peer Insights: Showpad 4.7/5 (286 Reviews), Forrester Wave Leader Q3 2024"
+  url: https://www.gartner.com/reviews/product/showpad
+  type: review

@@ -4133,3 +4133,757 @@
   category: other
   url: https://marketplace.atlassian.com/apps/3016668857/refinely-ai-backlog-refinement-for-jira
   maturity: production
+- id: cognism-com
+  name: Cognism
+  category: other
+  url: https://www.cognism.com/
+  maturity: production
+- id: dealfront-com
+  name: Dealfront (Leadfeeder + Echobot)
+  category: other
+  url: https://www.dealfront.com/
+  maturity: production
+- id: usergems-com
+  name: UserGems
+  category: other
+  url: https://www.usergems.com/
+  maturity: production
+- id: clay-com
+  name: Clay
+  category: other
+  url: https://www.clay.com/
+  maturity: production
+- id: unifygtm-com
+  name: Unify
+  category: other
+  url: https://www.unifygtm.com/
+  maturity: production
+- id: commonroom-io
+  name: Common Room
+  category: other
+  url: https://www.commonroom.io/
+  maturity: production
+- id: compelling-ai
+  name: Compelling.io
+  category: other
+  url: https://www.compelling.ai/
+  maturity: production
+- id: evergrowth-io
+  name: Evergrowth
+  category: other
+  url: https://www.evergrowth.io/
+  maturity: production
+- id: humantic-ai-miia
+  name: Humantic AI (Agent Miia + Agent Pi)
+  category: other
+  url: https://humantic.ai/miia
+  maturity: production
+- id: crayon-co
+  name: Crayon
+  category: other
+  url: https://www.crayon.co/
+  maturity: production
+- id: klue-com
+  name: Klue
+  category: other
+  url: https://klue.com/
+  maturity: production
+- id: highspot-com
+  name: Highspot
+  category: other
+  url: https://www.highspot.com/
+  maturity: production
+- id: showpad-com
+  name: Showpad
+  category: other
+  url: https://showpad.com/
+  maturity: production
+- id: web-storytell-ai-use-case-sales-battlecards
+  name: Storytell
+  category: other
+  url: https://web.storytell.ai/use-case/sales-battlecards
+  maturity: production
+- id: revenuegrid-com
+  name: Revenue Grid
+  category: other
+  url: https://revenuegrid.com/
+  maturity: production
+- id: help-salesforce-com-s-articleview-id-sf-aac-overview-htm
+  name: Salesforce Einstein Activity Capture (EAC)
+  category: other
+  url: https://help.salesforce.com/s/articleView?id=sf.aac_overview.htm
+  maturity: production
+- id: nektar-ai
+  name: Nektar.ai
+  category: other
+  url: https://nektar.ai/
+  maturity: production
+- id: sap-com-products-crm-sales-cloud-html
+  name: SAP Sales Cloud V2 mit Joule
+  category: other
+  url: https://www.sap.com/products/crm/sales-cloud.html
+  maturity: production
+- id: avoma-com
+  name: Avoma
+  category: other
+  url: https://www.avoma.com/
+  maturity: production
+- id: getweflow-com
+  name: Weflow
+  category: other
+  url: https://www.getweflow.com/
+  maturity: production
+- id: rivaengine-com
+  name: Riva (Riva Engine)
+  category: other
+  url: https://rivaengine.com/
+  maturity: production
+- id: introhive-com
+  name: Introhive
+  category: other
+  url: https://www.introhive.com/
+  maturity: production
+  vendor: Introhive Services Inc.
+- id: zoho-com-crm-zia
+  name: Zoho CRM mit Zia
+  category: other
+  url: https://www.zoho.com/crm/zia/
+  maturity: production
+  vendor: Zoho Corporation
+- id: pipedrive-com-en-features-ai-sales-assistant
+  name: Pipedrive AI Sales Assistant
+  category: other
+  url: https://www.pipedrive.com/en/features/ai-sales-assistant
+  maturity: production
+  vendor: Pipedrive
+- id: clari-com
+  name: Clari
+  category: other
+  url: https://www.clari.com/
+  maturity: production
+- id: gong-io
+  name: Gong
+  category: other
+  url: https://www.gong.io/
+  maturity: production
+- id: knowledge-hubspot-com-records-use-deal-scores
+  name: HubSpot Deal Scores (Breeze AI)
+  category: other
+  url: https://knowledge.hubspot.com/records/use-deal-scores
+  maturity: production
+- id: help-salesforce-com-s-articleview-id-ai-einstein-sales-opportunity-scoring-htm
+  name: Salesforce Einstein Opportunity Scoring & Insights
+  category: other
+  url: https://help.salesforce.com/s/articleView?id=ai.einstein_sales_opportunity_scoring.htm
+  maturity: production
+- id: learn-microsoft-com-en-us-dynamics365-sales-configure-opportunity-research-agent
+  name: Microsoft Dynamics 365 Sales Opportunity Agent
+  category: other
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/configure-opportunity-research-agent
+  maturity: production
+- id: haliro-io-en-products-deal-intelligence
+  name: Haliro Deal Intelligence
+  category: other
+  url: https://haliro.io/en/products/deal-intelligence
+  maturity: production
+- id: bliro-io
+  name: bliro
+  category: other
+  url: https://www.bliro.io/
+  maturity: production
+- id: kickscale-com
+  name: Kickscale
+  category: other
+  url: https://www.kickscale.com/
+  maturity: production
+- id: mediafly-com
+  name: Mediafly Revenue360
+  category: other
+  url: https://www.mediafly.com/
+  maturity: production
+- id: goconsensus-com
+  name: Consensus
+  category: other
+  url: https://goconsensus.com/
+  maturity: production
+- id: demoboost-com
+  name: Demoboost
+  category: other
+  url: https://demoboost.com/
+  maturity: production
+- id: navattic-com
+  name: Navattic
+  category: other
+  url: https://www.navattic.com/
+  maturity: production
+- id: saleo-io
+  name: Saleo
+  category: other
+  url: https://saleo.io/
+  maturity: production
+- id: walnut-io
+  name: Walnut
+  category: other
+  url: https://www.walnut.io/
+  maturity: production
+- id: demostack-com
+  name: Demostack
+  category: other
+  url: https://www.demostack.com/
+  maturity: production
+- id: storylane-io
+  name: Storylane
+  category: other
+  url: https://www.storylane.io/
+  maturity: production
+- id: supademo-com
+  name: Supademo
+  category: other
+  url: https://supademo.com/
+  maturity: production
+- id: klarland-com
+  name: klar.land
+  category: other
+  url: https://klarland.com/
+  maturity: production
+- id: oltohq-com
+  name: Olto
+  category: other
+  url: https://oltohq.com/
+  maturity: production
+- id: reprise-com
+  name: Reprise
+  category: other
+  url: https://www.reprise.com/
+  maturity: production
+- id: modjo-ai
+  name: Modjo
+  category: other
+  url: https://www.modjo.ai
+  maturity: production
+- id: jiminny-com
+  name: Jiminny
+  category: other
+  url: https://jiminny.com
+  maturity: production
+- id: leexi-ai
+  name: Leexi
+  category: other
+  url: https://leexi.ai
+  maturity: production
+- id: tucan-ai
+  name: tucan.ai
+  category: other
+  url: https://www.tucan.ai
+  maturity: production
+- id: demodesk-com
+  name: Demodesk Coach
+  category: other
+  url: https://demodesk.com
+  maturity: production
+- id: bao-ai
+  name: bao
+  category: other
+  url: https://www.bao.ai
+  maturity: production
+- id: hubspot-com-products-sales-conversation-intelligence
+  name: HubSpot AI Conversation Intelligence
+  category: other
+  url: https://www.hubspot.com/products/sales/conversation-intelligence
+  maturity: production
+- id: loopio-com
+  name: Loopio
+  category: productivity
+  url: https://loopio.com/
+  maturity: production
+- id: responsive-io
+  name: Responsive (formerly RFPIO)
+  category: productivity
+  url: https://www.responsive.io/
+  maturity: production
+- id: klarvo-io
+  name: Klarvo
+  category: other
+  url: https://klarvo.io/
+  maturity: production
+- id: verifywise-ai-platform-ai-trust-center
+  name: Verifywise AI Trust Center
+  category: other
+  url: https://verifywise.ai/platform/ai-trust-center
+  maturity: production
+- id: safebase-io
+  name: SafeBase (by Drata)
+  category: productivity
+  url: https://safebase.io/
+  maturity: production
+- id: bidfix-ai
+  name: Bidfix
+  category: productivity
+  url: https://bidfix.ai/
+  maturity: production
+- id: mistral-ai-products-le-chat
+  name: Mistral Le Chat Enterprise / SAP EU AI Cloud
+  category: other
+  url: https://mistral.ai/products/le-chat
+  maturity: production
+- id: ontec-ai-de-loesungen-vergabe-ki
+  name: ONTEC AI Tender Scanner
+  category: productivity
+  url: https://ontec.ai/de/loesungen/vergabe-ki/
+  maturity: production
+- id: lighton-io
+  name: LightOn Paradigm
+  category: other
+  url: https://lighton.io/
+  maturity: production
+- id: specgen-ai
+  name: Specgen
+  category: other
+  url: https://specgen.ai/
+  maturity: production
+- id: tenderbolt-ai-en
+  name: Tenderbolt AI
+  category: other
+  url: https://www.tenderbolt.ai/en
+  maturity: production
+- id: everwise-ai
+  name: Everwise
+  category: productivity
+  url: https://everwise.ai/
+  maturity: production
+- id: patterno-de
+  name: Patterno
+  category: productivity
+  url: https://www.patterno.de/
+  maturity: production
+- id: ausschreibungen-staatsanzeiger-de-auftragnehmer-bieter-services-ai-bietercockpit-angebotsabgabe-einfach-sicher-staatsanzeiger-evergabe
+  name: AI Bietercockpit (Staatsanzeiger / vergabe24)
+  category: other
+  url: https://ausschreibungen.staatsanzeiger.de/auftragnehmer-bieter/services/ai-bietercockpit-angebotsabgabe-einfach-sicher-staatsanzeiger-evergabe/
+  maturity: production
+- id: salesloft-com-platform-conversations-conversation-agents
+  name: Salesloft Conversations Agent
+  category: other
+  url: https://salesloft.com/platform/conversations/conversation-agents
+  maturity: production
+  vendor: Salesloft
+- id: aviso-com
+  name: Aviso
+  category: other
+  url: https://www.aviso.com/
+  maturity: production
+- id: hubspot-com-products-sales-forecasting
+  name: HubSpot Sales Hub AI (Breeze, Predictive Forecasting)
+  category: other
+  url: https://www.hubspot.com/products/sales/forecasting
+  maturity: production
+- id: learn-microsoft-com-en-us-dynamics365-sales-configure-premium-forecasting
+  name: Microsoft Dynamics 365 Sales (Premium / Predictive Forecasting)
+  category: other
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/configure-premium-forecasting
+  maturity: production
+- id: pigment-com-plans
+  name: Pigment (AI Modeler / Sales Planning)
+  category: other
+  url: https://www.pigment.com/plans
+  maturity: production
+- id: help-salesforce-com-s-articleview-id-ai-einstein-sales-forecasting-adjustments-htm
+  name: Salesforce Sales Cloud Einstein (Predictive Forecasting)
+  category: other
+  url: https://help.salesforce.com/s/articleView?id=ai.einstein_sales_forecasting_adjustments.htm
+  maturity: production
+- id: salesloft-com-platform-forecast
+  name: Salesloft Forecast
+  category: other
+  url: https://salesloft.com/platform/forecast/
+  maturity: production
+- id: tacton-com-buyer-engagement-platform-artificial-intelligence
+  name: Tacton CPQ (AI Modeling Assistant)
+  category: productivity
+  url: https://www.tacton.com/buyer-engagement-platform/artificial-intelligence/
+  maturity: production
+- id: cas-merlin-de-branchen-maschinen-anlagenbau
+  name: CAS Merlin CPQ mit AIA
+  category: productivity
+  url: https://cas-merlin.de/branchen/maschinen-anlagenbau/
+  maturity: production
+- id: combeenation-com-cpq-im-maschinenbau
+  name: Combeenation CPQ
+  category: productivity
+  url: https://www.combeenation.com/cpq-im-maschinenbau/
+  maturity: production
+- id: orisa-de-en-ai-cpq
+  name: ORISA CREALIS KI-CPQ
+  category: productivity
+  url: https://www.orisa.de/en/ai-cpq
+  maturity: production
+- id: spadoom-com-de-loesungen-configure-price-quote-cpq
+  name: SAP CPQ + SAP Joule
+  category: productivity
+  url: https://www.spadoom.com/de/loesungen/configure-price-quote-cpq/
+  maturity: production
+- id: hivecpq-com-de-branchen-cpq-fur-maschinen
+  name: Hive CPQ
+  category: other
+  url: https://hivecpq.com/de/branchen/cpq-fur-maschinen
+  maturity: production
+- id: klarocpq-com
+  name: KlaroCPQ
+  category: other
+  url: http://klarocpq.com/
+  maturity: production
+- id: rattleapp-de
+  name: rattle
+  category: other
+  url: https://www.rattleapp.de/
+  maturity: production
+- id: camos-de-de-camos-cpq-ki
+  name: camos CPQ 365
+  category: productivity
+  url: https://www.camos.de/de/camos-cpq/ki
+  maturity: production
+- id: configit-com-configit-ace
+  name: Configit Ace + Ace Prompt + Configit Quote
+  category: productivity
+  url: https://configit.com/configit-ace/
+  maturity: production
+- id: encoway-de-services-betriebsmodelle
+  name: encoway CPQ + Product-to-Market
+  category: other
+  url: https://www.encoway.de/services/betriebsmodelle/
+  maturity: production
+- id: madkudu-com
+  name: MadKudu
+  category: other
+  url: https://www.madkudu.com/
+  maturity: production
+- id: learn-microsoft-com-en-us-dynamics365-sales-digital-selling-scoring
+  name: Microsoft Dynamics 365 Sales - Predictive Lead & Opportunity Scoring
+  category: other
+  url: https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring
+  maturity: production
+- id: salesforce-com-sales-ai
+  name: Salesforce Einstein Lead Scoring (Sales Cloud / Agentforce)
+  category: other
+  url: https://www.salesforce.com/sales/ai/
+  maturity: production
+- id: business-adobe-com-products-marketo-adobe-marketo-html
+  name: Adobe Marketo Engage (Predictive + Agentic Scoring)
+  category: other
+  url: https://business.adobe.com/products/marketo/adobe-marketo.html
+  maturity: production
+- id: docs-oracle-com-en-cloud-saas-sales-fasig-sales-intelligence-features-and-technologies-html
+  name: Oracle Sales (AI Lead Score) + Eloqua Lead Scoring
+  category: other
+  url: https://docs.oracle.com/en/cloud/saas/sales/fasig/sales-intelligence-features-and-technologies.html
+  maturity: production
+- id: learning-sap-com-courses-configuring-sap-sales-cloud-version-2-leveraging-machine-learning-for-intelligent-sales-and-lead-scoring
+  name: SAP Sales Cloud Lead Intelligence
+  category: other
+  url: https://learning.sap.com/courses/configuring-sap-sales-cloud-version-2/leveraging-machine-learning-for-intelligent-sales-and-lead-scoring
+  maturity: production
+- id: everlead-ai
+  name: EVERLEAD
+  category: other
+  url: https://www.everlead.ai/
+  maturity: production
+- id: qymatix-de
+  name: Qymatix Predictive Sales Software
+  category: other
+  url: https://qymatix.de/
+  maturity: production
+- id: marketplace-microsoft-com-en-us-product-saas-audiocodes-live-hub-for-teams
+  name: AudioCodes Live Hub
+  category: other
+  url: https://marketplace.microsoft.com/en-us/product/saas/audiocodes.live_hub_for_teams
+  maturity: production
+- id: getcloseai-com
+  name: CloseAI (getcloseai.com)
+  category: other
+  url: https://getcloseai.com/
+  maturity: production
+- id: five9-com-products-capabilities-agent-assist
+  name: Five9 AI Agent Assist
+  category: other
+  url: https://www.five9.com/products/capabilities/agent-assist
+  maturity: production
+- id: salesmatrix-org
+  name: Salesmatrix
+  category: other
+  url: https://salesmatrix.org/
+  maturity: production
+- id: help-gong-io-docs-get-ready-for-meetings-with-ai-powered-meeting-prep
+  name: Gong AI Meeting Prep
+  category: productivity
+  url: https://help.gong.io/docs/get-ready-for-meetings-with-ai-powered-meeting-prep
+  maturity: production
+- id: salesforce-com-sales-ai-sales-agent
+  name: Salesforce Agentforce / Einstein (Sales Meeting & Account Briefs)
+  category: productivity
+  url: https://www.salesforce.com/sales/ai-sales-agent/
+  maturity: production
+- id: revops-tools-askelephant
+  name: AskElephant
+  category: productivity
+  url: https://revops.tools/askelephant/
+  maturity: production
+- id: gptfy-ai-resources-salesforce-ai-use-cases-pre-meeting-preparation
+  name: GPTfy (Salesforce-native Pre-Meeting Prep)
+  category: productivity
+  url: https://gptfy.ai/resources/salesforce-ai-use-cases/pre-meeting-preparation
+  maturity: production
+- id: salesmotion-io-agents-research-agent
+  name: Salesmotion Research Agent
+  category: productivity
+  url: https://www.salesmotion.io/agents/research-agent
+  maturity: production
+- id: sifthub-io-features-deal-briefs
+  name: SiftHub Deal Briefs
+  category: productivity
+  url: https://www.sifthub.io/features/deal-briefs
+  maturity: production
+- id: getventa-ai-de-gdpr-compliant-data
+  name: Venta AI
+  category: data
+  url: https://www.getventa.ai/de/gdpr-compliant-data
+  maturity: production
+- id: saleswave-ai-en
+  name: Saleswave
+  category: other
+  url: https://www.saleswave.ai/en/
+  maturity: production
+- id: sap-com-products-crm-sales-cloud-features-html
+  name: SAP Sales Cloud V2 + Joule
+  category: other
+  url: https://www.sap.com/products/crm/sales-cloud/features.html
+  maturity: production
+- id: alignedup-com
+  name: Aligned
+  category: productivity
+  url: https://alignedup.com/
+  maturity: production
+- id: dealhub-io-platform-dealroom
+  name: DealHub DealRoom
+  category: productivity
+  url: https://dealhub.io/platform/dealroom/
+  maturity: production
+- id: sendtrumpet-com
+  name: Trumpet
+  category: productivity
+  url: https://www.sendtrumpet.com/
+  maturity: production
+- id: getaccept-com-deal-room
+  name: GetAccept
+  category: productivity
+  url: https://www.getaccept.com/deal-room
+  maturity: production
+- id: clari-com-products-align
+  name: Clari Align
+  category: productivity
+  url: https://www.clari.com/products/align
+  maturity: production
+- id: outreach-io-resources-blog-mutual-action-plans
+  name: Outreach Success Plans
+  category: productivity
+  url: https://www.outreach.io/resources/blog/mutual-action-plans
+  maturity: production
+- id: help-salesforce-com-s-articleview-id-sf-action-plans-htm
+  name: Salesforce Sales Cloud Action Plans
+  category: productivity
+  url: https://help.salesforce.com/s/articleView?id=sf.action_plans.htm
+  maturity: production
+- id: alongspace-com
+  name: Along
+  category: other
+  url: https://www.alongspace.com/
+  maturity: production
+- id: valuecase-com
+  name: Valuecase
+  category: other
+  url: https://www.valuecase.com/
+  maturity: production
+- id: allego-com-platform
+  name: Allego
+  category: other
+  url: https://www.allego.com/platform
+  maturity: production
+- id: apollo-io-product-engage
+  name: Apollo.io
+  category: sales
+  url: https://www.apollo.io/product/engage
+  maturity: production
+- id: lagrowthmachine-com
+  name: La Growth Machine
+  category: sales
+  url: https://lagrowthmachine.com/
+  maturity: production
+- id: outreach-io
+  name: Outreach
+  category: sales
+  url: https://www.outreach.io/
+  maturity: production
+- id: regie-ai
+  name: Regie.ai
+  category: sales
+  url: https://www.regie.ai/
+  maturity: production
+- id: reply-io
+  name: Reply.io (Jason AI)
+  category: sales
+  url: https://reply.io/
+  maturity: production
+- id: salesloft-com
+  name: Salesloft
+  category: sales
+  url: https://salesloft.com/
+  maturity: production
+- id: twain-ai
+  name: Twain
+  category: sales
+  url: https://www.twain.ai/
+  maturity: production
+- id: herman-ai-com
+  name: Herman AI
+  category: other
+  url: https://herman-ai.com/
+  maturity: production
+- id: pandadoc-com
+  name: PandaDoc
+  category: other
+  url: https://www.pandadoc.com
+  maturity: production
+- id: salesforce-com-sales-cpq-sales-quote-automation
+  name: Salesforce Revenue Cloud + Agentforce (CPQ)
+  category: other
+  url: https://www.salesforce.com/sales/cpq/sales-quote-automation
+  maturity: production
+- id: sap-com-products-crm-cpq-html
+  name: SAP CPQ + Joule
+  category: other
+  url: https://www.sap.com/products/crm/cpq.html
+  maturity: production
+- id: oracle-com-cx-cpq
+  name: Oracle CPQ (Quote Assist Agent + GenAI Quote Summaries)
+  category: other
+  url: https://www.oracle.com/cx/cpq/
+  maturity: production
+- id: autorfp-ai
+  name: AutoRFP.ai
+  category: other
+  url: https://autorfp.ai/
+  maturity: production
+- id: bryo-ai
+  name: BRYO (bryo.ai)
+  category: other
+  url: https://bryo.ai/
+  maturity: production
+- id: camos-de-en-camos-cpq-ai
+  name: camos CPQ (mit AI-Modul)
+  category: other
+  url: https://www.camos.de/en/camos-cpq/ai/
+  maturity: production
+- id: arphie-ai
+  name: Arphie
+  category: other
+  url: https://arphie.ai/
+  maturity: production
+- id: autogenai-com
+  name: AutogenAI
+  category: other
+  url: https://autogenai.com/
+  maturity: production
+- id: heyiris-ai
+  name: Iris AI
+  category: other
+  url: https://heyiris.ai/
+  maturity: production
+- id: sifthub-io
+  name: SiftHub
+  category: other
+  url: https://sifthub.io/
+  maturity: production
+- id: beyondrfp-de
+  name: Beyond.RFP
+  category: other
+  url: https://www.beyondrfp.de/
+  maturity: production
+- id: qorusdocs-com
+  name: QorusDocs
+  category: other
+  url: https://www.qorusdocs.com/
+  maturity: production
+- id: uplandsoftware-com-qvidian
+  name: Upland Qvidian
+  category: other
+  url: https://uplandsoftware.com/qvidian/
+  maturity: production
+- id: tendium-ai-de
+  name: Tendium
+  category: other
+  url: https://tendium.ai/de/
+  maturity: production
+- id: de-brainial-com
+  name: Brainial
+  category: other
+  url: https://de.brainial.com/
+  maturity: production
+- id: cognaire-com
+  name: Cognaire Respond
+  category: other
+  url: https://www.cognaire.com/
+  maturity: production
+- id: forgent-ai-de
+  name: Forgent
+  category: other
+  url: https://www.forgent.ai/de/
+  maturity: production
+- id: rocketdocs-com
+  name: RocketDocs
+  category: other
+  url: https://www.rocketdocs.com/
+  maturity: production
+- id: sequesto-com
+  name: SEQUESTO
+  category: other
+  url: https://sequesto.com/
+  maturity: production
+- id: zoominfo-com-products-chorus
+  name: Chorus by ZoomInfo
+  category: productivity
+  url: https://www.zoominfo.com/products/chorus
+  maturity: production
+- id: mindtickle-com
+  name: Mindtickle
+  category: productivity
+  url: https://www.mindtickle.com/
+  maturity: production
+- id: revenue-io
+  name: Revenue.io
+  category: productivity
+  url: https://revenue.io/
+  maturity: production
+- id: demodesk-com-products-coaching
+  name: Demodesk Coaching & AI
+  category: productivity
+  url: https://demodesk.com/products/coaching
+  maturity: production
+- id: hyperbound-ai
+  name: Hyperbound
+  category: productivity
+  url: https://hyperbound.ai/
+  maturity: production
+- id: secondnature-ai
+  name: Second Nature
+  category: productivity
+  url: https://www.secondnature.ai/
+  maturity: production
+- id: templafy-com
+  name: Templafy
+  category: <coding|testing|discovery|support|...>
+  url: https://www.templafy.com/
+  maturity: production
+- id: seismic-com-products-aura
+  name: Seismic
+  category: other
+  url: https://seismic.com/products/aura/
+  maturity: production
