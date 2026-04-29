@@ -2403,3 +2403,221 @@
   url: https://github.com/SWE-agent/SWE-agent
   maturity: production
   vendor: Princeton/Stanford (academic open source)
+- id: docs-dev
+  name: Docs.dev
+  category: coding
+  url: https://docs.dev/
+  maturity: production
+- id: janekbehrens-de-codedoc-ai-html
+  name: CodeDoc AI for Confluence
+  category: other
+  url: https://janekbehrens.de/codedoc-ai.html
+  maturity: production
+- id: doxra-io
+  name: DOXRA
+  category: other
+  url: https://doxra.io/
+  maturity: production
+- id: langdock-com
+  name: Langdock
+  category: other
+  url: https://langdock.com/
+  maturity: production
+- id: notion-com-help-guides-notion-ai-for-docs
+  name: Notion AI
+  category: productivity
+  url: https://www.notion.com/help/guides/notion-ai-for-docs
+  maturity: production
+  vendor: Notion Labs
+- id: algolia-com-products-ai-ask-ai
+  name: Algolia Ask AI (DocSearch)
+  category: support
+  url: https://www.algolia.com/products/ai/ask-ai
+  maturity: production
+- id: docs-aismarttalk-tech-de-compliance-hosting
+  name: AI SmartTalk
+  category: support
+  url: https://docs.aismarttalk.tech/de/compliance-hosting
+  maturity: production
+- id: eurorag-eu
+  name: EuroRAG
+  category: support
+  url: https://eurorag.eu/
+  maturity: production
+- id: rm-solutions-de-en-ai-suite-ai-chatbot-overview-ai-chatbot
+  name: rms. AI Chatbot
+  category: support
+  url: https://rm-solutions.de/en/ai-suite/ai-chatbot-overview/ai-chatbot/
+  maturity: production
+- id: docs-cloud-google-com-generative-ai-app-builder-docs-compliance-security-controls
+  name: Vertex AI Search (Google Cloud)
+  category: other
+  url: https://docs.cloud.google.com/generative-ai-app-builder/docs/compliance-security-controls
+  maturity: production
+- id: lokalise-com
+  name: Lokalise
+  category: productivity
+  url: https://lokalise.com/
+  maturity: production
+- id: phrase-com
+  name: Phrase (Strings + TMS)
+  category: productivity
+  url: https://phrase.com/
+  maturity: production
+- id: tolgee-io
+  name: Tolgee
+  category: productivity
+  url: https://tolgee.io/
+  maturity: production
+- id: smartling-com
+  name: Smartling
+  category: productivity
+  url: https://www.smartling.com/
+  maturity: production
+- id: supertext-com
+  name: Supertext
+  category: other
+  url: https://www.supertext.com/
+  maturity: production
+- id: systransoft-com-translation-products-translate-server
+  name: SYSTRAN Pure Neural Server
+  category: other
+  url: https://www.systransoft.com/translation-products/translate-server/
+  maturity: production
+- id: lingo-dev
+  name: Lingo.dev
+  category: productivity
+  url: https://lingo.dev/
+  maturity: production
+- id: weblate-org
+  name: Weblate
+  category: productivity
+  url: https://weblate.org/
+  maturity: production
+- id: azure-microsoft-com-en-us-products-ai-services-ai-translator
+  name: Azure AI Translator (mit Private Endpoints, EU-Region)
+  category: other
+  url: https://azure.microsoft.com/en-us/products/ai-services/ai-translator
+  maturity: production
+- id: memoq-com
+  name: memoQ TMS
+  category: other
+  url: https://www.memoq.com/
+  maturity: production
+- id: xtm-cloud
+  name: XTM Cloud
+  category: other
+  url: https://xtm.cloud/
+  maturity: production
+- id: glean-com
+  name: Glean
+  category: discovery
+  url: https://www.glean.com/
+  maturity: production
+- id: onyx-app
+  name: Onyx (formerly Danswer)
+  category: discovery
+  url: https://www.onyx.app/
+  maturity: production
+- id: ambersearch-de
+  name: amber search
+  category: discovery
+  url: https://ambersearch.de/
+  maturity: production
+- id: intrafind-com-en-ifinder
+  name: IntraFind iFinder
+  category: other
+  url: https://intrafind.com/en/ifinder
+  maturity: production
+- id: sinequa-com
+  name: Sinequa
+  category: other
+  url: https://www.sinequa.com/
+  maturity: production
+- id: dust-tt
+  name: Dust
+  category: discovery
+  url: https://dust.tt/
+  maturity: production
+- id: mindbreeze-com
+  name: Mindbreeze InSpire
+  category: other
+  url: https://www.mindbreeze.com/
+  maturity: production
+- id: slack-com-intl-en-gb-knowledge-sharing
+  name: Slack Enterprise Search (Slack AI)
+  category: productivity
+  url: https://slack.com/intl/en-gb/knowledge-sharing
+  maturity: production
+  vendor: Salesforce / Slack
+- id: cobolpros-cloud
+  name: COBOLpro
+  category: coding
+  url: https://cobolpros.cloud/
+  maturity: production
+- id: codeaura-ai
+  name: CodeAura
+  category: coding
+  url: https://codeaura.ai/
+  maturity: production
+- id: syntax-com-blog-genai-for-sap-transforming-custom-code-documentation-in-the-digital-age
+  name: Syntax AI CodeGenie
+  category: coding
+  url: https://www.syntax.com/blog/genai-for-sap-transforming-custom-code-documentation-in-the-digital-age/
+  maturity: production
+- id: cabs-microfocus-com-products-cobol-analyzer
+  name: OpenText (Micro Focus) COBOL Analyzer
+  category: other
+  url: https://cabs.microfocus.com/products/cobol-analyzer/
+  maturity: production
+- id: sukamoai-com
+  name: SukamoAI Mainframe Modernizer
+  category: other
+  url: https://www.sukamoai.com/
+  maturity: production
+- id: phasechange-ai-products
+  name: Phase Change Software (Phase Change AI)
+  category: coding
+  url: https://www.phasechange.ai/products
+  maturity: production
+- id: sysparency-com
+  name: Sysparency
+  category: coding
+  url: https://www.sysparency.com/
+  maturity: production
+- id: cloudframe-com-atlas
+  name: CloudFrame Atlas
+  category: other
+  url: https://www.cloudframe.com/atlas
+  maturity: production
+- id: pks-de-kompetenzen-software-analyse-explain
+  name: PKS eXplain
+  category: other
+  url: https://www.pks.de/kompetenzen/software-analyse-explain
+  maturity: production
+- id: aws-amazon-com-transform-mainframe
+  name: AWS Transform for mainframe
+  category: coding
+  url: https://aws.amazon.com/transform/mainframe/
+  maturity: production
+  vendor: Amazon Web Services
+- id: pagerduty-com-generative-ai
+  name: PagerDuty Advance (Postmortems & AI Runbooks)
+  category: productivity
+  url: https://www.pagerduty.com/generative-ai/
+  maturity: production
+- id: docs-port-io-guides-all-ai-powered-rca-postmortem-generation
+  name: Port.io AI Agent (RCA + Postmortem)
+  category: productivity
+  url: https://docs.port.io/guides/all/ai-powered-rca-postmortem-generation
+  maturity: production
+- id: servicenow-com-products-itom-predictive-aiops-html
+  name: ServiceNow AI Agents (ITOM/AIOps)
+  category: productivity
+  url: https://www.servicenow.com/products/itom-predictive-aiops.html
+  maturity: production
+- id: opsrift-com
+  name: Opsrift
+  category: other
+  url: https://www.opsrift.com/
+  maturity: production
