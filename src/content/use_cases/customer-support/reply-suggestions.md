@@ -27,6 +27,14 @@ tools:
     fit: conditional
     sources:
       - id: ada-cx-platform
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Agentic workflow simplifies technical support
+      complaints:
+        - Trustpilot 1.9/5; users trapped in endless loops
+        - Cannot retain context between conversation turns
     why_it_fits: "Ada Reasoning Engine mit Coaching-Loop: Past-Conversation-Coaching wird automatisch in zukünftige Antworten übernommen — passt zur Use-Case-Caveat 'Tonalität/Corporate Voice systematisch härten'. Stark bei Multilingual/High-Volume. Einschränkung: Custom Pricing 100K–400K USD/Jahr."
     enterprise_readiness: enterprise_ready
   - id: aissist-io
@@ -40,18 +48,45 @@ tools:
     sources:
       - id: decagon-ai-comparisons-decagon-vs-sierra
       - id: twig-so-blog-enterprise-only-vs-everyone-ai-support-market-split
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - 80%+ deflection rates with truly autonomous agent
+        - Handles complex multi-step transactions end-to-end
+      complaints:
+        - Limited transparency on why agent made decisions
+        - Requires engineering resources, not self-serve setup
     why_it_fits: "Enterprise-Player für Teams mit hohem Ticketvolumen (Tausende/Tag). AOPs in Natural Language definieren konsistentes Verhalten über Voice/Chat/E-Mail; im Reply-Suggestion-Use-Case relevant als Containment-Layer plus Copilot-Backstop für eskalierte Tickets. Einschränkung: Annual Contracts ~95K–590K USD — nur ab großer Größe wirtschaftlich."
     enterprise_readiness: enterprise_ready
   - id: kore-ai
     fit: conditional
     sources:
       - id: kore-ai-blog-top-ai-agents-for-customer-service-tested-reviewed
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - User-friendly interface easy to adopt
+        - Prebuilt tools reduce custom development
+      complaints:
+        - Features often don't work as expected, slow vendor fixes
+        - Steep learning curve despite UX claims
     why_it_fits: "Agent-Assist-Suite mit Next-Best-Action, Knowledge-Surfacing, Live-Transkription und Call Summaries — stark für Voice-/Contact-Center-Setups bei DACH-Telco/Banking. Für reine E-Mail/Chat-Reply-Vorschläge überdimensioniert, aber in Omnichannel-Cases relevant. Einschränkung: Stärke bei Voice/Contact Center, weniger bei reinem Email-Helpdesk."
     enterprise_readiness: enterprise_ready
   - id: sierra-ai
     fit: conditional
     sources:
       - id: quiq-com-blog-sierra-ai-vs-decagon
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Best-in-class brand voice alignment at scale
+        - Genuine resolution, not just deflection
+      complaints:
+        - $150K+ minimum barrier to entry
+        - Hallucinations & jailbreak incidents documented
     why_it_fits: "Enterprise-AI-Concierge für große Consumer-Brands mit starkem Brand-Voice-Tuning, Voice+Chat-Integration und Compliance-Fokus. Im Reply-Suggestion-Kontext relevant für Marken, deren Tonalität/Corporate Voice unter strenger Governance steht. Einschränkung: Custom Enterprise Contracts (~150K USD+)."
     enterprise_readiness: enterprise_ready
   - id: moin-ai

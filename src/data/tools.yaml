@@ -2385,3 +2385,9 @@
   url: https://guide.sonatype.com/mcp
   maturity: production
   vendor: Sonatype
+- id: observe-ai
+  name: Observe.AI
+  category: support
+  url: https://www.observe.ai/
+  maturity: production
+  vendor: Observe.AI

@@ -56,6 +56,18 @@ tools:
     practitioner_signal:
       volume: low
       tenor: unknown
+      praise:
+        - Deep native integration with Salesforce Service Cloud ecosystem
+        - "Fast time-to-value: use cases deployable in under 2 hours"
+        - Omnichannel console with unified agent experience and analytics
+        - Improved resolution times and CSAT in early deployments
+      complaints:
+        - Data Cloud is mandatory hard dependency, adding significant cost
+        - Conversations slower than traditional search-based discovery
+        - Pricing model complex and confusing; usage estimation unclear
+        - Platform bugs reported; cannot always access knowledge articles
+        - Overhyped marketing vs. actual product delivery and ROI
+        - Forced adoption; replacing search without user choice
     sources:
       - id: salesforce-com-blog-proactive-service
       - id: sebastientang-com-blog-agentforce-vs-einstein-copilot-salesforce

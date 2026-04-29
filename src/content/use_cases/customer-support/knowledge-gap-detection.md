@@ -80,6 +80,11 @@ tools:
       tenor: mixed
       complaints:
         - Implementierung komplex und zeitaufwändig
+      praise:
+        - Speech analytics across 100% of calls vs. manual sample-based QA
+        - Accurate transcripts enable deep sentiment and pain-point analysis
+        - Customizable dashboards align with specific business metrics
+        - Pattern detection reveals recurring customer and agent performance gaps
     sources:
       - id: callminer-com-conversation-analytics-conversation-analytics
       - id: insight7-io-best-ai-speech-analytics-platforms-compared-nice-vs-verint-vs-callminer

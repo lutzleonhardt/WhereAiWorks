@@ -50,6 +50,17 @@ tools:
     sources:
       - id: aws-amazon-com-connect-contact-lens
       - id: gartner-com-reviews-product-amazon-connect
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - PII-redaction integrated with compliance workflows for DSGVO-compliant setups
+        - Good fit for Amazon Connect ecosystem with minimal extra integration
+        - Generative summaries via AWS Bedrock integration for quick call overviews
+      complaints:
+        - Topic-Discovery less rich than specialized Pure-Plays with domain expertise
+        - Useful mainly for Amazon Connect customers, limited value outside ecosystem
+        - Lacks comprehensive reporting dashboards compared to standalone solutions
     why_it_fits: "Frankfurt-Region (eu-central-1), native PII-Redaction, Bedrock-Anbindung fuer generative VoC-Zusammenfassungen. Fuer Connect-Bestand der naheliegende VoC-Pfad. AWS war 2024 und 2025 Leader im Gartner Magic Quadrant for CCaaS, Amazon Connect bei Gartner Peer Insights mit 4,5/5. Einschränkung: Sinnvoll fast nur fuer Amazon-Connect-Kunden."
     enterprise_readiness: enterprise_ready
   - id: cresta-com
@@ -57,6 +68,17 @@ tools:
     sources:
       - id: cresta-com-product-insights
       - id: martech360-com-news-cresta-introduces-ai-analyst-to-revolutionize-business-insights-from-customer-conversations
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Excellent real-time coaching hints in context of actual conversations
+        - Deep conversation analytics with actionable insights for manager visibility
+        - Efficient call review and coaching workflows reduce manual effort
+      complaints:
+        - Rigid AI scoring based on keywords lacks true empathy/problem-solving nuance
+        - High enterprise costs in six-figure USD range, long implementation cycles
+        - Risk of training agents to follow scripts vs. genuine customer conversations
     why_it_fits: "Im Briefing explizit genannt. CI-Plattform mit eigenen LLMs, Topic- und Trend-Modul. Forrester Wave Conversation Intelligence Solutions for Contact Centers Q2 2025 nennt Cresta als Leader mit Bestwerten in Insight Discovery und Outcome Analysis. Fuer DACH-Einsatz sind deutsche Modellqualitaet und EU-Hosting die kritischen Pruefpunkte vor Vertragsabschluss. Einschränkung: US-Hosting Standard, EU-Datenresidenz nur auf Anfrage."
     enterprise_readiness: enterprise_ready
   - id: genesys-com-capabilities-ai-experience
@@ -79,6 +101,17 @@ tools:
       - id: nice-com-products-customer-engagement-enlighten-ai
       - id: cmswire-com-the-wire-nice-named-a-leader-in-the-2024-gartner-magic-quadrant-for-contact-center-as-a-service-for-10th-year
       - id: gartner-com-reviews-market-contact-center-workforce-engagement-management-compare-nice-vs-verint
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Improved customer satisfaction by 13% in 60 days (reported by Solera case study)
+        - Comprehensive CX data sets enable objective analysis of every interaction
+        - Integrates cleanly into CXone environment for QA workflow standardization
+      complaints:
+        - Long setup time and demanding model maintenance (DPA configuration complexity)
+        - Oriented toward NICE-centric programs, other telephony environments are harder
+        - High licensing costs typical for enterprise contact centers
     why_it_fits: "Marktfuehrer Speech Analytics in Enterprise und DACH-Finance. Vortrainierte CX-Modelle fuer Themen, Treiber, Compliance ueber 100% der Interaktionen. CXone-Stack mit EU-Region. NICE wurde 2024 zum 10. Mal in Folge Leader im Gartner Magic Quadrant for CCaaS und ist bei Gartner Peer Insights als Speech-Analytics-Anbieter gelistet. Einschränkung: Sinnvoll vorrangig fuer NICE-CXone-Kunden."
     enterprise_readiness: enterprise_ready
   - id: qualtrics-com-support-xm-discover-text-analytics-ai-assisted-text-analytics-in-xm-discover
@@ -86,6 +119,17 @@ tools:
     sources:
       - id: qualtrics-com-platform-xm-discover
       - id: cxtoday-com-customer-analytics-intelligence-gartner-magic-quadrant-voc-platforms-2026
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Exceptional flexibility in customizing survey deployment and text model adjustments
+        - Outstanding account team provides strategic guidance and brings new project ideas
+        - Powerful at bringing business insights to improve processes and products
+      complaints:
+        - Complex categorization model with steep learning curve for theme management
+        - Requires ongoing manual oversight to maintain accuracy as feedback volume grows
+        - Enterprise pricing without clear upfront transparency
     why_it_fits: "Reifste VoC-Plattform fuer Enterprise-Konversations-Korpora. Kategoriemodell, Effort-/Sentiment-Scoring, Trend-Alerts und DACH-Referenzen. EU-Datenresidenz konfigurierbar, SOC2/ISO27001 vorhanden. Qualtrics ist 2026 erneut Leader im Gartner Magic Quadrant for VoC Platforms (per CX Today). Fuer mittlere bis grosse Service-Organisationen mit gemischten Quellen (Voice, Chat, Ticket, Survey) der Default-Kandidat. Einschränkung: Lizenzkosten im Enterprise-Tier sehr hoch."
     enterprise_readiness: enterprise_ready
   - id: getthematic-com
@@ -93,6 +137,17 @@ tools:
     sources:
       - id: getthematic-com
       - id: g2-com-compare-sentisum-vs-thematic
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Erklaerbare Themenbaeume statt Black-Box-Cluster
+        - Excellent for discovering escalating issues and new themes in feedback
+      complaints:
+        - Requires ongoing manual oversight and refinement as feedback volume scales
+        - Unsupervised clustering demands internal resources to maintain accuracy
+        - Requires pre-transcribed voice data; no native voice analytics pipeline
+        - Better suited for text feedback; less ideal for real-time voice analytics
     why_it_fits: "VoC-Pure-Play mit erklaerbaren Themenbaeumen; verarbeitet Tickets, Surveys, Reviews, Chats und Transkripte. Stark fuer Outside-In-Sicht ohne grossen Stack. G2 High Performer in Feedback-Analytics und Text-Analysis. Kein eigener Speech-Layer — Transkripte muessen extern geliefert werden. Downgrade auf conditional, weil keine Platzierung im Gartner MQ VoC oder Forrester Wave Text Analytics und keine substanziellen DACH-Enterprise-Referenzen nachweisbar; passt am ehesten fuer mittelgrosse Teams mit reifer Transkript-Pipeline. Einschränkung: Kein eigener Voice-Stack, kleinerer Anbieter ohne EU-Hosting-Klarheit."
     enterprise_readiness: team_ready
   - id: verint-com-our-platform-speech-and-text-analytics
@@ -101,8 +156,64 @@ tools:
       - id: verint-com-our-offerings-speech-analytics
       - id: forrester-com-report-the-forrester-wave-tm-people-oriented-text-analytics-platforms-q2-2022-res176358
       - id: gartner-com-reviews-market-speech-analytics-platforms
+    practitioner_signal:
+      volume: low
+      tenor: unknown
+      praise:
+        - Accurate agent performance visibility across the organization
+        - Effective for identifying compliance and coaching opportunities
+        - Comprehensive root-cause analysis and at-risk customer detection
+      complaints:
+        - Tedious DPA trigger implementation requires coordination between IT and agents
+        - Steep training requirements, difficult to get leadership into scheduled training
+        - Complex tagging syntax makes it difficult to retrieve specific word searches
     why_it_fits: "Etablierter Marktfuehrer mit reifen DACH-Implementierungen, on-prem oder Cloud. Topic Discovery, Trend-Reports, Beschwerde-Cluster, Root-Cause-Drilldowns; geeignet fuer regulierte Branchen. Verint wurde im Forrester Wave People-Oriented Text Analytics Q2 2022 unter den 13 wichtigsten Anbietern gewertet und ist bei Gartner Peer Insights als Speech-Analytics-Plattform gelistet. Einschränkung: Klassischer Stack, AI/LLM-Modernisierung erst seit Open CCaaS."
     enterprise_readiness: enterprise_ready
+  - id: callminer-com-products-eureka
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: high
+    why_it_fits: CallMiner Eureka is a pure-play in the Conversation Intelligence market. It analyses voice and text interactions, identifies complaint topics and trends via unsupervised topic modelling plus rule-based tagging, and has an explicit VoC and compliance focus. Powerful bulk analysis handles large call volumes with actionable results, and the self-coaching platform lets agents and managers identify issues independently.
+    caveats:
+      - Voice-focused; chat and email analytics are less rich
+      - Requires a dedicated analyst role for ongoing model maintenance and tuning
+      - DACH language support must be verified contractually
+      - Market mindshare declining (35.7% to 20.7% YoY per PeerSpot)
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Efficiently targets compliance and effectiveness-related insights
+        - Powerful bulk analysis handles large call volumes with actionable results
+        - Self-coaching platform helps agents and managers assess issues quickly
+      complaints:
+        - Requires dedicated analyst role for ongoing model maintenance and tuning
+        - Voice-focused, less rich analytics for chat and email interactions
+        - Market mindshare declining (35.7% to 20.7% year-over-year per PeerSpot)
+    sources:
+      - id: callminer-com-products-eureka
+  - id: observe-ai
+    fit: good_fit
+    enterprise_readiness: enterprise_ready
+    confidence: low
+    why_it_fits: Observe.AI is a Conversation Intelligence vendor with a proprietary 30B domain LLM tuned for contact-centre language. It analyses voice and chat, delivering Auto-QA and VoC insights including Topic Discovery, complaint clustering, and trend reports. The dedicated 'Insights' module provides an outside-in view of customer sentiment and emerging issues.
+    caveats:
+      - Auto-QA is the primary product; VoC Insights is an extension module
+      - EU data residency and compliance setup is handled individually
+      - German language transcription accuracy must be tested on own audio
+      - Falling behind competitors with heavy reliance on transcription vs. newer generative AI approaches
+    practitioner_signal:
+      volume: medium
+      tenor: mixed
+      praise:
+        - Domain-spezifisches LLM trifft Contact-Center-Sprache gut
+        - Quality management and trend analysis more comprehensive than prior systems
+      complaints:
+        - Transcription accuracy is primary complaint (16 G2 mentions), must test on own audio
+        - Admin/upkeep friction and slow technical support responsiveness initially
+        - Falling behind with reliance on transcription vs. newer generative AI approaches
+    sources:
+      - id: observe-ai-products-business-insights
 start_here: Piloten starten am einfachsten mit dem Analytics-Modul der vorhandenen CCaaS-Plattform — NICE Enlighten AI für CXone-Bestände, AWS Contact Lens für Amazon-Connect-Umgebungen — auf einem klar abgegrenzten Quartalsdatensatz. Vor der Auswertung eine Pseudonymisierungspipeline einrichten und die Top-5-Themen direkt mit dem Produktteam validieren.
 caveats: Voice-Korpora unterliegen DSGVO-Einwilligungs- und Löschpflichten; bei Gesundheits- oder Finanzdaten greift Art. 9, sodass Pseudonymisierung vor der Analyse einzurichten ist. Alle drei Ankerwerkzeuge setzen die jeweils eigene CCaaS-Plattform voraus — wer stack-übergreifend analysieren will, braucht eine eigenständige VoC-Plattform.
 sources: []
