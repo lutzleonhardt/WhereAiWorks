@@ -113,6 +113,10 @@ const coverageTooltipText: Record<CoverageKey, string> = {
 };
 const practiceSignalTooltip =
   'Aggregierte Signale aus Reviews, Foren und Community-Quellen wie Reddit. Zeigt Volumen und Tenor der Praxisstimmen.';
+const practiceSignalEmptyText =
+  'Keine öffentlichen Praktiker-Stimmen gefunden — Tool ist neu, nischig oder primär Enterprise.';
+const practiceSignalEmptyTooltip =
+  'Es wurde nach Diskussionen auf Reddit, Hacker News, lobste.rs und Foren gesucht. Keine ausreichend belastbaren öffentlichen Stimmen gefunden.';
 
 const resolveSources = (
   refs: readonly { id: string }[] | undefined
@@ -324,7 +328,19 @@ const useCases = useCaseEntries.map((entry) => entry.data);
                             </>
                           )}
 
-                          {ps && (
+                          {(!ps || ps.volume === 'none') && (
+                            <div
+                              class="stage-signal-line stage-signal-empty"
+                              role="group"
+                              title={practiceSignalEmptyTooltip}
+                              aria-label={`Praxis-Signal. ${practiceSignalEmptyTooltip}`}
+                            >
+                              <span class="lbl">Praxis-Signal</span>
+                              <span class="vals">{practiceSignalEmptyText}</span>
+                            </div>
+                          )}
+
+                          {ps && ps.volume !== 'none' && (
                             hasSignalDetail ? (
                               <details class="stage-signal">
                                 <summary

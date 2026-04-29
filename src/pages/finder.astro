@@ -430,6 +430,16 @@ const useCaseData: FinderUseCase[] = assembled.map(
       </div>`;
     }
 
+    function emptySignalHtml(): string {
+      const tooltip =
+        'Es wurde nach Diskussionen auf Reddit, Hacker News, lobste.rs und Foren gesucht. Keine ausreichend belastbaren öffentlichen Stimmen gefunden.';
+      const text =
+        'Keine öffentlichen Praktiker-Stimmen gefunden — Tool ist neu, nischig oder primär Enterprise.';
+      return `<div class="tool-signal tool-signal-empty">
+        <div class="tool-signal-head" title="${escapeHtml(tooltip)}" aria-label="Praxis-Signal. ${escapeHtml(tooltip)}">Praxis-Signal · <i>${escapeHtml(text)}</i></div>
+      </div>`;
+    }
+
     function sourcesBlock(ss: FinderSource[]): string {
       if (!ss.length) return '';
       return `<div class="sources">${ss
@@ -452,7 +462,9 @@ const useCaseData: FinderUseCase[] = assembled.map(
       const confidence = t.confidence
         ? ` <span class="tool-confidence">Confidence: ${escapeHtml(t.confidence)}</span>`
         : '';
-      const ps = t.practitioner_signal ? signalHtml(t.practitioner_signal) : '';
+      const ps = t.practitioner_signal && t.practitioner_signal.volume !== 'none'
+        ? signalHtml(t.practitioner_signal)
+        : emptySignalHtml();
       return `<li class="tool-entry">
         <div class="tool-head">
           <a class="chip" href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(t.name)}${vendor} <span class="mat">(${escapeHtml(t.maturity_label)})</span></a>

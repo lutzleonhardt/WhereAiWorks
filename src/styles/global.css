@@ -1167,6 +1167,11 @@ a.src:hover { color: var(--ink); }
 .stage-signal-line .toggle svg { transition: transform .2s ease; }
 .stage-signal[open] .stage-signal-line .toggle svg { transform: rotate(180deg); }
 
+.stage-signal-empty .vals {
+  font-style: italic;
+  opacity: 0.75;
+}
+
 .stage-signal-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1474,6 +1479,17 @@ a.src:hover { color: var(--ink); }
 .tool-signal-head b {
   color: var(--ink-soft);
   font-weight: 600;
+}
+.tool-signal-empty {
+  border-left-style: dashed;
+}
+.tool-signal-empty .tool-signal-head i {
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+  font-family: var(--sans);
+  font-size: 12px;
+  opacity: 0.85;
 }
 .tool-signal-grid {
   display: grid;
