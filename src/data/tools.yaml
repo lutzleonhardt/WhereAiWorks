@@ -4887,3 +4887,421 @@
   category: other
   url: https://seismic.com/products/aura/
   maturity: production
+- id: mabl-com
+  name: Mabl
+  category: testing
+  url: https://mabl.com
+  maturity: production
+- id: deque-com-axe-devtools
+  name: axe DevTools
+  category: testing
+  url: https://www.deque.com/axe/devtools/
+  maturity: production
+- id: browserstack-com-accessibility-testing
+  name: BrowserStack Accessibility Testing
+  category: testing
+  url: https://www.browserstack.com/accessibility-testing
+  maturity: production
+- id: github-com-component-driven-cypress-axe
+  name: Cypress + cypress-axe / Playwright + axe-playwright
+  category: testing
+  url: https://github.com/component-driven/cypress-axe
+  maturity: production
+- id: evinced-com
+  name: Evinced
+  category: testing
+  url: https://www.evinced.com/
+  maturity: production
+- id: levelaccess-com
+  name: Level Access (formerly eSSENTIAL Accessibility / Continuum)
+  category: testing
+  url: https://www.levelaccess.com/
+  maturity: production
+- id: siteimprove-com-accessibility
+  name: Siteimprove Accessibility
+  category: testing
+  url: https://www.siteimprove.com/accessibility/
+  maturity: production
+- id: eye-able-com
+  name: Eye-Able
+  category: testing
+  url: https://eye-able.com/
+  maturity: production
+- id: ibm-com-able-toolkit-tools
+  name: IBM Equal Access Accessibility Checker
+  category: testing
+  url: https://www.ibm.com/able/toolkit/tools/
+  maturity: production
+- id: github-com-dequelabs-axe-core
+  name: axe Linter / axe-core (open-source)
+  category: testing
+  url: https://github.com/dequelabs/axe-core
+  maturity: production
+- id: accessibilityinsights-io
+  name: Microsoft Accessibility Insights
+  category: testing
+  url: https://accessibilityinsights.io/
+  maturity: production
+- id: storybook-js-org-addons-storybook-addon-a11y
+  name: Storybook + @storybook/addon-a11y
+  category: testing
+  url: https://storybook.js.org/addons/@storybook/addon-a11y
+  maturity: production
+- id: tpgi-com-arc-platform
+  name: TPGi ARC Platform
+  category: testing
+  url: https://www.tpgi.com/arc-platform/
+  maturity: production
+- id: highlight-io
+  name: Highlight.io
+  category: other
+  url: https://www.highlight.io/
+  maturity: production
+- id: servicenow-com-products-now-assist-html
+  name: ServiceNow Now Assist (ITSM/AIOps)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.servicenow.com/products/now-assist.html
+  maturity: production
+- id: circleci-com-docs-insights-tests
+  name: CircleCI Test Insights
+  category: testing
+  url: https://circleci.com/docs/insights-tests/
+  maturity: production
+- id: reportportal-io
+  name: ReportPortal
+  category: testing
+  url: https://reportportal.io/
+  maturity: production
+- id: harness-io-products-continuous-integration
+  name: Spinnaker / Harness Continuous Integration — Test Intelligence
+  category: testing
+  url: https://www.harness.io/products/continuous-integration
+  maturity: production
+- id: codescene-com
+  name: CodeScene
+  category: <coding|testing|discovery|support|...>
+  url: https://codescene.com/
+  maturity: production
+- id: engflow-com
+  name: EngFlow Build & Test
+  category: <coding|testing|discovery|support|...>
+  url: https://www.engflow.com/
+  maturity: production
+- id: datadoghq-com-product-ci-cd-monitoring-test-optimization
+  name: Datadog Test Optimization (CI Visibility)
+  category: testing
+  url: https://www.datadoghq.com/product/ci-cd-monitoring/test-optimization/
+  maturity: production
+- id: gradle-com-develocity
+  name: Develocity (vormals Gradle Enterprise) — Test Distribution & Predictive Test Selection
+  category: testing
+  url: https://gradle.com/develocity/
+  maturity: production
+- id: learn-microsoft-com-azure-devops-pipelines-test-flaky-test-management
+  name: Azure DevOps Flaky Test Management
+  category: testing
+  url: https://learn.microsoft.com/azure/devops/pipelines/test/flaky-test-management
+  maturity: production
+- id: docs-gitlab-com-ci-testing-unit-test-reports
+  name: GitLab CI Flaky Test Reports
+  category: testing
+  url: https://docs.gitlab.com/ci/testing/unit_test_reports/
+  maturity: production
+- id: jetbrains-com-help-teamcity-investigating-flaky-tests-html
+  name: JetBrains TeamCity Flaky Test Detection
+  category: testing
+  url: https://www.jetbrains.com/help/teamcity/investigating-flaky-tests.html
+  maturity: production
+- id: sentry-io
+  name: Sentry (Test Failure Issue Detection)
+  category: testing
+  url: https://sentry.io/
+  maturity: production
+  vendor: Sentry
+- id: docs-github-com-en-actions
+  name: GitHub Actions Test Reporting / Flaky Re-run
+  category: testing
+  url: https://docs.github.com/en/actions
+  maturity: production
+  vendor: GitHub
+- id: aligned-ch
+  name: Aligned Elements
+  category: other
+  url: https://www.aligned.ch/
+  maturity: production
+- id: ibm-com-products-requirements-management
+  name: IBM DOORS Next (mit watsonx Assistance)
+  category: other
+  url: https://www.ibm.com/products/requirements-management
+  maturity: production
+- id: matrixreq-com
+  name: Matrix Requirements (Matrix ALM/QMS)
+  category: other
+  url: https://matrixreq.com/
+  maturity: production
+- id: modernrequirements-com
+  name: Modern Requirements4DevOps
+  category: other
+  url: https://www.modernrequirements.com/
+  maturity: production
+- id: tricentis-com-products-quality-engineering-ai
+  name: QualityForge.AI / Test Case Generator (Tricentis)
+  category: testing
+  url: https://www.tricentis.com/products/quality-engineering-ai
+  maturity: production
+- id: osseno-com-en-reqsuite
+  name: ReqSuite RM
+  category: other
+  url: https://www.osseno.com/en/reqsuite/
+  maturity: production
+- id: visuresolutions-com
+  name: Visure Requirements ALM Platform
+  category: other
+  url: https://visuresolutions.com/
+  maturity: production
+- id: perforce-com-products-helix-alm
+  name: Helix ALM
+  category: <coding|testing|discovery|support|...>
+  url: https://www.perforce.com/products/helix-alm
+  maturity: production
+- id: microtool-de-produkte-objectif-rpm
+  name: objectiF RPM
+  category: <coding|testing|discovery|support|...>
+  url: https://www.microtool.de/produkte/objectif-rpm/
+  maturity: production
+- id: parasoft-com
+  name: Parasoft (DTP, C/C++test, SOAtest)
+  category: <coding|testing|discovery|support|...>
+  url: https://www.parasoft.com/
+  maturity: production
+- id: ptc-com-en-products-codebeamer
+  name: Codebeamer
+  category: other
+  url: https://www.ptc.com/en/products/codebeamer
+  maturity: production
+- id: jamasoftware-com-platform-jama-connect-ai
+  name: Jama Connect (mit Jama Connect AI)
+  category: other
+  url: https://www.jamasoftware.com/platform/jama-connect-ai/
+  maturity: production
+- id: ketryx-com
+  name: Ketryx
+  category: other
+  url: https://www.ketryx.com/
+  maturity: production
+- id: polarion-plm-automation-siemens-com
+  name: Siemens Polarion ALM
+  category: other
+  url: https://polarion.plm.automation.siemens.com/
+  maturity: production
+- id: browserstack-com-docs-automate-playwright-self-healing
+  name: BrowserStack Self-Healing Agent
+  category: testing
+  url: https://www.browserstack.com/docs/automate/playwright/self-healing
+  maturity: production
+- id: github-com-healenium-healenium
+  name: Healenium
+  category: testing
+  url: https://github.com/healenium/healenium
+  maturity: production
+- id: lambdatest-com-kane-ai
+  name: LambdaTest KaneAI
+  category: testing
+  url: https://www.lambdatest.com/kane-ai
+  maturity: production
+- id: tricentis-com-products-testim
+  name: Tricentis Testim
+  category: testing
+  url: https://www.tricentis.com/products/testim
+  maturity: production
+- id: functionize-com-automated-testing-self-healing-test-automation
+  name: Functionize
+  category: testing
+  url: https://www.functionize.com/automated-testing/self-healing-test-automation
+  maturity: production
+- id: avoautomation-ai-avo-assure
+  name: Avo Assure
+  category: testing
+  url: https://avoautomation.ai/avo-assure/
+  maturity: production
+- id: applitools-com
+  name: Applitools
+  category: testing
+  url: https://applitools.com
+  maturity: production
+- id: katalon-com-resources-center-blog-self-healing-test-automation
+  name: Katalon Platform
+  category: testing
+  url: https://katalon.com/resources-center/blog/self-healing-test-automation
+  maturity: production
+- id: octomind-dev-product-playwright-self-healing
+  name: Octomind
+  category: testing
+  url: https://octomind.dev/product/playwright-self-healing/
+  maturity: production
+- id: tricentis-com-products-automate-continuous-testing-tosca
+  name: Tricentis Tosca
+  category: testing
+  url: https://www.tricentis.com/products/automate-continuous-testing-tosca
+  maturity: production
+- id: mostly-ai
+  name: MOSTLY AI
+  category: data
+  url: https://mostly.ai
+  maturity: production
+- id: sdv-dev
+  name: SDV (Synthetic Data Vault)
+  category: data
+  url: https://sdv.dev
+  maturity: production
+- id: broadcom-com-products-software-app-dev-test-data-manager
+  name: Broadcom Test Data Manager (CA TDM)
+  category: data
+  url: https://www.broadcom.com/products/software/app-dev/test-data-manager
+  maturity: production
+- id: datprof-com
+  name: DATPROF
+  category: data
+  url: https://www.datprof.com
+  maturity: production
+- id: delphix-com
+  name: Delphix (Perforce) Continuous Data
+  category: data
+  url: https://www.delphix.com
+  maturity: production
+- id: informatica-com-products-data-security-test-data-management-html
+  name: Informatica Test Data Management
+  category: data
+  url: https://www.informatica.com/products/data-security/test-data-management.html
+  maturity: production
+- id: snowfakery-readthedocs-io
+  name: Snowfakery
+  category: data
+  url: https://snowfakery.readthedocs.io
+  maturity: production
+- id: synthesized-io
+  name: Synthesized
+  category: data
+  url: https://www.synthesized.io
+  maturity: production
+- id: ydata-ai
+  name: YData Synthetic / YData Fabric
+  category: data
+  url: https://ydata.ai
+  maturity: production
+- id: ibm-com-products-infosphere-optim-test-data-management
+  name: IBM InfoSphere Optim Test Data Management
+  category: data
+  url: https://www.ibm.com/products/infosphere-optim-test-data-management
+  maturity: production
+- id: tricentis-com-products-test-data-management
+  name: Tricentis Test Data Management
+  category: data
+  url: https://www.tricentis.com/products/test-data-management
+  maturity: production
+- id: genrocket-com
+  name: GenRocket
+  category: data
+  url: https://www.genrocket.com
+  maturity: production
+- id: k2view-com-solutions-test-data-management
+  name: K2View Test Data Management
+  category: data
+  url: https://www.k2view.com/solutions/test-data-management/
+  maturity: production
+- id: teststory-ai
+  name: TestStory.ai (in TestQuality)
+  category: testing
+  url: https://teststory.ai
+  maturity: production
+- id: iklab-dev-casepilot
+  name: CasePilot
+  category: testing
+  url: https://iklab.dev/casepilot
+  maturity: production
+- id: kusho-ai
+  name: KushoAI
+  category: <coding|testing|discovery|support|...>
+  url: https://kusho.ai
+  maturity: production
+- id: marketplace-atlassian-com-search-query-ai-20test-20case-20generator
+  name: Xray AI Test Case Generator (Atlassian Marketplace)
+  category: <coding|testing|discovery|support|...>
+  url: https://marketplace.atlassian.com/search?query=ai%20test%20case%20generator
+  maturity: production
+- id: testbee-com-unser-tool-beeai
+  name: BeeAI (testbee)
+  category: testing
+  url: https://testbee.com/unser-tool-beeai/
+  maturity: production
+- id: qase-io
+  name: Qase (AIDEN)
+  category: testing
+  url: https://qase.io
+  maturity: production
+- id: cqse-eu-en-teamscale-overview
+  name: Teamscale (Test Gap Analysis)
+  category: testing
+  url: https://www.cqse.eu/en/teamscale/overview/
+  maturity: production
+- id: docs-datadoghq-com-tests-test-impact-analysis
+  name: Datadog Intelligent Test Runner / Test Impact Analysis
+  category: testing
+  url: https://docs.datadoghq.com/tests/test_impact_analysis/
+  maturity: production
+- id: gradle-com-develocity-product-predictive-test-selection
+  name: Gradle Develocity / Predictive Test Selection
+  category: testing
+  url: https://gradle.com/develocity/product/predictive-test-selection/
+  maturity: production
+- id: learn-microsoft-com-en-us-azure-devops-pipelines-test-test-impact-analysis
+  name: Microsoft Test Impact Analysis (Azure DevOps / VSTest)
+  category: testing
+  url: https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-impact-analysis
+  maturity: production
+- id: nx-dev-ci-features-affected
+  name: Nx Affected
+  category: testing
+  url: https://nx.dev/ci/features/affected
+  maturity: production
+- id: browserstack-com-percy
+  name: Percy
+  category: testing
+  url: https://www.browserstack.com/percy
+  maturity: production
+- id: bughunters-dev
+  name: BugHunters Vision
+  category: testing
+  url: https://bughunters.dev
+  maturity: production
+- id: lost-pixel-com
+  name: Lost Pixel
+  category: testing
+  url: https://www.lost-pixel.com
+  maturity: production
+- id: saucelabs-com-platform-visual-testing
+  name: Sauce Visual
+  category: testing
+  url: https://saucelabs.com/platform/visual-testing
+  maturity: production
+- id: katalon-com
+  name: Katalon TrueTest / Katalon Platform
+  category: <coding|testing|discovery|support|...>
+  url: https://www.katalon.com
+  maturity: production
+- id: testsigma-com-ai-agents
+  name: Testsigma
+  category: <coding|testing|discovery|support|...>
+  url: https://testsigma.com/ai-agents
+  maturity: production
+- id: argos-ci-com
+  name: Argos
+  category: testing
+  url: https://argos-ci.com
+  maturity: production
+- id: lambdatest-com-visual-regression-testing
+  name: LambdaTest SmartUI
+  category: testing
+  url: https://www.lambdatest.com/visual-regression-testing
+  maturity: production
+  vendor: LambdaTest (TestMu AI)
