@@ -35,19 +35,16 @@ MVP-Content: **Testing & QA** ist mit drei Use Cases vollständig, die übrigen 
 
 Alle Inhalte leben als Markdown/YAML im Repo — versionierbar, community-editierbar, agent-generierbar.
 
-- `src/content/stages/*.md` — eine Datei pro Wertschöpfungsstufe; Use Cases liegen als strukturiertes Array im YAML-Frontmatter
-- `src/data/tools.yaml` — zentraler Tool-Katalog (ID, Name, URL, Maturity, Pricing)
-- `src/data/roles.yaml` — Rollen-Registry (ID, Name, Aliases)
-- `src/content/config.ts` — Zod-Schema; leitet Role- und Tool-Enums zur Build-Zeit aus den YAML-Dateien ab, sodass eine unbekannte Tool- oder Rollen-ID in einem Use Case den Build bricht
+- `src/content/stages/*.md` — eine Datei pro Wertschöpfungsstufe (Stage-Metadaten, ohne Use Cases)
+- `src/content/use_cases/<stage>/<slug>.md` — ein Use Case pro Datei; verweist via `stage` auf eine Stage
+- `src/data/tools.yaml` — zentraler Tool-Katalog
+- `src/data/roles.yaml` — Rollen-Registry
+- `src/data/sources.yaml` — zentrale Quellen-Registry, auf die Use Cases und Tool-Einträge per ID referenzieren
+- `src/content/config.ts` — Zod-Schema; leitet Role-, Tool- und Source-Enums zur Build-Zeit aus den YAML-Dateien ab, sodass eine unbekannte ID in einem Use Case den Build bricht
 
-### Neuer Use Case / neuer Stage
+## Beitragen
 
-Füge einen Eintrag in `use_cases:` einer bestehenden Stage-Datei hinzu oder lege eine neue `src/content/stages/<slug>.md` an. Pflichtfelder sind in `src/content/config.ts` definiert:
-
-    id, roles, title, goal_label, suitability, rationale,
-    tools, start_here, caveats, sources
-
-`suitability` ∈ {`good_fit`, `conditional`, `partial`, `immature`}. Wenn ein verwendetes Tool noch nicht in `tools.yaml` steht, erst dort anlegen — sonst bricht der Build mit einer klaren Zod-Fehlermeldung.
+Anleitung zum Anlegen neuer **Use Cases, Tools, Rollen und Sources** — inklusive Pflichtfelder, Schema-Details und Beispielen — in [`CONTRIBUTING.md`](CONTRIBUTING.md). Inhaltliche Qualitätskriterien (DSGVO, Evidenz, `fit` vs. `enterprise_readiness`, Stop-Kriterien) in [`docs/dach-curation.md`](docs/dach-curation.md), Maintainer-interne Discovery-Übernahme-Regel in [`docs/curation-policy.md`](docs/curation-policy.md), Rollen-Abgrenzung in [`docs/role-taxonomy.md`](docs/role-taxonomy.md).
 
 ## Synchronisations-Audit
 
@@ -58,14 +55,6 @@ Füge einen Eintrag in `use_cases:` einer bestehenden Stage-Datei hinzu oder leg
 - `evidence_strength`
 
 Der Check ist absichtlich read-only. Er dient als Guardrail nach Syncs oder Content-Migrationen und listet fehlende Felder pro Datei auf. Mit `-- --stage <slug>` lässt er sich auf eine konkrete Stage einschränken.
-
-### Neues Tool
-
-Anhängen an `src/data/tools.yaml`. Pflichtfelder: `id`, `name`, `category`, `url`, `maturity`.
-
-### Neue Rolle
-
-Anhängen an `src/data/roles.yaml`. Pflichtfelder: `id`, `name`. Das Zod-Schema leitet die Enums automatisch aus dieser Datei ab.
 
 ## Architektur
 
