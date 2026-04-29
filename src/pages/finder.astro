@@ -1,232 +1,10 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { loadRoles, loadSources, loadTools } from '../lib/data';
+import { loadRoles } from '../lib/data';
+import { loadFinderOptions } from '../lib/finder';
 
 const roles = loadRoles();
-const tools = loadTools();
-const sources = loadSources();
-const toolsById = new Map(tools.map((t) => [t.id, t] as const));
-const sourcesById = new Map(sources.map((s) => [s.id, s] as const));
-
-const suitabilityColor: Record<string, string> = {
-  good_fit: 'green',
-  conditional: 'amber',
-  partial: 'orange',
-  immature: 'red',
-};
-
-const suitabilityLabels: Record<string, string> = {
-  good_fit: 'gut geeignet',
-  conditional: 'bedingt geeignet',
-  partial: 'nur Teilaufgaben',
-  immature: 'noch unreif',
-};
-
-const maturityLabels: Record<string, string> = {
-  production: 'stable',
-  experimental: 'growing',
-};
-
-const sourceTypeLabels: Record<string, string> = {
-  study: 'study',
-  case_study: 'case study',
-  vendor: 'vendor',
-  vendor_doc: 'vendor doc',
-  community: 'community',
-  review: 'review',
-  blog: 'blog',
-  documentation: 'docs',
-  news: 'news',
-};
-
-const enterpriseReadinessLabels: Record<string, string> = {
-  enterprise_ready: 'enterprise-ready',
-  team_ready: 'team-ready',
-  evaluation_only: 'nur Evaluation',
-  irrelevant_for_enterprise: 'kein Enterprise-Fokus',
-  unknown: 'Reifegrad unklar',
-};
-
-const adoptionLabels: Record<string, string> = {
-  mainstream: 'Mainstream',
-  growing: 'wachsend',
-  emerging: 'aufkommend',
-};
-
-const relevanceLabels: Record<string, string> = {
-  high: 'hoch',
-  medium: 'mittel',
-  low: 'niedrig',
-};
-
-const evidenceStrengthLabels: Record<string, string> = {
-  strong: 'stark',
-  medium: 'mittel',
-  weak: 'schwach',
-};
-
-const tenorLabels: Record<string, string> = {
-  positive: 'positiv',
-  mixed: 'gemischt',
-  polarized: 'polarisiert',
-  negative: 'negativ',
-  unknown: 'unklar',
-};
-
-const volumeLabels: Record<string, string> = {
-  high: 'hoch',
-  medium: 'mittel',
-  low: 'niedrig',
-};
-
-const useCaseEntries = await getCollection('use_cases');
-
-type FinderSource = { label: string; url?: string; type: string; type_label: string };
-
-type FinderTool = {
-  id: string;
-  name: string;
-  vendor?: string;
-  url: string;
-  maturity: string;
-  maturity_label: string;
-  fit: string;
-  fit_label: string;
-  fit_color: string;
-  enterprise_readiness?: string;
-  enterprise_readiness_label?: string;
-  why_it_fits: string;
-  caveats: string[];
-  practitioner_signal?: {
-    volume: string;
-    volume_label: string;
-    tenor: string;
-    tenor_label: string;
-    praise: string[];
-    complaints: string[];
-  };
-  confidence?: string;
-  sources: FinderSource[];
-};
-
-type FinderUseCase = {
-  id: string;
-  title: string;
-  roles: string[];
-  goal_label: string;
-  stage_id: string;
-  stage_name: string;
-  suitability: string;
-  suitability_label: string;
-  suitability_color: string;
-  adoption_maturity?: string;
-  adoption_label?: string;
-  enterprise_relevance?: string;
-  enterprise_relevance_label?: string;
-  evidence_strength?: string;
-  evidence_strength_label?: string;
-  rationale: string;
-  tools: FinderTool[];
-  start_here: string;
-  caveats: string;
-  sources: FinderSource[];
-};
-
-const resolveSources = (refs: readonly { id: string }[] | undefined): FinderSource[] =>
-  (refs ?? [])
-    .map((r) => sourcesById.get(r.id))
-    .filter((s): s is NonNullable<typeof s> => Boolean(s))
-    .map((s) => ({
-      label: s.label,
-      url: s.url,
-      type: s.type,
-      type_label: sourceTypeLabels[s.type] ?? s.type,
-    }));
-
-type Assembled = FinderUseCase & { _stageOrder: number; _ucOrder: number };
-
-const assembled: Assembled[] = await Promise.all(
-  useCaseEntries.map(async (entry) => {
-    const stage = await getEntry(entry.data.stage);
-    const slug = entry.slug.split('/').pop()!;
-    const uc = entry.data;
-    return {
-      id: `${stage.slug}:${slug}`,
-      title: uc.title,
-      roles: uc.roles,
-      goal_label: uc.goal_label,
-      stage_id: stage.slug,
-      stage_name: stage.data.name,
-      suitability: uc.suitability,
-      suitability_label: suitabilityLabels[uc.suitability],
-      suitability_color: suitabilityColor[uc.suitability],
-      adoption_maturity: uc.adoption_maturity,
-      adoption_label: uc.adoption_maturity ? adoptionLabels[uc.adoption_maturity] : undefined,
-      enterprise_relevance: uc.enterprise_relevance,
-      enterprise_relevance_label: uc.enterprise_relevance
-        ? relevanceLabels[uc.enterprise_relevance]
-        : undefined,
-      evidence_strength: uc.evidence_strength,
-      evidence_strength_label: uc.evidence_strength
-        ? evidenceStrengthLabels[uc.evidence_strength]
-        : undefined,
-      rationale: uc.rationale,
-      tools: uc.tools
-        .map((entryTool) => {
-          const tool = toolsById.get(entryTool.id);
-          if (!tool) return null;
-          const enriched: FinderTool = {
-            id: tool.id,
-            name: tool.name,
-            vendor: tool.vendor,
-            url: tool.url,
-            maturity: tool.maturity,
-            maturity_label: maturityLabels[tool.maturity],
-            fit: entryTool.fit,
-            fit_label: suitabilityLabels[entryTool.fit],
-            fit_color: suitabilityColor[entryTool.fit],
-            why_it_fits: entryTool.why_it_fits,
-            caveats: entryTool.caveats ?? [],
-            sources: resolveSources(entryTool.sources),
-          };
-          if (entryTool.enterprise_readiness) {
-            enriched.enterprise_readiness = entryTool.enterprise_readiness;
-            enriched.enterprise_readiness_label =
-              enterpriseReadinessLabels[entryTool.enterprise_readiness];
-          }
-          if (entryTool.practitioner_signal) {
-            const ps = entryTool.practitioner_signal;
-            enriched.practitioner_signal = {
-              volume: ps.volume,
-              volume_label: volumeLabels[ps.volume],
-              tenor: ps.tenor,
-              tenor_label: tenorLabels[ps.tenor],
-              praise: ps.praise ?? [],
-              complaints: ps.complaints ?? [],
-            };
-          }
-          if (entryTool.confidence) enriched.confidence = entryTool.confidence;
-          return enriched;
-        })
-        .filter((t): t is FinderTool => t !== null),
-      start_here: uc.start_here,
-      caveats: uc.caveats,
-      sources: resolveSources(uc.sources),
-      _stageOrder: stage.data.order,
-      _ucOrder: uc.order,
-    };
-  })
-);
-
-assembled.sort((a, b) => {
-  if (a._stageOrder !== b._stageOrder) return a._stageOrder - b._stageOrder;
-  return a._ucOrder - b._ucOrder;
-});
-
-const useCaseData: FinderUseCase[] = assembled.map(
-  ({ _stageOrder, _ucOrder, ...rest }) => rest
-);
+const finderOptions = await loadFinderOptions();
 ---
 <Base title="Where AI Works — Finder">
   <section id="view-finder">
@@ -249,8 +27,8 @@ const useCaseData: FinderUseCase[] = assembled.map(
             </label>
             <select id="finder-role">
               <option value="">Rolle wählen…</option>
-              {roles.map((r) => (
-                <option value={r.id}>{r.name}</option>
+              {roles.map((role) => (
+                <option value={role.id}>{role.name}</option>
               ))}
             </select>
           </div>
@@ -267,290 +45,199 @@ const useCaseData: FinderUseCase[] = assembled.map(
         <div id="finder-empty" class="finder-empty">
           Wähle Rolle und Ziel, um eine Einschätzung zu erhalten.
         </div>
-        <div
-          id="finder-result"
-          class="finder-result"
-          hidden
-          aria-live="polite"
-        ></div>
+
+        <div id="finder-result" class="finder-result" hidden aria-live="polite"></div>
       </div>
     </div>
   </section>
 
-  <script define:vars={{ useCaseData }}>
-    // @ts-nocheck
-    window.__FINDER_DATA__ = useCaseData;
-  </script>
+  <script define:vars={{ finderOptions }}>
+    const data = Array.isArray(finderOptions) ? finderOptions : [];
 
-  <script>
-    type FinderSource = {
-      label: string;
-      url?: string;
-      type: string;
-      type_label: string;
-    };
-    type FinderTool = {
-      id: string;
-      name: string;
-      vendor?: string;
-      url: string;
-      maturity: string;
-      maturity_label: string;
-      fit: string;
-      fit_label: string;
-      fit_color: string;
-      enterprise_readiness?: string;
-      enterprise_readiness_label?: string;
-      why_it_fits: string;
-      caveats: string[];
-      practitioner_signal?: {
-        volume: string;
-        volume_label: string;
-        tenor: string;
-        tenor_label: string;
-        praise: string[];
-        complaints: string[];
-      };
-      confidence?: string;
-      sources: FinderSource[];
-    };
-    type FinderUseCase = {
-      id: string;
-      title: string;
-      roles: string[];
-      goal_label: string;
-      stage_id: string;
-      stage_name: string;
-      suitability: string;
-      suitability_label: string;
-      suitability_color: string;
-      adoption_maturity?: string;
-      adoption_label?: string;
-      enterprise_relevance?: string;
-      enterprise_relevance_label?: string;
-      evidence_strength?: string;
-      evidence_strength_label?: string;
-      rationale: string;
-      tools: FinderTool[];
-      start_here: string;
-      caveats: string;
-      sources: FinderSource[];
-    };
+    function initFinder() {
+      const roleSel = document.getElementById('finder-role');
+      const goalSel = document.getElementById('finder-goal');
+      const result = document.getElementById('finder-result');
+      const empty = document.getElementById('finder-empty');
 
-    const data =
-      (window as unknown as { __FINDER_DATA__: FinderUseCase[] }).__FINDER_DATA__ || [];
-    const roleSel = document.getElementById('finder-role') as HTMLSelectElement;
-    const goalSel = document.getElementById('finder-goal') as HTMLSelectElement;
-    const result = document.getElementById('finder-result') as HTMLElement;
-    const empty = document.getElementById('finder-empty') as HTMLElement;
-
-    function escapeHtml(s: string): string {
-      return s.replace(/[&<>"']/g, (c) =>
-        ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string)
-      );
-    }
-
-    const suitabilityTooltipsAI: Record<string, string> = {
-      good_fit: 'AI-Eignung: AI bringt hier in der Regel klaren praktischen Mehrwert.',
-      conditional:
-        'AI-Eignung: Funktioniert, aber nur unter klaren Voraussetzungen oder mit enger menschlicher Kontrolle.',
-      partial:
-        'AI-Eignung: AI hilft bei einzelnen Schritten, aber nicht beim ganzen Use Case.',
-      immature:
-        'AI-Eignung: Qualitaet, Evidenz oder Markt sind fuer verlaesslichen Einsatz noch zu schwach.',
-    };
-
-    const suitabilityTooltipsTool: Record<string, string> = {
-      good_fit: 'Tool-Eignung: Dieses Tool passt gut fuer den aktuellen Use Case.',
-      conditional: 'Tool-Eignung: Dieses Tool passt, aber mit klaren Einschraenkungen.',
-      partial: 'Tool-Eignung: Dieses Tool hilft nur bei Teilen des Use Case.',
-      immature:
-        'Tool-Eignung: Dieses Tool ist fuer diesen Use Case noch nicht belastbar genug.',
-    };
-
-    function pillHtml(color: string, label: string, tooltip?: string, size = ''): string {
-      const attrs = tooltip
-        ? ` title="${escapeHtml(tooltip)}" aria-label="${escapeHtml(label)}. ${escapeHtml(tooltip)}"`
-        : '';
-      return `<span class="pill ${color} ${size}" role="status"${attrs}><span class="dot" aria-hidden="true"></span>${escapeHtml(label)}</span>`;
-    }
-
-    const enterpriseReadinessTooltips: Record<string, string> = {
-      enterprise_ready:
-        'Enterprise-ready: Fuer groessere Teams und Unternehmen grundsaetzlich tragfaehig, typischerweise mit belastbarer Governance- und Compliance-Story.',
-      team_ready:
-        'Team-ready: Fuer Teams gut nutzbar, aber mit Einschraenkungen bei Enterprise-Governance, Beschaffung oder Compliance.',
-      evaluation_only:
-        'Nur Evaluation: Eher fuer Pilot, Test oder Einzelteams geeignet; fuer breiteren produktiven Einsatz noch zu unreif oder organisatorisch zu schwach abgesichert.',
-      irrelevant_for_enterprise:
-        'Kein Enterprise-Fokus: Fuer groessere Organisationen oder regulierte Umgebungen nicht der primaere Einsatzpfad.',
-      unknown:
-        'Reifegrad unklar: Die verfuegbaren Informationen reichen nicht fuer eine belastbare Einordnung.',
-    };
-
-    function neutralPill(label: string, tooltip?: string): string {
-      const attrs = tooltip
-        ? ` title="${escapeHtml(tooltip)}" aria-label="${escapeHtml(label)}. ${escapeHtml(tooltip)}"`
-        : '';
-      return `<span class="pill neutral"${attrs}><span class="dot" aria-hidden="true"></span>${escapeHtml(label)}</span>`;
-    }
-
-    function metaRow(uc: FinderUseCase): string {
-      const parts: string[] = [];
-      if (uc.adoption_label) parts.push(`<span>Adoption <b>${escapeHtml(uc.adoption_label)}</b></span>`);
-      if (uc.enterprise_relevance_label)
-        parts.push(`<span>Enterprise-Relevanz <b>${escapeHtml(uc.enterprise_relevance_label)}</b></span>`);
-      if (uc.evidence_strength_label)
-        parts.push(`<span>Evidenz <b>${escapeHtml(uc.evidence_strength_label)}</b></span>`);
-      return parts.length ? `<div class="uc-meta">${parts.join('')}</div>` : '';
-    }
-
-    function caveatsHtml(items: string[]): string {
-      if (!items.length) return '';
-      return `<ul class="tool-caveats">${items
-        .map((c) => `<li>${escapeHtml(c)}</li>`)
-        .join('')}</ul>`;
-    }
-
-    function signalHtml(ps: NonNullable<FinderTool['practitioner_signal']>): string {
-      const tooltip =
-        'Aggregierte Signale aus Reviews, Foren und Community-Quellen wie Reddit. Zeigt Volumen und Tenor der Praxisstimmen.';
-      const praise = ps.praise.length
-        ? `<div><h6>Lob</h6><ul>${ps.praise.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul></div>`
-        : '';
-      const complaints = ps.complaints.length
-        ? `<div><h6>Kritik</h6><ul>${ps.complaints.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul></div>`
-        : '';
-      const grid = praise || complaints
-        ? `<div class="tool-signal-grid">${praise}${complaints}</div>`
-        : '';
-      return `<div class="tool-signal">
-        <div class="tool-signal-head" title="${escapeHtml(tooltip)}" aria-label="Praxis-Signal. ${escapeHtml(tooltip)}">Praxis-Signal · Volumen <b>${escapeHtml(ps.volume_label)}</b> · Tenor <b>${escapeHtml(ps.tenor_label)}</b></div>
-        ${grid}
-      </div>`;
-    }
-
-    function emptySignalHtml(): string {
-      const tooltip =
-        'Für dieses Tool wurden in der Recherche keine belastbaren öffentlichen Praktiker-Stimmen erfasst (Reddit / Hacker News / lobste.rs / Foren). Das kann an einer engen Enterprise-/NDA-Vermarktung, junger Marktlebenszeit oder unvollständiger Recherche liegen.';
-      const text = 'Kein öffentliches Praktiker-Signal erfasst.';
-      return `<div class="tool-signal tool-signal-empty">
-        <div class="tool-signal-head" title="${escapeHtml(tooltip)}" aria-label="Praxis-Signal. ${escapeHtml(tooltip)}">Praxis-Signal · <i>${escapeHtml(text)}</i></div>
-      </div>`;
-    }
-
-    function sourcesBlock(ss: FinderSource[]): string {
-      if (!ss.length) return '';
-      return `<div class="sources">${ss
-        .map((s) => {
-          const body = `<span class="badge ${escapeHtml(s.type)}">${escapeHtml(s.type_label)}</span>${escapeHtml(s.label)}`;
-          return s.url
-            ? `<a class="src" href="${escapeHtml(s.url)}" rel="noreferrer" target="_blank">${body}</a>`
-            : `<span class="src">${body}</span>`;
-        })
-        .join('')}</div>`;
-    }
-
-    function toolEntryHtml(t: FinderTool): string {
-      const vendor = t.vendor ? ` <span class="vendor">· ${escapeHtml(t.vendor)}</span>` : '';
-      const enterpriseTooltip =
-        t.enterprise_readiness ? enterpriseReadinessTooltips[t.enterprise_readiness] : '';
-      const enterprisePill = t.enterprise_readiness_label
-        ? neutralPill(t.enterprise_readiness_label, enterpriseTooltip)
-        : '';
-      const confidence = t.confidence
-        ? ` <span class="tool-confidence">Confidence: ${escapeHtml(t.confidence)}</span>`
-        : '';
-      const ps = t.practitioner_signal && t.practitioner_signal.volume !== 'none'
-        ? signalHtml(t.practitioner_signal)
-        : emptySignalHtml();
-      return `<li class="tool-entry">
-        <div class="tool-head">
-          <a class="chip" href="${escapeHtml(t.url)}" rel="noreferrer" target="_blank">${escapeHtml(t.name)}${vendor} <span class="mat">(${escapeHtml(t.maturity_label)})</span></a>
-          ${pillHtml(t.fit_color, t.fit_label, suitabilityTooltipsTool[t.fit])}
-          ${enterprisePill}
-          ${confidence}
-        </div>
-        <p class="tool-why">${escapeHtml(t.why_it_fits)}</p>
-        ${caveatsHtml(t.caveats)}
-        ${ps}
-        ${sourcesBlock(t.sources)}
-      </li>`;
-    }
-
-    function toolsHtml(ts: FinderTool[]): string {
-      if (!ts.length) return '<p>—</p>';
-      return `<ul class="tool-entries">${ts.map(toolEntryHtml).join('')}</ul>`;
-    }
-
-    function showResult(uc: FinderUseCase) {
-      empty.hidden = true;
-      result.hidden = false;
-      result.innerHTML = `
-        <div class="crumb">Ergebnis · Finder</div>
-        <h2>
-          ${escapeHtml(uc.title)}
-          <a class="stage-link" href="/#stage-${escapeHtml(uc.stage_id)}">→ Im Atlas anzeigen</a>
-        </h2>
-        <div class="row-top">
-          ${pillHtml(
-            uc.suitability_color,
-            uc.suitability_label,
-            suitabilityTooltipsAI[uc.suitability],
-            'lg'
-          )}
-          <span class="pill"><span class="dot" style="background:var(--accent)" aria-hidden="true"></span>Stufe: ${escapeHtml(uc.stage_name)}</span>
-        </div>
-        ${metaRow(uc)}
-        <p class="why">${escapeHtml(uc.rationale)}</p>
-
-        <div class="grid">
-          <div>
-            <h4>Empfohlene Tools</h4>
-            ${toolsHtml(uc.tools)}
-
-            <h4>Womit anfangen?</h4>
-            <p>${escapeHtml(uc.start_here)}</p>
-          </div>
-          <div>
-            <h4>Vorsicht / Grenzen</h4>
-            <p>${escapeHtml(uc.caveats)}</p>
-
-            <h4>Quellen</h4>
-            ${sourcesBlock(uc.sources) || '<p>—</p>'}
-          </div>
-        </div>
-      `;
-    }
-
-    function reset() {
-      result.hidden = true;
-      result.innerHTML = '';
-      empty.hidden = false;
-    }
-
-    roleSel.addEventListener('change', () => {
-      const role = roleSel.value;
-      reset();
-      goalSel.innerHTML = '';
-      if (!role) {
-        goalSel.disabled = true;
-        goalSel.appendChild(new Option('Zuerst Rolle wählen', ''));
+      if (!roleSel || !goalSel || !result || !empty) {
         return;
       }
-      const goals = data.filter((uc) => uc.roles.includes(role));
-      goalSel.disabled = goals.length === 0;
-      goalSel.appendChild(new Option('Ziel wählen…', ''));
-      goals.forEach((uc) => goalSel.appendChild(new Option(uc.goal_label, uc.id)));
-    });
 
-    goalSel.addEventListener('change', () => {
-      const uc = data.find((d) => d.id === goalSel.value);
-      if (!uc) {
-        reset();
+      if (roleSel.dataset.finderBound === 'true') {
         return;
       }
-      showResult(uc);
-    });
+
+      roleSel.dataset.finderBound = 'true';
+      const finderCache = window.__finderCache || (window.__finderCache = new Map());
+      let activeRequest = 0;
+
+      function updateUrl(role, goal) {
+        const url = new URL(window.location.href);
+        if (role) {
+          url.searchParams.set('role', role);
+        } else {
+          url.searchParams.delete('role');
+        }
+
+        if (goal) {
+          url.searchParams.set('goal', goal);
+        } else {
+          url.searchParams.delete('goal');
+        }
+
+        window.history.replaceState({}, '', url);
+      }
+
+      function getGoalsForRole(role) {
+        return data.filter((useCase) => useCase.roles.includes(role));
+      }
+
+      function fillGoalOptions(goals, selectedGoal = '') {
+        goalSel.innerHTML = '';
+        goalSel.appendChild(new Option('Ziel wählen…', ''));
+        goals.forEach((useCase) => {
+          goalSel.appendChild(new Option(useCase.goal_label, useCase.id));
+        });
+        goalSel.disabled = goals.length === 0;
+        if (selectedGoal && goals.some((useCase) => useCase.id === selectedGoal)) {
+          goalSel.value = selectedGoal;
+        }
+      }
+
+      function showEmpty() {
+        result.hidden = true;
+        result.innerHTML = '';
+        empty.hidden = false;
+      }
+
+      function showLoading() {
+        empty.hidden = true;
+        result.hidden = false;
+        result.innerHTML = `
+          <div class="finder-result-card finder-result-status">
+            <div class="crumb">Ergebnis · Finder</div>
+            <p>Lade Einschätzung…</p>
+          </div>
+        `;
+      }
+
+      function showError() {
+        empty.hidden = true;
+        result.hidden = false;
+        result.innerHTML = `
+          <div class="finder-result-card finder-result-status finder-result-error">
+            <div class="crumb">Ergebnis · Finder</div>
+            <p>Das Ergebnis konnte gerade nicht geladen werden. Bitte erneut versuchen.</p>
+          </div>
+        `;
+      }
+
+      function prefetchGoals(goals) {
+        goals.forEach((useCase) => {
+          if (finderCache.has(useCase.result_path)) return;
+          fetch(useCase.result_path)
+            .then((response) => (response.ok ? response.text() : null))
+            .then((html) => {
+              if (html) finderCache.set(useCase.result_path, html);
+            })
+            .catch(() => {});
+        });
+      }
+
+      async function renderResult(goalId) {
+        const useCase = data.find((entry) => entry.id === goalId);
+        if (!useCase) {
+          showEmpty();
+          return;
+        }
+
+        const requestId = ++activeRequest;
+        const cached = finderCache.get(useCase.result_path);
+
+        if (cached) {
+          empty.hidden = true;
+          result.hidden = false;
+          result.innerHTML = cached;
+          return;
+        }
+
+        showLoading();
+
+        try {
+          const response = await fetch(useCase.result_path);
+          if (!response.ok) throw new Error(`Failed to fetch ${useCase.result_path}`);
+          const html = await response.text();
+          finderCache.set(useCase.result_path, html);
+
+          if (requestId !== activeRequest) {
+            return;
+          }
+
+          empty.hidden = true;
+          result.hidden = false;
+          result.innerHTML = html;
+        } catch (_error) {
+          if (requestId !== activeRequest) {
+            return;
+          }
+          showError();
+        }
+      }
+
+      roleSel.addEventListener('change', () => {
+        const role = roleSel.value;
+        activeRequest += 1;
+
+        if (!role) {
+          goalSel.innerHTML = '';
+          goalSel.disabled = true;
+          goalSel.appendChild(new Option('Zuerst Rolle wählen', ''));
+          updateUrl('', '');
+          showEmpty();
+          return;
+        }
+
+        const goals = getGoalsForRole(role);
+        fillGoalOptions(goals);
+        updateUrl(role, '');
+        showEmpty();
+        prefetchGoals(goals);
+      });
+
+      goalSel.addEventListener('change', () => {
+        const role = roleSel.value;
+        if (!goalSel.value) {
+          activeRequest += 1;
+          updateUrl(role, '');
+          showEmpty();
+          return;
+        }
+
+        updateUrl(role, goalSel.value);
+        renderResult(goalSel.value);
+      });
+
+      const url = new URL(window.location.href);
+      const initialRole = url.searchParams.get('role') || '';
+      const initialGoal = url.searchParams.get('goal') || '';
+
+      if (initialRole) {
+        roleSel.value = initialRole;
+        const goals = getGoalsForRole(initialRole);
+        fillGoalOptions(goals, initialGoal);
+        prefetchGoals(goals);
+
+        if (initialGoal && goals.some((useCase) => useCase.id === initialGoal)) {
+          renderResult(initialGoal);
+        } else {
+          updateUrl(initialRole, '');
+          showEmpty();
+        }
+      }
+    }
+
+    document.addEventListener('astro:page-load', initFinder);
+    initFinder();
   </script>
 </Base>

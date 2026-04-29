@@ -6,9 +6,9 @@
 
 ---
 
-## 0. Migrationsstand-Hinweis
+## 0. Datenstand-Hinweis
 
-Aktuell sind 4 von 11 Stages in `src/content/use_cases/` überführt (architecture-design, customer-support, deployment-devops, development); der Rest liegt im Project Seed. Die Tools-Liste zeigt deshalb einen Zwischenstand. Die UI muss das transparent kommunizieren (Lede-Counter, Stage-Filter zeigt nur die 4 vorhandenen Stages). Schwellwerte (Caveats-Bucketgrenzen, Long-Tail-Default-Filter) sind beim Vollbestand gegebenenfalls zu re-justieren.
+Das Atlas-Modell hat 10 Stages (alle gepflegt). Caveats-Bucketgrenzen und Default-Filter sind auf diesem Bestand justiert. Wenn das Atlas-Modell sich ändert (Stage hinzu/raus), Schwellwerte erneut prüfen.
 
 ---
 

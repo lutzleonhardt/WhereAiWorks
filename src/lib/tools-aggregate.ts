@@ -16,7 +16,7 @@ export type AggregatedTool = {
   hoverText: string;
   url: string;
   maturity: 'production' | 'experimental';
-  maturityLabel: 'production' | 'preview';
+  maturityLabel: string;
   stages: string[];
   stageBadges: string[];
   ucCount: number;
@@ -38,12 +38,60 @@ const STAGE_BADGES: Record<string, string> = {
   'testing-qa': 'TEST',
 };
 
-const CATEGORY_LABELS: Record<string, string> = {
+// Mapping deckt alle aktuell in tools.yaml vorkommenden Werte ab.
+// Wenn ein neuer Wert dazukommt, fällt er auf Title-Case zurück (siehe categoryLabel-Helper).
+export const CATEGORY_LABELS: Record<string, string> = {
+  audit: 'Audit',
   coding: 'Coding',
-  other: 'Other',
+  data: 'Data',
+  'deployment-devops': 'Deployment & DevOps',
+  discovery: 'Discovery',
+  grc: 'GRC',
+  hr: 'HR',
+  observability: 'Observability',
+  other: 'Sonstige',
+  productivity: 'Produktivität',
+  sales: 'Sales',
   security: 'Security',
-  infra: 'Infra',
+  siem: 'SIEM',
+  support: 'Support',
+  testing: 'Testing',
+  unkategorisiert: 'Unkategorisiert',
 };
+
+const SUITABILITY_LABELS: Record<FitKey, string> = {
+  good_fit: 'gut geeignet',
+  conditional: 'bedingt geeignet',
+  partial: 'nur Teilaufgaben',
+  immature: 'noch unreif',
+};
+
+export function suitabilityLabel(fit: FitKey): string {
+  return SUITABILITY_LABELS[fit];
+}
+
+const MATURITY_LABELS: Record<'production' | 'experimental', string> = {
+  production: 'produktiv',
+  experimental: 'Vorschau',
+};
+
+export function maturityLabel(m: 'production' | 'experimental'): string {
+  return MATURITY_LABELS[m];
+}
+
+// `<coding|testing|...>` ist eine kaputte Kategorie aus dem Seed-Import (Schema-Hint
+// statt konkreter Wert). Hier auf 'unkategorisiert' normalisieren — Bug bleibt in
+// tools.yaml und sollte dort gefixt werden, aber UI darf nicht daran ersticken.
+function normalizeCategory(raw: string): string {
+  if (!raw || raw.startsWith('<')) return 'unkategorisiert';
+  return raw;
+}
+
+function categoryLabel(category: string): string {
+  if (CATEGORY_LABELS[category]) return CATEGORY_LABELS[category];
+  // Title-Case-Fallback für unbekannte Werte
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
 
 function vendorHostFromUrl(url: string): string {
   try {
@@ -69,7 +117,7 @@ function caveatsLevel(perUc: number): 1 | 2 | 3 | 4 {
 
 function buildHoverText(
   categoryLabel: string,
-  maturityLabel: 'production' | 'preview',
+  maturityLabel: string,
   stageCount: number,
   ucCount: number
 ): string {
@@ -83,11 +131,13 @@ export type UseCaseEntry = CollectionEntry<'use_cases'>;
 // Resolver, weil getEntry() async ist — wir bekommen die Stage-Slugs separat
 // herein, damit aggregateTools() synchron bleiben kann.
 export type StageSlugByUcId = Map<string, string>;
+export type StageOrderBySlug = Map<string, number>;
 
 export function aggregateTools(
   tools: ToolEntry[],
   useCases: UseCaseEntry[],
-  stageSlugByUcId: StageSlugByUcId
+  stageSlugByUcId: StageSlugByUcId,
+  stageOrderBySlug: StageOrderBySlug
 ): AggregatedTool[] {
   const toolsById = new Map(tools.map((t) => [t.id, t]));
 
@@ -124,23 +174,25 @@ export function aggregateTools(
   for (const [id, a] of acc) {
     const tool = toolsById.get(id);
     if (!tool) continue; // sollte nicht passieren — Schema erzwingt Konsistenz
-    const stages = [...a.stages].sort();
+    // Stages nach Atlas-Order sortieren, nicht alphabetisch.
+    const stages = [...a.stages].sort(
+      (x, y) =>
+        (stageOrderBySlug.get(x) ?? 999) - (stageOrderBySlug.get(y) ?? 999)
+    );
     const perUc = a.caveatsCount / Math.max(1, a.ucCount);
+    const cat = normalizeCategory(tool.category);
+    const catLabel = categoryLabel(cat);
+    const matLabel = maturityLabel(tool.maturity);
     result.push({
       id,
       name: tool.name,
       vendorHost: vendorHostFromUrl(tool.url),
-      category: tool.category,
-      categoryLabel: CATEGORY_LABELS[tool.category] ?? tool.category,
-      hoverText: buildHoverText(
-        CATEGORY_LABELS[tool.category] ?? tool.category,
-        tool.maturity === 'experimental' ? 'preview' : 'production',
-        stages.length,
-        a.ucCount
-      ),
+      category: cat,
+      categoryLabel: catLabel,
+      hoverText: buildHoverText(catLabel, matLabel, stages.length, a.ucCount),
       url: tool.url,
       maturity: tool.maturity,
-      maturityLabel: tool.maturity === 'experimental' ? 'preview' : 'production',
+      maturityLabel: matLabel,
       stages,
       stageBadges: stages.map((s) => STAGE_BADGES[s] ?? s.slice(0, 4).toUpperCase()),
       ucCount: a.ucCount,

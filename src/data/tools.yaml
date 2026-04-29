@@ -430,7 +430,7 @@
   maturity: production
 - id: leanix-net-en
   name: SAP LeanIX
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.leanix.net/en/
   maturity: production
 - id: chatgpt-com
@@ -525,17 +525,17 @@
   maturity: production
 - id: softwareag-com-en-corporate-platform-aris-html
   name: ARIS (Software AG)
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.softwareag.com/en_corporate/platform/aris.html
   maturity: production
 - id: leanix-net
   name: LeanIX (SAP)
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.leanix.net/
   maturity: production
 - id: sparxsystems-com
   name: Sparx Enterprise Architect
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://sparxsystems.com/
   maturity: production
 - id: marketplace-visualstudio-com-items-itemname-systemticks-c4-dsl-extension
@@ -580,17 +580,17 @@
   maturity: production
 - id: aleph-alpha-com-pharia-assistant
   name: Aleph Alpha PhariaAssistant
-  category: <coding|testing|discovery|support|...>
+  category: productivity
   url: https://aleph-alpha.com/pharia-assistant/
   maturity: production
 - id: ionos-de-cloud-ai-model-hub
   name: IONOS AI Model Hub
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.ionos.de/cloud/ai-model-hub
   maturity: production
 - id: mistral-ai-news-le-chat-enterprise
   name: Mistral Le Chat Enterprise
-  category: <coding|testing|discovery|support|...>
+  category: productivity
   url: https://mistral.ai/news/le-chat-enterprise
   maturity: production
 - id: azure-microsoft-com-en-us-products-ai-services-openai-service
@@ -605,22 +605,22 @@
   maturity: production
 - id: workspace-google-com-solutions-ai
   name: Gemini for Workspace / Vertex AI
-  category: <coding|testing|discovery|support|...>
+  category: productivity
   url: https://workspace.google.com/solutions/ai/
   maturity: production
 - id: credo-ai
   name: Credo AI
-  category: <coding|testing|discovery|support|...>
+  category: grc
   url: https://www.credo.ai
   maturity: production
 - id: datadoghq-com-product-llm-observability
   name: Datadog LLM Observability
-  category: <coding|testing|discovery|support|...>
+  category: observability
   url: https://www.datadoghq.com/product/llm-observability/
   maturity: production
 - id: dynatrace-com-platform-artificial-intelligence
   name: Dynatrace AI Observability
-  category: <coding|testing|discovery|support|...>
+  category: observability
   url: https://www.dynatrace.com/platform/artificial-intelligence/
   maturity: production
 - id: langfuse-com
@@ -635,12 +635,12 @@
   maturity: production
 - id: learn-microsoft-com-azure-api-management-genai-gateway-capabilities
   name: Azure API Management (GenAI Gateway)
-  category: <coding|testing|discovery|support|...>
+  category: observability
   url: https://learn.microsoft.com/azure/api-management/genai-gateway-capabilities
   maturity: production
 - id: traceloop-com
   name: OpenLLMetry / Traceloop
-  category: <coding|testing|discovery|support|...>
+  category: observability
   url: https://www.traceloop.com
   maturity: production
 - id: deepwiki-com
@@ -665,12 +665,12 @@
   maturity: production
 - id: castsoftware-com-products-imaging
   name: CAST Imaging
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.castsoftware.com/products/imaging
   maturity: production
 - id: vfunction-com
   name: vFunction
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://vfunction.com
   maturity: production
 - id: anthropic-com-claude
@@ -695,17 +695,17 @@
   maturity: production
 - id: bizzdesign-com
   name: Bizzdesign Horizzon
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://bizzdesign.com
   maturity: production
 - id: metricstream-com
   name: MetricStream AI Governance
-  category: <coding|testing|discovery|support|...>
+  category: grc
   url: https://www.metricstream.com
   maturity: production
 - id: servicenow-com-products-ai-control-tower-html
   name: ServiceNow AI Control Tower / IRM
-  category: <coding|testing|discovery|support|...>
+  category: grc
   url: https://www.servicenow.com/products/ai-control-tower.html
   maturity: production
 - id: modulos-ai
@@ -720,7 +720,7 @@
   maturity: production
 - id: mega-com-solutions-ai-governance
   name: MEGA HOPEX AI Governance
-  category: <coding|testing|discovery|support|...>
+  category: grc
   url: https://www.mega.com/solutions/ai-governance
   maturity: production
 - id: dbdiagram-io
@@ -1035,17 +1035,17 @@
   maturity: production
 - id: enghouseinteractive-com
   name: Enghouse Interactive (EICC mit AI-Summary)
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.enghouseinteractive.com/
   maturity: production
 - id: sap-com-products-crm-service-cloud-html
   name: SAP Service Cloud mit Joule
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.sap.com/products/crm/service-cloud.html
   maturity: production
 - id: vier-ai
   name: VIER Interaction Analytics / Agent Assist
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.vier.ai/
   maturity: production
 - id: aws-amazon-com-connect-contact-lens
@@ -1080,7 +1080,7 @@
   maturity: production
 - id: i2x-ai
   name: i2x
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.i2x.ai/
   maturity: production
 - id: balto-ai
@@ -1110,17 +1110,17 @@
   maturity: production
 - id: aleph-alpha-com-pharia-ai
   name: Aleph Alpha PhariaAI / Pharia Assistant
-  category: <coding|testing|discovery|support|...>
+  category: productivity
   url: https://aleph-alpha.com/pharia-ai/
   maturity: production
 - id: kore-ai
   name: Kore.ai Agent Platform
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://kore.ai/
   maturity: production
 - id: pega-com-products-customer-service
   name: Pegasystems Pega Customer Service (mit Pega GenAI)
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.pega.com/products/customer-service
   maturity: production
 - id: salesforce-com-agentforce
@@ -1150,7 +1150,7 @@
   maturity: production
 - id: moin-ai
   name: moin.ai
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.moin.ai/
   maturity: production
 - id: boost-ai
@@ -1255,12 +1255,12 @@
   maturity: production
 - id: ibm-com-products-datacap
   name: IBM Datacap / watsonx Document Understanding
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.ibm.com/products/datacap
   maturity: production
 - id: natif-ai
   name: Natif.ai
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://natif.ai/
   maturity: production
 - id: abbyy-com-vantage
@@ -1475,17 +1475,17 @@
   maturity: production
 - id: genesys-com-capabilities-real-time-translation
   name: Genesys Cloud CX – Real-Time Translation
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.genesys.com/capabilities/real-time-translation
   maturity: production
 - id: lengoo-com
   name: Lengoo
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.lengoo.com/
   maturity: production
 - id: nice-com-products-cxone
   name: NICE CXone (Enlighten Translation)
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.nice.com/products/cxone
   maturity: production
 - id: deepl-com-en-pro-api
@@ -1595,12 +1595,12 @@
   maturity: production
 - id: sap-com-products-crm-service-html
   name: SAP Service Cloud (Joule / Embedded AI)
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.sap.com/products/crm/service.html
   maturity: production
 - id: usu-com-de-de-produkte-customer-service
   name: USU Service Intelligence
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.usu.com/de-de/produkte/customer-service/
   maturity: production
 - id: usu-com-de-de-produkte-usu-knowledge-management
@@ -1670,7 +1670,7 @@
   maturity: production
 - id: sikom-de
   name: Sikom AgentOne (Voice)
-  category: <coding|testing|discovery|support|...>
+  category: support
   url: https://www.sikom.de/
   maturity: production
 - id: cognigy-com-products-cognigy-voice
@@ -4879,7 +4879,7 @@
   maturity: production
 - id: templafy-com
   name: Templafy
-  category: <coding|testing|discovery|support|...>
+  category: productivity
   url: https://www.templafy.com/
   maturity: production
 - id: seismic-com-products-aura
@@ -4959,7 +4959,7 @@
   maturity: production
 - id: servicenow-com-products-now-assist-html
   name: ServiceNow Now Assist (ITSM/AIOps)
-  category: <coding|testing|discovery|support|...>
+  category: other
   url: https://www.servicenow.com/products/now-assist.html
   maturity: production
 - id: circleci-com-docs-insights-tests
@@ -4979,12 +4979,12 @@
   maturity: production
 - id: codescene-com
   name: CodeScene
-  category: <coding|testing|discovery|support|...>
+  category: coding
   url: https://codescene.com/
   maturity: production
 - id: engflow-com
   name: EngFlow Build & Test
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://www.engflow.com/
   maturity: production
 - id: datadoghq-com-product-ci-cd-monitoring-test-optimization
@@ -5061,17 +5061,17 @@
   maturity: production
 - id: perforce-com-products-helix-alm
   name: Helix ALM
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://www.perforce.com/products/helix-alm
   maturity: production
 - id: microtool-de-produkte-objectif-rpm
   name: objectiF RPM
-  category: <coding|testing|discovery|support|...>
+  category: discovery
   url: https://www.microtool.de/produkte/objectif-rpm/
   maturity: production
 - id: parasoft-com
   name: Parasoft (DTP, C/C++test, SOAtest)
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://www.parasoft.com/
   maturity: production
 - id: ptc-com-en-products-codebeamer
@@ -5221,12 +5221,12 @@
   maturity: production
 - id: kusho-ai
   name: KushoAI
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://kusho.ai
   maturity: production
 - id: marketplace-atlassian-com-search-query-ai-20test-20case-20generator
   name: Xray AI Test Case Generator (Atlassian Marketplace)
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://marketplace.atlassian.com/search?query=ai%20test%20case%20generator
   maturity: production
 - id: testbee-com-unser-tool-beeai
@@ -5286,12 +5286,12 @@
   maturity: production
 - id: katalon-com
   name: Katalon TrueTest / Katalon Platform
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://www.katalon.com
   maturity: production
 - id: testsigma-com-ai-agents
   name: Testsigma
-  category: <coding|testing|discovery|support|...>
+  category: testing
   url: https://testsigma.com/ai-agents
   maturity: production
 - id: argos-ci-com

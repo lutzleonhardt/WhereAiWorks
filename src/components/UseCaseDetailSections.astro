@@ -1,0 +1,233 @@
+---
+import SuitabilityBadge from './SuitabilityBadge.astro';
+import type { ToolEntry } from '../lib/data';
+import {
+  adoptionLabels,
+  enterpriseReadinessLabels,
+  enterpriseReadinessTooltipText,
+  evidenceStrengthLabels,
+  formatProviderUrl,
+  practiceSignalEmptyText,
+  practiceSignalEmptyTooltip,
+  practiceSignalTooltip,
+  relevanceLabels,
+  tenorLabels,
+  type UseCaseDetailView,
+  volumeLabels,
+} from '../lib/use-case-detail';
+
+interface Props {
+  useCase: UseCaseDetailView;
+  toolsById: Map<string, ToolEntry>;
+}
+
+const { useCase, toolsById } = Astro.props;
+---
+<div class="stage-uc-section">
+  <p class="stage-uc-why">{useCase.rationale}</p>
+  {(useCase.adoption_maturity ||
+    useCase.enterprise_relevance ||
+    useCase.evidence_strength) && (
+    <div class="stage-uc-meta">
+      {useCase.adoption_maturity && (
+        <span>Adoption <b>{adoptionLabels[useCase.adoption_maturity]}</b></span>
+      )}
+      {useCase.enterprise_relevance && (
+        <span>Enterprise-Relevanz <b>{relevanceLabels[useCase.enterprise_relevance]}</b></span>
+      )}
+      {useCase.evidence_strength && (
+        <span>Evidenz <b>{evidenceStrengthLabels[useCase.evidence_strength]}</b></span>
+      )}
+    </div>
+  )}
+</div>
+
+<div class="stage-uc-section">
+  <h5>Tools</h5>
+  <div class="stage-tools-list">
+    {useCase.tools.map((entry) => {
+      const tool = toolsById.get(entry.id);
+      if (!tool) return null;
+
+      const ps = entry.practitioner_signal;
+      const hasSignalDetail = Boolean(ps?.praise?.length || ps?.complaints?.length);
+      const enterpriseClass =
+        entry.enterprise_readiness === 'enterprise_ready'
+          ? 'stage-er-ent'
+          : entry.enterprise_readiness === 'team_ready'
+            ? 'stage-er-team'
+            : 'stage-er-eval';
+
+      return (
+        <details class="stage-tool">
+          <summary class="stage-tool-head">
+            <span class="stage-tool-name" title={tool.name}>{tool.name}</span>
+            <span class="stage-tool-meta">
+              <SuitabilityBadge suitability={entry.fit} context="tool" />
+              {entry.enterprise_readiness && (
+                <span
+                  class={`stage-er ${enterpriseClass}`}
+                  title={enterpriseReadinessTooltipText[entry.enterprise_readiness]}
+                  aria-label={`${enterpriseReadinessLabels[entry.enterprise_readiness]}. ${enterpriseReadinessTooltipText[entry.enterprise_readiness]}`}
+                >
+                  {enterpriseReadinessLabels[entry.enterprise_readiness]}
+                </span>
+              )}
+              <span class="stage-tool-caret" aria-hidden="true">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                  <path
+                    d="M1 1l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </summary>
+
+          <div class="stage-tool-body">
+            <p class="stage-tool-desc">{entry.why_it_fits}</p>
+
+            {entry.caveats.length > 0 && (
+              <ul class="stage-tool-bullets">
+                {entry.caveats.map((caveat) => (
+                  <li>{caveat}</li>
+                ))}
+              </ul>
+            )}
+
+            <h6 class="stage-tool-subhead">Anbieter</h6>
+            <ul class="stage-source-list stage-source-list-compact">
+              <li>
+                <a href={tool.url} rel="noreferrer" target="_blank">
+                  {formatProviderUrl(tool.url)}
+                </a>
+              </li>
+            </ul>
+
+            {entry.sources.length > 0 && (
+              <>
+                <h6 class="stage-tool-subhead">Quellen</h6>
+                <ul class="stage-source-list stage-source-list-compact">
+                  {entry.sources.map((source) => (
+                    <li>
+                      {source.url ? (
+                        <a href={source.url} rel="noreferrer" target="_blank">
+                          {source.label}
+                        </a>
+                      ) : (
+                        <span>{source.label}</span>
+                      )}
+                      <span class="type">({source.type_label})</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {(!ps || ps.volume === 'none') && (
+              <div
+                class="stage-signal-line stage-signal-empty"
+                role="group"
+                title={practiceSignalEmptyTooltip}
+                aria-label={`Praxis-Signal. ${practiceSignalEmptyTooltip}`}
+              >
+                <span class="lbl">Praxis-Signal</span>
+                <span class="vals">{practiceSignalEmptyText}</span>
+              </div>
+            )}
+
+            {ps && ps.volume !== 'none' && (
+              hasSignalDetail ? (
+                <details class="stage-signal">
+                  <summary
+                    class="stage-signal-line"
+                    title={practiceSignalTooltip}
+                    aria-label={`Praxis-Signal. ${practiceSignalTooltip}`}
+                  >
+                    <span class="lbl">Praxis-Signal</span>
+                    <span class="vals">
+                      Volumen <b>{volumeLabels[ps.volume]}</b> · Tenor <b>{tenorLabels[ps.tenor]}</b>
+                    </span>
+                    <span class="toggle" aria-hidden="true">
+                      Lob & Kritik
+                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path
+                          d="M1 1l4 4 4-4"
+                          stroke="currentColor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="stage-signal-detail">
+                    {ps.praise && ps.praise.length > 0 && (
+                      <div>
+                        <h6>Lob</h6>
+                        <ul>
+                          {ps.praise.map((praise) => <li>{praise}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                    {ps.complaints && ps.complaints.length > 0 && (
+                      <div>
+                        <h6>Kritik</h6>
+                        <ul>
+                          {ps.complaints.map((complaint) => <li>{complaint}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </details>
+              ) : (
+                <div
+                  class="stage-signal-line"
+                  role="group"
+                  title={practiceSignalTooltip}
+                  aria-label={`Praxis-Signal. ${practiceSignalTooltip}`}
+                >
+                  <span class="lbl">Praxis-Signal</span>
+                  <span class="vals">
+                    Volumen <b>{volumeLabels[ps.volume]}</b> · Tenor <b>{tenorLabels[ps.tenor]}</b>
+                  </span>
+                </div>
+              )
+            )}
+          </div>
+        </details>
+      );
+    })}
+  </div>
+</div>
+
+<div class="stage-uc-section">
+  <h5>Womit anfangen?</h5>
+  <p>{useCase.start_here}</p>
+</div>
+
+<div class="stage-uc-section">
+  <h5>Vorsicht</h5>
+  <p>{useCase.caveats}</p>
+</div>
+
+{useCase.sources.length > 0 && (
+  <div class="stage-uc-section">
+    <h5>Quellen</h5>
+    <ul class="stage-source-list">
+      {useCase.sources.map((source) => (
+        <li>
+          {source.url ? (
+            <a href={source.url} rel="noreferrer" target="_blank">
+              {source.label}
+            </a>
+          ) : (
+            <span>{source.label}</span>
+          )}
+          <span class="type">({source.type_label})</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}

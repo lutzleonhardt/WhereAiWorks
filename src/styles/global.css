@@ -1278,12 +1278,32 @@ a.src:hover { color: var(--ink); }
 
 .finder-result {
   margin-top: 36px;
+}
+.finder-result[hidden] { display: none; }
+
+.finder-result-card {
   border: 1px solid var(--rule-strong);
   background: var(--bg);
   padding: 36px 40px 40px;
 }
-.finder-result[hidden] { display: none; }
-@media (max-width: 640px) { .finder-result { padding: 28px 22px; } }
+.finder-result-card[hidden] { display: none; }
+.finder-result-card + .finder-result-card {
+  margin-top: 24px;
+}
+.finder-result-card-body {
+  padding: 6px 0 0;
+}
+.finder-result-status p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.finder-result-error p {
+  color: var(--ink);
+}
+@media (max-width: 640px) { .finder-result-card { padding: 28px 22px; } }
 
 .finder-result .crumb {
   font-family: var(--mono);

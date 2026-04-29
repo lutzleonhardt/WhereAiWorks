@@ -2,7 +2,14 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { loadTools, loadSources } from '../../lib/data';
-import { aggregateTools, type StageSlugByUcId } from '../../lib/tools-aggregate';
+import {
+  aggregateTools,
+  CATEGORY_LABELS,
+  suitabilityLabel,
+  type FitKey,
+  type StageSlugByUcId,
+  type StageOrderBySlug,
+} from '../../lib/tools-aggregate';
 
 const tools = loadTools();
 const sources = loadSources();
@@ -23,7 +30,11 @@ const visibleStages = allStages
   .filter((s) => stageSet.has(s.slug))
   .sort((a, b) => a.data.order - b.data.order);
 
-const aggregated = aggregateTools(tools, useCases, stageSlugByUcId);
+const stageOrderBySlug: StageOrderBySlug = new Map(
+  allStages.map((s) => [s.slug, s.data.order])
+);
+
+const aggregated = aggregateTools(tools, useCases, stageSlugByUcId, stageOrderBySlug);
 
 // Kategorien aus den vorhandenen Tools, sortiert nach Häufigkeit.
 const categoryCounts = new Map<string, number>();
@@ -34,12 +45,7 @@ const categories = [...categoryCounts.entries()]
   .sort((a, b) => b[1] - a[1])
   .map(([id]) => id);
 
-const categoryLabels: Record<string, string> = {
-  coding: 'Coding',
-  other: 'Other',
-  security: 'Security',
-  infra: 'Infra',
-};
+const categoryLabels = CATEGORY_LABELS;
 
 const totalTools = aggregated.length;
 const totalSources = sources.length;
@@ -57,7 +63,7 @@ const totalSources = sources.length;
         <div class="meta">
           <span>{totalTools} Tools</span>
           <span><a href="/quellen">{totalSources} Quellen</a></span>
-          <span>{visibleStages.length} von 11 Stages migriert</span>
+          <span>{visibleStages.length} Stages</span>
         </div>
       </div>
     </div>
@@ -88,16 +94,16 @@ const totalSources = sources.length;
           <label for="f-suit">Eignung mind.</label>
           <select id="f-suit" data-filter="suitability">
             <option value="">Alle</option>
-            <option value="good_fit">good_fit</option>
-            <option value="conditional">good_fit + conditional</option>
+            <option value="good_fit">gut geeignet</option>
+            <option value="conditional">gut + bedingt geeignet</option>
           </select>
         </div>
         <div class="filter-field">
-          <label for="f-mat">Maturity</label>
+          <label for="f-mat">Reifegrad</label>
           <select id="f-mat" data-filter="maturity">
             <option value="">Alle</option>
-            <option value="production">production</option>
-            <option value="experimental">preview</option>
+            <option value="production">produktiv</option>
+            <option value="experimental">Vorschau</option>
           </select>
         </div>
       </div>
@@ -135,10 +141,10 @@ const totalSources = sources.length;
               <span class="th-inner">Eignung <span class="sortb">1↓</span></span>
             </th>
             <th scope="col" data-sort="caveats">
-              <span class="th-inner">Caveats</span>
+              <span class="th-inner">Einschränkungen</span>
             </th>
             <th scope="col" data-sort="maturity">
-              <span class="th-inner">Maturity</span>
+              <span class="th-inner">Reifegrad</span>
             </th>
           </tr>
         </thead>
@@ -177,21 +183,21 @@ const totalSources = sources.length;
                 <td class="num">{t.ucCount}</td>
                 <td class="fit">
                   <div class="fit-stack">
-                    {(['good_fit', 'conditional', 'partial', 'immature'] as const).map((k) => {
+                    {(['good_fit', 'conditional', 'partial', 'immature'] as const).map((k: FitKey) => {
                       const n = t.fit[k];
                       if (!n) return null;
                       const color = { good_fit: 'green', conditional: 'amber', partial: 'orange', immature: 'red' }[k];
                       return (
                         <span class={`pill ${color}`}>
                           <span class="dot"></span>
-                          <span class="n">{n}×</span> {k}
+                          <span class="n">{n}×</span> {suitabilityLabel(k)}
                         </span>
                       );
                     })}
                   </div>
                 </td>
                 <td>
-                  <span class={`cav lvl-${t.caveatsLevel}`} aria-label={`Caveats-Dichte: ${t.caveatsLevel} von 4`}>
+                  <span class={`cav lvl-${t.caveatsLevel}`} aria-label={`Einschränkungs-Dichte: ${t.caveatsLevel} von 4`}>
                     {[1, 2, 3, 4].map((i) => (
                       <i class={i <= t.caveatsLevel ? 'on' : ''}></i>
                     ))}

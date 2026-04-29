@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from 'astro';
+import FinderResultCard from '../../../../components/FinderResultCard.astro';
+import { loadTools } from '../../../../lib/data';
+import { loadFinderUseCases } from '../../../../lib/finder';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const finderUseCases = await loadFinderUseCases();
+  return finderUseCases.map((useCase) => ({
+    params: {
+      stage: useCase.stage_slug,
+      slug: useCase.use_case_slug,
+    },
+    props: { useCase },
+  }));
+};
+
+const { useCase } = Astro.props;
+const tools = loadTools();
+const toolsById = new Map(tools.map((tool) => [tool.id, tool] as const));
+---
+<FinderResultCard
+  id={useCase.id}
+  stageId={useCase.stage_id}
+  stageName={useCase.stage_name}
+  title={useCase.title}
+  useCase={useCase.useCase}
+  toolsById={toolsById}
+/>

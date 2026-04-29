@@ -1,0 +1,51 @@
+---
+import SuitabilityBadge from './SuitabilityBadge.astro';
+import UseCaseDetailSections from './UseCaseDetailSections.astro';
+import type { ToolEntry } from '../lib/data';
+import type { UseCaseDetailView } from '../lib/use-case-detail';
+
+interface Props {
+  id: string;
+  stageId: string;
+  stageName: string;
+  title: string;
+  useCase: UseCaseDetailView;
+  toolsById: Map<string, ToolEntry>;
+  hidden?: boolean;
+  dataFinderCard?: string;
+}
+
+const {
+  id,
+  stageId,
+  stageName,
+  title,
+  useCase,
+  toolsById,
+  hidden = false,
+  dataFinderCard,
+} = Astro.props;
+---
+<article
+  id={`finder-card-${id}`}
+  class="finder-result-card"
+  data-finder-card={dataFinderCard}
+  hidden={hidden}
+>
+  <div class="crumb">Ergebnis · Finder</div>
+  <h2>
+    {title}
+    <a class="stage-link" href={`/#stage-${stageId}`}>→ Im Atlas anzeigen</a>
+  </h2>
+  <div class="row-top">
+    <SuitabilityBadge suitability={useCase.suitability} context="ai" size="lg" />
+    <span class="pill">
+      <span class="dot" style="background:var(--accent)" aria-hidden="true"></span>
+      Stufe: {stageName}
+    </span>
+  </div>
+
+  <div class="stage-uc-body finder-result-card-body">
+    <UseCaseDetailSections useCase={useCase} toolsById={toolsById} />
+  </div>
+</article>

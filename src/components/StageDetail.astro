@@ -1,14 +1,9 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import SuitabilityBadge from './SuitabilityBadge.astro';
-import type { ToolEntry, SourceEntry, SourceType } from '../lib/data';
-
-type ResolvedSource = {
-  label: string;
-  url?: string;
-  type: SourceType;
-  type_label: string;
-};
+import UseCaseDetailSections from './UseCaseDetailSections.astro';
+import type { ToolEntry, SourceEntry } from '../lib/data';
+import { buildUseCaseDetailView } from '../lib/use-case-detail';
 
 type CoverageKey = 'strong' | 'ok' | 'thin' | 'open';
 
@@ -23,77 +18,8 @@ interface Props {
 const { stage, useCases: useCaseEntries, tools, sources, standalone = false } = Astro.props;
 const { Content } = await stage.render();
 
-const toolsById = new Map(tools.map((t) => [t.id, t] as const));
-const sourcesById = new Map(sources.map((s) => [s.id, s] as const));
-
-const maturityLabels: Record<string, string> = {
-  production: 'stable',
-  experimental: 'growing',
-};
-
-const sourceTypeLabels: Record<SourceType, string> = {
-  study: 'study',
-  case_study: 'case study',
-  vendor: 'vendor',
-  vendor_doc: 'vendor doc',
-  community: 'community',
-  review: 'review',
-  blog: 'blog',
-  documentation: 'docs',
-  news: 'news',
-};
-
-const enterpriseReadinessLabels: Record<string, string> = {
-  enterprise_ready: 'enterprise-ready',
-  team_ready: 'team-ready',
-  evaluation_only: 'nur Evaluation',
-  irrelevant_for_enterprise: 'kein Enterprise-Fokus',
-  unknown: 'Reifegrad unklar',
-};
-const enterpriseReadinessTooltipText: Record<string, string> = {
-  enterprise_ready:
-    'Enterprise-ready: Fuer groessere Teams und Unternehmen grundsaetzlich tragfaehig, typischerweise mit belastbarer Governance- und Compliance-Story.',
-  team_ready:
-    'Team-ready: Fuer Teams gut nutzbar, aber mit Einschraenkungen bei Enterprise-Governance, Beschaffung oder Compliance.',
-  evaluation_only:
-    'Nur Evaluation: Eher fuer Pilot, Test oder Einzelteams geeignet; fuer breiteren produktiven Einsatz noch zu unreif oder organisatorisch zu schwach abgesichert.',
-  irrelevant_for_enterprise:
-    'Kein Enterprise-Fokus: Fuer groessere Organisationen oder regulierte Umgebungen nicht der primaere Einsatzpfad.',
-  unknown:
-    'Reifegrad unklar: Die verfuegbaren Informationen reichen nicht fuer eine belastbare Einordnung.',
-};
-
-const adoptionLabels: Record<string, string> = {
-  mainstream: 'Mainstream',
-  growing: 'wachsend',
-  emerging: 'aufkommend',
-};
-
-const relevanceLabels: Record<string, string> = {
-  high: 'hoch',
-  medium: 'mittel',
-  low: 'niedrig',
-};
-
-const evidenceStrengthLabels: Record<string, string> = {
-  strong: 'stark',
-  medium: 'mittel',
-  weak: 'schwach',
-};
-
-const tenorLabels: Record<string, string> = {
-  positive: 'positiv',
-  mixed: 'gemischt',
-  polarized: 'polarisiert',
-  negative: 'negativ',
-  unknown: 'unklar',
-};
-
-const volumeLabels: Record<string, string> = {
-  high: 'hoch',
-  medium: 'mittel',
-  low: 'niedrig',
-};
+const toolsById = new Map(tools.map((tool) => [tool.id, tool] as const));
+const sourcesById = new Map(sources.map((source) => [source.id, source] as const));
 
 const coverageLabels: Record<CoverageKey, string> = {
   strong: 'stark abgedeckt',
@@ -101,6 +27,7 @@ const coverageLabels: Record<CoverageKey, string> = {
   thin: 'dünn abgedeckt',
   open: 'noch offen',
 };
+
 const coverageTooltipText: Record<CoverageKey, string> = {
   strong:
     'Stark abgedeckt: Mehrere passende Tools sind recherchiert und mindestens eine Option ist auch fuer Teams oder Enterprise tragfaehig. Bewertet nach Zahl passender Tools und ihrer Enterprise-Tauglichkeit.',
@@ -111,32 +38,8 @@ const coverageTooltipText: Record<CoverageKey, string> = {
   open:
     'Noch offen: Die Tool-Recherche ist noch unvollstaendig oder nicht belastbar genug. Bewertet nach Zahl passender Tools und ihrer Enterprise-Tauglichkeit.',
 };
-const practiceSignalTooltip =
-  'Aggregierte Signale aus Reviews, Foren und Community-Quellen wie Reddit. Zeigt Volumen und Tenor der Praxisstimmen.';
-const practiceSignalEmptyText =
-  'Kein öffentliches Praktiker-Signal erfasst.';
-const practiceSignalEmptyTooltip =
-  'Für dieses Tool wurden in der Recherche keine belastbaren öffentlichen Praktiker-Stimmen erfasst (Reddit / Hacker News / lobste.rs / Foren). Das kann an einer engen Enterprise-/NDA-Vermarktung, junger Marktlebenszeit oder unvollständiger Recherche liegen.';
 
-const resolveSources = (
-  refs: readonly { id: string }[] | undefined
-): ResolvedSource[] =>
-  (refs ?? [])
-    .map((r) => sourcesById.get(r.id))
-    .filter((s): s is SourceEntry => Boolean(s))
-    .map(({ label, url, type }) => ({
-      label,
-      url,
-      type,
-      type_label: sourceTypeLabels[type] ?? type,
-    }));
-
-const formatProviderUrl = (url: string): string =>
-  url.replace(/^https?:\/\//, '').replace(/\/$/, '');
-
-const computeToolCoverage = (
-  uc: CollectionEntry<'use_cases'>['data']
-): CoverageKey => {
+function computeToolCoverage(uc: CollectionEntry<'use_cases'>['data']): CoverageKey {
   if (uc.tools.length === 0) return 'open';
 
   const fitCovered = uc.tools.filter(
@@ -149,11 +52,7 @@ const computeToolCoverage = (
       tool.enterprise_readiness === 'team_ready'
   );
 
-  if (
-    fitCovered.length >= 3 &&
-    goodFit.length >= 2 &&
-    enterpriseUsable.length >= 1
-  ) {
+  if (fitCovered.length >= 3 && goodFit.length >= 2 && enterpriseUsable.length >= 1) {
     return 'strong';
   }
 
@@ -163,9 +62,12 @@ const computeToolCoverage = (
 
   if (fitCovered.length >= 1) return 'thin';
   return 'open';
-};
+}
 
-const useCases = useCaseEntries.map((entry) => entry.data);
+const useCases = useCaseEntries.map((entry) => ({
+  data: entry.data,
+  detail: buildUseCaseDetailView(entry.data, sourcesById),
+}));
 ---
 <article class={`stage-detail-body${standalone ? ' standalone' : ''}`}>
   {!standalone && (
@@ -181,13 +83,13 @@ const useCases = useCaseEntries.map((entry) => entry.data);
   <section class="stage-detail-section">
     <h3>
       Use Cases
-      <span class="count">{useCases.length} Einträge</span>
+      <span class="count">{useCaseEntries.length} Einträge</span>
     </h3>
     <div class="stage-ucs">
-      {useCases.map((uc, ucIndex) => {
-        const ucSources = resolveSources(uc.sources);
+      {useCases.map(({ data: uc, detail }) => {
         const coverage = computeToolCoverage(uc);
         const coverageTooltip = coverageTooltipText[coverage];
+
         return (
           <details class="stage-uc">
             <summary class="stage-uc-head">
@@ -227,212 +129,7 @@ const useCases = useCaseEntries.map((entry) => entry.data);
             </summary>
 
             <div class="stage-uc-body">
-              <div class="stage-uc-section">
-                <p class="stage-uc-why">{uc.rationale}</p>
-                {(uc.adoption_maturity || uc.enterprise_relevance || uc.evidence_strength) && (
-                  <div class="stage-uc-meta">
-                    {uc.adoption_maturity && (
-                      <span>Adoption <b>{adoptionLabels[uc.adoption_maturity]}</b></span>
-                    )}
-                    {uc.enterprise_relevance && (
-                      <span>Enterprise-Relevanz <b>{relevanceLabels[uc.enterprise_relevance]}</b></span>
-                    )}
-                    {uc.evidence_strength && (
-                      <span>Evidenz <b>{evidenceStrengthLabels[uc.evidence_strength]}</b></span>
-                    )}
-                  </div>
-                )}
-              </div>
-
-              <div class="stage-uc-section">
-                <h5>Tools</h5>
-                <div class="stage-tools-list">
-                  {uc.tools.map((entry, toolIndex) => {
-                    const tool = toolsById.get(entry.id);
-                    if (!tool) return null;
-                    const toolSources = resolveSources(entry.sources);
-                    const ps = entry.practitioner_signal;
-                    const hasSignalDetail = Boolean(ps?.praise?.length || ps?.complaints?.length);
-                    const enterpriseClass =
-                      entry.enterprise_readiness === 'enterprise_ready'
-                        ? 'stage-er-ent'
-                        : entry.enterprise_readiness === 'team_ready'
-                          ? 'stage-er-team'
-                          : 'stage-er-eval';
-
-                    return (
-                      <details class="stage-tool">
-                        <summary class="stage-tool-head">
-                          <span class="stage-tool-name" title={tool.name}>{tool.name}</span>
-                          <span class="stage-tool-meta">
-                            <SuitabilityBadge suitability={entry.fit} context="tool" />
-                            {entry.enterprise_readiness && (
-                              <span
-                                class={`stage-er ${enterpriseClass}`}
-                                title={enterpriseReadinessTooltipText[entry.enterprise_readiness]}
-                                aria-label={`${enterpriseReadinessLabels[entry.enterprise_readiness]}. ${enterpriseReadinessTooltipText[entry.enterprise_readiness]}`}
-                              >
-                                {enterpriseReadinessLabels[entry.enterprise_readiness]}
-                              </span>
-                            )}
-                            <span class="stage-tool-caret" aria-hidden="true">
-                              <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path
-                                  d="M1 1l4 4 4-4"
-                                  stroke="currentColor"
-                                  stroke-width="1.4"
-                                  stroke-linecap="round"
-                                ></path>
-                              </svg>
-                            </span>
-                          </span>
-                        </summary>
-
-                        <div class="stage-tool-body">
-                          <p class="stage-tool-desc">{entry.why_it_fits}</p>
-
-                          {entry.caveats && entry.caveats.length > 0 && (
-                            <ul class="stage-tool-bullets">
-                              {entry.caveats.map((c) => (
-                                <li>{c}</li>
-                              ))}
-                            </ul>
-                          )}
-
-                          <h6 class="stage-tool-subhead">Anbieter</h6>
-                          <ul class="stage-source-list stage-source-list-compact">
-                            <li>
-                              <a href={tool.url} rel="noreferrer" target="_blank">
-                                {formatProviderUrl(tool.url)}
-                              </a>
-                            </li>
-                          </ul>
-
-                          {toolSources.length > 0 && (
-                            <>
-                              <h6 class="stage-tool-subhead">Quellen</h6>
-                              <ul class="stage-source-list stage-source-list-compact">
-                                {toolSources.map((s) => (
-                                  <li>
-                                    {s.url ? (
-                                      <a href={s.url} rel="noreferrer" target="_blank">
-                                        {s.label}
-                                      </a>
-                                    ) : (
-                                      <span>{s.label}</span>
-                                    )}
-                                    <span class="type">({s.type_label})</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          )}
-
-                          {(!ps || ps.volume === 'none') && (
-                            <div
-                              class="stage-signal-line stage-signal-empty"
-                              role="group"
-                              title={practiceSignalEmptyTooltip}
-                              aria-label={`Praxis-Signal. ${practiceSignalEmptyTooltip}`}
-                            >
-                              <span class="lbl">Praxis-Signal</span>
-                              <span class="vals">{practiceSignalEmptyText}</span>
-                            </div>
-                          )}
-
-                          {ps && ps.volume !== 'none' && (
-                            hasSignalDetail ? (
-                              <details class="stage-signal">
-                                <summary
-                                  class="stage-signal-line"
-                                  title={practiceSignalTooltip}
-                                  aria-label={`Praxis-Signal. ${practiceSignalTooltip}`}
-                                >
-                                  <span class="lbl">Praxis-Signal</span>
-                                  <span class="vals">
-                                    Volumen <b>{volumeLabels[ps.volume]}</b> · Tenor <b>{tenorLabels[ps.tenor]}</b>
-                                  </span>
-                                  <span class="toggle" aria-hidden="true">
-                                    Lob & Kritik
-                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                      <path
-                                        d="M1 1l4 4 4-4"
-                                        stroke="currentColor"
-                                        stroke-width="1.4"
-                                        stroke-linecap="round"
-                                      ></path>
-                                    </svg>
-                                  </span>
-                                </summary>
-                                <div class="stage-signal-detail">
-                                  {ps.praise && ps.praise.length > 0 && (
-                                    <div>
-                                      <h6>Lob</h6>
-                                      <ul>
-                                        {ps.praise.map((p) => <li>{p}</li>)}
-                                      </ul>
-                                    </div>
-                                  )}
-                                  {ps.complaints && ps.complaints.length > 0 && (
-                                    <div>
-                                      <h6>Kritik</h6>
-                                      <ul>
-                                        {ps.complaints.map((p) => <li>{p}</li>)}
-                                      </ul>
-                                    </div>
-                                  )}
-                                </div>
-                              </details>
-                            ) : (
-                              <div
-                                class="stage-signal-line"
-                                role="group"
-                                title={practiceSignalTooltip}
-                                aria-label={`Praxis-Signal. ${practiceSignalTooltip}`}
-                              >
-                                <span class="lbl">Praxis-Signal</span>
-                                <span class="vals">
-                                  Volumen <b>{volumeLabels[ps.volume]}</b> · Tenor <b>{tenorLabels[ps.tenor]}</b>
-                                </span>
-                              </div>
-                            )
-                          )}
-                        </div>
-                      </details>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div class="stage-uc-section">
-                <h5>Womit anfangen?</h5>
-                <p>{uc.start_here}</p>
-              </div>
-
-              <div class="stage-uc-section">
-                <h5>Vorsicht</h5>
-                <p>{uc.caveats}</p>
-              </div>
-
-              {ucSources.length > 0 && (
-                <div class="stage-uc-section">
-                  <h5>Quellen</h5>
-                  <ul class="stage-source-list">
-                    {ucSources.map((s) => (
-                      <li>
-                        {s.url ? (
-                          <a href={s.url} rel="noreferrer" target="_blank">
-                            {s.label}
-                          </a>
-                        ) : (
-                          <span>{s.label}</span>
-                        )}
-                        <span class="type">({s.type_label})</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <UseCaseDetailSections useCase={detail} toolsById={toolsById} />
             </div>
           </details>
         );
