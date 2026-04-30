@@ -913,6 +913,16 @@
   category: coding
   url: https://github.com/github/spec-kit
   maturity: production
+- id: github-com-bmad-code-org-bmad-method
+  name: BMAD-METHOD
+  category: coding
+  url: https://github.com/bmad-code-org/BMAD-METHOD
+  maturity: production
+- id: github-com-fission-ai-openspec
+  name: OpenSpec
+  category: coding
+  url: https://github.com/Fission-AI/OpenSpec
+  maturity: production
 - id: kiro-dev
   name: Kiro
   category: coding

@@ -2098,6 +2098,46 @@
   label: Launch-Post von Spec Registry (open beta) und Framework (closed beta) mit 10k+ Specs
   url: https://tessl.io/blog/tessl-launches-spec-driven-framework-and-registry/
   type: vendor_doc
+- id: github-com-bmad-code-org-bmad-method
+  label: BMAD-METHOD-Repo - Persona-basierter SDD-Workflow (Analyst -> PM -> Architect -> SM -> Dev -> QA), agent-agnostisch fuer 40+ Coding-Backends
+  url: https://github.com/bmad-code-org/BMAD-METHOD
+  type: vendor_doc
+- id: news-ycombinator-com-item-id-47142762
+  label: HN-Diskussion zur BMAD-Method - Praktiker zu Multi-Persona-Spec-Pipeline und Token-/Setup-Kosten
+  url: https://news.ycombinator.com/item?id=47142762
+  type: community
+- id: dev-to-willtorber-spec-kit-vs-bmad-vs-openspec-sdd-2026
+  label: DEV.to-Vergleich der drei populaersten SDD-Frameworks (Spec Kit, BMAD, OpenSpec) in Q1 2026
+  url: https://dev.to/willtorber/spec-kit-vs-bmad-vs-openspec-choosing-an-sdd-framework-in-2026-d3j
+  type: blog
+- id: augmentcode-com-tools-best-spec-driven-development-tools
+  label: Augment-Code-Roundup 2026 - SDD-Tool-Vergleich mit Staerken/Schwaechen pro Framework
+  url: https://www.augmentcode.com/tools/best-spec-driven-development-tools
+  type: review
+- id: github-com-fission-ai-openspec
+  label: OpenSpec-Repo (Fission-AI) - leichtgewichtige Delta-Spec-Pipeline (proposal -> apply -> archive) fuer Brownfield-Code
+  url: https://github.com/Fission-AI/OpenSpec
+  type: vendor_doc
+- id: news-ycombinator-com-item-id-46765749
+  label: HN-Launch von OpenSpec v1.0 (Jan 2026) mit Diskussion zu Brownfield-Eignung und Spec-Drift
+  url: https://news.ycombinator.com/item?id=46765749
+  type: community
+- id: recca0120-github-io-en-2026-03-08-openspec-sdd
+  label: Praktiker-Deep-Dive zu OpenSpec (Maerz 2026) - Workflow, Telemetrie, Limitierungen
+  url: https://recca0120.github.io/en/2026/03/08/openspec-sdd/
+  type: review
+- id: thoughtworks-com-radar-languages-and-frameworks-github-spec-kit
+  label: ThoughtWorks Tech Radar Vol. 34 (April 2026) hebt GitHub Spec Kit auf Adopt; agent-agnostische SDD-Plattform mit 13+ Backends
+  url: https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit
+  type: review
+- id: theregister-com-2026-02-20-amazon-denies-kiro-agentic-ai-behind-outage
+  label: Folgevorfaelle Februar 2026 - Amazon erzwingt Two-Person-Review und 335 Tier-1-Audits, Kiro-Ursache offiziell dementiert
+  url: https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/
+  type: news
+- id: agents-md
+  label: AGENTS.md - seit Dezember 2025 gemeinsam getragener Agent-Steering-Standard (Anthropic, Google, OpenAI, Cursor, Block u.a.); Studie 2026 warnt vor Bloat
+  url: https://agents.md/
+  type: vendor_doc
 - id: miro-com-products-technical-design
   label: Technical-Design-Bundle mit AI-Diagrammen, Mermaid und Compliance-Profil
   url: https://miro.com/products/technical-design/
