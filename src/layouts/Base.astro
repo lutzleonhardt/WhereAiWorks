@@ -30,12 +30,87 @@ function isCurrent(href: string) {
       name="description"
       content="Wo schafft AI in Softwareunternehmen realen Mehrwert — und wo (noch) nicht? Eine offene, kuratierte Orientierungshilfe."
     />
+    <meta name="color-scheme" content="light dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script is:inline>
+      const THEME_KEY = 'wai-theme';
+
+      function getStoredTheme() {
+        try {
+          const stored = window.localStorage.getItem(THEME_KEY);
+          return stored === 'dark' || stored === 'light' ? stored : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function getTheme() {
+        const stored = getStoredTheme();
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function applyTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+
+        const toggle = document.querySelector('[data-theme-toggle]');
+        const label = document.querySelector('[data-theme-label]');
+        if (!(toggle instanceof HTMLButtonElement) || !(label instanceof HTMLElement)) return;
+
+        const isDark = theme === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute(
+          'aria-label',
+          isDark ? 'Zu hellem Modus wechseln' : 'Zu dunklem Modus wechseln'
+        );
+        label.textContent = isDark ? 'Dunkel' : 'Hell';
+      }
+
+      function bindThemeToggle() {
+        const toggle = document.querySelector('[data-theme-toggle]');
+        if (!(toggle instanceof HTMLButtonElement) || toggle.dataset.bound === 'true') {
+          applyTheme(getTheme());
+          return;
+        }
+
+        toggle.dataset.bound = 'true';
+        toggle.addEventListener('click', () => {
+          const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+          try {
+            window.localStorage.setItem(THEME_KEY, nextTheme);
+          } catch {}
+          applyTheme(nextTheme);
+        });
+
+        applyTheme(getTheme());
+      }
+
+      applyTheme(getTheme());
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bindThemeToggle, { once: true });
+      } else {
+        bindThemeToggle();
+      }
+      document.addEventListener('astro:page-load', bindThemeToggle);
+
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      const syncThemeWithSystem = (event) => {
+        if (getStoredTheme()) return;
+        applyTheme(event.matches ? 'dark' : 'light');
+      };
+
+      if (typeof media.addEventListener === 'function') {
+        media.addEventListener('change', syncThemeWithSystem);
+      } else if (typeof media.addListener === 'function') {
+        media.addListener(syncThemeWithSystem);
+      }
+    </script>
     <ClientRouter />
   </head>
   <body>
@@ -46,16 +121,32 @@ function isCurrent(href: string) {
           Where AI Works
           <span class="sub">Kuratierte Referenz</span>
         </a>
-        <nav class="site-nav" aria-label="Hauptnavigation">
-          {navItems.map((item) => (
-            <a
-              href={item.href}
-              aria-current={isCurrent(item.href) ? 'page' : undefined}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
+        <div class="site-header-actions">
+          <nav class="site-nav" aria-label="Hauptnavigation">
+            {navItems.map((item) => (
+              <a
+                href={item.href}
+                aria-current={isCurrent(item.href) ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Zu dunklem Modus wechseln"
+          >
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+            <span class="theme-toggle-text">
+              Modus <span data-theme-label>Hell</span>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
 
